@@ -8,13 +8,15 @@ import Map from './pages/Map.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
-        <Route path="episodes" element={<Episodes />} />
-        <Route path="map" element={<Map />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="episodes" element={<Episodes />} />
+          <Route path="map" element={<Map />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 )
