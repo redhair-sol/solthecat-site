@@ -36,7 +36,7 @@ export default function Home() {
         transition={{ delay: 0.5 }}
         style={{ fontSize: "1.1rem", color: "#333", marginBottom: "2rem" }}
       >
-        Fluffy. Fierce. Fabulous. 🐾🐾🐾
+        Fluffy. Fierce. Fabulous. <span style={{ display: "inline-block", lineHeight: 1 }}>🐾🐾🐾</span>
       </motion.p>
 
       <motion.div
@@ -81,8 +81,8 @@ export default function Home() {
           src="/icons/instagram-icon.png"
           alt="Instagram"
           style={{
-            width: "18px",
-            height: "18px",
+            width: "20px",
+            height: "20px",
             marginRight: "0.4rem",
             verticalAlign: "middle"
           }}
