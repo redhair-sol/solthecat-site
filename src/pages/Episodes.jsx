@@ -6,7 +6,12 @@ export default function Episodes() {
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
       .then((res) => res.json())
-      .then((data) => setEpisodes(data))
+      .then((data) => {
+        const visibleEpisodes = data.filter(ep => ep.visible);
+        const nextPlaceholder = data.find(ep => !ep.visible);
+        if (nextPlaceholder) visibleEpisodes.push(nextPlaceholder);
+        setEpisodes(visibleEpisodes);
+      })
       .catch((err) => console.error("Failed to load episodes:", err));
   }, []);
 
@@ -39,7 +44,7 @@ export default function Episodes() {
           >
             <img
               src={`${import.meta.env.BASE_URL}${ep.image}`}
-              alt={ep.city}
+              alt={ep.title}
               style={{
                 width: "100%",
                 borderRadius: "12px",

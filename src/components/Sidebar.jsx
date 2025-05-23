@@ -6,6 +6,7 @@ export default function Sidebar() {
       <Link to="/">Home</Link>
       <Link to="/episodes">Episodes</Link>
       <Link to="/map">Map</Link>
+	  <Link to="/gallery">Gallery</Link>
     </nav>
   );
 }

@@ -29,11 +29,12 @@ body {
   color: #f48fb1; /* ελαφρύ contrast στο hover */
 }
 
+
 .main-content {
   flex-grow: 1;
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-alig
+  align-items: stretch; /* ή remove εντελώς */
+  justify-content: flex-start;
+}

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import Episodes from './pages/Episodes.jsx'
 import Map from './pages/Map.jsx'
+import Gallery from './pages/Gallery.jsx' // ✅ νέο import
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route index element={<Home />} />
           <Route path="episodes" element={<Episodes />} />
           <Route path="map" element={<Map />} />
+          <Route path="gallery" element={<Gallery />} /> {/* ✅ νέα γραμμή */}
         </Route>
       </Routes>
     </BrowserRouter>

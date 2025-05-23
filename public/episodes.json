@@ -1,18 +1,23 @@
 [
   {
     "id": 1,
-    "city": "Athens",
-    "title": "SOLadventure #1 – Athens, obviously 🐾 🇬🇷",
-    "quote": "Historic? So am I",
-    "caption": "First step, first legend 🐾🐾🐾",
-    "image": "episodes/athens.png"
+    "title": "SOLadventure #1 – Athens, obviously 🐾🐾🐾 🇬🇷",
+    "quote": "Historic? So am I.",
+    "caption": "Paws touched the Parthenon. 🐾🐾🐾",
+    "image": "episodes/athens.png",
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257
+    },
+    "visible": true
   },
   {
     "id": 2,
-    "city": "Coming Soon",
     "title": "SOLadventure #2 – Coming Soon 🐾",
     "quote": "",
     "caption": "Stay tuned for the next purrfect stop 🐾🐾🐾",
-    "image": "episodes/coming-soon.png"
+    "image": "episodes/coming-soon.png",
+    "location": null,
+    "visible": false
   }
 ]
