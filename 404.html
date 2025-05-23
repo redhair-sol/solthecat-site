@@ -1,3 +1,10 @@
-<script>
-  location.replace("/solthecat-site/" + location.hash.slice(1));
-</script>
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <script>
+      const redirect = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace('/#' + redirect);
+    </script>
+  </body>
+</html>
