@@ -1,12 +1,43 @@
-# React + Vite
+# SOLadventures Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stylish and responsive React website for @solthecat01 — the traveling queen 🐾
 
-Currently, two official plugins are available:
+## 🔗 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://solthecat.com](https://solthecat.com)
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- React Router DOM
+- Leaflet (interactive map)
+- Framer Motion (animations)
+- Hosted on Cloudflare Pages
+- Custom domain: `solthecat.com`
+
+## 🚀 Deployment History
+
+See [CHANGELOG.md](./CHANGELOG.md)
+
+## 📁 Project Structure
+
+/public
+/episodes -> images per episode
+/icons -> instagram-icon.png
+/src
+/components -> Sidebar
+/pages -> Home, Episodes, Map, Gallery
+App.jsx
+main.jsx
+index.css
+
+
+## 📸 Instagram
+
+Follow the adventures: [@solthecat01](https://instagram.com/solthecat01)
+
+---
+
+## ✍️ License
+
+Private use only — All rights reserved 🐾

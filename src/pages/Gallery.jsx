@@ -59,7 +59,6 @@ export default function GalleryPage() {
               style={{ width: "100%", height: "auto" }}
             />
             <div
-              className="caption-overlay"
               style={{
                 position: "absolute",
                 bottom: 0,
@@ -69,8 +68,11 @@ export default function GalleryPage() {
                 background: "rgba(0, 0, 0, 0.6)",
                 color: "white",
                 textAlign: "center",
+                opacity: 0,
+                transition: "opacity 0.3s ease",
                 fontSize: "0.9rem"
               }}
+              className="caption-overlay"
             >
               {ep.caption}
             </div>
@@ -88,15 +90,12 @@ export default function GalleryPage() {
       )}
 
       <style>{`
-        .caption-overlay {
-          opacity: 0;
-          transition: opacity 0.3s ease;
-          pointer-events: none;
-        }
-
         @media (hover: hover) {
           .gallery-tile:hover .caption-overlay {
-            opacity: 1 !important;
+            opacity: 1;
+          }
+          .caption-overlay {
+            pointer-events: none;
           }
         }
       `}</style>
