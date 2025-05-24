@@ -43,7 +43,7 @@ export default function MapPage() {
       </h1>
       <MapContainer
         center={center}
-        zoom={5}
+        zoom={route.length === 1 ? 13 : 5}
         scrollWheelZoom={false}
         style={{
           height: "80vh",
