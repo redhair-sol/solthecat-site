@@ -90,15 +90,18 @@ export default function GalleryPage() {
       )}
 
       <style>{`
-        @media (hover: hover) {
-          .gallery-tile:hover .caption-overlay {
-            opacity: 1;
-          }
-          .caption-overlay {
-            pointer-events: none;
-          }
-        }
-      `}</style>
+  .caption-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  @media (hover: hover) {
+    .gallery-tile:hover .caption-overlay {
+      opacity: 1 !important;
+    }
+  }
+`}</style>
     </div>
   );
 }
