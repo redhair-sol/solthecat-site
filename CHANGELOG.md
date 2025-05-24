@@ -4,6 +4,20 @@
 
 ---
 
+## [v1.6] - 2025-05-24
+
+### Προσθήκες & Βελτιώσεις
+- Προστέθηκαν SEO-friendly meta tags στο `index.html`.
+- Υποστήριξη για social sharing (Open Graph & Twitter Card meta).
+- Προστέθηκε preview image `/icons/sol-preview.jpg` για Facebook & Instagram.
+- Διορθώθηκε το `<!DOCTYPE html>` για αποφυγή "Quirks Mode".
+- Captions εμφανίζονται με hover στο Gallery (μόνο σε desktop).
+- Χάρτης (Map) κεντράρει σωστά με βάση τα ενεργά επεισόδια.
+
+### Visual Changes
+- Εμφάνιση εικονιδίου Instagram στο Home.
+- Βελτίωση responsive συμπεριφοράς (ειδικά σε mobile).
+
 ## [v1.5] - 2025-05-23
 ### Προσθήκες
 - Εμφάνιση λεζάντας πάνω στις φωτογραφίες του Gallery όταν γίνεται hover σε desktop
