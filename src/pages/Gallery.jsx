@@ -36,11 +36,13 @@ export default function GalleryPage() {
         {episodes.map((ep, i) => (
           <div
             key={ep.id}
+            className="gallery-tile"
             onClick={() => {
               setIndex(i);
               setOpen(true);
             }}
             style={{
+              position: "relative",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -56,8 +58,21 @@ export default function GalleryPage() {
               alt={ep.title}
               style={{ width: "100%", height: "auto" }}
             />
-            <div style={{ padding: "1rem", textAlign: "center" }}>
-              <h2 style={{ color: "#aa4dc8", fontSize: "1rem", margin: 0 }}>{ep.title}</h2>
+            <div
+              className="caption-overlay"
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                width: "100%",
+                padding: "1rem",
+                background: "rgba(0, 0, 0, 0.6)",
+                color: "white",
+                textAlign: "center",
+                fontSize: "0.9rem"
+              }}
+            >
+              {ep.caption}
             </div>
           </div>
         ))}
@@ -71,6 +86,20 @@ export default function GalleryPage() {
           slides={slides}
         />
       )}
+
+      <style>{`
+        .caption-overlay {
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+        }
+
+        @media (hover: hover) {
+          .gallery-tile:hover .caption-overlay {
+            opacity: 1 !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
