@@ -35,6 +35,8 @@ export default function MapPage() {
     : route.length > 1
       ? route[Math.floor(route.length / 2)]
       : [45, 10];
+	  
+  if (route.length === 0) return null;
 
   return (
     <div style={{ padding: "2rem", textAlign: "center" }}>
@@ -42,8 +44,9 @@ export default function MapPage() {
         SOLadventures Map
       </h1>
       <MapContainer
+	    key={center.toString()}
         center={center}
-        zoom={route.length === 1 ? 13 : 5}
+        zoom={13}
         scrollWheelZoom={false}
         style={{
           height: "80vh",
