@@ -11,6 +11,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -39,4 +40,36 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ======================== */
+/* Sidebar Responsiveness   */
+/* ======================== */
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f8bbd0;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.sidebar a {
+  color: #4a005f;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
 }
