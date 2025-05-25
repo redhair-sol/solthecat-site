@@ -16,8 +16,24 @@ export default function Episodes() {
   }, []);
 
   return (
-    <div className="episodes-page" style={{ padding: "2rem" }}>
-      <h1 style={{ fontSize: "2rem", color: "#aa4dc8", textAlign: "center", marginBottom: "2rem" }}>
+    <div
+      className="episodes-page"
+      style={{
+        padding: "2rem",
+        fontFamily: "'Poppins', sans-serif",
+        background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
+        minHeight: "100vh"
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "2rem",
+          color: "#aa4dc8",
+          textAlign: "center",
+          marginBottom: "2rem",
+          fontWeight: "bold"
+        }}
+      >
         SOLadventures
       </h1>
       <div
@@ -34,13 +50,16 @@ export default function Episodes() {
             style={{
               maxWidth: "600px",
               width: "90%",
-              background: "#fff",
+              background: "#ffffffcc",
               padding: "1.5rem",
               borderRadius: "16px",
-              boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+              boxShadow: "0 4px 20px rgba(170, 77, 200, 0.2)",
               textAlign: "center",
-              margin: "0 auto"
+              margin: "0 auto",
+              transition: "transform 0.2s ease-in-out"
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.03)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1.0)")}
           >
             <img
               src={`${import.meta.env.BASE_URL}${ep.image}`}
@@ -52,8 +71,12 @@ export default function Episodes() {
                 marginBottom: "1rem"
               }}
             />
-            <h2 style={{ color: "#aa4dc8", fontWeight: "bold", fontSize: "1.2rem", marginBottom: "0.5rem" }}>{ep.title}</h2>
-            <p style={{ fontStyle: "italic", color: "#666", marginBottom: "0.5rem" }}>{ep.quote}</p>
+            <h2 style={{ color: "#6a1b9a", fontWeight: "600", fontSize: "1.2rem", marginBottom: "0.5rem" }}>
+              {ep.title}
+            </h2>
+            <p style={{ fontStyle: "italic", color: "#944f9e", marginBottom: "0.5rem" }}>
+              {ep.quote}
+            </p>
             <p style={{ fontSize: "0.9rem", color: "#333" }}>{ep.caption}</p>
           </div>
         ))}

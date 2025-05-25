@@ -14,7 +14,9 @@ export default function Home() {
         justifyContent: "center",
         minHeight: "80vh",
         padding: "2rem",
-        textAlign: "center"
+        textAlign: "center",
+        fontFamily: "'Poppins', sans-serif",
+        background: "linear-gradient(to bottom, #fff1f9, #fce4ec)"
       }}
     >
       <motion.h1
@@ -22,27 +24,66 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
         style={{
-          fontSize: "2rem",
-          marginBottom: "1rem",
-          fontWeight: "bold"
+          fontSize: "2.7rem",
+          marginBottom: "0.3rem",
+          fontWeight: 600,
+          fontFamily: "'Playfair Display', serif",
+          color: "#4a005f",
+          textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
+          fontStyle: "italic"
         }}
       >
-        Welcome to <span style={{ color: "#aa4dc8" }}>SOLadventures</span>, the journey of a queen
+        Welcome to{" "}
+        <span
+          style={{
+            color: "#aa4dc8",
+            fontFamily: "'Poppins', sans-serif",
+            fontStyle: "normal"
+          }}
+        >
+          SOLadventures
+        </span>
       </motion.h1>
+
+      <motion.h2
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        style={{
+          fontSize: "1.8rem",
+          fontWeight: 600,
+          fontFamily: "'Playfair Display', serif",
+          color: "#4a005f",
+          textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
+          fontStyle: "italic",
+          marginBottom: "1.5rem"
+        }}
+      >
+        the journey of a Queen
+      </motion.h2>
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        style={{ fontSize: "1.1rem", color: "#333", marginBottom: "2rem" }}
+        transition={{ delay: 0.7 }}
+        style={{
+          fontSize: "1.3rem",
+          fontStyle: "italic",
+          fontWeight: 500,
+          color: "#6a1b9a",
+          marginBottom: "2rem"
+        }}
       >
-        Fluffy. Fierce. Fabulous. <span style={{ display: "inline-block", lineHeight: 1 }}>🐾🐾🐾</span>
+        Fluffy. Fierce. Fabulous.{" "}
+        <span style={{ display: "inline-block", lineHeight: 1 }}>
+          🐾🐾🐾
+        </span>
       </motion.p>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7 }}
+        transition={{ delay: 0.9 }}
       >
         <Link
           to="/episodes"
@@ -51,11 +92,14 @@ export default function Home() {
             backgroundColor: "#aa4dc8",
             color: "white",
             textDecoration: "none",
-            borderRadius: "8px",
+            borderRadius: "16px",
             fontWeight: "bold",
-            marginBottom: "1.5rem",
-            display: "inline-block"
+            display: "inline-block",
+            boxShadow: "0 4px 10px rgba(170, 77, 200, 0.3)",
+            transition: "transform 0.2s ease-in-out"
           }}
+          onMouseEnter={(e) => (e.target.style.transform = "scale(1.05)")}
+          onMouseLeave={(e) => (e.target.style.transform = "scale(1.0)")}
         >
           View the Journey
         </Link>
@@ -67,14 +111,15 @@ export default function Home() {
         rel="noopener noreferrer"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.9 }}
+        transition={{ delay: 1.1 }}
         style={{
           color: "#aa4dc8",
           textDecoration: "none",
           display: "inline-flex",
           alignItems: "center",
           fontWeight: "normal",
-          fontSize: "0.95rem"
+          fontSize: "0.95rem",
+          marginTop: "1.5rem"
         }}
       >
         <img

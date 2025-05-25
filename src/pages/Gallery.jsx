@@ -20,8 +20,24 @@ export default function GalleryPage() {
   const slides = episodes.map((ep) => ({ src: `/${ep.image}` }));
 
   return (
-    <div className="gallery-page" style={{ padding: "2rem" }}>
-      <h1 style={{ fontSize: "2rem", color: "#aa4dc8", textAlign: "center", marginBottom: "2rem" }}>
+    <div
+      className="gallery-page"
+      style={{
+        padding: "2rem",
+        fontFamily: "'Poppins', sans-serif",
+        background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
+        minHeight: "100vh"
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "2rem",
+          color: "#aa4dc8",
+          textAlign: "center",
+          marginBottom: "2rem",
+          fontWeight: "bold"
+        }}
+      >
         SOLadventures Gallery
       </h1>
       <div
@@ -46,17 +62,20 @@ export default function GalleryPage() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              background: "#fff",
+              background: "#ffffffcc",
               borderRadius: "12px",
-              boxShadow: "0 4px 16px rgba(0,0,0,0.1)",
+              boxShadow: "0 4px 16px rgba(170, 77, 200, 0.15)",
               overflow: "hidden",
-              cursor: "pointer"
+              cursor: "zoom-in",
+              transition: "transform 0.2s ease-in-out"
             }}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
           >
             <img
               src={`/${ep.image}`}
               alt={ep.title}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto", objectFit: "cover" }}
             />
             <div
               style={{
@@ -90,18 +109,18 @@ export default function GalleryPage() {
       )}
 
       <style>{`
-  .caption-overlay {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-  }
+        .caption-overlay {
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+        }
 
-  @media (hover: hover) {
-    .gallery-tile:hover .caption-overlay {
-      opacity: 1 !important;
-    }
-  }
-`}</style>
+        @media (hover: hover) {
+          .gallery-tile:hover .caption-overlay {
+            opacity: 1 !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

@@ -13,7 +13,19 @@
   },
   {
     "id": 2,
-    "title": "SOLadventure #2 – Coming Soon 🐾",
+    "title": "SOLadventure #2 – Rome, with attitude 🐾 🇮🇹",
+    "quote": "She came. She saw. She purred.",
+    "caption": "Colosseum? Just her playground. History bows when she walks 🐾🐾🐾",
+    "image": "episodes/rome.png",
+    "location": {
+      "lat": 41.8902,
+      "lng": 12.4922
+    },
+    "visible": true
+  },
+  {
+    "id": 3,
+    "title": "SOLadventure #3 – Coming Soon 🐾",
     "quote": "",
     "caption": "Stay tuned for the next purrfect stop 🐾🐾🐾",
     "image": "episodes/coming-soon.png",

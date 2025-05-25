@@ -4,6 +4,38 @@
 
 ---
 
+## v1.7 - Cinematic Welcome & Unified Style (2025-05-25)
+
+### ? Home Page
+- Refactored headings:
+  - "Welcome to" and "the journey of a Queen" now use Playfair Display (italic serif)
+  - Sharpened textShadow for clean cinematic feel
+  - Maintained bold pop style for "SOLadventures"
+
+### ??? Map Page
+- Animated route between episode locations:
+  - Pathline progressively unfolds city-to-city
+  - Paw icon now moves smoothly and accurately
+  - Button state resets properly after journey completes
+
+### ?? Gallery Page
+- Visuals now match cinematic theme
+- Font, spacing, and hover behavior aligned with global style
+
+### ?? Episodes Page
+- Typography and layout unified:
+  - Headings updated for consistency with homepage
+  - Padding/margin standardized across all screen sizes
+
+### ?? Global Styling
+- All pages now use consistent:
+  - Font stack and sizes
+  - Heading hierarchy
+  - Color palette (#aa4dc8 / #4a005f / background gradient)
+- Mobile layout adjusted for optimal readability
+
+
+
 ## [v1.6] - 2025-05-24
 
 ### Προσθήκες & Βελτιώσεις
