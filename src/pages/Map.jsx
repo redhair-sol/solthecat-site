@@ -96,7 +96,8 @@ export default function MapPage() {
 
   useEffect(() => {
     if (!start && titles.length > 0) {
-      setLocationText(`📍 Current Location: ${titles[0]}`);
+      // ✅ Δείχνουμε τη σωστή (τελευταία) πόλη ως αρχική τοποθεσία
+      setLocationText(`📍 Current Location: ${titles[titles.length - 1]}`);
     }
   }, [start, titles]);
 
@@ -190,19 +191,19 @@ export default function MapPage() {
             <Marker key={`paw-${idx}`} position={pos} icon={pawIcon} />
           ))}
 
-          {/* Popup για την τελική πόλη */}
+          {/* Popup για την τελευταία πόλη */}
           {!start && (
             <Marker position={current}>
               <Popup>{currentTitle}<br />Here she is 🐾</Popup>
             </Marker>
           )}
 
-          {/* Γραμμή (μόνιμη) */}
+          {/* Γραμμή (μένει μόνιμα μετά το animation) */}
           {completedRoute && (
             <Polyline positions={completedRoute} color="#aa4dc8" weight={4} />
           )}
 
-          {/* Animation */}
+          {/* Κινούμενο πατουσάκι */}
           {start && (
             <AnimatedMarker
               key={`journey-${journeyId}`}
