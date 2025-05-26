@@ -1,4 +1,84 @@
 import { useEffect, useState } from "react";
+import styled from "styled-components";
+
+const PageContainer = styled.div`
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
+  min-height: 100vh;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 2rem;
+  color: #aa4dc8;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+`;
+
+const EpisodesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+`;
+
+const EpisodeCard = styled.div`
+  max-width: 600px;
+  width: 100%;
+  background: #ffffffcc;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(170, 77, 200, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
+`;
+
+const EpisodeImage = styled.img`
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+`;
+
+const EpisodeTitle = styled.h2`
+  color: #6a1b9a;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.05rem;
+  }
+`;
+
+const EpisodeQuote = styled.p`
+  font-style: italic;
+  color: #944f9e;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+`;
+
+const EpisodeCaption = styled.p`
+  font-size: 0.9rem;
+  color: #333;
+`;
 
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
@@ -16,71 +96,21 @@ export default function Episodes() {
   }, []);
 
   return (
-    <div
-      className="episodes-page"
-      style={{
-        padding: "2rem",
-        fontFamily: "'Poppins', sans-serif",
-        background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
-        minHeight: "100vh"
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "2rem",
-          color: "#aa4dc8",
-          textAlign: "center",
-          marginBottom: "2rem",
-          fontWeight: "bold"
-        }}
-      >
-        SOLadventures
-      </h1>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "2rem"
-        }}
-      >
+    <PageContainer>
+      <Title>SOLadventures</Title>
+      <EpisodesWrapper>
         {episodes.map((ep) => (
-          <div
-            key={ep.id}
-            style={{
-              maxWidth: "600px",
-              width: "90%",
-              background: "#ffffffcc",
-              padding: "1.5rem",
-              borderRadius: "16px",
-              boxShadow: "0 4px 20px rgba(170, 77, 200, 0.2)",
-              textAlign: "center",
-              margin: "0 auto",
-              transition: "transform 0.2s ease-in-out"
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.03)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1.0)")}
-          >
-            <img
+          <EpisodeCard key={ep.id}>
+            <EpisodeImage
               src={`${import.meta.env.BASE_URL}${ep.image}`}
               alt={ep.title}
-              style={{
-                width: "100%",
-                borderRadius: "12px",
-                objectFit: "cover",
-                marginBottom: "1rem"
-              }}
             />
-            <h2 style={{ color: "#6a1b9a", fontWeight: "600", fontSize: "1.2rem", marginBottom: "0.5rem" }}>
-              {ep.title}
-            </h2>
-            <p style={{ fontStyle: "italic", color: "#944f9e", marginBottom: "0.5rem" }}>
-              {ep.quote}
-            </p>
-            <p style={{ fontSize: "0.9rem", color: "#333" }}>{ep.caption}</p>
-          </div>
+            <EpisodeTitle>{ep.title}</EpisodeTitle>
+            <EpisodeQuote>{ep.quote}</EpisodeQuote>
+            <EpisodeCaption>{ep.caption}</EpisodeCaption>
+          </EpisodeCard>
         ))}
-      </div>
-    </div>
+      </EpisodesWrapper>
+    </PageContainer>
   );
 }

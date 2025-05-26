@@ -32,6 +32,10 @@ function AnimatedMarker({ route, titles, delay = 3000, onUpdateIndex, onComplete
 
     function step() {
       if (stepIndex.current >= route.length) {
+        const last = route[route.length - 1];
+        if (map && last) {
+          map.setView(last, 7, { animate: true });
+        }
         if (onComplete) onComplete();
         return;
       }
@@ -58,9 +62,7 @@ function AnimatedMarker({ route, titles, delay = 3000, onUpdateIndex, onComplete
           <Popup>{titles[idx]}</Popup>
         </Marker>
       ))}
-      {route[currentIndex] && (
-        <Marker position={route[currentIndex]} icon={pawIcon} />
-      )}
+      <Marker position={route[Math.min(currentIndex, route.length - 1)]} icon={pawIcon} />
       {traveled.length > 1 && (
         <Polyline positions={traveled} color="#aa4dc8" weight={4} />
       )}
@@ -74,6 +76,7 @@ export default function MapPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [locationText, setLocationText] = useState("");
   const [journeyId, setJourneyId] = useState(0);
+  const [completedRoute, setCompletedRoute] = useState(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -93,7 +96,7 @@ export default function MapPage() {
 
   useEffect(() => {
     if (!start && titles.length > 0) {
-      setLocationText(`📍 Current Location: ${titles[titles.length - 1]}`);
+      setLocationText(`📍 Current Location: ${titles[0]}`);
     }
   }, [start, titles]);
 
@@ -106,11 +109,13 @@ export default function MapPage() {
   const handleStart = () => {
     setStart(true);
     setJourneyId((prev) => prev + 1);
+    setCompletedRoute(null);
   };
 
   const handleComplete = () => {
     setStart(false);
     setLocationText(`📍 Current Location: ${titles[titles.length - 1]}`);
+    setCompletedRoute(route);
   };
 
   return (
@@ -180,12 +185,24 @@ export default function MapPage() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
+          {/* Πατουσάκια για κάθε πόλη */}
+          {route.map((pos, idx) => (
+            <Marker key={`paw-${idx}`} position={pos} icon={pawIcon} />
+          ))}
+
+          {/* Popup για την τελική πόλη */}
           {!start && (
             <Marker position={current}>
               <Popup>{currentTitle}<br />Here she is 🐾</Popup>
             </Marker>
           )}
 
+          {/* Γραμμή (μόνιμη) */}
+          {completedRoute && (
+            <Polyline positions={completedRoute} color="#aa4dc8" weight={4} />
+          )}
+
+          {/* Animation */}
           {start && (
             <AnimatedMarker
               key={`journey-${journeyId}`}

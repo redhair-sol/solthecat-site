@@ -4,37 +4,26 @@
 
 ---
 
-## v1.7 - Cinematic Welcome & Unified Style (2025-05-25)
+## [2.0.0] - 2025-05-26
 
-### ? Home Page
-- Refactored headings:
-  - "Welcome to" and "the journey of a Queen" now use Playfair Display (italic serif)
-  - Sharpened textShadow for clean cinematic feel
-  - Maintained bold pop style for "SOLadventures"
+### Added
+- New episode: **SOLadventure #2 - Rome, with attitude ????**
+- Animated path with paw icon between cities
+- Automatic marker (paw) for every visible episode location
+- Final zoom to last destination
+- Dynamic persistent route line after animation ends
 
-### ??? Map Page
-- Animated route between episode locations:
-  - Pathline progressively unfolds city-to-city
-  - Paw icon now moves smoothly and accurately
-  - Button state resets properly after journey completes
+### Changed
+- Rewrote Map.jsx with full animation logic
+- Improved mobile behavior for captions and interactions
 
-### ?? Gallery Page
-- Visuals now match cinematic theme
-- Font, spacing, and hover behavior aligned with global style
+### Fixed
+- Bug where final marker was missing after animation
+- Caption overlay not appearing properly across devices
 
-### ?? Episodes Page
-- Typography and layout unified:
-  - Headings updated for consistency with homepage
-  - Padding/margin standardized across all screen sizes
-
-### ?? Global Styling
-- All pages now use consistent:
-  - Font stack and sizes
-  - Heading hierarchy
-  - Color palette (#aa4dc8 / #4a005f / background gradient)
-- Mobile layout adjusted for optimal readability
-
-
+### Notes
+- Ready to scale with future SOLadventure episodes
+- Fully stable for publishing and deploy
 
 ## [v1.6] - 2025-05-24
 

@@ -1,6 +1,113 @@
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import styled from "styled-components";
+
+const PageContainer = styled.div`
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
+  min-height: 100vh;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+  }
+`;
+
+const GalleryTitle = styled.h1`
+  font-size: 2rem;
+  color: #aa4dc8;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+`;
+
+const Tile = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(170, 77, 200, 0.15);
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .caption-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .caption-static {
+    display: none;
+    margin-top: 0.5rem;
+    color: #444;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  @media (hover: hover) {
+    &:hover .caption-overlay {
+      opacity: 1;
+    }
+
+    .caption-static {
+      display: none;
+    }
+  }
+
+  @media (hover: none) {
+    .caption-overlay {
+      display: none;
+    }
+
+    .caption-static {
+      display: block;
+    }
+  }
+`;
 
 export default function GalleryPage() {
   const [episodes, setEpisodes] = useState([]);
@@ -11,7 +118,7 @@ export default function GalleryPage() {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
       .then((res) => res.json())
       .then((data) => {
-        const visibleEpisodes = data.filter(ep => ep.visible);
+        const visibleEpisodes = data.filter((ep) => ep.visible);
         setEpisodes(visibleEpisodes);
       })
       .catch((err) => console.error("Failed to load episodes:", err));
@@ -19,85 +126,21 @@ export default function GalleryPage() {
 
   const slides = episodes.map((ep) => ({ src: `/${ep.image}` }));
 
+  const cleanCaption = (caption) =>
+    caption.replace(/🐾/g, "").trim();
+
   return (
-    <div
-      className="gallery-page"
-      style={{
-        padding: "2rem",
-        fontFamily: "'Poppins', sans-serif",
-        background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
-        minHeight: "100vh"
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "2rem",
-          color: "#aa4dc8",
-          textAlign: "center",
-          marginBottom: "2rem",
-          fontWeight: "bold"
-        }}
-      >
-        SOLadventures Gallery
-      </h1>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-          gap: "1.5rem",
-          maxWidth: "1000px",
-          margin: "0 auto"
-        }}
-      >
+    <PageContainer>
+      <GalleryTitle>SOLadventures Gallery</GalleryTitle>
+      <Grid>
         {episodes.map((ep, i) => (
-          <div
-            key={ep.id}
-            className="gallery-tile"
-            onClick={() => {
-              setIndex(i);
-              setOpen(true);
-            }}
-            style={{
-              position: "relative",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              background: "#ffffffcc",
-              borderRadius: "12px",
-              boxShadow: "0 4px 16px rgba(170, 77, 200, 0.15)",
-              overflow: "hidden",
-              cursor: "zoom-in",
-              transition: "transform 0.2s ease-in-out"
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.02)")}
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-          >
-            <img
-              src={`/${ep.image}`}
-              alt={ep.title}
-              style={{ width: "100%", height: "auto", objectFit: "cover" }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                width: "100%",
-                padding: "1rem",
-                background: "rgba(0, 0, 0, 0.6)",
-                color: "white",
-                textAlign: "center",
-                opacity: 0,
-                transition: "opacity 0.3s ease",
-                fontSize: "0.9rem"
-              }}
-              className="caption-overlay"
-            >
-              {ep.caption}
-            </div>
-          </div>
+          <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>
+            <img src={`/${ep.image}`} alt={ep.title} />
+            <div className="caption-overlay">{cleanCaption(ep.caption)}</div>
+            <div className="caption-static">{cleanCaption(ep.caption)}</div>
+          </Tile>
         ))}
-      </div>
+      </Grid>
 
       {open && (
         <Lightbox
@@ -107,20 +150,6 @@ export default function GalleryPage() {
           slides={slides}
         />
       )}
-
-      <style>{`
-        .caption-overlay {
-          opacity: 0;
-          transition: opacity 0.3s ease;
-          pointer-events: none;
-        }
-
-        @media (hover: hover) {
-          .gallery-tile:hover .caption-overlay {
-            opacity: 1 !important;
-          }
-        }
-      `}</style>
-    </div>
+    </PageContainer>
   );
 }
