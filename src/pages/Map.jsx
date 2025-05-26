@@ -96,7 +96,6 @@ export default function MapPage() {
 
   useEffect(() => {
     if (!start && titles.length > 0) {
-      // ✅ Δείχνουμε τη σωστή (τελευταία) πόλη ως αρχική τοποθεσία
       setLocationText(`📍 Current Location: ${titles[titles.length - 1]}`);
     }
   }, [start, titles]);
@@ -186,24 +185,26 @@ export default function MapPage() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {/* Πατουσάκια για κάθε πόλη */}
+          {/* Πατουσάκια με τίτλο */}
           {route.map((pos, idx) => (
-            <Marker key={`paw-${idx}`} position={pos} icon={pawIcon} />
+            <Marker key={`paw-${idx}`} position={pos} icon={pawIcon}>
+              <Popup>{titles[idx]}</Popup>
+            </Marker>
           ))}
 
-          {/* Popup για την τελευταία πόλη */}
+          {/* Τελική πόλη – popup όταν idle */}
           {!start && (
             <Marker position={current}>
               <Popup>{currentTitle}<br />Here she is 🐾</Popup>
             </Marker>
           )}
 
-          {/* Γραμμή (μένει μόνιμα μετά το animation) */}
+          {/* Γραμμή */}
           {completedRoute && (
             <Polyline positions={completedRoute} color="#aa4dc8" weight={4} />
           )}
 
-          {/* Κινούμενο πατουσάκι */}
+          {/* Animation */}
           {start && (
             <AnimatedMarker
               key={`journey-${journeyId}`}
