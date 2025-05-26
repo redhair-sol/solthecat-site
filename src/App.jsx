@@ -1,6 +1,6 @@
 import Sidebar from "./components/Sidebar";
 import { Outlet } from "react-router-dom";
-import "./index.css"; // πρόσθεσέ το αν λείπει
+import "./index.css";
 
 function App() {
   return (
