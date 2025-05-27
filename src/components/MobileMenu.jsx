@@ -33,10 +33,10 @@ export default function MobileMenu({ isOpen, onClose }) {
           <Link to="/gallery" onClick={onClose}>Gallery</Link>
         </nav>
 
-        <div className="mt-auto p-4">
+        <div className="mt-auto p-mp4">
           <img
-            src="/images/sol-menu.png"
-            alt="SOL the Cat"
+            src="/images/sol-menu.gif"
+			alt="SOL the Cat animated"
             className="w-full max-h-52 object-contain mx-auto rounded-xl shadow-md"
           />
         </div>
