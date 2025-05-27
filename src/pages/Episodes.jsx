@@ -40,11 +40,11 @@ const EpisodeCard = styled.div`
   box-shadow: 0 4px 20px rgba(170, 77, 200, 0.2);
   text-align: center;
   transition: transform 0.2s ease-in-out;
-  opacity: ${({ isTeaser }) => (isTeaser ? 0.6 : 1)};
-  filter: ${({ isTeaser }) => (isTeaser ? "grayscale(100%)" : "none")};
+  opacity: ${({ $isTeaser }) => ($isTeaser ? 0.6 : 1)};
+  filter: ${({ $isTeaser }) => ($isTeaser ? "grayscale(100%)" : "none")};
 
   &:hover {
-    transform: ${({ isTeaser }) => (isTeaser ? "none" : "scale(1.03)")};
+    transform: ${({ $isTeaser }) => ($isTeaser ? "none" : "scale(1.03)")};
   }
 
   @media (max-width: 480px) {
@@ -57,7 +57,7 @@ const EpisodeImage = styled.img`
   border-radius: 12px;
   object-fit: cover;
   margin-bottom: 1rem;
-  filter: ${({ isTeaser }) => (isTeaser ? "grayscale(100%) brightness(0.95)" : "none")};
+  filter: ${({ $isTeaser }) => ($isTeaser ? "grayscale(100%) brightness(0.95)" : "none")};
 `;
 
 const EpisodeTitle = styled.h2`
@@ -93,7 +93,7 @@ const LanguageToggle = styled.div`
 const ToggleButton = styled.button`
   padding: 0.3rem 0.8rem;
   border: 1px solid #ccc;
-  background-color: ${({ active }) => (active ? '#f8bbd0' : '#fff')};
+  background-color: ${({ $active }) => ($active ? '#f8bbd0' : '#fff')};
   border-radius: 8px;
   font-size: 0.85rem;
   cursor: pointer;
@@ -144,21 +144,21 @@ export default function Episodes() {
       <Title>SOLadventures</Title>
 
       <LanguageToggle>
-        <ToggleButton onClick={() => setLanguage("en")} active={language === "en"}>
+        <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
           🇬🇧 English
         </ToggleButton>
-        <ToggleButton onClick={() => setLanguage("el")} active={language === "el"}>
+        <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}>
           🇬🇷 Ελληνικά
         </ToggleButton>
       </LanguageToggle>
 
       <EpisodesWrapper>
         {episodes.map((ep) => (
-          <EpisodeCard key={ep.id} isTeaser={!ep.visible}>
+          <EpisodeCard key={ep.id} $isTeaser={!ep.visible}>
             <EpisodeImage
               src={`${import.meta.env.BASE_URL}${ep.image}`}
               alt={ep.title}
-              isTeaser={!ep.visible}
+              $isTeaser={!ep.visible}
             />
             <EpisodeTitle>{ep.title}</EpisodeTitle>
             {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
