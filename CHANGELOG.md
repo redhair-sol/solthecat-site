@@ -3,6 +3,27 @@
 Όλες οι σημαντικές αλλαγές που έγιναν στη SOLadventures ιστοσελίδα.
 
 ---
+
+## v2.4.0 - 2025-05-27
+
+### ? Features
+- Added dynamic "Coming Soon" teaser card after last visible episode
+  - Displays as: `SOLadventure #[n+1] - Coming Soon ??`
+  - Uses grayscale styling and opacity to visually separate
+- Episode list now pulls only `visible: true` entries from `episodes.json`
+- Teaser card is not tied to actual episode data (no story, no quote)
+
+### ?? Content
+- Added full bilingual (EN/EL) `story` field for episodes 1-12
+- Stories appear automatically when episode is published
+
+### ?? Styling
+- Applied grayscale and reduced opacity for teaser episodes
+- Prevented teaser cards from triggering hover animation
+
+### ?? Internationalization
+- Language toggle (????/????) maintained across full episode and story content
+
 ## [v2.3.0] - 2025-05-26
 
 ### Προσθήκες

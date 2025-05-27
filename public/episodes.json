@@ -9,7 +9,11 @@
       "lat": 37.9715,
       "lng": 23.7257
     },
-    "visible": true
+    "visible": true,
+    "story": {
+      "en": "First light in Athens. SOL woke atop the Parthenon marble, shook centuries of dust off her paws, and gazed at the city like something she had always owned. Tourists pointed their cameras, children tried to pet her, but she kept walking, unbothered. Goddesses don’t pose. They simply are.",
+      "el": "Πρώτο φως στην Αθήνα. Η SOL ξύπνησε πάνω στο μάρμαρο του Παρθενώνα, τίναξε αιώνες σκόνης από τις πατούσες της και αγνάντεψε την πόλη σαν κάτι που της ανήκε πάντα. Οι τουρίστες την έβγαζαν φωτογραφία, τα παιδιά προσπαθούσαν να την χαϊδέψουν, αλλά εκείνη προχωρούσε ατάραχη. Οι θεές δεν ποζάρουν. Απλώς υπάρχουν."
+    }
   },
   {
     "id": 2,
@@ -21,15 +25,10 @@
       "lat": 41.8902,
       "lng": 12.4922
     },
-    "visible": true
-  },
-  {
-    "id": 3,
-    "title": "SOLadventure #3 – Coming Soon 🐾",
-    "quote": "",
-    "caption": "Stay tuned for the next purrfect stop 🐾🐾🐾",
-    "image": "episodes/coming-soon.png",
-    "location": null,
-    "visible": false
+    "visible": true,
+    "story": {
+      "en": "She hadn’t even fully entered the city, and heads were already turning. Romans know legends when they see them — but they’d never seen one this fluffy. She climbed the Spanish Steps without a glance back, purred through Piazza Navona, and claimed the Colosseum like she built it herself. A guard near the Vatican muttered, “These Romans are crazy.” She didn’t flinch. Just strutted. That’s attitude.",
+      "el": "Δεν είχε καν μπει ολόκληρη στην πόλη και ήδη γύριζαν κεφάλια. Οι Ρωμαίοι αναγνωρίζουν τους θρύλους — αλλά ποτέ δεν είχαν δει έναν τόσο φουντωτό. Ανέβηκε τα Σκαλιά της Ισπανίας χωρίς να ρίξει ματιά πίσω, γουργούρισε στην Piazza Navona και κατέλαβε το Κολοσσαίο σαν να το είχε χτίσει η ίδια. Ένας φρουρός κοντά στο Βατικανό μουρμούρισε: «Αυτοί οι Ρωμαίοι είναι τρελοί». Δεν έδειξε καμία αντίδραση. Περπάτησε. Αυτό είναι attitude."
+    }
   }
 ]
