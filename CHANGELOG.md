@@ -4,6 +4,22 @@
 
 ---
 
+## v2.5.0 - Visual refinement & Topbar styling (2025-05-28)
+
+### ? Aesthetic updates
+- Changed site background from pure white (`#ffffff`) to soft pastel pink (`#fef8f8`)
+- Improved layout contrast and visual balance
+
+### ?? Topbar
+- Switched navigation font to `Marcellus`
+- Increased size and weight for readability
+- Added spacing above Topbar on desktop
+
+### ? Result
+- Visually balanced, softer appearance
+- Navigation feels refined and elegant
+- Responsive layout fully preserved
+
 ## v2.4.0 - 2025-05-27
 
 ### ? Features
