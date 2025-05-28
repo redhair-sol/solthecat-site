@@ -5,6 +5,7 @@ import {
   Marker,
   Popup,
   Polyline,
+  Tooltip,
   useMap
 } from "react-leaflet";
 import L from "leaflet";
@@ -185,26 +186,50 @@ export default function MapPage() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {/* Πατουσάκια με τίτλο */}
-          {route.map((pos, idx) => (
-            <Marker key={`paw-${idx}`} position={pos} icon={pawIcon}>
-              <Popup>{titles[idx]}</Popup>
+          {/* Πατουσάκια με preview */}
+          {episodes.map((ep, idx) => (
+            <Marker
+              key={`paw-${idx}`}
+              position={[ep.location.lat, ep.location.lng]}
+              icon={pawIcon}
+            >
+              <Tooltip direction="top" offset={[0, -20]} opacity={1} permanent={false}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    maxWidth: "160px",
+                    whiteSpace: "normal",
+                    wordWrap: "break-word",
+                    fontSize: "0.85rem",
+                    lineHeight: "1.2rem",
+                    padding: "2px"
+                  }}
+                >
+                  <div style={{ fontWeight: "bold", marginBottom: "4px" }}>{ep.title}</div>
+                  <img
+                    src={`${import.meta.env.BASE_URL}${ep.image}`}
+                    alt={ep.title}
+                    style={{
+                      width: "100%",
+                      borderRadius: "8px",
+                      boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)"
+                    }}
+                  />
+                </div>
+              </Tooltip>
             </Marker>
           ))}
 
-          {/* Τελική πόλη – popup όταν idle */}
           {!start && (
             <Marker position={current}>
               <Popup>{currentTitle}<br />Here she is 🐾</Popup>
             </Marker>
           )}
 
-          {/* Γραμμή */}
           {completedRoute && (
             <Polyline positions={completedRoute} color="#aa4dc8" weight={4} />
           )}
 
-          {/* Animation */}
           {start && (
             <AnimatedMarker
               key={`journey-${journeyId}`}
