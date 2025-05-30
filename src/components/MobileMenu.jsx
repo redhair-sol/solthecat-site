@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
+import LogoTextMobile from "./LogoTextMobile";
 
 export default function MobileMenu({ isOpen, onClose }) {
   return (
@@ -20,23 +21,28 @@ export default function MobileMenu({ isOpen, onClose }) {
         } shadow-lg flex flex-col`}
       >
         <div className="flex justify-between items-center p-4 border-b border-pink-300">
-          <span className="font-bold text-lg">SOLadventures</span>
+          <LogoTextMobile />
           <button onClick={onClose}>
             <X className="w-6 h-6" />
           </button>
         </div>
 
-        <nav className="flex flex-col p-4 gap-4 text-lg">
-          <Link to="/" onClick={onClose}>Home</Link>
-          <Link to="/episodes" onClick={onClose}>Episodes</Link>
-          <Link to="/map" onClick={onClose}>Map</Link>
-          <Link to="/gallery" onClick={onClose}>Gallery</Link>
+        {/* Navigation */}
+        <nav
+          className="flex flex-col p-4 gap-4 text-2xl text-black"
+          style={{ fontFamily: '"Dancing Script", cursive' }}
+        >
+          <Link to="/" onClick={onClose} className="hover:underline">Home</Link>
+          <Link to="/episodes" onClick={onClose} className="hover:underline">Episodes</Link>
+          <Link to="/map" onClick={onClose} className="hover:underline">Map</Link>
+          <Link to="/gallery" onClick={onClose} className="hover:underline">Gallery</Link>
         </nav>
 
-        <div className="mt-auto p-mp4">
+        {/* Animated SOL image */}
+        <div className="mt-auto p-4">
           <img
             src="/images/sol-menu.gif"
-			alt="SOL the Cat animated"
+            alt="SOL the Cat animated"
             className="w-full max-h-52 object-contain mx-auto rounded-xl shadow-md"
           />
         </div>

@@ -4,6 +4,26 @@
 
 ---
 
+## [2.5.0] - 2025-05-30
+
+### Added
+- Component `SolBrand.jsx` created to display the SOLadventures logo consistently with crown.
+- `LogoTextMobile.jsx` added for mobile-specific use of SOLadventures branding.
+
+### Changed
+- Mobile and desktop navigation (`Sidebar.jsx`, `MobileMenu.jsx`) updated to include `SolBrand` with consistent font and layout.
+- Replaced all static "SOLadventures" `<h1>` page titles with the dynamic `<SolBrand />` component for:
+  - `Episodes.jsx`
+  - `Gallery.jsx`
+  - `Map.jsx` (desktop only; mobile pending due to layout issues)
+
+### Fixed
+- Visual hover caption behavior in `Gallery.jsx` for desktop and static caption on mobile.
+- Unified styling for `Sidebar` links (font-family, size, spacing).
+
+### Pending
+- Consistent vertical alignment of `SolBrand` on mobile in `Map.jsx` (to be addressed in future release).
+
 ## v2.5.0 - Visual refinement & Topbar styling (2025-05-28)
 
 ### ? Aesthetic updates

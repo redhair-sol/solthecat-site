@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styled from "styled-components";
+import SolBrand from "../components/SolBrand";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -11,18 +12,6 @@ const PageContainer = styled.div`
 
   @media (max-width: 480px) {
     padding: 1.5rem 1rem;
-  }
-`;
-
-const GalleryTitle = styled.h1`
-  font-size: 2rem;
-  color: #aa4dc8;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-weight: bold;
-
-  @media (max-width: 480px) {
-    font-size: 1.6rem;
   }
 `;
 
@@ -131,7 +120,10 @@ export default function GalleryPage() {
 
   return (
     <PageContainer>
-      <GalleryTitle>SOLadventures Gallery</GalleryTitle>
+      <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
+        <SolBrand />
+      </div>
+
       <Grid>
         {episodes.map((ep, i) => (
           <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import SolBrand from "../components/SolBrand";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -141,7 +142,7 @@ export default function Episodes() {
 
   return (
     <PageContainer>
-      <Title>SOLadventures</Title>
+      <Title><SolBrand size="2.5rem" centered /></Title>
 
       <LanguageToggle>
         <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>

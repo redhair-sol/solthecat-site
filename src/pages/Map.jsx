@@ -10,6 +10,7 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import SolBrand from "../components/SolBrand";
 
 const pawIcon = new L.Icon({
   iconUrl: "/icons/toe.png",
@@ -129,9 +130,9 @@ export default function MapPage() {
         textAlign: "center"
       }}
     >
-      <h1 style={{ color: "#aa4dc8", fontSize: "2rem", marginBottom: "0.5rem" }}>
-        SOLadventures Map
-      </h1>
+    <div style={{ display: "flex", justifyContent: "center", marginBottom: "1rem" }}>
+		<SolBrand />
+	</div>
 
       <p style={{ marginBottom: "1rem", fontSize: "1rem", color: "#6a1b9a" }}>
         {locationText}
@@ -186,7 +187,6 @@ export default function MapPage() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {/* Πατουσάκια με preview */}
           {episodes.map((ep, idx) => (
             <Marker
               key={`paw-${idx}`}

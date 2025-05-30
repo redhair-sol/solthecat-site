@@ -22,20 +22,13 @@ const Title = styled(motion.h1)`
   font-size: 2.7rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-style: italic;
   color: #4a005f;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  font-style: italic;
 
   @media (max-width: 480px) {
     font-size: 2.2rem;
   }
-`;
-
-const Highlight = styled.span`
-  color: #aa4dc8;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
 `;
 
 const Subtitle = styled(motion.h2)`
@@ -109,7 +102,16 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
       >
-        Welcome to <Highlight>SOLadventures</Highlight>
+        <span
+          style={{
+            fontFamily: '"Dancing Script", cursive',
+            color: "#aa4dc8",
+            fontWeight: 700,
+            fontSize: "3rem",
+          }}
+        >
+          SOLadventures <span style={{ marginLeft: "0.2rem" }}>👑</span>
+        </span>
       </Title>
 
       <Subtitle
