@@ -4,7 +4,22 @@
 
 ---
 
-## [2.5.0] - 2025-05-30
+## [2.6.1] - 2025-05-30
+
+### Changed
+- Refactored `SolBrand.jsx` for consistent appearance across all pages and devices.
+  - ?? Emoji is now vertically aligned and displayed inline.
+  - Unified layout using `inline-flex` to avoid line breaks in mobile view.
+  - Font size and spacing now adapt cleanly across breakpoints.
+
+### Fixed
+- Mobile layout issue on `/map` where the logo was misaligned or broken into two lines.
+- Removed unnecessary margin-top tricks and replaced with proper flexbox layout.
+
+### Visual Consistency
+- `SolBrand` now looks identical in `/`, `/episodes`, `/gallery`, and `/map` on both desktop and mobile.
+
+## [2.6.0] - 2025-05-30
 
 ### Added
 - Component `SolBrand.jsx` created to display the SOLadventures logo consistently with crown.

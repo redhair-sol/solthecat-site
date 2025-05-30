@@ -1,4 +1,3 @@
-// src/components/SolBrand.jsx
 import React from "react";
 
 export default function SolBrand({ size = "2.5rem", centered = false }) {
@@ -10,9 +9,21 @@ export default function SolBrand({ size = "2.5rem", centered = false }) {
         fontWeight: 700,
         fontSize: size,
         textAlign: centered ? "center" : "left",
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "0.4rem",
+        lineHeight: 1.1
       }}
     >
-      SOLadventures <span style={{ marginLeft: "0.2rem" }}>👑</span>
+      <span>SOLadventures</span>
+      <span
+        style={{
+          fontSize: "0.9em",
+          transform: "translateY(-2px)"
+        }}
+      >
+        👑
+      </span>
     </div>
   );
 }
