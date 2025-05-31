@@ -18,7 +18,6 @@ const PageContainer = styled(motion.div)`
   }
 `;
 
-// 🔄 Title χωρίς animation (όχι πλέον motion.h1)
 const Title = styled.h1`
   font-size: 2.7rem;
   margin-bottom: 0.3rem;
@@ -143,7 +142,11 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.1 }}
       >
-        <img src="/icons/instagram-icon.png" alt="Instagram" />
+        <img
+          src="/icons/instagram-icon.webp"
+          alt="Instagram"
+          loading="lazy"
+        />
         Follow on Instagram
       </InstagramLink>
     </PageContainer>
