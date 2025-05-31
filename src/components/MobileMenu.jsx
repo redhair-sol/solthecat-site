@@ -39,13 +39,18 @@ export default function MobileMenu({ isOpen, onClose }) {
           <Link to="/whoissol" onClick={onClose} className="hover:underline">About</Link>
         </nav>
 
-        {/* Animated SOL image */}
+        {/* Animated SOL video */}
         <div className="mt-auto p-4">
-          <img
-            src="/images/sol-menu.gif"
-            alt="SOL the Cat animated"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full max-h-52 object-contain mx-auto rounded-xl shadow-md"
-          />
+          >
+            <source src="/images/sol-menu.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </>
