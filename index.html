@@ -25,22 +25,55 @@
   <meta name="twitter:image" content="https://solthecat.com/icons/sol-preview.png" />
 
   <!-- Structured Data -->
+
+  <!-- Organization schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Sol the Cat",
+      "url": "https://solthecat.com",
+      "logo": "https://solthecat.com/icons/sol-preview.png",
+      "sameAs": [
+        "https://www.instagram.com/solthecat01/"
+      ]
+    }
+  </script>
+
+  <!-- WebSite schema -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "url": "https://solthecat.com",
       "name": "solthecat – The Feline Queen's Official Journey",
       "alternateName": "Sol the Cat",
-      "url": "https://solthecat.com",
-      "description": "solthecat – also known as Sol the Cat – is the traveling feline queen. Explore her adventures, cities, and story around the world.",
-      "author": {
-        "@type": "Person",
-        "name": "Sol the Cat"
-      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://solthecat.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- Person schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sol the Cat",
+      "alternateName": "solthecat",
+      "description": "A feline queen and Instagram adventurer. Traveling the world one paw at a time.",
       "image": "https://solthecat.com/icons/sol-preview.png",
+      "url": "https://solthecat.com",
       "sameAs": [
         "https://www.instagram.com/solthecat01/"
-      ]
+      ],
+      "jobTitle": "Queen of Cat Content",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Greece"
+      }
     }
   </script>
 
