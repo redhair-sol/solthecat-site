@@ -44,13 +44,32 @@
     }
   </script>
 
-  <!-- Fonts & Favicon -->
-  <link rel="icon" href="/icons/instagram-icon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" /> 
+  <!-- Favicon -->
+  <link rel="icon" href="/icons/instagram-icon.webp" />
+
+  <!-- Preload LCP Font -->
+  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/dancingscript/v21/If2RXTr6YS-zF4S-kcSWSVi_szU.woff2" type="font/woff2" crossorigin />
+
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="/images/sol-menu.webp" type="image/webp" />
+
+  <!-- Google Fonts – Optimized Loading -->
+
+  <!-- Poppins -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" /></noscript>
+
+  <!-- Playfair Display Italic -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400&display=swap" /></noscript>
+
+  <!-- Marcellus -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" /></noscript>
+
+  <!-- Dancing Script -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" /></noscript>
 
   <!-- Cloudflare Analytics -->
   <script
