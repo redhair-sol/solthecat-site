@@ -106,16 +106,18 @@ export default function Home() {
           marginTop: "1.8rem",
         }}
       >
-        <img
-          src="/icons/instagram-icon.webp"
-          alt="Instagram"
-          style={{
-            width: "20px",
-            height: "20px",
-            marginRight: "0.4rem",
-            verticalAlign: "middle",
-          }}
-        />
+        <picture style={{ display: "inline-block", marginRight: "0.4rem" }}>
+          <source srcSet="/icons/instagram-icon.webp" type="image/webp" />
+          <img
+            src="/icons/instagram-icon.png"
+            alt="Instagram"
+            style={{
+              width: "20px",
+              height: "20px",
+              verticalAlign: "middle",
+            }}
+          />
+        </picture>
         Follow on Instagram
       </a>
     </PageContainer>
