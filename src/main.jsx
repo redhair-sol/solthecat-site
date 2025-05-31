@@ -21,8 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="episodes" element={<Episodes />} />
           <Route path="map" element={<Map />} />
           <Route path="gallery" element={<Gallery />} />
-          <Route path="sols-journey" element={<SOLsJourney />} />
-          <Route path="who-is-sol" element={<WhoIsSol />} /> {/* ✅ Direct-only route */}
+          <Route path="solsjourney" element={<SOLsJourney />} />
+          <Route path="whoissol" element={<WhoIsSol />} /> {/* ✅ Direct-only route */}
         </Route>
       </Routes>
     </BrowserRouter>

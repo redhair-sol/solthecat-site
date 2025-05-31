@@ -4,6 +4,21 @@
 
 ---
 
+## [v2.7.0] - 2025-05-31
+
+### Added
+- New brand header `<SolBrand />` at the top of the `/who-is-sol` page.
+- Greek and English biography texts with full bilingual toggle.
+- Watermark background image of SOL applied across full page (desktop & mobile).
+
+### Changed
+- Rewritten introduction paragraph in both languages for a more poetic and brand-consistent tone.
+- Improved responsive layout to ensure watermark image covers full pink area without distortion.
+- Layout width refined to maintain readability without text stretching.
+
+### Fixed
+- Visual imbalance on mobile where watermark was previously too faded or misplaced.
+
 ## [2.6.1] - 2025-05-30
 
 ### Changed
