@@ -44,13 +44,14 @@ export default function Home() {
     >
       <h1
         style={{
-          fontFamily: '"Dancing Script", cursive',
+          fontFamily: '"Dancing Script", cursive, sans-serif',
           color: "#aa4dc8",
           fontWeight: 700,
           fontSize: "3rem",
           textAlign: "center",
           marginBottom: "0.3rem",
           fontStyle: "italic",
+          letterSpacing: "0.02em",
           textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
         }}
       >
@@ -106,7 +107,7 @@ export default function Home() {
         }}
       >
         <img
-          src="/icons/instagram-icon.png"
+          src="/icons/instagram-icon.webp"
           alt="Instagram"
           style={{
             width: "20px",
