@@ -1,12 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import Episodes from './pages/Episodes.jsx'
 import Map from './pages/Map.jsx'
 import Gallery from './pages/Gallery.jsx'
-import SOLsJourney from './pages/SOLsJourney.jsx';  // <- νέο import
+import SOLsJourney from './pages/SOLsJourney.jsx'
+import WhoIsSol from './pages/WhoIsSol.jsx' // ✅ Κρυφή σελίδα
+
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,7 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="episodes" element={<Episodes />} />
           <Route path="map" element={<Map />} />
           <Route path="gallery" element={<Gallery />} />
-          <Route path="sols-journey" element={<SOLsJourney />} />  {/* <- νέο route */}
+          <Route path="sols-journey" element={<SOLsJourney />} />
+          <Route path="who-is-sol" element={<WhoIsSol />} /> {/* ✅ Direct-only route */}
         </Route>
       </Routes>
     </BrowserRouter>
