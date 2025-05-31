@@ -18,45 +18,6 @@ const PageContainer = styled(motion.div)`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 2.7rem;
-  margin-bottom: 0.3rem;
-  font-weight: 600;
-  font-style: italic;
-  color: #4a005f;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-
-  @media (max-width: 480px) {
-    font-size: 2.2rem;
-  }
-`;
-
-const Subtitle = styled(motion.h2)`
-  font-size: 1.8rem;
-  font-weight: 600;
-  font-family: 'Playfair Display', serif;
-  color: #4a005f;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  font-style: italic;
-  margin-bottom: 1.5rem;
-
-  @media (max-width: 480px) {
-    font-size: 1.4rem;
-  }
-`;
-
-const Tagline = styled(motion.p)`
-  font-size: 1.3rem;
-  font-style: italic;
-  font-weight: 500;
-  color: #6a1b9a;
-  margin-bottom: 2rem;
-
-  @media (max-width: 480px) {
-    font-size: 1.1rem;
-  }
-`;
-
 const JourneyButton = styled(Link)`
   padding: 0.8rem 1.5rem;
   background-color: #aa4dc8;
@@ -67,26 +28,10 @@ const JourneyButton = styled(Link)`
   display: inline-block;
   box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
   transition: transform 0.2s ease-in-out;
+  margin-top: 1.5rem;
 
   &:hover {
     transform: scale(1.05);
-  }
-`;
-
-const InstagramLink = styled(motion.a)`
-  color: #aa4dc8;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  font-weight: normal;
-  font-size: 0.95rem;
-  margin-top: 1.5rem;
-
-  img {
-    width: 20px;
-    height: 20px;
-    margin-right: 0.4rem;
-    vertical-align: middle;
   }
 `;
 
@@ -97,58 +42,81 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <Title>
-        <span
-          style={{
-            fontFamily: '"Dancing Script", cursive',
-            color: "#aa4dc8",
-            fontWeight: 700,
-            fontSize: "3rem",
-          }}
-        >
-          SOLadventures <span style={{ marginLeft: "0.2rem" }}>👑</span>
-        </span>
-      </Title>
+      <h1
+        style={{
+          fontFamily: '"Dancing Script", cursive',
+          color: "#aa4dc8",
+          fontWeight: 700,
+          fontSize: "3rem",
+          textAlign: "center",
+          marginBottom: "0.3rem",
+          fontStyle: "italic",
+          textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
+        }}
+      >
+        SOLadventures <span style={{ marginLeft: "0.2rem" }}>👑</span>
+      </h1>
 
-      <Subtitle
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}
+      <h2
+        style={{
+          fontSize: "1.8rem",
+          fontWeight: 600,
+          fontFamily: "'Playfair Display', serif",
+          color: "#4a005f",
+          fontStyle: "italic",
+          marginBottom: "1.2rem",
+          textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
+        }}
       >
         the journey of a Queen
-      </Subtitle>
+      </h2>
 
-      <Tagline
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7 }}
+      <p
+        style={{
+          fontSize: "1.3rem",
+          fontStyle: "italic",
+          fontWeight: 500,
+          color: "#6a1b9a",
+          marginBottom: "2rem",
+        }}
       >
         Fluffy. Fierce. Fabulous. 🐾🐾🐾
-      </Tagline>
+      </p>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.9 }}
+        transition={{ delay: 0.7 }}
       >
         <JourneyButton to="/episodes">View the Journey</JourneyButton>
       </motion.div>
 
-      <InstagramLink
+      <a
         href="https://www.instagram.com/solthecat01/"
         target="_blank"
         rel="noopener noreferrer"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.1 }}
+        style={{
+          color: "#aa4dc8",
+          textDecoration: "none",
+          display: "inline-flex",
+          alignItems: "center",
+          fontWeight: "normal",
+          fontSize: "0.95rem",
+          marginTop: "1.8rem",
+        }}
       >
         <img
-          src="/icons/instagram-icon.webp"
+          src="/icons/instagram-icon.png"
           alt="Instagram"
-          loading="lazy"
+          style={{
+            width: "20px",
+            height: "20px",
+            marginRight: "0.4rem",
+            verticalAlign: "middle",
+          }}
         />
         Follow on Instagram
-      </InstagramLink>
+      </a>
     </PageContainer>
   );
 }
