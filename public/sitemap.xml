@@ -26,18 +26,19 @@
     <lastmod>2025-05-31</lastmod>
     <priority>0.7</priority>
   </url>
+  
+  
+  <url>
+    <loc>https://solthecat.com/whoissol</loc>
+    <lastmod>2025-05-31</lastmod>
+    <priority>0.6</priority>
+  </url>
 
   <!-- Hidden / Optional Pages -->
   <url>
     <loc>https://solthecat.com/shop</loc>
     <lastmod>2025-05-31</lastmod>
     <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://solthecat.com/who-is-sol</loc>
-    <lastmod>2025-05-31</lastmod>
-    <priority>0.6</priority>
   </url>
 
 </urlset>

@@ -4,6 +4,22 @@
 
 ---
 
+## [v2.7.1] - 2025-05-31
+
+### Added
+- ?? Emoji added to the title of the "Who is Sol?" page in both English and Greek (`?? Who is Sol the Cat?`, `?? Ποια είναι η Sol;`).
+- "About" link added to the **desktop navigation (Topbar.jsx)** and **mobile menu (MobileMenu.jsx)**, linking to `/whoissol`.
+
+### Changed
+- Updated desktop layout to clarify that menu navigation is handled by `Topbar.jsx`, not `Sidebar.jsx`.
+- Clarified visual hierarchy and branding alignment by applying consistent emoji styling to section titles (e.g. matching the ? used in "Fun Facts").
+- Finalized the use of Topbar for all desktop navigation and Sidebar only for mobile hamburger logic.
+
+### Fixed
+- Desktop sidebar (`Sidebar.jsx`) was previously assumed to be visible on large screens; corrected structure by maintaining mobile-only behavior.
+- Navigation inconsistency between mobile and desktop regarding the visibility of the "About" page link.
+
+
 ## [v2.7.0] - 2025-05-31
 
 ### Added
