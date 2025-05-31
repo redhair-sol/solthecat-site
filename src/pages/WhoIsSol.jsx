@@ -6,7 +6,7 @@ export default function WhoIsSol() {
 
   const content = {
     en: {
-      title: "Who is Sol the Cat?",
+      title: "💫 Who is Sol the Cat?",
       intro1:
         "Sol isn’t just a cat — she’s one of a kind. She carries the charm of an old soul, the ease of a queen, and the quiet confidence that every space belongs to her. She’s the heart of SOLadventures, a storyteller with paws that wander from marble to cushions — and from Athens to Instagram.",
       intro2:
@@ -26,9 +26,9 @@ export default function WhoIsSol() {
       footer: "Yes, she has staff. You’re one of them now. 🐾",
     },
     el: {
-      title: "Ποια είναι η Sol η Γάτα;",
+      title: "💫 Ποια είναι η Sol;",
       intro1:
-        "Η Sol δεν είναι απλώς μια γάτα – είναι μοναδική. Έχει τη γοητεία μιας παλιάς ψυχής, την άνεση μιας βασίλισσας και τη σιγουριά ότι κάθε χώρος της ανήκει. Είναι η καρδιά των SOLadventures, μια αφηγήτρια με πατούσες που ταξιδεύουν από το μάρμαρο στα μαξιλάρια — κι από την Αθήνα στο Instagram.",
+        "Η Sol δεν είναι απλώς μια γάτα, είναι μοναδική. Έχει τη γοητεία μιας παλιάς ψυχής, την άνεση μιας βασίλισσας και τη σιγουριά ότι κάθε χώρος της ανήκει. Είναι η καρδιά των SOLadventures, μια αφηγήτρια με πατούσες που ταξιδεύουν από το μάρμαρο στα μαξιλάρια — κι από την Αθήνα στο Instagram.",
       intro2:
         "Γεννημένη στην Αθήνα, ήξερε πάντα ότι προοριζόταν για κάτι πέρα από απλούς ύπνους και ξυστράκια. Ξεκίνησε ως παρατηρήτρια των ανθρώπων – αλλά κάπου ανάμεσα στον Παρθενώνα και το πρώτο της reel, έγινε ένα γατίσιο είδωλο.",
       funFactsTitle: "✨ Μικρά Μυστικά της Sol",
@@ -43,7 +43,7 @@ export default function WhoIsSol() {
         { label: "Ζώδιο:", value: "Παρθένος ♍ (προφανώς)." },
         { label: "Αγαπημένος άνθρωπος:", value: "Ο μπαμπάς της." },
       ],
-      footer: "Ναι, έχει προσωπικό. Τώρα είσαι κι εσύ. 🐾",
+      footer: "Ναι, έχει προσωπικό. Τώρα είσαι κι εσύ μέλος. 🐾",
     },
   };
 
