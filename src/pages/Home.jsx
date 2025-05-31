@@ -18,7 +18,8 @@ const PageContainer = styled(motion.div)`
   }
 `;
 
-const Title = styled(motion.h1)`
+// 🔄 Title χωρίς animation (όχι πλέον motion.h1)
+const Title = styled.h1`
   font-size: 2.7rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
@@ -97,11 +98,7 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <Title
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-      >
+      <Title>
         <span
           style={{
             fontFamily: '"Dancing Script", cursive',
