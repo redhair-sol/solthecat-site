@@ -8,9 +8,9 @@ export default function WhoIsSol() {
     en: {
       title: "💫 Who is Sol the Cat?",
       intro1:
-        "Sol isn’t just a cat — she’s one of a kind. She carries the charm of an old soul, the ease of a queen, and the quiet confidence that every space belongs to her. She’s the heart of SOLadventures, a storyteller with paws that wander from marble to cushions — and from Athens to Instagram.",
+        "Sol isn’t just a cat. She’s a presence. With eyes that mesmerize, the grace of a queen, and the quiet certainty that every corner belongs to her, she’s the soul of SOLadventures. A storyteller with paws that journey from the marble of Athens to the cushions of imagination — and from there, straight to Instagram.",
       intro2:
-        "Born in Athens, Sol always knew she was destined for more than nap spots and scratching posts. She began her journey as a quiet observer of humans — but somewhere between the Parthenon and her first Instagram reel, she became a feline icon.",
+        "Born in Athens, Sol always knew the world was too small for her. She began as a silent observer — curious, composed, almost philosophical. But somewhere between the Parthenon and her first reel, she became more than a cat. She became a symbol. She became Sol.",
       funFactsTitle: "✨ Fun Facts About Sol",
       funFacts: [
         { label: "Favorite food:", value: "Cooked chicken. With attitude." },
@@ -20,17 +20,17 @@ export default function WhoIsSol() {
         { label: "Hobbies:", value: "Judging humans, starring in reels, ignoring expensive toys." },
         { label: "Dislikes:", value: "Loud noises, closed doors, and the word 'no'." },
         { label: "Secret talent:", value: "Looking royal even mid-yawn." },
-        { label: "Zodiac sign:", value: "Virgo ♍ (obviously)." },
-        { label: "Favorite human:", value: "Her dad." },
+        { label: "Zodiac sign:", value: "Virgo ♍." },
+        { label: "Favorite human:", value: "Her dad (obviously)." },
       ],
       footer: "Yes, she has staff. You’re one of them now. 🐾",
     },
     el: {
       title: "💫 Ποια είναι η Sol;",
       intro1:
-        "Η Sol δεν είναι απλώς μια γάτα, είναι μοναδική. Έχει τη γοητεία μιας παλιάς ψυχής, την άνεση μιας βασίλισσας και τη σιγουριά ότι κάθε χώρος της ανήκει. Είναι η καρδιά των SOLadventures, μια αφηγήτρια με πατούσες που ταξιδεύουν από το μάρμαρο στα μαξιλάρια — κι από την Αθήνα στο Instagram.",
+        "Η Sol δεν είναι απλώς μια γάτα. Είναι παρουσία. Με βλέμμα που μαγνητίζει, τη χάρη μιας βασίλισσας και τη σιγουριά ότι κάθε γωνιά της ανήκει, είναι η ψυχή των SOLadventures. Μια αφηγήτρια με πατούσες που ταξιδεύουν από το μάρμαρο της Αθήνας στα μαξιλάρια της φαντασίας — κι από εκεί, κατευθείαν στο Instagram.",
       intro2:
-        "Γεννημένη στην Αθήνα, ήξερε πάντα ότι προοριζόταν για κάτι πέρα από απλούς ύπνους και ξυστράκια. Ξεκίνησε ως παρατηρήτρια των ανθρώπων – αλλά κάπου ανάμεσα στον Παρθενώνα και το πρώτο της reel, έγινε ένα γατίσιο είδωλο.",
+        "Γεννημένη στην Αθήνα, η Sol ήξερε πάντα πως ο κόσμος είναι μικρός για εκείνη. Ξεκίνησε ως σιωπηλή παρατηρήτρια — περίεργη, γαλήνια, σχεδόν φιλοσοφημένη. Μα κάπου ανάμεσα στον Παρθενώνα και το πρώτο της reel, έγινε κάτι παραπάνω από γάτα. Έγινε σύμβολο. Έγινε Sol.",
       funFactsTitle: "✨ Μικρά Μυστικά της Sol",
       funFacts: [
         { label: "Αγαπημένο φαγητό:", value: "Ψητό κοτόπουλο. Με ύφος." },
@@ -40,8 +40,8 @@ export default function WhoIsSol() {
         { label: "Χόμπι:", value: "Να κρίνει ανθρώπους, να πρωταγωνιστεί σε reels, να αγνοεί ακριβά παιχνίδια." },
         { label: "Αντιπάθειες:", value: "Οι φασαρίες, οι κλειστές πόρτες και το «όχι»." },
         { label: "Κρυφό ταλέντο:", value: "Να δείχνει βασιλική ακόμη και με χασμουρητό." },
-        { label: "Ζώδιο:", value: "Παρθένος ♍ (προφανώς)." },
-        { label: "Αγαπημένος άνθρωπος:", value: "Ο μπαμπάς της." },
+        { label: "Ζώδιο:", value: "Παρθένος ♍." },
+        { label: "Αγαπημένος άνθρωπος:", value: "Ο μπαμπάς της (προφανώς)." },
       ],
       footer: "Ναι, έχει προσωπικό. Τώρα είσαι κι εσύ μέλος. 🐾",
     },
