@@ -32,49 +32,21 @@ export default function Dashboard() {
     }
   }, [navigate]);
 
+  // 🔐 Token and API access removed from public code
   useEffect(() => {
-    const fetchViews = async () => {
-      try {
-        const zoneResp = await fetch("https://api.cloudflare.com/client/v4/zones", {
-          headers: {
-            Authorization: "Bearer _4qyq9Kr8yLsGdle_yFD3P6U3NY_RanN9wUO_uKn",
-          },
-        });
-
-        const zoneData = await zoneResp.json();
-        const solZone = zoneData.result.find((z) => z.name === "solthecat.com");
-
-        if (solZone) {
-          const analyticsResp = await fetch(
-            `https://api.cloudflare.com/client/v4/zones/${solZone.id}/analytics/dashboard?since=-7d&continuous=true`,
-            {
-              headers: {
-                Authorization: "Bearer _4qyq9Kr8yLsGdle_yFD3P6U3NY_RanN9wUO_uKn",
-              },
-            }
-          );
-
-          const analyticsData = await analyticsResp.json();
-          const views = analyticsData.result.totals.uniques || 0;
-          setTotalViews(views);
-        }
-      } catch (error) {
-        console.error("Cloudflare API error:", error);
-      }
-    };
-
-    fetchViews();
+    // Cloudflare API call removed for security
+    // You can fetch this privately from your Cloudflare dashboard
+    setTotalViews("Access disabled");
   }, []);
 
   return (
     <PageContainer>
       <Title>📈 SOL Website Dashboard</Title>
       <Stat>
-        🔹 Views (last 7 days):{" "}
-        <strong>{totalViews !== null ? totalViews : "Loading..."}</strong>
+        🔹 Views (last 7 days): <strong>{totalViews}</strong>
       </Stat>
       <Stat style={{ marginTop: "2rem", fontStyle: "italic" }}>
-        Real-time data from Cloudflare API. Private access only.
+        Data fetching is disabled in public build for security reasons.
       </Stat>
     </PageContainer>
   );
