@@ -25,6 +25,7 @@ export default function Sidebar() {
         <Link to="/episodes">Episodes</Link>
         <Link to="/map">Map</Link>
         <Link to="/gallery">Gallery</Link>
+        <Link to="/contact">📬 Contact</Link> {/* ✅ Νέο link */}
         {/* Το SOL's Journey παραλείπεται από το μενού */}
       </nav>
     </>

@@ -4,6 +4,15 @@
 
 ---
 
+## v2.8.0 - 2025-06-01
+
+### Changed
+- ?? Hid the `/contact` page from both desktop and mobile menus (Topbar.jsx, MobileMenu.jsx)
+
+### Notes
+- The Contact page remains accessible via direct URL: `/contact`
+- Dual-language Google Forms will be added later before making it public again
+
 ## [v2.7.1] - 2025-05-31
 
 ### Added

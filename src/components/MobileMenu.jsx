@@ -37,6 +37,7 @@ export default function MobileMenu({ isOpen, onClose }) {
           <Link to="/map" onClick={onClose} className="hover:underline">Map</Link>
           <Link to="/gallery" onClick={onClose} className="hover:underline">Gallery</Link>
           <Link to="/whoissol" onClick={onClose} className="hover:underline">About</Link>
+          {/* <Link to="/contact" onClick={onClose} className="hover:underline">Contact</Link> */}
         </nav>
 
         {/* Animated SOL video */}
