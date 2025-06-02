@@ -4,6 +4,17 @@
 
 ---
 
+## [v2.9.0] - 2025-06-02
+### Added
+- Fully redesigned `/404` Not Found page with centered layout, image background, and blur overlay
+- Stylized translucent "404" title
+- Quote: "This corner of the world hasn't been explored yet - not even by Sol."
+- New button: "Back to safety" linking to home
+
+### Removed
+- SolBrand from the 404 page for a cleaner appearance
+
+
 ## v2.8.1 - 2025-06-02
 ### ? WhoIsSol Page
 - Refined introduction text for both English and Greek (more poetic and expressive)

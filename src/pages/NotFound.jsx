@@ -16,7 +16,7 @@ export default function NotFound() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 min-h-screen">
-        <h1 className="text-9xl font-bold text-[#aa4dc8]/60 mb-6">404</h1>
+        <h1 className="text-9xl font-bold text-[#aa4dc8]/60 mb-6">4  0  4</h1>
         <p className="text-2xl max-w-3xl text-gray-800 leading-relaxed mb-8">
           This corner of the world hasn’t been explored yet — not even by Sol.
         </p>

@@ -12,7 +12,8 @@ const Gallery = lazy(() => import('./pages/Gallery.jsx'));
 const SOLsJourney = lazy(() => import('./pages/SOLsJourney.jsx'));
 const WhoIsSol = lazy(() => import('./pages/WhoIsSol.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
-const Shop = lazy(() => import('./pages/Shop.jsx')); // ✅ νέο lazy import
+const Shop = lazy(() => import('./pages/Shop.jsx'));
+const NotFound = lazy(() => import('./pages/NotFound.jsx')); // ✅ νέο lazy import
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -27,7 +28,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="solsjourney" element={<SOLsJourney />} />
             <Route path="whoissol" element={<WhoIsSol />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="shop" element={<Shop />} /> {/* ✅ νέο route */}
+            <Route path="shop" element={<Shop />} />
+            <Route path="*" element={<NotFound />} /> {/* ✅ fallback 404 */}
           </Route>
         </Routes>
       </Suspense>
