@@ -16,6 +16,16 @@ export default function Topbar() {
             <Link to="/episodes" className="hover:underline">Episodes</Link>
             <Link to="/map" className="hover:underline">Map</Link>
             <Link to="/gallery" className="hover:underline">Gallery</Link>
+
+            {/* 🔒 Hidden Shop link */}
+            <Link
+              to="/shop"
+              style={{ display: "none" }}
+              aria-hidden="true"
+            >
+              Shop
+            </Link>
+
             <Link to="/whoissol" className="hover:underline">About</Link>
             {/* <Link to="/contact" className="hover:underline">Contact</Link> */}
           </div>

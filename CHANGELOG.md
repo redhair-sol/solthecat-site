@@ -4,6 +4,11 @@
 
 ---
 
+## v2.8.1 - 2025-06-02
+### ? WhoIsSol Page
+- Refined introduction text for both English and Greek (more poetic and expressive)
+- Added official contact email: info@solthecat.com
+
 ## v2.8.0 - 2025-06-01
 
 ### Changed

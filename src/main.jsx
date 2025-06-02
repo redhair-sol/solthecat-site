@@ -11,7 +11,8 @@ const Map = lazy(() => import('./pages/Map.jsx'));
 const Gallery = lazy(() => import('./pages/Gallery.jsx'));
 const SOLsJourney = lazy(() => import('./pages/SOLsJourney.jsx'));
 const WhoIsSol = lazy(() => import('./pages/WhoIsSol.jsx'));
-const Contact = lazy(() => import('./pages/Contact.jsx')); // ✅ νέο lazy import
+const Contact = lazy(() => import('./pages/Contact.jsx'));
+const Shop = lazy(() => import('./pages/Shop.jsx')); // ✅ νέο lazy import
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,7 +26,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="gallery" element={<Gallery />} />
             <Route path="solsjourney" element={<SOLsJourney />} />
             <Route path="whoissol" element={<WhoIsSol />} />
-            <Route path="contact" element={<Contact />} /> {/* ✅ νέο route */}
+            <Route path="contact" element={<Contact />} />
+            <Route path="shop" element={<Shop />} /> {/* ✅ νέο route */}
           </Route>
         </Routes>
       </Suspense>

@@ -36,6 +36,17 @@ export default function MobileMenu({ isOpen, onClose }) {
           <Link to="/episodes" onClick={onClose} className="hover:underline">Episodes</Link>
           <Link to="/map" onClick={onClose} className="hover:underline">Map</Link>
           <Link to="/gallery" onClick={onClose} className="hover:underline">Gallery</Link>
+
+          {/* 🔒 Hidden Shop link */}
+          <Link
+            to="/shop"
+            onClick={onClose}
+            style={{ display: "none" }}
+            aria-hidden="true"
+          >
+            Shop
+          </Link>
+
           <Link to="/whoissol" onClick={onClose} className="hover:underline">About</Link>
           {/* <Link to="/contact" onClick={onClose} className="hover:underline">Contact</Link> */}
         </nav>

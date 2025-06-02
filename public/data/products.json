@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nameEN": "Royal Chicken Bites",
+    "nameGR": "Βασιλικές Μπουκιές",
+    "flavor": {
+      "en": "Chicken",
+      "gr": "Κοτόπουλο"
+    },
+    "description": {
+      "en": "Tender, bite-sized delights for royal cravings.",
+      "gr": "Τρυφερές, μικρές μπουκιές για βασιλικές ορέξεις."
+    },
+    "image": "/images/products/royal-chicken-bites.png",
+    "status": "coming_soon"
+  },
+  {
+    "id": 2,
+    "nameEN": "Sea Queen Formula",
+    "nameGR": "Θαλασσινή Συνταγή",
+    "flavor": {
+      "en": "Fish",
+      "gr": "Ψάρι"
+    },
+    "description": {
+      "en": "A noble recipe from the depths of the sea.",
+      "gr": "Μια ευγενική συνταγή από τα βάθη της θάλασσας."
+    },
+    "image": "/images/products/sea-queen-formula.png",
+    "status": "coming_soon"
+  },
+  {
+    "id": 3,
+    "nameEN": "Garden Crunch",
+    "nameGR": "Τραγανό Περιβόλι",
+    "flavor": {
+      "en": "Vegetables",
+      "gr": "Λαχανικά"
+    },
+    "description": {
+      "en": "Crispy bites straight from nature’s garden.",
+      "gr": "Τραγανές λιχουδιές κατευθείαν από τον κήπο της φύσης."
+    },
+    "image": "/images/products/garden-crunch.png",
+    "status": "coming_soon"
+  }
+]
