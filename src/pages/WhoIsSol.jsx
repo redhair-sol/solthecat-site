@@ -8,9 +8,9 @@ export default function WhoIsSol() {
     en: {
       title: "💫 Who is Sol the Cat?",
       intro1:
-        "Sol isn’t just a cat. She’s a presence. With eyes that mesmerize, the grace of a queen, and the quiet certainty that every corner belongs to her, she’s the soul of SOLadventures. A storyteller with paws that journey from the marble of Athens to the cushions of imagination — and from there, straight to Instagram.",
+        "Sol wasn’t born to go unnoticed. She has the stillness that speaks louder than words, the grace of a queen without a crown, and the step of a cat who knows everything belongs to her. She’s the soul of SOLadventures — a storyteller with paws full of tales, wandering from Athens' marble to the pages of imagination… and then, to Instagram.",
       intro2:
-        "Born in Athens, Sol always knew the world was too small for her. She began as a silent observer — curious, composed, almost philosophical. But somewhere between the Parthenon and her first reel, she became more than a cat. She became a symbol. She became Sol.",
+        "Raised in Athens, Sol always felt the windows of her neighborhood were too small for her world. She began quietly — curiosity in her gaze, dignity in her posture. But somewhere between the Parthenon and her first reel, she became more than a cat. She became a symbol. She became Sol.",
       funFactsTitle: "✨ Fun Facts About Sol",
       funFacts: [
         { label: "Favorite food:", value: "Cooked chicken. With attitude." },
@@ -24,13 +24,14 @@ export default function WhoIsSol() {
         { label: "Favorite human:", value: "Her dad (obviously)." },
       ],
       footer: "Yes, she has staff. You’re one of them now. 🐾",
+      contact: "For press or collaborations: ",
     },
     el: {
       title: "💫 Ποια είναι η Sol;",
       intro1:
-        "Η Sol δεν είναι απλώς μια γάτα. Είναι παρουσία. Με βλέμμα που μαγνητίζει, τη χάρη μιας βασίλισσας και τη σιγουριά ότι κάθε γωνιά της ανήκει, είναι η ψυχή των SOLadventures. Μια αφηγήτρια με πατούσες που ταξιδεύουν από το μάρμαρο της Αθήνας στα μαξιλάρια της φαντασίας — κι από εκεί, κατευθείαν στο Instagram.",
+        "Η Sol δεν γεννήθηκε για να περάσει απαρατήρητη. Έχει το βλέμμα της σιωπής που σε καθηλώνει, τη χάρη μιας βασίλισσας που δε χρειάζεται στέμμα και το βήμα μιας γάτας που ξέρει πως όλα της ανήκουν. Είναι η ψυχή των SOLadventures — μια αφηγήτρια με πατούσες γεμάτες ιστορίες, που περιπλανιούνται από τα μάρμαρα της Αθήνας ώς τις σελίδες της φαντασίας… κι από εκεί, στο Instagram.",
       intro2:
-        "Γεννημένη στην Αθήνα, η Sol ήξερε πάντα πως ο κόσμος είναι μικρός για εκείνη. Ξεκίνησε ως σιωπηλή παρατηρήτρια — περίεργη, γαλήνια, σχεδόν φιλοσοφημένη. Μα κάπου ανάμεσα στον Παρθενώνα και το πρώτο της reel, έγινε κάτι παραπάνω από γάτα. Έγινε σύμβολο. Έγινε Sol.",
+        "Μεγαλωμένη στην Αθήνα, η Sol ένιωθε πάντα πως τα παράθυρα της γειτονιάς δεν της έφταναν. Ξεκίνησε σιωπηλά, με περιέργεια στα μάτια και αξιοπρέπεια στο βλέμμα. Κάπου όμως, ανάμεσα στον Παρθενώνα και το πρώτο της reel, έγινε κάτι παραπάνω από γάτα. Έγινε σύμβολο. Έγινε Sol.",
       funFactsTitle: "✨ Μικρά Μυστικά της Sol",
       funFacts: [
         { label: "Αγαπημένο φαγητό:", value: "Ψητό κοτόπουλο. Με ύφος." },
@@ -44,6 +45,7 @@ export default function WhoIsSol() {
         { label: "Αγαπημένος άνθρωπος:", value: "Ο μπαμπάς της (προφανώς)." },
       ],
       footer: "Ναι, έχει προσωπικό. Τώρα είσαι κι εσύ μέλος. 🐾",
+      contact: "Για συνεργασίες ή δημοσιογραφική επικοινωνία: ",
     },
   };
 
@@ -102,6 +104,15 @@ export default function WhoIsSol() {
 
         {/* Footer */}
         <p className="text-sm text-gray-500 mt-8">{t.footer}</p>
+        <p className="text-sm text-gray-600 mt-2">
+          {t.contact}
+          <a
+            href="mailto:info@solthecat.com"
+            className="text-[#aa4dc8] underline hover:text-[#7a3299]"
+          >
+            info@solthecat.com
+          </a>
+        </p>
       </div>
     </div>
   );
