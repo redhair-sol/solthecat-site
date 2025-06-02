@@ -26,7 +26,10 @@ export default function Topbar() {
               Shop
             </Link>
 
+            {/* ✅ Game link before About */}
+            <Link to="/games/pawprints" className="hover:underline">Games</Link>
             <Link to="/whoissol" className="hover:underline">About</Link>
+
             {/* <Link to="/contact" className="hover:underline">Contact</Link> */}
           </div>
         </div>
