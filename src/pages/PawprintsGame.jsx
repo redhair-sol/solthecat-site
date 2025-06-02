@@ -65,17 +65,17 @@ const Message = styled.div`
 const StartButton = styled.button`
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
-  background-color: #aa4dc8; /* ✅ mov */
+  background-color: #aa4dc8;
   border: none;
   border-radius: 8px;
   color: white;
   cursor: pointer;
   margin-top: 1rem;
-  margin-bottom: 2rem; /* ✅ spacing before grid */
+  margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
 
   &:hover {
-    background-color: #8e24aa; /* ✅ darker mov on hover */
+    background-color: #8e24aa;
   }
 `;
 
@@ -100,10 +100,16 @@ export default function PawprintsGame() {
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
 
-  useEffect(() => {
-    const shuffled = [...initialCards].sort(() => Math.random() - 0.5);
-    setCards(shuffled);
-  }, []);
+  // Shuffle cards and reset all states
+  const startGame = () => {
+    setCards([...initialCards].sort(() => Math.random() - 0.5));
+    setFlipped([]);
+    setMatched([]);
+    setWon(false);
+    setGameOver(false);
+    setTimeLeft(60);
+    setGameStarted(true);
+  };
 
   useEffect(() => {
     if (!gameStarted || won || gameOver) return;
@@ -145,27 +151,19 @@ export default function PawprintsGame() {
     }
   };
 
-  const startGame = () => {
-    setGameStarted(true);
-    setTimeLeft(60);
-    setMatched([]);
-    setFlipped([]);
-    setWon(false);
-    setGameOver(false);
-    const reshuffled = [...initialCards].sort(() => Math.random() - 0.5);
-    setCards(reshuffled);
-  };
-
   return (
     <PageContainer>
       <SolBrand />
       <Title>🎮 Match the Pawprints</Title>
 
-      {!gameStarted && !won && !gameOver && (
-        <StartButton onClick={startGame}>Start Game</StartButton>
+      {/* Start/Restart Button */}
+      {!gameStarted || won || gameOver ? (
+        <StartButton onClick={startGame}>
+          {gameStarted ? "Play Again" : "Start Game"}
+        </StartButton>
+      ) : (
+        <Timer>⏳ Time left: {timeLeft}s</Timer>
       )}
-
-      {gameStarted && <Timer>⏳ Time left: {timeLeft}s</Timer>}
 
       <Grid>
         {cards.map((card, index) => (
