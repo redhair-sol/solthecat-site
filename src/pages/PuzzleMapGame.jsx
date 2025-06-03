@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
@@ -7,35 +8,199 @@ const PageContainer = styled.div`
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Title = styled.h1`
   font-size: 2rem;
   color: #aa4dc8;
   margin-bottom: 1rem;
+  text-align: center;
 `;
 
-const Description = styled.p`
+const Dropdown = styled.select`
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: #555;
-  margin-bottom: 2rem;
+  border: 2px solid #aa4dc8;
+  border-radius: 8px;
+  background: #fff;
+  color: #6a1b9a;
+  cursor: pointer;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 4px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+  }
+`;
+
+const Tile = styled.div`
+  width: 100px;
+  height: 100px;
+  background-image: url(${(props) => props.bgImage});
+  background-size: 300px 300px;
+  background-position: ${(props) => props.bgPos};
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  @media (max-width: 480px) {
+    width: 80px;
+    height: 80px;
+    background-size: 240px 240px;
+  }
+`;
+
+const EmptyTile = styled.div`
+  width: 100px;
+  height: 100px;
+  background: #fce4ec;
+  border-radius: 6px;
+
+  @media (max-width: 480px) {
+    width: 80px;
+    height: 80px;
+  }
+`;
+
+const Message = styled.div`
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #8e24aa;
+  font-weight: bold;
+`;
+
+const Button = styled.button`
+  margin-top: 1rem;
+  background-color: #f8bbd0;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: #f48fb1;
+  }
 `;
 
 const BackLink = styled(Link)`
-  display: inline-block;
   margin-top: 2rem;
-  text-decoration: none;
   color: #d35ca3;
+  text-decoration: none;
   font-weight: bold;
 `;
 
 export default function PuzzleMapGame() {
+  const [episodes, setEpisodes] = useState([]);
+  const [selectedId, setSelectedId] = useState("");
+  const [tiles, setTiles] = useState([]);
+  const [isSolved, setIsSolved] = useState(false);
+
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}episodes.json`)
+      .then((res) => res.json())
+      .then((data) => {
+        const published = data.filter((ep) => ep.visible);
+        setEpisodes(published);
+        if (published.length > 0) {
+          setSelectedId(published[0].id.toString());
+        }
+      })
+      .catch((err) => console.error("Failed to load episodes:", err));
+  }, []);
+
+  useEffect(() => {
+    if (selectedId) resetGame();
+  }, [selectedId]);
+
+  const shuffle = (array) => {
+    const newArr = [...array];
+    for (let i = newArr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+    }
+    return newArr;
+  };
+
+  const resetGame = () => {
+    const arr = [...Array(9).keys()];
+    const shuffled = shuffle(arr);
+    setTiles(shuffled);
+    setIsSolved(false);
+  };
+
+  const handleTileClick = (index) => {
+    if (isSolved) return;
+
+    const emptyIndex = tiles.indexOf(8);
+    const validMoves = [index - 1, index + 1, index - 3, index + 3];
+
+    if (validMoves.includes(emptyIndex)) {
+      const newTiles = [...tiles];
+      [newTiles[index], newTiles[emptyIndex]] = [newTiles[emptyIndex], newTiles[index]];
+      setTiles(newTiles);
+      if (isSolvedState(newTiles)) {
+        setIsSolved(true);
+      }
+    }
+  };
+
+  const isSolvedState = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== i) return false;
+    }
+    return true;
+  };
+
+  const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
+  const imagePath = selectedEpisode ? `${import.meta.env.BASE_URL}${selectedEpisode.image}` : "";
+
   return (
     <PageContainer>
       <SolBrand />
-      <Title>🧩 SOL's Puzzle Map</Title>
-      <Description>Coming soon: Rearrange the pieces to reveal where Sol has been!</Description>
+      <Title>🧩 Puzzle: {selectedEpisode ? selectedEpisode.title : "Loading..."}</Title>
+
+      <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
+        {episodes.map((ep) => (
+          <option key={ep.id} value={ep.id}>
+            {ep.title.replace("SOLadventure", "Episode")}
+          </option>
+        ))}
+      </Dropdown>
+
+      <Grid>
+        {tiles.map((tile, index) =>
+          tile === 8 ? (
+            <EmptyTile key={index} />
+          ) : (
+            <Tile
+              key={index}
+              bgImage={imagePath}
+              bgPos={`-${(tile % 3) * 100}px -${Math.floor(tile / 3) * 100}px`}
+              onClick={() => handleTileClick(index)}
+            />
+          )
+        )}
+      </Grid>
+
+      {isSolved && (
+        <>
+          <Message>🎉 Puzzle Solved!</Message>
+          <Button onClick={resetGame}>🔁 Play Again</Button>
+        </>
+      )}
+
       <BackLink to="/games">← Back to games</BackLink>
     </PageContainer>
   );

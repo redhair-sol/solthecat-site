@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
+import { Link } from "react-router-dom";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -79,6 +80,14 @@ const StartButton = styled.button`
   }
 `;
 
+const BackLink = styled(Link)`
+  margin-top: 2rem;
+  color: #d35ca3;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+`;
+
 const initialCards = [
   { id: 1, emoji: "🐾" },  { id: 2, emoji: "🍗" },
   { id: 3, emoji: "🏛️" }, { id: 4, emoji: "🐟" },
@@ -100,7 +109,6 @@ export default function PawprintsGame() {
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
 
-  // Shuffle cards and reset all states
   const startGame = () => {
     setCards([...initialCards].sort(() => Math.random() - 0.5));
     setFlipped([]);
@@ -156,7 +164,6 @@ export default function PawprintsGame() {
       <SolBrand />
       <Title>🎮 Match the Pawprints</Title>
 
-      {/* Start/Restart Button */}
       {!gameStarted || won || gameOver ? (
         <StartButton onClick={startGame}>
           {gameStarted ? "Play Again" : "Start Game"}
@@ -179,6 +186,8 @@ export default function PawprintsGame() {
 
       {won && <Message>Well done, explorer! 🐾🐾🐾</Message>}
       {gameOver && !won && <Message>Time’s up! Try again 🐾</Message>}
+
+      <BackLink to="/games">← Back to games</BackLink>
     </PageContainer>
   );
 }
