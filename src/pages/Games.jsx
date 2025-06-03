@@ -9,6 +9,11 @@ const PageContainer = styled.div`
   font-family: 'Poppins', sans-serif;
 `;
 
+const BrandWrapper = styled.div`
+  text-align: center;
+  margin-bottom: 1rem;
+`;
+
 const Title = styled.h1`
   font-size: 2rem;
   color: #aa4dc8;
@@ -85,7 +90,9 @@ export default function Games() {
 
   return (
     <PageContainer>
-      <SolBrand />
+      <BrandWrapper>
+        <SolBrand />
+      </BrandWrapper>
       <Title>🎮 Sol's Game Room</Title>
       <GamesGrid>
         {games.map((game) => (
