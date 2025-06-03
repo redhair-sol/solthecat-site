@@ -4,6 +4,11 @@
 
 ---
 
+## [v2.9.2] - 2025-06-03
+### Changed
+- PuzzleMap now uses a guaranteed solvable shuffle logic via legal empty-tile moves (100 steps).
+- Ensures all 3x3 sliding puzzles can always be completed by the player.
+
 ## [v2.9.1] - 2025-06-03
 
 ### Added

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
-import confetti from "canvas-confetti";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -125,19 +124,30 @@ export default function PuzzleMapGame() {
     if (selectedId) resetGame();
   }, [selectedId]);
 
-  const shuffle = (array) => {
-    const newArr = [...array];
-    for (let i = newArr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
-    }
-    return newArr;
-  };
-
   const resetGame = () => {
-    const arr = [...Array(9).keys()];
-    const shuffled = shuffle(arr);
-    setTiles(shuffled);
+    let arr = [...Array(9).keys()]; // [0,1,2,3,4,5,6,7,8]
+    let emptyIndex = 8;
+
+    const swap = (a, b) => {
+      const newArr = [...arr];
+      [newArr[a], newArr[b]] = [newArr[b], newArr[a]];
+      return newArr;
+    };
+
+    for (let i = 0; i < 100; i++) {
+      const moves = [];
+
+      if (emptyIndex % 3 !== 0) moves.push(emptyIndex - 1);     // left
+      if (emptyIndex % 3 !== 2) moves.push(emptyIndex + 1);     // right
+      if (emptyIndex >= 3) moves.push(emptyIndex - 3);          // up
+      if (emptyIndex < 6) moves.push(emptyIndex + 3);           // down
+
+      const moveTo = moves[Math.floor(Math.random() * moves.length)];
+      arr = swap(emptyIndex, moveTo);
+      emptyIndex = moveTo;
+    }
+
+    setTiles(arr);
     setIsSolved(false);
   };
 
@@ -153,12 +163,6 @@ export default function PuzzleMapGame() {
       setTiles(newTiles);
       if (isSolvedState(newTiles)) {
         setIsSolved(true);
-        confetti({
-          particleCount: 150,
-          spread: 120,
-          origin: { y: 0.6 },
-          zIndex: 9999,
-        });
       }
     }
   };
