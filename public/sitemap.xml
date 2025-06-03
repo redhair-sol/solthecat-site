@@ -26,16 +26,28 @@
     <lastmod>2025-05-31</lastmod>
     <priority>0.7</priority>
   </url>
-  
+
   <url>
     <loc>https://solthecat.com/whoissol</loc>
     <lastmod>2025-05-31</lastmod>
     <priority>0.6</priority>
   </url>
 
-  <!-- New Game Page -->
+  <!-- Games Pages -->
+  <url>
+    <loc>https://solthecat.com/games</loc>
+    <lastmod>2025-06-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://solthecat.com/games/pawprints</loc>
+    <lastmod>2025-06-03</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://solthecat.com/games/puzzle-map</loc>
     <lastmod>2025-06-03</lastmod>
     <priority>0.5</priority>
   </url>
