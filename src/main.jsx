@@ -13,8 +13,10 @@ const SOLsJourney = lazy(() => import('./pages/SOLsJourney.jsx'));
 const WhoIsSol = lazy(() => import('./pages/WhoIsSol.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Shop = lazy(() => import('./pages/Shop.jsx'));
-const PawprintsGame = lazy(() => import('./pages/PawprintsGame.jsx')); // ✅ hidden memory game
-const NotFound = lazy(() => import('./pages/NotFound.jsx')); // ✅ fallback 404
+const Games = lazy(() => import('./pages/Games.jsx')); // ✅ νέο route
+const PawprintsGame = lazy(() => import('./pages/PawprintsGame.jsx'));
+const PuzzleMapGame = lazy(() => import('./pages/PuzzleMapGame.jsx')); // ✅ νέο game
+const NotFound = lazy(() => import('./pages/NotFound.jsx'));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -30,7 +32,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="whoissol" element={<WhoIsSol />} />
             <Route path="contact" element={<Contact />} />
             <Route path="shop" element={<Shop />} />
-            <Route path="games/pawprints" element={<PawprintsGame />} /> {/* ✅ hidden route */}
+            <Route path="games" element={<Games />} /> {/* ✅ νέα σελίδα */}
+            <Route path="games/pawprints" element={<PawprintsGame />} />
+            <Route path="games/puzzlemap" element={<PuzzleMapGame />} /> {/* ✅ νέο παιχνίδι */}
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

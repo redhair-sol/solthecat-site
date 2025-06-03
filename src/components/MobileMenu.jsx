@@ -47,8 +47,8 @@ export default function MobileMenu({ isOpen, onClose }) {
             Shop
           </Link>
 
-          {/* ✅ Game link before About */}
-          <Link to="/games/pawprints" onClick={onClose} className="hover:underline">Games</Link>
+          {/* ✅ Game Hub route */}
+          <Link to="/games" onClick={onClose} className="hover:underline">Games</Link>
           <Link to="/whoissol" onClick={onClose} className="hover:underline">About</Link>
 
           {/* <Link to="/contact" onClick={onClose} className="hover:underline">Contact</Link> */}
