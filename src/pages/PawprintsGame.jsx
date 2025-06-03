@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
+import confetti from "canvas-confetti";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -89,11 +90,11 @@ const BackLink = styled(Link)`
 `;
 
 const initialCards = [
-  { id: 1, emoji: "🐾" },  { id: 2, emoji: "🍗" },
+  { id: 1, emoji: "🐾" }, { id: 2, emoji: "🍗" },
   { id: 3, emoji: "🏛️" }, { id: 4, emoji: "🐟" },
-  { id: 5, emoji: "🧀" },  { id: 6, emoji: "🎒" },
-  { id: 7, emoji: "🚌" },  { id: 8, emoji: "🍕" },
-  { id: 9, emoji: "📸" },  { id: 10, emoji: "🐾" },
+  { id: 5, emoji: "🧀" }, { id: 6, emoji: "🎒" },
+  { id: 7, emoji: "🚌" }, { id: 8, emoji: "🍕" },
+  { id: 9, emoji: "📸" }, { id: 10, emoji: "🐾" },
   { id: 11, emoji: "🍗" }, { id: 12, emoji: "🏛️" },
   { id: 13, emoji: "🐟" }, { id: 14, emoji: "🧀" },
   { id: 15, emoji: "🎒" }, { id: 16, emoji: "🚌" },
@@ -139,6 +140,12 @@ export default function PawprintsGame() {
   useEffect(() => {
     if (matched.length === cards.length && cards.length > 0) {
       setWon(true);
+      confetti({
+        particleCount: 150,
+        spread: 100,
+        origin: { y: 0.6 },
+        zIndex: 9999,
+      });
     }
   }, [matched, cards]);
 

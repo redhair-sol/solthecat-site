@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
+import confetti from "canvas-confetti";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -152,6 +153,12 @@ export default function PuzzleMapGame() {
       setTiles(newTiles);
       if (isSolvedState(newTiles)) {
         setIsSolved(true);
+        confetti({
+          particleCount: 150,
+          spread: 120,
+          origin: { y: 0.6 },
+          zIndex: 9999,
+        });
       }
     }
   };

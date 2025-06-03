@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.3",
     "framer-motion": "^12.12.2",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.511.0",

@@ -4,6 +4,19 @@
 
 ---
 
+## [v2.9.1] - 2025-06-03
+
+### Added
+- ?? New "Match the Pawprints" memory game at `/games/pawprints`.
+- ?? Cards feature pawprints, food, and travel emojis in a fun memory challenge.
+- ? 60-second countdown timer and success/failure messages.
+- ?? Confetti animation when the game is won.
+- ?? "Play Again" button and ? Back to games navigation.
+
+### Improved
+- Game logic structured for reuse and clarity.
+- Responsive grid layout for both desktop and mobile.
+
 ## [v2.9.0] - 2025-06-02
 ### Added
 - Fully redesigned `/404` Not Found page with centered layout, image background, and blur overlay
