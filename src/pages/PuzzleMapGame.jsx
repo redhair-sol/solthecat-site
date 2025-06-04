@@ -191,15 +191,15 @@ export default function PuzzleMapGame() {
       </Dropdown>
 
       <Grid>
-        {tiles.map((tile, index) =>
-          tile === 8 ? (
-            <EmptyTile key={index} />
+        {tiles.map((tileValue, tileIndex) =>
+          tileValue === 8 ? (
+            <EmptyTile key={tileIndex} />
           ) : (
             <Tile
-              key={index}
+              key={tileIndex}
               bgImage={imagePath}
-              bgPos={`-${(tile % 3) * 100}px -${Math.floor(tile / 3) * 100}px`}
-              onClick={() => handleTileClick(index)}
+              bgPos={`-${(tileValue % 3) * 100}px -${Math.floor(tileValue / 3) * 100}px`}
+              onClick={() => handleTileClick(tileIndex)}
             />
           )
         )}
