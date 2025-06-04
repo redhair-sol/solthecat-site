@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Which iconic basilica stands tall in Sol's Barcelona adventure?",
+      "el": "Ποια εμβληματική βασιλική δεσπόζει στην περιπέτεια της Sol στη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Sagrada Família", "La Seu", "Notre-Dame", "St. Peter's"],
+      "el": ["Sagrada Família", "La Seu", "Νοτρ Νταμ", "Άγιος Πέτρος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Which famous architect designed the Sagrada Família?",
+      "el": "Ποιος διάσημος αρχιτέκτονας σχεδίασε τη Sagrada Família;"
+    },
+    "options": {
+      "en": ["Gaudí", "Michelangelo", "Le Corbusier", "Gropius"],
+      "el": ["Γκαουντί", "Μιχαήλ Άγγελος", "Λε Κορμπυζιέ", "Γκρόπιους"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What is the main language spoken in Barcelona?",
+      "el": "Ποια είναι η κύρια γλώσσα που μιλιέται στη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Spanish", "Catalan", "French", "Portuguese"],
+      "el": ["Ισπανικά", "Καταλανικά", "Γαλλικά", "Πορτογαλικά"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which colorful park was also designed by Gaudí?",
+      "el": "Ποιο πολύχρωμο πάρκο σχεδιάστηκε επίσης από τον Γκαουντί;"
+    },
+    "options": {
+      "en": ["Parc Güell", "Hyde Park", "Luxembourg Gardens", "Villa Borghese"],
+      "el": ["Πάρκο Γκουέλ", "Χάιντ Παρκ", "Κήποι Λουξεμβούργου", "Βίλα Μποργκέζε"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which sea borders Barcelona?",
+      "el": "Ποια θάλασσα βρέχει τη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Mediterranean", "Atlantic", "Aegean", "Adriatic"],
+      "el": ["Μεσόγειος", "Ατλαντικός", "Αιγαίο", "Αδριατική"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Which famous pedestrian street is in central Barcelona?",
+      "el": "Ποιος διάσημος πεζόδρομος βρίσκεται στο κέντρο της Βαρκελώνης;"
+    },
+    "options": {
+      "en": ["La Rambla", "Passeig de Gràcia", "Via del Corso", "Gran Vía"],
+      "el": ["Λα Ράμπλα", "Πασέιγκ ντε Γκράθια", "Βία ντελ Κόρσο", "Γκραν Βία"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which famous market is located off La Rambla?",
+      "el": "Ποια διάσημη αγορά βρίσκεται δίπλα στη Λα Ράμπλα;"
+    },
+    "options": {
+      "en": ["La Boqueria", "Mercado Central", "San Miguel", "Pike Place"],
+      "el": ["Λα Μποκερία", "Μερκάδο Σεντράλ", "Σαν Μιγκέλ", "Πάικ Πλέις"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What is the name of the famous beach in Barcelona?",
+      "el": "Ποια είναι η διάσημη παραλία της Βαρκελώνης;"
+    },
+    "options": {
+      "en": ["Barceloneta", "Malvarrosa", "Marbella", "Copacabana"],
+      "el": ["Μπαρσελονέτα", "Μαλβαρόσα", "Μαρμπέγια", "Κοπακαμπάνα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which mountain offers a great view of Barcelona?",
+      "el": "Ποιο βουνό προσφέρει υπέροχη θέα της Βαρκελώνης;"
+    },
+    "options": {
+      "en": ["Montjuïc", "Tibidabo", "Olympus", "Pincian Hill"],
+      "el": ["Μοντζουίκ", "Τιμπιντάμπο", "Όλυμπος", "Λόφος Πίντσιο"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which football team represents Barcelona globally?",
+      "el": "Ποια ποδοσφαιρική ομάδα αντιπροσωπεύει τη Βαρκελώνη διεθνώς;"
+    },
+    "options": {
+      "en": ["FC Barcelona", "Real Madrid", "Atletico Madrid", "Espanyol"],
+      "el": ["Μπαρτσελόνα", "Ρεάλ Μαδρίτης", "Ατλέτικο Μαδρίτης", "Εσπανιόλ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What is the traditional Catalan dance called?",
+      "el": "Πώς λέγεται ο παραδοσιακός καταλανικός χορός;"
+    },
+    "options": {
+      "en": ["Sardana", "Flamenco", "Fado", "Tango"],
+      "el": ["Σαρδάνα", "Φλαμένκο", "Φάντο", "Τάνγκο"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What dish is Barcelona known for?",
+      "el": "Για ποιο πιάτο είναι γνωστή η Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Paella", "Tortilla", "Ceviche", "Moussaka"],
+      "el": ["Παέγια", "Τορτίγια", "Σεβίτσε", "Μουσακάς"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Which famous Catalan artist has a museum in Barcelona?",
+      "el": "Ποιος διάσημος Καταλανός καλλιτέχνης έχει μουσείο στη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Joan Miró", "Pablo Picasso", "Salvador Dalí", "Velázquez"],
+      "el": ["Ζουάν Μιρό", "Πάμπλο Πικάσο", "Σαλβαδόρ Νταλί", "Βελάσκεθ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Where is Camp Nou located?",
+      "el": "Πού βρίσκεται το Καμπ Νόου;"
+    },
+    "options": {
+      "en": ["Barcelona", "Madrid", "Seville", "Valencia"],
+      "el": ["Βαρκελώνη", "Μαδρίτη", "Σεβίλλη", "Βαλένθια"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which landmark resembles a dragon's back?",
+      "el": "Ποιο αξιοθέατο μοιάζει με ράχη δράκου;"
+    },
+    "options": {
+      "en": ["Casa Batlló", "Casa Milà", "Colosseum", "Alhambra"],
+      "el": ["Κάσα Μπατλό", "Κάσα Μιλά", "Κολοσσαίο", "Αλάμπρα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What mode of transport is iconic in Barcelona?",
+      "el": "Ποιο μεταφορικό μέσο είναι εμβληματικό στη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Cable car", "Rickshaw", "Ferry", "Horse carriage"],
+      "el": ["Τελεφερίκ", "Ρικσά", "Φέρι", "Άμαξα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which hill hosts the Magic Fountain show?",
+      "el": "Σε ποιο λόφο βρίσκεται το σιντριβάνι με το φωτεινό σόου;"
+    },
+    "options": {
+      "en": ["Montjuïc", "Tibidabo", "Lycabettus", "Aventine"],
+      "el": ["Μοντζουίκ", "Τιμπιντάμπο", "Λυκαβηττός", "Αβεντίνος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Which neighborhood is famous for its gothic architecture?",
+      "el": "Ποια γειτονιά είναι γνωστή για τη γοτθική της αρχιτεκτονική;"
+    },
+    "options": {
+      "en": ["Gothic Quarter", "Eixample", "Gràcia", "El Raval"],
+      "el": ["Γοτθική Συνοικία", "Εξάμπλε", "Γκράθια", "Ελ Ραβάλ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which sweet treat is popular in Barcelona?",
+      "el": "Ποιο γλυκό είναι δημοφιλές στη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Churros", "Macarons", "Donuts", "Baklava"],
+      "el": ["Τσούρος", "Μακαρόν", "Ντόνατς", "Μπακλαβάς"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What do locals call Barcelona?",
+      "el": "Πώς αποκαλούν οι ντόπιοι τη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Barna", "Barce", "BCN", "Cata"],
+      "el": ["Μπάρνα", "Μπάρσε", "Βαρκελώνη", "Κάτα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which Barcelona museum is located in a former palace?",
+      "el": "Ποιο μουσείο της Βαρκελώνης στεγάζεται σε παλάτι;"
+    },
+    "options": {
+      "en": ["Picasso Museum", "Miro Foundation", "MACBA", "MNAC"],
+      "el": ["Μουσείο Πικάσο", "Ίδρυμα Μιρό", "MACBA", "MNAC"]
+    },
+    "answerIndex": 3
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What natural element inspired Gaudí’s architecture?",
+      "el": "Ποιο φυσικό στοιχείο ενέπνευσε την αρχιτεκτονική του Γκαουντί;"
+    },
+    "options": {
+      "en": ["Nature", "Fire", "Geometry", "Mathematics"],
+      "el": ["Φύση", "Φωτιά", "Γεωμετρία", "Μαθηματικά"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Which event in 1992 shaped modern Barcelona?",
+      "el": "Ποιο γεγονός του 1992 διαμόρφωσε τη σύγχρονη Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Olympic Games", "Expo", "EU Summit", "World Cup"],
+      "el": ["Ολυμπιακοί Αγώνες", "Έκθεση", "Σύνοδος Κορυφής", "Μουντιάλ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What traditional Spanish dish can Sol sniff near the beach?",
+      "el": "Ποιο παραδοσιακό ισπανικό πιάτο μπορεί να μυρίσει η Sol κοντά στην παραλία;"
+    },
+    "options": {
+      "en": ["Paella", "Souvlaki", "Pizza", "Tacos"],
+      "el": ["Παέγια", "Σουβλάκι", "Πίτσα", "Τάκος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "In which country is Barcelona located?",
+      "el": "Σε ποια χώρα βρίσκεται η Βαρκελώνη;"
+    },
+    "options": {
+      "en": ["Spain", "Italy", "France", "Portugal"],
+      "el": ["Ισπανία", "Ιταλία", "Γαλλία", "Πορτογαλία"]
+    },
+    "answerIndex": 0
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "What river divides Buda and Pest in Budapest?",
+      "el": "Ποιος ποταμός χωρίζει τη Βούδα και την Πέστη στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["Danube", "Tisza", "Drava", "Sava"],
+      "el": ["Δούναβης", "Τίσα", "Δράβος", "Σάβος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What is the name of the iconic parliament building in Budapest?",
+      "el": "Ποιο είναι το όνομα του εμβληματικού κτιρίου του κοινοβουλίου στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["Hungarian Parliament", "Royal Hall", "Budapest Assembly", "Danube Council"],
+      "el": ["Ουγγρικό Κοινοβούλιο", "Βασιλική Αίθουσα", "Συνέλευση Βουδαπέστης", "Συμβούλιο Δούναβη"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which historic castle stands on the Buda side of the city?",
+      "el": "Ποιο ιστορικό κάστρο βρίσκεται στη Βούδα;"
+    },
+    "options": {
+      "en": ["Buda Castle", "Fisherman’s Fortress", "Matthias Keep", "Hungarian Stronghold"],
+      "el": ["Κάστρο της Βούδας", "Οχυρό των Ψαράδων", "Φρούριο του Ματίας", "Ουγγρικό Οχυρό"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What is the name of the thermal baths named after a doctor?",
+      "el": "Ποια είναι τα θερμά λουτρά που πήραν το όνομά τους από γιατρό;"
+    },
+    "options": {
+      "en": ["Széchenyi Baths", "Rudas Baths", "Lukács Baths", "Gellért Baths"],
+      "el": ["Λουτρά Σετσένι", "Λουτρά Ρούντας", "Λουτρά Λουκάτς", "Λουτρά Γκέλερτ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which bridge is most famous for connecting Buda and Pest?",
+      "el": "Ποια είναι η πιο διάσημη γέφυρα που ενώνει τη Βούδα με την Πέστη;"
+    },
+    "options": {
+      "en": ["Chain Bridge", "Liberty Bridge", "Elizabeth Bridge", "Margaret Bridge"],
+      "el": ["Γέφυρα Αλυσίδων", "Γέφυρα της Ελευθερίας", "Γέφυρα Ελισάβετ", "Γέφυρα Μαργαρίτας"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What is the local currency of Hungary?",
+      "el": "Ποιο είναι το τοπικό νόμισμα της Ουγγαρίας;"
+    },
+    "options": {
+      "en": ["Forint", "Euro", "Koruna", "Zloty"],
+      "el": ["Φιορίνι", "Ευρώ", "Κορόνα", "Ζλότι"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which famous basilica is located in Budapest?",
+      "el": "Ποια διάσημη βασιλική βρίσκεται στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["St. Stephen's Basilica", "St. Peter’s Cathedral", "Holy Crown Church", "St. Margaret's Church"],
+      "el": ["Βασιλική του Αγ. Στεφάνου", "Καθεδρικός του Αγ. Πέτρου", "Εκκλησία της Ιερής Κορόνας", "Εκκλησία της Αγ. Μαργαρίτας"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which building lights up beautifully at night along the Danube?",
+      "el": "Ποιο κτίριο φωτίζεται εντυπωσιακά το βράδυ δίπλα στον Δούναβη;"
+    },
+    "options": {
+      "en": ["Parliament", "National Gallery", "Opera House", "Museum of Fine Arts"],
+      "el": ["Κοινοβούλιο", "Εθνική Πινακοθήκη", "Όπερα", "Μουσείο Καλών Τεχνών"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What’s the quote of Sol in the Budapest episode?",
+      "el": "Ποιο είναι το quote της Sol στο επεισόδιο της Βουδαπέστης;"
+    },
+    "options": {
+      "en": ["Power glows", "Crown in silence", "Elegance on the Danube", "Throne among lights"],
+      "el": ["Η δύναμη λάμπει", "Στέμμα στη σιωπή", "Κομψότητα στον Δούναβη", "Θρόνος στα φώτα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What building does Sol ‘sit’ in front of in the episode?",
+      "el": "Μπροστά σε ποιο κτίριο κάθεται η Sol στο επεισόδιο;"
+    },
+    "options": {
+      "en": ["Hungarian Parliament", "Opera House", "Buda Castle", "City Hall"],
+      "el": ["Ουγγρικό Κοινοβούλιο", "Όπερα", "Κάστρο της Βούδας", "Δημαρχείο"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which style is the Hungarian Parliament built in?",
+      "el": "Σε ποιο αρχιτεκτονικό στυλ είναι χτισμένο το Ουγγρικό Κοινοβούλιο;"
+    },
+    "options": {
+      "en": ["Gothic Revival", "Baroque", "Neoclassical", "Art Nouveau"],
+      "el": ["Γοτθικό Αναγεννησιακό", "Μπαρόκ", "Νεοκλασικό", "Αρ Νουβό"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What island lies in the Danube within Budapest?",
+      "el": "Ποιο νησί βρίσκεται στον Δούναβη μέσα στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["Margaret Island", "St. Stephen’s Isle", "Liberty Island", "Crown Isle"],
+      "el": ["Νησί Μαργαρίτας", "Νησί του Αγ. Στεφάνου", "Νησί Ελευθερίας", "Νησί της Κορόνας"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What structure honors victims of the Holocaust on the Danube banks?",
+      "el": "Ποιο μνημείο τιμά τα θύματα του Ολοκαυτώματος στις όχθες του Δούναβη;"
+    },
+    "options": {
+      "en": ["Shoes on the Danube", "Bridge of Sorrow", "Tears Memorial", "Wall of Remembrance"],
+      "el": ["Παπούτσια στον Δούναβη", "Γέφυρα Θλίψης", "Μνημείο Δακρύων", "Τοίχος Μνήμης"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What’s the name of the central shopping street in Pest?",
+      "el": "Ποιο είναι το όνομα του κεντρικού εμπορικού δρόμου στην Πέστη;"
+    },
+    "options": {
+      "en": ["Váci Street", "Andrássy Avenue", "Deák Boulevard", "Szent István Way"],
+      "el": ["Οδός Βάτσι", "Λεωφόρος Αντράσι", "Λεωφόρος Ντέακ", "Οδός Στεφάνου"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What building hosts opera performances in Budapest?",
+      "el": "Ποιο κτίριο φιλοξενεί παραστάσεις όπερας στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["Hungarian State Opera", "Palace of Arts", "Buda Concert Hall", "Royal Music House"],
+      "el": ["Κρατική Όπερα Ουγγαρίας", "Παλάτι των Τεχνών", "Αίθουσα Συναυλιών Βούδας", "Βασιλικό Μουσικό Μέγαρο"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Who was the first king of Hungary, whose name is tied to many sites?",
+      "el": "Ποιος ήταν ο πρώτος βασιλιάς της Ουγγαρίας, του οποίου το όνομα φέρουν πολλά σημεία;"
+    },
+    "options": {
+      "en": ["St. Stephen", "Matthias Corvinus", "Ferdinand I", "Béla IV"],
+      "el": ["Άγιος Στέφανος", "Ματίας Κορβίνος", "Φερδινάνδος Α'", "Βέλα Δ'"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which famous avenue in Budapest is UNESCO-listed?",
+      "el": "Ποια διάσημη λεωφόρος στη Βουδαπέστη είναι μνημείο UNESCO;"
+    },
+    "options": {
+      "en": ["Andrássy Avenue", "Váci Street", "Margit Boulevard", "Liberty Street"],
+      "el": ["Λεωφόρος Αντράσι", "Οδός Βάτσι", "Λεωφόρος Μαργκίτ", "Οδός Ελευθερίας"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Which city does Budapest share twin capital status with in EU institutions?",
+      "el": "Με ποια πόλη μοιράζεται η Βουδαπέστη τον ρόλο της δίδυμης πρωτεύουσας σε θεσμούς της ΕΕ;"
+    },
+    "options": {
+      "en": ["Brussels", "Vienna", "Strasbourg", "Luxembourg"],
+      "el": ["Βρυξέλλες", "Βιέννη", "Στρασβούργο", "Λουξεμβούργο"]
+    },
+    "answerIndex": 3
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which cat-friendly park might Sol enjoy in Budapest?",
+      "el": "Ποιο φιλικό προς τις γάτες πάρκο θα απολάμβανε η Sol στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["Városliget", "City Paw Park", "Cathedral Gardens", "Royal Cat Hill"],
+      "el": ["Βάροςλιγκετ", "Πάρκο Πατούσας", "Κήποι Καθεδρικού", "Βασιλικός Λόφος της Γάτας"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which of these is a Hungarian invention?",
+      "el": "Ποια από τα παρακάτω είναι εφεύρεση Ούγγρου;"
+    },
+    "options": {
+      "en": ["Rubik's Cube", "Teflon", "Penicillin", "Zipper"],
+      "el": ["Κύβος του Ρούμπικ", "Τεφλόν", "Πενικιλίνη", "Φερμουάρ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which Hungarian dessert is known internationally?",
+      "el": "Ποιο ουγγρικό επιδόρπιο είναι διεθνώς γνωστό;"
+    },
+    "options": {
+      "en": ["Dobos Torte", "Strudel", "Tiramisu", "Baklava"],
+      "el": ["Ντόμπος Τορτ", "Στρούντελ", "Τιραμισού", "Μπακλαβάς"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What is Sol’s throne in Budapest metaphorically?",
+      "el": "Ποιος είναι ο θρόνος της Sol μεταφορικά στη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["The Parliament steps", "The Opera balcony", "The Fisherman’s Bastion", "The Chain Bridge railing"],
+      "el": ["Τα σκαλοπάτια του Κοινοβουλίου", "Το μπαλκόνι της Όπερας", "Το Οχυρό των Ψαράδων", "Το κάγκελο της Γέφυρας"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Which statue stands atop Gellért Hill?",
+      "el": "Ποιο άγαλμα στέκεται στην κορυφή του λόφου Γκέλερτ;"
+    },
+    "options": {
+      "en": ["Liberty Statue", "St. Margaret", "Crown of Hungary", "Holy Cross"],
+      "el": ["Άγαλμα της Ελευθερίας", "Αγία Μαργαρίτα", "Στέμμα της Ουγγαρίας", "Άγιος Σταυρός"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What is Budapest known for in terms of wellness?",
+      "el": "Για ποιο χαρακτηριστικό είναι διάσημη η Βουδαπέστη όσον αφορά την ευεξία;"
+    },
+    "options": {
+      "en": ["Thermal baths", "Sand saunas", "Hammam towers", "Salt caves"],
+      "el": ["Θερμά λουτρά", "Σάουνες με άμμο", "Πύργοι χαμάμ", "Σπηλιές αλατιού"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What is the full title of the SOLadventure Budapest episode?",
+      "el": "Ποιος είναι ο πλήρης τίτλος του επεισοδίου SOLadventure για τη Βουδαπέστη;"
+    },
+    "options": {
+      "en": ["SOLadventure #11 – Budapest, throne by the river 🐾🌉🇭🇺", "SOLadventure #11 – Budapest, paws on the Danube", "SOLadventure #11 – Budapest, royal nights", "SOLadventure #11 – Budapest, silent queen"],
+      "el": ["SOLadventure #11 – Βουδαπέστη, θρόνος δίπλα στο ποτάμι 🐾🌉🇭🇺", "SOLadventure #11 – Βουδαπέστη, πατούσες στον Δούναβη", "SOLadventure #11 – Βουδαπέστη, βασιλικές νύχτες", "SOLadventure #11 – Βουδαπέστη, σιωπηλή βασίλισσα"]
+    },
+    "answerIndex": 0
+  }
+]

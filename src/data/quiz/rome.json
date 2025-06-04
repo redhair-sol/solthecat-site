@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Which landmark stands behind Sol in this Roman adventure?",
+      "el": "Ποιο μνημείο βρίσκεται πίσω από τη Sol σε αυτήν τη ρωμαϊκή περιπέτεια;"
+    },
+    "options": {
+      "en": ["Colosseum", "Pantheon", "Trevi Fountain", "St. Peter’s Basilica"],
+      "el": ["Κολοσσαίο", "Πάνθεον", "Κρήνη του Τρέβι", "Βασιλική του Αγίου Πέτρου"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What ancient civilization is Rome known for?",
+      "el": "Για ποιον αρχαίο πολιτισμό είναι γνωστή η Ρώμη;"
+    },
+    "options": {
+      "en": ["Greek", "Roman", "Egyptian", "Celtic"],
+      "el": ["Ελληνικό", "Ρωμαϊκό", "Αιγυπτιακό", "Κελτικό"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which Roman structure inspired modern stadiums?",
+      "el": "Ποιο ρωμαϊκό κτίσμα ενέπνευσε τα σύγχρονα στάδια;"
+    },
+    "options": {
+      "en": ["Pantheon", "Colosseum", "Forum", "Aqueduct"],
+      "el": ["Πάνθεον", "Κολοσσαίο", "Φόρουμ", "Υδραγωγείο"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What is Sol's vibe in Rome?",
+      "el": "Ποιο είναι το στυλ της Sol στη Ρώμη;"
+    },
+    "options": {
+      "en": ["Laid-back", "Royal", "Mysterious", "Playful"],
+      "el": ["Χαλαρό", "Βασιλικό", "Μυστηριώδες", "Παιχνιδιάρικο"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which emperor ruled during the Colosseum's completion?",
+      "el": "Ποιος αυτοκράτορας βασίλευε όταν ολοκληρώθηκε το Κολοσσαίο;"
+    },
+    "options": {
+      "en": ["Nero", "Augustus", "Titus", "Trajan"],
+      "el": ["Νέρων", "Αύγουστος", "Τίτος", "Τραϊανός"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What feline word means 'cat' in Italian?",
+      "el": "Ποια ιταλική λέξη σημαίνει «γάτα»;"
+    },
+    "options": {
+      "en": ["Chat", "Gato", "Gatto", "Katze"],
+      "el": ["Chat", "Gato", "Gatto", "Katze"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which Roman site had political meetings?",
+      "el": "Σε ποιον ρωμαϊκό χώρο γίνονταν πολιτικές συγκεντρώσεις;"
+    },
+    "options": {
+      "en": ["Forum", "Pantheon", "Circus Maximus", "Baths of Caracalla"],
+      "el": ["Φόρουμ", "Πάνθεον", "Κίρκους Μάξιμους", "Λουτρά του Καρακάλλα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What color dominates Sol’s Roman outfit?",
+      "el": "Ποιο χρώμα κυριαρχεί στην εμφάνιση της Sol στη Ρώμη;"
+    },
+    "options": {
+      "en": ["Red", "Gold", "Black", "Purple"],
+      "el": ["Κόκκινο", "Χρυσό", "Μαύρο", "Μωβ"]
+    },
+    "answerIndex": 3
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What was the Roman Forum used for?",
+      "el": "Για ποιο σκοπό χρησιμοποιούνταν το Ρωμαϊκό Φόρουμ;"
+    },
+    "options": {
+      "en": ["Religious ceremonies", "Sports events", "Political and commercial activity", "Military parades"],
+      "el": ["Θρησκευτικές τελετές", "Αθλητικά γεγονότα", "Πολιτική και εμπορική δραστηριότητα", "Στρατιωτικές παρελάσεις"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What is the shape of the Colosseum?",
+      "el": "Ποιο είναι το σχήμα του Κολοσσαίου;"
+    },
+    "options": {
+      "en": ["Circle", "Oval", "Rectangle", "Hexagon"],
+      "el": ["Κύκλος", "Οβάλ", "Ορθογώνιο", "Εξάγωνο"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which river flows through Rome?",
+      "el": "Ποιος ποταμός διασχίζει τη Ρώμη;"
+    },
+    "options": {
+      "en": ["Tiber", "Danube", "Seine", "Po"],
+      "el": ["Τίβερης", "Δούναβης", "Σηκουάνας", "Πάδος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What building has a large hole in the ceiling?",
+      "el": "Ποιο κτίριο έχει μια μεγάλη τρύπα στην οροφή του;"
+    },
+    "options": {
+      "en": ["Colosseum", "Pantheon", "Basilica", "Temple of Saturn"],
+      "el": ["Κολοσσαίο", "Πάνθεον", "Βασιλική", "Ναός του Κρόνου"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What is the capital of Italy?",
+      "el": "Ποια είναι η πρωτεύουσα της Ιταλίας;"
+    },
+    "options": {
+      "en": ["Rome", "Milan", "Florence", "Venice"],
+      "el": ["Ρώμη", "Μιλάνο", "Φλωρεντία", "Βενετία"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What were gladiators known for?",
+      "el": "Για τι ήταν γνωστοί οι μονομάχοι;"
+    },
+    "options": {
+      "en": ["Cooking", "Fighting", "Teaching", "Singing"],
+      "el": ["Μαγειρική", "Μονομαχίες", "Διδασκαλία", "Τραγούδι"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which feline trait fits Sol in Rome?",
+      "el": "Ποιο χαρακτηριστικό της γάτας ταιριάζει στη Sol στη Ρώμη;"
+    },
+    "options": {
+      "en": ["Curiosity", "Pride", "Stealth", "Speed"],
+      "el": ["Περιέργεια", "Υπερηφάνεια", "Σιωπηλή κίνηση", "Ταχύτητα"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which city does SOLadventure #2 take place in?",
+      "el": "Σε ποια πόλη διαδραματίζεται το επεισόδιο #2 των SOLadventures;"
+    },
+    "options": {
+      "en": ["Athens", "Paris", "Rome", "Barcelona"],
+      "el": ["Αθήνα", "Παρίσι", "Ρώμη", "Βαρκελώνη"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which traditional dish is from Rome?",
+      "el": "Ποιο παραδοσιακό πιάτο προέρχεται από τη Ρώμη;"
+    },
+    "options": {
+      "en": ["Pizza Margherita", "Lasagna", "Carbonara", "Risotto"],
+      "el": ["Πίτσα Μαργαρίτα", "Λαζάνια", "Καρμπονάρα", "Ριζότο"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "How many hills was ancient Rome built on?",
+      "el": "Πόσους λόφους είχε η αρχαία Ρώμη;"
+    },
+    "options": {
+      "en": ["3", "5", "7", "9"],
+      "el": ["3", "5", "7", "9"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What feature gives Sol’s Roman adventure its flair?",
+      "el": "Ποιο στοιχείο προσδίδει στυλ στην περιπέτεια της Sol στη Ρώμη;"
+    },
+    "options": {
+      "en": ["The sunset", "The ruins", "Her attitude", "The crowd"],
+      "el": ["Το ηλιοβασίλεμα", "Τα ερείπια", "Η στάση της", "Το πλήθος"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which public area was central in Roman social life?",
+      "el": "Ποιος δημόσιος χώρος ήταν κεντρικός στην κοινωνική ζωή της Ρώμης;"
+    },
+    "options": {
+      "en": ["Forum", "Palace", "Colosseum", "Vatican"],
+      "el": ["Φόρουμ", "Παλάτι", "Κολοσσαίο", "Βατικανό"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What famous fountain do visitors throw coins in?",
+      "el": "Σε ποια διάσημη κρήνη ρίχνουν νομίσματα οι επισκέπτες;"
+    },
+    "options": {
+      "en": ["Fountain of Neptune", "Fontana dei Quattro Fiumi", "Trevi Fountain", "Barcaccia Fountain"],
+      "el": ["Κρήνη του Ποσειδώνα", "Κρήνη των Τεσσάρων Ποταμών", "Κρήνη του Τρέβι", "Κρήνη Μπαρκάτσια"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which architectural element defines the Pantheon?",
+      "el": "Ποιο αρχιτεκτονικό στοιχείο χαρακτηρίζει το Πάνθεον;"
+    },
+    "options": {
+      "en": ["Columns", "Dome", "Pillars", "Mosaics"],
+      "el": ["Κίονες", "Θόλος", "Στύλοι", "Ψηφιδωτά"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Which art form is found in many Roman buildings?",
+      "el": "Ποια μορφή τέχνης υπάρχει σε πολλά ρωμαϊκά κτίρια;"
+    },
+    "options": {
+      "en": ["Frescoes", "Tapestries", "Mosaics", "Graffiti"],
+      "el": ["Τοιχογραφίες", "Ταπισερί", "Ψηφιδωτά", "Γκράφιτι"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What language did ancient Romans speak?",
+      "el": "Ποια γλώσσα μιλούσαν οι αρχαίοι Ρωμαίοι;"
+    },
+    "options": {
+      "en": ["Greek", "Latin", "Italian", "Old Spanish"],
+      "el": ["Ελληνικά", "Λατινικά", "Ιταλικά", "Παλαιά Ισπανικά"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What does Sol’s Roman walk symbolize?",
+      "el": "Τι συμβολίζει ο ρωμαϊκός περίπατος της Sol;"
+    },
+    "options": {
+      "en": ["Adventure", "Dominance", "Elegance", "Curiosity"],
+      "el": ["Περιπέτεια", "Κυριαρχία", "Κομψότητα", "Περιέργεια"]
+    },
+    "answerIndex": 2
+  }
+]

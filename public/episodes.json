@@ -5,14 +5,12 @@
     "quote": "Historic? So am I.",
     "caption": "Paws touched the Parthenon. 🐾🐾🐾",
     "image": "episodes/athens.png",
-    "location": {
-      "lat": 37.9715,
-      "lng": 23.7257
-    },
+    "location": { "lat": 37.9715, "lng": 23.7257 },
     "visible": true,
+    "city": "athens",
     "story": {
-      "en": "First light in Athens. SOL woke atop the Parthenon marble, shook centuries of dust off her paws, and gazed at the city like something she had always owned. Tourists pointed their cameras, children tried to pet her, but she kept walking, unbothered. Goddesses don’t pose. They simply are.",
-      "el": "Πρώτο φως στην Αθήνα. Η SOL ξύπνησε πάνω στο μάρμαρο του Παρθενώνα, τίναξε αιώνες σκόνης από τις πατούσες της και αγνάντεψε την πόλη σαν κάτι που της ανήκε πάντα. Οι τουρίστες την έβγαζαν φωτογραφία, τα παιδιά προσπαθούσαν να την χαϊδέψουν, αλλά εκείνη προχωρούσε ατάραχη. Οι θεές δεν ποζάρουν. Απλώς υπάρχουν."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -21,14 +19,12 @@
     "quote": "She came. She saw. She purred.",
     "caption": "Colosseum? Just her playground. History bows when she walks 🐾🐾🐾",
     "image": "episodes/rome.png",
-    "location": {
-      "lat": 41.8902,
-      "lng": 12.4922
-    },
+    "location": { "lat": 41.8902, "lng": 12.4922 },
     "visible": true,
+    "city": "rome",
     "story": {
-      "en": "She hadn’t even fully entered the city, and heads were already turning. Romans know legends when they see them — but they’d never seen one this fluffy. She climbed the Spanish Steps without a glance back, purred through Piazza Navona, and claimed the Colosseum like she built it herself. A guard near the Vatican muttered, “These Romans are crazy.” She didn’t flinch. Just strutted. That’s attitude.",
-      "el": "Δεν είχε καν μπει ολόκληρη στην πόλη και ήδη γύριζαν κεφάλια. Οι Ρωμαίοι αναγνωρίζουν τους θρύλους — αλλά ποτέ δεν είχαν δει έναν τόσο φουντωτό. Ανέβηκε τα Σκαλιά της Ισπανίας χωρίς να ρίξει ματιά πίσω, γουργούρισε στην Piazza Navona και κατέλαβε το Κολοσσαίο σαν να το είχε χτίσει η ίδια. Ένας φρουρός κοντά στο Βατικανό μουρμούρισε: «Αυτοί οι Ρωμαίοι είναι τρελοί». Δεν έδειξε καμία αντίδραση. Περπάτησε. Αυτό είναι attitude."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -37,14 +33,12 @@
     "quote": "Allure built in. Like her gaze.",
     "caption": "Paris didn’t stand a chance. 🐾🐾🐾",
     "image": "episodes/paris.png",
-    "location": {
-      "lat": 48.8566,
-      "lng": 2.3522
-    },
+    "location": { "lat": 48.8566, "lng": 2.3522 },
     "visible": false,
+    "city": "paris",
     "story": {
-      "en": "Paris was style, elegance, mystery. So was she. She paused beneath the Eiffel Tower, then climbed an artist's easel in Montmartre. Locals whispered 'chic'. But she? She just blinked.",
-      "el": "Το Παρίσι ήταν στυλ, κομψότητα, μυστήριο. Όπως κι εκείνη. Στάθηκε κάτω από τον Πύργο του Άιφελ και μετά σκαρφάλωσε σε έναν καμβά στη Μονμάρτη. Οι ντόπιοι ψιθύρισαν 'σικ'. Εκείνη; Μόνο ανοιγόκλεισε τα μάτια."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -53,14 +47,12 @@
     "quote": "Curves, spires, and one queen.",
     "caption": "She danced with Gaudí’s ghosts. 🐾🐾🐾",
     "image": "episodes/barcelona.png",
-    "location": {
-      "lat": 41.3851,
-      "lng": 2.1734
-    },
+    "location": { "lat": 41.3851, "lng": 2.1734 },
     "visible": false,
+    "city": "barcelona",
     "story": {
-      "en": "She strolled through Gothic alleys and purred on Gaudí's tilework. A pigeon tried to challenge her on La Rambla. It lost. She didn’t even hiss.",
-      "el": "Περπάτησε στα γοτθικά σοκάκια και γουργούρισε πάνω στα κεραμικά του Γκαουντί. Ένα περιστέρι της έκανε επίδειξη στη Ράμπλα. Έχασε. Εκείνη δεν έβγαλε ούτε ήχο."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -69,14 +61,12 @@
     "quote": "Royalty has arrived.",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
     "image": "episodes/london.png",
-    "location": {
-      "lat": 51.5074,
-      "lng": -0.1278
-    },
+    "location": { "lat": 51.5074, "lng": -0.1278 },
     "visible": false,
+    "city": "london",
     "story": {
-      "en": "Big Ben chimed. She yawned. London streets became her runway. A corgi stared. She didn’t break stride.",
-      "el": "Ο Big Ben χτύπησε. Εκείνη χασμουρήθηκε. Οι δρόμοι έγιναν πασαρέλα της. Ένα κόργκι την κοίταξε. Δεν γύρισε ούτε βλέμμα."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -85,14 +75,12 @@
     "quote": "Poise marches on.",
     "caption": "She walked. History saluted. 🐾🐾🐾",
     "image": "episodes/berlin.png",
-    "location": {
-      "lat": 52.52,
-      "lng": 13.405
-    },
+    "location": { "lat": 52.52, "lng": 13.405 },
     "visible": false,
+    "city": "berlin",
     "story": {
-      "en": "Past the Brandenburg Gate, her silence echoed louder than speeches. She didn’t just pass by history. She paced it.",
-      "el": "Πέρασε την Πύλη του Βρανδεμβούργου και η σιωπή της ήχησε πιο δυνατά από κάθε λόγο. Δεν πέρασε απλώς την Ιστορία. Την περπάτησε."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -101,14 +89,12 @@
     "quote": "Grace blooms here.",
     "caption": "No bike. No boat. Just grace on cobblestones. 🐾🐾🐾",
     "image": "episodes/amsterdam.png",
-    "location": {
-      "lat": 52.3676,
-      "lng": 4.9041
-    },
+    "location": { "lat": 52.3676, "lng": 4.9041 },
     "visible": false,
+    "city": "amsterdam",
     "story": {
-      "en": "Canals shimmered. Tulips nodded. She walked on petals like they were laid for her. Amsterdam knew who ruled.",
-      "el": "Τα κανάλια έλαμπαν. Οι τουλίπες υποκλίνονταν. Εκείνη βάδιζε πάνω στα πέταλα σαν να είχαν στρωθεί για χάρη της."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -117,14 +103,12 @@
     "quote": "Queen of the peaks",
     "caption": "The Alps called. She brought silence. 🐾🐾🐾",
     "image": "episodes/swiss.png",
-    "location": {
-      "lat": 46.8182,
-      "lng": 8.2275
-    },
+    "location": { "lat": 46.8182, "lng": 8.2275 },
     "visible": false,
+    "city": "swiss",
     "story": {
-      "en": "She stood still. The mountains bowed. Silence is easy when you’re already majestic.",
-      "el": "Στάθηκε ακίνητη. Τα βουνά υποκλίθηκαν. Η σιωπή είναι εύκολη όταν είσαι ήδη μεγαλείο."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -133,14 +117,12 @@
     "quote": "Born for palaces",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
     "image": "episodes/vienna.png",
-    "location": {
-      "lat": 48.2082,
-      "lng": 16.3738
-    },
+    "location": { "lat": 48.2082, "lng": 16.3738 },
     "visible": false,
+    "city": "vienna",
     "story": {
-      "en": "Imperial walls, golden halls, she owned them without a crown. Vienna felt soft beneath her paws.",
-      "el": "Αυτοκρατορικά τείχη, χρυσοί διάδρομοι. Δεν χρειάστηκε στέμμα για να τα κατακτήσει. Η Βιέννη απλώθηκε ήρεμη κάτω από τις πατούσες της."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -149,14 +131,12 @@
     "quote": "Crowned in whispers",
     "caption": "Past meets paws. Silently. 🐾🐾🐾",
     "image": "episodes/prague.png",
-    "location": {
-      "lat": 50.0755,
-      "lng": 14.4378
-    },
+    "location": { "lat": 50.0755, "lng": 14.4378 },
     "visible": false,
+    "city": "prague",
     "story": {
-      "en": "Prague’s bridges held stories. She added her own. Quietly. Imperially. Purrfectly.",
-      "el": "Οι γέφυρες της Πράγας είχαν ιστορίες. Εκείνη πρόσθεσε τη δική της. Σιωπηλά. Βασιλικά. Τέλεια."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -165,14 +145,12 @@
     "quote": "Power glows",
     "caption": "She sat. The Parliament bowed. 🐾🐾🐾",
     "image": "episodes/budapest.png",
-    "location": {
-      "lat": 47.4979,
-      "lng": 19.0402
-    },
+    "location": { "lat": 47.4979, "lng": 19.0402 },
     "visible": false,
+    "city": "budapest",
     "story": {
-      "en": "From Buda to Pest, she prowled with poise. Parliament glowed beneath her paws.",
-      "el": "Από τη Βούδα ως την Πέστη, περιδιάβηκε με χάρη. Το Κοινοβούλιο έλαμψε κάτω από τα πατουσάκια της."
+      "en": "...",
+      "el": "..."
     }
   },
   {
@@ -181,14 +159,12 @@
     "quote": "No roar. Just rule",
     "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
     "image": "episodes/ljubljana.png",
-    "location": {
-      "lat": 46.0569,
-      "lng": 14.5058
-    },
+    "location": { "lat": 46.0569, "lng": 14.5058 },
     "visible": false,
+    "city": "ljubljana",
     "story": {
-      "en": "No guards. No trumpets. Just presence. In Ljubljana, she didn’t conquer. She reigned.",
-      "el": "Χωρίς φρουρούς. Χωρίς σάλπιγγες. Μόνο παρουσία. Στη Λιουμπλιάνα δεν κατέκτησε. Βασίλεψε."
+      "en": "...",
+      "el": "..."
     }
   }
 ]

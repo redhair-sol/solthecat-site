@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Which ancient site does Sol overlook in this episode?",
+      "el": "Ποιο αρχαίο μνημείο δεσπόζει πίσω από τη Sol σε αυτό το επεισόδιο;"
+    },
+    "options": {
+      "en": [
+        "Acropolis",
+        "Colosseum",
+        "Parthenon",
+        "Pantheon"
+      ],
+      "el": [
+        "Ακρόπολη",
+        "Κολοσσαίο",
+        "Παρθενώνας",
+        "Πάνθεον"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What city is known as the cradle of democracy?",
+      "el": "Ποια πόλη θεωρείται το λίκνο της δημοκρατίας;"
+    },
+    "options": {
+      "en": [
+        "Athens",
+        "Rome",
+        "Vienna",
+        "Berlin"
+      ],
+      "el": [
+        "Αθήνα",
+        "Ρώμη",
+        "Βιέννη",
+        "Βερολίνο"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What landmark stands tall on a rocky hill in Athens?",
+      "el": "Ποιο αξιοθέατο στέκεται περήφανο σε βραχώδη λόφο στην Αθήνα;"
+    },
+    "options": {
+      "en": [
+        "Big Ben",
+        "Acropolis",
+        "Tower of Pisa",
+        "Eiffel Tower"
+      ],
+      "el": [
+        "Big Ben",
+        "Ακρόπολη",
+        "Πύργος της Πίζας",
+        "Πύργος του Άιφελ"
+      ]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which goddess was honored in ancient Athens?",
+      "el": "Ποια θεά τιμόταν ιδιαίτερα στην αρχαία Αθήνα;"
+    },
+    "options": {
+      "en": [
+        "Aphrodite",
+        "Artemis",
+        "Athena",
+        "Hera"
+      ],
+      "el": [
+        "Αφροδίτη",
+        "Άρτεμις",
+        "Αθηνά",
+        "Ήρα"
+      ]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What is the traditional footwear once worn by Athenian soldiers?",
+      "el": "Ποια ήταν η παραδοσιακή υπόδηση των Αθηναίων στρατιωτών;"
+    },
+    "options": {
+      "en": [
+        "Loafers",
+        "Togas",
+        "Sandals",
+        "Boots"
+      ],
+      "el": [
+        "Μοκασίνια",
+        "Τόγες",
+        "Σανδάλια",
+        "Μπότες"
+      ]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Which philosopher taught in Athens?",
+      "el": "Ποιος φιλόσοφος δίδαξε στην Αθήνα;"
+    },
+    "options": {
+      "en": [
+        "Plato",
+        "Caesar",
+        "Socrates",
+        "Descartes"
+      ],
+      "el": [
+        "Πλάτωνας",
+        "Καίσαρας",
+        "Σωκράτης",
+        "Ντεκάρτ"
+      ]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What hill provides a perfect view of the Acropolis?",
+      "el": "Από ποιο λόφο έχεις τέλεια θέα στην Ακρόπολη;"
+    },
+    "options": {
+      "en": [
+        "Philopappos",
+        "Lycabettus",
+        "Pnyx",
+        "Montmartre"
+      ],
+      "el": [
+        "Φιλοπάππου",
+        "Λυκαβηττός",
+        "Πνύκα",
+        "Μονμάρτη"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What is the traditional Greek garment called?",
+      "el": "Πώς λέγεται το παραδοσιακό ελληνικό ένδυμα;"
+    },
+    "options": {
+      "en": [
+        "Toga",
+        "Kimono",
+        "Fustanella",
+        "Sari"
+      ],
+      "el": [
+        "Τόγα",
+        "Κιμονό",
+        "Φουστανέλα",
+        "Σάρι"
+      ]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which animal represents wisdom, just like Sol?",
+      "el": "Ποιο ζώο συμβολίζει τη σοφία, όπως και η Sol;"
+    },
+    "options": {
+      "en": [
+        "Cat",
+        "Owl",
+        "Fox",
+        "Lion"
+      ],
+      "el": [
+        "Γάτα",
+        "Κουκουβάγια",
+        "Αλεπού",
+        "Λιοντάρι"
+      ]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What column style is most famous in Athens?",
+      "el": "Ποιο στυλ κίονα είναι διάσημο στην Αθήνα;"
+    },
+    "options": {
+      "en": [
+        "Gothic",
+        "Doric",
+        "Roman",
+        "Baroque"
+      ],
+      "el": [
+        "Γοτθικό",
+        "Δωρικό",
+        "Ρωμαϊκό",
+        "Μπαρόκ"
+      ]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What number episode is Athens in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+    },
+    "options": {
+      "en": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ],
+      "el": [
+        "#1",
+        "#2",
+        "#3",
+        "#4"
+      ]
+    },
+    "answerIndex": 0
+  }
+]

@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 
+// Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home.jsx'));
 const Episodes = lazy(() => import('./pages/Episodes.jsx'));
 const Map = lazy(() => import('./pages/Map.jsx'));
@@ -13,10 +14,11 @@ const SOLsJourney = lazy(() => import('./pages/SOLsJourney.jsx'));
 const WhoIsSol = lazy(() => import('./pages/WhoIsSol.jsx'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Shop = lazy(() => import('./pages/Shop.jsx'));
-const Games = lazy(() => import('./pages/Games.jsx')); // ✅ νέο route
+const Games = lazy(() => import('./pages/Games.jsx'));
 const PawprintsGame = lazy(() => import('./pages/PawprintsGame.jsx'));
-const PuzzleMapGame = lazy(() => import('./pages/PuzzleMapGame.jsx')); // ✅ νέο game
-const NotFound = lazy(() => import('./pages/NotFound.jsx'));
+const PuzzleMapGame = lazy(() => import('./pages/PuzzleMapGame.jsx'));
+const QuizPlayer = lazy(() => import('./pages/QuizPlayer.jsx')); // ✅ Παιχνίδι quiz
+// const NotFound = lazy(() => import('./pages/NotFound.jsx')); // Removed for default GitHub behavior
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -32,10 +34,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="whoissol" element={<WhoIsSol />} />
             <Route path="contact" element={<Contact />} />
             <Route path="shop" element={<Shop />} />
-            <Route path="games" element={<Games />} /> {/* ✅ νέα σελίδα */}
+
+            {/* 🎮 Games */}
+            <Route path="games" element={<Games />} />
             <Route path="games/pawprints" element={<PawprintsGame />} />
-            <Route path="games/puzzlemap" element={<PuzzleMapGame />} /> {/* ✅ νέο παιχνίδι */}
-            <Route path="*" element={<NotFound />} />
+            <Route path="games/puzzlemap" element={<PuzzleMapGame />} />
+            <Route path="games/cityquiz" element={<QuizPlayer />} />
+
+            {/* Removed custom 404 route */}
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Route>
         </Routes>
       </Suspense>

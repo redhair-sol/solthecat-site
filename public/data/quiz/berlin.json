@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "What is the iconic monument featured in this episode?",
+      "el": "Ποιο είναι το εμβληματικό μνημείο που εμφανίζεται σε αυτό το επεισόδιο;"
+    },
+    "options": {
+      "en": ["Brandenburg Gate", "Berlin Wall", "Reichstag", "Fernsehturm"],
+      "el": ["Πύλη του Βρανδεμβούργου", "Τείχος του Βερολίνου", "Ράιχσταγκ", "Πύργος της Τηλεόρασης"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What is Sol’s posture as she faces the gate?",
+      "el": "Ποια είναι η στάση της Sol καθώς κοιτά την πύλη;"
+    },
+    "options": {
+      "en": ["Confident", "Playful", "Scared", "Curious"],
+      "el": ["Αυτοπεποίθηση", "Παιχνιδιάρικη", "Φοβισμένη", "Περίεργη"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which historical event is strongly connected to Berlin?",
+      "el": "Ποιο ιστορικό γεγονός συνδέεται έντονα με το Βερολίνο;"
+    },
+    "options": {
+      "en": ["Fall of the Wall", "French Revolution", "Industrial Revolution", "Brexit"],
+      "el": ["Πτώση του Τείχους", "Γαλλική Επανάσταση", "Βιομηχανική Επανάσταση", "Brexit"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What word best describes the architecture behind Sol?",
+      "el": "Ποια λέξη περιγράφει καλύτερα την αρχιτεκτονική πίσω από τη Sol;"
+    },
+    "options": {
+      "en": ["Classical", "Futuristic", "Gothic", "Minimal"],
+      "el": ["Κλασική", "Φουτουριστική", "Γοτθική", "Μινιμαλιστική"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What is Sol likely thinking in this scene?",
+      "el": "Τι σκέφτεται πιθανότατα η Sol σε αυτή τη σκηνή;"
+    },
+    "options": {
+      "en": ["I own this gate.", "Too many humans.", "Where's the grass?", "Nap time?"],
+      "el": ["Αυτή η πύλη μου ανήκει.", "Πάρα πολλοί άνθρωποι.", "Πού είναι το γρασίδι;", "Ώρα για υπνάκο;"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What is the capital of Germany?",
+      "el": "Ποια είναι η πρωτεύουσα της Γερμανίας;"
+    },
+    "options": {
+      "en": ["Berlin", "Munich", "Hamburg", "Frankfurt"],
+      "el": ["Βερολίνο", "Μόναχο", "Αμβούργο", "Φρανκφούρτη"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What style is Sol’s gaze in this episode?",
+      "el": "Ποιο ύφος έχει το βλέμμα της Sol σε αυτό το επεισόδιο;"
+    },
+    "options": {
+      "en": ["Regal", "Sleepy", "Angry", "Surprised"],
+      "el": ["Βασιλικό", "Νυσταγμένο", "Θυμωμένο", "Έκπληκτο"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What’s the dominant color in the background?",
+      "el": "Ποιο είναι το κυρίαρχο χρώμα στο φόντο;"
+    },
+    "options": {
+      "en": ["Beige", "Blue", "Grey", "Green"],
+      "el": ["Μπεζ", "Μπλε", "Γκρι", "Πράσινο"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "How many paws does Sol show in this photo?",
+      "el": "Πόσα πατουσάκια δείχνει η Sol σε αυτή τη φωτογραφία;"
+    },
+    "options": {
+      "en": ["One", "Two", "Three", "Four"],
+      "el": ["Ένα", "Δύο", "Τρία", "Τέσσερα"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What number episode is Berlin in the SOLadventures?",
+      "el": "Ποιο αριθμό επεισοδίου έχει το Βερολίνο στις SOLadventures;"
+    },
+    "options": {
+      "en": ["#4", "#5", "#6", "#7"],
+      "el": ["#4", "#5", "#6", "#7"]
+    },
+    "answerIndex": 2
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What used to divide East and West Berlin?",
+      "el": "Τι χώριζε το Ανατολικό και Δυτικό Βερολίνο;"
+    },
+    "options": {
+      "en": ["Berlin Wall", "River", "Fence", "Highway"],
+      "el": ["Το Τείχος του Βερολίνου", "Ποτάμι", "Φράχτης", "Αυτοκινητόδρομος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What might Sol hear near the gate?",
+      "el": "Τι μπορεί να ακούει η Sol κοντά στην πύλη;"
+    },
+    "options": {
+      "en": ["Tour guides", "Bells", "Seagulls", "Trains"],
+      "el": ["Ξεναγούς", "Καμπάνες", "Γλάρους", "Τρένα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What is Germany famous for?",
+      "el": "Για τι είναι γνωστή η Γερμανία;"
+    },
+    "options": {
+      "en": ["Castles", "Sushi", "Volcanoes", "Pyramids"],
+      "el": ["Κάστρα", "Σούσι", "Ηφαίστεια", "Πυραμίδες"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What emotion best fits Sol’s presence in Berlin?",
+      "el": "Ποιο συναίσθημα ταιριάζει περισσότερο με την παρουσία της Sol στο Βερολίνο;"
+    },
+    "options": {
+      "en": ["Authority", "Fear", "Boredom", "Excitement"],
+      "el": ["Αρχοντιά", "Φόβος", "Βαρεμάρα", "Ενθουσιασμός"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What kind of ears does Sol have in the photo?",
+      "el": "Τι είδους αυτιά έχει η Sol στη φωτογραφία;"
+    },
+    "options": {
+      "en": ["Alert", "Down", "Folded", "Hidden"],
+      "el": ["Σηκωμένα", "Πεσμένα", "Διπλωμένα", "Κρυμμένα"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What might the crowds do when they see Sol?",
+      "el": "Τι μπορεί να κάνουν τα πλήθη όταν βλέπουν τη Sol;"
+    },
+    "options": {
+      "en": ["Admire her", "Ignore her", "Feed her", "Chase her"],
+      "el": ["Τη θαυμάζουν", "Την αγνοούν", "Τη ταΐζουν", "Την κυνηγούν"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What vibe does Berlin give Sol?",
+      "el": "Τι αίσθηση δίνει το Βερολίνο στη Sol;"
+    },
+    "options": {
+      "en": ["Grand", "Relaxed", "Tropical", "Mysterious"],
+      "el": ["Μεγαλοπρεπή", "Χαλαρή", "Τροπική", "Μυστηριώδη"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What might Sol be guarding in Berlin?",
+      "el": "Τι μπορεί να φυλάει η Sol στο Βερολίνο;"
+    },
+    "options": {
+      "en": ["The gate", "A museum", "A bench", "A tree"],
+      "el": ["Την πύλη", "Ένα μουσείο", "Ένα παγκάκι", "Ένα δέντρο"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which country is Berlin the capital of?",
+      "el": "Ποιας χώρας είναι πρωτεύουσα το Βερολίνο;"
+    },
+    "options": {
+      "en": ["Germany", "Austria", "Switzerland", "Belgium"],
+      "el": ["Γερμανίας", "Αυστρίας", "Ελβετίας", "Βελγίου"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What famous museum island is in Berlin?",
+      "el": "Ποιο διάσημο «νησί μουσείων» βρίσκεται στο Βερολίνο;"
+    },
+    "options": {
+      "en": ["Museum Island", "Culture Bay", "Art Point", "Gallery Shore"],
+      "el": ["Νησί των Μουσείων", "Κόλπος του Πολιτισμού", "Σημείο Τέχνης", "Όχθη της Γκαλερί"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What time of day does the lighting in the photo suggest?",
+      "el": "Τι ώρα της ημέρας υποδηλώνει ο φωτισμός στη φωτογραφία;"
+    },
+    "options": {
+      "en": ["Morning", "Noon", "Evening", "Night"],
+      "el": ["Πρωί", "Μεσημέρι", "Απόγευμα", "Βράδυ"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What might Sol represent at the gate?",
+      "el": "Τι μπορεί να συμβολίζει η Sol στην πύλη;"
+    },
+    "options": {
+      "en": ["Peace", "Royalty", "Curiosity", "Travel"],
+      "el": ["Ειρήνη", "Βασιλεία", "Περιέργεια", "Ταξίδι"]
+    },
+    "answerIndex": 1
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What is Berlin known for besides history?",
+      "el": "Για τι άλλο είναι γνωστό το Βερολίνο πέρα από την ιστορία;"
+    },
+    "options": {
+      "en": ["Art and music", "Beaches", "Ski resorts", "Islands"],
+      "el": ["Τέχνη και μουσική", "Παραλίες", "Χιονοδρομικά", "Νησιά"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What is the name of Berlin’s famous tower?",
+      "el": "Ποιο είναι το όνομα του διάσημου πύργου του Βερολίνου;"
+    },
+    "options": {
+      "en": ["Fernsehturm", "Lichtturm", "Berlinblick", "Zeitsturm"],
+      "el": ["Πύργος της Τηλεόρασης", "Πύργος Φωτός", "Μπέρλινμπλικ", "Χρονόπυργος"]
+    },
+    "answerIndex": 0
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What does Sol's confident walk in Berlin say?",
+      "el": "Τι δείχνει το βήμα της Sol στο Βερολίνο;"
+    },
+    "options": {
+      "en": ["History bows.", "Let’s run!", "Where's my throne?", "Snack time?"],
+      "el": ["Η ιστορία υποκλίνεται.", "Πάμε να τρέξουμε!", "Πού είναι ο θρόνος μου;", "Ώρα για σνακ;"]
+    },
+    "answerIndex": 0
+  }
+]
