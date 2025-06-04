@@ -7,6 +7,7 @@
     "image": "episodes/athens.png",
     "location": { "lat": 37.9715, "lng": 23.7257 },
     "visible": true,
+    "city": "athens",
     "story": {
       "en": "First light in Athens. SOL woke atop the Parthenon marble, shook centuries of dust off her paws, and gazed at the city like something she had always owned. Tourists pointed their cameras, children tried to pet her, but she kept walking, unbothered. Goddesses don’t pose. They simply are.",
       "el": "Πρώτο φως στην Αθήνα. Η SOL ξύπνησε πάνω στο μάρμαρο του Παρθενώνα, τίναξε αιώνες σκόνης από τις πατούσες της και αγνάντεψε την πόλη σαν κάτι που της ανήκε πάντα. Οι τουρίστες την έβγαζαν φωτογραφία, τα παιδιά προσπαθούσαν να την χαϊδέψουν, αλλά εκείνη προχωρούσε ατάραχη. Οι θεές δεν ποζάρουν. Απλώς υπάρχουν."
@@ -20,6 +21,7 @@
     "image": "episodes/rome.png",
     "location": { "lat": 41.8902, "lng": 12.4922 },
     "visible": true,
+    "city": "rome",
     "story": {
       "en": "She hadn’t even fully entered the city, and heads were already turning. Romans know legends when they see them — but they’d never seen one this fluffy. She climbed the Spanish Steps without a glance back, purred through Piazza Navona, and claimed the Colosseum like she built it herself. A guard near the Vatican muttered, “These Romans are crazy.” She didn’t flinch. Just strutted. That’s attitude.",
       "el": "Δεν είχε καν μπει ολόκληρη στην πόλη και ήδη γύριζαν κεφάλια. Οι Ρωμαίοι αναγνωρίζουν τους θρύλους — αλλά ποτέ δεν είχαν δει έναν τόσο φουντωτό. Ανέβηκε τα Σκαλιά της Ισπανίας χωρίς να ρίξει ματιά πίσω, γουργούρισε στην Piazza Navona και κατέλαβε το Κολοσσαίο σαν να το είχε χτίσει η ίδια. Ένας φρουρός κοντά στο Βατικανό μουρμούρισε: «Αυτοί οι Ρωμαίοι είναι τρελοί». Δεν έδειξε καμία αντίδραση. Περπάτησε. Αυτό είναι attitude."
@@ -33,6 +35,7 @@
     "image": "episodes/paris.png",
     "location": { "lat": 48.8566, "lng": 2.3522 },
     "visible": true,
+    "city": "paris",
     "story": {
       "en": "Paris was not just a destination — it was a stage where Sol effortlessly took center role. Beneath the blue sky, she wandered the cobblestone streets, leaving traces woven into the city’s history. In Montmartre, among artists and colors, she found her own inspiration, as if she were part of a living canvas. Sunlight played in her eyes while whispers of passersby blended into a symphony of elegance and mystery. Every step was a promise, every pawprint a story — Paris and Sol became an inseparable tale.",
       "el": "Το Παρίσι δεν ήταν απλά ένας προορισμός — ήταν μια σκηνή όπου η Sol πρωταγωνίστησε με φυσικότητα. Κάτω από το γαλάζιο ουρανό, περπάτησε στους πλακόστρωτους δρόμους, αφήνοντας ίχνη που ενώθηκαν με την ιστορία της πόλης. Στη Μονμάρτη, ανάμεσα σε καλλιτέχνες και χρώματα, βρήκε τη δική της έμπνευση, σαν να ήταν κομμάτι ενός καμβά που συνεχώς ζωντανεύει. Το φως του ήλιου έπαιζε με τα μάτια της, ενώ το ψίθυροι των περαστικών υφαίνονταν σε μια συμφωνία κομψότητας και μυστηρίου. Κάθε βήμα της ήταν μια υπόσχεση, κάθε πατούσα μια αφήγηση — το Παρίσι και η Sol έγιναν ένα αχώριστο διήγημα."
@@ -46,6 +49,7 @@
     "image": "episodes/barcelona.png",
     "location": { "lat": 41.3851, "lng": 2.1734 },
     "visible": false,
+    "city": "barcelona",
     "story": {
       "en": "She strolled through Gothic alleys and purred on Gaudí's tilework. A pigeon tried to challenge her on La Rambla. It lost. She didn’t even hiss.",
       "el": "Περπάτησε στα γοτθικά σοκάκια και γουργούρισε πάνω στα κεραμικά του Γκαουντί. Ένα περιστέρι της έκανε επίδειξη στη Ράμπλα. Έχασε. Εκείνη δεν έβγαλε ούτε ήχο."
@@ -59,6 +63,7 @@
     "image": "episodes/london.png",
     "location": { "lat": 51.5074, "lng": -0.1278 },
     "visible": false,
+    "city": "london",
     "story": {
       "en": "Big Ben chimed. She yawned. London streets became her runway. A corgi stared. She didn’t break stride.",
       "el": "Ο Big Ben χτύπησε. Εκείνη χασμουρήθηκε. Οι δρόμοι έγιναν πασαρέλα της. Ένα κόργκι την κοίταξε. Δεν γύρισε ούτε βλέμμα."
@@ -72,6 +77,7 @@
     "image": "episodes/berlin.png",
     "location": { "lat": 52.52, "lng": 13.405 },
     "visible": false,
+    "city": "berlin",
     "story": {
       "en": "Past the Brandenburg Gate, her silence echoed louder than speeches. She didn’t just pass by history. She paced it.",
       "el": "Πέρασε την Πύλη του Βρανδεμβούργου και η σιωπή της ήχησε πιο δυνατά από κάθε λόγο. Δεν πέρασε απλώς την Ιστορία. Την περπάτησε."
@@ -85,6 +91,7 @@
     "image": "episodes/amsterdam.png",
     "location": { "lat": 52.3676, "lng": 4.9041 },
     "visible": false,
+    "city": "amsterdam",
     "story": {
       "en": "Canals shimmered. Tulips nodded. She walked on petals like they were laid for her. Amsterdam knew who ruled.",
       "el": "Τα κανάλια έλαμπαν. Οι τουλίπες υποκλίνονταν. Εκείνη βάδιζε πάνω στα πέταλα σαν να είχαν στρωθεί για χάρη της."
@@ -98,6 +105,7 @@
     "image": "episodes/swiss.png",
     "location": { "lat": 46.8182, "lng": 8.2275 },
     "visible": false,
+    "city": "swiss",
     "story": {
       "en": "She stood still. The mountains bowed. Silence is easy when you’re already majestic.",
       "el": "Στάθηκε ακίνητη. Τα βουνά υποκλίθηκαν. Η σιωπή είναι εύκολη όταν είσαι ήδη μεγαλείο."
@@ -111,6 +119,7 @@
     "image": "episodes/vienna.png",
     "location": { "lat": 48.2082, "lng": 16.3738 },
     "visible": false,
+    "city": "vienna",
     "story": {
       "en": "Imperial walls, golden halls, she owned them without a crown. Vienna felt soft beneath her paws.",
       "el": "Αυτοκρατορικά τείχη, χρυσοί διάδρομοι. Δεν χρειάστηκε στέμμα για να τα κατακτήσει. Η Βιέννη απλώθηκε ήρεμη κάτω από τις πατούσες της."
@@ -124,6 +133,7 @@
     "image": "episodes/prague.png",
     "location": { "lat": 50.0755, "lng": 14.4378 },
     "visible": false,
+    "city": "prague",
     "story": {
       "en": "Prague’s bridges held stories. She added her own. Quietly. Imperially. Purrfectly.",
       "el": "Οι γέφυρες της Πράγας είχαν ιστορίες. Εκείνη πρόσθεσε τη δική της. Σιωπηλά. Βασιλικά. Τέλεια."
@@ -137,6 +147,7 @@
     "image": "episodes/budapest.png",
     "location": { "lat": 47.4979, "lng": 19.0402 },
     "visible": false,
+    "city": "budapest",
     "story": {
       "en": "From Buda to Pest, she prowled with poise. Parliament glowed beneath her paws.",
       "el": "Από τη Βούδα ως την Πέστη, περιδιάβηκε με χάρη. Το Κοινοβούλιο έλαμψε κάτω από τα πατουσάκια της."
@@ -150,6 +161,7 @@
     "image": "episodes/ljubljana.png",
     "location": { "lat": 46.0569, "lng": 14.5058 },
     "visible": false,
+    "city": "ljubljana",
     "story": {
       "en": "No guards. No trumpets. Just presence. In Ljubljana, she didn’t conquer. She reigned.",
       "el": "Χωρίς φρουρούς. Χωρίς σάλπιγγες. Μόνο παρουσία. Στη Λιουμπλιάνα δεν κατέκτησε. Βασίλεψε."

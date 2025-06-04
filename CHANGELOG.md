@@ -4,6 +4,22 @@
 
 ---
 
+## [v3.0.0] - 2025-06-04
+
+### ?? Added - New Game: City Quiz
+- Προστέθηκε νέο παιχνίδι γνώσεων στο route `/games/quiz`.
+- Κάθε quiz εμφανίζει **8 τυχαίες ερωτήσεις** από σύνολο **25 ανά πόλη**.
+- Υποστηρίζει **δίγλωσσο περιεχόμενο** (???? English / ???? Ελληνικά).
+- Τα quiz είναι διαθέσιμα για τα επεισόδια: Athens, Rome, Paris.
+- Οι ερωτήσεις φορτώνονται δυναμικά από τα αρχεία `data/quiz/[city].json`.
+
+### ?? Improved - Visual Consistency
+- Το κουμπί **Start Quiz** αποκτά το ίδιο στυλ με το `JourneyButton` της αρχικής σελίδας για συνεκτική εμπειρία χρήστη.
+
+### ?? Cleaned - Code Cleanup
+- Αφαιρέθηκαν όλα τα debug logs από το `QuizPlayer.jsx`.
+- Ο κώδικας οργανώθηκε για καθαρότερη λογική εμφάνισης ερωτήσεων και αποτελεσμάτων.
+
 ## [v2.9.2] - 2025-06-03
 ### Changed
 - PuzzleMap now uses a guaranteed solvable shuffle logic via legal empty-tile moves (100 steps).

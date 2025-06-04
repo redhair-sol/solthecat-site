@@ -1,9 +1,28 @@
+// QuizPlayer.jsx
+
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
 
-// Styled components
+// Αντίγραφο του JourneyButton από το Home, ώστε να έχουμε το ίδιο style
+const JourneyButton = styled(Link)`
+  padding: 0.8rem 1.5rem;
+  background-color: #aa4dc8;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 1.5rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
 const PageContainer = styled.div`
   padding: 2rem;
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
@@ -30,21 +49,6 @@ const Dropdown = styled.select`
   background: #fff;
   color: #6a1b9a;
   cursor: pointer;
-`;
-
-const Button = styled.button`
-  margin-top: 1rem;
-  background-color: #f06292;
-  color: white;
-  padding: 0.6rem 1.4rem;
-  border: none;
-  border-radius: 2rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  &:hover {
-    background-color: #ec407a;
-  }
 `;
 
 const QuestionCard = styled.div`
@@ -110,51 +114,70 @@ export default function QuizPlayer() {
   const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState("");
 
+  // Φόρτωμα των episodes από episodes.json
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then(res => res.json())
-      .then(data => {
-        const visible = data.filter(ep => ep.visible);
+      .then((res) => res.json())
+      .then((data) => {
+        const visible = data.filter((ep) => ep.visible);
         setEpisodes(visible);
         if (visible.length > 0) {
           setSelectedId(visible[0].id.toString());
         }
       })
-      .catch(err => console.error("Failed to load episodes:", err));
+      .catch(() => {
+        setError("Failed to load episodes.");
+      });
   }, []);
 
-  const selectedEpisode = episodes.find(ep => ep.id.toString() === selectedId);
+  const selectedEpisode = episodes.find(
+    (ep) => ep.id.toString() === selectedId
+  );
   const city = selectedEpisode?.city;
 
+  // Συνάρτηση για τυχαίο shuffle πίνακα
+  const shuffleArray = (arr) => {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  };
+
+  // Όταν πατάμε "Start Quiz", φορτώνουμε το JSON και κρατάμε μόνο 8 τυχαίες
   const loadQuiz = () => {
     if (!city) return;
 
     fetch(`${import.meta.env.BASE_URL}data/quiz/${city}.json`)
-      .then(res => {
-        if (!res.ok) throw new Error("Quiz file not found.");
+      .then((res) => {
+        if (!res.ok) throw new Error();
         return res.json();
       })
-      .then(data => {
-        setQuestions(data);
+      .then((data) => {
+        // data είναι πίνακας 25 ερωτήσεων
+        const shuffled = shuffleArray(data);
+        const eightQuestions = shuffled.slice(0, 8);
+        setQuestions(eightQuestions);
         setCurrent(0);
         setScore(0);
         setShowResults(false);
         setError("");
-        alert(`✅ Quiz for ${city.toUpperCase()} loaded successfully! (${data.length} questions)`);
       })
-      .catch(err => {
-        console.error(err);
+      .catch(() => {
         setQuestions([]);
-        setError("Quiz file not found.");
+        setError("Quiz file not found or invalid.");
       });
   };
 
+  // Χειρισμός απάντησης στην τρέχουσα ερώτηση
   const handleAnswer = (index) => {
-    const isCorrect = index === questions[current].answer;
-    if (isCorrect) setScore(prev => prev + 1);
-
+    const isCorrect = questions[current].answers[index].correct;
+    if (isCorrect) {
+      setScore((prev) => prev + 1);
+    }
     if (current + 1 < questions.length) {
-      setCurrent(prev => prev + 1);
+      setCurrent((prev) => prev + 1);
     } else {
       setShowResults(true);
     }
@@ -165,30 +188,59 @@ export default function QuizPlayer() {
       <SolBrand />
       <Title>🧠 Quiz for: {selectedEpisode?.title || "Loading..."}</Title>
 
-      <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
+      {/* Επιλογή επεισοδίου */}
+      <Dropdown
+        value={selectedId}
+        onChange={(e) => {
+          setSelectedId(e.target.value);
+          setQuestions([]);
+          setShowResults(false);
+          setError("");
+        }}
+      >
         {episodes.map((ep) => (
-          <option key={ep.id} value={ep.id}>{ep.title}</option>
+          <option key={ep.id} value={ep.id}>
+            {ep.title}
+          </option>
         ))}
       </Dropdown>
 
-      <Dropdown value={language} onChange={(e) => setLanguage(e.target.value)}>
+      {/* Επιλογή γλώσσας */}
+      <Dropdown
+        value={language}
+        onChange={(e) => {
+          setLanguage(e.target.value);
+          setQuestions([]);
+          setShowResults(false);
+          setError("");
+        }}
+      >
         <option value="en">🇬🇧 English</option>
         <option value="el">🇬🇷 Ελληνικά</option>
       </Dropdown>
 
-      <Button onClick={loadQuiz}>Start Quiz</Button>
+      {/* Χρήση του JourneyButton για συνοχή με το Home */}
+      <JourneyButton as="button" onClick={loadQuiz}>
+        Start Quiz
+      </JourneyButton>
 
       {error && <Message>{error}</Message>}
 
+      {/* Εμφάνιση τρέχουσας ερώτησης (μέχρι να δώσουμε όλες τις 8) */}
       {questions.length > 0 && !showResults && (
         <QuestionCard>
-          <QuestionText>{questions[current].question[language]}</QuestionText>
-          {questions[current].options[language].map((opt, i) => (
-            <AnswerButton key={i} onClick={() => handleAnswer(i)}>{opt}</AnswerButton>
+          <QuestionText>
+            {questions[current].question[language]}
+          </QuestionText>
+          {questions[current].answers.map((ansObj, i) => (
+            <AnswerButton key={i} onClick={() => handleAnswer(i)}>
+              {ansObj.text[language]}
+            </AnswerButton>
           ))}
         </QuestionCard>
       )}
 
+      {/* Τελική βαθμολογία μετά τις 8 ερωτήσεις */}
       {showResults && (
         <ScoreText>
           🎉 You got {score} out of {questions.length} correct!

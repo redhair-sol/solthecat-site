@@ -1,3 +1,5 @@
+// Games.jsx
+
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
@@ -85,6 +87,13 @@ export default function Games() {
       name: "SOL's Puzzle Map",
       description: "Rebuild the cities Sol has visited!",
       route: "/games/puzzlemap",
+    },
+    {
+      id: 3,
+      emoji: "🧠",
+      name: "SOL Quiz",
+      description: "Test your knowledge with 8 random questions!",
+      route: "/games/cityquiz",
     },
   ];
 

@@ -5,21 +5,12 @@
       "en": "Which ancient site does Sol overlook in this episode?",
       "el": "Ποιο αρχαίο μνημείο δεσπόζει πίσω από τη Sol σε αυτό το επεισόδιο;"
     },
-    "options": {
-      "en": [
-        "Acropolis",
-        "Colosseum",
-        "Parthenon",
-        "Pantheon"
-      ],
-      "el": [
-        "Ακρόπολη",
-        "Κολοσσαίο",
-        "Παρθενώνας",
-        "Πάνθεον"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Acropolis", "el": "Ακρόπολη" }, "correct": true },
+      { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": false },
+      { "text": { "en": "Parthenon", "el": "Παρθενώνας" }, "correct": false },
+      { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": false }
+    ]
   },
   {
     "id": 2,
@@ -27,21 +18,12 @@
       "en": "What city is known as the cradle of democracy?",
       "el": "Ποια πόλη θεωρείται το λίκνο της δημοκρατίας;"
     },
-    "options": {
-      "en": [
-        "Athens",
-        "Rome",
-        "Vienna",
-        "Berlin"
-      ],
-      "el": [
-        "Αθήνα",
-        "Ρώμη",
-        "Βιέννη",
-        "Βερολίνο"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Athens", "el": "Αθήνα" }, "correct": true },
+      { "text": { "en": "Rome", "el": "Ρώμη" }, "correct": false },
+      { "text": { "en": "Vienna", "el": "Βιέννη" }, "correct": false },
+      { "text": { "en": "Berlin", "el": "Βερολίνο" }, "correct": false }
+    ]
   },
   {
     "id": 3,
@@ -49,21 +31,12 @@
       "en": "What landmark stands tall on a rocky hill in Athens?",
       "el": "Ποιο αξιοθέατο στέκεται περήφανο σε βραχώδη λόφο στην Αθήνα;"
     },
-    "options": {
-      "en": [
-        "Big Ben",
-        "Acropolis",
-        "Tower of Pisa",
-        "Eiffel Tower"
-      ],
-      "el": [
-        "Big Ben",
-        "Ακρόπολη",
-        "Πύργος της Πίζας",
-        "Πύργος του Άιφελ"
-      ]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Big Ben", "el": "Big Ben" }, "correct": false },
+      { "text": { "en": "Acropolis", "el": "Ακρόπολη" }, "correct": true },
+      { "text": { "en": "Tower of Pisa", "el": "Πύργος της Πίζας" }, "correct": false },
+      { "text": { "en": "Eiffel Tower", "el": "Πύργος του Άιφελ" }, "correct": false }
+    ]
   },
   {
     "id": 4,
@@ -71,21 +44,12 @@
       "en": "Which goddess was honored in ancient Athens?",
       "el": "Ποια θεά τιμόταν ιδιαίτερα στην αρχαία Αθήνα;"
     },
-    "options": {
-      "en": [
-        "Aphrodite",
-        "Artemis",
-        "Athena",
-        "Hera"
-      ],
-      "el": [
-        "Αφροδίτη",
-        "Άρτεμις",
-        "Αθηνά",
-        "Ήρα"
-      ]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Aphrodite", "el": "Αφροδίτη" }, "correct": false },
+      { "text": { "en": "Artemis", "el": "Άρτεμις" }, "correct": false },
+      { "text": { "en": "Athena", "el": "Αθηνά" }, "correct": true },
+      { "text": { "en": "Hera", "el": "Ήρα" }, "correct": false }
+    ]
   },
   {
     "id": 5,
@@ -93,21 +57,12 @@
       "en": "What is the traditional footwear once worn by Athenian soldiers?",
       "el": "Ποια ήταν η παραδοσιακή υπόδηση των Αθηναίων στρατιωτών;"
     },
-    "options": {
-      "en": [
-        "Loafers",
-        "Togas",
-        "Sandals",
-        "Boots"
-      ],
-      "el": [
-        "Μοκασίνια",
-        "Τόγες",
-        "Σανδάλια",
-        "Μπότες"
-      ]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Loafers", "el": "Μοκασίνια" }, "correct": false },
+      { "text": { "en": "Togas", "el": "Τόγες" }, "correct": false },
+      { "text": { "en": "Sandals", "el": "Σανδάλια" }, "correct": true },
+      { "text": { "en": "Boots", "el": "Μπότες" }, "correct": false }
+    ]
   },
   {
     "id": 6,
@@ -115,21 +70,12 @@
       "en": "Which philosopher taught in Athens?",
       "el": "Ποιος φιλόσοφος δίδαξε στην Αθήνα;"
     },
-    "options": {
-      "en": [
-        "Plato",
-        "Caesar",
-        "Socrates",
-        "Descartes"
-      ],
-      "el": [
-        "Πλάτωνας",
-        "Καίσαρας",
-        "Σωκράτης",
-        "Ντεκάρτ"
-      ]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Plato", "el": "Πλάτωνας" }, "correct": false },
+      { "text": { "en": "Caesar", "el": "Καίσαρας" }, "correct": false },
+      { "text": { "en": "Socrates", "el": "Σωκράτης" }, "correct": true },
+      { "text": { "en": "Descartes", "el": "Ντεκάρτ" }, "correct": false }
+    ]
   },
   {
     "id": 7,
@@ -137,21 +83,12 @@
       "en": "What hill provides a perfect view of the Acropolis?",
       "el": "Από ποιο λόφο έχεις τέλεια θέα στην Ακρόπολη;"
     },
-    "options": {
-      "en": [
-        "Philopappos",
-        "Lycabettus",
-        "Pnyx",
-        "Montmartre"
-      ],
-      "el": [
-        "Φιλοπάππου",
-        "Λυκαβηττός",
-        "Πνύκα",
-        "Μονμάρτη"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Philopappos", "el": "Φιλοπάππου" }, "correct": true },
+      { "text": { "en": "Lycabettus", "el": "Λυκαβηττός" }, "correct": false },
+      { "text": { "en": "Pnyx", "el": "Πνύκα" }, "correct": false },
+      { "text": { "en": "Montmartre", "el": "Μονμάρτη" }, "correct": false }
+    ]
   },
   {
     "id": 8,
@@ -159,21 +96,12 @@
       "en": "What is the traditional Greek garment called?",
       "el": "Πώς λέγεται το παραδοσιακό ελληνικό ένδυμα;"
     },
-    "options": {
-      "en": [
-        "Toga",
-        "Kimono",
-        "Fustanella",
-        "Sari"
-      ],
-      "el": [
-        "Τόγα",
-        "Κιμονό",
-        "Φουστανέλα",
-        "Σάρι"
-      ]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Toga", "el": "Τόγα" }, "correct": false },
+      { "text": { "en": "Kimono", "el": "Κιμονό" }, "correct": false },
+      { "text": { "en": "Fustanella", "el": "Φουστανέλα" }, "correct": true },
+      { "text": { "en": "Sari", "el": "Σάρι" }, "correct": false }
+    ]
   },
   {
     "id": 9,
@@ -181,21 +109,12 @@
       "en": "Which animal represents wisdom, just like Sol?",
       "el": "Ποιο ζώο συμβολίζει τη σοφία, όπως και η Sol;"
     },
-    "options": {
-      "en": [
-        "Cat",
-        "Owl",
-        "Fox",
-        "Lion"
-      ],
-      "el": [
-        "Γάτα",
-        "Κουκουβάγια",
-        "Αλεπού",
-        "Λιοντάρι"
-      ]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Cat", "el": "Γάτα" }, "correct": false },
+      { "text": { "en": "Owl", "el": "Κουκουβάγια" }, "correct": true },
+      { "text": { "en": "Fox", "el": "Αλεπού" }, "correct": false },
+      { "text": { "en": "Lion", "el": "Λιοντάρι" }, "correct": false }
+    ]
   },
   {
     "id": 10,
@@ -203,350 +122,206 @@
       "en": "What column style is most famous in Athens?",
       "el": "Ποιο στυλ κίονα είναι διάσημο στην Αθήνα;"
     },
-    "options": {
-      "en": [
-        "Gothic",
-        "Doric",
-        "Roman",
-        "Baroque"
-      ],
-      "el": [
-        "Γοτθικό",
-        "Δωρικό",
-        "Ρωμαϊκό",
-        "Μπαρόκ"
-      ]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Gothic", "el": "Γοτθικό" }, "correct": false },
+      { "text": { "en": "Doric", "el": "Δωρικό" }, "correct": true },
+      { "text": { "en": "Roman", "el": "Ρωμαϊκό" }, "correct": false },
+      { "text": { "en": "Baroque", "el": "Μπαρόκ" }, "correct": false }
+    ]
   },
   {
     "id": 11,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "Which popular neighborhood in Athens is known for its steps and views?",
+      "el": "Ποια δημοφιλής γειτονιά της Αθήνας φημίζεται για τα σκαλάκια και τη θέα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Anafiotika", "el": "Αναφιώτικα" }, "correct": true },
+      { "text": { "en": "Psiri", "el": "Ψυρρή" }, "correct": false },
+      { "text": { "en": "Kolonaki", "el": "Κολωνάκι" }, "correct": false },
+      { "text": { "en": "Thissio", "el": "Θησείο" }, "correct": false }
+    ]
   },
   {
     "id": 12,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "Which square is a central meeting point in Athens?",
+      "el": "Ποια πλατεία είναι κεντρικό σημείο συνάντησης στην Αθήνα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Syntagma", "el": "Σύνταγμα" }, "correct": true },
+      { "text": { "en": "Omonia", "el": "Ομόνοια" }, "correct": false },
+      { "text": { "en": "Exarchia", "el": "Εξάρχεια" }, "correct": false },
+      { "text": { "en": "Monastiraki", "el": "Μοναστηράκι" }, "correct": false }
+    ]
   },
   {
     "id": 13,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What color dominates Greek island houses, including in Athens?",
+      "el": "Ποιο χρώμα κυριαρχεί στα ελληνικά νησιώτικα σπίτια, ακόμη και στην Αθήνα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Red", "el": "Κόκκινο" }, "correct": false },
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": true },
+      { "text": { "en": "Green", "el": "Πράσινο" }, "correct": false },
+      { "text": { "en": "Yellow", "el": "Κίτρινο" }, "correct": false }
+    ]
   },
   {
     "id": 14,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "Which type of marble is famously used in the Parthenon?",
+      "el": "Ποιος τύπος μαρμάρου χρησιμοποιήθηκε διάσημα στον Παρθενώνα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Pentelic", "el": "Πεντελικό" }, "correct": true },
+      { "text": { "en": "Carrara", "el": "Καραρά" }, "correct": false },
+      { "text": { "en": "Parian", "el": "Παριανό" }, "correct": false },
+      { "text": { "en": "Naxian", "el": "Νάξιο" }, "correct": false }
+    ]
   },
   {
     "id": 15,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What time of day is ideal to photograph the Acropolis?",
+      "el": "Ποια ώρα της ημέρας είναι ιδανική για φωτογράφιση της Ακρόπολης;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Noon", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "Sunset", "el": "Ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false },
+      { "text": { "en": "Morning", "el": "Πρωί" }, "correct": false }
+    ]
   },
   {
     "id": 16,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "Which type of column does the Erechtheion use?",
+      "el": "Ποιο είδος κίονα χρησιμοποιεί το Ερέχθειο;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Caryatid", "el": "Καρυάτιδα" }, "correct": true },
+      { "text": { "en": "Ionic", "el": "Ιωνικός" }, "correct": false },
+      { "text": { "en": "Doric", "el": "Δωρικός" }, "correct": false },
+      { "text": { "en": "Tuscan", "el": "Τοσκανικός" }, "correct": false }
+    ]
   },
   {
     "id": 17,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What famous ceremony happens at the Tomb of the Unknown Soldier?",
+      "el": "Ποια διάσημη τελετή γίνεται στον Τάφο του Άγνωστου Στρατιώτη;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Wreath laying", "el": "Κατάθεση στεφάνου" }, "correct": false },
+      { "text": { "en": "Changing of the guard", "el": "Αλλαγή φρουράς" }, "correct": true },
+      { "text": { "en": "Candlelight vigil", "el": "Αγρυπνία με κεριά" }, "correct": false },
+      { "text": { "en": "Fireworks", "el": "Πυροτεχνήματα" }, "correct": false }
+    ]
   },
   {
     "id": 18,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What mountain lies northeast of Athens?",
+      "el": "Ποιο βουνό βρίσκεται βορειοανατολικά της Αθήνας;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Parnitha", "el": "Πάρνηθα" }, "correct": false },
+      { "text": { "en": "Hymettus", "el": "Υμηττός" }, "correct": false },
+      { "text": { "en": "Penteli", "el": "Πεντέλη" }, "correct": true },
+      { "text": { "en": "Olympos", "el": "Όλυμπος" }, "correct": false }
+    ]
   },
   {
     "id": 19,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "Which popular snack is a must in Athenian street food?",
+      "el": "Ποιο σνακ είναι απαραίτητο στο αθηναϊκό street food;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Souvlaki", "el": "Σουβλάκι" }, "correct": false },
+      { "text": { "en": "Gyro", "el": "Γύρος" }, "correct": false },
+      { "text": { "en": "Koulouri", "el": "Κουλούρι" }, "correct": true },
+      { "text": { "en": "Spanakopita", "el": "Σπανακόπιτα" }, "correct": false }
+    ]
   },
   {
     "id": 20,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What instrument is often heard in Athens' Plaka district?",
+      "el": "Ποιο μουσικό όργανο ακούγεται συχνά στην Πλάκα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Lyra", "el": "Λύρα" }, "correct": false },
+      { "text": { "en": "Bouzouki", "el": "Μπουζούκι" }, "correct": true },
+      { "text": { "en": "Santouri", "el": "Σαντούρι" }, "correct": false },
+      { "text": { "en": "Baglama", "el": "Μπαγλαμάς" }, "correct": false }
+    ]
   },
   {
     "id": 21,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What metro station has ancient ruins inside?",
+      "el": "Ποιος σταθμός μετρό έχει μέσα αρχαία ερείπια;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Syntagma", "el": "Σύνταγμα" }, "correct": false },
+      { "text": { "en": "Akropoli", "el": "Ακρόπολη" }, "correct": true },
+      { "text": { "en": "Monastiraki", "el": "Μοναστηράκι" }, "correct": false },
+      { "text": { "en": "Panepistimio", "el": "Πανεπιστήμιο" }, "correct": false }
+    ]
   },
   {
     "id": 22,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What museum houses the Elgin Marbles?",
+      "el": "Ποιο μουσείο φιλοξενεί τα Γλυπτά του Παρθενώνα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Louvre", "el": "Λούβρο" }, "correct": false },
+      { "text": { "en": "British Museum", "el": "Βρετανικό Μουσείο" }, "correct": true },
+      { "text": { "en": "National Museum", "el": "Εθνικό Μουσείο" }, "correct": false },
+      { "text": { "en": "Acropolis Museum", "el": "Μουσείο Ακρόπολης" }, "correct": false }
+    ]
   },
   {
     "id": 23,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What animal roams freely in the National Garden?",
+      "el": "Ποιο ζώο κυκλοφορεί ελεύθερα στον Εθνικό Κήπο;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Turtle", "el": "Χελώνα" }, "correct": true },
+      { "text": { "en": "Peacock", "el": "Παγώνι" }, "correct": false },
+      { "text": { "en": "Cat", "el": "Γάτα" }, "correct": false },
+      { "text": { "en": "Squirrel", "el": "Σκίουρος" }, "correct": false }
+    ]
   },
   {
     "id": 24,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "Which philosopher founded the Lyceum in Athens?",
+      "el": "Ποιος φιλόσοφος ίδρυσε το Λύκειο στην Αθήνα;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Aristotle", "el": "Αριστοτέλης" }, "correct": true },
+      { "text": { "en": "Socrates", "el": "Σωκράτης" }, "correct": false },
+      { "text": { "en": "Plato", "el": "Πλάτωνας" }, "correct": false },
+      { "text": { "en": "Pythagoras", "el": "Πυθαγόρας" }, "correct": false }
+    ]
   },
   {
     "id": 25,
     "question": {
-      "en": "What number episode is Athens in the SOLadventures?",
-      "el": "Ποιο αριθμό επεισοδίου έχει η Αθήνα στις SOLadventures;"
+      "en": "What feline is known to rule Athens rooftops?",
+      "el": "Ποια γάτα είναι γνωστή για την κυριαρχία της στις ταράτσες της Αθήνας;"
     },
-    "options": {
-      "en": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ],
-      "el": [
-        "#1",
-        "#2",
-        "#3",
-        "#4"
-      ]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Sol", "el": "Sol" }, "correct": true },
+      { "text": { "en": "Whiskers", "el": "Μουστάκιας" }, "correct": false },
+      { "text": { "en": "Athenia", "el": "Αθηνά" }, "correct": false },
+      { "text": { "en": "Clawdia", "el": "Κλόουντια" }, "correct": false }
+    ]
   }
 ]

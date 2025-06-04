@@ -5,11 +5,12 @@
       "en": "Which iconic tower appears behind Sol in this episode?",
       "el": "Ποιος εμβληματικός πύργος εμφανίζεται πίσω από τη Sol σε αυτό το επεισόδιο;"
     },
-    "options": {
-      "en": ["Eiffel Tower", "Big Ben", "Leaning Tower", "TV Tower"],
-      "el": ["Πύργος του Άιφελ", "Big Ben", "Πύργος της Πίζας", "Τηλεοπτικός Πύργος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Eiffel Tower", "el": "Πύργος του Άιφελ" }, "correct": true },
+      { "text": { "en": "Big Ben", "el": "Big Ben" }, "correct": false },
+      { "text": { "en": "Leaning Tower", "el": "Πύργος της Πίζας" }, "correct": false },
+      { "text": { "en": "TV Tower", "el": "Τηλεοπτικός Πύργος" }, "correct": false }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +18,12 @@
       "en": "Which city is known as the city of love?",
       "el": "Ποια πόλη είναι γνωστή ως η πόλη του έρωτα;"
     },
-    "options": {
-      "en": ["Paris", "Venice", "Vienna", "Athens"],
-      "el": ["Παρίσι", "Βενετία", "Βιέννη", "Αθήνα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Paris", "el": "Παρίσι" }, "correct": true },
+      { "text": { "en": "Venice", "el": "Βενετία" }, "correct": false },
+      { "text": { "en": "Vienna", "el": "Βιέννη" }, "correct": false },
+      { "text": { "en": "Athens", "el": "Αθήνα" }, "correct": false }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +31,12 @@
       "en": "Which river flows through Paris?",
       "el": "Ποιος ποταμός διασχίζει το Παρίσι;"
     },
-    "options": {
-      "en": ["Danube", "Seine", "Tiber", "Rhine"],
-      "el": ["Δούναβης", "Σηκουάνας", "Τίβερης", "Ρήνος"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Danube", "el": "Δούναβης" }, "correct": false },
+      { "text": { "en": "Seine", "el": "Σηκουάνας" }, "correct": true },
+      { "text": { "en": "Tiber", "el": "Τίβερης" }, "correct": false },
+      { "text": { "en": "Rhine", "el": "Ρήνος" }, "correct": false }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +44,12 @@
       "en": "What is the name of the cathedral famous for its gargoyles in Paris?",
       "el": "Ποιος είναι ο καθεδρικός ναός με τις γκαργκόιλ στο Παρίσι;"
     },
-    "options": {
-      "en": ["Sagrada Familia", "Notre-Dame", "St. Peter's", "Sacré-Cœur"],
-      "el": ["Σαγράδα Φαμίλια", "Νοτρ-Νταμ", "Άγιος Πέτρος", "Σακρέ Κερ"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Sagrada Familia", "el": "Σαγράδα Φαμίλια" }, "correct": false },
+      { "text": { "en": "Notre-Dame", "el": "Νοτρ-Νταμ" }, "correct": true },
+      { "text": { "en": "St. Peter's", "el": "Άγιος Πέτρος" }, "correct": false },
+      { "text": { "en": "Sacré-Cœur", "el": "Σακρέ Κερ" }, "correct": false }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +57,12 @@
       "en": "Which museum in Paris houses the Mona Lisa?",
       "el": "Ποιο μουσείο στο Παρίσι φιλοξενεί τη Μόνα Λίζα;"
     },
-    "options": {
-      "en": ["Louvre", "Orsay", "Met", "Hermitage"],
-      "el": ["Λούβρο", "Ορσέ", "Met", "Ερμιτάζ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Louvre", "el": "Λούβρο" }, "correct": true },
+      { "text": { "en": "Orsay", "el": "Ορσέ" }, "correct": false },
+      { "text": { "en": "Met", "el": "Met" }, "correct": false },
+      { "text": { "en": "Hermitage", "el": "Ερμιτάζ" }, "correct": false }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +70,12 @@
       "en": "Which neighborhood in Paris is known for artists and cafes?",
       "el": "Ποια γειτονιά του Παρισιού είναι γνωστή για καλλιτέχνες και καφέ;"
     },
-    "options": {
-      "en": ["Montmartre", "Le Marais", "Latin Quarter", "Belleville"],
-      "el": ["Μονμάρτη", "Μαραί", "Λατινική Συνοικία", "Μπελβίλ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Montmartre", "el": "Μονμάρτη" }, "correct": true },
+      { "text": { "en": "Le Marais", "el": "Μαραί" }, "correct": false },
+      { "text": { "en": "Latin Quarter", "el": "Λατινική Συνοικία" }, "correct": false },
+      { "text": { "en": "Belleville", "el": "Μπελβίλ" }, "correct": false }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +83,12 @@
       "en": "Which structure in Paris is lit up every night?",
       "el": "Ποιο κτίριο στο Παρίσι φωτίζεται κάθε βράδυ;"
     },
-    "options": {
-      "en": ["Eiffel Tower", "Louvre", "Arc de Triomphe", "Opera Garnier"],
-      "el": ["Πύργος του Άιφελ", "Λούβρο", "Αψίδα του Θριάμβου", "Όπερα Γκαρνιέ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Eiffel Tower", "el": "Πύργος του Άιφελ" }, "correct": true },
+      { "text": { "en": "Louvre", "el": "Λούβρο" }, "correct": false },
+      { "text": { "en": "Arc de Triomphe", "el": "Αψίδα του Θριάμβου" }, "correct": false },
+      { "text": { "en": "Opera Garnier", "el": "Όπερα Γκαρνιέ" }, "correct": false }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +96,12 @@
       "en": "What pastry is France famous for?",
       "el": "Ποιο γλυκό είναι διάσημο στη Γαλλία;"
     },
-    "options": {
-      "en": ["Croissant", "Baklava", "Tiramisu", "Strudel"],
-      "el": ["Κρουασάν", "Μπακλαβάς", "Τιραμισού", "Στρούντελ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Croissant", "el": "Κρουασάν" }, "correct": true },
+      { "text": { "en": "Baklava", "el": "Μπακλαβάς" }, "correct": false },
+      { "text": { "en": "Tiramisu", "el": "Τιραμισού" }, "correct": false },
+      { "text": { "en": "Strudel", "el": "Στρούντελ" }, "correct": false }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +109,12 @@
       "en": "Which palace is just outside Paris?",
       "el": "Ποιο παλάτι βρίσκεται λίγο έξω από το Παρίσι;"
     },
-    "options": {
-      "en": ["Versailles", "Buckingham", "Schonbrunn", "Topkapi"],
-      "el": ["Βερσαλλίες", "Μπάκιγχαμ", "Σενμπρούν", "Τοπκαπί"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Versailles", "el": "Βερσαλλίες" }, "correct": true },
+      { "text": { "en": "Buckingham", "el": "Μπάκιγχαμ" }, "correct": false },
+      { "text": { "en": "Schonbrunn", "el": "Σενμπρούν" }, "correct": false },
+      { "text": { "en": "Topkapi", "el": "Τοπκαπί" }, "correct": false }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +122,12 @@
       "en": "Which district is known for luxury shopping?",
       "el": "Ποια περιοχή είναι γνωστή για πολυτελείς αγορές;"
     },
-    "options": {
-      "en": ["Champs-Élysées", "Pigalle", "Bastille", "La Défense"],
-      "el": ["Σανζ Ελιζέ", "Πιγκάλ", "Βαστίλη", "Λα Ντεφάνς"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Champs-Élysées", "el": "Σανζ Ελιζέ" }, "correct": true },
+      { "text": { "en": "Pigalle", "el": "Πιγκάλ" }, "correct": false },
+      { "text": { "en": "Bastille", "el": "Βαστίλη" }, "correct": false },
+      { "text": { "en": "La Défense", "el": "Λα Ντεφάνς" }, "correct": false }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +135,12 @@
       "en": "What number episode is Paris in the SOLadventures series?",
       "el": "Τι αριθμό έχει το Παρίσι στη σειρά SOLadventures;"
     },
-    "options": {
-      "en": ["#1", "#2", "#3", "#4"],
-      "el": ["#1", "#2", "#3", "#4"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "#1", "el": "#1" }, "correct": false },
+      { "text": { "en": "#2", "el": "#2" }, "correct": false },
+      { "text": { "en": "#3", "el": "#3" }, "correct": true },
+      { "text": { "en": "#4", "el": "#4" }, "correct": false }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +148,12 @@
       "en": "What musical instrument is often associated with Paris streets?",
       "el": "Ποιο μουσικό όργανο συνδέεται συχνά με τους δρόμους του Παρισιού;"
     },
-    "options": {
-      "en": ["Accordion", "Violin", "Guitar", "Harp"],
-      "el": ["Ακορντεόν", "Βιολί", "Κιθάρα", "Άρπα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Accordion", "el": "Ακορντεόν" }, "correct": true },
+      { "text": { "en": "Violin", "el": "Βιολί" }, "correct": false },
+      { "text": { "en": "Guitar", "el": "Κιθάρα" }, "correct": false },
+      { "text": { "en": "Harp", "el": "Άρπα" }, "correct": false }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +161,12 @@
       "en": "Which Parisian monument honors fallen soldiers?",
       "el": "Ποιο μνημείο τιμά τους πεσόντες στρατιώτες;"
     },
-    "options": {
-      "en": ["Arc de Triomphe", "Eiffel Tower", "Pantheon", "Louvre"],
-      "el": ["Αψίδα του Θριάμβου", "Πύργος του Άιφελ", "Πάνθεον", "Λούβρο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Arc de Triomphe", "el": "Αψίδα του Θριάμβου" }, "correct": true },
+      { "text": { "en": "Eiffel Tower", "el": "Πύργος του Άιφελ" }, "correct": false },
+      { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": false },
+      { "text": { "en": "Louvre", "el": "Λούβρο" }, "correct": false }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +174,12 @@
       "en": "What is the Paris Metro known for?",
       "el": "Για τι είναι γνωστό το Μετρό του Παρισιού;"
     },
-    "options": {
-      "en": ["Art Nouveau entrances", "Speed", "Cleanliness", "Few stations"],
-      "el": ["Είσοδοι Αρ Νουβό", "Ταχύτητα", "Καθαριότητα", "Λίγοι σταθμοί"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Art Nouveau entrances", "el": "Είσοδοι Αρ Νουβό" }, "correct": true },
+      { "text": { "en": "Speed", "el": "Ταχύτητα" }, "correct": false },
+      { "text": { "en": "Cleanliness", "el": "Καθαριότητα" }, "correct": false },
+      { "text": { "en": "Few stations", "el": "Λίγοι σταθμοί" }, "correct": false }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +187,12 @@
       "en": "Which hill offers a panoramic view of Paris?",
       "el": "Ποιος λόφος προσφέρει πανοραμική θέα στο Παρίσι;"
     },
-    "options": {
-      "en": ["Montmartre", "Belleville", "Montparnasse", "Buttes-Chaumont"],
-      "el": ["Μονμάρτη", "Μπελβίλ", "Μονπαρνάς", "Μπιτ-Σομόν"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Montmartre", "el": "Μονμάρτη" }, "correct": true },
+      { "text": { "en": "Belleville", "el": "Μπελβίλ" }, "correct": false },
+      { "text": { "en": "Montparnasse", "el": "Μονπαρνάς" }, "correct": false },
+      { "text": { "en": "Buttes-Chaumont", "el": "Μπιτ-Σομόν" }, "correct": false }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +200,12 @@
       "en": "What is a typical Parisian café known for?",
       "el": "Για τι είναι γνωστό ένα τυπικό παρισινό καφέ;"
     },
-    "options": {
-      "en": ["Terrace seating", "Fast food", "Loud music", "Buffet"],
-      "el": ["Καθίσματα στη βεράντα", "Γρήγορο φαγητό", "Δυνατή μουσική", "Μπουφές"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Terrace seating", "el": "Καθίσματα στη βεράντα" }, "correct": true },
+      { "text": { "en": "Fast food", "el": "Γρήγορο φαγητό" }, "correct": false },
+      { "text": { "en": "Loud music", "el": "Δυνατή μουσική" }, "correct": false },
+      { "text": { "en": "Buffet", "el": "Μπουφές" }, "correct": false }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +213,12 @@
       "en": "Which structure in Paris was built for the 1889 World's Fair?",
       "el": "Ποιο κτίσμα στο Παρίσι κατασκευάστηκε για την Παγκόσμια Έκθεση του 1889;"
     },
-    "options": {
-      "en": ["Eiffel Tower", "Louvre Pyramid", "Notre-Dame", "Arc de Triomphe"],
-      "el": ["Πύργος του Άιφελ", "Πυραμίδα του Λούβρου", "Νοτρ-Νταμ", "Αψίδα του Θριάμβου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Eiffel Tower", "el": "Πύργος του Άιφελ" }, "correct": true },
+      { "text": { "en": "Louvre Pyramid", "el": "Πυραμίδα του Λούβρου" }, "correct": false },
+      { "text": { "en": "Notre-Dame", "el": "Νοτρ-Νταμ" }, "correct": false },
+      { "text": { "en": "Arc de Triomphe", "el": "Αψίδα του Θριάμβου" }, "correct": false }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +226,12 @@
       "en": "What is the Sacré-Cœur built of?",
       "el": "Από τι υλικό είναι χτισμένο το Σακρέ Κερ;"
     },
-    "options": {
-      "en": ["Travertine stone", "Concrete", "Marble", "Granite"],
-      "el": ["Τραβερτίνη", "Μπετόν", "Μάρμαρο", "Γρανίτης"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Travertine stone", "el": "Τραβερτίνη" }, "correct": true },
+      { "text": { "en": "Concrete", "el": "Μπετόν" }, "correct": false },
+      { "text": { "en": "Marble", "el": "Μάρμαρο" }, "correct": false },
+      { "text": { "en": "Granite", "el": "Γρανίτης" }, "correct": false }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +239,12 @@
       "en": "Which bridge in Paris is known for its locks of love?",
       "el": "Ποια γέφυρα στο Παρίσι ήταν γνωστή για τα λουκέτα αγάπης;"
     },
-    "options": {
-      "en": ["Pont des Arts", "Pont Neuf", "Alexander III", "Bir-Hakeim"],
-      "el": ["Πον ντε Ζαρ", "Πον Νεφ", "Αλεξάντρ Γ'", "Μπιρ-Χακέμ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Pont des Arts", "el": "Πον ντε Ζαρ" }, "correct": true },
+      { "text": { "en": "Pont Neuf", "el": "Πον Νεφ" }, "correct": false },
+      { "text": { "en": "Alexander III", "el": "Αλεξάντρ Γ'" }, "correct": false },
+      { "text": { "en": "Bir-Hakeim", "el": "Μπιρ-Χακέμ" }, "correct": false }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +252,12 @@
       "en": "What shape is the Louvre's entrance?",
       "el": "Τι σχήμα έχει η είσοδος του Λούβρου;"
     },
-    "options": {
-      "en": ["Pyramid", "Sphere", "Cube", "Arch"],
-      "el": ["Πυραμίδα", "Σφαίρα", "Κύβος", "Αψίδα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Pyramid", "el": "Πυραμίδα" }, "correct": true },
+      { "text": { "en": "Sphere", "el": "Σφαίρα" }, "correct": false },
+      { "text": { "en": "Cube", "el": "Κύβος" }, "correct": false },
+      { "text": { "en": "Arch", "el": "Αψίδα" }, "correct": false }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +265,12 @@
       "en": "Which fashion event is hosted in Paris?",
       "el": "Ποια εκδήλωση μόδας φιλοξενείται στο Παρίσι;"
     },
-    "options": {
-      "en": ["Paris Fashion Week", "Met Gala", "Milan Design Show", "London Couture"],
-      "el": ["Εβδομάδα Μόδας Παρισιού", "Met Gala", "Έκθεση Μιλάνου", "Λονδρέζικη Κουτουρ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Paris Fashion Week", "el": "Εβδομάδα Μόδας Παρισιού" }, "correct": true },
+      { "text": { "en": "Met Gala", "el": "Met Gala" }, "correct": false },
+      { "text": { "en": "Milan Design Show", "el": "Έκθεση Μιλάνου" }, "correct": false },
+      { "text": { "en": "London Couture", "el": "Λονδρέζικη Κουτουρ" }, "correct": false }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +278,12 @@
       "en": "What is a common mode of transport for tourists in Paris?",
       "el": "Ποιο είναι ένα συνηθισμένο μέσο μεταφοράς για τουρίστες στο Παρίσι;"
     },
-    "options": {
-      "en": ["River boat", "Helicopter", "Tram", "Segway"],
-      "el": ["Ποταμόπλοιο", "Ελικόπτερο", "Τραμ", "Σέγκγουεϊ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "River boat", "el": "Ποταμόπλοιο" }, "correct": true },
+      { "text": { "en": "Helicopter", "el": "Ελικόπτερο" }, "correct": false },
+      { "text": { "en": "Tram", "el": "Τραμ" }, "correct": false },
+      { "text": { "en": "Segway", "el": "Σέγκγουεϊ" }, "correct": false }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +291,12 @@
       "en": "Which square in Paris was known for executions?",
       "el": "Ποια πλατεία στο Παρίσι ήταν γνωστή για εκτελέσεις;"
     },
-    "options": {
-      "en": ["Place de la Concorde", "Place Vendôme", "Place d’Italie", "Place des Vosges"],
-      "el": ["Πλατεία Κονκόρντ", "Βαντόμ", "Ιταλίας", "Βοζζ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Place de la Concorde", "el": "Πλατεία Κονκόρντ" }, "correct": true },
+      { "text": { "en": "Place Vendôme", "el": "Βαντόμ" }, "correct": false },
+      { "text": { "en": "Place d’Italie", "el": "Ιταλίας" }, "correct": false },
+      { "text": { "en": "Place des Vosges", "el": "Βοζζ" }, "correct": false }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +304,12 @@
       "en": "Which famous French general is buried at Les Invalides?",
       "el": "Ποιος διάσημος Γάλλος στρατηγός είναι θαμμένος στο Λεζ Ανβαλίντ;"
     },
-    "options": {
-      "en": ["Napoleon Bonaparte", "Louis XIV", "Charles de Gaulle", "Robespierre"],
-      "el": ["Ναπολέων Βοναπάρτης", "Λουδοβίκος ΙΔ'", "Ντε Γκολ", "Ροβεσπιέρος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Napoleon Bonaparte", "el": "Ναπολέων Βοναπάρτης" }, "correct": true },
+      { "text": { "en": "Louis XIV", "el": "Λουδοβίκος ΙΔ'" }, "correct": false },
+      { "text": { "en": "Charles de Gaulle", "el": "Ντε Γκολ" }, "correct": false },
+      { "text": { "en": "Robespierre", "el": "Ροβεσπιέρος" }, "correct": false }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +317,11 @@
       "en": "What is the primary color palette seen in Parisian architecture?",
       "el": "Ποια είναι η κυρίαρχη παλέτα χρωμάτων στην παριζιάνικη αρχιτεκτονική;"
     },
-    "options": {
-      "en": ["Beige and grey", "Red and white", "Blue and gold", "Black and silver"],
-      "el": ["Μπεζ και γκρι", "Κόκκινο και λευκό", "Μπλε και χρυσό", "Μαύρο και ασημί"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Beige and grey", "el": "Μπεζ και γκρι" }, "correct": true },
+      { "text": { "en": "Red and white", "el": "Κόκκινο και λευκό" }, "correct": false },
+      { "text": { "en": "Blue and gold", "el": "Μπλε και χρυσό" }, "correct": false },
+      { "text": { "en": "Black and silver", "el": "Μαύρο και ασημί" }, "correct": false }
+    ]
   }
 ]

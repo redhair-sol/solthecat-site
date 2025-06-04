@@ -5,11 +5,12 @@
       "en": "Which landmark stands behind Sol in this Roman adventure?",
       "el": "Ποιο μνημείο βρίσκεται πίσω από τη Sol σε αυτήν τη ρωμαϊκή περιπέτεια;"
     },
-    "options": {
-      "en": ["Colosseum", "Pantheon", "Trevi Fountain", "St. Peter’s Basilica"],
-      "el": ["Κολοσσαίο", "Πάνθεον", "Κρήνη του Τρέβι", "Βασιλική του Αγίου Πέτρου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": true },
+      { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": false },
+      { "text": { "en": "Trevi Fountain", "el": "Κρήνη του Τρέβι" }, "correct": false },
+      { "text": { "en": "St. Peter’s Basilica", "el": "Βασιλική του Αγίου Πέτρου" }, "correct": false }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +18,12 @@
       "en": "What ancient civilization is Rome known for?",
       "el": "Για ποιον αρχαίο πολιτισμό είναι γνωστή η Ρώμη;"
     },
-    "options": {
-      "en": ["Greek", "Roman", "Egyptian", "Celtic"],
-      "el": ["Ελληνικό", "Ρωμαϊκό", "Αιγυπτιακό", "Κελτικό"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Greek", "el": "Ελληνικό" }, "correct": false },
+      { "text": { "en": "Roman", "el": "Ρωμαϊκό" }, "correct": true },
+      { "text": { "en": "Egyptian", "el": "Αιγυπτιακό" }, "correct": false },
+      { "text": { "en": "Celtic", "el": "Κελτικό" }, "correct": false }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +31,12 @@
       "en": "Which Roman structure inspired modern stadiums?",
       "el": "Ποιο ρωμαϊκό κτίσμα ενέπνευσε τα σύγχρονα στάδια;"
     },
-    "options": {
-      "en": ["Pantheon", "Colosseum", "Forum", "Aqueduct"],
-      "el": ["Πάνθεον", "Κολοσσαίο", "Φόρουμ", "Υδραγωγείο"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": false },
+      { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": true },
+      { "text": { "en": "Forum", "el": "Φόρουμ" }, "correct": false },
+      { "text": { "en": "Aqueduct", "el": "Υδραγωγείο" }, "correct": false }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +44,12 @@
       "en": "What is Sol's vibe in Rome?",
       "el": "Ποιο είναι το στυλ της Sol στη Ρώμη;"
     },
-    "options": {
-      "en": ["Laid-back", "Royal", "Mysterious", "Playful"],
-      "el": ["Χαλαρό", "Βασιλικό", "Μυστηριώδες", "Παιχνιδιάρικο"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Laid-back", "el": "Χαλαρό" }, "correct": false },
+      { "text": { "en": "Royal", "el": "Βασιλικό" }, "correct": true },
+      { "text": { "en": "Mysterious", "el": "Μυστηριώδες" }, "correct": false },
+      { "text": { "en": "Playful", "el": "Παιχνιδιάρικο" }, "correct": false }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +57,12 @@
       "en": "Which emperor ruled during the Colosseum's completion?",
       "el": "Ποιος αυτοκράτορας βασίλευε όταν ολοκληρώθηκε το Κολοσσαίο;"
     },
-    "options": {
-      "en": ["Nero", "Augustus", "Titus", "Trajan"],
-      "el": ["Νέρων", "Αύγουστος", "Τίτος", "Τραϊανός"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Nero", "el": "Νέρων" }, "correct": false },
+      { "text": { "en": "Augustus", "el": "Αύγουστος" }, "correct": false },
+      { "text": { "en": "Titus", "el": "Τίτος" }, "correct": true },
+      { "text": { "en": "Trajan", "el": "Τραϊανός" }, "correct": false }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +70,12 @@
       "en": "What feline word means 'cat' in Italian?",
       "el": "Ποια ιταλική λέξη σημαίνει «γάτα»;"
     },
-    "options": {
-      "en": ["Chat", "Gato", "Gatto", "Katze"],
-      "el": ["Chat", "Gato", "Gatto", "Katze"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Chat", "el": "Chat" }, "correct": false },
+      { "text": { "en": "Gato", "el": "Gato" }, "correct": false },
+      { "text": { "en": "Gatto", "el": "Gatto" }, "correct": true },
+      { "text": { "en": "Katze", "el": "Katze" }, "correct": false }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +83,12 @@
       "en": "Which Roman site had political meetings?",
       "el": "Σε ποιον ρωμαϊκό χώρο γίνονταν πολιτικές συγκεντρώσεις;"
     },
-    "options": {
-      "en": ["Forum", "Pantheon", "Circus Maximus", "Baths of Caracalla"],
-      "el": ["Φόρουμ", "Πάνθεον", "Κίρκους Μάξιμους", "Λουτρά του Καρακάλλα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Forum", "el": "Φόρουμ" }, "correct": true },
+      { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": false },
+      { "text": { "en": "Circus Maximus", "el": "Κίρκους Μάξιμους" }, "correct": false },
+      { "text": { "en": "Baths of Caracalla", "el": "Λουτρά του Καρακάλλα" }, "correct": false }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +96,12 @@
       "en": "What color dominates Sol’s Roman outfit?",
       "el": "Ποιο χρώμα κυριαρχεί στην εμφάνιση της Sol στη Ρώμη;"
     },
-    "options": {
-      "en": ["Red", "Gold", "Black", "Purple"],
-      "el": ["Κόκκινο", "Χρυσό", "Μαύρο", "Μωβ"]
-    },
-    "answerIndex": 3
+    "answers": [
+      { "text": { "en": "Red", "el": "Κόκκινο" }, "correct": false },
+      { "text": { "en": "Gold", "el": "Χρυσό" }, "correct": false },
+      { "text": { "en": "Black", "el": "Μαύρο" }, "correct": false },
+      { "text": { "en": "Purple", "el": "Μωβ" }, "correct": true }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +109,12 @@
       "en": "What was the Roman Forum used for?",
       "el": "Για ποιο σκοπό χρησιμοποιούνταν το Ρωμαϊκό Φόρουμ;"
     },
-    "options": {
-      "en": ["Religious ceremonies", "Sports events", "Political and commercial activity", "Military parades"],
-      "el": ["Θρησκευτικές τελετές", "Αθλητικά γεγονότα", "Πολιτική και εμπορική δραστηριότητα", "Στρατιωτικές παρελάσεις"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Religious ceremonies", "el": "Θρησκευτικές τελετές" }, "correct": false },
+      { "text": { "en": "Sports events", "el": "Αθλητικά γεγονότα" }, "correct": false },
+      { "text": { "en": "Political and commercial activity", "el": "Πολιτική και εμπορική δραστηριότητα" }, "correct": true },
+      { "text": { "en": "Military parades", "el": "Στρατιωτικές παρελάσεις" }, "correct": false }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +122,12 @@
       "en": "What is the shape of the Colosseum?",
       "el": "Ποιο είναι το σχήμα του Κολοσσαίου;"
     },
-    "options": {
-      "en": ["Circle", "Oval", "Rectangle", "Hexagon"],
-      "el": ["Κύκλος", "Οβάλ", "Ορθογώνιο", "Εξάγωνο"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Circle", "el": "Κύκλος" }, "correct": false },
+      { "text": { "en": "Oval", "el": "Οβάλ" }, "correct": true },
+      { "text": { "en": "Rectangle", "el": "Ορθογώνιο" }, "correct": false },
+      { "text": { "en": "Hexagon", "el": "Εξάγωνο" }, "correct": false }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +135,12 @@
       "en": "Which river flows through Rome?",
       "el": "Ποιος ποταμός διασχίζει τη Ρώμη;"
     },
-    "options": {
-      "en": ["Tiber", "Danube", "Seine", "Po"],
-      "el": ["Τίβερης", "Δούναβης", "Σηκουάνας", "Πάδος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Tiber", "el": "Τίβερης" }, "correct": true },
+      { "text": { "en": "Danube", "el": "Δούναβης" }, "correct": false },
+      { "text": { "en": "Seine", "el": "Σηκουάνας" }, "correct": false },
+      { "text": { "en": "Po", "el": "Πάδος" }, "correct": false }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +148,12 @@
       "en": "What building has a large hole in the ceiling?",
       "el": "Ποιο κτίριο έχει μια μεγάλη τρύπα στην οροφή του;"
     },
-    "options": {
-      "en": ["Colosseum", "Pantheon", "Basilica", "Temple of Saturn"],
-      "el": ["Κολοσσαίο", "Πάνθεον", "Βασιλική", "Ναός του Κρόνου"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": false },
+      { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": true },
+      { "text": { "en": "Basilica", "el": "Βασιλική" }, "correct": false },
+      { "text": { "en": "Temple of Saturn", "el": "Ναός του Κρόνου" }, "correct": false }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +161,12 @@
       "en": "What is the capital of Italy?",
       "el": "Ποια είναι η πρωτεύουσα της Ιταλίας;"
     },
-    "options": {
-      "en": ["Rome", "Milan", "Florence", "Venice"],
-      "el": ["Ρώμη", "Μιλάνο", "Φλωρεντία", "Βενετία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Rome", "el": "Ρώμη" }, "correct": true },
+      { "text": { "en": "Milan", "el": "Μιλάνο" }, "correct": false },
+      { "text": { "en": "Florence", "el": "Φλωρεντία" }, "correct": false },
+      { "text": { "en": "Venice", "el": "Βενετία" }, "correct": false }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +174,12 @@
       "en": "What were gladiators known for?",
       "el": "Για τι ήταν γνωστοί οι μονομάχοι;"
     },
-    "options": {
-      "en": ["Cooking", "Fighting", "Teaching", "Singing"],
-      "el": ["Μαγειρική", "Μονομαχίες", "Διδασκαλία", "Τραγούδι"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Cooking", "el": "Μαγειρική" }, "correct": false },
+      { "text": { "en": "Fighting", "el": "Μονομαχίες" }, "correct": true },
+      { "text": { "en": "Teaching", "el": "Διδασκαλία" }, "correct": false },
+      { "text": { "en": "Singing", "el": "Τραγούδι" }, "correct": false }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +187,12 @@
       "en": "Which feline trait fits Sol in Rome?",
       "el": "Ποιο χαρακτηριστικό της γάτας ταιριάζει στη Sol στη Ρώμη;"
     },
-    "options": {
-      "en": ["Curiosity", "Pride", "Stealth", "Speed"],
-      "el": ["Περιέργεια", "Υπερηφάνεια", "Σιωπηλή κίνηση", "Ταχύτητα"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Curiosity", "el": "Περιέργεια" }, "correct": false },
+      { "text": { "en": "Pride", "el": "Υπερηφάνεια" }, "correct": true },
+      { "text": { "en": "Stealth", "el": "Σιωπηλή κίνηση" }, "correct": false },
+      { "text": { "en": "Speed", "el": "Ταχύτητα" }, "correct": false }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +200,12 @@
       "en": "Which city does SOLadventure #2 take place in?",
       "el": "Σε ποια πόλη διαδραματίζεται το επεισόδιο #2 των SOLadventures;"
     },
-    "options": {
-      "en": ["Athens", "Paris", "Rome", "Barcelona"],
-      "el": ["Αθήνα", "Παρίσι", "Ρώμη", "Βαρκελώνη"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Athens", "el": "Αθήνα" }, "correct": false },
+      { "text": { "en": "Paris", "el": "Παρίσι" }, "correct": false },
+      { "text": { "en": "Rome", "el": "Ρώμη" }, "correct": true },
+      { "text": { "en": "Barcelona", "el": "Βαρκελώνη" }, "correct": false }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +213,12 @@
       "en": "Which traditional dish is from Rome?",
       "el": "Ποιο παραδοσιακό πιάτο προέρχεται από τη Ρώμη;"
     },
-    "options": {
-      "en": ["Pizza Margherita", "Lasagna", "Carbonara", "Risotto"],
-      "el": ["Πίτσα Μαργαρίτα", "Λαζάνια", "Καρμπονάρα", "Ριζότο"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Pizza Margherita", "el": "Πίτσα Μαργαρίτα" }, "correct": false },
+      { "text": { "en": "Lasagna", "el": "Λαζάνια" }, "correct": false },
+      { "text": { "en": "Carbonara", "el": "Καρμπονάρα" }, "correct": true },
+      { "text": { "en": "Risotto", "el": "Ριζότο" }, "correct": false }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +226,12 @@
       "en": "How many hills was ancient Rome built on?",
       "el": "Πόσους λόφους είχε η αρχαία Ρώμη;"
     },
-    "options": {
-      "en": ["3", "5", "7", "9"],
-      "el": ["3", "5", "7", "9"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "3", "el": "3" }, "correct": false },
+      { "text": { "en": "5", "el": "5" }, "correct": false },
+      { "text": { "en": "7", "el": "7" }, "correct": true },
+      { "text": { "en": "9", "el": "9" }, "correct": false }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +239,12 @@
       "en": "What feature gives Sol’s Roman adventure its flair?",
       "el": "Ποιο στοιχείο προσδίδει στυλ στην περιπέτεια της Sol στη Ρώμη;"
     },
-    "options": {
-      "en": ["The sunset", "The ruins", "Her attitude", "The crowd"],
-      "el": ["Το ηλιοβασίλεμα", "Τα ερείπια", "Η στάση της", "Το πλήθος"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "The sunset", "el": "Το ηλιοβασίλεμα" }, "correct": false },
+      { "text": { "en": "The ruins", "el": "Τα ερείπια" }, "correct": false },
+      { "text": { "en": "Her attitude", "el": "Η στάση της" }, "correct": true },
+      { "text": { "en": "The crowd", "el": "Το πλήθος" }, "correct": false }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +252,12 @@
       "en": "Which public area was central in Roman social life?",
       "el": "Ποιος δημόσιος χώρος ήταν κεντρικός στην κοινωνική ζωή της Ρώμης;"
     },
-    "options": {
-      "en": ["Forum", "Palace", "Colosseum", "Vatican"],
-      "el": ["Φόρουμ", "Παλάτι", "Κολοσσαίο", "Βατικανό"]
-    },
-    "answerIndex": 0
+    "answers": [
+      { "text": { "en": "Forum", "el": "Φόρουμ" }, "correct": true },
+      { "text": { "en": "Palace", "el": "Παλάτι" }, "correct": false },
+      { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": false },
+      { "text": { "en": "Vatican", "el": "Βατικανό" }, "correct": false }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +265,12 @@
       "en": "What famous fountain do visitors throw coins in?",
       "el": "Σε ποια διάσημη κρήνη ρίχνουν νομίσματα οι επισκέπτες;"
     },
-    "options": {
-      "en": ["Fountain of Neptune", "Fontana dei Quattro Fiumi", "Trevi Fountain", "Barcaccia Fountain"],
-      "el": ["Κρήνη του Ποσειδώνα", "Κρήνη των Τεσσάρων Ποταμών", "Κρήνη του Τρέβι", "Κρήνη Μπαρκάτσια"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Fountain of Neptune", "el": "Κρήνη του Ποσειδώνα" }, "correct": false },
+      { "text": { "en": "Fontana dei Quattro Fiumi", "el": "Κρήνη των Τεσσάρων Ποταμών" }, "correct": false },
+      { "text": { "en": "Trevi Fountain", "el": "Κρήνη του Τρέβι" }, "correct": true },
+      { "text": { "en": "Barcaccia Fountain", "el": "Κρήνη Μπαρκάτσια" }, "correct": false }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +278,12 @@
       "en": "Which architectural element defines the Pantheon?",
       "el": "Ποιο αρχιτεκτονικό στοιχείο χαρακτηρίζει το Πάνθεον;"
     },
-    "options": {
-      "en": ["Columns", "Dome", "Pillars", "Mosaics"],
-      "el": ["Κίονες", "Θόλος", "Στύλοι", "Ψηφιδωτά"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Columns", "el": "Κίονες" }, "correct": false },
+      { "text": { "en": "Dome", "el": "Θόλος" }, "correct": true },
+      { "text": { "en": "Pillars", "el": "Στύλοι" }, "correct": false },
+      { "text": { "en": "Mosaics", "el": "Ψηφιδωτά" }, "correct": false }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +291,12 @@
       "en": "Which art form is found in many Roman buildings?",
       "el": "Ποια μορφή τέχνης υπάρχει σε πολλά ρωμαϊκά κτίρια;"
     },
-    "options": {
-      "en": ["Frescoes", "Tapestries", "Mosaics", "Graffiti"],
-      "el": ["Τοιχογραφίες", "Ταπισερί", "Ψηφιδωτά", "Γκράφιτι"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Frescoes", "el": "Τοιχογραφίες" }, "correct": false },
+      { "text": { "en": "Tapestries", "el": "Ταπισερί" }, "correct": false },
+      { "text": { "en": "Mosaics", "el": "Ψηφιδωτά" }, "correct": true },
+      { "text": { "en": "Graffiti", "el": "Γκράφιτι" }, "correct": false }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +304,12 @@
       "en": "What language did ancient Romans speak?",
       "el": "Ποια γλώσσα μιλούσαν οι αρχαίοι Ρωμαίοι;"
     },
-    "options": {
-      "en": ["Greek", "Latin", "Italian", "Old Spanish"],
-      "el": ["Ελληνικά", "Λατινικά", "Ιταλικά", "Παλαιά Ισπανικά"]
-    },
-    "answerIndex": 1
+    "answers": [
+      { "text": { "en": "Greek", "el": "Ελληνικά" }, "correct": false },
+      { "text": { "en": "Latin", "el": "Λατινικά" }, "correct": true },
+      { "text": { "en": "Italian", "el": "Ιταλικά" }, "correct": false },
+      { "text": { "en": "Old Spanish", "el": "Παλαιά Ισπανικά" }, "correct": false }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +317,11 @@
       "en": "What does Sol’s Roman walk symbolize?",
       "el": "Τι συμβολίζει ο ρωμαϊκός περίπατος της Sol;"
     },
-    "options": {
-      "en": ["Adventure", "Dominance", "Elegance", "Curiosity"],
-      "el": ["Περιπέτεια", "Κυριαρχία", "Κομψότητα", "Περιέργεια"]
-    },
-    "answerIndex": 2
+    "answers": [
+      { "text": { "en": "Adventure", "el": "Περιπέτεια" }, "correct": false },
+      { "text": { "en": "Dominance", "el": "Κυριαρχία" }, "correct": false },
+      { "text": { "en": "Elegance", "el": "Κομψότητα" }, "correct": true },
+      { "text": { "en": "Curiosity", "el": "Περιέργεια" }, "correct": false }
+    ]
   }
 ]
