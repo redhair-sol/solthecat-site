@@ -92,7 +92,7 @@ export default function Games() {
       id: 3,
       emoji: "🧠",
       name: "SOL Quiz",
-      description: "Test your knowledge with 8 random questions!",
+      description: "Test your knowledge!",
       route: "/games/cityquiz",
     },
   ];

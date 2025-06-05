@@ -4,6 +4,21 @@
 
 ---
 
+## [v3.1.0] - 2025-06-05
+
+### Added
+- Language toggle (????/????) to the Home page, consistent with other pages (e.g. Episodes, WhoIsSol).
+- SEO-optimized mini-bio block on Home, featuring keyword **solthecat** to improve discoverability.
+- New Games promo section on the homepage with CTA: "Play the Games" / "Παίξε Παιχνίδια".
+
+### Improved
+- Unified visual style and structure for language switch across the site.
+- Better engagement flow by highlighting interactive features early.
+
+### Fixed
+- Minor spacing inconsistencies in top-level Home layout.
+
+
 ## [v3.0.0] - 2025-06-04
 
 ### ?? Added - New Game: City Quiz
