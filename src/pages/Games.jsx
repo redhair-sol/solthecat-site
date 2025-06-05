@@ -98,6 +98,13 @@ export default function Games() {
       description: "Test your knowledge!",
       route: "/games/cityquiz",
     },
+    {
+      id: 4,
+      emoji: "📷",
+      name: "SolSnap",
+      description: "Snap decision: 3 yes/no questions per episode.",
+      route: "/games/solsnap",
+    },
   ];
 
   return (

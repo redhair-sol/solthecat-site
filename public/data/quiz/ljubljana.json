@@ -5,11 +5,24 @@
       "en": "What is the capital of Slovenia?",
       "el": "Ποια είναι η πρωτεύουσα της Σλοβενίας;"
     },
-    "options": {
-      "en": ["Ljubljana", "Maribor", "Zagreb", "Trieste"],
-      "el": ["Λιουμπλιάνα", "Μάριμπορ", "Ζάγκρεμπ", "Τεργέστη"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Ljubljana", "el": "Λιουμπλιάνα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Maribor", "el": "Μάριμπορ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Zagreb", "el": "Ζάγκρεμπ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Trieste", "el": "Τεργέστη" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +30,24 @@
       "en": "Which river flows through the center of Ljubljana?",
       "el": "Ποιος ποταμός διασχίζει το κέντρο της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Ljubljanica", "Sava", "Drava", "Krka"],
-      "el": ["Λιουμπλιανίτσα", "Σάβα", "Δράβος", "Κρκα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Ljubljanica", "el": "Λιουμπλιανίτσα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Sava", "el": "Σάβα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Drava", "el": "Δράβος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Krka", "el": "Κρκα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +55,24 @@
       "en": "What is the name of the central castle overlooking Ljubljana?",
       "el": "Ποιο είναι το όνομα του κάστρου που δεσπόζει πάνω από τη Λιουμπλιάνα;"
     },
-    "options": {
-      "en": ["Ljubljana Castle", "Dragon Fortress", "St. George's Tower", "Sava Citadel"],
-      "el": ["Κάστρο Λιουμπλιάνας", "Οχυρό του Δράκου", "Πύργος του Αγίου Γεωργίου", "Ακρόπολη της Σάβα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Ljubljana Castle", "el": "Κάστρο Λιουμπλιάνας" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Dragon Fortress", "el": "Οχυρό του Δράκου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "St. George's Tower", "el": "Πύργος του Αγίου Γεωργίου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sava Citadel", "el": "Ακρόπολη της Σάβα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +80,24 @@
       "en": "Which mythical creature is the symbol of Ljubljana?",
       "el": "Ποιο μυθικό πλάσμα είναι το σύμβολο της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Dragon", "Unicorn", "Phoenix", "Griffin"],
-      "el": ["Δράκος", "Μονόκερος", "Φοίνικας", "Γρύπας"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Dragon", "el": "Δράκος" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Unicorn", "el": "Μονόκερος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Phoenix", "el": "Φοίνικας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Griffin", "el": "Γρύπας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +105,24 @@
       "en": "What bridge in Ljubljana is famous for its dragon statues?",
       "el": "Ποια γέφυρα στη Λιουμπλιάνα είναι γνωστή για τα αγάλματα δράκων;"
     },
-    "options": {
-      "en": ["Dragon Bridge", "Triple Bridge", "Butcher's Bridge", "Cobblers' Bridge"],
-      "el": ["Γέφυρα του Δράκου", "Τριπλή Γέφυρα", "Γέφυρα των Χασάπηδων", "Γέφυρα των Τσαγκάρηδων"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Dragon Bridge", "el": "Γέφυρα του Δράκου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Triple Bridge", "el": "Τριπλή Γέφυρα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Butcher's Bridge", "el": "Γέφυρα των Χασάπηδων" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cobblers' Bridge", "el": "Γέφυρα των Τσαγκάρηδων" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +130,24 @@
       "en": "Which architect is most associated with Ljubljana’s modern appearance?",
       "el": "Ποιος αρχιτέκτονας συνδέεται περισσότερο με τη σύγχρονη εικόνα της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Jože Plečnik", "Zaha Hadid", "Le Corbusier", "Frank Lloyd Wright"],
-      "el": ["Γιόζε Πλετσνίκ", "Ζάχα Χαντίντ", "Λε Κορμπυζιέ", "Φρανκ Λόιντ Ράιτ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Jože Plečnik", "el": "Γιόζε Πλετσνίκ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Zaha Hadid", "el": "Ζάχα Χαντίντ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Le Corbusier", "el": "Λε Κορμπυζιέ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Frank Lloyd Wright", "el": "Φρανκ Λόιντ Ράιτ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +155,24 @@
       "en": "What is the central square of Ljubljana called?",
       "el": "Ποια είναι η κεντρική πλατεία της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Prešeren Square", "Republic Square", "Congress Square", "Unity Square"],
-      "el": ["Πλατεία Πρέσερεν", "Πλατεία Δημοκρατίας", "Πλατεία Συνεδρίου", "Πλατεία Ενότητας"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Prešeren Square", "el": "Πλατεία Πρέσερεν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Republic Square", "el": "Πλατεία Δημοκρατίας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Congress Square", "el": "Πλατεία Συνεδρίου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Unity Square", "el": "Πλατεία Ενότητας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +180,24 @@
       "en": "Which bridge connects Prešeren Square with the Old Town?",
       "el": "Ποια γέφυρα συνδέει την πλατεία Πρέσερεν με την Παλιά Πόλη;"
     },
-    "options": {
-      "en": ["Triple Bridge", "Dragon Bridge", "Junction Bridge", "Castle Bridge"],
-      "el": ["Τριπλή Γέφυρα", "Γέφυρα του Δράκου", "Γέφυρα Σύνδεσης", "Γέφυρα Κάστρου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Triple Bridge", "el": "Τριπλή Γέφυρα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Dragon Bridge", "el": "Γέφυρα του Δράκου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Junction Bridge", "el": "Γέφυρα Σύνδεσης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Castle Bridge", "el": "Γέφυρα Κάστρου" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +205,24 @@
       "en": "What is the name of the pink Franciscan church in Ljubljana?",
       "el": "Ποιο είναι το όνομα της ροζ Φραγκισκανικής εκκλησίας στη Λιουμπλιάνα;"
     },
-    "options": {
-      "en": ["Annunciation Church", "Church of Mary", "Cathedral of Grace", "St. Joseph’s Church"],
-      "el": ["Εκκλησία του Ευαγγελισμού", "Εκκλησία της Παναγίας", "Καθεδρικός της Χάριτος", "Εκκλησία του Αγίου Ιωσήφ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Annunciation Church", "el": "Εκκλησία του Ευαγγελισμού" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Church of Mary", "el": "Εκκλησία της Παναγίας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cathedral of Grace", "el": "Καθεδρικός της Χάριτος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "St. Joseph’s Church", "el": "Εκκλησία του Αγίου Ιωσήφ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +230,24 @@
       "en": "What is the famous market in Ljubljana called?",
       "el": "Ποια είναι η διάσημη αγορά της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Central Market", "City Bazaar", "Plečnik Market", "Ljubljana Fair"],
-      "el": ["Κεντρική Αγορά", "Πόλη Μπαζάρ", "Αγορά Πλετσνίκ", "Εμποροπανήγυρη Λιουμπλιάνας"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Central Market", "el": "Κεντρική Αγορά" },
+        "correct": true
+      },
+      {
+        "text": { "en": "City Bazaar", "el": "Πόλη Μπαζάρ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Plečnik Market", "el": "Αγορά Πλετσνίκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Ljubljana Fair", "el": "Εμποροπανήγυρη Λιουμπλιάνας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +255,24 @@
       "en": "Which riverfront market was designed by Jože Plečnik?",
       "el": "Ποια αγορά δίπλα στο ποτάμι σχεδιάστηκε από τον Γιόζε Πλετσνίκ;"
     },
-    "options": {
-      "en": ["Central Market", "Flea Market", "Castle Market", "Old Town Market"],
-      "el": ["Κεντρική Αγορά", "Παζάρι", "Αγορά Κάστρου", "Αγορά Παλιάς Πόλης"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Central Market", "el": "Κεντρική Αγορά" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Flea Market", "el": "Παζάρι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Castle Market", "el": "Αγορά Κάστρου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Old Town Market", "el": "Αγορά Παλιάς Πόλης" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +280,24 @@
       "en": "Which castle feature gives a panoramic view of Ljubljana?",
       "el": "Ποιο σημείο του κάστρου προσφέρει πανοραμική θέα της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Viewing Tower", "South Wall", "Main Courtyard", "Northern Gate"],
-      "el": ["Πύργος Θέασης", "Νότιο Τείχος", "Κεντρική Αυλή", "Βόρεια Πύλη"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Viewing Tower", "el": "Πύργος Θέασης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "South Wall", "el": "Νότιο Τείχος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Main Courtyard", "el": "Κεντρική Αυλή" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Northern Gate", "el": "Βόρεια Πύλη" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +305,24 @@
       "en": "Which Slovenian poet has a statue in Prešeren Square?",
       "el": "Ποιος Σλοβένος ποιητής έχει άγαλμα στην Πλατεία Πρέσερεν;"
     },
-    "options": {
-      "en": ["France Prešeren", "Ivan Cankar", "Jože Plečnik", "Anton Aškerc"],
-      "el": ["Φρανς Πρέσερεν", "Ίβαν Τσάνκαρ", "Γιόζε Πλετσνίκ", "Άντον Άσκερτς"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "France Prešeren", "el": "Φρανς Πρέσερεν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Ivan Cankar", "el": "Ίβαν Τσάνκαρ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Jože Plečnik", "el": "Γιόζε Πλετσνίκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Anton Aškerc", "el": "Άντον Άσκερτς" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +330,24 @@
       "en": "What is the quote of Sol in the Ljubljana episode?",
       "el": "Ποιο είναι το quote της Sol στο επεισόδιο της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["No roar. Just rule", "Queen above clouds", "Paws of peace", "Royal silence"],
-      "el": ["Χωρίς βρυχηθμό. Μόνο εξουσία", "Βασίλισσα πάνω από τα σύννεφα", "Πατούσες ειρήνης", "Βασιλική σιωπή"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "No roar. Just rule", "el": "Χωρίς βρυχηθμό. Μόνο εξουσία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Queen above clouds", "el": "Βασίλισσα πάνω από τα σύννεφα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Paws of peace", "el": "Πατούσες ειρήνης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal silence", "el": "Βασιλική σιωπή" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +355,24 @@
       "en": "What type of crown appears in the Instagram post for Ljubljana?",
       "el": "Τι είδους στέμμα εμφανίζεται στο Instagram post για τη Λιουμπλιάνα;"
     },
-    "options": {
-      "en": ["Drawn gold crown", "Flower crown", "Dragon crown", "None"],
-      "el": ["Ζωγραφισμένο χρυσό στέμμα", "Στεφάνι λουλουδιών", "Στέμμα με δράκους", "Κανένα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Drawn gold crown", "el": "Ζωγραφισμένο χρυσό στέμμα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Flower crown", "el": "Στεφάνι λουλουδιών" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Dragon crown", "el": "Στέμμα με δράκους" },
+        "correct": false
+      },
+      {
+        "text": { "en": "None", "el": "Κανένα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +380,24 @@
       "en": "What’s the dominant color of the Ljubljana episode image?",
       "el": "Ποιο είναι το κυρίαρχο χρώμα στην εικόνα του επεισοδίου της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Pastel pink", "Deep green", "Slate blue", "Sunset orange"],
-      "el": ["Παπαλόνι ροζ", "Βαθύ πράσινο", "Γκριζομπλέ", "Πορτοκαλί του ηλιοβασιλέματος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Pastel pink", "el": "Παπαλόνι ροζ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Deep green", "el": "Βαθύ πράσινο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Slate blue", "el": "Γκριζομπλέ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sunset orange", "el": "Πορτοκαλί του ηλιοβασιλέματος" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +405,24 @@
       "en": "Which Slovenian delicacy is a rolled pastry dessert?",
       "el": "Ποιο σλοβενικό γλυκό είναι ρολό ζύμης;"
     },
-    "options": {
-      "en": ["Potica", "Gibanica", "Kremšnita", "Prekmurska"],
-      "el": ["Ποτίτσα", "Γκιμπάνιτσα", "Κρεμσνίτα", "Πρεκμούρσκα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Potica", "el": "Ποτίτσα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Gibanica", "el": "Γκιμπάνιτσα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Kremšnita", "el": "Κρεμσνίτα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Prekmurska", "el": "Πρεκμούρσκα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +430,24 @@
       "en": "What annual event turns Ljubljana into an open-air gallery?",
       "el": "Ποιο ετήσιο γεγονός μετατρέπει τη Λιουμπλιάνα σε υπαίθρια γκαλερί;"
     },
-    "options": {
-      "en": ["Ljubljana Art Walk", "Night of Museums", "City of Light", "Cultural Parade"],
-      "el": ["Art Walk Λιουμπλιάνας", "Νύχτα Μουσείων", "Πόλη του Φωτός", "Πολιτιστική Παρέλαση"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Ljubljana Art Walk", "el": "Art Walk Λιουμπλιάνας" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Night of Museums", "el": "Νύχτα Μουσείων" },
+        "correct": false
+      },
+      {
+        "text": { "en": "City of Light", "el": "Πόλη του Φωτός" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cultural Parade", "el": "Πολιτιστική Παρέλαση" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +455,24 @@
       "en": "Which color is associated with Ljubljana’s environmental identity?",
       "el": "Ποιο χρώμα συνδέεται με την οικολογική ταυτότητα της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Green", "Blue", "White", "Yellow"],
-      "el": ["Πράσινο", "Μπλε", "Λευκό", "Κίτρινο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Green", "el": "Πράσινο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Blue", "el": "Μπλε" },
+        "correct": false
+      },
+      {
+        "text": { "en": "White", "el": "Λευκό" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Yellow", "el": "Κίτρινο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +480,24 @@
       "en": "What is Ljubljana’s title in terms of urban sustainability?",
       "el": "Ποιος τίτλος έχει αποδοθεί στη Λιουμπλιάνα για τη βιωσιμότητά της;"
     },
-    "options": {
-      "en": ["Green Capital of Europe 2016", "Eco Capital 2020", "Clean City 2019", "Sustainable Star 2018"],
-      "el": ["Πράσινη Πρωτεύουσα της Ευρώπης 2016", "Οικολογική Πρωτεύουσα 2020", "Καθαρή Πόλη 2019", "Αστέρι Βιωσιμότητας 2018"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Green Capital of Europe 2016", "el": "Πράσινη Πρωτεύουσα της Ευρώπης 2016" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Eco Capital 2020", "el": "Οικολογική Πρωτεύουσα 2020" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Clean City 2019", "el": "Καθαρή Πόλη 2019" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sustainable Star 2018", "el": "Αστέρι Βιωσιμότητας 2018" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +505,24 @@
       "en": "What is Sol's attitude in the Ljubljana episode caption?",
       "el": "Ποια είναι η διάθεση της Sol στη λεζάντα του επεισοδίου της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Quiet rule", "Bold adventure", "Gentle play", "Sharp command"],
-      "el": ["Ήρεμη εξουσία", "Τολμηρή περιπέτεια", "Απαλό παιχνίδι", "Αυστηρή εντολή"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Quiet rule", "el": "Ήρεμη εξουσία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Bold adventure", "el": "Τολμηρή περιπέτεια" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Gentle play", "el": "Απαλό παιχνίδι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sharp command", "el": "Αυστηρή εντολή" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +530,24 @@
       "en": "Which natural feature surrounds Ljubljana?",
       "el": "Ποιο φυσικό χαρακτηριστικό περιβάλλει τη Λιουμπλιάνα;"
     },
-    "options": {
-      "en": ["Mountains", "Desert", "Ocean", "Glacier"],
-      "el": ["Βουνά", "Έρημος", "Ωκεανός", "Παγετώνας"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Mountains", "el": "Βουνά" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Desert", "el": "Έρημος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Ocean", "el": "Ωκεανός" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Glacier", "el": "Παγετώνας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +555,24 @@
       "en": "How do many residents of Ljubljana get around sustainably?",
       "el": "Πώς μετακινούνται πολλοί κάτοικοι της Λιουμπλιάνας με βιώσιμο τρόπο;"
     },
-    "options": {
-      "en": ["By bike", "By car", "By boat", "By scooter"],
-      "el": ["Με ποδήλατο", "Με αυτοκίνητο", "Με βάρκα", "Με πατίνι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "By bike", "el": "Με ποδήλατο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "By car", "el": "Με αυτοκίνητο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "By boat", "el": "Με βάρκα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "By scooter", "el": "Με πατίνι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +580,24 @@
       "en": "Which type of animal is central to Ljubljana’s legends?",
       "el": "Ποιο ζώο είναι κεντρικό στους θρύλους της Λιουμπλιάνας;"
     },
-    "options": {
-      "en": ["Dragon", "Wolf", "Bear", "Eagle"],
-      "el": ["Δράκος", "Λύκος", "Αρκούδα", "Αετός"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Dragon", "el": "Δράκος" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Wolf", "el": "Λύκος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bear", "el": "Αρκούδα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Eagle", "el": "Αετός" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +605,35 @@
       "en": "What is the full title of the SOLadventure episode in Ljubljana?",
       "el": "Ποιος είναι ο πλήρης τίτλος του επεισοδίου SOLadventure στη Λιουμπλιάνα;"
     },
-    "options": {
-      "en": ["SOLadventure #12 – Ljubljana, softly crowned 🐾🏰🇸🇮", "SOLadventure #12 – Ljubljana, paws of power", "SOLadventure #12 – Ljubljana, queen’s whisper", "SOLadventure #12 – Ljubljana, royal echoes"],
-      "el": ["SOLadventure #12 – Λιουμπλιάνα, ήρεμο στέμμα 🐾🏰🇸🇮", "SOLadventure #12 – Λιουμπλιάνα, πατούσες εξουσίας", "SOLadventure #12 – Λιουμπλιάνα, ψίθυρος βασίλισσας", "SOLadventure #12 – Λιουμπλιάνα, βασιλικά αντίλαλα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "SOLadventure #12 – Ljubljana, softly crowned 🐾🏰🇸🇮",
+          "el": "SOLadventure #12 – Λιουμπλιάνα, ήρεμο στέμμα 🐾🏰🇸🇮"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "SOLadventure #12 – Ljubljana, paws of power",
+          "el": "SOLadventure #12 – Λιουμπλιάνα, πατούσες εξουσίας"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "SOLadventure #12 – Ljubljana, queen’s whisper",
+          "el": "SOLadventure #12 – Λιουμπλιάνα, ψίθυρος βασίλισσας"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "SOLadventure #12 – Ljubljana, royal echoes",
+          "el": "SOLadventure #12 – Λιουμπλιάνα, βασιλικά αντίλαλα"
+        },
+        "correct": false
+      }
+    ]
   }
 ]

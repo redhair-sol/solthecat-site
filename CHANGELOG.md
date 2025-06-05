@@ -4,6 +4,28 @@
 
 ---
 
+## [v3.2.0] - 2025-06-05
+
+### Added
+- **SolSnap** entry στο "Sol's Game Room" (Games.jsx):
+  - Προστέθηκαν emoji ??, τίτλος "SolSnap" και περιγραφή "Snap decision: 3 yes/no questions per episode."
+  - Route: `/games/solsnap`
+- ***SolSnap.jsx*** component:
+  - Πλήρης λογική για 3 ερωτήσεις / επεισόδιο, 5? χρονόμετρο, δίγλωσση υποστήριξη, summary & navigation.
+  - Αυτόματη διάταξη "Next Episode" / "Back to Games" ανάλογα με το αν υπάρχει ή όχι επόμενο ορατό επεισόδιο.
+
+### Changed
+- **Routing** (index.jsx ή main.jsx):
+  - Προστέθηκε `<Route path="games/solsnap" element={<SolSnap />} />` μέσα στη διαδρομή `games`.
+- **Games.jsx**:
+  - Ενημερώθηκε ο πίνακας `games` με νέο αντικείμενο `id: 4`, ώστε να εμφανίζεται το SolSnap card.
+  - Δημιουργήθηκαν τα styled-components `GameCard`, `GameDescription`, `PlayButton` (όπου δεν υπήρχαν ήδη) για ομοιομορφία με τα υπόλοιπα παιχνίδια.
+
+### Deployment
+1. Commit τα παραπάνω αρχεία (Games.jsx, SolSnap.jsx, index.jsx/main.jsx).
+2. Push στο repository και κάνε deploy (π.χ. Vercel/Netlify ή όποιον host χρησιμοποιείς).
+3. Επιβεβαίωσε ότι στο `https://solthecat.com/games` εμφανίζεται το SolSnap card και ότι το Play οδηγεί κανονικά στο `/games/solsnap`.
+
 ## [v3.1.0] - 2025-06-05
 
 ### Added

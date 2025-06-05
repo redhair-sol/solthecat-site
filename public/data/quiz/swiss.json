@@ -5,11 +5,24 @@
       "en": "What is the capital city of Switzerland?",
       "el": "Ποια είναι η πρωτεύουσα της Ελβετίας;"
     },
-    "options": {
-      "en": ["Zurich", "Geneva", "Bern", "Lucerne"],
-      "el": ["Ζυρίχη", "Γενεύη", "Βέρνη", "Λουκέρνη"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Zurich", "el": "Ζυρίχη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Geneva", "el": "Γενεύη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bern", "el": "Βέρνη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Lucerne", "el": "Λουκέρνη" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +30,24 @@
       "en": "Which mountain range dominates Switzerland?",
       "el": "Ποια οροσειρά κυριαρχεί στην Ελβετία;"
     },
-    "options": {
-      "en": ["Rockies", "Himalayas", "Alps", "Andes"],
-      "el": ["Βραχώδη Όρη", "Ιμαλάια", "Άλπεις", "Άνδεις"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Rockies", "el": "Βραχώδη Όρη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Himalayas", "el": "Ιμαλάια" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Alps", "el": "Άλπεις" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Andes", "el": "Άνδεις" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +55,24 @@
       "en": "Which Swiss lake is known for its beauty and borders France?",
       "el": "Ποια ελβετική λίμνη είναι γνωστή για την ομορφιά της και συνορεύει με τη Γαλλία;"
     },
-    "options": {
-      "en": ["Lake Geneva", "Lake Zurich", "Lake Lucerne", "Lake Neuchâtel"],
-      "el": ["Λίμνη Γενεύης", "Λίμνη Ζυρίχης", "Λίμνη Λουκέρνης", "Λίμνη Νεσατέλ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Lake Geneva", "el": "Λίμνη Γενεύης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Lake Zurich", "el": "Λίμνη Ζυρίχης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Lake Lucerne", "el": "Λίμνη Λουκέρνης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Lake Neuchâtel", "el": "Λίμνη Νεσατέλ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +80,24 @@
       "en": "Which Swiss city is known for hosting international diplomacy?",
       "el": "Ποια ελβετική πόλη είναι γνωστή για τη διεθνή διπλωματία;"
     },
-    "options": {
-      "en": ["Basel", "Zurich", "Geneva", "Bern"],
-      "el": ["Βασιλεία", "Ζυρίχη", "Γενεύη", "Βέρνη"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Basel", "el": "Βασιλεία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Zurich", "el": "Ζυρίχη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Geneva", "el": "Γενεύη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Bern", "el": "Βέρνη" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +105,24 @@
       "en": "Which iconic Swiss mountain resembles a pyramid?",
       "el": "Ποιο εμβληματικό ελβετικό βουνό μοιάζει με πυραμίδα;"
     },
-    "options": {
-      "en": ["Eiger", "Matterhorn", "Jungfrau", "Dufourspitze"],
-      "el": ["Άιγκερ", "Μάττερχορν", "Γιούνγκφραου", "Ντυφούρσπιτσε"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Eiger", "el": "Άιγκερ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Matterhorn", "el": "Μάττερχορν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Jungfrau", "el": "Γιούνγκφραου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Dufourspitze", "el": "Ντυφούρσπιτσε" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +130,24 @@
       "en": "What is the name of the world-famous Swiss train that travels through the Alps?",
       "el": "Ποιο είναι το όνομα του διάσημου ελβετικού τρένου που διασχίζει τις Άλπεις;"
     },
-    "options": {
-      "en": ["Glacier Express", "Alpine Star", "Swiss Voyager", "Jungfrau Line"],
-      "el": ["Γκλάσιερ Εξπρές", "Άλπινο Άστρο", "Ελβετικός Ταξιδιώτης", "Γιούνγκφραου Λάιν"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Glacier Express", "el": "Γκλάσιερ Εξπρές" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Alpine Star", "el": "Άλπινο Άστρο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Swiss Voyager", "el": "Ελβετικός Ταξιδιώτης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Jungfrau Line", "el": "Γιούνγκφραου Λάιν" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +155,24 @@
       "en": "Which three languages are official in Switzerland?",
       "el": "Ποιες τρεις γλώσσες είναι επίσημες στην Ελβετία;"
     },
-    "options": {
-      "en": ["French, German, Italian", "German, Dutch, English", "Italian, French, Spanish", "German, Romansh, English"],
-      "el": ["Γαλλικά, Γερμανικά, Ιταλικά", "Γερμανικά, Ολλανδικά, Αγγλικά", "Ιταλικά, Γαλλικά, Ισπανικά", "Γερμανικά, Ρομανσικά, Αγγλικά"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "French, German, Italian", "el": "Γαλλικά, Γερμανικά, Ιταλικά" },
+        "correct": true
+      },
+      {
+        "text": { "en": "German, Dutch, English", "el": "Γερμανικά, Ολλανδικά, Αγγλικά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Italian, French, Spanish", "el": "Ιταλικά, Γαλλικά, Ισπανικά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "German, Romansh, English", "el": "Γερμανικά, Ρομανσικά, Αγγλικά" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +180,24 @@
       "en": "What is the Swiss currency?",
       "el": "Ποιο είναι το νόμισμα της Ελβετίας;"
     },
-    "options": {
-      "en": ["Euro", "Swiss Franc", "Dollar", "Lira"],
-      "el": ["Ευρώ", "Ελβετικό Φράγκο", "Δολάριο", "Λίρα"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Euro", "el": "Ευρώ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Swiss Franc", "el": "Ελβετικό Φράγκο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Dollar", "el": "Δολάριο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Lira", "el": "Λίρα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +205,24 @@
       "en": "What kind of cheese is famously Swiss?",
       "el": "Ποιο είδος τυριού είναι διάσημο από την Ελβετία;"
     },
-    "options": {
-      "en": ["Brie", "Emmental", "Cheddar", "Mozzarella"],
-      "el": ["Μπρι", "Έμμενταλ", "Τσένταρ", "Μοτσαρέλα"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Brie", "el": "Μπρι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Emmental", "el": "Έμμενταλ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Cheddar", "el": "Τσένταρ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Mozzarella", "el": "Μοτσαρέλα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +230,24 @@
       "en": "Which dessert made with melted cheese is popular in Switzerland?",
       "el": "Ποιο επιδόρπιο με λιωμένο τυρί είναι δημοφιλές στην Ελβετία;"
     },
-    "options": {
-      "en": ["Raclette", "Fondue", "Strudel", "Mousse"],
-      "el": ["Ρακλέτ", "Φοντύ", "Στρούντελ", "Μους"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Raclette", "el": "Ρακλέτ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Fondue", "el": "Φοντύ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Strudel", "el": "Στρούντελ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Mousse", "el": "Μους" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +255,24 @@
       "en": "Which animal is commonly associated with the Alps?",
       "el": "Ποιο ζώο συνδέεται συχνά με τις Άλπεις;"
     },
-    "options": {
-      "en": ["Chamois", "Alpaca", "Bison", "Wolf"],
-      "el": ["Αγριόγιδο", "Αλπάκα", "Βίσονας", "Λύκος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Chamois", "el": "Αγριόγιδο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Alpaca", "el": "Αλπάκα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bison", "el": "Βίσονας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Wolf", "el": "Λύκος" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +280,36 @@
       "en": "What’s the caption of SOLadventure #8?",
       "el": "Ποιο είναι το caption του SOLadventure #8;"
     },
-    "options": {
-      "en": ["The Alps called. She brought silence.", "Silent paws in snowy fields.", "Royal whiskers at altitude.", "Mountains met their queen."],
-      "el": ["Οι Άλπεις φώναξαν. Εκείνη έφερε σιωπή.", "Αθόρυβες πατούσες σε χιονισμένα λιβάδια.", "Βασιλικές μουστάκες σε υψόμετρο.", "Τα βουνά υποκλίθηκαν."]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "The Alps called. She brought silence.",
+          "el": "Οι Άλπεις φώναξαν. Εκείνη έφερε σιωπή."
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Silent paws in snowy fields.",
+          "el": "Αθόρυβες πατούσες σε χιονισμένα λιβάδια."
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Royal whiskers at altitude.",
+          "el": "Βασιλικές μουστάκες σε υψόμετρο."
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Mountains met their queen.",
+          "el": "Τα βουνά υποκλίθηκαν."
+        },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +317,24 @@
       "en": "Which Swiss city is known for its medieval wooden bridge and lakeside setting?",
       "el": "Ποια ελβετική πόλη είναι γνωστή για την μεσαιωνική ξύλινη γέφυρα και τη λίμνη της;"
     },
-    "options": {
-      "en": ["Lucerne", "Zurich", "Basel", "Lausanne"],
-      "el": ["Λουκέρνη", "Ζυρίχη", "Βασιλεία", "Λωζάνη"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Lucerne", "el": "Λουκέρνη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Zurich", "el": "Ζυρίχη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Basel", "el": "Βασιλεία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Lausanne", "el": "Λωζάνη" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +342,24 @@
       "en": "What color is the Swiss flag?",
       "el": "Τι χρώμα έχει η σημαία της Ελβετίας;"
     },
-    "options": {
-      "en": ["Red with white cross", "Blue with white stripes", "White with red circle", "Green with yellow stars"],
-      "el": ["Κόκκινη με λευκό σταυρό", "Μπλε με λευκές ρίγες", "Λευκή με κόκκινο κύκλο", "Πράσινη με κίτρινα αστέρια"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Red with white cross", "el": "Κόκκινη με λευκό σταυρό" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Blue with white stripes", "el": "Μπλε με λευκές ρίγες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "White with red circle", "el": "Λευκή με κόκκινο κύκλο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Green with yellow stars", "el": "Πράσινη με κίτρινα αστέρια" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +367,24 @@
       "en": "What is Sol’s aura in Switzerland?",
       "el": "Ποια είναι η αύρα της Sol στην Ελβετία;"
     },
-    "options": {
-      "en": ["Quiet majesty", "Playful fluff", "Urban sparkle", "Vintage traveler"],
-      "el": ["Ήρεμη μεγαλοπρέπεια", "Παιχνιδιάρικη χνουδωτή", "Αστική λάμψη", "Παραδοσιακή ταξιδιώτισσα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Quiet majesty", "el": "Ήρεμη μεγαλοπρέπεια" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Playful fluff", "el": "Παιχνιδιάρικη χνουδωτή" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Urban sparkle", "el": "Αστική λάμψη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Vintage traveler", "el": "Παραδοσιακή ταξιδιώτισσα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +392,24 @@
       "en": "Which flower is often found in alpine regions of Switzerland?",
       "el": "Ποιο λουλούδι βρίσκεται συχνά στις αλπικές περιοχές της Ελβετίας;"
     },
-    "options": {
-      "en": ["Edelweiss", "Tulip", "Rose", "Lily"],
-      "el": ["Έντελβαϊς", "Τουλίπα", "Τριαντάφυλλο", "Κρίνος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Edelweiss", "el": "Έντελβαϊς" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Tulip", "el": "Τουλίπα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rose", "el": "Τριαντάφυλλο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Lily", "el": "Κρίνος" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +417,27 @@
       "en": "Which famous organization is headquartered in Geneva?",
       "el": "Ποιος διάσημος οργανισμός έχει έδρα τη Γενεύη;"
     },
-    "options": {
-      "en": ["UNICEF", "World Health Organization", "NATO", "European Commission"],
-      "el": ["UNICEF", "Παγκόσμιος Οργανισμός Υγείας", "ΝΑΤΟ", "Ευρωπαϊκή Επιτροπή"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "UNICEF", "el": "UNICEF" },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "World Health Organization",
+          "el": "Παγκόσμιος Οργανισμός Υγείας"
+        },
+        "correct": true
+      },
+      {
+        "text": { "en": "NATO", "el": "ΝΑΤΟ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "European Commission", "el": "Ευρωπαϊκή Επιτροπή" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +445,24 @@
       "en": "What is a Swiss chalet?",
       "el": "Τι είναι ένα ελβετικό σαλέ;"
     },
-    "options": {
-      "en": ["Mountain cabin", "City hotel", "Modern skyscraper", "Luxury yacht"],
-      "el": ["Ορεινή καλύβα", "Ξενοδοχείο πόλης", "Μοντέρνος ουρανοξύστης", "Πολυτελές γιοτ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Mountain cabin", "el": "Ορεινή καλύβα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "City hotel", "el": "Ξενοδοχείο πόλης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Modern skyscraper", "el": "Μοντέρνος ουρανοξύστης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Luxury yacht", "el": "Πολυτελές γιοτ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +470,24 @@
       "en": "What is the official motto of Switzerland?",
       "el": "Ποιο είναι το επίσημο ρητό της Ελβετίας;"
     },
-    "options": {
-      "en": ["Unity is Strength", "One for all, all for one", "Freedom and Peace", "Neutral but Proud"],
-      "el": ["Η Ενότητα είναι Δύναμη", "Ένας για όλους, όλοι για έναν", "Ελευθερία και Ειρήνη", "Ουδέτεροι αλλά Περήφανοι"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Unity is Strength", "el": "Η Ενότητα είναι Δύναμη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "One for all, all for one", "el": "Ένας για όλους, όλοι για έναν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Freedom and Peace", "el": "Ελευθερία και Ειρήνη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Neutral but Proud", "el": "Ουδέτεροι αλλά Περήφανοι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +495,24 @@
       "en": "Which Swiss company is globally known for chocolate?",
       "el": "Ποια ελβετική εταιρεία είναι παγκοσμίως γνωστή για τη σοκολάτα;"
     },
-    "options": {
-      "en": ["Nestlé", "Lindt", "Toblerone", "Cailler"],
-      "el": ["Νεστλέ", "Λιντ", "Τομπλερόνε", "Καϊγιέ"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Nestlé", "el": "Νεστλέ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Lindt", "el": "Λιντ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Toblerone", "el": "Τομπλερόνε" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Cailler", "el": "Καϊγιέ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +520,24 @@
       "en": "What sound is associated with Swiss mountains?",
       "el": "Ποιος ήχος συνδέεται με τα ελβετικά βουνά;"
     },
-    "options": {
-      "en": ["Alphorn", "Cowbells", "Church Bells", "Waterfalls"],
-      "el": ["Αλφόρν", "Καμπανάκια αγελάδων", "Καμπάνες εκκλησιών", "Καταρράκτες"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Alphorn", "el": "Αλφόρν" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cowbells", "el": "Καμπανάκια αγελάδων" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Church Bells", "el": "Καμπάνες εκκλησιών" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Waterfalls", "el": "Καταρράκτες" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +545,24 @@
       "en": "What makes Switzerland unique politically?",
       "el": "Τι κάνει την Ελβετία μοναδική πολιτικά;"
     },
-    "options": {
-      "en": ["Direct democracy", "No president", "Monarchy", "One-party system"],
-      "el": ["Άμεση δημοκρατία", "Χωρίς πρόεδρο", "Μοναρχία", "Μονοκομματικό σύστημα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Direct democracy", "el": "Άμεση δημοκρατία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "No president", "el": "Χωρίς πρόεδρο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Monarchy", "el": "Μοναρχία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "One-party system", "el": "Μονοκομματικό σύστημα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +570,24 @@
       "en": "Which of these is NOT a Swiss canton?",
       "el": "Ποιο από τα παρακάτω ΔΕΝ είναι ελβετικό καντόνι;"
     },
-    "options": {
-      "en": ["Vaud", "Ticino", "Bavaria", "Grisons"],
-      "el": ["Βω", "Τιτσίνο", "Βαυαρία", "Γκριζόν"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Vaud", "el": "Βω" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Ticino", "el": "Τιτσίνο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bavaria", "el": "Βαυαρία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Grisons", "el": "Γκριζόν" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +595,24 @@
       "en": "Which famous scientific organization is based on the Swiss-French border?",
       "el": "Ποιος διάσημος επιστημονικός οργανισμός βρίσκεται στα σύνορα Ελβετίας-Γαλλίας;"
     },
-    "options": {
-      "en": ["CERN", "NASA", "ESA", "MIT"],
-      "el": ["CERN", "NASA", "ESA", "MIT"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "CERN", "el": "CERN" },
+        "correct": true
+      },
+      {
+        "text": { "en": "NASA", "el": "NASA" },
+        "correct": false
+      },
+      {
+        "text": { "en": "ESA", "el": "ESA" },
+        "correct": false
+      },
+      {
+        "text": { "en": "MIT", "el": "MIT" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +620,23 @@
       "en": "Which activity is Sol least likely to do in the Alps?",
       "el": "Ποια δραστηριότητα είναι λιγότερο πιθανό να κάνει η Sol στις Άλπεις;"
     },
-    "options": {
-      "en": ["Chase marmots", "Climb Matterhorn", "Nap in a chalet", "Strike a pose in the snow"],
-      "el": ["Να κυνηγήσει μαρμότες", "Να ανέβει το Matterhorn", "Να κοιμηθεί σε σαλέ", "Να ποζάρει στο χιόνι"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Chase marmots", "el": "Να κυνηγήσει μαρμότες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Climb Matterhorn", "el": "Να ανέβει το Matterhorn" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Nap in a chalet", "el": "Να κοιμηθεί σε σαλέ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Strike a pose in the snow", "el": "Να ποζάρει στο χιόνι" },
+        "correct": false
+      }
+    ]
   }
 ]

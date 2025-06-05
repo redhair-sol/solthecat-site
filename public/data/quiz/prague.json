@@ -5,11 +5,24 @@
       "en": "What is the capital of the Czech Republic?",
       "el": "Ποια είναι η πρωτεύουσα της Τσεχίας;"
     },
-    "options": {
-      "en": ["Prague", "Brno", "Ostrava", "Plzeň"],
-      "el": ["Πράγα", "Μπρνο", "Οστράβα", "Πίλσεν"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Prague", "el": "Πράγα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Brno", "el": "Μπρνο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Ostrava", "el": "Οστράβα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Plzeň", "el": "Πίλσεν" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +30,24 @@
       "en": "Which river runs through Prague?",
       "el": "Ποιος ποταμός διασχίζει την Πράγα;"
     },
-    "options": {
-      "en": ["Vltava", "Danube", "Elbe", "Rhine"],
-      "el": ["Μολδάβας", "Δούναβης", "Έλβας", "Ρήνος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Vltava", "el": "Μολδάβας" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Danube", "el": "Δούναβης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Elbe", "el": "Έλβας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rhine", "el": "Ρήνος" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +55,24 @@
       "en": "What is the name of the famous medieval bridge in Prague?",
       "el": "Ποιο είναι το όνομα της διάσημης μεσαιωνικής γέφυρας στην Πράγα;"
     },
-    "options": {
-      "en": ["Charles Bridge", "St. Peter's Bridge", "Golden Bridge", "St. George Bridge"],
-      "el": ["Γέφυρα του Καρόλου", "Γέφυρα του Αγ. Πέτρου", "Χρυσή Γέφυρα", "Γέφυρα του Αγ. Γεωργίου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Charles Bridge", "el": "Γέφυρα του Καρόλου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "St. Peter's Bridge", "el": "Γέφυρα του Αγ. Πέτρου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Golden Bridge", "el": "Χρυσή Γέφυρα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "St. George Bridge", "el": "Γέφυρα του Αγ. Γεωργίου" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +80,24 @@
       "en": "Which architectural style is dominant in Prague’s Old Town?",
       "el": "Ποιο αρχιτεκτονικό στυλ κυριαρχεί στην Παλιά Πόλη της Πράγας;"
     },
-    "options": {
-      "en": ["Gothic", "Baroque", "Modernist", "Neoclassical"],
-      "el": ["Γοτθικό", "Μπαρόκ", "Μοντερνιστικό", "Νεοκλασικό"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Gothic", "el": "Γοτθικό" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Baroque", "el": "Μπαρόκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Modernist", "el": "Μοντερνιστικό" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Neoclassical", "el": "Νεοκλασικό" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +105,24 @@
       "en": "What is the name of the large castle complex in Prague?",
       "el": "Ποιο είναι το όνομα του μεγάλου κάστρου στην Πράγα;"
     },
-    "options": {
-      "en": ["Prague Castle", "Vyšehrad", "Bohemian Fortress", "St. Vitus Castle"],
-      "el": ["Κάστρο της Πράγας", "Βίσεχραντ", "Φρούριο της Βοημίας", "Κάστρο του Αγ. Βίτου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Prague Castle", "el": "Κάστρο της Πράγας" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Vyšehrad", "el": "Βίσεχραντ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bohemian Fortress", "el": "Φρούριο της Βοημίας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "St. Vitus Castle", "el": "Κάστρο του Αγ. Βίτου" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +130,24 @@
       "en": "What is the official language of Prague?",
       "el": "Ποια είναι η επίσημη γλώσσα της Πράγας;"
     },
-    "options": {
-      "en": ["Czech", "Slovak", "German", "Polish"],
-      "el": ["Τσέχικα", "Σλοβάκικα", "Γερμανικά", "Πολωνικά"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Czech", "el": "Τσέχικα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Slovak", "el": "Σλοβάκικα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "German", "el": "Γερμανικά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Polish", "el": "Πολωνικά" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +155,24 @@
       "en": "Which astronomical feature draws crowds in Prague’s Old Town Square?",
       "el": "Ποιο αστρονομικό αξιοθέατο προσελκύει πλήθος στην Παλιά Πόλη της Πράγας;"
     },
-    "options": {
-      "en": ["Astronomical Clock", "Moon Dial", "Solar Compass", "Star Globe"],
-      "el": ["Αστρονομικό Ρολόι", "Σεληνιακό Ημερολόγιο", "Ηλιακή Πυξίδα", "Ουράνια Σφαίρα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Astronomical Clock", "el": "Αστρονομικό Ρολόι" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Moon Dial", "el": "Σεληνιακό Ημερολόγιο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Solar Compass", "el": "Ηλιακή Πυξίδα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Star Globe", "el": "Ουράνια Σφαίρα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +180,24 @@
       "en": "What is the name of the famous art-nouveau building in Prague?",
       "el": "Ποιο είναι το όνομα του διάσημου αρ νουβό κτιρίου στην Πράγα;"
     },
-    "options": {
-      "en": ["Municipal House", "Dancing House", "Opera Hall", "National Theatre"],
-      "el": ["Δημοτικό Μέγαρο", "Χορευτικό Σπίτι", "Αίθουσα Όπερας", "Εθνικό Θέατρο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Municipal House", "el": "Δημοτικό Μέγαρο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Dancing House", "el": "Χορευτικό Σπίτι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Opera Hall", "el": "Αίθουσα Όπερας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "National Theatre", "el": "Εθνικό Θέατρο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +205,24 @@
       "en": "Which modern building is known as the 'Dancing House'?",
       "el": "Ποιο μοντέρνο κτίριο είναι γνωστό ως 'Χορευτικό Σπίτι';"
     },
-    "options": {
-      "en": ["Fred & Ginger", "The Spire", "The Cube", "Velvet Steps"],
-      "el": ["Φρεντ & Τζίντζερ", "Το Βέλος", "Ο Κύβος", "Βελούδινα Σκαλοπάτια"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Fred & Ginger", "el": "Φρεντ & Τζίντζερ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "The Spire", "el": "Το Βέλος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "The Cube", "el": "Ο Κύβος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Velvet Steps", "el": "Βελούδινα Σκαλοπάτια" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +230,24 @@
       "en": "What is Sol’s quote in the Prague episode?",
       "el": "Ποιο είναι το quote της Sol στο επεισόδιο της Πράγας;"
     },
-    "options": {
-      "en": ["Grace touches cobblestones", "Crowned without sound", "Whiskers at dawn", "A gaze over bridges"],
-      "el": ["Η χάρη αγγίζει τα καλντερίμια", "Στεμμένη χωρίς ήχο", "Μουστάκια την αυγή", "Ένα βλέμμα πάνω από τις γέφυρες"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Grace touches cobblestones", "el": "Η χάρη αγγίζει τα καλντερίμια" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Crowned without sound", "el": "Στεμμένη χωρίς ήχο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Whiskers at dawn", "el": "Μουστάκια την αυγή" },
+        "correct": false
+      },
+      {
+        "text": { "en": "A gaze over bridges", "el": "Ένα βλέμμα πάνω από τις γέφυρες" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +255,24 @@
       "en": "What currency is used in Prague?",
       "el": "Ποιο είναι το νόμισμα που χρησιμοποιείται στην Πράγα;"
     },
-    "options": {
-      "en": ["Czech koruna", "Euro", "Zloty", "Forint"],
-      "el": ["Τσέχικη κορόνα", "Ευρώ", "Ζλότι", "Φιορίνι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Czech koruna", "el": "Τσέχικη κορόνα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Euro", "el": "Ευρώ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Zloty", "el": "Ζλότι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Forint", "el": "Φιορίνι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +280,24 @@
       "en": "What is the iconic tower on Charles Bridge called?",
       "el": "Πώς ονομάζεται ο εμβληματικός πύργος στη Γέφυρα του Καρόλου;"
     },
-    "options": {
-      "en": ["Old Town Bridge Tower", "Tower of Prague", "Royal Arch Tower", "Gothic Viewpoint"],
-      "el": ["Πύργος της Παλιάς Πόλης", "Πύργος της Πράγας", "Πύργος του Βασιλικού Τόξου", "Γοτθικό Παρατηρητήριο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Old Town Bridge Tower", "el": "Πύργος της Παλιάς Πόλης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Tower of Prague", "el": "Πύργος της Πράγας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal Arch Tower", "el": "Πύργος του Βασιλικού Τόξου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Gothic Viewpoint", "el": "Γοτθικό Παρατηρητήριο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +305,24 @@
       "en": "What sweet pastry is popular among tourists in Prague?",
       "el": "Ποιο γλυκό είναι δημοφιλές στους τουρίστες στην Πράγα;"
     },
-    "options": {
-      "en": ["Trdelník", "Baklava", "Sacher Torte", "Cannoli"],
-      "el": ["Τρντελνίκ", "Μπακλαβάς", "Ζάχερ Τόρτε", "Κανόλι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Trdelník", "el": "Τρντελνίκ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Baklava", "el": "Μπακλαβάς" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sacher Torte", "el": "Ζάχερ Τόρτε" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cannoli", "el": "Κανόλι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +330,24 @@
       "en": "Which Czech king built the Charles Bridge?",
       "el": "Ποιος Τσέχος βασιλιάς κατασκεύασε τη Γέφυρα του Καρόλου;"
     },
-    "options": {
-      "en": ["Charles IV", "Wenceslas I", "Rudolf II", "Jan Hus"],
-      "el": ["Κάρολος Δ'", "Βενσεσλάος Α'", "Ροδόλφος Β'", "Γιαν Χους"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Charles IV", "el": "Κάρολος Δ'" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Wenceslas I", "el": "Βενσεσλάος Α'" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rudolf II", "el": "Ροδόλφος Β'" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Jan Hus", "el": "Γιαν Χους" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +355,24 @@
       "en": "What type of music is Prague known for?",
       "el": "Για ποιο είδος μουσικής είναι γνωστή η Πράγα;"
     },
-    "options": {
-      "en": ["Classical", "Jazz", "Rock", "Techno"],
-      "el": ["Κλασική", "Τζαζ", "Ροκ", "Τέκνο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Classical", "el": "Κλασική" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Jazz", "el": "Τζαζ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rock", "el": "Ροκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Techno", "el": "Τέκνο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +380,24 @@
       "en": "What is the name of Prague's large hilltop park?",
       "el": "Ποιο είναι το όνομα του μεγάλου πάρκου σε λόφο στην Πράγα;"
     },
-    "options": {
-      "en": ["Petřín Hill", "Letná Park", "Zizkov Ridge", "Bohemian Heights"],
-      "el": ["Λόφος Πετρίν", "Πάρκο Λετνά", "Ράχη Ζίζκοφ", "Υψώματα της Βοημίας"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Petřín Hill", "el": "Λόφος Πετρίν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Letná Park", "el": "Πάρκο Λετνά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Zizkov Ridge", "el": "Ράχη Ζίζκοφ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bohemian Heights", "el": "Υψώματα της Βοημίας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +405,24 @@
       "en": "What medieval institution was housed at the Klementinum?",
       "el": "Ποιο μεσαιωνικό ίδρυμα στεγαζόταν στο Κλεμεντίνουμ;"
     },
-    "options": {
-      "en": ["Library", "Armory", "Monastery", "Hospital"],
-      "el": ["Βιβλιοθήκη", "Οπλοστάσιο", "Μοναστήρι", "Νοσοκομείο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Library", "el": "Βιβλιοθήκη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Armory", "el": "Οπλοστάσιο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Monastery", "el": "Μοναστήρι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Hospital", "el": "Νοσοκομείο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +430,24 @@
       "en": "Which district of Prague is home to Prague Castle?",
       "el": "Ποια συνοικία της Πράγας φιλοξενεί το Κάστρο της Πράγας;"
     },
-    "options": {
-      "en": ["Hradčany", "Malá Strana", "New Town", "Žižkov"],
-      "el": ["Χράντσανι", "Μάλα Στράνα", "Νέα Πόλη", "Ζίζκοφ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Hradčany", "el": "Χράντσανι" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Malá Strana", "el": "Μάλα Στράνα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "New Town", "el": "Νέα Πόλη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Žižkov", "el": "Ζίζκοφ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +455,24 @@
       "en": "What was Prague’s role in the Velvet Revolution?",
       "el": "Ποιος ήταν ο ρόλος της Πράγας στη Βελούδινη Επανάσταση;"
     },
-    "options": {
-      "en": ["Center of protests", "Military base", "Neutral city", "Refugee route"],
-      "el": ["Κέντρο διαδηλώσεων", "Στρατιωτική βάση", "Ουδέτερη πόλη", "Διαδρομή προσφύγων"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Center of protests", "el": "Κέντρο διαδηλώσεων" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Military base", "el": "Στρατιωτική βάση" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Neutral city", "el": "Ουδέτερη πόλη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Refugee route", "el": "Διαδρομή προσφύγων" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +480,24 @@
       "en": "What monument on Petřín Hill resembles the Eiffel Tower?",
       "el": "Ποιο μνημείο στον Λόφο Πετρίν μοιάζει με τον Πύργο του Άιφελ;"
     },
-    "options": {
-      "en": ["Petřín Lookout Tower", "Charles Watchtower", "Mini Eiffel", "Czech Needle"],
-      "el": ["Πύργος Παρατήρησης Πετρίν", "Πύργος Παρατήρησης Καρόλου", "Μίνι Άιφελ", "Τσέχικη Βελόνα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Petřín Lookout Tower", "el": "Πύργος Παρατήρησης Πετρίν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Charles Watchtower", "el": "Πύργος Παρατήρησης Καρόλου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Mini Eiffel", "el": "Μίνι Άιφελ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Czech Needle", "el": "Τσέχικη Βελόνα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +505,36 @@
       "en": "What best describes Sol’s presence in Prague?",
       "el": "Ποια περιγραφή ταιριάζει καλύτερα με την παρουσία της Sol στην Πράγα;"
     },
-    "options": {
-      "en": ["A silent queen among cobblestones", "A shadow over palaces", "A whisper in the opera", "A sparkle in the sunrise"],
-      "el": ["Μια σιωπηλή βασίλισσα στα καλντερίμια", "Μια σκιά πάνω από παλάτια", "Ένα ψίθυρος στην όπερα", "Μια λάμψη στο ξημέρωμα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "A silent queen among cobblestones",
+          "el": "Μια σιωπηλή βασίλισσα στα καλντερίμια"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "A shadow over palaces",
+          "el": "Μια σκιά πάνω από παλάτια"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "A whisper in the opera",
+          "el": "Ένα ψίθυρος στην όπερα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "A sparkle in the sunrise",
+          "el": "Μια λάμψη στο ξημέρωμα"
+        },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +542,36 @@
       "en": "Which university in Prague is one of the oldest in Europe?",
       "el": "Ποιο πανεπιστήμιο της Πράγας είναι από τα αρχαιότερα στην Ευρώπη;"
     },
-    "options": {
-      "en": ["Charles University", "Bohemia Academy", "Prague Polytechnic", "Central European Institute"],
-      "el": ["Πανεπιστήμιο Καρόλου", "Ακαδημία Βοημίας", "Πολυτεχνείο Πράγας", "Κεντροευρωπαϊκό Ινστιτούτο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "Charles University",
+          "el": "Πανεπιστήμιο Καρόλου"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Bohemia Academy",
+          "el": "Ακαδημία Βοημίας"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Prague Polytechnic",
+          "el": "Πολυτεχνείο Πράγας"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Central European Institute",
+          "el": "Κεντροευρωπαϊκό Ινστιτούτο"
+        },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +579,24 @@
       "en": "What famous writer is closely associated with Prague?",
       "el": "Ποιος διάσημος συγγραφέας συνδέεται στενά με την Πράγα;"
     },
-    "options": {
-      "en": ["Franz Kafka", "Leo Tolstoy", "Milan Kundera", "Fyodor Dostoevsky"],
-      "el": ["Φραντς Κάφκα", "Λέων Τολστόι", "Μίλαν Κούντερα", "Φιοντόρ Ντοστογιέφσκι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Franz Kafka", "el": "Φραντς Κάφκα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Leo Tolstoy", "el": "Λέων Τολστόι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Milan Kundera", "el": "Μίλαν Κούντερα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Fyodor Dostoevsky", "el": "Φιοντόρ Ντοστογιέφσκι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +604,24 @@
       "en": "Which of these animals appears in Prague’s coat of arms?",
       "el": "Ποιο από αυτά τα ζώα εμφανίζεται στο έμβλημα της Πράγας;"
     },
-    "options": {
-      "en": ["Lion", "Eagle", "Wolf", "Bear"],
-      "el": ["Λιοντάρι", "Αετός", "Λύκος", "Αρκούδα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Lion", "el": "Λιοντάρι" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Eagle", "el": "Αετός" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Wolf", "el": "Λύκος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bear", "el": "Αρκούδα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +629,35 @@
       "en": "What’s the title of the Prague episode?",
       "el": "Ποιος είναι ο τίτλος του επεισοδίου της Πράγας;"
     },
-    "options": {
-      "en": ["SOLadventure #10 – Prague, cobbles & crown 🐾🏰🇨🇿", "SOLadventure #10 – Prague, paws & poise", "SOLadventure #10 – Prague, royal shade", "SOLadventure #10 – Prague, velvet tale"],
-      "el": ["SOLadventure #10 – Πράγα, καλντερίμια και στέμμα 🐾🏰🇨🇿", "SOLadventure #10 – Πράγα, πατούσες και χάρη", "SOLadventure #10 – Πράγα, βασιλική σκιά", "SOLadventure #10 – Πράγα, βελούδινη ιστορία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "SOLadventure #10 – Prague, cobbles & crown 🐾🏰🇨🇿",
+          "el": "SOLadventure #10 – Πράγα, καλντερίμια και στέμμα 🐾🏰🇨🇿"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "SOLadventure #10 – Prague, paws & poise",
+          "el": "SOLadventure #10 – Πράγα, πατούσες και χάρη"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "SOLadventure #10 – Prague, royal shade",
+          "el": "SOLadventure #10 – Πράγα, βασιλική σκιά"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "SOLadventure #10 – Prague, velvet tale",
+          "el": "SOLadventure #10 – Πράγα, βελούδινη ιστορία"
+        },
+        "correct": false
+      }
+    ]
   }
 ]

@@ -5,11 +5,24 @@
       "en": "What is Amsterdam famously known as due to its canals?",
       "el": "Πώς είναι γνωστό το Άμστερνταμ λόγω των καναλιών του;"
     },
-    "options": {
-      "en": ["Venice of the North", "City of Bridges", "Little Paris", "Harbor City"],
-      "el": ["Βενετία του Βορρά", "Πόλη των Γεφυρών", "Μικρό Παρίσι", "Πόλη του Λιμανιού"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Venice of the North", "el": "Βενετία του Βορρά" },
+        "correct": true
+      },
+      {
+        "text": { "en": "City of Bridges", "el": "Πόλη των Γεφυρών" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Little Paris", "el": "Μικρό Παρίσι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Harbor City", "el": "Πόλη του Λιμανιού" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +30,24 @@
       "en": "Which flower is a symbol of the Netherlands?",
       "el": "Ποιο λουλούδι είναι σύμβολο της Ολλανδίας;"
     },
-    "options": {
-      "en": ["Rose", "Tulip", "Lily", "Daffodil"],
-      "el": ["Τριαντάφυλλο", "Τουλίπα", "Κρίνος", "Νάρκισσος"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Rose", "el": "Τριαντάφυλλο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tulip", "el": "Τουλίπα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Lily", "el": "Κρίνος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Daffodil", "el": "Νάρκισσος" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +55,24 @@
       "en": "Which museum in Amsterdam houses works by Van Gogh?",
       "el": "Ποιο μουσείο στο Άμστερνταμ φιλοξενεί έργα του Βαν Γκογκ;"
     },
-    "options": {
-      "en": ["Rijksmuseum", "Van Gogh Museum", "Stedelijk Museum", "Hermitage Amsterdam"],
-      "el": ["Ρέικσμουζεουμ", "Μουσείο Βαν Γκογκ", "Στέντελικ", "Ερμιτάζ Άμστερνταμ"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Rijksmuseum", "el": "Ρέικσμουζεουμ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Van Gogh Museum", "el": "Μουσείο Βαν Γκογκ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Stedelijk Museum", "el": "Στέντελικ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Hermitage Amsterdam", "el": "Ερμιτάζ Άμστερνταμ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +80,24 @@
       "en": "Which historic house is famous for Anne Frank's story?",
       "el": "Ποιο ιστορικό σπίτι είναι γνωστό για την ιστορία της Άννας Φρανκ;"
     },
-    "options": {
-      "en": ["Rembrandt House", "Royal Palace", "Anne Frank House", "Old Church"],
-      "el": ["Σπίτι Ρέμπραντ", "Βασιλικό Παλάτι", "Σπίτι Άννας Φρανκ", "Παλιά Εκκλησία"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Rembrandt House", "el": "Σπίτι Ρέμπραντ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal Palace", "el": "Βασιλικό Παλάτι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Anne Frank House", "el": "Σπίτι Άννας Φρανκ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Old Church", "el": "Παλιά Εκκλησία" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +105,24 @@
       "en": "Which is a traditional Dutch mode of transport seen in Amsterdam?",
       "el": "Ποιο είναι ένα παραδοσιακό μέσο μεταφοράς στην Ολλανδία που συναντάμε στο Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Tram", "Boat", "Bicycle", "Scooter"],
-      "el": ["Τραμ", "Βάρκα", "Ποδήλατο", "Σκούτερ"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Tram", "el": "Τραμ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Boat", "el": "Βάρκα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bicycle", "el": "Ποδήλατο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Scooter", "el": "Σκούτερ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +130,24 @@
       "en": "Which colorful market is famous for flowers in Amsterdam?",
       "el": "Ποια πολύχρωμη αγορά είναι διάσημη για τα λουλούδια της στο Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Albert Cuyp Market", "Bloemenmarkt", "Nieuwmarkt", "Waterlooplein Market"],
-      "el": ["Αγορά Άλμπερτ Κάιπ", "Αγορά Λουλουδιών", "Νιούμαρκτ", "Αγορά Βατερλόπλαιν"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Albert Cuyp Market", "el": "Αγορά Άλμπερτ Κάιπ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bloemenmarkt", "el": "Αγορά Λουλουδιών" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Nieuwmarkt", "el": "Νιούμαρκτ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Waterlooplein Market", "el": "Αγορά Βατερλόπλαιν" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +155,24 @@
       "en": "Which treat is a popular Dutch dessert?",
       "el": "Ποιο είναι ένα δημοφιλές ολλανδικό γλυκό;"
     },
-    "options": {
-      "en": ["Stroopwafel", "Crêpe", "Baklava", "Cannoli"],
-      "el": ["Στροοπβάφελ", "Κρέπα", "Μπακλαβάς", "Καννόλι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Stroopwafel", "el": "Στροοπβάφελ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Crêpe", "el": "Κρέπα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Baklava", "el": "Μπακλαβάς" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cannoli", "el": "Καννόλι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +180,24 @@
       "en": "What is the main square in Amsterdam called?",
       "el": "Πώς ονομάζεται η κεντρική πλατεία του Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Dam Square", "King's Square", "Flower Square", "Canal Square"],
-      "el": ["Πλατεία Νταμ", "Πλατεία του Βασιλιά", "Πλατεία Λουλουδιών", "Πλατεία Καναλιών"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Dam Square", "el": "Πλατεία Νταμ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "King's Square", "el": "Πλατεία του Βασιλιά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Flower Square", "el": "Πλατεία Λουλουδιών" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Canal Square", "el": "Πλατεία Καναλιών" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +205,24 @@
       "en": "Which season are tulips in full bloom?",
       "el": "Ποια εποχή ανθίζουν οι τουλίπες;"
     },
-    "options": {
-      "en": ["Summer", "Spring", "Autumn", "Winter"],
-      "el": ["Καλοκαίρι", "Άνοιξη", "Φθινόπωρο", "Χειμώνας"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Summer", "el": "Καλοκαίρι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Spring", "el": "Άνοιξη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Autumn", "el": "Φθινόπωρο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Winter", "el": "Χειμώνας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +230,24 @@
       "en": "What river runs through Amsterdam?",
       "el": "Ποιος ποταμός διασχίζει το Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Rhine", "Amstel", "Danube", "Scheldt"],
-      "el": ["Ρήνος", "Άμστελ", "Δούναβης", "Σχέλντε"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "Rhine", "el": "Ρήνος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Amstel", "el": "Άμστελ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Danube", "el": "Δούναβης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Scheldt", "el": "Σχέλντε" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +255,24 @@
       "en": "What is a 'grachten' in Dutch?",
       "el": "'Grachten' στα ολλανδικά σημαίνει;"
     },
-    "options": {
-      "en": ["Canal", "House", "Bicycle", "Square"],
-      "el": ["Κανάλι", "Σπίτι", "Ποδήλατο", "Πλατεία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Canal", "el": "Κανάλι" },
+        "correct": true
+      },
+      {
+        "text": { "en": "House", "el": "Σπίτι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bicycle", "el": "Ποδήλατο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Square", "el": "Πλατεία" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +280,24 @@
       "en": "Which building dominates Museumplein?",
       "el": "Ποιο κτίριο δεσπόζει στην πλατεία των Μουσείων;"
     },
-    "options": {
-      "en": ["Concertgebouw", "Van Gogh Museum", "Rijksmuseum", "Eye Film Museum"],
-      "el": ["Κονσερτχέμπαου", "Μουσείο Βαν Γκογκ", "Ρέικσμουζεουμ", "Μουσείο Κινηματογράφου Eye"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Concertgebouw", "el": "Κονσερτχέμπαου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Van Gogh Museum", "el": "Μουσείο Βαν Γκογκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rijksmuseum", "el": "Ρέικσμουζεουμ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Eye Film Museum", "el": "Μουσείο Κινηματογράφου Eye" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +305,24 @@
       "en": "What is the name of Amsterdam's royal palace?",
       "el": "Πώς ονομάζεται το βασιλικό παλάτι του Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Palace on the Dam", "Orange Palace", "Royal Mansion", "Koninklijk Huis"],
-      "el": ["Παλάτι στη Νταμ", "Παλάτι Πορτοκαλί", "Βασιλική Έπαυλη", "Κόνινκλαϊκ Χάους"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Palace on the Dam", "el": "Παλάτι στη Νταμ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Orange Palace", "el": "Παλάτι Πορτοκαλί" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal Mansion", "el": "Βασιλική Έπαυλη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Koninklijk Huis", "el": "Κόνινκλαϊκ Χάους" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +330,24 @@
       "en": "What is Sol's vibe in Amsterdam?",
       "el": "Ποιο είναι το στυλ της Sol στο Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Graceful among petals", "Bold like a bike", "Royal on a canal", "Quiet like tulips"],
-      "el": ["Κομψότητα ανάμεσα στα πέταλα", "Τολμηρή σαν ποδήλατο", "Βασιλική σε κανάλι", "Ήσυχη σαν τουλίπες"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Graceful among petals", "el": "Κομψότητα ανάμεσα στα πέταλα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Bold like a bike", "el": "Τολμηρή σαν ποδήλατο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal on a canal", "el": "Βασιλική σε κανάλι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Quiet like tulips", "el": "Ήσυχη σαν τουλίπες" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +355,24 @@
       "en": "What is the name of the famous art district in Amsterdam?",
       "el": "Πώς ονομάζεται η διάσημη καλλιτεχνική συνοικία του Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Jordaan", "Pijp", "Zuidas", "Leidseplein"],
-      "el": ["Γιορντάαν", "Πάιπ", "Ζάουδας", "Λέιντσενπλεϊν"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Jordaan", "el": "Γιορντάαν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Pijp", "el": "Πάιπ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Zuidas", "el": "Ζάουδας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Leidseplein", "el": "Λέιντσενπλεϊν" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +380,24 @@
       "en": "Which traditional wooden footwear comes from the Netherlands?",
       "el": "Ποιο παραδοσιακό ξύλινο υπόδημα προέρχεται από την Ολλανδία;"
     },
-    "options": {
-      "en": ["Clogs", "Loafers", "Boots", "Sandals"],
-      "el": ["Σαμπό", "Μοκασίνια", "Μπότες", "Πέδιλα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Clogs", "el": "Σαμπό" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Loafers", "el": "Μοκασίνια" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Boots", "el": "Μπότες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sandals", "el": "Πέδιλα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +405,24 @@
       "en": "What is the color of Sol’s flower in Amsterdam?",
       "el": "Τι χρώμα έχει το λουλούδι της Sol στο Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Pink", "Red", "Orange", "White"],
-      "el": ["Ροζ", "Κόκκινο", "Πορτοκαλί", "Άσπρο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Pink", "el": "Ροζ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Red", "el": "Κόκκινο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Orange", "el": "Πορτοκαλί" },
+        "correct": false
+      },
+      {
+        "text": { "en": "White", "el": "Άσπρο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +430,24 @@
       "en": "Which famous Dutch painter was born in the Netherlands?",
       "el": "Ποιος διάσημος Ολλανδός ζωγράφος γεννήθηκε στην Ολλανδία;"
     },
-    "options": {
-      "en": ["Rembrandt", "Da Vinci", "Picasso", "Goya"],
-      "el": ["Ρέμπραντ", "Ντα Βίντσι", "Πικάσο", "Γκόγια"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Rembrandt", "el": "Ρέμπραντ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Da Vinci", "el": "Ντα Βίντσι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Picasso", "el": "Πικάσο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Goya", "el": "Γκόγια" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +455,24 @@
       "en": "Which of these is NOT a typical Dutch cheese?",
       "el": "Ποιο από τα παρακάτω ΔΕΝ είναι τυπικό ολλανδικό τυρί;"
     },
-    "options": {
-      "en": ["Gouda", "Edam", "Brie", "Leerdammer"],
-      "el": ["Γκούντα", "Ένταμ", "Μπρι", "Λέρνταμερ"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "Gouda", "el": "Γκούντα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Edam", "el": "Ένταμ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Brie", "el": "Μπρι" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Leerdammer", "el": "Λέρνταμερ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +480,24 @@
       "en": "What is the name of the large park in Amsterdam?",
       "el": "Πώς λέγεται το μεγάλο πάρκο στο Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Vondelpark", "Hyde Park", "Keukenhof", "Central Park"],
-      "el": ["Βόντελπαρκ", "Χάιντ Παρκ", "Κέουκενχοφ", "Σέντραλ Παρκ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Vondelpark", "el": "Βόντελπαρκ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Hyde Park", "el": "Χάιντ Παρκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Keukenhof", "el": "Κέουκενχοφ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Central Park", "el": "Σέντραλ Παρκ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +505,24 @@
       "en": "Which bike accessory is often seen in Amsterdam?",
       "el": "Ποιο αξεσουάρ ποδηλάτου βλέπουμε συχνά στο Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Basket with flowers", "Flashing LED tires", "Streamers", "Rearview mirrors"],
-      "el": ["Καλάθι με λουλούδια", "Φωτεινά λάστιχα", "Κορδέλες", "Καθρέφτες"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Basket with flowers", "el": "Καλάθι με λουλούδια" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Flashing LED tires", "el": "Φωτεινά λάστιχα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Streamers", "el": "Κορδέλες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rearview mirrors", "el": "Καθρέφτες" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +530,24 @@
       "en": "What is Sol likely to chase on a canal?",
       "el": "Τι είναι πιθανό να κυνηγήσει η Sol σε ένα κανάλι;"
     },
-    "options": {
-      "en": ["Duck", "Bike", "Tulip", "Mouse"],
-      "el": ["Πάπια", "Ποδήλατο", "Τουλίπα", "Ποντίκι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Duck", "el": "Πάπια" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Bike", "el": "Ποδήλατο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tulip", "el": "Τουλίπα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Mouse", "el": "Ποντίκι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +555,24 @@
       "en": "What country is Amsterdam the capital of?",
       "el": "Ποιας χώρας πρωτεύουσα είναι το Άμστερνταμ;"
     },
-    "options": {
-      "en": ["Netherlands", "Belgium", "Denmark", "Sweden"],
-      "el": ["Ολλανδία", "Βέλγιο", "Δανία", "Σουηδία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Netherlands", "el": "Ολλανδία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Belgium", "el": "Βέλγιο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Denmark", "el": "Δανία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sweden", "el": "Σουηδία" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +580,36 @@
       "en": "What’s the caption of SOLadventure #7?",
       "el": "Ποιο είναι το λεζάντα του SOLadventure #7;"
     },
-    "options": {
-      "en": ["No bike. No boat. Just grace on cobblestones.", "Canal queen in bloom.", "Biking with dignity.", "A tulip for every paw."],
-      "el": ["Ούτε ποδήλατο. Ούτε βάρκα. Μόνο χάρη στα καλντερίμια.", "Βασίλισσα των καναλιών σε άνθηση.", "Ποδηλατώντας με αξιοπρέπεια.", "Μια τουλίπα για κάθε πατούσα."]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "No bike. No boat. Just grace on cobblestones.",
+          "el": "Ούτε ποδήλατο. Ούτε βάρκα. Μόνο χάρη στα καλντερίμια."
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Canal queen in bloom.",
+          "el": "Βασίλισσα των καναλιών σε άνθηση."
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Biking with dignity.",
+          "el": "Ποδηλατώντας με αξιοπρέπεια."
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "A tulip for every paw.",
+          "el": "Μια τουλίπα για κάθε πατούσα."
+        },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +617,23 @@
       "en": "Which country’s flag is often seen near the canals?",
       "el": "Ποιας χώρας η σημαία φαίνεται συχνά κοντά στα κανάλια;"
     },
-    "options": {
-      "en": ["Netherlands", "France", "Germany", "Italy"],
-      "el": ["Ολλανδία", "Γαλλία", "Γερμανία", "Ιταλία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Netherlands", "el": "Ολλανδία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "France", "el": "Γαλλία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Germany", "el": "Γερμανία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Italy", "el": "Ιταλία" },
+        "correct": false
+      }
+    ]
   }
 ]

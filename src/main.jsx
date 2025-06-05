@@ -1,26 +1,28 @@
-import React, { Suspense, lazy } from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// src/main.jsx
 
-import App from './App.jsx';
-import './index.css';
+import React, { Suspense, lazy } from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import App from "./App.jsx";
+import "./index.css";
 
 // Lazy-loaded pages
-const Home = lazy(() => import('./pages/Home.jsx'));
-const Episodes = lazy(() => import('./pages/Episodes.jsx'));
-const Map = lazy(() => import('./pages/Map.jsx'));
-const Gallery = lazy(() => import('./pages/Gallery.jsx'));
-const SOLsJourney = lazy(() => import('./pages/SOLsJourney.jsx'));
-const WhoIsSol = lazy(() => import('./pages/WhoIsSol.jsx'));
-const Contact = lazy(() => import('./pages/Contact.jsx'));
-const Shop = lazy(() => import('./pages/Shop.jsx'));
-const Games = lazy(() => import('./pages/Games.jsx'));
-const PawprintsGame = lazy(() => import('./pages/PawprintsGame.jsx'));
-const PuzzleMapGame = lazy(() => import('./pages/PuzzleMapGame.jsx'));
-const QuizPlayer = lazy(() => import('./pages/QuizPlayer.jsx')); // ✅ Παιχνίδι quiz
-// const NotFound = lazy(() => import('./pages/NotFound.jsx')); // Removed for default GitHub behavior
+const Home = lazy(() => import("./pages/Home.jsx"));
+const Episodes = lazy(() => import("./pages/Episodes.jsx"));
+const Map = lazy(() => import("./pages/Map.jsx"));
+const Gallery = lazy(() => import("./pages/Gallery.jsx"));
+const SOLsJourney = lazy(() => import("./pages/SOLsJourney.jsx"));
+const WhoIsSol = lazy(() => import("./pages/WhoIsSol.jsx"));
+const Contact = lazy(() => import("./pages/Contact.jsx"));
+const Shop = lazy(() => import("./pages/Shop.jsx"));
+const Games = lazy(() => import("./pages/Games.jsx"));
+const PawprintsGame = lazy(() => import("./pages/PawprintsGame.jsx"));
+const PuzzleMapGame = lazy(() => import("./pages/PuzzleMapGame.jsx"));
+const QuizPlayer = lazy(() => import("./pages/QuizPlayer.jsx"));
+const SolSnap = lazy(() => import("./pages/SolSnap.jsx"));
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
@@ -40,6 +42,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="games/pawprints" element={<PawprintsGame />} />
             <Route path="games/puzzlemap" element={<PuzzleMapGame />} />
             <Route path="games/cityquiz" element={<QuizPlayer />} />
+            <Route path="games/solsnap" element={<SolSnap />} />
 
             {/* Removed custom 404 route */}
             {/* <Route path="*" element={<NotFound />} /> */}

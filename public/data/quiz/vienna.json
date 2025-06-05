@@ -5,11 +5,24 @@
       "en": "What is the capital city of Austria?",
       "el": "Ποια είναι η πρωτεύουσα της Αυστρίας;"
     },
-    "options": {
-      "en": ["Vienna", "Salzburg", "Graz", "Innsbruck"],
-      "el": ["Βιέννη", "Σάλτσμπουργκ", "Γκρατς", "Ίνσμπρουκ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Vienna", "el": "Βιέννη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Salzburg", "el": "Σάλτσμπουργκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Graz", "el": "Γκρατς" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Innsbruck", "el": "Ίνσμπρουκ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +30,24 @@
       "en": "Which river flows through Vienna?",
       "el": "Ποιο ποτάμι διασχίζει τη Βιέννη;"
     },
-    "options": {
-      "en": ["Danube", "Rhine", "Elbe", "Main"],
-      "el": ["Δούναβης", "Ρήνος", "Έλβας", "Μάιν"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Danube", "el": "Δούναβης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Rhine", "el": "Ρήνος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Elbe", "el": "Έλβας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Main", "el": "Μάιν" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +55,24 @@
       "en": "Which classical composer is most closely associated with Vienna?",
       "el": "Ποιος κλασικός συνθέτης συνδέεται περισσότερο με τη Βιέννη;"
     },
-    "options": {
-      "en": ["Mozart", "Beethoven", "Bach", "Tchaikovsky"],
-      "el": ["Μότσαρτ", "Μπετόβεν", "Μπαχ", "Τσαϊκόφσκι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Mozart", "el": "Μότσαρτ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Beethoven", "el": "Μπετόβεν" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bach", "el": "Μπαχ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tchaikovsky", "el": "Τσαϊκόφσκι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +80,24 @@
       "en": "Which royal palace is located in Vienna?",
       "el": "Ποιο βασιλικό παλάτι βρίσκεται στη Βιέννη;"
     },
-    "options": {
-      "en": ["Schönbrunn", "Versailles", "Buckingham", "Topkapi"],
-      "el": ["Σένμπρουν", "Βερσαλλίες", "Μπάκιγχαμ", "Τοπ Καπί"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Schönbrunn", "el": "Σένμπρουν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Versailles", "el": "Βερσαλλίες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Buckingham", "el": "Μπάκιγχαμ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Topkapi", "el": "Τοπ Καπί" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +105,24 @@
       "en": "What dessert is Vienna famous for?",
       "el": "Για ποιο επιδόρπιο είναι διάσημη η Βιέννη;"
     },
-    "options": {
-      "en": ["Sacher Torte", "Crème brûlée", "Baklava", "Tiramisu"],
-      "el": ["Ζάχερ τόρτε", "Κρεμ μπρουλέ", "Μπακλαβάς", "Τιραμισού"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Sacher Torte", "el": "Ζάχερ τόρτε" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Crème brûlée", "el": "Κρεμ μπρουλέ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Baklava", "el": "Μπακλαβάς" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tiramisu", "el": "Τιραμισού" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +130,24 @@
       "en": "Which famous concert hall is located in Vienna?",
       "el": "Ποια διάσημη αίθουσα συναυλιών βρίσκεται στη Βιέννη;"
     },
-    "options": {
-      "en": ["Musikverein", "Carnegie Hall", "Royal Albert Hall", "Philharmonie de Paris"],
-      "el": ["Μουζίκφεραϊν", "Κάρνεγκι Χολ", "Ρόιαλ Άλμπερτ Χολ", "Φιλαρμονική του Παρισιού"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Musikverein", "el": "Μουζίκφεραϊν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Carnegie Hall", "el": "Κάρνεγκι Χολ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal Albert Hall", "el": "Ρόιαλ Άλμπερτ Χολ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Philharmonie de Paris", "el": "Φιλαρμονική του Παρισιού" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +155,24 @@
       "en": "What is the official language of Austria?",
       "el": "Ποια είναι η επίσημη γλώσσα της Αυστρίας;"
     },
-    "options": {
-      "en": ["German", "Austrian", "French", "Hungarian"],
-      "el": ["Γερμανικά", "Αυστριακά", "Γαλλικά", "Ουγγρικά"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "German", "el": "Γερμανικά" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Austrian", "el": "Αυστριακά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "French", "el": "Γαλλικά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Hungarian", "el": "Ουγγρικά" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +180,24 @@
       "en": "Which empire had Vienna as its capital?",
       "el": "Ποια αυτοκρατορία είχε τη Βιέννη ως πρωτεύουσα;"
     },
-    "options": {
-      "en": ["Austro-Hungarian Empire", "Ottoman Empire", "Roman Empire", "British Empire"],
-      "el": ["Αυστροουγγρική Αυτοκρατορία", "Οθωμανική Αυτοκρατορία", "Ρωμαϊκή Αυτοκρατορία", "Βρετανική Αυτοκρατορία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Austro-Hungarian Empire", "el": "Αυστροουγγρική Αυτοκρατορία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Ottoman Empire", "el": "Οθωμανική Αυτοκρατορία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Roman Empire", "el": "Ρωμαϊκή Αυτοκρατορία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "British Empire", "el": "Βρετανική Αυτοκρατορία" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +205,24 @@
       "en": "What style is the architecture of St. Stephen’s Cathedral in Vienna?",
       "el": "Τι αρχιτεκτονικό στυλ έχει ο Καθεδρικός του Αγίου Στεφάνου στη Βιέννη;"
     },
-    "options": {
-      "en": ["Gothic", "Baroque", "Renaissance", "Neoclassical"],
-      "el": ["Γοτθικό", "Μπαρόκ", "Αναγεννησιακό", "Νεοκλασικό"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Gothic", "el": "Γοτθικό" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Baroque", "el": "Μπαρόκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Renaissance", "el": "Αναγεννησιακό" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Neoclassical", "el": "Νεοκλασικό" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +230,24 @@
       "en": "What is Sol’s quote in the Vienna episode?",
       "el": "Ποιο είναι το quote της Sol στο επεισόδιο της Βιέννης;"
     },
-    "options": {
-      "en": ["Born for palaces", "Silence has a throne", "Royalty walks light", "Poise meets marble"],
-      "el": ["Γεννημένη για παλάτια", "Η σιωπή έχει θρόνο", "Η αρχοντιά περπατά ελαφρά", "Η χάρη αγγίζει το μάρμαρο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Born for palaces", "el": "Γεννημένη για παλάτια" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Silence has a throne", "el": "Η σιωπή έχει θρόνο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royalty walks light", "el": "Η αρχοντιά περπατά ελαφρά" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Poise meets marble", "el": "Η χάρη αγγίζει το μάρμαρο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +255,24 @@
       "en": "Which art movement is linked with Vienna's Secession Building?",
       "el": "Με ποιο καλλιτεχνικό ρεύμα συνδέεται το Κτήριο της Απόσχισης στη Βιέννη;"
     },
-    "options": {
-      "en": ["Art Nouveau", "Cubism", "Impressionism", "Surrealism"],
-      "el": ["Αρ Νουβό", "Κυβισμός", "Ιμπρεσιονισμός", "Σουρεαλισμός"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Art Nouveau", "el": "Αρ Νουβό" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Cubism", "el": "Κυβισμός" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Impressionism", "el": "Ιμπρεσιονισμός" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Surrealism", "el": "Σουρεαλισμός" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +280,24 @@
       "en": "What famous psychoanalyst lived and worked in Vienna?",
       "el": "Ποιος διάσημος ψυχαναλυτής έζησε και εργάστηκε στη Βιέννη;"
     },
-    "options": {
-      "en": ["Sigmund Freud", "Carl Jung", "Alfred Adler", "Wilhelm Reich"],
-      "el": ["Ζίγκμουντ Φρόυντ", "Καρλ Γιουνγκ", "Άλφρεντ Άντλερ", "Βίλχελμ Ράιχ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Sigmund Freud", "el": "Ζίγκμουντ Φρόυντ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Carl Jung", "el": "Καρλ Γιουνγκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Alfred Adler", "el": "Άλφρεντ Άντλερ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Wilhelm Reich", "el": "Βίλχελμ Ράιχ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +305,24 @@
       "en": "Which historic coffee culture is Vienna known for?",
       "el": "Για ποια ιστορική κουλτούρα καφέ είναι γνωστή η Βιέννη;"
     },
-    "options": {
-      "en": ["Coffeehouses", "Espresso bars", "Tea lounges", "Bakery cafés"],
-      "el": ["Καφενεία", "Μπαρ εσπρέσο", "Σαλόνια τσαγιού", "Καφέ-αρτοποιεία"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Coffeehouses", "el": "Καφενεία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Espresso bars", "el": "Μπαρ εσπρέσο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tea lounges", "el": "Σαλόνια τσαγιού" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bakery cafés", "el": "Καφέ-αρτοποιεία" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +330,24 @@
       "en": "Which waltz is famously associated with Vienna?",
       "el": "Ποιο βαλς συνδέεται διάσημα με τη Βιέννη;"
     },
-    "options": {
-      "en": ["The Blue Danube", "Swan Lake", "Bolero", "Canon in D"],
-      "el": ["Ο Γαλάζιος Δούναβης", "Η Λίμνη των Κύκνων", "Μπολερό", "Κανόν στο Ρε"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "The Blue Danube", "el": "Ο Γαλάζιος Δούναβης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Swan Lake", "el": "Η Λίμνη των Κύκνων" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Bolero", "el": "Μπολερό" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Canon in D", "el": "Κανόν στο Ρε" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +355,24 @@
       "en": "Which annual event showcases Vienna's elegance and ball tradition?",
       "el": "Ποια ετήσια εκδήλωση αναδεικνύει την κομψότητα και την παράδοση μπαλ της Βιέννης;"
     },
-    "options": {
-      "en": ["Vienna Opera Ball", "Vienna Carnival", "New Year Concert", "Mozart Festival"],
-      "el": ["Μπαλ της Όπερας της Βιέννης", "Καρναβάλι της Βιέννης", "Πρωτοχρονιάτικη Συναυλία", "Φεστιβάλ Μότσαρτ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Vienna Opera Ball", "el": "Μπαλ της Όπερας της Βιέννης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Vienna Carnival", "el": "Καρναβάλι της Βιέννης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "New Year Concert", "el": "Πρωτοχρονιάτικη Συναυλία" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Mozart Festival", "el": "Φεστιβάλ Μότσαρτ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +380,24 @@
       "en": "Which museum complex is located in Vienna’s MuseumsQuartier?",
       "el": "Ποιο συγκρότημα μουσείων βρίσκεται στο MuseumsQuartier της Βιέννης;"
     },
-    "options": {
-      "en": ["Leopold Museum", "British Museum", "Louvre", "Uffizi Gallery"],
-      "el": ["Μουσείο Λεοπόλδου", "Βρετανικό Μουσείο", "Λούβρο", "Πινακοθήκη Ουφίτσι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Leopold Museum", "el": "Μουσείο Λεοπόλδου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "British Museum", "el": "Βρετανικό Μουσείο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Louvre", "el": "Λούβρο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Uffizi Gallery", "el": "Πινακοθήκη Ουφίτσι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +405,24 @@
       "en": "What’s the iconic architectural style of Hundertwasserhaus in Vienna?",
       "el": "Ποιο είναι το χαρακτηριστικό αρχιτεκτονικό στυλ του Hundertwasserhaus στη Βιέννη;"
     },
-    "options": {
-      "en": ["Organic & colorful", "Gothic minimalism", "Romanesque arches", "Brutalist"],
-      "el": ["Οργανικό και πολύχρωμο", "Γοτθικός μινιμαλισμός", "Ρομανικές καμάρες", "Μπρουταλισμός"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Organic & colorful", "el": "Οργανικό και πολύχρωμο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Gothic minimalism", "el": "Γοτθικός μινιμαλισμός" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Romanesque arches", "el": "Ρομανικές καμάρες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Brutalist", "el": "Μπρουταλισμός" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +430,24 @@
       "en": "What does the name 'Vienna' mean?",
       "el": "Τι σημαίνει το όνομα 'Βιέννη';"
     },
-    "options": {
-      "en": ["River forest", "Windy city", "White fortress", "Royal plain"],
-      "el": ["Ποτάμιο δάσος", "Ανεμώδης πόλη", "Λευκό φρούριο", "Βασιλική πεδιάδα"]
-    },
-    "answerIndex": 2
+    "answers": [
+      {
+        "text": { "en": "River forest", "el": "Ποτάμιο δάσος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Windy city", "el": "Ανεμώδης πόλη" },
+        "correct": false
+      },
+      {
+        "text": { "en": "White fortress", "el": "Λευκό φρούριο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Royal plain", "el": "Βασιλική πεδιάδα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +455,24 @@
       "en": "Which building houses the Austrian Parliament?",
       "el": "Ποιο κτίριο στεγάζει το Κοινοβούλιο της Αυστρίας;"
     },
-    "options": {
-      "en": ["Parlamentsgebäude", "Hofburg", "Rathaus", "Staatsoper"],
-      "el": ["Κτίριο του Κοινοβουλίου", "Χόφμπουργκ", "Δημαρχείο", "Κρατική Όπερα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Parlamentsgebäude", "el": "Κτίριο του Κοινοβουλίου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Hofburg", "el": "Χόφμπουργκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Rathaus", "el": "Δημαρχείο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Staatsoper", "el": "Κρατική Όπερα" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +480,24 @@
       "en": "Which animal symbolizes Sol’s presence in Vienna?",
       "el": "Ποιο ζώο συμβολίζει την παρουσία της Sol στη Βιέννη;"
     },
-    "options": {
-      "en": ["Poised feline", "Royal swan", "Quiet deer", "Gilded eagle"],
-      "el": ["Γάτα με χάρη", "Βασιλικός κύκνος", "Ήσυχο ελάφι", "Επιχρυσωμένος αετός"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Poised feline", "el": "Γάτα με χάρη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Royal swan", "el": "Βασιλικός κύκνος" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Quiet deer", "el": "Ήσυχο ελάφι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Gilded eagle", "el": "Επιχρυσωμένος αετός" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +505,30 @@
       "en": "What is Vienna’s historical center recognized as?",
       "el": "Ως τι αναγνωρίζεται το ιστορικό κέντρο της Βιέννης;"
     },
-    "options": {
-      "en": ["UNESCO World Heritage Site", "European Capital of Culture", "Royal Capital", "Global Art Capital"],
-      "el": ["Μνημείο Παγκόσμιας Κληρονομιάς UNESCO", "Πολιτιστική Πρωτεύουσα της Ευρώπης", "Βασιλική Πρωτεύουσα", "Παγκόσμια Πρωτεύουσα Τέχνης"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": {
+          "en": "UNESCO World Heritage Site",
+          "el": "Μνημείο Παγκόσμιας Κληρονομιάς UNESCO"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "European Capital of Culture",
+          "el": "Πολιτιστική Πρωτεύουσα της Ευρώπης"
+        },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal Capital", "el": "Βασιλική Πρωτεύουσα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Global Art Capital", "el": "Παγκόσμια Πρωτεύουσα Τέχνης" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +536,24 @@
       "en": "Which public park in Vienna is home to the famous 'Giant Ferris Wheel'?",
       "el": "Σε ποιο δημόσιο πάρκο της Βιέννης βρίσκεται η διάσημη 'Γιγάντια Ρόδα';"
     },
-    "options": {
-      "en": ["Prater", "Augarten", "Stadtpark", "Belvedere Gardens"],
-      "el": ["Πράτερ", "Όγκαρτεν", "Σταντπαρκ", "Κήποι Μπελβεντέρε"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Prater", "el": "Πράτερ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Augarten", "el": "Όγκαρτεν" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Stadtpark", "el": "Σταντπαρκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Belvedere Gardens", "el": "Κήποι Μπελβεντέρε" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +561,24 @@
       "en": "Which title best describes Sol’s mood in Vienna?",
       "el": "Ποιος τίτλος περιγράφει καλύτερα τη διάθεση της Sol στη Βιέννη;"
     },
-    "options": {
-      "en": ["Paws & poise", "Jazz & jump", "Fur & flourish", "Whiskers & waltz"],
-      "el": ["Πατούσες και χάρη", "Τζαζ και άλμα", "Γούνα και άνθηση", "Μουστάκια και βαλς"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Paws & poise", "el": "Πατούσες και χάρη" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Jazz & jump", "el": "Τζαζ και άλμα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Fur & flourish", "el": "Γούνα και άνθηση" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Whiskers & waltz", "el": "Μουστάκια και βαλς" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +586,24 @@
       "en": "What color dominates the Vienna State Opera's interior?",
       "el": "Ποιο χρώμα κυριαρχεί στο εσωτερικό της Κρατικής Όπερας της Βιέννης;"
     },
-    "options": {
-      "en": ["Red and gold", "Blue and white", "Green and silver", "Black and bronze"],
-      "el": ["Κόκκινο και χρυσό", "Μπλε και λευκό", "Πράσινο και ασημί", "Μαύρο και μπρούντζινο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Red and gold", "el": "Κόκκινο και χρυσό" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Blue and white", "el": "Μπλε και λευκό" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Green and silver", "el": "Πράσινο και ασημί" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Black and bronze", "el": "Μαύρο και μπρούντζινο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +611,23 @@
       "en": "Which Viennese tradition fits Sol's elegance best?",
       "el": "Ποια βιεννέζικη παράδοση ταιριάζει καλύτερα με την κομψότητα της Sol;"
     },
-    "options": {
-      "en": ["Waltzing at a ball", "Climbing the Alps", "Eating schnitzel", "Riding the tram"],
-      "el": ["Βαλς σε χοροεσπερίδα", "Ανάβαση στις Άλπεις", "Φαγητό σνίτσελ", "Βόλτα με το τραμ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Waltzing at a ball", "el": "Βαλς σε χοροεσπερίδα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Climbing the Alps", "el": "Ανάβαση στις Άλπεις" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Eating schnitzel", "el": "Φαγητό σνίτσελ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Riding the tram", "el": "Βόλτα με το τραμ" },
+        "correct": false
+      }
+    ]
   }
 ]

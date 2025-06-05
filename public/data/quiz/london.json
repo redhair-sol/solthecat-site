@@ -5,11 +5,24 @@
       "en": "What famous clock tower appears in Sol’s London adventure?",
       "el": "Ποιο διάσημο ρολόι εμφανίζεται στην περιπέτεια της Sol στο Λονδίνο;"
     },
-    "options": {
-      "en": ["Big Ben", "Eiffel Tower", "Colosseum", "Clockwork Palace"],
-      "el": ["Μπιγκ Μπεν", "Πύργος του Άιφελ", "Κολοσσαίο", "Παλάτι του Χρόνου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Big Ben", "el": "Μπιγκ Μπεν" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Eiffel Tower", "el": "Πύργος του Άιφελ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Colosseum", "el": "Κολοσσαίο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Clockwork Palace", "el": "Παλάτι του Χρόνου" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -17,11 +30,24 @@
       "en": "What river flows through London?",
       "el": "Ποιο ποτάμι διασχίζει το Λονδίνο;"
     },
-    "options": {
-      "en": ["Thames", "Seine", "Tiber", "Danube"],
-      "el": ["Τάμεσης", "Σηκουάνας", "Τίβερης", "Δούναβης"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Thames", "el": "Τάμεσης" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Seine", "el": "Σηκουάνας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tiber", "el": "Τίβερης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Danube", "el": "Δούναβης" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -29,11 +55,24 @@
       "en": "What type of transportation is iconic in London?",
       "el": "Ποιο μέσο μεταφοράς είναι εμβληματικό στο Λονδίνο;"
     },
-    "options": {
-      "en": ["Red double-decker bus", "Gondola", "Cable car", "Yellow tram"],
-      "el": ["Κόκκινο διώροφο λεωφορείο", "Γόνδολα", "Τελεφερίκ", "Κίτρινο τραμ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Red double-decker bus", "el": "Κόκκινο διώροφο λεωφορείο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Gondola", "el": "Γόνδολα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Cable car", "el": "Τελεφερίκ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Yellow tram", "el": "Κίτρινο τραμ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,11 +80,24 @@
       "en": "Which royal residence does Sol walk by?",
       "el": "Ποια βασιλική κατοικία περνάει η Sol;"
     },
-    "options": {
-      "en": ["Buckingham Palace", "Windsor Castle", "Versailles", "Tower of Pisa"],
-      "el": ["Ανάκτορα του Μπάκιγχαμ", "Κάστρο του Ουίνδσορ", "Βερσαλλίες", "Πύργος της Πίζας"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Buckingham Palace", "el": "Ανάκτορα του Μπάκιγχαμ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Windsor Castle", "el": "Κάστρο του Ουίνδσορ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Versailles", "el": "Βερσαλλίες" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tower of Pisa", "el": "Πύργος της Πίζας" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -53,11 +105,24 @@
       "en": "Which bridge is a famous landmark in London?",
       "el": "Ποια γέφυρα είναι διάσημο ορόσημο στο Λονδίνο;"
     },
-    "options": {
-      "en": ["Tower Bridge", "Golden Gate", "Brooklyn Bridge", "Pont Neuf"],
-      "el": ["Γέφυρα του Πύργου", "Γκόλντεν Γκέιτ", "Γέφυρα Μπρούκλιν", "Πον Νεφ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Tower Bridge", "el": "Γέφυρα του Πύργου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Golden Gate", "el": "Γκόλντεν Γκέιτ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Brooklyn Bridge", "el": "Γέφυρα Μπρούκλιν" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Pont Neuf", "el": "Πον Νεφ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -65,11 +130,24 @@
       "en": "Which London museum holds the Rosetta Stone?",
       "el": "Ποιο μουσείο του Λονδίνου φιλοξενεί τη Στήλη της Ροζέτας;"
     },
-    "options": {
-      "en": ["British Museum", "Louvre", "Vatican Museums", "Pergamon Museum"],
-      "el": ["Βρετανικό Μουσείο", "Λούβρο", "Μουσεία του Βατικανού", "Πέργαμον"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "British Museum", "el": "Βρετανικό Μουσείο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Louvre", "el": "Λούβρο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Vatican Museums", "el": "Μουσεία του Βατικανού" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Pergamon Museum", "el": "Πέργαμον" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -77,11 +155,24 @@
       "en": "What underground system is known as 'the Tube'?",
       "el": "Ποιο υπόγειο σύστημα ονομάζεται 'the Tube';"
     },
-    "options": {
-      "en": ["London Underground", "Paris Metro", "Berlin U-Bahn", "New York Subway"],
-      "el": ["Υπόγειο Λονδίνου", "Μετρό Παρισιού", "U-Bahn Βερολίνου", "Μετρό Νέας Υόρκης"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "London Underground", "el": "Υπόγειο Λονδίνου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Paris Metro", "el": "Μετρό Παρισιού" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Berlin U-Bahn", "el": "U-Bahn Βερολίνου" },
+        "correct": false
+      },
+      {
+        "text": { "en": "New York Subway", "el": "Μετρό Νέας Υόρκης" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,11 +180,24 @@
       "en": "Which color are London’s iconic phone booths?",
       "el": "Τι χρώμα έχουν οι εμβληματικοί τηλεφωνικοί θάλαμοι του Λονδίνου;"
     },
-    "options": {
-      "en": ["Red", "Blue", "Green", "Yellow"],
-      "el": ["Κόκκινο", "Μπλε", "Πράσινο", "Κίτρινο"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Red", "el": "Κόκκινο" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Blue", "el": "Μπλε" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Green", "el": "Πράσινο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Yellow", "el": "Κίτρινο" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -101,11 +205,24 @@
       "en": "Where does the British monarch reside in London?",
       "el": "Πού διαμένει ο Βρετανός μονάρχης στο Λονδίνο;"
     },
-    "options": {
-      "en": ["Buckingham Palace", "Kensington Palace", "Hampton Court", "Downing Street 10"],
-      "el": ["Ανάκτορα του Μπάκιγχαμ", "Ανάκτορα Κένσινγκτον", "Χάμπτον Κορτ", "Ντάουνινγκ Στριτ 10"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Buckingham Palace", "el": "Ανάκτορα του Μπάκιγχαμ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Kensington Palace", "el": "Ανάκτορα Κένσινγκτον" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Hampton Court", "el": "Χάμπτον Κορτ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Downing Street 10", "el": "Ντάουνινγκ Στριτ 10" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -113,11 +230,24 @@
       "en": "What is the name of the famous Ferris wheel in London?",
       "el": "Ποια είναι η ονομασία της διάσημης ρόδας στο Λονδίνο;"
     },
-    "options": {
-      "en": ["London Eye", "Big Wheel", "Eye of Britain", "Sky Spinner"],
-      "el": ["Μάτι του Λονδίνου", "Μεγάλη Ρόδα", "Μάτι της Βρετανίας", "Ουράνιος Δακτύλιος"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "London Eye", "el": "Μάτι του Λονδίνου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Big Wheel", "el": "Μεγάλη Ρόδα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Eye of Britain", "el": "Μάτι της Βρετανίας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Sky Spinner", "el": "Ουράνιος Δακτύλιος" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 11,
@@ -125,11 +255,24 @@
       "en": "What color are London’s taxis?",
       "el": "Τι χρώμα έχουν τα ταξί του Λονδίνου;"
     },
-    "options": {
-      "en": ["Black", "Yellow", "Red", "White"],
-      "el": ["Μαύρα", "Κίτρινα", "Κόκκινα", "Λευκά"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Black", "el": "Μαύρα" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Yellow", "el": "Κίτρινα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Red", "el": "Κόκκινα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "White", "el": "Λευκά" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -137,11 +280,24 @@
       "en": "Which British author created Sherlock Holmes?",
       "el": "Ποιος Βρετανός συγγραφέας δημιούργησε τον Σέρλοκ Χολμς;"
     },
-    "options": {
-      "en": ["Arthur Conan Doyle", "Charles Dickens", "Agatha Christie", "J.K. Rowling"],
-      "el": ["Άρθουρ Κόναν Ντόιλ", "Τσαρλς Ντίκενς", "Αγκάθα Κρίστι", "Τζ. Κ. Ρόουλινγκ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Arthur Conan Doyle", "el": "Άρθουρ Κόναν Ντόιλ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Charles Dickens", "el": "Τσαρλς Ντίκενς" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Agatha Christie", "el": "Αγκάθα Κρίστι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "J.K. Rowling", "el": "Τζ. Κ. Ρόουλινγκ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 13,
@@ -149,11 +305,24 @@
       "en": "Which market in London is famous for antiques?",
       "el": "Ποια αγορά του Λονδίνου είναι διάσημη για αντίκες;"
     },
-    "options": {
-      "en": ["Portobello Road", "Borough Market", "Camden Market", "Spitalfields"],
-      "el": ["Πορτομπέλο Ρόουντ", "Μπόροου Μάρκετ", "Κάμντεν Μάρκετ", "Σπιτάλφιλντς"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Portobello Road", "el": "Πορτομπέλο Ρόουντ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Borough Market", "el": "Μπόροου Μάρκετ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Camden Market", "el": "Κάμντεν Μάρκετ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Spitalfields", "el": "Σπιτάλφιλντς" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 14,
@@ -161,11 +330,24 @@
       "en": "Which Shakespearean theatre can you visit in London?",
       "el": "Ποιο θέατρο του Σαίξπηρ μπορείς να επισκεφθείς στο Λονδίνο;"
     },
-    "options": {
-      "en": ["Globe Theatre", "Apollo Theatre", "Royal Albert Hall", "Old Vic"],
-      "el": ["Θέατρο Γκλόουμπ", "Θέατρο Απόλλων", "Ρόγιαλ Άλμπερτ Χολ", "Ολντ Βικ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Globe Theatre", "el": "Θέατρο Γκλόουμπ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Apollo Theatre", "el": "Θέατρο Απόλλων" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Royal Albert Hall", "el": "Ρόγιαλ Άλμπερτ Χολ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Old Vic", "el": "Ολντ Βικ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -173,11 +355,24 @@
       "en": "Which London street is known for luxury shopping?",
       "el": "Ποιος δρόμος του Λονδίνου είναι γνωστός για πολυτελή ψώνια;"
     },
-    "options": {
-      "en": ["Bond Street", "Oxford Street", "Regent Street", "Baker Street"],
-      "el": ["Μποντ Στριτ", "Όξφορντ Στριτ", "Ρίτζεντ Στριτ", "Μπέικερ Στριτ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Bond Street", "el": "Μποντ Στριτ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Oxford Street", "el": "Όξφορντ Στριτ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Regent Street", "el": "Ρίτζεντ Στριτ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Baker Street", "el": "Μπέικερ Στριτ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 16,
@@ -185,11 +380,24 @@
       "en": "Which famous British band started in London?",
       "el": "Ποιο διάσημο βρετανικό συγκρότημα ξεκίνησε στο Λονδίνο;"
     },
-    "options": {
-      "en": ["The Rolling Stones", "ABBA", "Queen", "U2"],
-      "el": ["The Rolling Stones", "ABBA", "Queen", "U2"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "The Rolling Stones", "el": "The Rolling Stones" },
+        "correct": true
+      },
+      {
+        "text": { "en": "ABBA", "el": "ABBA" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Queen", "el": "Queen" },
+        "correct": false
+      },
+      {
+        "text": { "en": "U2", "el": "U2" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 17,
@@ -197,11 +405,24 @@
       "en": "Which area is known for theatre shows in London?",
       "el": "Ποια περιοχή είναι γνωστή για τα θεατρικά έργα στο Λονδίνο;"
     },
-    "options": {
-      "en": ["West End", "East Side", "North Quarter", "South Bank"],
-      "el": ["Γουέστ Εντ", "Ίστ Σάιντ", "Νορθ Κουόρτερ", "Σάουθ Μπανκ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "West End", "el": "Γουέστ Εντ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "East Side", "el": "Ίστ Σάιντ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "North Quarter", "el": "Νορθ Κουόρτερ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "South Bank", "el": "Σάουθ Μπανκ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 18,
@@ -209,11 +430,24 @@
       "en": "Where do the Crown Jewels reside?",
       "el": "Πού φυλάσσονται τα Βασιλικά Κοσμήματα;"
     },
-    "options": {
-      "en": ["Tower of London", "British Museum", "Windsor Castle", "Buckingham Palace"],
-      "el": ["Πύργος του Λονδίνου", "Βρετανικό Μουσείο", "Κάστρο του Ουίνδσορ", "Ανάκτορα του Μπάκιγχαμ"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Tower of London", "el": "Πύργος του Λονδίνου" },
+        "correct": true
+      },
+      {
+        "text": { "en": "British Museum", "el": "Βρετανικό Μουσείο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Windsor Castle", "el": "Κάστρο του Ουίνδσορ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Buckingham Palace", "el": "Ανάκτορα του Μπάκιγχαμ" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 19,
@@ -221,11 +455,24 @@
       "en": "What color symbolizes royalty and appears in Sol’s London episode?",
       "el": "Ποιο χρώμα συμβολίζει τη βασιλεία και εμφανίζεται στο επεισόδιο της Sol στο Λονδίνο;"
     },
-    "options": {
-      "en": ["Purple", "Red", "Blue", "Gold"],
-      "el": ["Μωβ", "Κόκκινο", "Μπλε", "Χρυσό"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Purple", "el": "Μωβ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Red", "el": "Κόκκινο" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Blue", "el": "Μπλε" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Gold", "el": "Χρυσό" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 20,
@@ -233,11 +480,24 @@
       "en": "Which London square is known for its pigeons and fountains?",
       "el": "Ποια πλατεία του Λονδίνου είναι γνωστή για τα περιστέρια και τα σιντριβάνια της;"
     },
-    "options": {
-      "en": ["Trafalgar Square", "Piccadilly Circus", "Leicester Square", "Parliament Square"],
-      "el": ["Τραφάλγκαρ", "Πικαντίλι", "Λέστερ", "Πλατεία Κοινοβουλίου"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Trafalgar Square", "el": "Τραφάλγκαρ" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Piccadilly Circus", "el": "Πικαντίλι" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Leicester Square", "el": "Λέστερ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Parliament Square", "el": "Πλατεία Κοινοβουλίου" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 21,
@@ -245,11 +505,24 @@
       "en": "Which London area is famous for street art?",
       "el": "Ποια περιοχή του Λονδίνου είναι διάσημη για τη street art;"
     },
-    "options": {
-      "en": ["Shoreditch", "Mayfair", "Kensington", "Chelsea"],
-      "el": ["Σόρντιτς", "Μέιφερ", "Κένσινγκτον", "Τσέλσι"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Shoreditch", "el": "Σόρντιτς" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Mayfair", "el": "Μέιφερ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Kensington", "el": "Κένσινγκτον" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Chelsea", "el": "Τσέλσι" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 22,
@@ -257,11 +530,24 @@
       "en": "What kind of guards stand at Buckingham Palace?",
       "el": "Τι είδους φρουροί στέκονται στα Ανάκτορα του Μπάκιγχαμ;"
     },
-    "options": {
-      "en": ["Queen's Guard", "Royal Navy", "City Police", "Beefeaters"],
-      "el": ["Φρουρά της Βασίλισσας", "Βασιλικό Ναυτικό", "Αστυνομία της Πόλης", "Μπιφιτερς"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Queen's Guard", "el": "Φρουρά της Βασίλισσας" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Royal Navy", "el": "Βασιλικό Ναυτικό" },
+        "correct": false
+      },
+      {
+        "text": { "en": "City Police", "el": "Αστυνομία της Πόλης" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Beefeaters", "el": "Μπιφιτερς" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 23,
@@ -269,11 +555,24 @@
       "en": "Which episode number is London in SOLadventures?",
       "el": "Ποιος είναι ο αριθμός επεισοδίου του Λονδίνου στις SOLadventures;"
     },
-    "options": {
-      "en": ["#4", "#5", "#6", "#7"],
-      "el": ["#4", "#5", "#6", "#7"]
-    },
-    "answerIndex": 1
+    "answers": [
+      {
+        "text": { "en": "#4", "el": "#4" },
+        "correct": false
+      },
+      {
+        "text": { "en": "#5", "el": "#5" },
+        "correct": true
+      },
+      {
+        "text": { "en": "#6", "el": "#6" },
+        "correct": false
+      },
+      {
+        "text": { "en": "#7", "el": "#7" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 24,
@@ -281,11 +580,24 @@
       "en": "Which British queen ruled the longest before Queen Elizabeth II?",
       "el": "Ποια Βρετανίδα βασίλισσα κυβέρνησε περισσότερο πριν την Ελισάβετ Β';"
     },
-    "options": {
-      "en": ["Queen Victoria", "Queen Anne", "Mary I", "Elizabeth I"],
-      "el": ["Βικτωρία", "Άννα", "Μαρία Α'", "Ελισάβετ Α'"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Queen Victoria", "el": "Βικτωρία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "Queen Anne", "el": "Άννα" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Mary I", "el": "Μαρία Α'" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Elizabeth I", "el": "Ελισάβετ Α'" },
+        "correct": false
+      }
+    ]
   },
   {
     "id": 25,
@@ -293,10 +605,23 @@
       "en": "Which monarch is depicted in many London statues?",
       "el": "Ποιος μονάρχης απεικονίζεται σε πολλά αγάλματα του Λονδίνου;"
     },
-    "options": {
-      "en": ["Queen Victoria", "King George VI", "King Charles III", "Queen Anne"],
-      "el": ["Βασίλισσα Βικτωρία", "Βασιλιάς Γεώργιος ΣΤ'", "Κάρολος Γ'", "Βασίλισσα Άννα"]
-    },
-    "answerIndex": 0
+    "answers": [
+      {
+        "text": { "en": "Queen Victoria", "el": "Βασίλισσα Βικτωρία" },
+        "correct": true
+      },
+      {
+        "text": { "en": "King George VI", "el": "Βασιλιάς Γεώργιος ΣΤ'" },
+        "correct": false
+      },
+      {
+        "text": { "en": "King Charles III", "el": "Κάρολος Γ'" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Queen Anne", "el": "Βασίλισσα Άννα" },
+        "correct": false
+      }
+    ]
   }
 ]

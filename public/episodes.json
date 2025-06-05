@@ -11,7 +11,30 @@
     "story": {
       "en": "First light in Athens. SOL woke atop the Parthenon marble, shook centuries of dust off her paws, and gazed at the city like something she had always owned. Tourists pointed their cameras, children tried to pet her, but she kept walking, unbothered. Goddesses don’t pose. They simply are.",
       "el": "Πρώτο φως στην Αθήνα. Η SOL ξύπνησε πάνω στο μάρμαρο του Παρθενώνα, τίναξε αιώνες σκόνης από τις πατούσες της και αγνάντεψε την πόλη σαν κάτι που της ανήκε πάντα. Οι τουρίστες την έβγαζαν φωτογραφία, τα παιδιά προσπαθούσαν να την χαϊδέψουν, αλλά εκείνη προχωρούσε ατάραχη. Οι θεές δεν ποζάρουν. Απλώς υπάρχουν."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Was Sol first sighted on top of the Parthenon?",
+          "el": "Εμφανίστηκε πρώτη φορά η Sol πάνω στον Παρθενώνα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL shake centuries of dust off her paws?",
+          "el": "Τίναξε η SOL αιώνες σκόνης από τις πατούσες της;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL pause to pose for tourists?",
+          "el": "Έμεινε η SOL να ποζάρει για τους τουρίστες;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 2,
@@ -25,7 +48,30 @@
     "story": {
       "en": "She hadn’t even fully entered the city, and heads were already turning. Romans know legends when they see them — but they’d never seen one this fluffy. She climbed the Spanish Steps without a glance back, purred through Piazza Navona, and claimed the Colosseum like she built it herself. A guard near the Vatican muttered, “These Romans are crazy.” She didn’t flinch. Just strutted. That’s attitude.",
       "el": "Δεν είχε καν μπει ολόκληρη στην πόλη και ήδη γύριζαν κεφάλια. Οι Ρωμαίοι αναγνωρίζουν τους θρύλους — αλλά ποτέ δεν είχαν δει έναν τόσο φουντωτό. Ανέβηκε τα Σκαλιά της Ισπανίας χωρίς να ρίξει ματιά πίσω, γουργούρισε στην Piazza Navona και κατέλαβε το Κολοσσαίο σαν να το είχε χτίσει η ίδια. Ένας φρουρός κοντά στο Βατικανό μουρμούρισε: «Αυτοί οι Ρωμαίοι είναι τρελοί». Δεν έδειξε καμία αντίδραση. Περπάτησε. Αυτό είναι attitude."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol climb the Spanish Steps without looking back?",
+          "el": "Ανέβηκε η Sol τα Σκαλιά της Ισπανίας χωρίς να ρίξει ματιά πίσω;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did a guard near the Vatican call Romans 'crazy'?",
+          "el": "Ένας φρουρός κοντά στο Βατικανό αποκάλεσε τους Ρωμαίους 'τρελούς';"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL build the Colosseum herself?",
+          "el": "Έχτισε η SOL το Κολοσσαίο μόνη της;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 3,
@@ -38,8 +84,31 @@
     "city": "paris",
     "story": {
       "en": "Paris was not just a destination — it was a stage where Sol effortlessly took center role. Beneath the blue sky, she wandered the cobblestone streets, leaving traces woven into the city’s history. In Montmartre, among artists and colors, she found her own inspiration, as if she were part of a living canvas. Sunlight played in her eyes while whispers of passersby blended into a symphony of elegance and mystery. Every step was a promise, every pawprint a story — Paris and Sol became an inseparable tale.",
-      "el": "Το Παρίσι δεν ήταν απλά ένας προορισμός — ήταν μια σκηνή όπου η Sol πρωταγωνίστησε με φυσικότητα. Κάτω από το γαλάζιο ουρανό, περπάτησε στους πλακόστρωτους δρόμους, αφήνοντας ίχνη που ενώθηκαν με την ιστορία της πόλης. Στη Μονμάρτη, ανάμεσα σε καλλιτέχνες και χρώματα, βρήκε τη δική της έμπνευση, σαν να ήταν κομμάτι ενός καμβά που συνεχώς ζωντανεύει. Το φως του ήλιου έπαιζε με τα μάτια της, ενώ το ψίθυροι των περαστικών υφαίνονταν σε μια συμφωνία κομψότητας και μυστηρίου. Κάθε βήμα της ήταν μια υπόσχεση, κάθε πατούσα μια αφήγηση — το Παρίσι και η Sol έγιναν ένα αχώριστο διήγημα."
-    }
+      "el": "Το Παρίσι δεν ήταν απλά ένας προορισμός — ήταν μια σκηνή όπου η Sol πρωταγωνίστησε με φυσικότητα. Κάτω από το γαλάζιο ουρανό, περπάτησε στους πλακόστρωτους δρόμους, αφήνοντας ίχνη που ενώθηκαν με την ιστορία της πόλης. Στη Μονμάρτη, ανάμεσα σε καλλιτέχνες και χρώματα, βρήκε τη δική της έμπνευση, σαν να ήταν κομμάτι ενός καμβά που συνεχώς ζωντανεύει. Το φως του ήλιου έπαιζε με τα μάτια της, ενώ οι ψίθυροι των περαστικών υφαίνονταν σε μια συμφωνία κομψότητας και μυστηρίου. Κάθε βήμα ήταν μια υπόσχεση, κάθε πατούσα μια αφήγηση — το Παρίσι και η Sol έγιναν ένα αχώριστο διήγημα."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol wander the cobblestone streets in Montmartre?",
+          "el": "Περπάτησε η Sol στους πλακόστρωτους δρόμους της Μονμάρτης;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was Sol part of a living canvas among artists?",
+          "el": "Ήταν η Sol μέρος ενός ζωντανού καμβά ανάμεσα σε καλλιτέχνες;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did sunlight play in Sol’s eyes while people whispered?",
+          "el": "Έπαιζε το φως στα μάτια της Sol ενώ οι περαστικοί ψιθύριζαν;"
+        },
+        "answer": true
+      }
+    ]
   },
   {
     "id": 4,
@@ -53,7 +122,30 @@
     "story": {
       "en": "She strolled through Gothic alleys and purred on Gaudí's tilework. A pigeon tried to challenge her on La Rambla. It lost. She didn’t even hiss.",
       "el": "Περπάτησε στα γοτθικά σοκάκια και γουργούρισε πάνω στα κεραμικά του Γκαουντί. Ένα περιστέρι της έκανε επίδειξη στη Ράμπλα. Έχασε. Εκείνη δεν έβγαλε ούτε ήχο."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol walk through Gothic alleys in Barcelona?",
+          "el": "Περπάτησε η Sol στα γοτθικά σοκάκια της Βαρκελώνης;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did a pigeon challenge Sol on La Rambla?",
+          "el": "Πρόσβαλλε ένα περιστέρι τη Sol στη Ράμπλα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol hiss at the pigeon challenge?",
+          "el": "Έβγαλε η Sol ήχο ('hiss') όταν την πρόκλησε το περιστέρι;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 5,
@@ -67,7 +159,30 @@
     "story": {
       "en": "Big Ben chimed. She yawned. London streets became her runway. A corgi stared. She didn’t break stride.",
       "el": "Ο Big Ben χτύπησε. Εκείνη χασμουρήθηκε. Οι δρόμοι έγιναν πασαρέλα της. Ένα κόργκι την κοίταξε. Δεν γύρισε ούτε βλέμμα."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol yawn when Big Ben chimed?",
+          "el": "Χασμουρήθηκε η Sol όταν χτύπησε ο Big Ben;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did a corgi stare at Sol in London?",
+          "el": "Κοίταξε ένα κόργκι τη Sol στο Λονδίνο;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol break stride for the corgi?",
+          "el": "Έκοψε η Sol το βήμα της για το κόργκι;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 6,
@@ -81,7 +196,30 @@
     "story": {
       "en": "Past the Brandenburg Gate, her silence echoed louder than speeches. She didn’t just pass by history. She paced it.",
       "el": "Πέρασε την Πύλη του Βρανδεμβούργου και η σιωπή της ήχησε πιο δυνατά από κάθε λόγο. Δεν πέρασε απλώς την Ιστορία. Την περπάτησε."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol pass by the Brandenburg Gate silently?",
+          "el": "Πέρασε η Sol από την Πύλη του Βρανδεμβούργου σιωπηλά;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did her silence echo louder than speeches?",
+          "el": "Η σιωπή της ήχησε πιο δυνατά από τα λόγια;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol only glimpse history instead of pacing it?",
+          "el": "Μόνο είδε η Sol την Ιστορία αντί να την περπατήσει;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 7,
@@ -94,8 +232,31 @@
     "city": "amsterdam",
     "story": {
       "en": "Canals shimmered. Tulips nodded. She walked on petals like they were laid for her. Amsterdam knew who ruled.",
-      "el": "Τα κανάλια έλαμπαν. Οι τουλίπες υποκλίνονταν. Εκείνη βάδιζε πάνω στα πέταλα σαν να είχαν στρωθεί για χάρη της."
-    }
+      "el": "Τα κανάλια έλαμπαν. Οι τουλίπες υποκλίνονταν. Εκείνη βάδιζε πάνω στα πέταλα σαν να είχαν στρωθεί για χάρη της. Το Άμστερνταμ ήξερε ποια κυριαρχούσε."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol walk on tulip petals in Amsterdam?",
+          "el": "Περπάτησε η Sol πάνω σε πέταλα τουλίπας στο Άμστερνταμ;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the canals shimmer as Sol passed?",
+          "el": "Λάμψανε τα κανάλια όταν πέρασε η Sol;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol ride a bike in Amsterdam?",
+          "el": "Οδήγησε ποδήλατο η Sol στο Άμστερνταμ;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 8,
@@ -109,7 +270,30 @@
     "story": {
       "en": "She stood still. The mountains bowed. Silence is easy when you’re already majestic.",
       "el": "Στάθηκε ακίνητη. Τα βουνά υποκλίθηκαν. Η σιωπή είναι εύκολη όταν είσαι ήδη μεγαλείο."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol stand still so the mountains bowed in Switzerland?",
+          "el": "Στάθηκε η Sol ακίνητη ώστε τα βουνά να υποκλιθούν στην Ελβετία;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the mountains bow to Sol’s presence?",
+          "el": "Υποκλίθηκαν τα βουνά στην παρουσία της Sol;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol climb the Alps quickly?",
+          "el": "Ανέβηκε γρήγορα η Sol στις Άλπεις;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 9,
@@ -123,7 +307,30 @@
     "story": {
       "en": "Imperial walls, golden halls, she owned them without a crown. Vienna felt soft beneath her paws.",
       "el": "Αυτοκρατορικά τείχη, χρυσοί διάδρομοι. Δεν χρειάστηκε στέμμα για να τα κατακτήσει. Η Βιέννη απλώθηκε ήρεμη κάτω από τις πατούσες της."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol own the golden halls without a crown?",
+          "el": "Κατείχε η Sol τις χρυσές αίθουσες χωρίς στέμμα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Vienna feel harsh under Sol’s paws?",
+          "el": "Ένιωσε σκληρή η Βιέννη κάτω από τις πατούσες της Sol;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did Sol need velvet to walk in palaces?",
+          "el": "Χρειαζόταν η Sol βελούδο για να περπατήσει σε παλάτια;"
+        },
+        "answer": false
+      }
+    ]
   },
   {
     "id": 10,
@@ -137,7 +344,30 @@
     "story": {
       "en": "Prague’s bridges held stories. She added her own. Quietly. Imperially. Purrfectly.",
       "el": "Οι γέφυρες της Πράγας είχαν ιστορίες. Εκείνη πρόσθεσε τη δική της. Σιωπηλά. Βασιλικά. Τέλεια."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol add her story to Prague’s bridges quietly?",
+          "el": "Πρόσθεσε η Sol σιωπηλά τη δική της ιστορία στις γέφυρες της Πράγας;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol shout her story across the river in Prague?",
+          "el": "Φώναξε η Sol την ιστορία της πάνω από τον ποταμό στην Πράγα;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did Prague’s bridges hold more stories after Sol arrived?",
+          "el": "Έγιναν περισσότερες ιστορίες στις γέφυρες της Πράγας μετά τη Sol;"
+        },
+        "answer": true
+      }
+    ]
   },
   {
     "id": 11,
@@ -151,7 +381,30 @@
     "story": {
       "en": "From Buda to Pest, she prowled with poise. Parliament glowed beneath her paws.",
       "el": "Από τη Βούδα ως την Πέστη, περιδιάβηκε με χάρη. Το Κοινοβούλιο έλαμψε κάτω από τα πατουσάκια της."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol make the Parliament glow beneath her paws?",
+          "el": "Έκανε η Sol το Κοινοβούλιο να λάμψει κάτω από τις πατούσες της;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol run instead of prowl from Buda to Pest?",
+          "el": "Έτρεξε η Sol αντί να περπατήσει από τη Βούδα ως την Πέστη;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did Sol sit on a throne by the river?",
+          "el": "Κάθισε η Sol σε θρόνο δίπλα στον ποταμό;"
+        },
+        "answer": true
+      }
+    ]
   },
   {
     "id": 12,
@@ -165,6 +418,29 @@
     "story": {
       "en": "No guards. No trumpets. Just presence. In Ljubljana, she didn’t conquer. She reigned.",
       "el": "Χωρίς φρουρούς. Χωρίς σάλπιγγες. Μόνο παρουσία. Στη Λιουμπλιάνα δεν κατέκτησε. Βασίλεψε."
-    }
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol reign quietly without guards in Ljubljana?",
+          "el": "Βασίλεψε η Sol σιωπηλά χωρίς φρουρούς στη Λιουμπιάνα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol use trumpets to declare her rule?",
+          "el": "Χρησιμοποίησε η Sol σάλπιγγες για να ανακοινώσει την κυριαρχία της;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did guards try to stop Sol in Ljubljana?",
+          "el": "Προσπάθησαν φρουροί να σταματήσουν τη Sol στη Λιουμπιάνα;"
+        },
+        "answer": false
+      }
+    ]
   }
 ]
