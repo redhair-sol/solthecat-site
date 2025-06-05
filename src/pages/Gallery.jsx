@@ -1,7 +1,10 @@
+// src/pages/GalleryPage.jsx
+
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 
 const PageContainer = styled.div`
@@ -119,29 +122,36 @@ export default function GalleryPage() {
     caption.replace(/🐾/g, "").trim();
 
   return (
-    <PageContainer>
-      <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
-        <SolBrand />
-      </div>
+    <>
+      <Helmet>
+        <title>Gallery – SolTheCat</title>
+        <link rel="canonical" href="https://solthecat.com/gallery" />
+      </Helmet>
 
-      <Grid>
-        {episodes.map((ep, i) => (
-          <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>
-            <img src={`/${ep.image}`} alt={ep.title} />
-            <div className="caption-overlay">{cleanCaption(ep.caption)}</div>
-            <div className="caption-static">{cleanCaption(ep.caption)}</div>
-          </Tile>
-        ))}
-      </Grid>
+      <PageContainer>
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
+          <SolBrand />
+        </div>
 
-      {open && (
-        <Lightbox
-          open={open}
-          close={() => setOpen(false)}
-          index={index}
-          slides={slides}
-        />
-      )}
-    </PageContainer>
+        <Grid>
+          {episodes.map((ep, i) => (
+            <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>
+              <img src={`/${ep.image}`} alt={ep.title} />
+              <div className="caption-overlay">{cleanCaption(ep.caption)}</div>
+              <div className="caption-static">{cleanCaption(ep.caption)}</div>
+            </Tile>
+          ))}
+        </Grid>
+
+        {open && (
+          <Lightbox
+            open={open}
+            close={() => setOpen(false)}
+            index={index}
+            slides={slides}
+          />
+        )}
+      </PageContainer>
+    </>
   );
 }

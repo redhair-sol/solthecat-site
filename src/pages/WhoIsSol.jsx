@@ -1,4 +1,7 @@
+// src/pages/WhoIsSol.jsx
+
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 
 export default function WhoIsSol() {
@@ -52,68 +55,81 @@ export default function WhoIsSol() {
   const t = content[language];
 
   return (
-    <div
-      className="w-full min-h-screen relative bg-[#fce4ec]"
-      style={{
-        backgroundImage: "url('/images/sol-watermark.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      {/* Overlay blur */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-[#fce4ec]/60 z-0"></div>
+    <>
+      <Helmet>
+        <title>{language === "en" ? "Who is Sol the Cat? – SolTheCat" : "Ποια είναι η Sol; – SolTheCat"}</title>
+        <link rel="canonical" href="https://solthecat.com/whoissol" />
+      </Helmet>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-3xl mx-auto px-4 py-8">
-        {/* Brand title */}
-        <div className="text-center mb-6">
-          <SolBrand size="2.5rem" centered />
+      <div
+        className="w-full min-h-screen relative bg-[#fce4ec]"
+        style={{
+          backgroundImage: "url('/images/sol-watermark.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        {/* Overlay blur */}
+        <div className="absolute inset-0 backdrop-blur-sm bg-[#fce4ec]/60 z-0"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-3xl mx-auto px-4 py-8">
+          {/* Brand title */}
+          <div className="text-center mb-6">
+            <SolBrand size="2.5rem" centered />
+          </div>
+
+          {/* Language toggle */}
+          <div className="flex justify-center gap-3 mb-6">
+            <button
+              onClick={() => setLanguage("en")}
+              className={`px-3 py-1 rounded border ${
+                language === "en" ? "bg-[#f8bbd0]" : "bg-white"
+              }`}
+            >
+              🇬🇧 English
+            </button>
+            <button
+              onClick={() => setLanguage("el")}
+              className={`px-3 py-1 rounded border ${
+                language === "el" ? "bg-[#f8bbd0]" : "bg-white"
+              }`}
+            >
+              🇬🇷 Ελληνικά
+            </button>
+          </div>
+
+          {/* Intro */}
+          <h1 className="text-3xl font-semibold mb-4 text-[#aa4dc8]">{t.title}</h1>
+          <p className="text-lg mb-4">{t.intro1}</p>
+          <p className="text-lg mb-6">{t.intro2}</p>
+
+          {/* Fun Facts */}
+          <h2 className="text-2xl font-semibold mt-8 mb-3 text-[#aa4dc8]">
+            {t.funFactsTitle}
+          </h2>
+          <ul className="list-disc pl-6 text-lg space-y-2 text-[#444]">
+            {t.funFacts.map((fact, index) => (
+              <li key={index}>
+                <strong>{fact.label}</strong> {fact.value}
+              </li>
+            ))}
+          </ul>
+
+          {/* Footer */}
+          <p className="text-sm text-gray-500 mt-8">{t.footer}</p>
+          <p className="text-sm text-gray-600 mt-2">
+            {t.contact}
+            <a
+              href="mailto:info@solthecat.com"
+              className="text-[#aa4dc8] underline hover:text-[#7a3299]"
+            >
+              info@solthecat.com
+            </a>
+          </p>
         </div>
-
-        {/* Language toggle */}
-        <div className="flex justify-center gap-3 mb-6">
-          <button
-            onClick={() => setLanguage("en")}
-            className={`px-3 py-1 rounded border ${language === "en" ? "bg-[#f8bbd0]" : "bg-white"}`}
-          >
-            🇬🇧 English
-          </button>
-          <button
-            onClick={() => setLanguage("el")}
-            className={`px-3 py-1 rounded border ${language === "el" ? "bg-[#f8bbd0]" : "bg-white"}`}
-          >
-            🇬🇷 Ελληνικά
-          </button>
-        </div>
-
-        {/* Intro */}
-        <h1 className="text-3xl font-semibold mb-4 text-[#aa4dc8]">{t.title}</h1>
-        <p className="text-lg mb-4">{t.intro1}</p>
-        <p className="text-lg mb-6">{t.intro2}</p>
-
-        {/* Fun Facts */}
-        <h2 className="text-2xl font-semibold mt-8 mb-3 text-[#aa4dc8]">{t.funFactsTitle}</h2>
-        <ul className="list-disc pl-6 text-lg space-y-2 text-[#444]">
-          {t.funFacts.map((fact, index) => (
-            <li key={index}>
-              <strong>{fact.label}</strong> {fact.value}
-            </li>
-          ))}
-        </ul>
-
-        {/* Footer */}
-        <p className="text-sm text-gray-500 mt-8">{t.footer}</p>
-        <p className="text-sm text-gray-600 mt-2">
-          {t.contact}
-          <a
-            href="mailto:info@solthecat.com"
-            className="text-[#aa4dc8] underline hover:text-[#7a3299]"
-          >
-            info@solthecat.com
-          </a>
-        </p>
       </div>
-    </div>
+    </>
   );
 }

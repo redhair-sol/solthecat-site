@@ -1,5 +1,8 @@
+// src/pages/PawprintsGame.jsx
+
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
 import confetti from "canvas-confetti";
@@ -90,15 +93,24 @@ const BackLink = styled(Link)`
 `;
 
 const initialCards = [
-  { id: 1, emoji: "🐾" }, { id: 2, emoji: "🍗" },
-  { id: 3, emoji: "🏛️" }, { id: 4, emoji: "🐟" },
-  { id: 5, emoji: "🧀" }, { id: 6, emoji: "🎒" },
-  { id: 7, emoji: "🚌" }, { id: 8, emoji: "🍕" },
-  { id: 9, emoji: "📸" }, { id: 10, emoji: "🐾" },
-  { id: 11, emoji: "🍗" }, { id: 12, emoji: "🏛️" },
-  { id: 13, emoji: "🐟" }, { id: 14, emoji: "🧀" },
-  { id: 15, emoji: "🎒" }, { id: 16, emoji: "🚌" },
-  { id: 17, emoji: "🍕" }, { id: 18, emoji: "📸" },
+  { id: 1, emoji: "🐾" },
+  { id: 2, emoji: "🍗" },
+  { id: 3, emoji: "🏛️" },
+  { id: 4, emoji: "🐟" },
+  { id: 5, emoji: "🧀" },
+  { id: 6, emoji: "🎒" },
+  { id: 7, emoji: "🚌" },
+  { id: 8, emoji: "🍕" },
+  { id: 9, emoji: "📸" },
+  { id: 10, emoji: "🐾" },
+  { id: 11, emoji: "🍗" },
+  { id: 12, emoji: "🏛️" },
+  { id: 13, emoji: "🐟" },
+  { id: 14, emoji: "🧀" },
+  { id: 15, emoji: "🎒" },
+  { id: 16, emoji: "🚌" },
+  { id: 17, emoji: "🍕" },
+  { id: 18, emoji: "📸" },
 ];
 
 export default function PawprintsGame() {
@@ -150,7 +162,15 @@ export default function PawprintsGame() {
   }, [matched, cards]);
 
   const handleFlip = (index) => {
-    if (!gameStarted || flipped.length === 2 || flipped.includes(index) || matched.includes(index) || won || gameOver) return;
+    if (
+      !gameStarted ||
+      flipped.length === 2 ||
+      flipped.includes(index) ||
+      matched.includes(index) ||
+      won ||
+      gameOver
+    )
+      return;
 
     const newFlipped = [...flipped, index];
     setFlipped(newFlipped);
@@ -167,34 +187,43 @@ export default function PawprintsGame() {
   };
 
   return (
-    <PageContainer>
-      <SolBrand />
-      <Title>🎮 Match the Pawprints</Title>
+    <>
+      <Helmet>
+        <title>Match the Pawprints – SolTheCat</title>
+        <link rel="canonical" href="https://solthecat.com/games/pawprints" />
+      </Helmet>
 
-      {!gameStarted || won || gameOver ? (
-        <StartButton onClick={startGame}>
-          {gameStarted ? "Play Again" : "Start Game"}
-        </StartButton>
-      ) : (
-        <Timer>⏳ Time left: {timeLeft}s</Timer>
-      )}
+      <PageContainer>
+        <SolBrand />
+        <Title>🎮 Match the Pawprints</Title>
 
-      <Grid>
-        {cards.map((card, index) => (
-          <Card
-            key={index}
-            $revealed={flipped.includes(index) || matched.includes(index)}
-            onClick={() => handleFlip(index)}
-          >
-            {(flipped.includes(index) || matched.includes(index)) ? card.emoji : "❔"}
-          </Card>
-        ))}
-      </Grid>
+        {!gameStarted || won || gameOver ? (
+          <StartButton onClick={startGame}>
+            {gameStarted ? "Play Again" : "Start Game"}
+          </StartButton>
+        ) : (
+          <Timer>⏳ Time left: {timeLeft}s</Timer>
+        )}
 
-      {won && <Message>Well done, explorer! 🐾🐾🐾</Message>}
-      {gameOver && !won && <Message>Time’s up! Try again 🐾</Message>}
+        <Grid>
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              $revealed={flipped.includes(index) || matched.includes(index)}
+              onClick={() => handleFlip(index)}
+            >
+              {flipped.includes(index) || matched.includes(index)
+                ? card.emoji
+                : "❔"}
+            </Card>
+          ))}
+        </Grid>
 
-      <BackLink to="/games">← Back to games</BackLink>
-    </PageContainer>
+        {won && <Message>Well done, explorer! 🐾🐾🐾</Message>}
+        {gameOver && !won && <Message>Time’s up! Try again 🐾</Message>}
+
+        <BackLink to="/games">← Back to games</BackLink>
+      </PageContainer>
+    </>
   );
 }

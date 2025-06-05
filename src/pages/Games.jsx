@@ -1,7 +1,8 @@
-// Games.jsx
+// src/pages/Games.jsx
 
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 
 const PageContainer = styled.div`
@@ -37,6 +38,7 @@ const GameCard = styled.div`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.2s ease-in-out;
+
   &:hover {
     transform: scale(1.03);
   }
@@ -67,6 +69,7 @@ const PlayButton = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.2s;
+
   &:hover {
     background-color: #f48fb1;
   }
@@ -86,7 +89,7 @@ export default function Games() {
       emoji: "🧩",
       name: "SOL's Puzzle Map",
       description: "Rebuild the cities Sol has visited!",
-      route: "/games/puzzlemap",
+      route: "/games/puzzlemap", // χωρίς παύλα
     },
     {
       id: 3,
@@ -98,21 +101,30 @@ export default function Games() {
   ];
 
   return (
-    <PageContainer>
-      <BrandWrapper>
-        <SolBrand />
-      </BrandWrapper>
-      <Title>🎮 Sol's Game Room</Title>
-      <GamesGrid>
-        {games.map((game) => (
-          <GameCard key={game.id}>
-            <GameEmoji>{game.emoji}</GameEmoji>
-            <GameTitle>{game.name}</GameTitle>
-            <GameDescription>{game.description}</GameDescription>
-            <PlayButton to={game.route}>Play</PlayButton>
-          </GameCard>
-        ))}
-      </GamesGrid>
-    </PageContainer>
+    <>
+      <Helmet>
+        <title>Sol’s Game Room – SolTheCat</title>
+        <link rel="canonical" href="https://solthecat.com/games" />
+      </Helmet>
+
+      <PageContainer>
+        <BrandWrapper>
+          <SolBrand />
+        </BrandWrapper>
+
+        <Title>🎮 Sol’s Game Room</Title>
+
+        <GamesGrid>
+          {games.map((game) => (
+            <GameCard key={game.id}>
+              <GameEmoji>{game.emoji}</GameEmoji>
+              <GameTitle>{game.name}</GameTitle>
+              <GameDescription>{game.description}</GameDescription>
+              <PlayButton to={game.route}>Play</PlayButton>
+            </GameCard>
+          ))}
+        </GamesGrid>
+      </PageContainer>
+    </>
   );
 }

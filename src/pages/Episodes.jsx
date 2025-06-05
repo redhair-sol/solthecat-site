@@ -1,5 +1,8 @@
+// src/pages/Episodes.jsx
+
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 
 const PageContainer = styled.div`
@@ -141,39 +144,46 @@ export default function Episodes() {
   }, []);
 
   return (
-    <PageContainer>
-      <Title><SolBrand size="2.5rem" centered /></Title>
+    <>
+      <Helmet>
+        <title>Episodes – SolTheCat</title>
+        <link rel="canonical" href="https://solthecat.com/episodes" />
+      </Helmet>
 
-      <LanguageToggle>
-        <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
-          🇬🇧 English
-        </ToggleButton>
-        <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}>
-          🇬🇷 Ελληνικά
-        </ToggleButton>
-      </LanguageToggle>
+      <PageContainer>
+        <Title><SolBrand size="2.5rem" centered /></Title>
 
-      <EpisodesWrapper>
-        {episodes.map((ep) => (
-          <EpisodeCard key={ep.id} $isTeaser={!ep.visible}>
-            <EpisodeImage
-              src={`${import.meta.env.BASE_URL}${ep.image}`}
-              alt={ep.title}
-              $isTeaser={!ep.visible}
-            />
-            <EpisodeTitle>{ep.title}</EpisodeTitle>
-            {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
-            <EpisodeCaption>{ep.caption}</EpisodeCaption>
+        <LanguageToggle>
+          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
+            🇬🇧 English
+          </ToggleButton>
+          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}>
+            🇬🇷 Ελληνικά
+          </ToggleButton>
+        </LanguageToggle>
 
-            {ep.story && ep.story[language] && (
-              <StoryContainer>
-                <StoryTitle>SOL’s Tale</StoryTitle>
-                <p>{ep.story[language]}</p>
-              </StoryContainer>
-            )}
-          </EpisodeCard>
-        ))}
-      </EpisodesWrapper>
-    </PageContainer>
+        <EpisodesWrapper>
+          {episodes.map((ep) => (
+            <EpisodeCard key={ep.id} $isTeaser={!ep.visible}>
+              <EpisodeImage
+                src={`${import.meta.env.BASE_URL}${ep.image}`}
+                alt={ep.title}
+                $isTeaser={!ep.visible}
+              />
+              <EpisodeTitle>{ep.title}</EpisodeTitle>
+              {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
+              <EpisodeCaption>{ep.caption}</EpisodeCaption>
+
+              {ep.story && ep.story[language] && (
+                <StoryContainer>
+                  <StoryTitle>SOL’s Tale</StoryTitle>
+                  <p>{ep.story[language]}</p>
+                </StoryContainer>
+              )}
+            </EpisodeCard>
+          ))}
+        </EpisodesWrapper>
+      </PageContainer>
+    </>
   );
 }

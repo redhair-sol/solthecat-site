@@ -1,5 +1,8 @@
+// src/pages/PuzzleMapGame.jsx
+
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
 
@@ -51,7 +54,7 @@ const Tile = styled.div`
   background-position: ${(props) => props.bgPos};
   cursor: pointer;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 480px) {
     width: 80px;
@@ -89,6 +92,7 @@ const Button = styled.button`
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s;
+
   &:hover {
     background-color: #f48fb1;
   }
@@ -100,6 +104,18 @@ const BackLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
 `;
+
+const initialCards = [
+  { id: 1, emoji: "🐾" },
+  { id: 2, emoji: "🍗" },
+  { id: 3, emoji: "🏛️" },
+  { id: 4, emoji: "🐟" },
+  { id: 5, emoji: "🧀" },
+  { id: 6, emoji: "🎒" },
+  { id: 7, emoji: "🚌" },
+  { id: 8, emoji: "🍕" },
+  { id: 9, emoji: "📸" },
+];
 
 export default function PuzzleMapGame() {
   const [episodes, setEpisodes] = useState([]);
@@ -136,11 +152,10 @@ export default function PuzzleMapGame() {
 
     for (let i = 0; i < 100; i++) {
       const moves = [];
-
-      if (emptyIndex % 3 !== 0) moves.push(emptyIndex - 1);     // left
-      if (emptyIndex % 3 !== 2) moves.push(emptyIndex + 1);     // right
-      if (emptyIndex >= 3) moves.push(emptyIndex - 3);          // up
-      if (emptyIndex < 6) moves.push(emptyIndex + 3);           // down
+      if (emptyIndex % 3 !== 0) moves.push(emptyIndex - 1);
+      if (emptyIndex % 3 !== 2) moves.push(emptyIndex + 1);
+      if (emptyIndex >= 3) moves.push(emptyIndex - 3);
+      if (emptyIndex < 6) moves.push(emptyIndex + 3);
 
       const moveTo = moves[Math.floor(Math.random() * moves.length)];
       arr = swap(emptyIndex, moveTo);
@@ -178,41 +193,51 @@ export default function PuzzleMapGame() {
   const imagePath = selectedEpisode ? `${import.meta.env.BASE_URL}${selectedEpisode.image}` : "";
 
   return (
-    <PageContainer>
-      <SolBrand />
-      <Title>🧩 Puzzle: {selectedEpisode ? selectedEpisode.title : "Loading..."}</Title>
+    <>
+      <Helmet>
+        <title>
+          Puzzle: {selectedEpisode ? selectedEpisode.title : "Loading..."} – SolTheCat
+        </title>
+        {/* Διορθωμένο canonical χωρίς παύλα */}
+        <link rel="canonical" href="https://solthecat.com/games/puzzlemap" />
+      </Helmet>
 
-      <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
-        {episodes.map((ep) => (
-          <option key={ep.id} value={ep.id}>
-            {ep.title.replace("SOLadventure", "Episode")}
-          </option>
-        ))}
-      </Dropdown>
+      <PageContainer>
+        <SolBrand />
+        <Title>🧩 Puzzle: {selectedEpisode ? selectedEpisode.title : "Loading..."}</Title>
 
-      <Grid>
-        {tiles.map((tileValue, tileIndex) =>
-          tileValue === 8 ? (
-            <EmptyTile key={tileIndex} />
-          ) : (
-            <Tile
-              key={tileIndex}
-              bgImage={imagePath}
-              bgPos={`-${(tileValue % 3) * 100}px -${Math.floor(tileValue / 3) * 100}px`}
-              onClick={() => handleTileClick(tileIndex)}
-            />
-          )
+        <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
+          {episodes.map((ep) => (
+            <option key={ep.id} value={ep.id}>
+              {ep.title.replace("SOLadventure", "Episode")}
+            </option>
+          ))}
+        </Dropdown>
+
+        <Grid>
+          {tiles.map((tileValue, tileIndex) =>
+            tileValue === 8 ? (
+              <EmptyTile key={tileIndex} />
+            ) : (
+              <Tile
+                key={tileIndex}
+                bgImage={imagePath}
+                bgPos={`-${(tileValue % 3) * 100}px -${Math.floor(tileValue / 3) * 100}px`}
+                onClick={() => handleTileClick(tileIndex)}
+              />
+            ),
+          )}
+        </Grid>
+
+        {isSolved && (
+          <>
+            <Message>🎉 Puzzle Solved!</Message>
+            <Button onClick={resetGame}>🔁 Play Again</Button>
+          </>
         )}
-      </Grid>
 
-      {isSolved && (
-        <>
-          <Message>🎉 Puzzle Solved!</Message>
-          <Button onClick={resetGame}>🔁 Play Again</Button>
-        </>
-      )}
-
-      <BackLink to="/games">← Back to games</BackLink>
-    </PageContainer>
+        <BackLink to="/games">← Back to games</BackLink>
+      </PageContainer>
+    </>
   );
 }

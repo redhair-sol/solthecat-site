@@ -1,7 +1,8 @@
-// QuizPlayer.jsx
+// src/pages/QuizPlayer.jsx
 
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
 
@@ -78,6 +79,7 @@ const AnswerButton = styled.button`
   background: #fce4ec;
   cursor: pointer;
   font-weight: 500;
+
   &:hover {
     background: #f8bbd0;
   }
@@ -184,70 +186,82 @@ export default function QuizPlayer() {
   };
 
   return (
-    <PageContainer>
-      <SolBrand />
-      <Title>🧠 Quiz for: {selectedEpisode?.title || "Loading..."}</Title>
+    <>
+      <Helmet>
+        <title>
+          Quiz: {selectedEpisode ? selectedEpisode.title : "Loading..."} – SolTheCat
+        </title>
+        <link
+          rel="canonical"
+          href="https://solthecat.com/games/cityquiz"
+        />
+      </Helmet>
 
-      {/* Επιλογή επεισοδίου */}
-      <Dropdown
-        value={selectedId}
-        onChange={(e) => {
-          setSelectedId(e.target.value);
-          setQuestions([]);
-          setShowResults(false);
-          setError("");
-        }}
-      >
-        {episodes.map((ep) => (
-          <option key={ep.id} value={ep.id}>
-            {ep.title}
-          </option>
-        ))}
-      </Dropdown>
+      <PageContainer>
+        <SolBrand />
+        <Title>🧠 Quiz for: {selectedEpisode?.title || "Loading..."}</Title>
 
-      {/* Επιλογή γλώσσας */}
-      <Dropdown
-        value={language}
-        onChange={(e) => {
-          setLanguage(e.target.value);
-          setQuestions([]);
-          setShowResults(false);
-          setError("");
-        }}
-      >
-        <option value="en">🇬🇧 English</option>
-        <option value="el">🇬🇷 Ελληνικά</option>
-      </Dropdown>
-
-      {/* Χρήση του JourneyButton για συνοχή με το Home */}
-      <JourneyButton as="button" onClick={loadQuiz}>
-        Start Quiz
-      </JourneyButton>
-
-      {error && <Message>{error}</Message>}
-
-      {/* Εμφάνιση τρέχουσας ερώτησης (μέχρι να δώσουμε όλες τις 8) */}
-      {questions.length > 0 && !showResults && (
-        <QuestionCard>
-          <QuestionText>
-            {questions[current].question[language]}
-          </QuestionText>
-          {questions[current].answers.map((ansObj, i) => (
-            <AnswerButton key={i} onClick={() => handleAnswer(i)}>
-              {ansObj.text[language]}
-            </AnswerButton>
+        {/* Επιλογή επεισοδίου */}
+        <Dropdown
+          value={selectedId}
+          onChange={(e) => {
+            setSelectedId(e.target.value);
+            setQuestions([]);
+            setShowResults(false);
+            setError("");
+          }}
+        >
+          {episodes.map((ep) => (
+            <option key={ep.id} value={ep.id}>
+              {ep.title}
+            </option>
           ))}
-        </QuestionCard>
-      )}
+        </Dropdown>
 
-      {/* Τελική βαθμολογία μετά τις 8 ερωτήσεις */}
-      {showResults && (
-        <ScoreText>
-          🎉 You got {score} out of {questions.length} correct!
-        </ScoreText>
-      )}
+        {/* Επιλογή γλώσσας */}
+        <Dropdown
+          value={language}
+          onChange={(e) => {
+            setLanguage(e.target.value);
+            setQuestions([]);
+            setShowResults(false);
+            setError("");
+          }}
+        >
+          <option value="en">🇬🇧 English</option>
+          <option value="el">🇬🇷 Ελληνικά</option>
+        </Dropdown>
 
-      <BackLink to="/games">← Back to games</BackLink>
-    </PageContainer>
+        {/* Χρήση του JourneyButton για συνοχή με το Home */}
+        <JourneyButton as="button" onClick={loadQuiz}>
+          Start Quiz
+        </JourneyButton>
+
+        {error && <Message>{error}</Message>}
+
+        {/* Εμφάνιση τρέχουσας ερώτησης (μέχρι να δώσουμε όλες τις 8) */}
+        {questions.length > 0 && !showResults && (
+          <QuestionCard>
+            <QuestionText>
+              {questions[current].question[language]}
+            </QuestionText>
+            {questions[current].answers.map((ansObj, i) => (
+              <AnswerButton key={i} onClick={() => handleAnswer(i)}>
+                {ansObj.text[language]}
+              </AnswerButton>
+            ))}
+          </QuestionCard>
+        )}
+
+        {/* Τελική βαθμολογία μετά τις 8 ερωτήσεις */}
+        {showResults && (
+          <ScoreText>
+            🎉 You got {score} out of {questions.length} correct!
+          </ScoreText>
+        )}
+
+        <BackLink to="/games">← Back to games</BackLink>
+      </PageContainer>
+    </>
   );
 }

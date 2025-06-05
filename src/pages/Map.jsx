@@ -1,4 +1,7 @@
+// src/pages/SolsJourney.jsx
+
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   MapContainer,
   TileLayer,
@@ -52,104 +55,108 @@ export default function SolsJourney() {
     episodes.length > 0 ? episodes[episodes.length - 1].title : "";
 
   return (
-    <div
-      style={{
-        padding: "2rem",
-        fontFamily: "'Poppins', sans-serif",
-        background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
-        minHeight: "100vh",
-        textAlign: "center",
-      }}
-    >
+    <>
+      <Helmet>
+        <title>Sol’s Journey – SolTheCat</title>
+        <link rel="canonical" href="https://solthecat.com/solsjourney" />
+      </Helmet>
+
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          marginBottom: "1rem",
+          padding: "2rem",
+          fontFamily: "'Poppins', sans-serif",
+          background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
+          minHeight: "100vh",
+          textAlign: "center",
         }}
       >
-        <SolBrand />
-      </div>
-
-      <p style={{ fontSize: "1rem", color: "#6a1b9a", marginBottom: "1.5rem" }}>
-        📍 Current Location: {currentTitle}
-      </p>
-
-      {route.length > 0 && (
         <div
           style={{
-            height: "80vh",
-            minHeight: "500px",
-            width: "100%",
-            maxWidth: "1000px",
-            margin: "0 auto",
-            borderRadius: "16px",
-            overflow: "hidden",
-            boxShadow: "0 4px 12px rgba(170, 77, 200, 0.15)",
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "1rem",
           }}
         >
-          <MapContainer
-            center={currentLocation}
-            zoom={5}
-            scrollWheelZoom={false}
-            style={{ height: "100%", width: "100%" }}
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-
-            <SetViewOnLastLocation
-              position={currentLocation}
-              route={route}
-            />
-
-            {episodes.map((ep, idx) => (
-              <Marker
-                key={`paw-${idx}`}
-                position={[ep.location.lat, ep.location.lng]}
-                icon={pawIcon}
-              >
-                <Tooltip
-                  direction="top"
-                  offset={[0, -20]}
-                  opacity={1}
-                  permanent={false}
-                >
-                  <div
-                    style={{
-                      textAlign: "center",
-                      maxWidth: "160px",
-                      whiteSpace: "normal",
-                      wordWrap: "break-word",
-                      fontSize: "0.85rem",
-                      lineHeight: "1.2rem",
-                      padding: "2px",
-                    }}
-                  >
-                    <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
-                      {ep.title}
-                    </div>
-                    <img
-                      src={`${import.meta.env.BASE_URL}${ep.image}`}
-                      alt={ep.title}
-                      style={{
-                        width: "100%",
-                        borderRadius: "8px",
-                        boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
-                      }}
-                    />
-                  </div>
-                </Tooltip>
-              </Marker>
-            ))}
-
-            {route.length > 1 && (
-              <Polyline positions={route} color="#aa4dc8" weight={4} />
-            )}
-          </MapContainer>
+          <SolBrand />
         </div>
-      )}
-    </div>
+
+        <p style={{ fontSize: "1rem", color: "#6a1b9a", marginBottom: "1.5rem" }}>
+          📍 Current Location: {currentTitle}
+        </p>
+
+        {route.length > 0 && (
+          <div
+            style={{
+              height: "80vh",
+              minHeight: "500px",
+              width: "100%",
+              maxWidth: "1000px",
+              margin: "0 auto",
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 4px 12px rgba(170, 77, 200, 0.15)",
+            }}
+          >
+            <MapContainer
+              center={currentLocation}
+              zoom={5}
+              scrollWheelZoom={false}
+              style={{ height: "100%", width: "100%" }}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+
+              <SetViewOnLastLocation position={currentLocation} route={route} />
+
+              {episodes.map((ep, idx) => (
+                <Marker
+                  key={`paw-${idx}`}
+                  position={[ep.location.lat, ep.location.lng]}
+                  icon={pawIcon}
+                >
+                  <Tooltip
+                    direction="top"
+                    offset={[0, -20]}
+                    opacity={1}
+                    permanent={false}
+                  >
+                    <div
+                      style={{
+                        textAlign: "center",
+                        maxWidth: "160px",
+                        whiteSpace: "normal",
+                        wordWrap: "break-word",
+                        fontSize: "0.85rem",
+                        lineHeight: "1.2rem",
+                        padding: "2px",
+                      }}
+                    >
+                      <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
+                        {ep.title}
+                      </div>
+                      <img
+                        src={`${import.meta.env.BASE_URL}${ep.image}`}
+                        alt={ep.title}
+                        style={{
+                          width: "100%",
+                          borderRadius: "8px",
+                          boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
+                        }}
+                      />
+                    </div>
+                  </Tooltip>
+                </Marker>
+              ))}
+
+              {route.length > 1 && (
+                <Polyline positions={route} color="#aa4dc8" weight={4} />
+              )}
+            </MapContainer>
+          </div>
+        )}
+      </div>
+    </>
   );
 }
