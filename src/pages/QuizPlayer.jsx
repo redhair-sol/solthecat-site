@@ -76,12 +76,13 @@ const AnswerButton = styled.button`
   margin: 0.4rem 0;
   border: 1px solid #d35ca3;
   border-radius: 8px;
-  background: #fce4ec;
-  cursor: pointer;
+  background: ${({ selected, correct }) =>
+    selected ? (correct ? "#a5d6a7" : "#ef9a9a") : "#fce4ec"};
+  cursor: ${({ selectedAnswer }) => (selectedAnswer ? "default" : "pointer")};
   font-weight: 500;
 
   &:hover {
-    background: #f8bbd0;
+    background: ${({ selected }) => (selected ? undefined : "#f8bbd0")};
   }
 `;
 
@@ -115,6 +116,10 @@ export default function QuizPlayer() {
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState("");
+
+  // Νέες καταστάσεις για επιλογή απάντησης και εμφάνιση σωστού/λάθους πριν το επόμενο
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
 
   // Φόρτωμα των episodes από episodes.json
   useEffect(() => {
@@ -157,7 +162,6 @@ export default function QuizPlayer() {
         return res.json();
       })
       .then((data) => {
-        // data είναι πίνακας 25 ερωτήσεων
         const shuffled = shuffleArray(data);
         const eightQuestions = shuffled.slice(0, 8);
         setQuestions(eightQuestions);
@@ -165,6 +169,7 @@ export default function QuizPlayer() {
         setScore(0);
         setShowResults(false);
         setError("");
+        setSelectedAnswer(null);
       })
       .catch(() => {
         setQuestions([]);
@@ -174,15 +179,27 @@ export default function QuizPlayer() {
 
   // Χειρισμός απάντησης στην τρέχουσα ερώτηση
   const handleAnswer = (index) => {
-    const isCorrect = questions[current].answers[index].correct;
-    if (isCorrect) {
+    if (selectedAnswer !== null) return; // Αν έχει ήδη επιλεχθεί απάντηση, μην κάνει τίποτα
+
+    const correct = questions[current].answers[index].correct;
+
+    setSelectedAnswer(index);
+    setIsAnswerCorrect(correct);
+
+    if (correct) {
       setScore((prev) => prev + 1);
     }
-    if (current + 1 < questions.length) {
-      setCurrent((prev) => prev + 1);
-    } else {
-      setShowResults(true);
-    }
+
+    // Μετά από 1 δευτερόλεπτο, πάμε στην επόμενη ερώτηση ή εμφανίζουμε τα αποτελέσματα
+    setTimeout(() => {
+      const nextIndex = current + 1;
+      if (nextIndex < questions.length) {
+        setCurrent(nextIndex);
+        setSelectedAnswer(null);
+      } else {
+        setShowResults(true);
+      }
+    }, 1000);
   };
 
   return (
@@ -209,6 +226,7 @@ export default function QuizPlayer() {
             setQuestions([]);
             setShowResults(false);
             setError("");
+            setSelectedAnswer(null);
           }}
         >
           {episodes.map((ep) => (
@@ -226,6 +244,7 @@ export default function QuizPlayer() {
             setQuestions([]);
             setShowResults(false);
             setError("");
+            setSelectedAnswer(null);
           }}
         >
           <option value="en">🇬🇧 English</option>
@@ -246,7 +265,13 @@ export default function QuizPlayer() {
               {questions[current].question[language]}
             </QuestionText>
             {questions[current].answers.map((ansObj, i) => (
-              <AnswerButton key={i} onClick={() => handleAnswer(i)}>
+              <AnswerButton
+                key={i}
+                onClick={() => handleAnswer(i)}
+                disabled={selectedAnswer !== null}
+                selected={selectedAnswer === i}
+                correct={ansObj.correct}
+              >
                 {ansObj.text[language]}
               </AnswerButton>
             ))}
