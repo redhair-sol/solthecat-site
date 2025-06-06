@@ -112,7 +112,7 @@
   },
   {
     "id": 4,
-    "title": "SOLadventure #4 – Barcelona, architected to impress 🐾🎨🇪🇸",
+    "title": "SOLadventure #4 – Barcelona, architected to impress 🎨 🇪🇸",
     "quote": "Curves, spires, and one queen.",
     "caption": "She danced with Gaudí’s ghosts. 🐾🐾🐾",
     "image": "episodes/barcelona.png",
@@ -120,8 +120,8 @@
     "visible": false,
     "city": "barcelona",
     "story": {
-      "en": "She strolled through Gothic alleys and purred on Gaudí's tilework. A pigeon tried to challenge her on La Rambla. It lost. She didn’t even hiss.",
-      "el": "Περπάτησε στα γοτθικά σοκάκια και γουργούρισε πάνω στα κεραμικά του Γκαουντί. Ένα περιστέρι της έκανε επίδειξη στη Ράμπλα. Έχασε. Εκείνη δεν έβγαλε ούτε ήχο."
+      "en": "Barcelona unfolded beneath her paws like a living mosaic. She strolled through the Gothic alleys as if retracing forgotten paths, her gaze sharp, her presence quiet but absolute. On Gaudí’s tilework she paused — not in admiration, but in recognition. When a bold pigeon challenged her on La Rambla, she didn’t flinch. The city blinked first.",
+      "el": "Η Βαρκελώνη απλώθηκε κάτω από τις πατούσες της σαν ζωντανό μωσαϊκό. Περπάτησε στα γοτθικά σοκάκια σαν να ξαναβρήκε ένα χαμένο μονοπάτι — με βλέμμα διεισδυτικό και παρουσία αθόρυβη αλλά απόλυτη. Πάνω στα πλακάκια του Γκαουντί στάθηκε όχι με θαυμασμό, αλλά με αναγνώριση. Όταν ένα θρασύ περιστέρι τη διεκδίκησε στη Ράμπλα, δεν έδειξε αντίδραση. Η πόλη ήταν αυτή που ανοιγόκλεισε πρώτη τα μάτια της."
     },
     "snapQuestions": [
       {
@@ -149,16 +149,16 @@
   },
   {
     "id": 5,
-    "title": "SOLadventure #5 – London, big attitude 🐾🕰️🇬🇧",
-    "quote": "Royalty has arrived.",
+    "title": "SOLadventure #5 – London, mind the queen 🕰️🇬🇧",
+    "quote": "Fog lifted. She didn’t need directions.",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
     "image": "episodes/london.png",
     "location": { "lat": 51.5074, "lng": -0.1278 },
     "visible": false,
     "city": "london",
     "story": {
-      "en": "Big Ben chimed. She yawned. London streets became her runway. A corgi stared. She didn’t break stride.",
-      "el": "Ο Big Ben χτύπησε. Εκείνη χασμουρήθηκε. Οι δρόμοι έγιναν πασαρέλα της. Ένα κόργκι την κοίταξε. Δεν γύρισε ούτε βλέμμα."
+      "en": "London greeted her with the chime of Big Ben, but she answered with a yawn. The city's rituals bent softly around her as she walked — measured, majestic, and wholly unimpressed. The pavement echoed like a royal procession. Even the corgis knew: this queen didn’t need ceremony. Her stride was the statement.",
+      "el": "Το Λονδίνο την καλοδέχτηκε με το χτύπο του Big Ben, μα εκείνη απάντησε με ένα χασμουρητό. Οι τελετουργίες της πόλης λύγισαν απαλά γύρω της καθώς περπατούσε — μετρημένα, μεγαλόπρεπα, αδιάφορη. Το πεζοδρόμιο αντήχησε σαν βασιλική πομπή. Ακόμα και τα κόργκι κατάλαβαν: αυτή η βασίλισσα δεν χρειαζόταν τελετές. Το βήμα της ήταν η δήλωση."
     },
     "snapQuestions": [
       {
@@ -186,16 +186,16 @@
   },
   {
     "id": 6,
-    "title": "SOLadventure #6 – Berlin, straight through the gate 🐾🇩🇪",
-    "quote": "Poise marches on.",
+    "title": "SOLadventure #6 – Berlin, straight through the gate 🏛 ️🇩🇪",
+    "quote": "Power spoke. She didn’t need to.",
     "caption": "She walked. History saluted. 🐾🐾🐾",
     "image": "episodes/berlin.png",
     "location": { "lat": 52.52, "lng": 13.405 },
     "visible": false,
     "city": "berlin",
     "story": {
-      "en": "Past the Brandenburg Gate, her silence echoed louder than speeches. She didn’t just pass by history. She paced it.",
-      "el": "Πέρασε την Πύλη του Βρανδεμβούργου και η σιωπή της ήχησε πιο δυνατά από κάθε λόγο. Δεν πέρασε απλώς την Ιστορία. Την περπάτησε."
+      "en": "Beneath the solemn gaze of the Brandenburg Gate, Sol walked with the weight of poise and paradox. Her silence said what speeches couldn’t. She didn’t just pass by history — she folded it into her presence, like a pawprint pressed into stone. In Berlin, she didn’t follow the past. She led it forward.",
+      "el": "Κάτω από το επιβλητικό βλέμμα της Πύλης του Βρανδεμβούργου, η Sol περπάτησε με το βάρος της αυτοκυριαρχίας και της αντίφασης. Η σιωπή της είπε όσα δεν μπορούν οι λόγοι. Δεν διέσχισε απλώς την ιστορία — την ενσωμάτωσε στην παρουσία της, σαν αποτύπωμα πατούσας σε πέτρα. Στο Βερολίνο, δεν ακολούθησε το παρελθόν. Το οδήγησε πιο πέρα."
     },
     "snapQuestions": [
       {
@@ -223,16 +223,16 @@
   },
   {
     "id": 7,
-    "title": "SOLadventure #7 – Amsterdam, paws & petals 🌷🐾🇳🇱",
-    "quote": "Grace blooms here.",
+    "title": "SOLadventure #7 – Amsterdam, paws & petals 🌷 🇳🇱",
+    "quote": "Paws before pedals.",
     "caption": "No bike. No boat. Just grace on cobblestones. 🐾🐾🐾",
     "image": "episodes/amsterdam.png",
     "location": { "lat": 52.3676, "lng": 4.9041 },
     "visible": false,
     "city": "amsterdam",
     "story": {
-      "en": "Canals shimmered. Tulips nodded. She walked on petals like they were laid for her. Amsterdam knew who ruled.",
-      "el": "Τα κανάλια έλαμπαν. Οι τουλίπες υποκλίνονταν. Εκείνη βάδιζε πάνω στα πέταλα σαν να είχαν στρωθεί για χάρη της. Το Άμστερνταμ ήξερε ποια κυριαρχούσε."
+      "en": "Amsterdam didn’t bow. It bloomed. Canals shimmered in her reflection, and tulips nodded as if summoned. She walked on petals as though the city itself had prepared her path — soft, regal, unquestioned. No crown, no fanfare. Just presence. Amsterdam knew who ruled.",
+      "el": "Η Άμστερνταμ δεν υποκλίθηκε. Άνθισε. Τα κανάλια έλαμψαν στο πέρασμά της, και οι τουλίπες έγνεψαν σαν από ένστικτο. Περπάτησε πάνω σε πέταλα, λες και η ίδια η πόλη της άνοιξε τον δρόμο — απαλό, αρχοντικό, αδιαμφισβήτητο. Χωρίς στέμμα, χωρίς θόρυβο. Μόνο παρουσία. Η Άμστερνταμ ήξερε ποια κυβερνούσε."
     },
     "snapQuestions": [
       {
@@ -260,16 +260,16 @@
   },
   {
     "id": 8,
-    "title": "SOLadventure #8 – Swiss, air, alpine stare 🐾🏔️🇨🇭",
-    "quote": "Queen of the peaks",
+    "title": "SOLadventure #8 – Swiss, air, alpine stare 🏔 ️🇨🇭",
+    "quote": "Height never humbled her.",
     "caption": "The Alps called. She brought silence. 🐾🐾🐾",
     "image": "episodes/swiss.png",
     "location": { "lat": 46.8182, "lng": 8.2275 },
     "visible": false,
     "city": "swiss",
     "story": {
-      "en": "She stood still. The mountains bowed. Silence is easy when you’re already majestic.",
-      "el": "Στάθηκε ακίνητη. Τα βουνά υποκλίθηκαν. Η σιωπή είναι εύκολη όταν είσαι ήδη μεγαλείο."
+      "en": "She didn’t climb the Alps — she summoned them. In the hush of the Swiss air, she stood motionless, and the peaks responded with reverence. No need for movement when presence alone reshapes the skyline. Silence is easy when you’re already majestic.",
+      "el": "Δεν ανέβηκε στις Άλπεις — τις κάλεσε. Στην ησυχία του ελβετικού αέρα, στάθηκε ακίνητη, και οι κορυφές έγειραν με σεβασμό. Δεν χρειάζεται κίνηση όταν η ίδια η παρουσία ανασχηματίζει τον ορίζοντα. Η σιωπή είναι εύκολη όταν είσαι ήδη μεγαλείο."
     },
     "snapQuestions": [
       {
@@ -297,16 +297,16 @@
   },
   {
     "id": 9,
-    "title": "SOLadventure #9 – Vienna, paws & poise 🐾🎻🇦🇹",
-    "quote": "Born for palaces",
+    "title": "SOLadventure #9 – Vienna, paws & poise 🎻 🇦🇹",
+    "quote": "She didn’t knock. The doors knew.",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
     "image": "episodes/vienna.png",
     "location": { "lat": 48.2082, "lng": 16.3738 },
     "visible": false,
     "city": "vienna",
     "story": {
-      "en": "Imperial walls, golden halls, she owned them without a crown. Vienna felt soft beneath her paws.",
-      "el": "Αυτοκρατορικά τείχη, χρυσοί διάδρομοι. Δεν χρειάστηκε στέμμα για να τα κατακτήσει. Η Βιέννη απλώθηκε ήρεμη κάτω από τις πατούσες της."
+      "en": "Vienna whispered of waltzes and empires, but Sol needed no music. She moved through golden halls and imperial courtyards as if memory itself had shaped them for her. No crown, no title — yet every corridor yielded. The city, rich in tradition, softened beneath her paws like silk under command.",
+      "el": "Η Βιέννη ψιθύριζε για βαλς και αυτοκρατορίες, μα η Sol δεν χρειαζόταν μουσική. Πέρασε μέσα από χρυσές αίθουσες και αυτοκρατορικά προαύλια σαν να τα είχε διαμορφώσει η ίδια η μνήμη. Χωρίς στέμμα, χωρίς τίτλο — κι όμως κάθε διάδρομος υπάκουσε. Η πόλη, γεμάτη παράδοση, μαλάκωσε κάτω από τις πατούσες της σαν μετάξι με διαταγή."
     },
     "snapQuestions": [
       {
@@ -334,7 +334,7 @@
   },
   {
     "id": 10,
-    "title": "SOLadventure #10 – Prague, with royal mischief 🐾👑🇨🇿",
+    "title": "SOLadventure #10 – Prague, with royal mischief 👑 🇨🇿",
     "quote": "Crowned in whispers",
     "caption": "Past meets paws. Silently. 🐾🐾🐾",
     "image": "episodes/prague.png",
@@ -342,8 +342,8 @@
     "visible": false,
     "city": "prague",
     "story": {
-      "en": "Prague’s bridges held stories. She added her own. Quietly. Imperially. Purrfectly.",
-      "el": "Οι γέφυρες της Πράγας είχαν ιστορίες. Εκείνη πρόσθεσε τη δική της. Σιωπηλά. Βασιλικά. Τέλεια."
+      "en": "Prague was already a fairytale — all arches, whispers, and centuries of memory. But as Sol crossed its bridges, something changed. Her steps wrote new verses between the stones. No need for proclamations. Just stillness, gaze, and a single royal breath. Quietly. Imperially. Purrfectly.",
+      "el": "Η Πράγα ήταν ήδη ένα παραμύθι — με καμάρες, ψιθύρους και αιώνες μνήμης. Μα καθώς η Sol διέσχιζε τις γέφυρές της, κάτι άλλαξε. Τα βήματά της έγραψαν νέους στίχους ανάμεσα στις πέτρες. Χωρίς δηλώσεις. Μόνο ησυχία, βλέμμα και μια βασιλική ανάσα. Ήσυχα. Αυτοκρατορικά. Νιαουριστά τέλεια."
     },
     "snapQuestions": [
       {
@@ -371,16 +371,16 @@
   },
   {
     "id": 11,
-    "title": "SOLadventure #11 – Budapest, throne by the river 🐾🌉🇭🇺",
-    "quote": "Power glows",
+    "title": "SOLadventure #11 – Budapest, throne by the river 🌉 🇭🇺",
+    "quote": "She cast no shadow. Just authority.",
     "caption": "She sat. The Parliament bowed. 🐾🐾🐾",
     "image": "episodes/budapest.png",
     "location": { "lat": 47.4979, "lng": 19.0402 },
     "visible": false,
     "city": "budapest",
     "story": {
-      "en": "From Buda to Pest, she prowled with poise. Parliament glowed beneath her paws.",
-      "el": "Από τη Βούδα ως την Πέστη, περιδιάβηκε με χάρη. Το Κοινοβούλιο έλαμψε κάτω από τα πατουσάκια της."
+      "en": "She moved across the Danube not as a visitor, but as if she had crossed it for centuries. From Buda’s heights to Pest’s grandeur, her stride was both grace and command. The Parliament shimmered below, not in pride, but in acknowledgment. The city didn't just light up — it bowed.",
+      "el": "Πέρασε τον Δούναβη όχι σαν επισκέπτρια, αλλά σαν να τον είχε διασχίσει αιώνες τώρα. Από τα υψώματα της Βούδας ως τη μεγαλοπρέπεια της Πέστης, το βήμα της ήταν χάρη και εξουσία μαζί. Το Κοινοβούλιο λαμποκοπούσε κάτω της — όχι από περηφάνια, αλλά από αναγνώριση. Η πόλη δεν φωτίστηκε απλώς. Υποκλίθηκε."
     },
     "snapQuestions": [
       {
@@ -408,16 +408,16 @@
   },
   {
     "id": 12,
-    "title": "SOLadventure #12 – Ljubljana, softly crowned 🐾🏰🇸🇮",
-    "quote": "No roar. Just rule",
+    "title": "SOLadventure #12 – Ljubljana, softly crowned 🏰 🇸🇮",
+    "quote": "Crowned by calm.",
     "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
     "image": "episodes/ljubljana.png",
     "location": { "lat": 46.0569, "lng": 14.5058 },
     "visible": false,
     "city": "ljubljana",
     "story": {
-      "en": "No guards. No trumpets. Just presence. In Ljubljana, she didn’t conquer. She reigned.",
-      "el": "Χωρίς φρουρούς. Χωρίς σάλπιγγες. Μόνο παρουσία. Στη Λιουμπλιάνα δεν κατέκτησε. Βασίλεψε."
+      "en": "Ljubljana didn’t need to be claimed — it recognized her from the moment she appeared. No guards lined the streets, no trumpets sounded. Yet the air shifted. She walked as if the throne had been waiting. With every blink, the city softened. She didn’t conquer. She reigned.",
+      "el": "Η Λιουμπλιάνα δεν χρειάστηκε να κατακτηθεί — την αναγνώρισε από την πρώτη στιγμή. Δεν υπήρχαν φρουροί, δεν ηχούσαν σάλπιγγες. Κι όμως, ο αέρας άλλαξε. Περπάτησε σαν να την περίμενε ο θρόνος. Με κάθε ανοιγοκλείσιμο των ματιών της, η πόλη γινόταν πιο απαλή. Δεν κατέκτησε. Βασίλεψε."
     },
     "snapQuestions": [
       {

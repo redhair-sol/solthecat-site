@@ -115,8 +115,8 @@ export default function Episodes() {
         const teaser = {
           id: 999,
           title: {
-            en: `SOLadventure #${nextNumber} – Coming Soon 🐾`,
-            el: `SOLadventure #${nextNumber} – Coming Soon 🐾`
+            en: `SOLadventure #${nextNumber} – Coming Soon `,
+            el: `SOLadventure #${nextNumber} – Coming Soon `
           },
           image: "episodes/coming-soon.png",
           caption: {
