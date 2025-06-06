@@ -4,6 +4,19 @@
 
 ---
 
+## [v4.0.0] - 2025-06-06
+
+### Added
+- ??? **New `/shop` page (SOLicious Delights)** - Dynamically loads product data from `products.json`, with support for ???? English and ???? Greek. Includes responsive design and availability labels (`Available`, `Coming Soon`, `Sold Out`).
+
+### Fixed
+- ?? `setLanguage is not defined` error in `SolSnap.jsx` - removed unused local state, now uses global `LanguageContext`.
+- ?? Removed unused `selectedAnswer` and `correct` props from render to prevent React DOM warnings.
+
+### Improved
+- ?? Cleaned up redundant imports and local state handling in `Gallery`, `Map`, `Games`, `WhoIsSol`, and `SolSnap`.
+- ?? All pages now rely fully on `LanguageContext` without local toggles, ensuring consistent language behavior across the site.
+
 ## [v3.2.0] - 2025-06-05
 
 ### Added

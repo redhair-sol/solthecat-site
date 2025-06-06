@@ -1,6 +1,9 @@
+// src/pages/Shop.jsx
+
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx"; // παίρνουμε language από Context
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -48,6 +51,7 @@ const ProductImage = styled.img`
 const ProductName = styled.h2`
   font-size: 1.25rem;
   color: #d47eb4;
+  margin-bottom: 0.5rem;
 `;
 
 const ProductFlavor = styled.p`
@@ -78,14 +82,13 @@ const StatusLabel = styled.span`
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
-  const [language, setLanguage] = useState("en");
+  const { language } = useLanguage(); // πια παίρνουμε language από Context
 
   useEffect(() => {
-    const lang = localStorage.getItem("language") || "en";
-    setLanguage(lang);
     fetch("/data/products.json")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => setProducts(data))
+      .catch((err) => console.error("Failed to load products:", err));
   }, []);
 
   return (

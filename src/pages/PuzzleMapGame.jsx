@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Προσθήκη import
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -21,6 +22,10 @@ const Title = styled.h1`
   color: #aa4dc8;
   margin-bottom: 1rem;
   text-align: center;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Dropdown = styled.select`
@@ -80,6 +85,10 @@ const Message = styled.div`
   font-size: 1.2rem;
   color: #8e24aa;
   font-weight: bold;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const Button = styled.button`
@@ -103,25 +112,41 @@ const BackLink = styled(Link)`
   color: #d35ca3;
   text-decoration: none;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
-const initialCards = [
-  { id: 1, emoji: "🐾" },
-  { id: 2, emoji: "🍗" },
-  { id: 3, emoji: "🏛️" },
-  { id: 4, emoji: "🐟" },
-  { id: 5, emoji: "🧀" },
-  { id: 6, emoji: "🎒" },
-  { id: 7, emoji: "🚌" },
-  { id: 8, emoji: "🍕" },
-  { id: 9, emoji: "📸" },
-];
+const initialArr = [...Array(9).keys()]; // [0,1,2,3,4,5,6,7,8]
 
 export default function PuzzleMapGame() {
   const [episodes, setEpisodes] = useState([]);
   const [selectedId, setSelectedId] = useState("");
-  const [tiles, setTiles] = useState([]);
+  const [tiles, setTiles] = useState(initialArr);
   const [isSolved, setIsSolved] = useState(false);
+  const { language } = useLanguage();
+
+  const content = {
+    en: {
+      loading: "Loading...",
+      puzzlePrefix: "Puzzle:",
+      playAgain: "🔁 Play Again",
+      solvedMessage: "🎉 Puzzle Solved!",
+      dropdownLabel: "Episode",
+      back: "← Back to games",
+    },
+    el: {
+      loading: "Φόρτωση...",
+      puzzlePrefix: "Παζλ:",
+      playAgain: "🔁 Παίξε Ξανά",
+      solvedMessage: "🎉 Λύθηκε το Παζλ!",
+      dropdownLabel: "Επεισόδιο",
+      back: "← Επιστροφή στα παιχνίδια",
+    },
+  };
+
+  const t = content[language];
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -138,10 +163,11 @@ export default function PuzzleMapGame() {
 
   useEffect(() => {
     if (selectedId) resetGame();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedId]);
 
   const resetGame = () => {
-    let arr = [...Array(9).keys()]; // [0,1,2,3,4,5,6,7,8]
+    let arr = [...initialArr];
     let emptyIndex = 8;
 
     const swap = (a, b) => {
@@ -190,28 +216,52 @@ export default function PuzzleMapGame() {
   };
 
   const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
-  const imagePath = selectedEpisode ? `${import.meta.env.BASE_URL}${selectedEpisode.image}` : "";
+  const imagePath = selectedEpisode
+    ? `${import.meta.env.BASE_URL}${selectedEpisode.image}`
+    : "";
 
   return (
     <>
       <Helmet>
         <title>
-          Puzzle: {selectedEpisode ? selectedEpisode.title : "Loading..."} – SolTheCat
+          {t.puzzlePrefix}{" "}
+          {selectedEpisode
+            ? typeof selectedEpisode.title === "object"
+              ? selectedEpisode.title[language]
+              : selectedEpisode.title
+            : t.loading}{" "}
+          – SolTheCat
         </title>
-        {/* Διορθωμένο canonical χωρίς παύλα */}
-        <link rel="canonical" href="https://solthecat.com/games/puzzlemap" />
+        <link
+          rel="canonical"
+          href="https://solthecat.com/games/puzzlemap"
+        />
       </Helmet>
 
       <PageContainer>
         <SolBrand />
-        <Title>🧩 Puzzle: {selectedEpisode ? selectedEpisode.title : "Loading..."}</Title>
+        <Title>
+          {t.puzzlePrefix}{" "}
+          {selectedEpisode
+            ? typeof selectedEpisode.title === "object"
+              ? selectedEpisode.title[language]
+              : selectedEpisode.title
+            : t.loading}
+        </Title>
 
-        <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
-          {episodes.map((ep) => (
-            <option key={ep.id} value={ep.id}>
-              {ep.title.replace("SOLadventure", "Episode")}
-            </option>
-          ))}
+        <Dropdown
+          value={selectedId}
+          onChange={(e) => setSelectedId(e.target.value)}
+        >
+          {episodes.map((ep) => {
+            const epTitle =
+              typeof ep.title === "object" ? ep.title[language] : ep.title;
+            return (
+              <option key={ep.id} value={ep.id}>
+                {epTitle.replace("SOLadventure", t.dropdownLabel)}
+              </option>
+            );
+          })}
         </Dropdown>
 
         <Grid>
@@ -225,18 +275,18 @@ export default function PuzzleMapGame() {
                 bgPos={`-${(tileValue % 3) * 100}px -${Math.floor(tileValue / 3) * 100}px`}
                 onClick={() => handleTileClick(tileIndex)}
               />
-            ),
+            )
           )}
         </Grid>
 
         {isSolved && (
           <>
-            <Message>🎉 Puzzle Solved!</Message>
-            <Button onClick={resetGame}>🔁 Play Again</Button>
+            <Message>{t.solvedMessage}</Message>
+            <Button onClick={resetGame}>{t.playAgain}</Button>
           </>
         )}
 
-        <BackLink to="/games">← Back to games</BackLink>
+        <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>
     </>
   );

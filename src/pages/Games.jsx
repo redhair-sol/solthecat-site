@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -23,6 +24,10 @@ const Title = styled.h1`
   text-align: center;
   margin-bottom: 2rem;
   font-weight: bold;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const GamesGrid = styled.div`
@@ -53,12 +58,20 @@ const GameTitle = styled.h2`
   font-size: 1.2rem;
   color: #d35ca3;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const GameDescription = styled.p`
   font-size: 0.95rem;
   color: #555;
   margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
 `;
 
 const PlayButton = styled(Link)`
@@ -76,41 +89,87 @@ const PlayButton = styled(Link)`
 `;
 
 export default function Games() {
-  const games = [
-    {
-      id: 1,
-      emoji: "🐾",
-      name: "Pawprints Memory",
-      description: "Find matching pawprint pairs!",
-      route: "/games/pawprints",
+  const { language } = useLanguage();
+
+  const content = {
+    en: {
+      pageTitle: "Sol’s Game Room – SolTheCat",
+      heading: "🎮 Sol’s Game Room",
+      playText: "Play",
+      games: [
+        {
+          id: 1,
+          emoji: "🐾",
+          name: "Pawprints Memory",
+          description: "Find matching pawprint pairs!",
+          route: "/games/pawprints",
+        },
+        {
+          id: 2,
+          emoji: "🧩",
+          name: "SOL's Puzzle Map",
+          description: "Rebuild the cities Sol has visited!",
+          route: "/games/puzzlemap",
+        },
+        {
+          id: 3,
+          emoji: "🧠",
+          name: "SOL Quiz",
+          description: "Test your knowledge!",
+          route: "/games/cityquiz",
+        },
+        {
+          id: 4,
+          emoji: "📷",
+          name: "SolSnap",
+          description: "Snap decision: 3 yes/no questions per episode.",
+          route: "/games/solsnap",
+        },
+      ],
     },
-    {
-      id: 2,
-      emoji: "🧩",
-      name: "SOL's Puzzle Map",
-      description: "Rebuild the cities Sol has visited!",
-      route: "/games/puzzlemap", // χωρίς παύλα
+    el: {
+      pageTitle: "Αίθουσα Παιχνιδιών της Sol – SolTheCat",
+      heading: "🎮 Αίθουσα Παιχνιδιών της Sol",
+      playText: "Παίξε",
+      games: [
+        {
+          id: 1,
+          emoji: "🐾",
+          name: "Μνήμη με Πατουσάκια",
+          description: "Βρες τα ζευγάρια των πατουσακιών!",
+          route: "/games/pawprints",
+        },
+        {
+          id: 2,
+          emoji: "🧩",
+          name: "Παζλ Χάρτης της Sol",
+          description: "Συγκέντρωσε πάλι τις πόλεις που επισκέφθηκε η Sol!",
+          route: "/games/puzzlemap",
+        },
+        {
+          id: 3,
+          emoji: "🧠",
+          name: "Quiz της Sol",
+          description: "Δοκίμασε τις γνώσεις σου!",
+          route: "/games/cityquiz",
+        },
+        {
+          id: 4,
+          emoji: "📷",
+          name: "SolSnap",
+          description: "Γρήγορο τεστ: 3 ερωτήσεις ναι/όχι ανά επεισόδιο.",
+          route: "/games/solsnap",
+        },
+      ],
     },
-    {
-      id: 3,
-      emoji: "🧠",
-      name: "SOL Quiz",
-      description: "Test your knowledge!",
-      route: "/games/cityquiz",
-    },
-    {
-      id: 4,
-      emoji: "📷",
-      name: "SolSnap",
-      description: "Snap decision: 3 yes/no questions per episode.",
-      route: "/games/solsnap",
-    },
-  ];
+  };
+
+  const t = content[language];
 
   return (
     <>
       <Helmet>
-        <title>Sol’s Game Room – SolTheCat</title>
+        <title>{t.pageTitle}</title>
         <link rel="canonical" href="https://solthecat.com/games" />
       </Helmet>
 
@@ -119,15 +178,15 @@ export default function Games() {
           <SolBrand />
         </BrandWrapper>
 
-        <Title>🎮 Sol’s Game Room</Title>
+        <Title>{t.heading}</Title>
 
         <GamesGrid>
-          {games.map((game) => (
+          {t.games.map((game) => (
             <GameCard key={game.id}>
               <GameEmoji>{game.emoji}</GameEmoji>
               <GameTitle>{game.name}</GameTitle>
               <GameDescription>{game.description}</GameDescription>
-              <PlayButton to={game.route}>Play</PlayButton>
+              <PlayButton to={game.route}>{t.playText}</PlayButton>
             </GameCard>
           ))}
         </GamesGrid>

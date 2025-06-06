@@ -1,11 +1,12 @@
 // src/pages/WhoIsSol.jsx
 
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Χρησιμοποιούμε τον Context
 
 export default function WhoIsSol() {
-  const [language, setLanguage] = useState("en");
+  const { language } = useLanguage(); // Παίρνουμε μόνο το language, χωρίς setLanguage
 
   const content = {
     en: {
@@ -57,7 +58,11 @@ export default function WhoIsSol() {
   return (
     <>
       <Helmet>
-        <title>{language === "en" ? "Who is Sol the Cat? – SolTheCat" : "Ποια είναι η Sol; – SolTheCat"}</title>
+        <title>
+          {language === "en"
+            ? "Who is Sol the Cat? – SolTheCat"
+            : "Ποια είναι η Sol; – SolTheCat"}
+        </title>
         <link rel="canonical" href="https://solthecat.com/whoissol" />
       </Helmet>
 
@@ -80,28 +85,10 @@ export default function WhoIsSol() {
             <SolBrand size="2.5rem" centered />
           </div>
 
-          {/* Language toggle */}
-          <div className="flex justify-center gap-3 mb-6">
-            <button
-              onClick={() => setLanguage("en")}
-              className={`px-3 py-1 rounded border ${
-                language === "en" ? "bg-[#f8bbd0]" : "bg-white"
-              }`}
-            >
-              🇬🇧 English
-            </button>
-            <button
-              onClick={() => setLanguage("el")}
-              className={`px-3 py-1 rounded border ${
-                language === "el" ? "bg-[#f8bbd0]" : "bg-white"
-              }`}
-            >
-              🇬🇷 Ελληνικά
-            </button>
-          </div>
-
           {/* Intro */}
-          <h1 className="text-3xl font-semibold mb-4 text-[#aa4dc8]">{t.title}</h1>
+          <h1 className="text-3xl font-semibold mb-4 text-[#aa4dc8]">
+            {t.title}
+          </h1>
           <p className="text-lg mb-4">{t.intro1}</p>
           <p className="text-lg mb-6">{t.intro2}</p>
 

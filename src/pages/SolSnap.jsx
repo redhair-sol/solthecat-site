@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Πραγματικό import
 
 /* --------------------- Styled Components --------------------- */
 
@@ -47,7 +48,7 @@ const Description = styled.p`
   }
 `;
 
-const LanguageToggle = styled.div`
+const LanguageToggleContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -57,10 +58,14 @@ const LanguageToggle = styled.div`
 const ToggleButton = styled.button`
   padding: 0.3rem 0.8rem;
   border: 1px solid #ccc;
-  background-color: ${({ $active }) => ($active ? '#f8bbd0' : '#fff')};
+  background-color: ${({ $active }) => ($active ? "#f8bbd0" : "#fff")};
   border-radius: 8px;
   font-size: 0.85rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: #f0e0f5;
+  }
 `;
 
 const QuestionContainer = styled.div`
@@ -78,12 +83,20 @@ const QuestionText = styled.p`
   font-size: 1.1rem;
   color: #333;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const TimerText = styled.p`
   font-size: 0.9rem;
   color: #d32f2f;
   margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.85rem;
+  }
 `;
 
 const ButtonsWrapper = styled.div`
@@ -107,6 +120,10 @@ const AnswerButton = styled.button`
   &:hover {
     background-color: ${({ disabled }) => (disabled ? "#f8bbd0" : "#f48fb1")};
   }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const ResultText = styled.p`
@@ -114,6 +131,10 @@ const ResultText = styled.p`
   font-size: 1rem;
   font-weight: 600;
   color: ${({ $correct }) => ($correct ? "#388e3c" : "#d32f2f")};
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 const SummaryContainer = styled.div`
@@ -125,6 +146,10 @@ const SummaryText = styled.p`
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 const NextButton = styled(AnswerButton)`
@@ -146,6 +171,10 @@ const StartButton = styled.button`
   &:hover {
     background-color: #993cbf;
   }
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 const BackLink = styled(Link)`
@@ -154,37 +183,88 @@ const BackLink = styled(Link)`
   color: #d35ca3;
   text-decoration: none;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 /* ----------------------- Main Component ----------------------- */
 
 export default function SolSnap() {
-  // Όλα τα visible επεισόδια που έχουν snapQuestions
+  // Βασιζόμαστε απόλυτα στο Context για τη γλώσσα
+  const { language, setLanguage } = useLanguage();
+
   const [episodes, setEpisodes] = useState([]);
-  // Επιλεγμένη γλώσσα
-  const [language, setLanguage] = useState("en");
-  // Κατάσταση αν έχει ξεκινήσει το παιχνίδι
   const [hasStarted, setHasStarted] = useState(false);
-  // Δείκτης τρέχοντος επεισοδίου (0-based)
   const [currentEpisodeIndex, setCurrentEpisodeIndex] = useState(0);
-  // Οι 3 τυχαίες ερωτήσεις για κάθε επεισόδιο
   const [questionsForEpisode, setQuestionsForEpisode] = useState([]);
-  // Δείκτης τρέχουσας ερώτησης (0, 1, 2). Όταν γίνει 3 → εμφάνιση summary
   const [currentQIndex, setCurrentQIndex] = useState(0);
-  // Σκορ για το τρέχον επεισόδιο (0 έως 3)
   const [episodeScore, setEpisodeScore] = useState(0);
-  // Συνολικό σκορ σε όλη τη διαδρομή (0 έως episodes.length * 3)
   const [totalScore, setTotalScore] = useState(0);
-  // Feedback μετά την απάντηση ("correct" / "incorrect" / null)
   const [feedback, setFeedback] = useState(null);
-  // Χρονόμετρο (5 δευτερόλεπτα)
   const [timer, setTimer] = useState(5);
-  // Απενεργοποίηση κουμπιών μετά επιλογή ή timeout
   const [buttonsDisabled, setButtonsDisabled] = useState(false);
-  // Αναφορά interval για τον countdown
   const countdownRef = useRef(null);
 
-  /* useEffect: Φόρτωση episodes.json & προετοιμασία πρώτων ερωτήσεων μόλις πατηθεί Start */
+  // Όλα τα κείμενα για Αγγλικά και Ελληνικά
+  const content = {
+    en: {
+      pageTitle: "SolSnap – SolTheCat",
+      initialTitle: "📷 SolSnap",
+      initialDesc: "Ready to test your knowledge? Press Start to begin!",
+      startButton: "Start Game",
+      backGames: "← Back to Games",
+      gameOverTitle: "📷 SolSnap",
+      gameOverDesc: (score, total) => `Game Over! Your total score: ${score} out of ${total}`,
+      inGameTitle: "📷 SolSnap",
+      inGameDesc: "Snap decision: 3 questions per visible episode. Answer within 5 seconds!",
+      timeLeft: (t) => `Time left: ${t}s`,
+      yes: "Yes",
+      no: "No",
+      correct: "Correct! 🎉",
+      incorrect: "Incorrect ❌",
+      summaryPerfectUnlock: (title) =>
+        `🎉 Congratulations! You answered 3 out of 3 correctly in ${title}. You unlocked the next episode!`,
+      summaryPerfectLast: (title) =>
+        `🎉 Great job! You answered 3 out of 3 correctly in ${title}. Stay tuned for next episodes!`,
+      summaryScore: (score, total, title) =>
+        `You scored ${score} out of ${total} in ${title}.`,
+      nextEpisode: "Next Episode",
+    },
+    el: {
+      pageTitle: "SolSnap – SolTheCat",
+      initialTitle: "📷 SolSnap",
+      initialDesc: "Έτοιμοι; Πατήστε Έναρξη για να ξεκινήσει το παιχνίδι!",
+      startButton: "Έναρξη",
+      backGames: "← Επιστροφή στα Παιχνίδια",
+      gameOverTitle: "📷 SolSnap",
+      gameOverDesc: (score, total) =>
+        `Τέλος παιχνιδιού! Το σκορ σου: ${score} από ${total}`,
+      inGameTitle: "📷 SolSnap",
+      inGameDesc:
+        "Απόφαση με μια ματιά: 3 ερωτήσεις για κάθε ορατό επεισόδιο. Απάντησε μέσα σε 5 δευτερόλεπτα!",
+      timeLeft: (t) => `Χρόνος: ${t}δλ.`,
+      yes: "Ναι",
+      no: "Όχι",
+      correct: "Σωστή επιλογή! 🎉",
+      incorrect: "Λάθος! ❌",
+      summaryPerfectUnlock: (title) =>
+        `🎉 Συγχαρητήρια! Έκανες 3 από 3 ερωτήσεις σωστές στο ${title}. Ξεκλείδωσες το επόμενο επεισόδιο!`,
+      summaryPerfectLast: (title) =>
+        `🎉 Μπράβο! Έκανες 3 από 3 ερωτήσεις σωστές στο ${title}. Μείνε συντονισμένος για τα επόμενα επεισόδια!`,
+      summaryScore: (score, total, title) =>
+        `Έκανες ${score} από ${total} ερωτήσεις σωστές στο ${title}.`,
+      nextEpisode: "Επόμενο Επεισόδιο",
+    },
+  };
+
+  const t = content[language];
+
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
       .then((res) => res.json())
@@ -194,6 +274,7 @@ export default function SolSnap() {
         );
         setEpisodes(filtered);
 
+        // Αν έχουμε ήδη πατήσει Start, φορτώνουμε τις πρώτες 3 ερωτήσεις
         if (filtered.length > 0 && hasStarted) {
           const firstQs = shuffleArray(filtered[0].snapQuestions).slice(0, 3);
           setQuestionsForEpisode(firstQs);
@@ -202,7 +283,6 @@ export default function SolSnap() {
       .catch((err) => console.error("Failed to load episodes:", err));
   }, [hasStarted]);
 
-  /* useEffect: Countdown 5 δευτερολέπτων όταν εμφανίζεται ερώτηση */
   useEffect(() => {
     if (
       hasStarted &&
@@ -235,7 +315,6 @@ export default function SolSnap() {
     };
   }, [hasStarted, currentEpisodeIndex, currentQIndex, questionsForEpisode]);
 
-  /* Συνάρτηση: Τυχαία αναδιάταξη πίνακα */
   const shuffleArray = (arr) => {
     const copy = [...arr];
     for (let i = copy.length - 1; i > 0; i--) {
@@ -245,7 +324,6 @@ export default function SolSnap() {
     return copy;
   };
 
-  /* Όταν λήξει ο χρόνος ή δοθεί λάθος απάντηση → Επανεκκίνηση παιχνιδιού */
   const handleWrongOrTimeout = () => {
     setFeedback(null);
     setButtonsDisabled(true);
@@ -259,7 +337,6 @@ export default function SolSnap() {
     setCurrentQIndex(0);
   };
 
-  /* Όταν ο χρήστης απαντάει Yes/No */
   const handleAnswer = (answer) => {
     setButtonsDisabled(true);
     if (countdownRef.current) {
@@ -276,13 +353,8 @@ export default function SolSnap() {
 
       setTimeout(() => {
         const nextQ = currentQIndex + 1;
-        if (nextQ < questionsForEpisode.length) {
-          setCurrentQIndex(nextQ);
-          setFeedback(null);
-        } else {
-          setCurrentQIndex(nextQ);
-          setFeedback(null);
-        }
+        setCurrentQIndex(nextQ);
+        setFeedback(null);
       }, 1000);
     } else {
       setTimeout(() => {
@@ -291,14 +363,11 @@ export default function SolSnap() {
     }
   };
 
-  /* Πατώντας “Next Episode” */
   const goToNextEpisode = () => {
     const nextEpisode = currentEpisodeIndex + 1;
 
     if (nextEpisode < episodes.length) {
-      const newQs = shuffleArray(
-        episodes[nextEpisode].snapQuestions
-      ).slice(0, 3);
+      const newQs = shuffleArray(episodes[nextEpisode].snapQuestions).slice(0, 3);
       setQuestionsForEpisode(newQs);
       setCurrentQIndex(0);
       setEpisodeScore(0);
@@ -310,7 +379,6 @@ export default function SolSnap() {
     }
   };
 
-  /* Πατώντας “Start Game” */
   const startGame = () => {
     if (episodes.length > 0) {
       const firstQs = shuffleArray(episodes[0].snapQuestions).slice(0, 3);
@@ -325,9 +393,7 @@ export default function SolSnap() {
     setButtonsDisabled(false);
   };
 
-  /* ------------------ Conditional Rendering ------------------ */
-
-  // A) Προ-εκκίνηση: επιλογή γλώσσας + Start Game
+  // A) Προ-εκκίνηση: φαίνεται μόνο το κουμπί Έναρξη, χωρίς επιλογή EN/EL
   if (!hasStarted) {
     return (
       <PageContainer>
@@ -335,57 +401,29 @@ export default function SolSnap() {
           <SolBrand size="2.5rem" centered />
         </BrandWrapper>
 
-        <LanguageToggle>
-          <ToggleButton
-            onClick={() => setLanguage("en")}
-            $active={language === "en"}
-          >
-            🇬🇧 English
-          </ToggleButton>
-          <ToggleButton
-            onClick={() => setLanguage("el")}
-            $active={language === "el"}
-          >
-            🇬🇷 Ελληνικά
-          </ToggleButton>
-        </LanguageToggle>
+        <Title>{t.initialTitle}</Title>
+        <Description>{t.initialDesc}</Description>
 
-        <Title>📷 SolSnap</Title>
-        <Description>
-          {language === "en"
-            ? "Ready to test your knowledge? Press Start to begin!"
-            : "Έτοιμοι; Πατήστε Έναρξη για να ξεκινήσει το παιχνίδι!"}
-        </Description>
+        <StartButton onClick={startGame}>{t.startButton}</StartButton>
 
-        <StartButton onClick={startGame}>
-          {language === "en" ? "Start Game" : "Έναρξη"}
-        </StartButton>
-
-        <BackLink to="/games">← Back to Games</BackLink>
+        <BackLink to="/games">{t.backGames}</BackLink>
       </PageContainer>
     );
   }
 
   // B) Τέλος παιχνιδιού: τελικό scoreboard
   if (currentEpisodeIndex >= episodes.length) {
+    const total = episodes.length * 3;
     return (
       <PageContainer>
         <BrandWrapper>
           <SolBrand size="2.5rem" centered />
         </BrandWrapper>
 
-        <Title>📷 SolSnap</Title>
-        <Description>
-          {language === "en"
-            ? `Game Over! Your total score: ${totalScore} out of ${
-                episodes.length * 3
-              }`
-            : `Τέλος παιχνιδιού! Το σκορ σου: ${totalScore} από ${
-                episodes.length * 3
-              }`}
-        </Description>
+        <Title>{t.gameOverTitle}</Title>
+        <Description>{t.gameOverDesc(totalScore, total)}</Description>
 
-        <BackLink to="/games">← Back to Games</BackLink>
+        <BackLink to="/games">{t.backGames}</BackLink>
       </PageContainer>
     );
   }
@@ -400,7 +438,7 @@ export default function SolSnap() {
   return (
     <>
       <Helmet>
-        <title>SolSnap – SolTheCat</title>
+        <title>{t.pageTitle}</title>
         <link rel="canonical" href="https://solthecat.com/games/solsnap" />
       </Helmet>
 
@@ -409,39 +447,28 @@ export default function SolSnap() {
           <SolBrand size="2.5rem" centered />
         </BrandWrapper>
 
-        <Title>📷 SolSnap</Title>
-        <Description>
-          {language === "en"
-            ? "Snap decision: 3 questions per visible episode. Answer within 5 seconds!"
-            : "Απόφαση με μια ματιά: 3 ερωτήσεις για κάθε ορατό επεισόδιο. Απάντησε μέσα σε 5 δευτερόλεπτα!"}
-        </Description>
+        <Title>{t.inGameTitle}</Title>
+        <Description>{t.inGameDesc}</Description>
 
-        <LanguageToggle>
-          <ToggleButton
-            onClick={() => setLanguage("en")}
-            $active={language === "en"}
-          >
-            🇬🇧 English
+        <LanguageToggleContainer>
+          {/* Δείχνουμε ποια γλώσσα είναι επιλεγμένη, 
+              αλλά δεν δίνουμε τη δυνατότητα εναλλαγής εδώ */}
+          <ToggleButton $active={language === "en"} disabled>
+            {language === "en" ? "🇬🇧 English" : "🇬🇷 Ελληνικά"}
           </ToggleButton>
-          <ToggleButton
-            onClick={() => setLanguage("el")}
-            $active={language === "el"}
-          >
-            🇬🇷 Ελληνικά
-          </ToggleButton>
-        </LanguageToggle>
+        </LanguageToggleContainer>
 
         {currentQIndex < questionsForEpisode.length ? (
-          /* --- Εμφάνιση ερώτησης --- */
           <QuestionContainer>
             <QuestionText>
               <strong>
-                {`#${currentEpisode.id} – ${currentEpisode.title}`}
+                {`#${currentEpisode.id} – `}
+                {typeof currentEpisode.title === "object"
+                  ? currentEpisode.title[language]
+                  : currentEpisode.title}
               </strong>
             </QuestionText>
-            <TimerText>
-              {language === "en" ? `Time left: ${timer}s` : `Χρόνος: ${timer}δλ.`}
-            </TimerText>
+            <TimerText>{t.timeLeft(timer)}</TimerText>
             <QuestionText>{currentQuestionText}</QuestionText>
 
             {!feedback && (
@@ -450,94 +477,62 @@ export default function SolSnap() {
                   onClick={() => handleAnswer(true)}
                   disabled={buttonsDisabled}
                 >
-                  {language === "en" ? "Yes" : "Ναι"}
+                  {t.yes}
                 </AnswerButton>
                 <AnswerButton
                   onClick={() => handleAnswer(false)}
                   disabled={buttonsDisabled}
                 >
-                  {language === "en" ? "No" : "Όχι"}
+                  {t.no}
                 </AnswerButton>
               </ButtonsWrapper>
             )}
 
             {feedback && (
               <ResultText $correct={feedback === "correct"}>
-                {feedback === "correct"
-                  ? language === "en"
-                    ? "Correct! 🎉"
-                    : "Σωστή επιλογή! 🎉"
-                  : language === "en"
-                  ? "Incorrect ❌"
-                  : "Λάθος! ❌"}
+                {feedback === "correct" ? t.correct : t.incorrect}
               </ResultText>
             )}
           </QuestionContainer>
         ) : (
-          /* --- Summary επεισοδίου --- */
           <SummaryContainer>
             {episodeScore === questionsForEpisode.length ? (
               currentEpisodeIndex < episodes.length - 1 ? (
-                /* Αν δεν είναι το τελευταίο ορατό επεισόδιο */
                 <SummaryText>
-                  {language === "en" ? (
-                    <>
-                      🎉 Congratulations! You answered <strong>3 out of 3</strong> correctly in{" "}
-                      <strong>{currentEpisode.title}</strong>. <br />
-                      You unlocked the next episode!
-                    </>
-                  ) : (
-                    <>
-                      🎉 Συγχαρητήρια! Έκανες <strong>3 από 3</strong> ερωτήσεις σωστές στο{" "}
-                      <strong>{currentEpisode.title}</strong>. <br />
-                      Ξεκλείδωσες το επόμενο επεισόδιο!
-                    </>
+                  {t.summaryPerfectUnlock(
+                    typeof currentEpisode.title === "object"
+                      ? currentEpisode.title[language]
+                      : currentEpisode.title
                   )}
                 </SummaryText>
               ) : (
-                /* Αν είναι το τελευταίο ορατό επεισόδιο */
                 <SummaryText>
-                  {language === "en" ? (
-                    <>
-                      🎉 Great job! You answered <strong>3 out of 3</strong> correctly in{" "}
-                      <strong>{currentEpisode.title}</strong>. <br />
-                      Stay tuned for next episodes!
-                    </>
-                  ) : (
-                    <>
-                      🎉 Μπράβο! Έκανες <strong>3 από 3</strong> ερωτήσεις σωστές στο{" "}
-                      <strong>{currentEpisode.title}</strong>. <br />
-                      Μείνε συντονισμένος για τα επόμενα επεισόδια!
-                    </>
+                  {t.summaryPerfectLast(
+                    typeof currentEpisode.title === "object"
+                      ? currentEpisode.title[language]
+                      : currentEpisode.title
                   )}
                 </SummaryText>
               )
             ) : (
-              /* Αν δεν ήταν 3/3 σωστές απαντήσεις */
               <SummaryText>
-                {language === "en" ? (
-                  <>
-                    You scored <strong>{episodeScore}</strong> out of{" "}
-                    <strong>{questionsForEpisode.length}</strong> in{" "}
-                    <strong>{currentEpisode.title}</strong>.
-                  </>
-                ) : (
-                  <>
-                    Έκανες <strong>{episodeScore}</strong> από{" "}
-                    <strong>{questionsForEpisode.length}</strong> ερωτήσεις σωστές στο{" "}
-                    <strong>{currentEpisode.title}</strong>.
-                  </>
+                {t.summaryScore(
+                  episodeScore,
+                  questionsForEpisode.length,
+                  typeof currentEpisode.title === "object"
+                    ? currentEpisode.title[language]
+                    : currentEpisode.title
                 )}
               </SummaryText>
             )}
 
             {currentEpisodeIndex < episodes.length - 1 && (
               <NextButton onClick={goToNextEpisode}>
-                {language === "en" ? "Next Episode" : "Επόμενο Επεισόδιο"}
+                {t.nextEpisode}
               </NextButton>
             )}
 
-            <BackLink to="/games">← Back to Games</BackLink>
+            <BackLink to="/games">{t.backGames}</BackLink>
           </SummaryContainer>
         )}
       </PageContainer>

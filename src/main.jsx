@@ -4,6 +4,9 @@ import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// ===> Language Context Provider
+import { LanguageProvider } from "./context/LanguageContext.jsx";
+
 import App from "./App.jsx";
 import "./index.css";
 
@@ -24,31 +27,33 @@ const SolSnap = lazy(() => import("./pages/SolSnap.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="episodes" element={<Episodes />} />
-            <Route path="map" element={<Map />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="solsjourney" element={<SOLsJourney />} />
-            <Route path="whoissol" element={<WhoIsSol />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="shop" element={<Shop />} />
+    <LanguageProvider>
+      <BrowserRouter>
+        <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<App />}>
+              <Route index element={<Home />} />
+              <Route path="episodes" element={<Episodes />} />
+              <Route path="map" element={<Map />} />
+              <Route path="gallery" element={<Gallery />} />
+              <Route path="solsjourney" element={<SOLsJourney />} />
+              <Route path="whoissol" element={<WhoIsSol />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="shop" element={<Shop />} />
 
-            {/* 🎮 Games */}
-            <Route path="games" element={<Games />} />
-            <Route path="games/pawprints" element={<PawprintsGame />} />
-            <Route path="games/puzzlemap" element={<PuzzleMapGame />} />
-            <Route path="games/cityquiz" element={<QuizPlayer />} />
-            <Route path="games/solsnap" element={<SolSnap />} />
+              {/* 🎮 Games */}
+              <Route path="games" element={<Games />} />
+              <Route path="games/pawprints" element={<PawprintsGame />} />
+              <Route path="games/puzzlemap" element={<PuzzleMapGame />} />
+              <Route path="games/cityquiz" element={<QuizPlayer />} />
+              <Route path="games/solsnap" element={<SolSnap />} />
 
-            {/* Removed custom 404 route */}
-            {/* <Route path="*" element={<NotFound />} /> */}
-          </Route>
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+              {/* Αν χρειαστεί custom 404 σελίδα, μπορεί να προστεθεί εδώ */}
+              {/* <Route path="*" element={<NotFound />} /> */}
+            </Route>
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </LanguageProvider>
   </React.StrictMode>
 );

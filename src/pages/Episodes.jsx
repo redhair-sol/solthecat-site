@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -87,22 +88,6 @@ const EpisodeCaption = styled.p`
   color: #333;
 `;
 
-const LanguageToggle = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-`;
-
-const ToggleButton = styled.button`
-  padding: 0.3rem 0.8rem;
-  border: 1px solid #ccc;
-  background-color: ${({ $active }) => ($active ? '#f8bbd0' : '#fff')};
-  border-radius: 8px;
-  font-size: 0.85rem;
-  cursor: pointer;
-`;
-
 const StoryContainer = styled.div`
   margin-top: 1.2rem;
   font-size: 0.9rem;
@@ -118,7 +103,7 @@ const StoryTitle = styled.h3`
 
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
-  const [language, setLanguage] = useState("en");
+  const { language } = useLanguage();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -129,12 +114,18 @@ export default function Episodes() {
 
         const teaser = {
           id: 999,
-          title: `SOLadventure #${nextNumber} – Coming Soon 🐾`,
+          title: {
+            en: `SOLadventure #${nextNumber} – Coming Soon 🐾`,
+            el: `SOLadventure #${nextNumber} – Coming Soon 🐾`
+          },
           image: "episodes/coming-soon.png",
-          caption: "Stay tuned for the next purrfect stop 🐾🐾🐾",
+          caption: {
+            en: "Stay tuned for the next purrfect stop 🐾🐾🐾",
+            el: "Μείνε συντονισμένος για το επόμενο τέλειο σταθμό 🐾🐾🐾"
+          },
           visible: false,
           quote: "",
-          story: {}
+          story: { en: "", el: "" }
         };
 
         visibleEpisodes.push(teaser);
@@ -151,32 +142,31 @@ export default function Episodes() {
       </Helmet>
 
       <PageContainer>
-        <Title><SolBrand size="2.5rem" centered /></Title>
-
-        <LanguageToggle>
-          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
-            🇬🇧 English
-          </ToggleButton>
-          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}>
-            🇬🇷 Ελληνικά
-          </ToggleButton>
-        </LanguageToggle>
+        <Title>
+          <SolBrand size="2.5rem" centered />
+        </Title>
 
         <EpisodesWrapper>
           {episodes.map((ep) => (
             <EpisodeCard key={ep.id} $isTeaser={!ep.visible}>
               <EpisodeImage
                 src={`${import.meta.env.BASE_URL}${ep.image}`}
-                alt={ep.title}
+                alt={typeof ep.title === "object" ? ep.title[language] : ep.title}
                 $isTeaser={!ep.visible}
               />
-              <EpisodeTitle>{ep.title}</EpisodeTitle>
+              <EpisodeTitle>
+                {typeof ep.title === "object" ? ep.title[language] : ep.title}
+              </EpisodeTitle>
               {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
-              <EpisodeCaption>{ep.caption}</EpisodeCaption>
+              <EpisodeCaption>
+                {typeof ep.caption === "object" ? ep.caption[language] : ep.caption}
+              </EpisodeCaption>
 
               {ep.story && ep.story[language] && (
                 <StoryContainer>
-                  <StoryTitle>SOL’s Tale</StoryTitle>
+                  <StoryTitle>
+                    {language === "en" ? "SOL’s Tale" : "Το Παραμύθι της SOL"}
+                  </StoryTitle>
                   <p>{ep.story[language]}</p>
                 </StoryContainer>
               )}

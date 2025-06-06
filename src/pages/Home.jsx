@@ -1,11 +1,13 @@
 // src/pages/Home.jsx
 
-import { useState } from "react";
 import { useLocation, Link } from "react-router-dom"; // Προσθήκη useLocation
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
+
+// ===> Κάνουμε import το useLanguage από το LanguageContext
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled(motion.div)`
   display: flex;
@@ -57,7 +59,9 @@ const ToggleButton = styled.button`
 `;
 
 export default function Home() {
-  const [language, setLanguage] = useState("en");
+  // =====> Αντί για useState, παίρνουμε language + setLanguage από Context
+  const { language, setLanguage } = useLanguage();
+
   const location = useLocation();
 
   // Πιάσε το query parameter "s" (search)
@@ -87,6 +91,7 @@ export default function Home() {
     },
   };
 
+  // Επιλέγουμε το σωστό αντικείμενο content βάσει του context.language
   const t = content[language];
 
   return (
@@ -107,11 +112,18 @@ export default function Home() {
       >
         <SolBrand size="2.5rem" centered />
 
+        {/* =====> Εδώ κάνουμε toggle γλώσσας από Context */}
         <LanguageToggle>
-          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
+          <ToggleButton
+            onClick={() => setLanguage("en")}
+            $active={language === "en"}
+          >
             🇬🇧 English
           </ToggleButton>
-          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}>
+          <ToggleButton
+            onClick={() => setLanguage("el")}
+            $active={language === "el"}
+          >
             🇬🇷 Ελληνικά
           </ToggleButton>
         </LanguageToggle>
@@ -247,3 +259,5 @@ export default function Home() {
     </>
   );
 }
+
+// > Τα styled components JourneyButton, LanguageToggle, ToggleButton παραμένουν ίδια.

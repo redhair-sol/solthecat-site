@@ -5,8 +5,8 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Προσθήκη import
 
-// Αντίγραφο του JourneyButton από το Home, ώστε να έχουμε το ίδιο style
 const JourneyButton = styled(Link)`
   padding: 0.8rem 1.5rem;
   background-color: #aa4dc8;
@@ -39,6 +39,10 @@ const Title = styled.h1`
   color: #aa4dc8;
   margin-bottom: 1.5rem;
   text-align: center;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Dropdown = styled.select`
@@ -67,6 +71,10 @@ const QuestionText = styled.p`
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const AnswerButton = styled.button`
@@ -84,6 +92,10 @@ const AnswerButton = styled.button`
   &:hover {
     background: ${({ selected }) => (selected ? undefined : "#f8bbd0")};
   }
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+  }
 `;
 
 const ScoreText = styled.p`
@@ -91,6 +103,10 @@ const ScoreText = styled.p`
   font-weight: bold;
   margin-top: 2rem;
   color: #8e24aa;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const Message = styled.div`
@@ -98,6 +114,10 @@ const Message = styled.div`
   font-size: 1.1rem;
   font-weight: bold;
   color: red;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const BackLink = styled(Link)`
@@ -105,23 +125,52 @@ const BackLink = styled(Link)`
   color: #d35ca3;
   text-decoration: none;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default function QuizPlayer() {
   const [episodes, setEpisodes] = useState([]);
   const [selectedId, setSelectedId] = useState("");
-  const [language, setLanguage] = useState("en");
   const [questions, setQuestions] = useState([]);
   const [current, setCurrent] = useState(0);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState("");
-
-  // Νέες καταστάσεις για επιλογή απάντησης και εμφάνιση σωστού/λάθους πριν το επόμενο
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
 
-  // Φόρτωμα των episodes από episodes.json
+  const { language } = useLanguage(); // Παίρνουμε language από context
+
+  const content = {
+    en: {
+      pagePrefix: "Quiz:",
+      loading: "Loading...",
+      start: "Start Quiz",
+      quizUrl: "https://solthecat.com/games/cityquiz",
+      back: "← Back to games",
+      scoreText: (s, total) => `🎉 You got ${s} out of ${total} correct!`,
+      errLoadEpisodes: "Failed to load episodes.",
+      errLoadQuiz: "Quiz file not found or invalid.",
+      dropdownLabel: (title) => title, // τίτλοι επεισοδίων εμφανίζονται αυτούσιοι
+    },
+    el: {
+      pagePrefix: "Quiz:",
+      loading: "Φόρτωση...",
+      start: "Εκκίνηση Quiz",
+      quizUrl: "https://solthecat.com/games/cityquiz",
+      back: "← Επιστροφή στα παιχνίδια",
+      scoreText: (s, total) => `🎉 Είχες ${s} σωστές από ${total}!`,
+      errLoadEpisodes: "Αποτυχία φόρτωσης επεισοδίων.",
+      errLoadQuiz: "Το αρχείο quiz δεν βρέθηκε ή δεν είναι έγκυρο.",
+      dropdownLabel: (title) => title, // αν οι τίτλοι είναι αντικείμενα, θα αλλάξουμε παρακάτω
+    },
+  };
+
+  const t = content[language];
+
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
       .then((res) => res.json())
@@ -133,16 +182,14 @@ export default function QuizPlayer() {
         }
       })
       .catch(() => {
-        setError("Failed to load episodes.");
+        setError(t.errLoadEpisodes);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const selectedEpisode = episodes.find(
-    (ep) => ep.id.toString() === selectedId
-  );
+  const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
   const city = selectedEpisode?.city;
 
-  // Συνάρτηση για τυχαίο shuffle πίνακα
   const shuffleArray = (arr) => {
     const copy = [...arr];
     for (let i = copy.length - 1; i > 0; i--) {
@@ -152,7 +199,6 @@ export default function QuizPlayer() {
     return copy;
   };
 
-  // Όταν πατάμε "Start Quiz", φορτώνουμε το JSON και κρατάμε μόνο 8 τυχαίες
   const loadQuiz = () => {
     if (!city) return;
 
@@ -173,13 +219,12 @@ export default function QuizPlayer() {
       })
       .catch(() => {
         setQuestions([]);
-        setError("Quiz file not found or invalid.");
+        setError(t.errLoadQuiz);
       });
   };
 
-  // Χειρισμός απάντησης στην τρέχουσα ερώτηση
   const handleAnswer = (index) => {
-    if (selectedAnswer !== null) return; // Αν έχει ήδη επιλεχθεί απάντηση, μην κάνει τίποτα
+    if (selectedAnswer !== null) return;
 
     const correct = questions[current].answers[index].correct;
 
@@ -190,7 +235,6 @@ export default function QuizPlayer() {
       setScore((prev) => prev + 1);
     }
 
-    // Μετά από 1 δευτερόλεπτο, πάμε στην επόμενη ερώτηση ή εμφανίζουμε τα αποτελέσματα
     setTimeout(() => {
       const nextIndex = current + 1;
       if (nextIndex < questions.length) {
@@ -206,19 +250,28 @@ export default function QuizPlayer() {
     <>
       <Helmet>
         <title>
-          Quiz: {selectedEpisode ? selectedEpisode.title : "Loading..."} – SolTheCat
+          {t.pagePrefix}{" "}
+          {selectedEpisode
+            ? typeof selectedEpisode.title === "object"
+              ? selectedEpisode.title[language]
+              : selectedEpisode.title
+            : t.loading}{" "}
+          – SolTheCat
         </title>
-        <link
-          rel="canonical"
-          href="https://solthecat.com/games/cityquiz"
-        />
+        <link rel="canonical" href={t.quizUrl} />
       </Helmet>
 
       <PageContainer>
         <SolBrand />
-        <Title>🧠 Quiz for: {selectedEpisode?.title || "Loading..."}</Title>
+        <Title>
+          {t.pagePrefix}{" "}
+          {selectedEpisode
+            ? typeof selectedEpisode.title === "object"
+              ? selectedEpisode.title[language]
+              : selectedEpisode.title
+            : t.loading}
+        </Title>
 
-        {/* Επιλογή επεισοδίου */}
         <Dropdown
           value={selectedId}
           onChange={(e) => {
@@ -229,36 +282,23 @@ export default function QuizPlayer() {
             setSelectedAnswer(null);
           }}
         >
-          {episodes.map((ep) => (
-            <option key={ep.id} value={ep.id}>
-              {ep.title}
-            </option>
-          ))}
+          {episodes.map((ep) => {
+            const epTitle =
+              typeof ep.title === "object" ? ep.title[language] : ep.title;
+            return (
+              <option key={ep.id} value={ep.id}>
+                {t.dropdownLabel(epTitle)}
+              </option>
+            );
+          })}
         </Dropdown>
 
-        {/* Επιλογή γλώσσας */}
-        <Dropdown
-          value={language}
-          onChange={(e) => {
-            setLanguage(e.target.value);
-            setQuestions([]);
-            setShowResults(false);
-            setError("");
-            setSelectedAnswer(null);
-          }}
-        >
-          <option value="en">🇬🇧 English</option>
-          <option value="el">🇬🇷 Ελληνικά</option>
-        </Dropdown>
-
-        {/* Χρήση του JourneyButton για συνοχή με το Home */}
         <JourneyButton as="button" onClick={loadQuiz}>
-          Start Quiz
+          {t.start}
         </JourneyButton>
 
         {error && <Message>{error}</Message>}
 
-        {/* Εμφάνιση τρέχουσας ερώτησης (μέχρι να δώσουμε όλες τις 8) */}
         {questions.length > 0 && !showResults && (
           <QuestionCard>
             <QuestionText>
@@ -271,6 +311,7 @@ export default function QuizPlayer() {
                 disabled={selectedAnswer !== null}
                 selected={selectedAnswer === i}
                 correct={ansObj.correct}
+                selectedAnswer={selectedAnswer}
               >
                 {ansObj.text[language]}
               </AnswerButton>
@@ -278,14 +319,13 @@ export default function QuizPlayer() {
           </QuestionCard>
         )}
 
-        {/* Τελική βαθμολογία μετά τις 8 ερωτήσεις */}
         {showResults && (
           <ScoreText>
-            🎉 You got {score} out of {questions.length} correct!
+            {t.scoreText(score, questions.length)}
           </ScoreText>
         )}
 
-        <BackLink to="/games">← Back to games</BackLink>
+        <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>
     </>
   );

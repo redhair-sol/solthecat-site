@@ -1,4 +1,4 @@
-// src/pages/GalleryPage.jsx
+// src/pages/Gallery.jsx
 
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
@@ -6,6 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Πραγματικό import
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -105,6 +106,7 @@ export default function GalleryPage() {
   const [episodes, setEpisodes] = useState([]);
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const { language } = useLanguage();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -118,13 +120,14 @@ export default function GalleryPage() {
 
   const slides = episodes.map((ep) => ({ src: `/${ep.image}` }));
 
-  const cleanCaption = (caption) =>
-    caption.replace(/🐾/g, "").trim();
+  const cleanCaption = (caption) => caption.replace(/🐾/g, "").trim();
 
   return (
     <>
       <Helmet>
-        <title>Gallery – SolTheCat</title>
+        <title>
+          {language === "en" ? "Gallery – SolTheCat" : "Gallery – SolTheCat"}
+        </title>
         <link rel="canonical" href="https://solthecat.com/gallery" />
       </Helmet>
 
@@ -134,13 +137,17 @@ export default function GalleryPage() {
         </div>
 
         <Grid>
-          {episodes.map((ep, i) => (
-            <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>
-              <img src={`/${ep.image}`} alt={ep.title} />
-              <div className="caption-overlay">{cleanCaption(ep.caption)}</div>
-              <div className="caption-static">{cleanCaption(ep.caption)}</div>
-            </Tile>
-          ))}
+          {episodes.map((ep, i) => {
+            const titleText = typeof ep.title === "object" ? ep.title[language] : ep.title;
+            const captionText = typeof ep.caption === "object" ? ep.caption[language] : ep.caption;
+            return (
+              <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>
+                <img src={`/${ep.image}`} alt={titleText} />
+                <div className="caption-overlay">{cleanCaption(captionText)}</div>
+                <div className="caption-static">{cleanCaption(captionText)}</div>
+              </Tile>
+            );
+          })}
         </Grid>
 
         {open && (

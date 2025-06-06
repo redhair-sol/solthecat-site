@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
 import confetti from "canvas-confetti";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Προσθήκη import
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -20,6 +21,10 @@ const Title = styled.h1`
   color: #aa4dc8;
   margin-bottom: 1rem;
   font-weight: bold;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Timer = styled.div`
@@ -90,6 +95,10 @@ const BackLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const initialCards = [
@@ -121,6 +130,32 @@ export default function PawprintsGame() {
   const [timeLeft, setTimeLeft] = useState(60);
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
+  const { language } = useLanguage(); // Παίρνουμε language από context
+
+  const content = {
+    en: {
+      pageTitle: "Match the Pawprints – SolTheCat",
+      heading: "🎮 Match the Pawprints",
+      start: "Start Game",
+      playAgain: "Play Again",
+      timer: (secs) => `⏳ Time left: ${secs}s`,
+      success: "Well done, explorer! 🐾🐾🐾",
+      failure: "Time’s up! Try again 🐾",
+      back: "← Back to games",
+    },
+    el: {
+      pageTitle: "Βρες τα Πατουσάκια – SolTheCat",
+      heading: "🎮 Βρες τα Πατουσάκια",
+      start: "Έναρξη Παιχνιδιού",
+      playAgain: "Παίξε Ξανά",
+      timer: (secs) => `⏳ Υπόλοιπο χρόνου: ${secs}δ`,
+      success: "Μπράβο, εξερευνητή! 🐾🐾🐾",
+      failure: "Τελείωσε ο χρόνος! Δοκίμασε ξανά 🐾",
+      back: "← Επιστροφή στα παιχνίδια",
+    },
+  };
+
+  const t = content[language];
 
   const startGame = () => {
     setCards([...initialCards].sort(() => Math.random() - 0.5));
@@ -189,20 +224,20 @@ export default function PawprintsGame() {
   return (
     <>
       <Helmet>
-        <title>Match the Pawprints – SolTheCat</title>
+        <title>{t.pageTitle}</title>
         <link rel="canonical" href="https://solthecat.com/games/pawprints" />
       </Helmet>
 
       <PageContainer>
         <SolBrand />
-        <Title>🎮 Match the Pawprints</Title>
+        <Title>{t.heading}</Title>
 
         {!gameStarted || won || gameOver ? (
           <StartButton onClick={startGame}>
-            {gameStarted ? "Play Again" : "Start Game"}
+            {gameStarted ? t.playAgain : t.start}
           </StartButton>
         ) : (
-          <Timer>⏳ Time left: {timeLeft}s</Timer>
+          <Timer>{t.timer(timeLeft)}</Timer>
         )}
 
         <Grid>
@@ -219,10 +254,10 @@ export default function PawprintsGame() {
           ))}
         </Grid>
 
-        {won && <Message>Well done, explorer! 🐾🐾🐾</Message>}
-        {gameOver && !won && <Message>Time’s up! Try again 🐾</Message>}
+        {won && <Message>{t.success}</Message>}
+        {gameOver && !won && <Message>{t.failure}</Message>}
 
-        <BackLink to="/games">← Back to games</BackLink>
+        <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>
     </>
   );

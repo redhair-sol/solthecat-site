@@ -1,4 +1,4 @@
-// src/pages/SolsJourney.jsx
+// src/pages/Map.jsx
 
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
@@ -13,6 +13,7 @@ import {
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import SolBrand from "../components/SolBrand";
+import { useLanguage } from "../context/LanguageContext.jsx"; // Σωστό import του Context
 
 // Custom paw icon
 const pawIcon = new L.Icon({
@@ -36,6 +37,7 @@ function SetViewOnLastLocation({ position, route }) {
 
 export default function SolsJourney() {
   const [episodes, setEpisodes] = useState([]);
+  const { language } = useLanguage(); // Παίρνουμε τη γλώσσα από το Context
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -51,13 +53,22 @@ export default function SolsJourney() {
   const route = episodes.map((ep) => [ep.location.lat, ep.location.lng]);
   const currentLocation =
     route.length > 0 ? route[route.length - 1] : [45, 10];
+  // Αν το title είναι αντικείμενο { en, el }, επιλέγουμε ανάλογα
   const currentTitle =
-    episodes.length > 0 ? episodes[episodes.length - 1].title : "";
+    episodes.length > 0
+      ? typeof episodes[episodes.length - 1].title === "object"
+        ? episodes[episodes.length - 1].title[language]
+        : episodes[episodes.length - 1].title
+      : "";
 
   return (
     <>
       <Helmet>
-        <title>Sol’s Journey – SolTheCat</title>
+        <title>
+          {language === "en"
+            ? "Sol’s Journey – SolTheCat"
+            : "Το Ταξίδι της Sol – SolTheCat"}
+        </title>
         <link rel="canonical" href="https://solthecat.com/solsjourney" />
       </Helmet>
 
@@ -81,7 +92,10 @@ export default function SolsJourney() {
         </div>
 
         <p style={{ fontSize: "1rem", color: "#6a1b9a", marginBottom: "1.5rem" }}>
-          📍 Current Location: {currentTitle}
+          📍{" "}
+          {language === "en"
+            ? `Current Location: ${currentTitle}`
+            : `Τρέχουσα Τοποθεσία: ${currentTitle}`}
         </p>
 
         {route.length > 0 && (
@@ -134,11 +148,17 @@ export default function SolsJourney() {
                       }}
                     >
                       <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
-                        {ep.title}
+                        {typeof ep.title === "object"
+                          ? ep.title[language]
+                          : ep.title}
                       </div>
                       <img
                         src={`${import.meta.env.BASE_URL}${ep.image}`}
-                        alt={ep.title}
+                        alt={
+                          typeof ep.title === "object"
+                            ? ep.title[language]
+                            : ep.title
+                        }
                         style={{
                           width: "100%",
                           borderRadius: "8px",
