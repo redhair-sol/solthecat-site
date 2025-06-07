@@ -4,6 +4,15 @@
 
 ---
 
+## [v4.0.1-ntest] - 2025-06-07
+
+### Changed
+- **Topbar.jsx**: Enabled desktop sticky header via `sticky top-0 z-50`.
+- **App.jsx**: Moved `<Topbar />` outside of the content wrapper (as a sibling) to allow independent sticky behavior.
+- **Topbar.jsx**: Integrated mobile menu (`Sidebar` hamburger + `MobileMenu` overlay) alongside `LogoText` and desktop nav; removed standalone `<Sidebar />` from `App.jsx`.
+- **App.jsx**: Added `pt-16 md:pt-0` to `<main>` for proper top-padding on mobile.
+- **LogoText.jsx**: Removed `hidden md:flex` so logo is always visible; reduced margin/padding for compact height.
+
 ## [v4.0.0] - 2025-06-06
 
 ### Added
