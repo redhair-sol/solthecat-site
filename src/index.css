@@ -42,3 +42,25 @@ body {
   align-items: stretch;
   justify-content: flex-start;
 }
+
+/* ————————————————————————————— */
+/* Εδώ προσθέτουμε τα custom components */
+@layer components {
+  /* 1. Active nav-link underline & χρώμα */
+  .nav-link-active {
+    @apply relative text-pink-600;
+  }
+  .nav-link-active::after {
+    content: '';
+    @apply absolute left-0 bottom-[-2px] w-full h-1 bg-pink-600 rounded-t;
+  }
+
+  /* 2. Button hover effect (scale + shadow) */
+  .btn {
+    @apply inline-block px-6 py-3 bg-purple-600 text-white rounded-lg
+           transition-transform duration-200 ease-out;
+  }
+  .btn:hover {
+    @apply scale-105 shadow-lg;
+  }
+}

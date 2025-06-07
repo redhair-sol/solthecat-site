@@ -1,12 +1,10 @@
-// src/pages/Gallery.jsx
-
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
-import { useLanguage } from "../context/LanguageContext.jsx"; // Πραγματικό import
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -45,8 +43,18 @@ const Tile = styled.div`
   box-shadow: 0 4px 16px rgba(170, 77, 200, 0.15);
   overflow: hidden;
   cursor: zoom-in;
-  transition: transform 0.2s ease-in-out;
 
+  /* Fade-up animation */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Scale on hover */
   &:hover {
     transform: scale(1.02);
   }
@@ -118,6 +126,22 @@ export default function GalleryPage() {
       .catch((err) => console.error("Failed to load episodes:", err));
   }, []);
 
+  // Intersection Observer for fade-up
+  useEffect(() => {
+    const tiles = document.querySelectorAll('.gallery-tile');
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    tiles.forEach((tile) => observer.observe(tile));
+    return () => observer.disconnect();
+  }, [episodes]);
+
   const slides = episodes.map((ep) => ({ src: `/${ep.image}` }));
 
   const cleanCaption = (caption) => caption.replace(/🐾/g, "").trim();
@@ -132,16 +156,33 @@ export default function GalleryPage() {
       </Helmet>
 
       <PageContainer>
-        <div style={{ display: "flex", justifyContent: "center", marginBottom: "1.5rem" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "1.5rem",
+          }}
+        >
           <SolBrand />
         </div>
 
         <Grid>
           {episodes.map((ep, i) => {
-            const titleText = typeof ep.title === "object" ? ep.title[language] : ep.title;
-            const captionText = typeof ep.caption === "object" ? ep.caption[language] : ep.caption;
+            const titleText =
+              typeof ep.title === "object" ? ep.title[language] : ep.title;
+            const captionText =
+              typeof ep.caption === "object"
+                ? ep.caption[language]
+                : ep.caption;
             return (
-              <Tile key={ep.id} onClick={() => { setIndex(i); setOpen(true); }}>
+              <Tile
+                key={ep.id}
+                className="gallery-tile"
+                onClick={() => {
+                  setIndex(i);
+                  setOpen(true);
+                }}
+              >
                 <img src={`/${ep.image}`} alt={titleText} />
                 <div className="caption-overlay">{cleanCaption(captionText)}</div>
                 <div className="caption-static">{cleanCaption(captionText)}</div>
