@@ -155,6 +155,7 @@ export default function PuzzleMapGame() {
 
   const t = content[language];
 
+  // Fetch episodes (π.χ. data για τα επεισόδια)
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
       .then(res => res.json())
@@ -165,9 +166,15 @@ export default function PuzzleMapGame() {
       });
   }, []);
 
+  const selectedEpisode = episodes.find(ep => ep.id.toString() === selectedId);
+  const imagePath = selectedEpisode ? `${import.meta.env.BASE_URL}${selectedEpisode.image}` : "";
+
+  // Νέα χρήση effect με έλεγχο για να ξεκινήσει το reset μόνο αφού βρεθεί η εικόνα
   useEffect(() => {
-    if (selectedId) resetGame();
-  }, [selectedId]);
+    if (selectedId && selectedEpisode?.image) {
+      resetGame();
+    }
+  }, [selectedId, selectedEpisode]);
 
   const resetGame = () => {
     let arr = [...initialArr];
@@ -203,9 +210,6 @@ export default function PuzzleMapGame() {
     }
   };
 
-  const selectedEpisode = episodes.find(ep => ep.id.toString() === selectedId);
-  const imagePath = selectedEpisode ? `${import.meta.env.BASE_URL}${selectedEpisode.image}` : "";
-
   return (
     <>
       <Helmet>
@@ -228,22 +232,27 @@ export default function PuzzleMapGame() {
 
         <PuzzleWrapper>
           <Grid>
-            {tiles.map((tile, idx) => tile === 8 ?
-              <EmptyTile key={idx}/> :
-              <Tile
-                key={idx}
-                bgImage={imagePath}
-                bgPos={`${(tile % 3) * -100 / 2}% ${Math.floor(tile / 3) * -100 / 2}%`}
-                onClick={() => handleTileClick(idx)}
-              />
+            {tiles.map((tile, idx) =>
+              tile === 8 ? (
+                <EmptyTile key={idx} />
+              ) : (
+                <Tile
+                  key={idx}
+                  bgImage={imagePath}
+                  bgPos={`${(tile % 3) * -100 / 2}% ${Math.floor(tile / 3) * -100 / 2}%`}
+                  onClick={() => handleTileClick(idx)}
+                />
+              )
             )}
           </Grid>
         </PuzzleWrapper>
 
-        {isSolved && <>
-          <Message>{t.solvedMessage}</Message>
-          <StyledButton onClick={resetGame}>{t.playAgain}</StyledButton>
-        </>}
+        {isSolved && (
+          <>
+            <Message>{t.solvedMessage}</Message>
+            <StyledButton onClick={resetGame}>{t.playAgain}</StyledButton>
+          </>
+        )}
 
         <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>
