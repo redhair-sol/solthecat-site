@@ -4,6 +4,23 @@
 
 ---
 
+##[4.2] - 2025-06-08
+
+
+MobileMenu.jsx: Removed logo/brand section from header; only navigation links and close button remain.
+
+MobileMenu.jsx: Restored import of LogoTextMobile with updated markup to match desktop styling.
+
+Home.jsx: Updated PageContainer styled-component to add a mobile-only media query (max-width: 480px) reducing top padding to 0.5rem and sides to 1rem, bottom to 1.5rem to eliminate excess white gap under header.
+
+Fixed
+
+Consistent header spacing across mobile and desktop by adjusting padding rules.
+
+Removed
+
+References to old SolBrand and redundant LogoText imports from mobile menu.
+
 ## [v4.0.1-ntest] - 2025-06-07
 
 ### Changed
