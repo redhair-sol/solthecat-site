@@ -3,7 +3,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import SolBrand from "../components/SolBrand";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
@@ -11,22 +10,10 @@ const PageContainer = styled.div`
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-`;
-
-const BrandWrapper = styled.div`
   text-align: center;
-  margin-bottom: 1rem;
-`;
-
-const Title = styled.h1`
-  font-size: 2rem;
-  color: #aa4dc8;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-weight: bold;
 
   @media (max-width: 480px) {
-    font-size: 1.6rem;
+    padding: 1.5rem 1rem;
   }
 `;
 
@@ -34,6 +21,8 @@ const GamesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 `;
 
 const GameCard = styled.div`
@@ -94,7 +83,8 @@ export default function Games() {
   const content = {
     en: {
       pageTitle: "Sol’s Game Room – SolTheCat",
-      heading: "🎮 Sol’s Game Room",
+      heading: "Sol’s Games",
+      subtitle: "Pick your royal challenge 👑",
       playText: "Play",
       games: [
         {
@@ -129,7 +119,8 @@ export default function Games() {
     },
     el: {
       pageTitle: "Αίθουσα Παιχνιδιών της Sol – SolTheCat",
-      heading: "🎮 Αίθουσα Παιχνιδιών της Sol",
+      heading: "Παιχνίδια της Sol",
+      subtitle: "Διάλεξε τη βασιλική σου πρόκληση 👑",
       playText: "Παίξε",
       games: [
         {
@@ -174,11 +165,28 @@ export default function Games() {
       </Helmet>
 
       <PageContainer>
-        <BrandWrapper>
-          <SolBrand />
-        </BrandWrapper>
+        <h1
+          style={{
+            fontSize: "2rem",
+            color: "#6a1b9a",
+            marginBottom: "0.5rem",
+            fontFamily: "'Poppins', sans-serif",
+            fontWeight: 400,
+          }}
+        >
+          {t.heading}
+        </h1>
 
-        <Title>{t.heading}</Title>
+        <p
+          style={{
+            fontSize: "1rem",
+            color: "#5b2b7b",
+            marginBottom: "2rem",
+            fontFamily: "'Poppins', sans-serif",
+          }}
+        >
+          {t.subtitle}
+        </p>
 
         <GamesGrid>
           {t.games.map((game) => (

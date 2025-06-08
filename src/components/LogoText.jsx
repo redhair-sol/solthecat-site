@@ -1,11 +1,16 @@
+// src/components/LogoTextMobile.jsx
+
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function LogoText() {
+export default function LogoTextMobile() {
   return (
-    <div className="hidden md:flex justify-center mt-1 mb-0.5">
+    <div className="flex justify-center my-4">
       <Link to="/" className="hover:opacity-90 transition">
         <h1
-          className="text-5xl font-bold tracking-tight bg-gradient-to-r from-[#f48fb1] via-[#ce93d8] to-[#9575cd] text-transparent bg-clip-text drop-shadow"
+          className="text-4xl font-bold tracking-tight
+                     bg-gradient-to-r from-[#f48fb1] via-[#ce93d8] to-[#9575cd]
+                     text-transparent bg-clip-text drop-shadow"
           style={{ fontFamily: '"Dancing Script", cursive' }}
         >
           SOLadventures{" "}

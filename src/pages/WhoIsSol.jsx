@@ -3,14 +3,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import SolBrand from "../components/SolBrand";
-import { useLanguage } from "../context/LanguageContext.jsx"; // Χρησιμοποιούμε τον Context
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 export default function WhoIsSol() {
-  const { language } = useLanguage(); // Παίρνουμε μόνο το language, χωρίς setLanguage
+  const { language } = useLanguage();
 
   const content = {
     en: {
-      title: "💫 Who is Sol the Cat?",
+      title: "Sol’s Story",
       intro1:
         "Sol, known online as solthecat, wasn’t born to go unnoticed. She has the stillness that speaks louder than words, the grace of a queen without a crown, and the step of a cat who knows everything belongs to her. She’s the soul of SOLadventures — a storyteller with paws full of tales, wandering from Athens' marble to the pages of imagination… and then, to Instagram.",
       intro2:
@@ -31,7 +31,7 @@ export default function WhoIsSol() {
       contact: "For press or collaborations: ",
     },
     el: {
-      title: "💫 Ποια είναι η Sol;",
+      title: "Η Ιστορία της Sol",
       intro1:
         "Η Sol, γνωστή στο διαδίκτυο ως solthecat, δεν γεννήθηκε για να περάσει απαρατήρητη. Έχει το βλέμμα της σιωπής που σε καθηλώνει, τη χάρη μιας βασίλισσας που δε χρειάζεται στέμμα και το βήμα μιας γάτας που ξέρει πως όλα της ανήκουν. Είναι η ψυχή των SOLadventures — μια αφηγήτρια με πατούσες γεμάτες ιστορίες, που περιπλανιούνται από τα μάρμαρα της Αθήνας ώς τις σελίδες της φαντασίας… κι από εκεί, στο Instagram.",
       intro2:
@@ -75,28 +75,41 @@ export default function WhoIsSol() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* Overlay blur */}
         <div className="absolute inset-0 backdrop-blur-sm bg-[#fce4ec]/60 z-0"></div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-3xl mx-auto px-4 py-8">
-          {/* Brand title */}
-          <div className="text-center mb-6">
-            <SolBrand size="2.5rem" centered />
-          </div>
-
-          {/* Intro */}
-          <h1 className="text-3xl font-semibold mb-4 text-[#aa4dc8]">
+        <div className="relative z-10 max-w-3xl mx-auto px-4 py-8 text-center">
+          <h1
+            style={{
+              fontSize: "2rem",
+              color: "#6a1b9a",
+              marginBottom: "0.5rem",
+              fontFamily: "'Poppins', sans-serif",
+              fontWeight: 400,
+            }}
+          >
             {t.title}
           </h1>
+
+          <p
+            style={{
+              fontSize: "1rem",
+              color: "#5b2b7b",
+              marginBottom: "2rem",
+              fontFamily: "'Poppins', sans-serif",
+            }}
+          >
+            {language === "el"
+              ? "Η ιστορία της πιο iconic γάτας του Instagram."
+              : "The tale of the most iconic cat on Instagram."}
+          </p>
+
           <p className="text-lg mb-4">{t.intro1}</p>
           <p className="text-lg mb-6">{t.intro2}</p>
 
-          {/* Fun Facts */}
           <h2 className="text-2xl font-semibold mt-8 mb-3 text-[#aa4dc8]">
             {t.funFactsTitle}
           </h2>
-          <ul className="list-disc pl-6 text-lg space-y-2 text-[#444]">
+          <ul className="list-disc pl-6 text-lg space-y-2 text-[#444] text-left">
             {t.funFacts.map((fact, index) => (
               <li key={index}>
                 <strong>{fact.label}</strong> {fact.value}
@@ -104,7 +117,6 @@ export default function WhoIsSol() {
             ))}
           </ul>
 
-          {/* Footer */}
           <p className="text-sm text-gray-500 mt-8">{t.footer}</p>
           <p className="text-sm text-gray-600 mt-2">
             {t.contact}

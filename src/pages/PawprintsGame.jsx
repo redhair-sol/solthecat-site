@@ -3,10 +3,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
 import confetti from "canvas-confetti";
-import { useLanguage } from "../context/LanguageContext.jsx"; // Προσθήκη import
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -14,17 +13,22 @@ const PageContainer = styled.div`
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 2rem;
-  color: #aa4dc8;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  color: #6a1b9a;
+  margin-bottom: 1.2rem;
+`;
 
-  @media (max-width: 480px) {
-    font-size: 1.6rem;
-  }
+const Subtitle = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin-bottom: 2rem;
 `;
 
 const Timer = styled.div`
@@ -75,17 +79,19 @@ const Message = styled.div`
 const StartButton = styled.button`
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
-  background-color: #aa4dc8;
+  background-color: #c187d8;
   border: none;
-  border-radius: 8px;
+  border-radius: 16px;
   color: white;
   cursor: pointer;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  font-weight: bold;
   font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
-    background-color: #8e24aa;
+    transform: scale(1.05);
   }
 `;
 
@@ -130,12 +136,13 @@ export default function PawprintsGame() {
   const [timeLeft, setTimeLeft] = useState(60);
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
-  const { language } = useLanguage(); // Παίρνουμε language από context
+  const { language } = useLanguage();
 
   const content = {
     en: {
       pageTitle: "Match the Pawprints – SolTheCat",
-      heading: "🎮 Match the Pawprints",
+      heading: "Sol’s Pawprints Game",
+      subtitle: "Find all the matching pairs before time runs out!",
       start: "Start Game",
       playAgain: "Play Again",
       timer: (secs) => `⏳ Time left: ${secs}s`,
@@ -145,7 +152,8 @@ export default function PawprintsGame() {
     },
     el: {
       pageTitle: "Βρες τα Πατουσάκια – SolTheCat",
-      heading: "🎮 Βρες τα Πατουσάκια",
+      heading: "Sol’s Πατουσάκια Παιχνίδι",
+      subtitle: "Βρες όλα τα ζευγάρια πριν τελειώσει ο χρόνος!",
       start: "Έναρξη Παιχνιδιού",
       playAgain: "Παίξε Ξανά",
       timer: (secs) => `⏳ Υπόλοιπο χρόνου: ${secs}δ`,
@@ -229,8 +237,8 @@ export default function PawprintsGame() {
       </Helmet>
 
       <PageContainer>
-        <SolBrand />
         <Title>{t.heading}</Title>
+        <Subtitle>{t.subtitle}</Subtitle>
 
         {!gameStarted || won || gameOver ? (
           <StartButton onClick={startGame}>

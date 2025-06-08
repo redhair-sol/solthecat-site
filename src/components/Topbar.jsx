@@ -1,15 +1,16 @@
+// src/components/Topbar.jsx
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import LogoText from "./LogoText";
 import Sidebar from "./Sidebar";
 
 export default function Topbar() {
-  // κοινή συνάρτηση για className
   const linkClasses = ({ isActive }) =>
     `px-4 py-2 transition-colors ${
       isActive
-        ? 'nav-link-active'
-        : 'text-black hover:text-pink-300'
+        ? "text-purple-700 border-b-4 border-[#00aaff]"
+        : "text-black hover:text-pink-300 hover:underline"
     }`;
 
   return (

@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fce4ec;
+  background-color: #fffafc;
 }
 
 .app-container {
@@ -15,14 +15,12 @@ body {
 
 .sidebar {
   width: 180px;
-  background-color: #f8bbd0;
+  background-color: #f5c2d1;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   padding: 2rem 1rem;
   flex-direction: column;
   gap: 1.5rem;
 }
-
-/* ⛔️ Δεν βάζουμε `display: flex` εδώ για να μη χαλάει το md:flex */
 
 .sidebar a {
   color: #333;
@@ -31,9 +29,10 @@ body {
 }
 
 .sidebar a:hover {
-  color: #f48fb1;
+  color: #c35ca0;
 }
 
+/* Main content wrapper */
 .main-content {
   flex-grow: 1;
   padding: 2rem;
@@ -44,22 +43,24 @@ body {
 }
 
 /* ————————————————————————————— */
-/* Εδώ προσθέτουμε τα custom components */
+/* Custom Tailwind components */
 @layer components {
-  /* 1. Active nav-link underline & χρώμα */
+  /* Active navigation link */
   .nav-link-active {
     @apply relative text-pink-600;
   }
+
   .nav-link-active::after {
     content: '';
     @apply absolute left-0 bottom-[-2px] w-full h-1 bg-pink-600 rounded-t;
   }
 
-  /* 2. Button hover effect (scale + shadow) */
+  /* Primary button style */
   .btn {
     @apply inline-block px-6 py-3 bg-purple-600 text-white rounded-lg
            transition-transform duration-200 ease-out;
   }
+
   .btn:hover {
     @apply scale-105 shadow-lg;
   }

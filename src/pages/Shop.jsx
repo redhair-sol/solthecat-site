@@ -2,25 +2,26 @@
 
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import SolBrand from "../components/SolBrand";
-import { useLanguage } from "../context/LanguageContext.jsx"; // παίρνουμε language από Context
+import { Helmet } from "react-helmet";
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
   padding: 2rem;
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 
   @media (max-width: 480px) {
     padding: 1.5rem 1rem;
   }
 `;
 
-const Title = styled.h1`
-  font-size: 2.5rem;
-  color: #aa4dc8;
+const Subtitle = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
   margin-bottom: 2rem;
-  text-align: center;
+  font-family: "Poppins", sans-serif;
 `;
 
 const ProductGrid = styled.div`
@@ -82,7 +83,7 @@ const StatusLabel = styled.span`
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
-  const { language } = useLanguage(); // πια παίρνουμε language από Context
+  const { language } = useLanguage();
 
   useEffect(() => {
     fetch("/data/products.json")
@@ -92,44 +93,63 @@ export default function Shop() {
   }, []);
 
   return (
-    <PageContainer>
-      <div style={{ textAlign: "center" }}>
-        <SolBrand size="2.5rem" />
-      </div>
-      <Title>
-        {language === "en" ? "SOLicious Delights" : "Νόστιμες Επιλογές SOL"}
-      </Title>
-      <ProductGrid>
-        {products.map((product) => (
-          <ProductCard key={product.id}>
-            <ProductImage src={product.image} alt={product.nameEN} />
-            <ProductName>
-              {language === "en" ? product.nameEN : product.nameGR}
-            </ProductName>
-            <ProductFlavor>
-              {language === "en" ? product.flavor.en : product.flavor.gr}
-            </ProductFlavor>
-            <ProductDescription>
-              {language === "en"
-                ? product.description.en
-                : product.description.gr}
-            </ProductDescription>
-            <StatusLabel status={product.status}>
-              {product.status === "coming_soon"
-                ? language === "en"
-                  ? "Coming Soon"
-                  : "Σύντομα διαθέσιμο"
-                : product.status === "available"
-                ? language === "en"
-                  ? "Available"
-                  : "Διαθέσιμο"
-                : language === "en"
-                ? "Sold Out"
-                : "Εξαντλήθηκε"}
-            </StatusLabel>
-          </ProductCard>
-        ))}
-      </ProductGrid>
-    </PageContainer>
+    <>
+      <Helmet>
+        <title>{language === "en" ? "SOLicious Delights – SolTheCat" : "Επιλογές SOL – SolTheCat"}</title>
+        <link rel="canonical" href="https://solthecat.com/shop" />
+      </Helmet>
+
+      <PageContainer>
+        <h1
+          style={{
+            fontSize: "2rem",
+            color: "#6a1b9a",
+            marginBottom: "0.5rem",
+            fontFamily: "'Poppins', sans-serif",
+            fontWeight: 400,
+          }}
+        >
+          {language === "en" ? "Sol’s Shop" : "Το Κατάστημα της Sol"}
+        </h1>
+
+        <Subtitle>
+          {language === "en"
+            ? "Every queen deserves treats 👑"
+            : "Η βασίλισσα θέλει τις λιχουδιές της 👑"}
+        </Subtitle>
+
+        <ProductGrid>
+          {products.map((product) => (
+            <ProductCard key={product.id}>
+              <ProductImage src={product.image} alt={product.nameEN} />
+              <ProductName>
+                {language === "en" ? product.nameEN : product.nameGR}
+              </ProductName>
+              <ProductFlavor>
+                {language === "en" ? product.flavor.en : product.flavor.gr}
+              </ProductFlavor>
+              <ProductDescription>
+                {language === "en"
+                  ? product.description.en
+                  : product.description.gr}
+              </ProductDescription>
+              <StatusLabel status={product.status}>
+                {product.status === "coming_soon"
+                  ? language === "en"
+                    ? "Coming Soon"
+                    : "Σύντομα διαθέσιμο"
+                  : product.status === "available"
+                  ? language === "en"
+                    ? "Available"
+                    : "Διαθέσιμο"
+                  : language === "en"
+                  ? "Sold Out"
+                  : "Εξαντλήθηκε"}
+              </StatusLabel>
+            </ProductCard>
+          ))}
+        </ProductGrid>
+      </PageContainer>
+    </>
   );
-}
+} 

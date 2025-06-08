@@ -3,26 +3,8 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import SolBrand from "../components/SolBrand";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../context/LanguageContext.jsx"; // Προσθήκη import
-
-const JourneyButton = styled(Link)`
-  padding: 0.8rem 1.5rem;
-  background-color: #aa4dc8;
-  color: white;
-  text-decoration: none;
-  border-radius: 16px;
-  font-weight: bold;
-  display: inline-block;
-  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
-  transition: transform 0.2s ease-in-out;
-  margin-top: 1.5rem;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-`;
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
   padding: 2rem;
@@ -32,17 +14,27 @@ const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 2rem;
-  color: #aa4dc8;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
 
   @media (max-width: 480px) {
     font-size: 1.6rem;
   }
+`;
+
+const Subtitle = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin-bottom: 2rem;
 `;
 
 const Dropdown = styled.select`
@@ -54,6 +46,23 @@ const Dropdown = styled.select`
   background: #fff;
   color: #6a1b9a;
   cursor: pointer;
+`;
+
+const StyledButton = styled.button`
+  padding: 0.8rem 1.5rem;
+  background-color: #c187d8;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 1.5rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const QuestionCard = styled.div`
@@ -121,7 +130,8 @@ const Message = styled.div`
 `;
 
 const BackLink = styled(Link)`
-  margin-top: 2rem;
+  display: block;
+  margin-top: 1.5rem;
   color: #d35ca3;
   text-decoration: none;
   font-weight: bold;
@@ -140,13 +150,13 @@ export default function QuizPlayer() {
   const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState("");
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
 
-  const { language } = useLanguage(); // Παίρνουμε language από context
+  const { language } = useLanguage();
 
   const content = {
     en: {
-      pagePrefix: "Quiz:",
+      title: "Sol’s Quiz",
+      subtitle: "Quiz: SOLadventure #" + (current+1),
       loading: "Loading...",
       start: "Start Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -154,10 +164,11 @@ export default function QuizPlayer() {
       scoreText: (s, total) => `🎉 You got ${s} out of ${total} correct!`,
       errLoadEpisodes: "Failed to load episodes.",
       errLoadQuiz: "Quiz file not found or invalid.",
-      dropdownLabel: (title) => title, // τίτλοι επεισοδίων εμφανίζονται αυτούσιοι
+      dropdownLabel: (title) => title,
     },
     el: {
-      pagePrefix: "Quiz:",
+      title: "Quiz της Sol",
+      subtitle: "Quiz: SOLadventure #" + (current+1),
       loading: "Φόρτωση...",
       start: "Εκκίνηση Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -165,7 +176,7 @@ export default function QuizPlayer() {
       scoreText: (s, total) => `🎉 Είχες ${s} σωστές από ${total}!`,
       errLoadEpisodes: "Αποτυχία φόρτωσης επεισοδίων.",
       errLoadQuiz: "Το αρχείο quiz δεν βρέθηκε ή δεν είναι έγκυρο.",
-      dropdownLabel: (title) => title, // αν οι τίτλοι είναι αντικείμενα, θα αλλάξουμε παρακάτω
+      dropdownLabel: (title) => title,
     },
   };
 
@@ -184,7 +195,6 @@ export default function QuizPlayer() {
       .catch(() => {
         setError(t.errLoadEpisodes);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
@@ -227,13 +237,9 @@ export default function QuizPlayer() {
     if (selectedAnswer !== null) return;
 
     const correct = questions[current].answers[index].correct;
-
     setSelectedAnswer(index);
-    setIsAnswerCorrect(correct);
 
-    if (correct) {
-      setScore((prev) => prev + 1);
-    }
+    if (correct) setScore((prev) => prev + 1);
 
     setTimeout(() => {
       const nextIndex = current + 1;
@@ -249,28 +255,13 @@ export default function QuizPlayer() {
   return (
     <>
       <Helmet>
-        <title>
-          {t.pagePrefix}{" "}
-          {selectedEpisode
-            ? typeof selectedEpisode.title === "object"
-              ? selectedEpisode.title[language]
-              : selectedEpisode.title
-            : t.loading}{" "}
-          – SolTheCat
-        </title>
+        <title>{t.title} – SolTheCat</title>
         <link rel="canonical" href={t.quizUrl} />
       </Helmet>
 
       <PageContainer>
-        <SolBrand />
-        <Title>
-          {t.pagePrefix}{" "}
-          {selectedEpisode
-            ? typeof selectedEpisode.title === "object"
-              ? selectedEpisode.title[language]
-              : selectedEpisode.title
-            : t.loading}
-        </Title>
+        <Title>{t.title}</Title>
+        <Subtitle>{t.subtitle}</Subtitle>
 
         <Dropdown
           value={selectedId}
@@ -283,27 +274,18 @@ export default function QuizPlayer() {
           }}
         >
           {episodes.map((ep) => {
-            const epTitle =
-              typeof ep.title === "object" ? ep.title[language] : ep.title;
-            return (
-              <option key={ep.id} value={ep.id}>
-                {t.dropdownLabel(epTitle)}
-              </option>
-            );
+            const epTitle = typeof ep.title === "object" ? ep.title[language] : ep.title;
+            return <option key={ep.id} value={ep.id}>{t.dropdownLabel(epTitle)}</option>;
           })}
         </Dropdown>
 
-        <JourneyButton as="button" onClick={loadQuiz}>
-          {t.start}
-        </JourneyButton>
+        <StyledButton onClick={loadQuiz}>{t.start}</StyledButton>
 
         {error && <Message>{error}</Message>}
 
         {questions.length > 0 && !showResults && (
           <QuestionCard>
-            <QuestionText>
-              {questions[current].question[language]}
-            </QuestionText>
+            <QuestionText>{questions[current].question[language]}</QuestionText>
             {questions[current].answers.map((ansObj, i) => (
               <AnswerButton
                 key={i}
@@ -319,11 +301,7 @@ export default function QuizPlayer() {
           </QuestionCard>
         )}
 
-        {showResults && (
-          <ScoreText>
-            {t.scoreText(score, questions.length)}
-          </ScoreText>
-        )}
+        {showResults && <ScoreText>{t.scoreText(score, questions.length)}</ScoreText>}
 
         <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>

@@ -1,3 +1,5 @@
+// src/pages/Gallery.jsx
+
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -11,10 +13,23 @@ const PageContainer = styled.div`
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
   min-height: 100vh;
+  text-align: center;
 
   @media (max-width: 480px) {
     padding: 1.5rem 1rem;
   }
+`;
+
+const Title = styled.h1`
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+`;
+
+const Subheading = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin-bottom: 2rem;
 `;
 
 const Grid = styled.div`
@@ -44,7 +59,6 @@ const Tile = styled.div`
   overflow: hidden;
   cursor: zoom-in;
 
-  /* Fade-up animation */
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
@@ -54,7 +68,6 @@ const Tile = styled.div`
     transform: translateY(0);
   }
 
-  /* Scale on hover */
   &:hover {
     transform: scale(1.02);
   }
@@ -93,7 +106,6 @@ const Tile = styled.div`
     &:hover .caption-overlay {
       opacity: 1;
     }
-
     .caption-static {
       display: none;
     }
@@ -103,7 +115,6 @@ const Tile = styled.div`
     .caption-overlay {
       display: none;
     }
-
     .caption-static {
       display: block;
     }
@@ -126,7 +137,6 @@ export default function GalleryPage() {
       .catch((err) => console.error("Failed to load episodes:", err));
   }, []);
 
-  // Intersection Observer for fade-up
   useEffect(() => {
     const tiles = document.querySelectorAll('.gallery-tile');
     const observer = new IntersectionObserver((entries, obs) => {
@@ -143,37 +153,27 @@ export default function GalleryPage() {
   }, [episodes]);
 
   const slides = episodes.map((ep) => ({ src: `/${ep.image}` }));
-
   const cleanCaption = (caption) => caption.replace(/🐾/g, "").trim();
 
   return (
     <>
       <Helmet>
-        <title>
-          {language === "en" ? "Gallery – SolTheCat" : "Gallery – SolTheCat"}
-        </title>
+        <title>{language === "en" ? "Gallery – SolTheCat" : "Gallery – SolTheCat"}</title>
         <link rel="canonical" href="https://solthecat.com/gallery" />
       </Helmet>
 
       <PageContainer>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "1.5rem",
-          }}
-        >
-          <SolBrand />
-        </div>
+        <Title>{language === "el" ? "Φωτογραφίες της Sol" : "Sol’s Gallery"}</Title>
+        <Subheading>
+          {language === "el"
+            ? "Μια ματιά από κάθε της στάση ✨"
+            : "A glimpse from every royal stop ✨"}
+        </Subheading>
 
         <Grid>
           {episodes.map((ep, i) => {
-            const titleText =
-              typeof ep.title === "object" ? ep.title[language] : ep.title;
-            const captionText =
-              typeof ep.caption === "object"
-                ? ep.caption[language]
-                : ep.caption;
+            const titleText = typeof ep.title === "object" ? ep.title[language] : ep.title;
+            const captionText = typeof ep.caption === "object" ? ep.caption[language] : ep.caption;
             return (
               <Tile
                 key={ep.id}

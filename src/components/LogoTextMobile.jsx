@@ -3,12 +3,23 @@ import { Link } from "react-router-dom";
 export default function LogoTextMobile() {
   return (
     <Link to="/" className="hover:opacity-90 transition">
-      <h1
-        className="text-2xl font-bold tracking-tight bg-gradient-to-r from-[#f48fb1] via-[#ce93d8] to-[#9575cd] text-transparent bg-clip-text drop-shadow-sm"
-        style={{ fontFamily: '"Dancing Script", cursive' }}
+      <div
+        style={{
+          fontFamily: '"Dancing Script", cursive',
+          color: "#aa4dc8", // ή #9253a5 αν προτιμάς πιο βαθύ
+          fontWeight: 700,
+          fontSize: "2rem",
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.4rem",
+          lineHeight: 1.1,
+        }}
       >
-        SOLadventures <span className="inline-block -mt-1 ml-1">👑</span>
-      </h1>
+        <span>SOLadventures</span>
+        <span style={{ fontSize: "0.9em", transform: "translateY(-2px)" }}>
+          👑
+        </span>
+      </div>
     </Link>
   );
 }

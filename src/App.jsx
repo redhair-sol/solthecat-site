@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import React from "react";
 import Topbar from "./components/Topbar";
 import { Outlet } from "react-router-dom";
@@ -8,13 +6,13 @@ import "./index.css";
 function App() {
   return (
     <>
-      {/* 1. Header as sibling: LogoText + mobile menu + desktop nav */}
+      {/* Sticky Topbar with logo + navigation */}
       <Topbar />
 
-      {/* 2. Content wrapper (ροζ background) */}
-      <div className="w-full min-h-screen bg-[#fef8f8] flex flex-col items-center">
-        <div className="flex w-full max-w-screen-xl flex-grow bg-[#fce4ec]">
-          {/* Main content */}
+      {/* Main content wrapper */}
+      <div className="w-full min-h-screen bg-royal-bg flex flex-col items-center">
+        <div className="flex w-full max-w-screen-xl flex-grow bg-royal-pink/30">
+          {/* Routed page content */}
           <main className="flex-grow px-4 py-6 w-full">
             <Outlet />
           </main>

@@ -3,77 +3,64 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import SolBrand from "../components/SolBrand";
+import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-const PageContainer = styled.div`
+const PageContainer = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
   padding: 2rem;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  min-height: 100vh;
 
   @media (max-width: 480px) {
     padding: 1.5rem 1rem;
   }
 `;
 
-const Title = styled.h1`
-  font-size: 2rem;
-  color: #aa4dc8;
-  text-align: center;
+const TopSection = styled.div`
   margin-bottom: 2rem;
-  font-weight: bold;
-
-  @media (max-width: 480px) {
-    font-size: 1.6rem;
-  }
 `;
 
-const EpisodesWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+const Heading = styled.h1`
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
 `;
 
-const EpisodeCard = styled.div`
+const Subheading = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin: 0 auto;
   max-width: 600px;
-  width: 100%;
+  line-height: 1.5;
+`;
+
+const EpisodeCard = styled(motion.div)`
   background: #ffffffcc;
   padding: 1.5rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(170, 77, 200, 0.2);
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-  opacity: ${({ $isTeaser }) => ($isTeaser ? 0.6 : 1)};
-  filter: ${({ $isTeaser }) => ($isTeaser ? "grayscale(100%)" : "none")};
-
-  &:hover {
-    transform: ${({ $isTeaser }) => ($isTeaser ? "none" : "scale(1.03)")};
-  }
-
-  @media (max-width: 480px) {
-    padding: 1rem;
-  }
+  border-radius: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 `;
 
 const EpisodeImage = styled.img`
   width: 100%;
-  border-radius: 12px;
+  border-radius: 1rem;
   object-fit: cover;
   margin-bottom: 1rem;
-  filter: ${({ $isTeaser }) => ($isTeaser ? "grayscale(100%) brightness(0.95)" : "none")};
 `;
 
 const EpisodeTitle = styled.h2`
-  color: #6a1b9a;
-  font-weight: 600;
   font-size: 1.2rem;
+  color: #6a1b9a;
   margin-bottom: 0.5rem;
-
-  @media (max-width: 480px) {
-    font-size: 1.05rem;
-  }
 `;
 
 const EpisodeQuote = styled.p`
@@ -115,13 +102,13 @@ export default function Episodes() {
         const teaser = {
           id: 999,
           title: {
-            en: `SOLadventure #${nextNumber} – Coming Soon `,
-            el: `SOLadventure #${nextNumber} – Coming Soon `
+            en: `SOLadventure #${nextNumber} – Coming Soon`,
+            el: `SOLadventure #${nextNumber} – Έρχεται Σύντομα`
           },
           image: "episodes/coming-soon.png",
           caption: {
             en: "Stay tuned for the next purrfect stop 🐾🐾🐾",
-            el: "Μείνε συντονισμένος για το επόμενο τέλειο σταθμό 🐾🐾🐾"
+            el: "Μείνε συντονισμένος για τον επόμενο σταθμό 🐾🐾🐾"
           },
           visible: false,
           quote: "",
@@ -141,38 +128,46 @@ export default function Episodes() {
         <link rel="canonical" href="https://solthecat.com/episodes" />
       </Helmet>
 
-      <PageContainer>
-        <Title>
-          <SolBrand size="2.5rem" centered />
-        </Title>
+      <PageContainer
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <TopSection>
+          <Heading>
+            {language === "el" ? "Τα επεισόδια της Sol" : "Sol’s Episodes"}
+          </Heading>
+          <Subheading>
+            {language === "el"
+              ? "Ακολούθησε τα πατουσάκια της βασίλισσας 👑"
+              : "Follow the pawprints of royalty 👑"}
+          </Subheading>
+        </TopSection>
 
-        <EpisodesWrapper>
-          {episodes.map((ep) => (
-            <EpisodeCard key={ep.id} $isTeaser={!ep.visible}>
-              <EpisodeImage
-                src={`${import.meta.env.BASE_URL}${ep.image}`}
-                alt={typeof ep.title === "object" ? ep.title[language] : ep.title}
-                $isTeaser={!ep.visible}
-              />
-              <EpisodeTitle>
-                {typeof ep.title === "object" ? ep.title[language] : ep.title}
-              </EpisodeTitle>
-              {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
-              <EpisodeCaption>
-                {typeof ep.caption === "object" ? ep.caption[language] : ep.caption}
-              </EpisodeCaption>
+        {episodes.map((ep) => (
+          <EpisodeCard key={ep.id}>
+            <EpisodeImage
+              src={`${import.meta.env.BASE_URL}${ep.image}`}
+              alt={typeof ep.title === "object" ? ep.title[language] : ep.title}
+            />
+            <EpisodeTitle>
+              {typeof ep.title === "object" ? ep.title[language] : ep.title}
+            </EpisodeTitle>
+            {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
+            <EpisodeCaption>
+              {typeof ep.caption === "object" ? ep.caption[language] : ep.caption}
+            </EpisodeCaption>
 
-              {ep.story && ep.story[language] && (
-                <StoryContainer>
-                  <StoryTitle>
-                    {language === "en" ? "SOL’s Tale" : "Το Παραμύθι της SOL"}
-                  </StoryTitle>
-                  <p>{ep.story[language]}</p>
-                </StoryContainer>
-              )}
-            </EpisodeCard>
-          ))}
-        </EpisodesWrapper>
+            {ep.story && ep.story[language] && (
+              <StoryContainer>
+                <StoryTitle>
+                  {language === "en" ? "SOL’s Tale" : "Το Παραμύθι της SOL"}
+                </StoryTitle>
+                <p>{ep.story[language]}</p>
+              </StoryContainer>
+            )}
+          </EpisodeCard>
+        ))}
       </PageContainer>
     </>
   );

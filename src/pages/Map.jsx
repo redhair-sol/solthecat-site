@@ -12,8 +12,9 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import SolBrand from "../components/SolBrand";
-import { useLanguage } from "../context/LanguageContext.jsx"; // Σωστό import του Context
+import { motion } from "framer-motion";
+import styled from "styled-components";
+import { useLanguage } from "../context/LanguageContext.jsx";
 
 // Custom paw icon
 const pawIcon = new L.Icon({
@@ -22,7 +23,45 @@ const pawIcon = new L.Icon({
   iconAnchor: [20, 20],
 });
 
-// Component to update view dynamically
+const PageContainer = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 1rem;
+  }
+`;
+
+const MapWrapper = styled.div`
+  height: 80vh;
+  min-height: 500px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(170, 77, 200, 0.15);
+`;
+
+const Heading = styled.h1`
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+`;
+
+const Subheading = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin-bottom: 1.5rem;
+`;
+
 function SetViewOnLastLocation({ position, route }) {
   const map = useMap();
   useEffect(() => {
@@ -37,7 +76,7 @@ function SetViewOnLastLocation({ position, route }) {
 
 export default function SolsJourney() {
   const [episodes, setEpisodes] = useState([]);
-  const { language } = useLanguage(); // Παίρνουμε τη γλώσσα από το Context
+  const { language } = useLanguage();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -51,9 +90,7 @@ export default function SolsJourney() {
   }, []);
 
   const route = episodes.map((ep) => [ep.location.lat, ep.location.lng]);
-  const currentLocation =
-    route.length > 0 ? route[route.length - 1] : [45, 10];
-  // Αν το title είναι αντικείμενο { en, el }, επιλέγουμε ανάλογα
+  const currentLocation = route.length > 0 ? route[route.length - 1] : [45, 10];
   const currentTitle =
     episodes.length > 0
       ? typeof episodes[episodes.length - 1].title === "object"
@@ -72,45 +109,22 @@ export default function SolsJourney() {
         <link rel="canonical" href="https://solthecat.com/solsjourney" />
       </Helmet>
 
-      <div
-        style={{
-          padding: "2rem",
-          fontFamily: "'Poppins', sans-serif",
-          background: "linear-gradient(to bottom, #fff1f9, #fce4ec)",
-          minHeight: "100vh",
-          textAlign: "center",
-        }}
+      <PageContainer
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
       >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "1rem",
-          }}
-        >
-          <SolBrand />
-        </div>
-
-        <p style={{ fontSize: "1rem", color: "#6a1b9a", marginBottom: "1.5rem" }}>
-          📍{" "}
-          {language === "en"
+        <Heading>
+          {language === "en" ? "Sol’s Journey" : "Το Ταξίδι της Sol"}
+        </Heading>
+        <Subheading>
+          📍 {language === "en"
             ? `Current Location: ${currentTitle}`
             : `Τρέχουσα Τοποθεσία: ${currentTitle}`}
-        </p>
+        </Subheading>
 
         {route.length > 0 && (
-          <div
-            style={{
-              height: "80vh",
-              minHeight: "500px",
-              width: "100%",
-              maxWidth: "1000px",
-              margin: "0 auto",
-              borderRadius: "16px",
-              overflow: "hidden",
-              boxShadow: "0 4px 12px rgba(170, 77, 200, 0.15)",
-            }}
-          >
+          <MapWrapper>
             <MapContainer
               center={currentLocation}
               zoom={5}
@@ -174,9 +188,9 @@ export default function SolsJourney() {
                 <Polyline positions={route} color="#aa4dc8" weight={4} />
               )}
             </MapContainer>
-          </div>
+          </MapWrapper>
         )}
-      </div>
+      </PageContainer>
     </>
   );
 }
