@@ -4,6 +4,14 @@
 
 ---
 
+## [v4.3.1] - 2025-06-09
+
+### Added
+- New `ScrollToTop` component to reset scroll position when changing pages.
+
+### Fixed
+- Page scroll issue where newly navigated pages preserved scroll position from the previous one.
+
 ## [v4.2.1] - 2025-06-08
 
 ### Changed
