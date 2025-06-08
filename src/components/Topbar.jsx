@@ -23,8 +23,8 @@ export default function Topbar() {
             <Sidebar />
           </div>
 
-          {/* Logo */}
-          <div className="flex-1 flex justify-center">
+          {/* Logo: shifted right by 1rem on mobile */}
+          <div className="flex-1 flex justify-center pl-4 md:pl-0">
             <LogoText />
           </div>
 
@@ -40,24 +40,12 @@ export default function Topbar() {
             className="flex space-x-8 text-2xl font-medium"
             style={{ fontFamily: '"Dancing Script", cursive' }}
           >
-            <NavLink to="/" className={linkClasses}>
-              Home
-            </NavLink>
-            <NavLink to="/episodes" className={linkClasses}>
-              Episodes
-            </NavLink>
-            <NavLink to="/map" className={linkClasses}>
-              Map
-            </NavLink>
-            <NavLink to="/gallery" className={linkClasses}>
-              Gallery
-            </NavLink>
-            <NavLink to="/games" className={linkClasses}>
-              Games
-            </NavLink>
-            <NavLink to="/whoissol" className={linkClasses}>
-              About
-            </NavLink>
+            <NavLink to="/" className={linkClasses}>Home</NavLink>
+            <NavLink to="/episodes" className={linkClasses}>Episodes</NavLink>
+            <NavLink to="/map" className={linkClasses}>Map</NavLink>
+            <NavLink to="/gallery" className={linkClasses}>Gallery</NavLink>
+            <NavLink to="/games" className={linkClasses}>Games</NavLink>
+            <NavLink to="/whoissol" className={linkClasses}>About</NavLink>
           </div>
         </div>
       </nav>
