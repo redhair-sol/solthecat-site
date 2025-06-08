@@ -7,14 +7,18 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   padding: 2rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
+  background: #fce4ec;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-sizing: border-box;
 
   @media (max-width: 480px) {
     padding: 1.5rem 1rem;
@@ -37,8 +41,13 @@ const Subtitle = styled.p`
   margin-bottom: 2rem;
 `;
 
+const DropdownWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
 const Dropdown = styled.select`
-  margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2px solid #aa4dc8;
@@ -46,6 +55,7 @@ const Dropdown = styled.select`
   background: #fff;
   color: #6a1b9a;
   cursor: pointer;
+  max-width: 90vw;
 `;
 
 const StyledButton = styled.button`
@@ -156,7 +166,7 @@ export default function QuizPlayer() {
   const content = {
     en: {
       title: "Sol’s Quiz",
-      subtitle: "Quiz: SOLadventure #" + (current+1),
+      subtitle: "Quiz: SOLadventure #" + (current + 1),
       loading: "Loading...",
       start: "Start Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -168,7 +178,7 @@ export default function QuizPlayer() {
     },
     el: {
       title: "Quiz της Sol",
-      subtitle: "Quiz: SOLadventure #" + (current+1),
+      subtitle: "Quiz: SOLadventure #" + (current + 1),
       loading: "Φόρτωση...",
       start: "Εκκίνηση Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -263,21 +273,27 @@ export default function QuizPlayer() {
         <Title>{t.title}</Title>
         <Subtitle>{t.subtitle}</Subtitle>
 
-        <Dropdown
-          value={selectedId}
-          onChange={(e) => {
-            setSelectedId(e.target.value);
-            setQuestions([]);
-            setShowResults(false);
-            setError("");
-            setSelectedAnswer(null);
-          }}
-        >
-          {episodes.map((ep) => {
-            const epTitle = typeof ep.title === "object" ? ep.title[language] : ep.title;
-            return <option key={ep.id} value={ep.id}>{t.dropdownLabel(epTitle)}</option>;
-          })}
-        </Dropdown>
+        <DropdownWrapper>
+          <Dropdown
+            value={selectedId}
+            onChange={(e) => {
+              setSelectedId(e.target.value);
+              setQuestions([]);
+              setShowResults(false);
+              setError("");
+              setSelectedAnswer(null);
+            }}
+          >
+            {episodes.map((ep) => {
+              const epTitle = typeof ep.title === "object" ? ep.title[language] : ep.title;
+              return (
+                <option key={ep.id} value={ep.id}>
+                  {t.dropdownLabel(epTitle)}
+                </option>
+              );
+            })}
+          </Dropdown>
+        </DropdownWrapper>
 
         <StyledButton onClick={loadQuiz}>{t.start}</StyledButton>
 

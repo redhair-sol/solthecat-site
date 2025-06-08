@@ -4,6 +4,16 @@
 
 ---
 
+## [v4.2.1] - 2025-06-08
+
+### Changed
+- Improved mobile layout and visual centering across all games:
+  - `/games/puzzlemap`: puzzle grid and dropdown fully centered and responsive.
+  - `/games/cityquiz`: dropdown and quiz layout now aligned and mobile-friendly.
+  - `/games/pawprints`: (if needed) updated to match SolUI 2025 standards.
+- Eliminated horizontal scroll on small devices for all game pages.
+- Standardized dropdown styling with max-width and wrapper container.
+
 ##[4.2] - 2025-06-08
 
 

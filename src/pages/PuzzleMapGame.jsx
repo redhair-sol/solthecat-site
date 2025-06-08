@@ -7,11 +7,15 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
 const PageContainer = styled.div`
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   padding: 2rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
+  background: #fce4ec;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  box-sizing: border-box;
 
   @media (max-width: 480px) {
     padding: 1.5rem 1rem;
@@ -34,8 +38,13 @@ const Subtitle = styled.p`
   margin-bottom: 2rem;
 `;
 
-const Dropdown = styled.select`
+const DropdownWrapper = styled.div`
+  display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
+`;
+
+const Dropdown = styled.select`
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 2px solid #aa4dc8;
@@ -43,49 +52,39 @@ const Dropdown = styled.select`
   background: #fff;
   color: #6a1b9a;
   cursor: pointer;
+  max-width: 90vw;
+`;
+
+const PuzzleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4px;
-  justify-content: center;
-  margin: 0 auto;
-
-  @media (max-width: 480px) {
-    grid-template-columns: repeat(3, 80px);
-    grid-template-rows: repeat(3, 80px);
-  }
+  width: 100%;
+  max-width: 300px;
 `;
 
 const Tile = styled.div`
-  width: 100px;
-  height: 100px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
   background-image: url(${props => props.bgImage});
-  background-size: 300px 300px;
+  background-size: 300% 300%;
   background-position: ${props => props.bgPos};
   cursor: pointer;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: 480px) {
-    width: 80px;
-    height: 80px;
-    background-size: 240px 240px;
-  }
 `;
 
 const EmptyTile = styled.div`
-  width: 100px;
-  height: 100px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
   background: #fce4ec;
   border-radius: 6px;
-
-  @media (max-width: 480px) {
-    width: 80px;
-    height: 80px;
-  }
 `;
 
 const Message = styled.p`
@@ -218,26 +217,33 @@ export default function PuzzleMapGame() {
         <Title>{t.title}</Title>
         {selectedId && <Subtitle>{t.subtitle}</Subtitle>}
 
-        <Dropdown value={selectedId} onChange={e => setSelectedId(e.target.value)}>
-          {episodes.map(ep => {
-            const epTitle = typeof ep.title === 'object' ? ep.title[language] : ep.title;
-            return <option key={ep.id} value={ep.id}>{epTitle}</option>;
-          })}
-        </Dropdown>
+        <DropdownWrapper>
+          <Dropdown value={selectedId} onChange={e => setSelectedId(e.target.value)}>
+            {episodes.map(ep => {
+              const epTitle = typeof ep.title === 'object' ? ep.title[language] : ep.title;
+              return <option key={ep.id} value={ep.id}>{epTitle}</option>;
+            })}
+          </Dropdown>
+        </DropdownWrapper>
 
-        <Grid>
-          {tiles.map((tile, idx) => tile === 8 ?
-            <EmptyTile key={idx}/> :
-            <Tile
-              key={idx}
-              bgImage={imagePath}
-              bgPos={`-${(tile % 3) * 100}px -${Math.floor(tile/3) * 100}px`}
-              onClick={() => handleTileClick(idx)}
-            />
-          )}
-        </Grid>
+        <PuzzleWrapper>
+          <Grid>
+            {tiles.map((tile, idx) => tile === 8 ?
+              <EmptyTile key={idx}/> :
+              <Tile
+                key={idx}
+                bgImage={imagePath}
+                bgPos={`${(tile % 3) * -100 / 2}% ${Math.floor(tile / 3) * -100 / 2}%`}
+                onClick={() => handleTileClick(idx)}
+              />
+            )}
+          </Grid>
+        </PuzzleWrapper>
 
-        {isSolved && <><Message>{t.solvedMessage}</Message><StyledButton onClick={resetGame}>{t.playAgain}</StyledButton></>}
+        {isSolved && <>
+          <Message>{t.solvedMessage}</Message>
+          <StyledButton onClick={resetGame}>{t.playAgain}</StyledButton>
+        </>}
 
         <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>
