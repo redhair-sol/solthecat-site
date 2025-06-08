@@ -61,6 +61,12 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://solthecat.com/games/solsnap</loc>
+    <lastmod>2025-06-08</lastmod>
+    <priority>0.5</priority>
+  </url>
+
   <!-- Hidden / Optional Pages -->
   <url>
     <loc>https://solthecat.com/shop</loc>
