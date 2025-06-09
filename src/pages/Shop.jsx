@@ -114,8 +114,8 @@ export default function Shop() {
 
         <Subtitle>
           {language === "en"
-            ? "Every queen deserves treats 👑"
-            : "Η βασίλισσα θέλει τις λιχουδιές της 👑"}
+            ? "Every feline deserves treats"
+            : "Κάθε γάτα αξίζει λιχουδιές"}
         </Subtitle>
 
         <ProductGrid>

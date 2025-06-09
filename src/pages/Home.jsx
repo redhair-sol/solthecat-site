@@ -12,7 +12,7 @@ const PageContainer = styled(motion.div)`
   min-height: 80vh;
   padding: 2rem;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   background: linear-gradient(to bottom, #fff1f9, #fce4ec);
 
   @media (max-width: 480px) {
@@ -125,11 +125,14 @@ export default function Home() {
         </p>
 
         <p style={{
-          maxWidth: "700px",
+          maxWidth: "600px",
+          width: "100%",
           fontSize: "1rem",
           color: "#5b2b7b",
-          marginBottom: "2rem",
           lineHeight: "1.6",
+          margin: "0 auto 2rem auto",
+          padding: "0 1rem",
+          fontFamily: "'Segoe UI', 'Helvetica Neue', sans-serif",
         }}>
           {t.bio}
         </p>
