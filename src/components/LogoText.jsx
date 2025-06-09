@@ -1,11 +1,11 @@
-// src/components/LogoTextMobile.jsx
+// src/components/LogoText.jsx
 
 import React from "react";
 import { Link } from "react-router-dom";
 
 export default function LogoTextMobile() {
   return (
-    <div className="flex justify-center my-4">
+    <div className="flex justify-center py-2">
       <Link to="/" className="hover:opacity-90 transition">
         <h1
           className="text-4xl font-bold tracking-tight

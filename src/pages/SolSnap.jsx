@@ -39,9 +39,7 @@ const StartButton = styled.button`
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
   transition: transform 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-  }
+  &:hover { transform: scale(1.05); }
 `;
 
 const BackLink = styled(Link)`
@@ -50,9 +48,7 @@ const BackLink = styled(Link)`
   color: #d35ca3;
   text-decoration: none;
   font-weight: bold;
-  &:hover {
-    text-decoration: underline;
-  }
+  &:hover { text-decoration: underline; }
 `;
 
 const QuestionBox = styled.div`
@@ -91,9 +87,7 @@ const AnswerButton = styled.button`
   border-radius: 2rem;
   font-weight: bold;
   cursor: pointer;
-  &:hover {
-    background-color: #f48fb1;
-  }
+  &:hover { background-color: #f48fb1; }
 `;
 
 const Result = styled.p`
@@ -119,9 +113,11 @@ export default function SolSnap() {
   const [inSummary, setInSummary] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [timer, setTimer] = useState(10);
-  const [feedback, setFeedback] = useState(null);
+  const [feedback, setFeedback] = useState(null);       // "correct" ή "incorrect"
+  const [showReset, setShowReset] = useState(false);    // για το μήνυμα πριν reset
   const countdown = useRef(null);
 
+  // i18n strings
   const t = {
     en: {
       pageTitle: "SolSnap – SolTheCat",
@@ -132,10 +128,11 @@ export default function SolSnap() {
       timeLeft: (s) => `Time left: ${s}s`,
       correct: "Correct! 🎉",
       incorrect: "Wrong! ❌",
+      restart: "Restarting the game…",
       summaryPerfectUnlock: (title) =>
         `🎉 You got 3/3 in ${title}! You unlocked the next episode!`,
       summaryPerfectLast: (title) =>
-        `🎉 You got 3/3 in ${title}! Stay tuned for more!`,
+        `🎉 You got 3/3 in ${title}! Stay tuned for next episodes!`,
       summaryScore: (sc) => `You got ${sc}/3 correct.`,
       nextEp: "Next Episode",
       gameOver: (s, t) => `Game Over! You scored ${s} out of ${t}.`,
@@ -149,17 +146,31 @@ export default function SolSnap() {
       timeLeft: (s) => `Χρόνος: ${s}δλ.`,
       correct: "Σωστό! 🎉",
       incorrect: "Λάθος! ❌",
+      restart: "Επανεκκίνηση παιχνιδιού…",
       summaryPerfectUnlock: (title) =>
         `🎉 3/3 στο ${title}! Ξεκλείδωσες το επόμενο επεισόδιο!`,
       summaryPerfectLast: (title) =>
-        `🎉 3/3 στο ${title}! Μείνε συντονισμένος!`,
+        `🎉 3/3 στο ${title}! Μείνε συντονισμένος για τα επόμενα επεισόδια!`,
       summaryScore: (sc) => `Έκανες ${sc}/3 σωστές.`,
       nextEp: "Επόμενο Επεισόδιο",
       gameOver: (s, t) => `Τέλος παιχνιδιού! Σκορ: ${s} από ${t}`,
     },
   }[language];
 
-  // Start play: load episodes + first 3 questions
+  // helper για reset
+  const resetGame = () => {
+    setHasStarted(false);
+    setEpisodes([]);
+    setEpIndex(0);
+    setQuestions([]);
+    setQIndex(0);
+    setScore(0);
+    setEpScore(0);
+    setInSummary(false);
+    setShowResult(false);
+  };
+
+  // ξεκινάει το παιχνίδι
   const startGame = async () => {
     const res = await fetch(`${import.meta.env.BASE_URL}episodes.json`);
     const data = await res.json();
@@ -172,9 +183,9 @@ export default function SolSnap() {
     }
   };
 
-  // Timer hook
+  // timer hook
   useEffect(() => {
-    if (!hasStarted || inSummary || showResult) return;
+    if (!hasStarted || inSummary || feedback) return;
     setTimer(10);
     countdown.current = setInterval(() => {
       setTimer((t) => {
@@ -187,29 +198,40 @@ export default function SolSnap() {
       });
     }, 1000);
     return () => clearInterval(countdown.current);
-  }, [hasStarted, qIndex, inSummary]);
+  }, [hasStarted, qIndex, inSummary, feedback]);
 
-  // Answer logic
+  // λογική απάντησης
   const answer = (ans) => {
     clearInterval(countdown.current);
-    const corr = questions[qIndex].answer;
-    const ok = ans === corr;
-    setFeedback(ok ? "correct" : "incorrect");
-    if (ok) {
+    const correctAns = questions[qIndex].answer;
+    const isCorrect = ans === correctAns;
+    setFeedback(isCorrect ? "correct" : "incorrect");
+
+    if (isCorrect) {
       setScore((s) => s + 1);
       setEpScore((s) => s + 1);
+      setTimeout(() => {
+        setFeedback(null);
+        if (qIndex < 2) {
+          setQIndex((i) => i + 1);
+        } else {
+          setInSummary(true);
+        }
+      }, 800);
+    } else {
+      // λάθος → δείχνω μήνυμα, μετά reset
+      setTimeout(() => {
+        setFeedback(null);
+        setShowReset(true);
+        setTimeout(() => {
+          setShowReset(false);
+          resetGame();
+        }, 1200);
+      }, 800);
     }
-    setTimeout(() => {
-      setFeedback(null);
-      if (qIndex < 2) {
-        setQIndex((i) => i + 1);
-      } else {
-        setInSummary(true);
-      }
-    }, 800);
   };
 
-  // Next episode or finish
+  // επόμενο επεισόδιο
   const nextEpisode = () => {
     const next = epIndex + 1;
     if (next < episodes.length) {
@@ -234,8 +256,16 @@ export default function SolSnap() {
       </Helmet>
 
       <PageContainer>
-        {/* Before start */}
-        {!hasStarted && (
+        {/* --- Mήνυμα μετά από λάθος πριν το reset --- */}
+        {showReset && (
+          <>
+            <Title>{t.incorrect}</Title>
+            <Subtitle>{t.restart}</Subtitle>
+          </>
+        )}
+
+        {/* --- Πριν την έναρξη --- */}
+        {!hasStarted && !showReset && (
           <>
             <Title>{t.title}</Title>
             <Subtitle>{t.subtitle}</Subtitle>
@@ -244,8 +274,8 @@ export default function SolSnap() {
           </>
         )}
 
-        {/* In-game questions */}
-        {hasStarted && !inSummary && !showResult && questions.length > 0 && (
+        {/* --- Ερωτήσεις εντός παιχνιδιού --- */}
+        {hasStarted && !inSummary && !showResult && !showReset && questions.length > 0 && (
           <QuestionBox>
             <Subtitle>
               {(typeof episodes[epIndex].title === "object"
@@ -258,12 +288,16 @@ export default function SolSnap() {
               <AnswerButton onClick={() => answer(true)}>✔️</AnswerButton>
               <AnswerButton onClick={() => answer(false)}>❌</AnswerButton>
             </AnswerButtons>
-            {feedback && <Result correct={feedback === "correct"}>{t[feedback]}</Result>}
+            {feedback && (
+              <Result correct={feedback === "correct"}>
+                {t[feedback]}
+              </Result>
+            )}
           </QuestionBox>
         )}
 
-        {/* Summary after 3 questions */}
-        {inSummary && !showResult && (
+        {/* --- Σύνοψη μετά από 3 ερωτήσεις --- */}
+        {inSummary && !showResult && !showReset && (
           <>
             <Title>{t.title}</Title>
             <Subtitle>
@@ -281,12 +315,17 @@ export default function SolSnap() {
                     )
                 : t.summaryScore(epScore)}
             </Subtitle>
-            <NextButton onClick={nextEpisode}>{t.nextEp}</NextButton>
+
+            {epIndex < episodes.length - 1 ? (
+              <NextButton onClick={nextEpisode}>{t.nextEp}</NextButton>
+            ) : (
+              <BackLink to="/games">{t.back}</BackLink>
+            )}
           </>
         )}
 
-        {/* Final result */}
-        {showResult && (
+        {/* --- Τέλος παιχνιδιού --- */}
+        {showResult && !showReset && (
           <>
             <Title>{t.title}</Title>
             <Subtitle>{t.gameOver(score, episodes.length * 3)}</Subtitle>
