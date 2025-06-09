@@ -2,22 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ————————————————————————————— */
+/* General layout + font optimizations */
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
   background-color: #fffafc;
+  font-display: swap;
 }
+
+/* ————————————————————————————— */
+/* App structure */
 
 .app-container {
   display: flex;
   min-height: 100vh;
 }
 
+/* Sidebar (desktop only) */
 .sidebar {
   width: 180px;
   background-color: #f5c2d1;
   box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   flex-direction: column;
   gap: 1.5rem;
 }
@@ -32,18 +40,29 @@ body {
   color: #c35ca0;
 }
 
-/* Main content wrapper */
+/* ————————————————————————————— */
+/* Main content (optimized for mobile) */
+
 .main-content {
   flex-grow: 1;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .main-content {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 2rem 3rem;
+  }
 }
 
 /* ————————————————————————————— */
 /* Custom Tailwind components */
+
 @layer components {
   /* Active navigation link */
   .nav-link-active {
