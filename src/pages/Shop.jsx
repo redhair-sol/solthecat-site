@@ -23,10 +23,14 @@ const Subtitle = styled.p`
 
 const ProductGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 `;
 
 const ProductCard = styled.div`
@@ -72,11 +76,11 @@ const StatusLabel = styled.span`
   font-size: 0.8rem;
   border-radius: 999px;
   background-color: ${(props) =>
-    props.status === 'coming_soon'
-      ? '#ffe0b2'
-      : props.status === 'available'
-      ? '#c8e6c9'
-      : '#ef9a9a'};
+    props.status === "coming_soon"
+      ? "#ffe0b2"
+      : props.status === "available"
+      ? "#c8e6c9"
+      : "#ef9a9a"};
   color: #333;
 `;
 
@@ -102,7 +106,8 @@ export default function Shop() {
         <link rel="canonical" href="https://solthecat.com/shop" />
       </Helmet>
 
-      <PageContainer alignTop
+      <PageContainer
+        alignTop
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}

@@ -23,10 +23,14 @@ const Subheading = styled.p`
 
 const GamesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 `;
 
 const GameCard = styled.div`
@@ -106,7 +110,7 @@ export default function Games() {
         { id: 1, emoji: "🐾", name: "Μνήμη με Πατουσάκια", description: "Βρες τα ζευγάρια των πατουσακιών!", route: "/games/pawprints" },
         { id: 2, emoji: "🧩", name: "Παζλ Χάρτης της Sol", description: "Συγκέντρωσε πάλι τις πόλεις που επισκέφθηκε η Sol!", route: "/games/puzzlemap" },
         { id: 3, emoji: "🧠", name: "Quiz της Sol", description: "Δοκίμασε τις γνώσεις σου!", route: "/games/cityquiz" },
-        { id: 4, emoji: "📷", name: "SolSnap", description: "Γρήγορο τεστ: 3 ερωτήσεις ναι/όχι ανά επεισόδιο.", route: "/games/solsnap" },
+        { id: 4, emoji: "📷", name: "SolSnap", description: "Snap decision: 3 yes/no ερωτήσεις ανά επεισόδιο.", route: "/games/solsnap" },
       ],
     },
   };
@@ -120,7 +124,12 @@ export default function Games() {
         <link rel="canonical" href="https://solthecat.com/games" />
       </Helmet>
 
-      <PageContainer alignTop initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Heading>{t.heading}</Heading>
         <Subheading>{t.subtitle}</Subheading>
 
