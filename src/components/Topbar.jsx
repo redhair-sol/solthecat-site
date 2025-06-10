@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 export default function Topbar() {
@@ -20,13 +20,15 @@ export default function Topbar() {
             <Sidebar />
           </div>
 
-          {/* Center: Logo */}
+          {/* Center: Logo with Link */}
           <div className="absolute left-1/2 transform -translate-x-1/2">
-            <img
-              src="/icons/soladventures.png"
-              alt="SOLadventures"
-              className="!h-16 md:!h-12 object-contain"
-            />
+            <Link to="/">
+              <img
+                src="/icons/soladventures.png"
+                alt="SOLadventures"
+                className="!h-14 md:!h-11 object-contain"
+              />
+            </Link>
           </div>
 
           {/* Right: Spacer */}
