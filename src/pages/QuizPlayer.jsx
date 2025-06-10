@@ -147,7 +147,7 @@ export default function QuizPlayer() {
 
   const content = {
     en: {
-      title: "Sol’s Quiz",
+      title: "Sol’s Quiz 🧠",
       subtitle: `Quiz: SOLadventure #${current + 1}`,
       loading: "Loading...",
       start: "Start Quiz",
@@ -159,7 +159,7 @@ export default function QuizPlayer() {
       dropdownLabel: (title) => title,
     },
     el: {
-      title: "Quiz της Sol",
+      title: "Quiz της Sol 🧠",
       subtitle: `Quiz: SOLadventure #${current + 1}`,
       loading: "Φόρτωση...",
       start: "Εκκίνηση Quiz",

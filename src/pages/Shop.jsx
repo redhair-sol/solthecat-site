@@ -113,7 +113,7 @@ export default function Shop() {
         transition={{ duration: 0.8 }}
       >
         <Heading>
-          {language === "en" ? "Sol’s Shop" : "Το Κατάστημα της Sol"}
+          {language === "en" ? "Sol’s Shop 🛍️" : "Το Κατάστημα της Sol 🛍️"}
         </Heading>
 
         <Subtitle>

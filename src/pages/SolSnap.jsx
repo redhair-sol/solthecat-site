@@ -119,7 +119,7 @@ export default function SolSnap() {
   const t = {
     en: {
       pageTitle: "SolSnap – SolTheCat",
-      title: "Sol’s Snap Game",
+      title: "Sol’s Snap Game 📸",
       subtitle: "Ready to test your knowledge? Press Start to begin!",
       start: "Start Game",
       back: "← Back to games",
@@ -137,7 +137,7 @@ export default function SolSnap() {
     },
     el: {
       pageTitle: "SolSnap – SolTheCat",
-      title: "Το Snap Παιχνίδι της Sol",
+      title: "Το Snap Παιχνίδι της Sol 📸",
       subtitle: "Έτοιμος να δοκιμάσεις τις γνώσεις σου; Πάτα Έναρξη!",
       start: "Έναρξη Παιχνιδιού",
       back: "← Επιστροφή στα παιχνίδια",

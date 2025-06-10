@@ -100,7 +100,7 @@ export default function SolsJourney() {
         transition={{ duration: 0.8 }}
       >
         <Heading>
-          {language === "en" ? "Sol’s Journey" : "Το Ταξίδι της Sol"}
+          {language === "en" ? "Sol’s Journey 🗺️" : "Το Ταξίδι της Sol 🗺️"}
         </Heading>
         <Subheading>
           📍 {language === "en"

@@ -92,8 +92,8 @@ export default function Episodes() {
           },
           image: "episodes/coming-soon.png",
           caption: {
-            en: "Stay tuned for the next purrfect stop 🐾🐾🐾",
-            el: "Μείνε συντονισμένος για τον επόμενο σταθμό 🐾🐾🐾"
+            en: "Stay tuned for the next purrfect stop",
+            el: "Μείνε συντονισμένος για τον επόμενο σταθμό"
           },
           visible: false,
           quote: "",
@@ -120,12 +120,12 @@ export default function Episodes() {
       >
         <TopSection>
           <Heading>
-            {language === "el" ? "Τα επεισόδια της Sol" : "Sol’s Episodes"}
+            {language === "el" ? "Τα επεισόδια της Sol 🎥" : "Sol’s Episodes 🎥"}
           </Heading>
           <Subheading>
             {language === "el"
-              ? "Ακολούθησε τα πατουσάκια της βασίλισσας 👑"
-              : "Follow the pawprints of royalty 👑"}
+              ? "Ακολούθησε τα πατουσάκια της βασίλισσας"
+              : "Follow the pawprints of royalty"}
           </Subheading>
         </TopSection>
 

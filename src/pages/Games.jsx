@@ -91,8 +91,8 @@ export default function Games() {
   const content = {
     en: {
       pageTitle: "Sol’s Game Room – SolTheCat",
-      heading: "Sol’s Games",
-      subtitle: "Pick your royal challenge 👑",
+      heading: "Sol’s Games 🎮",
+      subtitle: "Pick your royal challenge",
       playText: "Play",
       games: [
         { id: 1, emoji: "🐾", name: "Pawprints Memory", description: "Find matching pawprint pairs!", route: "/games/pawprints" },
@@ -103,8 +103,8 @@ export default function Games() {
     },
     el: {
       pageTitle: "Αίθουσα Παιχνιδιών της Sol – SolTheCat",
-      heading: "Παιχνίδια της Sol",
-      subtitle: "Διάλεξε τη βασιλική σου πρόκληση 👑",
+      heading: "Παιχνίδια της Sol 🎮",
+      subtitle: "Διάλεξε τη βασιλική σου πρόκληση",
       playText: "Παίξε",
       games: [
         { id: 1, emoji: "🐾", name: "Μνήμη με Πατουσάκια", description: "Βρες τα ζευγάρια των πατουσακιών!", route: "/games/pawprints" },

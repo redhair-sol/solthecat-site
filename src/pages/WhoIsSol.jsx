@@ -83,7 +83,7 @@ export default function WhoIsSol() {
 
   const content = {
     en: {
-      title: "Sol’s Story",
+      title: "Sol’s Story ✒️",
       intro1: "Sol, known online as solthecat, wasn’t born to go unnoticed. She has the stillness that speaks louder than words, the grace of a queen without a crown, and the step of a cat who knows everything belongs to her. She’s the soul of SOLadventures — a storyteller with paws full of tales, wandering from Athens' marble to the pages of imagination… and then, to Instagram.",
       intro2: "Raised in Athens, Sol always felt the windows of her neighborhood were too small for her world. She began quietly — curiosity in her gaze, dignity in her posture. But somewhere between the Parthenon and her first reel, she became more than a cat. She became a symbol. She became Sol.",
       funFactsTitle: "✨ Fun Facts About Sol",
@@ -102,7 +102,7 @@ export default function WhoIsSol() {
       contact: "For press or collaborations: ",
     },
     el: {
-      title: "Η Ιστορία της Sol",
+      title: "Η Ιστορία της Sol ✒️",
       intro1: "Η Sol, γνωστή στο διαδίκτυο ως solthecat, δεν γεννήθηκε για να περάσει απαρατήρητη. Έχει το βλέμμα της σιωπής που σε καθηλώνει, τη χάρη μιας βασίλισσας που δε χρειάζεται στέμμα και το βήμα μιας γάτας που ξέρει πως όλα της ανήκουν. Είναι η ψυχή των SOLadventures — μια αφηγήτρια με πατούσες γεμάτες ιστορίες, που περιπλανιούνται από τα μάρμαρα της Αθήνας ώς τις σελίδες της φαντασίας… κι από εκεί, στο Instagram.",
       intro2: "Μεγαλωμένη στην Αθήνα, η Sol ένιωθε πάντα πως τα παράθυρα της γειτονιάς δεν της έφταναν. Ξεκίνησε σιωπηλά, με περιέργεια στα μάτια και αξιοπρέπεια στο βλέμμα. Κάπου όμως, ανάμεσα στον Παρθενώνα και το πρώτο της reel, έγινε κάτι παραπάνω από γάτα. Έγινε σύμβολο. Έγινε Sol.",
       funFactsTitle: "✨ Μικρά Μυστικά της Sol",

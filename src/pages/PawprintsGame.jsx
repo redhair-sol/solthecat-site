@@ -130,7 +130,7 @@ export default function PawprintsGame() {
   const content = {
     en: {
       pageTitle: "Match the Pawprints – SolTheCat",
-      heading: "Sol’s Pawprints Game",
+      heading: "Sol’s Pawprints Game 🐾",
       subtitle: "Find all the matching pairs before time runs out!",
       start: "Start Game",
       playAgain: "Play Again",
@@ -141,7 +141,7 @@ export default function PawprintsGame() {
     },
     el: {
       pageTitle: "Βρες τα Πατουσάκια – SolTheCat",
-      heading: "Sol’s Πατουσάκια Παιχνίδι",
+      heading: "Sol’s Πατουσάκια Παιχνίδι 🐾",
       subtitle: "Βρες όλα τα ζευγάρια πριν τελειώσει ο χρόνος!",
       start: "Έναρξη Παιχνιδιού",
       playAgain: "Παίξε Ξανά",

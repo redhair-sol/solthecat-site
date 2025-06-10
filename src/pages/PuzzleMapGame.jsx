@@ -113,7 +113,7 @@ export default function PuzzleMapGame() {
   const content = {
     en: {
       pageTitle: "Sol’s Puzzle Game – SolTheCat",
-      title: "Sol’s Puzzle Game",
+      title: "Sol’s Puzzle Game 🧩",
       subtitle: selectedId ? `Puzzle: SOLadventure #${selectedId}` : "",
       playAgain: "🔁 Play Again",
       solvedMessage: "🎉 Puzzle Solved!",
@@ -121,7 +121,7 @@ export default function PuzzleMapGame() {
     },
     el: {
       pageTitle: "Παζλ της Sol – SolTheCat",
-      title: "Παζλ της Sol",
+      title: "Παζλ της Sol 🧩",
       subtitle: selectedId ? `Παζλ: SOLadventure #${selectedId}` : "",
       playAgain: "🔁 Παίξε Ξανά",
       solvedMessage: "🎉 Λύθηκε το Παζλ!",

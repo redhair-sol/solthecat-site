@@ -154,11 +154,11 @@ export default function GalleryPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Title>{language === "el" ? "Φωτογραφίες της Sol" : "Sol’s Gallery"}</Title>
+        <Title>{language === "el" ? "Φωτογραφίες της Sol 🖼️" : "Sol’s Gallery 🖼️"}</Title>
         <Subheading>
           {language === "el"
-            ? "Μια ματιά από κάθε της στάση ✨"
-            : "A glimpse from every royal stop ✨"}
+            ? "Μια ματιά από κάθε της στάση"
+            : "A glimpse from every royal stop"}
         </Subheading>
 
         <Grid>
