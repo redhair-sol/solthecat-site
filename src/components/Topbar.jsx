@@ -11,32 +11,32 @@ export default function Topbar() {
     }`;
 
   return (
-    <header className="sticky top-0 z-50 w-full">
-      {/* Topbar */}
+    // Με position:fixed και πολύ υψηλό z-index
+    <header className="fixed top-0 left-0 z-[9999] w-full">
       <div className="w-full bg-[#fef8f8] py-1 shadow-sm relative">
         <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between relative h-14">
-          {/* Left: Hamburger */}
+          {/* Mobile hamburger */}
           <div className="md:hidden z-10">
             <Sidebar />
           </div>
 
-          {/* Center: Logo with Link */}
+          {/* Κεντραρισμένο logo */}
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <Link to="/">
               <img
                 src="/icons/soladventures.png"
                 alt="SOLadventures"
-                className="!h-14 md:!h-11 object-contain"
+                className="!h-14 md:!h-12 object-contain"
               />
             </Link>
           </div>
 
-          {/* Right: Spacer */}
+          {/* Spacer δεξιά (mobile) */}
           <div className="w-6 md:hidden" />
         </div>
       </div>
 
-      {/* Desktop Navigation */}
+      {/* Desktop navigation */}
       <nav className="hidden md:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-1">
         <div className="max-w-screen-xl mx-auto px-4">
           <div
