@@ -4,6 +4,27 @@
 
 ---
 
+## [5.0] - 2025-06-10
+
+### Added
+- **Global `PageContainer`** component with `alignTop` & `noBg` props for consistent layout and optional background removal  
+- Unified **styled-components** across all pages (Home, Episodes, Map, Gallery, Games, Quiz, SolSnap, WhoIsSol, Shop)  
+- Animation props (`initial`, `animate`, `transition`) moved into `PageContainer` for smooth page-load transitions  
+- Support for background **watermark** on About page via `Wrapper` & `Overlay` components
+
+### Changed
+- Replaced per-page containers with the single `PageContainer` to enforce typography (`Segoe UI, Helvetica Neue`) and responsive padding  
+- Migrated all inline styles and Tailwind utilities into styled-components  
+- Topbar refactored to use absolute centering, clickable logo, and unified mobile/desktop behavior  
+- Consistent font hierarchy (Poppins + Playfair Display for headlines) applied via `GlobalStyle`
+
+### Fixed
+- Quotation-escaping bug in `WhoIsSol.jsx` ("όχι") corrected using template literal  
+- Mobile logo sizing override issue resolved with Tailwind-only classes and `!important` utilities  
+- Gallery page vertical alignment fixed by adding `alignTop` to `PageContainer`  
+- Removed unused imports/components (e.g. `SolBrand` in Gallery)  
+
+
 ## [v4.3.1] - 2025-06-09
 
 ### Added

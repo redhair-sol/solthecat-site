@@ -5,75 +5,99 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
-
-const PageContainer = styled.div`
-  width:100%; max-width:100vw; overflow-x:hidden;
-  padding:2rem; background:#fce4ec; min-height:100vh;
-  font-family:'Poppins',sans-serif; text-align:center;
-  box-sizing:border-box;
-  @media(max-width:480px){padding:1.5rem 1rem;}
-`;
+import PageContainer from "../components/PageContainer.jsx";
 
 const Title = styled.h1`
-  font-size:2rem; color:#6a1b9a; margin-bottom:.5rem;
-  @media(max-width:480px){font-size:1.6rem;}
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+  @media (max-width: 480px) { font-size: 1.6rem; }
 `;
 
 const Subtitle = styled.p`
-  font-size:1rem; color:#5b2b7b; margin-bottom:2rem;
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin-bottom: 2rem;
 `;
 
 const DropdownWrapper = styled.div`
-  display:flex; justify-content:center; margin-bottom:1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 `;
 
 const Dropdown = styled.select`
-  padding:.5rem 1rem; font-size:1rem;
-  border:2px solid #aa4dc8; border-radius:8px;
-  background:#fff; color:#6a1b9a; cursor:pointer;
-  max-width:90vw;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #aa4dc8;
+  border-radius: 8px;
+  background: #fff;
+  color: #6a1b9a;
+  cursor: pointer;
+  max-width: 90vw;
 `;
 
 const PuzzleWrapper = styled.div`
-  display:flex; justify-content:center; width:100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;
 
 const Grid = styled.div`
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:4px;
-  width:100%; max-width:300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  width: 100%;
+  max-width: 300px;
 `;
 
 const Tile = styled.div`
-  width:100%; aspect-ratio:1/1; overflow:hidden;
-  border-radius:6px; box-shadow:0 2px 4px rgba(0,0,0,0.2);
-  cursor:pointer; position:relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  position: relative;
 `;
 
 const EmptyTile = styled.div`
-  width:100%; aspect-ratio:1/1;
-  background:#fce4ec; border-radius:6px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #fce4ec;
+  border-radius: 6px;
 `;
 
 const Message = styled.p`
-  margin-top:1.5rem; font-size:1.2rem;
-  color:#8e24aa; font-weight:bold;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #8e24aa;
+  font-weight: bold;
 `;
 
 const StyledButton = styled.button`
-  margin-top:1rem; padding:.8rem 1.5rem;
-  background:#c187d8; color:#fff; border:none;
-  border-radius:16px; font-weight:bold; font-family:'Poppins',sans-serif;
-  box-shadow:0 4px 10px rgba(170,77,200,0.3);
-  transition:transform .2s;
-  &:hover{transform:scale(1.05);}
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #c187d8;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(170,77,200,0.3);
+  transition: transform 0.2s;
+
+  &:hover { transform: scale(1.05); }
 `;
 
 const BackLink = styled(Link)`
-  display:block; margin-top:1.5rem;
-  color:#d35ca3; text-decoration:none; font-weight:bold;
-  &:hover{text-decoration:underline;}
+  display: block;
+  margin-top: 1.5rem;
+  color: #d35ca3;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover { text-decoration: underline; }
 `;
 
 const initialArr = [...Array(9).keys()];
@@ -83,7 +107,7 @@ export default function PuzzleMapGame() {
   const [selectedId, setSelectedId] = useState("");
   const [tiles, setTiles] = useState(initialArr);
   const [isSolved, setIsSolved] = useState(false);
-  const [slices, setSlices] = useState([]);           // <-- εδώ κρατάμε τα κομμάτια
+  const [slices, setSlices] = useState([]);
   const { language } = useLanguage();
 
   const content = {
@@ -106,21 +130,19 @@ export default function PuzzleMapGame() {
   };
   const t = content[language];
 
-  // Φόρτωση επεισοδίων
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then(r => r.json())
-      .then(data => {
-        const vis = data.filter(ep => ep.visible);
+      .then((r) => r.json())
+      .then((data) => {
+        const vis = data.filter((ep) => ep.visible);
         setEpisodes(vis);
         if (vis.length) setSelectedId(vis[0].id.toString());
       });
   }, []);
 
-  const selectedEpisode = episodes.find(ep => ep.id.toString() === selectedId);
+  const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
   const imagePath = selectedEpisode && `${import.meta.env.BASE_URL}${selectedEpisode.image}`;
 
-  // Κόβουμε την εικόνα σε 9 κομμάτια μόλις αλλάξει επεισόδιο
   useEffect(() => {
     if (!imagePath) return;
     const img = new Image();
@@ -144,7 +166,6 @@ export default function PuzzleMapGame() {
     };
   }, [imagePath]);
 
-  // Μόλις έχουμε 9 slices, κάνουμε reset το puzzle
   useEffect(() => {
     if (slices.length === 9) {
       let arr = [...initialArr];
@@ -169,14 +190,13 @@ export default function PuzzleMapGame() {
     }
   }, [slices]);
 
-  const handleClick = idx => {
+  const handleClick = (idx) => {
     if (isSolved) return;
     const emptyIdx = tiles.indexOf(8);
     if ([idx - 1, idx + 1, idx - 3, idx + 3].includes(emptyIdx)) {
       const c = [...tiles];
       [c[idx], c[emptyIdx]] = [c[emptyIdx], c[idx]];
       setTiles(c);
-      // Έλεγχος λύσης
       const sol = [...Array(9).keys()];
       const chk = [...c];
       const e = chk.indexOf(8);
@@ -195,15 +215,30 @@ export default function PuzzleMapGame() {
         <link rel="canonical" href="https://solthecat.com/games/puzzlemap" />
       </Helmet>
 
-      <PageContainer>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Title>{t.title}</Title>
         {selectedId && <Subtitle>{t.subtitle}</Subtitle>}
 
         <DropdownWrapper>
-          <Dropdown value={selectedId} onChange={e => setSelectedId(e.target.value)}>
-            {episodes.map(ep => {
-              const lbl = typeof ep.title === "object" ? ep.title[language] : ep.title;
-              return <option key={ep.id} value={ep.id}>{lbl}</option>;
+          <Dropdown
+            value={selectedId}
+            onChange={(e) => setSelectedId(e.target.value)}
+          >
+            {episodes.map((ep) => {
+              const lbl =
+                typeof ep.title === "object"
+                  ? ep.title[language]
+                  : ep.title;
+              return (
+                <option key={ep.id} value={ep.id}>
+                  {lbl}
+                </option>
+              );
             })}
           </Dropdown>
         </DropdownWrapper>
@@ -211,17 +246,17 @@ export default function PuzzleMapGame() {
         <PuzzleWrapper>
           <Grid>
             {tiles.map((tile, i) =>
-              tile === 8
-                ? <EmptyTile key={i} />
-                : (
-                  <Tile key={i} onClick={() => handleClick(i)}>
-                    <img
-                      src={slices[tile]}
-                      alt=""
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                    />
-                  </Tile>
-                )
+              tile === 8 ? (
+                <EmptyTile key={i} />
+              ) : (
+                <Tile key={i} onClick={() => handleClick(i)}>
+                  <img
+                    src={slices[tile]}
+                    alt=""
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                </Tile>
+              )
             )}
           </Grid>
         </PuzzleWrapper>

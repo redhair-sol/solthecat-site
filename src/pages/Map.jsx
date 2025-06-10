@@ -15,6 +15,7 @@ import "leaflet/dist/leaflet.css";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import PageContainer from "../components/PageContainer.jsx";
 
 // Custom paw icon
 const pawIcon = new L.Icon({
@@ -22,22 +23,6 @@ const pawIcon = new L.Icon({
   iconSize: [40, 40],
   iconAnchor: [20, 20],
 });
-
-const PageContainer = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-  padding: 2rem;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
-`;
 
 const MapWrapper = styled.div`
   height: 80vh;

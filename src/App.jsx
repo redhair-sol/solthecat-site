@@ -1,14 +1,15 @@
 import React from "react";
+import GlobalStyle from "./styles/GlobalStyle.js";   // ← εισαγωγή
 import Topbar from "./components/Topbar";
+import ScrollToTop from "./components/ScrollToTop";
 import { Outlet } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop"; // ✅ Εισαγωγή
 import "./index.css";
 
 function App() {
   return (
     <>
-      <ScrollToTop /> {/* ✅ Ενεργοποιεί scroll reset ανά αλλαγή σελίδας */}
-
+      <GlobalStyle />        {/* ← εφαρμόζουμε global styles σε όλο το app */}
+      <ScrollToTop />        {/* scroll reset */}
       <Topbar />
 
       <div className="w-full min-h-screen bg-royal-bg flex flex-col items-center">

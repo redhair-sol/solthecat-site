@@ -1,24 +1,11 @@
+// src/pages/Home.jsx
+
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "../context/LanguageContext.jsx";
-
-const PageContainer = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-  padding: 2rem;
-  text-align: center;
-  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
-`;
+import PageContainer from "../components/PageContainer.jsx";
 
 const JourneyButton = styled(Link)`
   padding: 0.8rem 1.5rem;

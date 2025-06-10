@@ -5,17 +5,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "../context/LanguageContext.jsx";
-
-const PageContainer = styled.div`
-  padding: 2rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+import PageContainer from "../components/PageContainer.jsx";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -39,7 +29,10 @@ const StartButton = styled.button`
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
   transition: transform 0.2s ease-in-out;
-  &:hover { transform: scale(1.05); }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const BackLink = styled(Link)`
@@ -48,7 +41,10 @@ const BackLink = styled(Link)`
   color: #d35ca3;
   text-decoration: none;
   font-weight: bold;
-  &:hover { text-decoration: underline; }
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const QuestionBox = styled.div`
@@ -87,7 +83,10 @@ const AnswerButton = styled.button`
   border-radius: 2rem;
   font-weight: bold;
   cursor: pointer;
-  &:hover { background-color: #f48fb1; }
+
+  &:hover {
+    background-color: #f48fb1;
+  }
 `;
 
 const Result = styled.p`
@@ -113,11 +112,10 @@ export default function SolSnap() {
   const [inSummary, setInSummary] = useState(false);
   const [showResult, setShowResult] = useState(false);
   const [timer, setTimer] = useState(10);
-  const [feedback, setFeedback] = useState(null);       // "correct" ή "incorrect"
-  const [showReset, setShowReset] = useState(false);    // για το μήνυμα πριν reset
+  const [feedback, setFeedback] = useState(null);
+  const [showReset, setShowReset] = useState(false);
   const countdown = useRef(null);
 
-  // i18n strings
   const t = {
     en: {
       pageTitle: "SolSnap – SolTheCat",
@@ -157,7 +155,6 @@ export default function SolSnap() {
     },
   }[language];
 
-  // helper για reset
   const resetGame = () => {
     setHasStarted(false);
     setEpisodes([]);
@@ -170,11 +167,12 @@ export default function SolSnap() {
     setShowResult(false);
   };
 
-  // ξεκινάει το παιχνίδι
   const startGame = async () => {
     const res = await fetch(`${import.meta.env.BASE_URL}episodes.json`);
     const data = await res.json();
-    const vis = data.filter((ep) => ep.visible && Array.isArray(ep.snapQuestions));
+    const vis = data.filter(
+      (ep) => ep.visible && Array.isArray(ep.snapQuestions)
+    );
     setEpisodes(vis);
     if (vis.length) {
       const first3 = shuffle(vis[0].snapQuestions).slice(0, 3);
@@ -183,7 +181,6 @@ export default function SolSnap() {
     }
   };
 
-  // timer hook
   useEffect(() => {
     if (!hasStarted || inSummary || feedback) return;
     setTimer(10);
@@ -200,7 +197,6 @@ export default function SolSnap() {
     return () => clearInterval(countdown.current);
   }, [hasStarted, qIndex, inSummary, feedback]);
 
-  // λογική απάντησης
   const answer = (ans) => {
     clearInterval(countdown.current);
     const correctAns = questions[qIndex].answer;
@@ -219,7 +215,6 @@ export default function SolSnap() {
         }
       }, 800);
     } else {
-      // λάθος → δείχνω μήνυμα, μετά reset
       setTimeout(() => {
         setFeedback(null);
         setShowReset(true);
@@ -231,7 +226,6 @@ export default function SolSnap() {
     }
   };
 
-  // επόμενο επεισόδιο
   const nextEpisode = () => {
     const next = epIndex + 1;
     if (next < episodes.length) {
@@ -255,8 +249,12 @@ export default function SolSnap() {
         <link rel="canonical" href="https://solthecat.com/games/solsnap" />
       </Helmet>
 
-      <PageContainer>
-        {/* --- Mήνυμα μετά από λάθος πριν το reset --- */}
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         {showReset && (
           <>
             <Title>{t.incorrect}</Title>
@@ -264,7 +262,6 @@ export default function SolSnap() {
           </>
         )}
 
-        {/* --- Πριν την έναρξη --- */}
         {!hasStarted && !showReset && (
           <>
             <Title>{t.title}</Title>
@@ -274,13 +271,12 @@ export default function SolSnap() {
           </>
         )}
 
-        {/* --- Ερωτήσεις εντός παιχνιδιού --- */}
         {hasStarted && !inSummary && !showResult && !showReset && questions.length > 0 && (
           <QuestionBox>
             <Subtitle>
-              {(typeof episodes[epIndex].title === "object"
+              {typeof episodes[epIndex].title === "object"
                 ? episodes[epIndex].title[language]
-                : episodes[epIndex].title) || ""}
+                : episodes[epIndex].title}
             </Subtitle>
             <Timer>{t.timeLeft(timer)}</Timer>
             <QuestionText>{questions[qIndex].question[language]}</QuestionText>
@@ -288,15 +284,10 @@ export default function SolSnap() {
               <AnswerButton onClick={() => answer(true)}>✔️</AnswerButton>
               <AnswerButton onClick={() => answer(false)}>❌</AnswerButton>
             </AnswerButtons>
-            {feedback && (
-              <Result correct={feedback === "correct"}>
-                {t[feedback]}
-              </Result>
-            )}
+            {feedback && <Result correct={feedback === "correct"}>{t[feedback]}</Result>}
           </QuestionBox>
         )}
 
-        {/* --- Σύνοψη μετά από 3 ερωτήσεις --- */}
         {inSummary && !showResult && !showReset && (
           <>
             <Title>{t.title}</Title>
@@ -324,7 +315,6 @@ export default function SolSnap() {
           </>
         )}
 
-        {/* --- Τέλος παιχνιδιού --- */}
         {showResult && !showReset && (
           <>
             <Title>{t.title}</Title>

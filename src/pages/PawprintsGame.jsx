@@ -6,18 +6,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import confetti from "canvas-confetti";
 import { useLanguage } from "../context/LanguageContext.jsx";
-
-const PageContainer = styled.div`
-  padding: 2rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
-`;
+import PageContainer from "../components/PageContainer.jsx";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -236,7 +225,12 @@ export default function PawprintsGame() {
         <link rel="canonical" href="https://solthecat.com/games/pawprints" />
       </Helmet>
 
-      <PageContainer>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Title>{t.heading}</Title>
         <Subtitle>{t.subtitle}</Subtitle>
 

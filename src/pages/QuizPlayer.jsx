@@ -5,25 +5,7 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
-
-const PageContainer = styled.div`
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  padding: 2rem;
-  background: #fce4ec;
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
-`;
+import PageContainer from "../components/PageContainer.jsx";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -45,6 +27,7 @@ const DropdownWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 1rem;
 `;
 
 const Dropdown = styled.select`
@@ -160,13 +143,12 @@ export default function QuizPlayer() {
   const [showResults, setShowResults] = useState(false);
   const [error, setError] = useState("");
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-
   const { language } = useLanguage();
 
   const content = {
     en: {
       title: "Sol’s Quiz",
-      subtitle: "Quiz: SOLadventure #" + (current + 1),
+      subtitle: `Quiz: SOLadventure #${current + 1}`,
       loading: "Loading...",
       start: "Start Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -178,7 +160,7 @@ export default function QuizPlayer() {
     },
     el: {
       title: "Quiz της Sol",
-      subtitle: "Quiz: SOLadventure #" + (current + 1),
+      subtitle: `Quiz: SOLadventure #${current + 1}`,
       loading: "Φόρτωση...",
       start: "Εκκίνηση Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -189,7 +171,6 @@ export default function QuizPlayer() {
       dropdownLabel: (title) => title,
     },
   };
-
   const t = content[language];
 
   useEffect(() => {
@@ -198,13 +179,9 @@ export default function QuizPlayer() {
       .then((data) => {
         const visible = data.filter((ep) => ep.visible);
         setEpisodes(visible);
-        if (visible.length > 0) {
-          setSelectedId(visible[0].id.toString());
-        }
+        if (visible.length > 0) setSelectedId(visible[0].id.toString());
       })
-      .catch(() => {
-        setError(t.errLoadEpisodes);
-      });
+      .catch(() => setError(t.errLoadEpisodes));
   }, []);
 
   const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
@@ -221,7 +198,6 @@ export default function QuizPlayer() {
 
   const loadQuiz = () => {
     if (!city) return;
-
     fetch(`${import.meta.env.BASE_URL}data/quiz/${city}.json`)
       .then((res) => {
         if (!res.ok) throw new Error();
@@ -245,10 +221,8 @@ export default function QuizPlayer() {
 
   const handleAnswer = (index) => {
     if (selectedAnswer !== null) return;
-
     const correct = questions[current].answers[index].correct;
     setSelectedAnswer(index);
-
     if (correct) setScore((prev) => prev + 1);
 
     setTimeout(() => {
@@ -269,7 +243,12 @@ export default function QuizPlayer() {
         <link rel="canonical" href={t.quizUrl} />
       </Helmet>
 
-      <PageContainer>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Title>{t.title}</Title>
         <Subtitle>{t.subtitle}</Subtitle>
 
@@ -285,7 +264,10 @@ export default function QuizPlayer() {
             }}
           >
             {episodes.map((ep) => {
-              const epTitle = typeof ep.title === "object" ? ep.title[language] : ep.title;
+              const epTitle =
+                typeof ep.title === "object"
+                  ? ep.title[language]
+                  : ep.title;
               return (
                 <option key={ep.id} value={ep.id}>
                   {t.dropdownLabel(epTitle)}

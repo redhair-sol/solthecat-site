@@ -4,30 +4,29 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import PageContainer from "../components/PageContainer.jsx";
 
-const PageContainer = styled.div`
-  padding: 2rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
+const Heading = styled.h1`
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 `;
 
 const Subtitle = styled.p`
   font-size: 1rem;
   color: #5b2b7b;
   margin-bottom: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const ProductGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 `;
 
 const ProductCard = styled.div`
@@ -36,7 +35,7 @@ const ProductCard = styled.div`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 1rem;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.03);
@@ -73,11 +72,11 @@ const StatusLabel = styled.span`
   font-size: 0.8rem;
   border-radius: 999px;
   background-color: ${(props) =>
-    props.status === "coming_soon"
-      ? "#ffe0b2"
-      : props.status === "available"
-      ? "#c8e6c9"
-      : "#ef9a9a"};
+    props.status === 'coming_soon'
+      ? '#ffe0b2'
+      : props.status === 'available'
+      ? '#c8e6c9'
+      : '#ef9a9a'};
   color: #333;
 `;
 
@@ -95,22 +94,22 @@ export default function Shop() {
   return (
     <>
       <Helmet>
-        <title>{language === "en" ? "SOLicious Delights – SolTheCat" : "Επιλογές SOL – SolTheCat"}</title>
+        <title>
+          {language === "en"
+            ? "SOLicious Delights – SolTheCat"
+            : "Επιλογές SOL – SolTheCat"}
+        </title>
         <link rel="canonical" href="https://solthecat.com/shop" />
       </Helmet>
 
-      <PageContainer>
-        <h1
-          style={{
-            fontSize: "2rem",
-            color: "#6a1b9a",
-            marginBottom: "0.5rem",
-            fontFamily: "'Poppins', sans-serif",
-            fontWeight: 400,
-          }}
-        >
+      <PageContainer alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Heading>
           {language === "en" ? "Sol’s Shop" : "Το Κατάστημα της Sol"}
-        </h1>
+        </Heading>
 
         <Subtitle>
           {language === "en"
@@ -126,7 +125,9 @@ export default function Shop() {
                 {language === "en" ? product.nameEN : product.nameGR}
               </ProductName>
               <ProductFlavor>
-                {language === "en" ? product.flavor.en : product.flavor.gr}
+                {language === "en"
+                  ? product.flavor.en
+                  : product.flavor.gr}
               </ProductFlavor>
               <ProductDescription>
                 {language === "en"
@@ -152,4 +153,4 @@ export default function Shop() {
       </PageContainer>
     </>
   );
-} 
+}

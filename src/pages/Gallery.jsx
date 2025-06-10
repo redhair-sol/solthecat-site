@@ -1,24 +1,10 @@
-// src/pages/Gallery.jsx
-
 import { useEffect, useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import SolBrand from "../components/SolBrand";
 import { useLanguage } from "../context/LanguageContext.jsx";
-
-const PageContainer = styled.div`
-  padding: 2rem;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  min-height: 100vh;
-  text-align: center;
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
-`;
+import PageContainer from "../components/PageContainer.jsx";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -158,11 +144,16 @@ export default function GalleryPage() {
   return (
     <>
       <Helmet>
-        <title>{language === "en" ? "Gallery – SolTheCat" : "Gallery – SolTheCat"}</title>
+        <title>Gallery – SolTheCat</title>
         <link rel="canonical" href="https://solthecat.com/gallery" />
       </Helmet>
 
-      <PageContainer>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Title>{language === "el" ? "Φωτογραφίες της Sol" : "Sol’s Gallery"}</Title>
         <Subheading>
           {language === "el"
@@ -173,7 +164,9 @@ export default function GalleryPage() {
         <Grid>
           {episodes.map((ep, i) => {
             const titleText = typeof ep.title === "object" ? ep.title[language] : ep.title;
-            const captionText = typeof ep.caption === "object" ? ep.caption[language] : ep.caption;
+            const captionText = typeof ep.caption === "object"
+              ? ep.caption[language]
+              : ep.caption;
             return (
               <Tile
                 key={ep.id}

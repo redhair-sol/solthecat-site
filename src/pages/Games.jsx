@@ -4,17 +4,21 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import PageContainer from "../components/PageContainer.jsx";
 
-const PageContainer = styled.div`
-  padding: 2rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  min-height: 100vh;
+const Heading = styled.h1`
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
+  font-weight: 400;
+`;
 
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
+const Subheading = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const GamesGrid = styled.div`
@@ -87,34 +91,10 @@ export default function Games() {
       subtitle: "Pick your royal challenge 👑",
       playText: "Play",
       games: [
-        {
-          id: 1,
-          emoji: "🐾",
-          name: "Pawprints Memory",
-          description: "Find matching pawprint pairs!",
-          route: "/games/pawprints",
-        },
-        {
-          id: 2,
-          emoji: "🧩",
-          name: "SOL's Puzzle Map",
-          description: "Rebuild the cities Sol has visited!",
-          route: "/games/puzzlemap",
-        },
-        {
-          id: 3,
-          emoji: "🧠",
-          name: "SOL Quiz",
-          description: "Test your knowledge!",
-          route: "/games/cityquiz",
-        },
-        {
-          id: 4,
-          emoji: "📷",
-          name: "SolSnap",
-          description: "Snap decision: 3 yes/no questions per episode.",
-          route: "/games/solsnap",
-        },
+        { id: 1, emoji: "🐾", name: "Pawprints Memory", description: "Find matching pawprint pairs!", route: "/games/pawprints" },
+        { id: 2, emoji: "🧩", name: "SOL's Puzzle Map", description: "Rebuild the cities Sol has visited!", route: "/games/puzzlemap" },
+        { id: 3, emoji: "🧠", name: "SOL Quiz", description: "Test your knowledge!", route: "/games/cityquiz" },
+        { id: 4, emoji: "📷", name: "SolSnap", description: "Snap decision: 3 yes/no questions per episode.", route: "/games/solsnap" },
       ],
     },
     el: {
@@ -123,34 +103,10 @@ export default function Games() {
       subtitle: "Διάλεξε τη βασιλική σου πρόκληση 👑",
       playText: "Παίξε",
       games: [
-        {
-          id: 1,
-          emoji: "🐾",
-          name: "Μνήμη με Πατουσάκια",
-          description: "Βρες τα ζευγάρια των πατουσακιών!",
-          route: "/games/pawprints",
-        },
-        {
-          id: 2,
-          emoji: "🧩",
-          name: "Παζλ Χάρτης της Sol",
-          description: "Συγκέντρωσε πάλι τις πόλεις που επισκέφθηκε η Sol!",
-          route: "/games/puzzlemap",
-        },
-        {
-          id: 3,
-          emoji: "🧠",
-          name: "Quiz της Sol",
-          description: "Δοκίμασε τις γνώσεις σου!",
-          route: "/games/cityquiz",
-        },
-        {
-          id: 4,
-          emoji: "📷",
-          name: "SolSnap",
-          description: "Γρήγορο τεστ: 3 ερωτήσεις ναι/όχι ανά επεισόδιο.",
-          route: "/games/solsnap",
-        },
+        { id: 1, emoji: "🐾", name: "Μνήμη με Πατουσάκια", description: "Βρες τα ζευγάρια των πατουσακιών!", route: "/games/pawprints" },
+        { id: 2, emoji: "🧩", name: "Παζλ Χάρτης της Sol", description: "Συγκέντρωσε πάλι τις πόλεις που επισκέφθηκε η Sol!", route: "/games/puzzlemap" },
+        { id: 3, emoji: "🧠", name: "Quiz της Sol", description: "Δοκίμασε τις γνώσεις σου!", route: "/games/cityquiz" },
+        { id: 4, emoji: "📷", name: "SolSnap", description: "Γρήγορο τεστ: 3 ερωτήσεις ναι/όχι ανά επεισόδιο.", route: "/games/solsnap" },
       ],
     },
   };
@@ -164,29 +120,9 @@ export default function Games() {
         <link rel="canonical" href="https://solthecat.com/games" />
       </Helmet>
 
-      <PageContainer>
-        <h1
-          style={{
-            fontSize: "2rem",
-            color: "#6a1b9a",
-            marginBottom: "0.5rem",
-            fontFamily: "'Poppins', sans-serif",
-            fontWeight: 400,
-          }}
-        >
-          {t.heading}
-        </h1>
-
-        <p
-          style={{
-            fontSize: "1rem",
-            color: "#5b2b7b",
-            marginBottom: "2rem",
-            fontFamily: "'Poppins', sans-serif",
-          }}
-        >
-          {t.subtitle}
-        </p>
+      <PageContainer alignTop initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <Heading>{t.heading}</Heading>
+        <Subheading>{t.subtitle}</Subheading>
 
         <GamesGrid>
           {t.games.map((game) => (
