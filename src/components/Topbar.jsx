@@ -25,8 +25,7 @@ export default function Topbar() {
             <img
               src="/icons/soladventures.png"
               alt="SOLadventures"
-              style={{ height: "50px" }} // <-- σταθερό ύψος παντού
-              className="object-contain"
+              className="!h-16 md:!h-12 object-contain"
             />
           </div>
 
