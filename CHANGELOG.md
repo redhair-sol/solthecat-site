@@ -4,6 +4,20 @@
 
 ---
 
+## [5.1] - 2025-06-11
+
+### Fixed / Tweaks
+- **Topbar.jsx**  
+  - Αφαιρέθηκε το μπλε underline από το active link  
+  - Ρυθμίστηκε το ύψος της topbar (μείωση `py`, `h-16` ? `h-10`, `img !h-16` ? `!h-10`)  
+  - Αφαιρέθηκε το `hover:underline` από τα NavLink  
+
+- **WhoIsSol.jsx**  
+  - Refactor: αντικατάσταση `Wrapper` + `PageContainer noBg` με `WatermarkedContainer` που
+    - κρατάει το global pink-gradient background  
+    - προσθέτει το watermark via `&::before` με `opacity:0.2` και `background-size:cover`  
+  - Όλα τα styled-components παρέμειναν ίδια, αλλά τώρα το watermark είναι διακριτικό πίσω από το περιεχόμενο  
+
 ## [5.0] - 2025-06-10
 
 ### Added

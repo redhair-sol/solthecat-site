@@ -4,17 +4,17 @@ import Sidebar from "./Sidebar";
 
 export default function Topbar() {
   const linkClasses = ({ isActive }) =>
-    `px-4 py-2 transition-colors ${
+    `px-4 py-2 no-underline transition-colors ${
       isActive
-        ? "text-purple-700 border-b-4 border-[#00aaff]"
-        : "text-black hover:text-pink-300 hover:underline"
+        ? "text-purple-700"
+        : "text-black hover:text-pink-300"
     }`;
 
   return (
     // Με position:fixed και πολύ υψηλό z-index
     <header className="fixed top-0 left-0 z-[9999] w-full">
       <div className="w-full bg-[#fef8f8] py-1 shadow-sm relative">
-        <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between relative h-14">
+        <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between relative h-16">
           {/* Mobile hamburger */}
           <div className="md:hidden z-10">
             <Sidebar />
@@ -26,7 +26,7 @@ export default function Topbar() {
               <img
                 src="/icons/soladventures.png"
                 alt="SOLadventures"
-                className="!h-14 md:!h-12 object-contain"
+                className="!h-16 md:!h-12 object-contain"
               />
             </Link>
           </div>
@@ -37,7 +37,7 @@ export default function Topbar() {
       </div>
 
       {/* Desktop navigation */}
-      <nav className="hidden md:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-1">
+      <nav className="hidden md:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-0.1">
         <div className="max-w-screen-xl mx-auto px-4">
           <div
             className="flex space-x-8 text-2xl font-medium"
