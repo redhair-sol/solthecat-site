@@ -117,11 +117,11 @@
     "caption": "She danced with Gaudí’s ghosts. 🐾🐾🐾",
     "image": "episodes/barcelona.png",
     "location": { "lat": 41.3851, "lng": 2.1734 },
-    "visible": false,
+    "visible": true,
     "city": "barcelona",
     "story": {
-      "en": "Barcelona unfolded beneath her paws like a living mosaic. She strolled through the Gothic alleys as if retracing forgotten paths, her gaze sharp, her presence quiet but absolute. On Gaudí’s tilework she paused — not in admiration, but in recognition. When a bold pigeon challenged her on La Rambla, she didn’t flinch. The city blinked first.",
-      "el": "Η Βαρκελώνη απλώθηκε κάτω από τις πατούσες της σαν ζωντανό μωσαϊκό. Περπάτησε στα γοτθικά σοκάκια σαν να ξαναβρήκε ένα χαμένο μονοπάτι — με βλέμμα διεισδυτικό και παρουσία αθόρυβη αλλά απόλυτη. Πάνω στα πλακάκια του Γκαουντί στάθηκε όχι με θαυμασμό, αλλά με αναγνώριση. Όταν ένα θρασύ περιστέρι τη διεκδίκησε στη Ράμπλα, δεν έδειξε αντίδραση. Η πόλη ήταν αυτή που ανοιγόκλεισε πρώτη τα μάτια της."
+      "en": "Barcelona unfolded beneath her paws like a living mosaic. She walked through the Gothic alleys as if rediscovering a forgotten path — calm, assured, undeniable. On Gaudí’s tilework she stood still, not in admiration, but in recognition. When a bold pigeon challenged her on La Rambla, she didn’t move. A subtle shift in her posture was enough — and it flew away, quietly. The city didn’t impress her. It bowed.",
+      "el": "Η Βαρκελώνη απλώθηκε κάτω από τις πατούσες της σαν ζωντανό μωσαϊκό. Περπάτησε στα γοτθικά σοκάκια σαν να ξαναβρήκε ένα χαμένο μονοπάτι — ήρεμη, σίγουρη, αδιαμφισβήτητη. Πάνω στα πλακάκια του Γκαουντί στάθηκε, όχι με θαυμασμό, αλλά με αναγνώριση. Όταν ένα θρασύ περιστέρι τη προκάλεσε στη Ράμπλα, δεν κουνήθηκε. Μια διακριτική μετατόπιση στο σώμα της αρκούσε — και εκείνο πέταξε μακριά, ήσυχα. Η πόλη δεν την εντυπωσίασε. Υποκλίθηκε."
     },
     "snapQuestions": [
       {
