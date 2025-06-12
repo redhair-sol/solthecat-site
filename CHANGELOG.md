@@ -4,6 +4,32 @@
 
 ---
 
+v5.2.0 - Smart Daily Quote Engine ?
+Date: 2025-06-12
+
+? New Features:
+Added smartQuotes.json with 30+ bilingual quotes
+- Supports: ISO date, weekday, season, and default
+
+Implemented intelligent quote selection logic in Home.jsx
+- Auto-selects based on current date, language, and context
+
+Added fallback quote when no match is found
+- "Sol is taking a royal pause today ??" / "Η Sol ξεκουράζεται βασιλικά σήμερα ??"
+
+?? UX / Copy Updates:
+Updated Greek label for quote box title from
+"Η Πατουσένια Στιγμή της Ημέρας" ? "Η Βασιλική Στιγμή της Ημέρας" for consistency with English
+
+Improved emoji handling in language switcher buttons with proper flag rendering (????, ????)
+
+?? Internal:
+Home.jsx: refactored useEffect logic to include:
+- date detection
+- weekday fallback
+- seasonal fallback
+- language-aware safety message
+
 ## [5.1] - 2025-06-11
 
 ### Fixed / Tweaks
