@@ -47,10 +47,10 @@ const ToggleButton = styled.button`
   text-align: center;
 `;
 
-// ✅ Helper για daily unique
-function getDailyMessage(mode, options) {
+// ✅ Helper με σωστό κλειδί (mode + language + ημερομηνία)
+function getDailyMessage(mode, language, options) {
   const today = new Date().toISOString().slice(0, 10);
-  const key = `solDaily-${mode}-${today}`;
+  const key = `solDaily-${mode}-${language}-${today}`;
   const cached = localStorage.getItem(key);
 
   if (cached) {
@@ -92,7 +92,7 @@ export default function Home() {
             data[season]?.[language] ||
             data["default"]?.[language] || [];
 
-        const selected = getDailyMessage(mode, options);
+        const selected = getDailyMessage(mode, language, options);
         setQuote(
           selected ||
             (language === "el"
