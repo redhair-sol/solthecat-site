@@ -33,15 +33,18 @@ const LanguageToggle = styled.div`
 
 const ToggleButton = styled.button`
   padding: 0.3rem 0.8rem;
+  min-width: 150px; /* ή 160px αν προτιμάς */
   border: 1px solid #ccc;
-  background-color: ${({ $active }) => ($active ? '#f8bbd0' : '#fff')};
+  background-color: ${({ $active }) => ($active ? "#f8bbd0" : "#fff")};
   border-radius: 8px;
   font-size: 0.85rem;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   font-weight: 500;
+  text-align: center;
 `;
 
 export default function Home() {
@@ -96,7 +99,7 @@ export default function Home() {
       gamesCTA: "Play the Games",
       instagram: "Follow on Instagram",
       toggleMood: "Mood of the Day",
-      toggleFortune: "Fortune of the Day",
+      toggleFortune: "Words of Sol",
     },
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
@@ -109,7 +112,7 @@ export default function Home() {
       gamesCTA: "Παίξε Παιχνίδια",
       instagram: "Ακολούθησε στο Instagram",
       toggleMood: "Διάθεση Ημέρας",
-      toggleFortune: "Μαντεψιά Ημέρας",
+      toggleFortune: "Λόγια της Sol",
     },
   };
 
