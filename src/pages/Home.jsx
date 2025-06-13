@@ -33,7 +33,7 @@ const LanguageToggle = styled.div`
 
 const ToggleButton = styled.button`
   padding: 0.3rem 0.8rem;
-  min-width: 150px; /* ή 160px αν προτιμάς */
+  min-width: 150px;
   border: 1px solid #ccc;
   background-color: ${({ $active }) => ($active ? "#f8bbd0" : "#fff")};
   border-radius: 8px;
@@ -47,6 +47,21 @@ const ToggleButton = styled.button`
   text-align: center;
 `;
 
+// ✅ Helper για daily unique
+function getDailyMessage(mode, options) {
+  const today = new Date().toISOString().slice(0, 10);
+  const key = `solDaily-${mode}-${today}`;
+  const cached = localStorage.getItem(key);
+
+  if (cached) {
+    return JSON.parse(cached);
+  } else {
+    const selected = options[Math.floor(Math.random() * options.length)];
+    localStorage.setItem(key, JSON.stringify(selected));
+    return selected;
+  }
+}
+
 export default function Home() {
   const { language, setLanguage } = useLanguage();
   const location = useLocation();
@@ -54,7 +69,7 @@ export default function Home() {
   const hasSearchParam = Boolean(queryParams.get("s"));
 
   const [quote, setQuote] = useState("");
-  const [mode, setMode] = useState("mood"); // 'mood' or 'fortune'
+  const [mode, setMode] = useState("mood");
 
   useEffect(() => {
     const today = new Date();
@@ -69,15 +84,15 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => {
         const options = mode === "fortune"
-	     ? (Array.isArray(data.fortunes)
-           ? data.fortunes.map(f => f[language]).filter(Boolean)
-           : [])
-        :data[isoDate]?.[language] ||
-        data[dayOfWeek]?.[language] ||
-        data[season]?.[language] ||
-        data["default"]?.[language] || [];
+          ? (Array.isArray(data.fortunes)
+              ? data.fortunes.map(f => f[language]).filter(Boolean)
+              : [])
+          : data[isoDate]?.[language] ||
+            data[dayOfWeek]?.[language] ||
+            data[season]?.[language] ||
+            data["default"]?.[language] || [];
 
-        const selected = options[Math.floor(Math.random() * options.length)];
+        const selected = getDailyMessage(mode, options);
         setQuote(
           selected ||
             (language === "el"
@@ -126,44 +141,191 @@ export default function Home() {
         {hasSearchParam && <meta name="robots" content="noindex, follow" />}
       </Helmet>
 
-      <PageContainer initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+      <PageContainer
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <LanguageToggle>
-          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}> 🇬🇧 English </ToggleButton>
-          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}> 🇬🇷 Ελληνικά </ToggleButton>
+          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
+            🇬🇧 English
+          </ToggleButton>
+          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}>
+            🇬🇷 Ελληνικά
+          </ToggleButton>
         </LanguageToggle>
 
-        <h2 style={{ fontSize: "1.8rem", fontWeight: 600, fontFamily: "'Playfair Display', serif", color: "#4a005f", fontStyle: "italic", margin: "1.2rem 0", textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)" }}>{t.title}</h2>
+        <h2
+          style={{
+            fontSize: "1.8rem",
+            fontWeight: 600,
+            fontFamily: "'Playfair Display', serif",
+            color: "#4a005f",
+            fontStyle: "italic",
+            margin: "1.2rem 0",
+            textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
+          }}
+        >
+          {t.title}
+        </h2>
 
-        <p style={{ fontSize: "1.3rem", fontStyle: "italic", fontWeight: 500, color: "#6a1b9a", marginBottom: "2rem" }}>{t.flair}</p>
+        <p
+          style={{
+            fontSize: "1.3rem",
+            fontStyle: "italic",
+            fontWeight: 500,
+            color: "#6a1b9a",
+            marginBottom: "2rem",
+          }}
+        >
+          {t.flair}
+        </p>
 
-        <p style={{ maxWidth: "600px", width: "100%", fontSize: "1rem", color: "#5b2b7b", lineHeight: "1.6", margin: "0 auto 2rem auto", padding: "0 1rem", fontFamily: "'Segoe UI', 'Helvetica Neue', sans-serif" }}>{t.bio}</p>
+        <p
+          style={{
+            maxWidth: "600px",
+            width: "100%",
+            fontSize: "1rem",
+            color: "#5b2b7b",
+            lineHeight: "1.6",
+            margin: "0 auto 2rem auto",
+            padding: "0 1rem",
+            fontFamily: "'Segoe UI', 'Helvetica Neue', sans-serif",
+          }}
+        >
+          {t.bio}
+        </p>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+        >
           <JourneyButton to="/episodes">{t.viewJourney}</JourneyButton>
         </motion.div>
 
         <LanguageToggle style={{ marginTop: "2.2rem" }}>
-          <ToggleButton onClick={() => setMode("mood")} $active={mode === "mood"}>{t.toggleMood}</ToggleButton>
-          <ToggleButton onClick={() => setMode("fortune")} $active={mode === "fortune"}>{t.toggleFortune}</ToggleButton>
+          <ToggleButton onClick={() => setMode("mood")} $active={mode === "mood"}>
+            {t.toggleMood}
+          </ToggleButton>
+          <ToggleButton onClick={() => setMode("fortune")} $active={mode === "fortune"}>
+            {t.toggleFortune}
+          </ToggleButton>
         </LanguageToggle>
 
         {quote && (
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} style={{ backgroundColor: "#fff3f8", padding: "1.2rem", borderRadius: "1.5rem", marginTop: "1.5rem", maxWidth: "600px", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)", textAlign: "center" }}>
-            <h3 style={{ fontSize: "1.3rem", fontWeight: "bold", color: "#8e24aa", marginBottom: "0.5rem" }}>{t.quoteTitle}</h3>
-            <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#6a1b9a" }}>{quote}</p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 }}
+            style={{
+              backgroundColor: "#fff3f8",
+              padding: "1.2rem",
+              borderRadius: "1.5rem",
+              marginTop: "1.5rem",
+              maxWidth: "600px",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+              textAlign: "center",
+            }}
+          >
+            <h3
+              style={{
+                fontSize: "1.3rem",
+                fontWeight: "bold",
+                color: "#8e24aa",
+                marginBottom: "0.5rem",
+              }}
+            >
+              {t.quoteTitle}
+            </h3>
+            <p
+              style={{
+                fontSize: "1rem",
+                fontStyle: "italic",
+                color: "#6a1b9a",
+              }}
+            >
+              {quote}
+            </p>
           </motion.div>
         )}
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }} style={{ backgroundColor: "#f8bbd0", padding: "1.5rem", borderRadius: "1.5rem", marginTop: "2.5rem", maxWidth: "600px", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)" }}>
-          <h3 style={{ fontSize: "1.5rem", fontWeight: "bold", color: "#6a1b9a", marginBottom: "0.8rem" }}>{t.gamesTitle}</h3>
-          <p style={{ fontSize: "1rem", color: "#4a005f", marginBottom: "1.2rem" }}>{t.gamesText}</p>
-          <Link to="/games" style={{ display: "inline-block", padding: "0.6rem 1.2rem", backgroundColor: "#c187d8", color: "#fff", borderRadius: "1rem", fontWeight: "bold", textDecoration: "none", transition: "transform 0.2s ease-in-out" }} onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")} onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1.0)")}>{t.gamesCTA}</Link>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2 }}
+          style={{
+            backgroundColor: "#f8bbd0",
+            padding: "1.5rem",
+            borderRadius: "1.5rem",
+            marginTop: "2.5rem",
+            maxWidth: "600px",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+          }}
+        >
+          <h3
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bold",
+              color: "#6a1b9a",
+              marginBottom: "0.8rem",
+            }}
+          >
+            {t.gamesTitle}
+          </h3>
+          <p
+            style={{
+              fontSize: "1rem",
+              color: "#4a005f",
+              marginBottom: "1.2rem",
+            }}
+          >
+            {t.gamesText}
+          </p>
+          <Link
+            to="/games"
+            style={{
+              display: "inline-block",
+              padding: "0.6rem 1.2rem",
+              backgroundColor: "#c187d8",
+              color: "#fff",
+              borderRadius: "1rem",
+              fontWeight: "bold",
+              textDecoration: "none",
+              transition: "transform 0.2s ease-in-out",
+            }}
+            onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1.0)")}
+          >
+            {t.gamesCTA}
+          </Link>
         </motion.div>
 
-        <a href="https://www.instagram.com/solthecat01/" target="_blank" rel="noopener noreferrer" style={{ color: "#c187d8", textDecoration: "none", display: "inline-flex", alignItems: "center", fontWeight: "normal", fontSize: "0.95rem", marginTop: "1.8rem" }}>
+        <a
+          href="https://www.instagram.com/solthecat01/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "#c187d8",
+            textDecoration: "none",
+            display: "inline-flex",
+            alignItems: "center",
+            fontWeight: "normal",
+            fontSize: "0.95rem",
+            marginTop: "1.8rem",
+          }}
+        >
           <picture style={{ display: "inline-block", marginRight: "0.4rem" }}>
             <source srcSet="/icons/instagram-icon.webp" type="image/webp" />
-            <img src="/icons/instagram-icon.png" alt="Instagram" style={{ width: "20px", height: "20px", verticalAlign: "middle" }} />
+            <img
+              src="/icons/instagram-icon.png"
+              alt="Instagram"
+              style={{
+                width: "20px",
+                height: "20px",
+                verticalAlign: "middle",
+              }}
+            />
           </picture>
           {t.instagram}
         </a>
