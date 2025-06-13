@@ -27,7 +27,8 @@ const GamesGrid = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   grid-template-columns: 1fr;
-
+  margin-bottom: 2rem;
+  
   @media (min-width: 640px) {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }

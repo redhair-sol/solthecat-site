@@ -26,7 +26,8 @@ const Grid = styled.div`
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-
+  margin-bottom: 2rem;
+  
   @media (max-width: 480px) {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;

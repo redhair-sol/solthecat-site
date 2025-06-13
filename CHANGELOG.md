@@ -4,6 +4,16 @@
 
 ---
 
+## [5.4.0] - 2025-06-13
+
+### Updated
+- Unified page layout spacing across all main sections
+- Increased `min-height` of `PageContainer` to `90vh` for consistent vertical alignment
+- Added `margin-bottom: 2rem` to `Gallery` and `Games` grids to ensure proper bottom spacing
+
+### Improved
+- Mobile padding consistency for PageContainer
+
 ## [v5.3.0] - 2025-06-13
 
 ### Added
