@@ -1,5 +1,3 @@
-// src/pages/Home.jsx
-
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styled from "styled-components";
@@ -30,6 +28,7 @@ const LanguageToggle = styled.div`
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1.2rem;
+  flex-wrap: wrap;
 `;
 
 const ToggleButton = styled.button`
@@ -52,6 +51,7 @@ export default function Home() {
   const hasSearchParam = Boolean(queryParams.get("s"));
 
   const [quote, setQuote] = useState("");
+  const [mode, setMode] = useState("mood"); // 'mood' or 'fortune'
 
   useEffect(() => {
     const today = new Date();
@@ -60,14 +60,19 @@ export default function Home() {
     const month = today.getMonth();
     const season = ["winter", "winter", "spring", "spring", "spring", "summer", "summer", "summer", "autumn", "autumn", "autumn", "winter"][month];
 
-    fetch("/data/smartQuotes.json")
+    const file = mode === "fortune" ? "/data/smartFortunes.json" : "/data/smartQuotes.json";
+
+    fetch(file)
       .then((res) => res.json())
       .then((data) => {
-        const options =
-          data[isoDate]?.[language] ||
-          data[dayOfWeek]?.[language] ||
-          data[season]?.[language] ||
-          data["default"]?.[language] || [];
+        const options = mode === "fortune"
+	     ? (Array.isArray(data.fortunes)
+           ? data.fortunes.map(f => f[language]).filter(Boolean)
+           : [])
+        :data[isoDate]?.[language] ||
+        data[dayOfWeek]?.[language] ||
+        data[season]?.[language] ||
+        data["default"]?.[language] || [];
 
         const selected = options[Math.floor(Math.random() * options.length)];
         setQuote(
@@ -77,7 +82,7 @@ export default function Home() {
               : "Sol is taking a royal pause today. 🐾")
         );
       });
-  }, [language]);
+  }, [language, mode]);
 
   const content = {
     en: {
@@ -85,22 +90,26 @@ export default function Home() {
       flair: "Fluffy. Fierce. Fabulous. 🐾🐾🐾",
       bio: `Welcome to the official home of solthecat — the feline queen behind the SOLadventures series. From Athens to Paris and beyond, Sol brings elegance, attitude, and a touch of royal paw-power to every destination. Follow her travels, her tales, and her timeless stare.`,
       viewJourney: "View the Journey",
-      quoteTitle: "Royal Moment of the Day",
+      quoteTitle: mode === "fortune" ? "Royal Fortune of the Day" : "Royal Mood of the Day",
       gamesTitle: "🎮 Ready to play with Sol?",
       gamesText: "Explore mini-games inspired by her royal travels — from memory cards to paw-powered puzzles!",
       gamesCTA: "Play the Games",
       instagram: "Follow on Instagram",
+      toggleMood: "Mood of the Day",
+      toggleFortune: "Fortune of the Day",
     },
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
       flair: "Χνουδωτή. Δυναμική. Ακαταμάχητη. 🐾🐾🐾",
       bio: `Καλωσήρθες στο επίσημο σπίτι της solthecat — της βασίλισσας με πατούσες πίσω από τη σειρά SOLadventures. Από την Αθήνα ως το Παρίσι και πέρα, η Sol φέρνει κομψότητα, ύφος και βασιλική γοητεία σε κάθε της στάση.`,
       viewJourney: "Δες το Ταξίδι",
-      quoteTitle: "Η Πατουσένια Στιγμή της Ημέρας",
+      quoteTitle: mode === "fortune" ? "Η Πατουσένια Μαντεψιά της Ημέρας" : "Η Πατουσένια Στιγμή της Ημέρας",
       gamesTitle: "🎮 Παίξε με τη Sol!",
       gamesText: "Ανακάλυψε mini-games εμπνευσμένα από τα βασιλικά της ταξίδια — memory cards, παζλ και άλλα!",
       gamesCTA: "Παίξε Παιχνίδια",
       instagram: "Ακολούθησε στο Instagram",
+      toggleMood: "Διάθεση Ημέρας",
+      toggleFortune: "Μαντεψιά Ημέρας",
     },
   };
 
@@ -116,8 +125,8 @@ export default function Home() {
 
       <PageContainer initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <LanguageToggle>
-          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}> {"🇬🇧"} English </ToggleButton>
-          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}> {"🇬🇷"} Ελληνικά </ToggleButton>
+          <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}> 🇬🇧 English </ToggleButton>
+          <ToggleButton onClick={() => setLanguage("el")} $active={language === "el"}> 🇬🇷 Ελληνικά </ToggleButton>
         </LanguageToggle>
 
         <h2 style={{ fontSize: "1.8rem", fontWeight: 600, fontFamily: "'Playfair Display', serif", color: "#4a005f", fontStyle: "italic", margin: "1.2rem 0", textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)" }}>{t.title}</h2>
@@ -130,8 +139,13 @@ export default function Home() {
           <JourneyButton to="/episodes">{t.viewJourney}</JourneyButton>
         </motion.div>
 
+        <LanguageToggle style={{ marginTop: "2.2rem" }}>
+          <ToggleButton onClick={() => setMode("mood")} $active={mode === "mood"}>{t.toggleMood}</ToggleButton>
+          <ToggleButton onClick={() => setMode("fortune")} $active={mode === "fortune"}>{t.toggleFortune}</ToggleButton>
+        </LanguageToggle>
+
         {quote && (
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} style={{ backgroundColor: "#fff3f8", padding: "1.2rem", borderRadius: "1.5rem", marginTop: "2.5rem", maxWidth: "600px", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)", textAlign: "center" }}>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} style={{ backgroundColor: "#fff3f8", padding: "1.2rem", borderRadius: "1.5rem", marginTop: "1.5rem", maxWidth: "600px", boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)", textAlign: "center" }}>
             <h3 style={{ fontSize: "1.3rem", fontWeight: "bold", color: "#8e24aa", marginBottom: "0.5rem" }}>{t.quoteTitle}</h3>
             <p style={{ fontSize: "1rem", fontStyle: "italic", color: "#6a1b9a" }}>{quote}</p>
           </motion.div>

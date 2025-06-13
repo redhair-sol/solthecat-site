@@ -4,6 +4,20 @@
 
 ---
 
+## [v5.3.0] - 2025-06-13
+
+### Added
+- Toggle selector on Home page between "Mood of the Day" and "Fortune of the Day"
+- `/data/smartFortunes.json` with 100 bilingual fortunes for Sol
+
+### Fixed
+- Proper handling of fortune file when deployed (404 issue resolved)
+- Fallback text if no mood/fortune is found
+
+### Changed
+- Refactored `Home.jsx` to support dynamic quote loading based on toggle selection
+
+
 v5.2.0 - Smart Daily Quote Engine ?
 Date: 2025-06-12
 
