@@ -80,7 +80,7 @@ export default function Home() {
       unlocked: "🎉 New Badge Unlocked Today!"
     },
     el: {
-      streak: "Σειρά Ημερών",
+      streak: "Σερί",
       next: "Επόμενο",
       unlocked: "🎉 Νέο Badge Ξεκλειδώθηκε Σήμερα!"
     }
