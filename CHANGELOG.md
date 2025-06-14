@@ -4,6 +4,27 @@
 
 ---
 
+## [5.6.0] - 2024-06-14
+
+### Added
+- ?? Προστέθηκε το **Streak Badges** feature με παρακολούθηση συνεχόμενων επισκέψεων.
+- Κάθε badge υποστηρίζει πλήρη διγλωσσία (`name` & `description`).
+- Το block εμφανίζεται μόνο αν έχει unlocked streak.
+- Η επιλογή mood/fortune cache-άρει το daily message ανά mode, language και ημερομηνία.
+
+### Changed
+- Minor cleanups στο Home για το νέο block (χωρίς αλλαγές σε υπάρχον content).
+- Δεν πειράχτηκε η λογική των games, journey ή Instagram.
+
+### Fixed
+- Κανένα reported bug δεν υπήρχε σε αυτή την έκδοση.
+
+### Compatibility
+- ? Full backward compatibility.
+- ? Δεν απαιτεί schema migration ή data migration.
+- ? Fully compatible με version 5.x.
+
+
 ## [5.4.0] - 2025-06-13
 
 ### Updated

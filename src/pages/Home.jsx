@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import useStreakBadges from "../hooks/useStreakBadges";
 
 const JourneyButton = styled(Link)`
   padding: 0.8rem 1.5rem;
@@ -47,7 +48,6 @@ const ToggleButton = styled.button`
   text-align: center;
 `;
 
-// ✅ Helper με σωστό κλειδί (mode + language + ημερομηνία)
 function getDailyMessage(mode, language, options) {
   const today = new Date().toISOString().slice(0, 10);
   const key = `solDaily-${mode}-${language}-${today}`;
@@ -70,6 +70,22 @@ export default function Home() {
 
   const [quote, setQuote] = useState("");
   const [mode, setMode] = useState("mood");
+
+  const { streak, currentBadge, nextBadge, unlockedToday } = useStreakBadges();
+
+  const badgeContent = {
+    en: {
+      streak: "Streak",
+      next: "Next",
+      unlocked: "🎉 New Badge Unlocked Today!"
+    },
+    el: {
+      streak: "Σειρά Ημερών",
+      next: "Επόμενο",
+      unlocked: "🎉 Νέο Badge Ξεκλειδώθηκε Σήμερα!"
+    }
+  };
+  const b = badgeContent[language];
 
   useEffect(() => {
     const today = new Date();
@@ -114,7 +130,7 @@ export default function Home() {
       gamesCTA: "Play the Games",
       instagram: "Follow on Instagram",
       toggleMood: "Mood of the Day",
-      toggleFortune: "Words of Sol",
+      toggleFortune: "Words of Sol"
     },
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
@@ -127,7 +143,7 @@ export default function Home() {
       gamesCTA: "Παίξε Παιχνίδια",
       instagram: "Ακολούθησε στο Instagram",
       toggleMood: "Διάθεση Ημέρας",
-      toggleFortune: "Λόγια της Sol",
+      toggleFortune: "Λόγια της Sol"
     },
   };
 
@@ -247,6 +263,43 @@ export default function Home() {
             >
               {quote}
             </p>
+          </motion.div>
+        )}
+
+        {currentBadge && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.4 }}
+            style={{
+              marginTop: "1.5rem",
+              backgroundColor: "#fff3f8",
+              padding: "1rem",
+              borderRadius: "1.5rem",
+              maxWidth: "600px",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+              textAlign: "center",
+            }}
+          >
+            <p style={{ fontSize: "1.1rem", fontWeight: "bold", color: "#8e24aa" }}>
+              {currentBadge.emoji} {currentBadge.name[language]}
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "#6a1b9a" }}>
+              {currentBadge.description[language]}
+            </p>
+            <p style={{ fontSize: "0.9rem", color: "#5b2b7b", marginTop: "0.5rem" }}>
+              {b.streak}: {streak} day{streak > 1 ? "s" : ""}
+            </p>
+            {nextBadge && (
+              <p style={{ fontSize: "0.9rem", color: "#5b2b7b", marginTop: "0.3rem" }}>
+                {b.next}: {nextBadge.emoji} {nextBadge.name[language]} in {nextBadge.day - streak} days
+              </p>
+            )}
+            {unlockedToday && (
+              <p style={{ fontSize: "0.9rem", color: "#4a005f", marginTop: "0.5rem" }}>
+                {b.unlocked}
+              </p>
+            )}
           </motion.div>
         )}
 

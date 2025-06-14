@@ -1,0 +1,136 @@
+{
+  "badges": [
+    {
+      "day": 1,
+      "emoji": "🐾",
+      "name": {
+        "en": "Royal Initiate",
+        "el": "Royal Initiate"
+      },
+      "description": {
+        "en": "Your first paw step on the royal path.",
+        "el": "Η πρώτη πατουσένια μέρα σου στο βασιλικό μονοπάτι."
+      }
+    },
+    {
+      "day": 2,
+      "emoji": "👑",
+      "name": {
+        "en": "Queen’s Acquaintance",
+        "el": "Queen’s Acquaintance"
+      },
+      "description": {
+        "en": "Sol is starting to notice you — a fine start!",
+        "el": "Η Sol αρχίζει να σε προσέχει — καλά ξεκίνησες!"
+      }
+    },
+    {
+      "day": 3,
+      "emoji": "🎀",
+      "name": {
+        "en": "Trusted Paw",
+        "el": "Trusted Paw"
+      },
+      "description": {
+        "en": "The Queen recognizes your loyalty — keep going!",
+        "el": "Η Βασίλισσα αναγνωρίζει την πίστη σου — συνέχισε!"
+      }
+    },
+    {
+      "day": 4,
+      "emoji": "🗝️",
+      "name": {
+        "en": "Inner Circle Kitten",
+        "el": "Inner Circle Kitten"
+      },
+      "description": {
+        "en": "A little member of the royal inner circle.",
+        "el": "Ένα μικρό μέλος του βασιλικού κύκλου."
+      }
+    },
+    {
+      "day": 5,
+      "emoji": "🏅",
+      "name": {
+        "en": "Royal Companion",
+        "el": "Royal Companion"
+      },
+      "description": {
+        "en": "Faithful companion of Sol — already important.",
+        "el": "Πιστός σύντροφος της Sol — ήδη σημαντικός."
+      }
+    },
+    {
+      "day": 6,
+      "emoji": "💫",
+      "name": {
+        "en": "Queen’s Favorite",
+        "el": "Queen’s Favorite"
+      },
+      "description": {
+        "en": "You’ve stood out — Sol deems you chosen!",
+        "el": "Ξεχώρισες — η Sol σε θεωρεί εκλεκτό!"
+      }
+    },
+    {
+      "day": 7,
+      "emoji": "📸",
+      "name": {
+        "en": "Guardian of Secrets",
+        "el": "Guardian of Secrets"
+      },
+      "description": {
+        "en": "Secrets and snapshots unfold before you.",
+        "el": "Μυστικά και εικόνες ξεδιπλώνονται μπροστά σου."
+      }
+    },
+    {
+      "day": 10,
+      "emoji": "💎",
+      "name": {
+        "en": "Elite Paw Holder",
+        "el": "Elite Paw Holder"
+      },
+      "description": {
+        "en": "You hold rare wisdom — Sol honors you.",
+        "el": "Κατέχεις σπάνια γνώση — η Sol σε τιμά."
+      }
+    },
+    {
+      "day": 14,
+      "emoji": "📖",
+      "name": {
+        "en": "Keeper of Tales",
+        "el": "Keeper of Tales"
+      },
+      "description": {
+        "en": "Guardian of Sol’s secret stories.",
+        "el": "Φύλακας των κρυφών ιστοριών της Sol."
+      }
+    },
+    {
+      "day": 20,
+      "emoji": "🌟",
+      "name": {
+        "en": "Noble Whisker",
+        "el": "Noble Whisker"
+      },
+      "description": {
+        "en": "Sol entrusts you with royal missions.",
+        "el": "Η Sol σου εμπιστεύεται βασιλικές αποστολές."
+      }
+    },
+    {
+      "day": 30,
+      "emoji": "👑",
+      "name": {
+        "en": "Crowned Royal Fan",
+        "el": "Crowned Royal Fan"
+      },
+      "description": {
+        "en": "The highest honor — you’re officially Sol’s Royal Family.",
+        "el": "Η πιο υψηλή τιμή — είσαι επίσημα μέρος της Βασιλικής Οικογένειας της Sol."
+      }
+    }
+  ]
+}
