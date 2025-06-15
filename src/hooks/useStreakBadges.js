@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 
 // Helper: today date in YYYY-MM-DD
-const getToday = () => new Date().toISOString().split("T")[0];
+
+function getToday() {
+  const today = new Date();
+  today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+  return today.toISOString().split("T")[0];
+}
+
 
 export default function useStreakBadges() {
   const [streak, setStreak] = useState(0);

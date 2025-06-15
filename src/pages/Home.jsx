@@ -74,17 +74,17 @@ export default function Home() {
   const { streak, currentBadge, nextBadge, unlockedToday } = useStreakBadges();
 
   const badgeContent = {
-    en: {
-      streak: "Streak",
-      next: "Next",
-      unlocked: "🎉 New Badge Unlocked Today!"
-    },
-    el: {
-      streak: "Σερί",
-      next: "Επόμενο",
-      unlocked: "🎉 Νέο Badge Ξεκλειδώθηκε Σήμερα!"
-    }
-  };
+  en: {
+    streak: "Visit Streak",
+    next: "Next",
+    unlocked: "🎉 New Badge Unlocked Today!"
+  },
+  el: {
+    streak: "Σερί Επισκέψεων",
+    next: "Επόμενο",
+    unlocked: "🎉 Νέο Badge Ξεκλειδώθηκε Σήμερα!"
+  }
+};
   const b = badgeContent[language];
 
   useEffect(() => {
@@ -267,41 +267,42 @@ export default function Home() {
         )}
 
         {currentBadge && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4 }}
-            style={{
-              marginTop: "1.5rem",
-              backgroundColor: "#fff3f8",
-              padding: "1rem",
-              borderRadius: "1.5rem",
-              maxWidth: "600px",
-              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-              textAlign: "center",
-            }}
-          >
-            <p style={{ fontSize: "1.1rem", fontWeight: "bold", color: "#8e24aa" }}>
-              {currentBadge.emoji} {currentBadge.name[language]}
-            </p>
-            <p style={{ fontSize: "0.95rem", color: "#6a1b9a" }}>
-              {currentBadge.description[language]}
-            </p>
-            <p style={{ fontSize: "0.9rem", color: "#5b2b7b", marginTop: "0.5rem" }}>
-              {b.streak}: {streak} day{streak > 1 ? "s" : ""}
-            </p>
-            {nextBadge && (
-              <p style={{ fontSize: "0.9rem", color: "#5b2b7b", marginTop: "0.3rem" }}>
-                {b.next}: {nextBadge.emoji} {nextBadge.name[language]} in {nextBadge.day - streak} days
-              </p>
-            )}
-            {unlockedToday && (
-              <p style={{ fontSize: "0.9rem", color: "#4a005f", marginTop: "0.5rem" }}>
-                {b.unlocked}
-              </p>
-            )}
-          </motion.div>
-        )}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 1.4 }}
+    style={{
+      marginTop: "1.5rem",
+      backgroundColor: "#fff3f8",
+      padding: "1rem",
+      borderRadius: "1.5rem",
+      maxWidth: "600px",
+      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+      textAlign: "center",
+    }}
+  >
+    <p style={{ fontSize: "0.95rem", color: "#5b2b7b", marginBottom: "0.6rem" }}>
+      {language === "en"
+        ? "Your loyalty badge shows how many days you’ve walked the royal path with Sol."
+        : "Το badge πίστης σου δείχνει πόσες μέρες ακολουθείς το βασιλικό μονοπάτι με τη Sol."}
+    </p>
+
+    <p style={{ fontSize: "1.1rem", fontWeight: "bold", color: "#8e24aa" }}>
+      {currentBadge.emoji} {currentBadge.name[language]}
+    </p>
+    <p style={{ fontSize: "0.95rem", color: "#6a1b9a" }}>
+      {currentBadge.description[language]}
+    </p>
+    <p style={{ fontSize: "0.9rem", color: "#5b2b7b", marginTop: "0.5rem" }}>
+      {b.streak}: {streak} day{streak > 1 ? "s" : ""}
+    </p>
+    {unlockedToday && (
+      <p style={{ fontSize: "0.9rem", color: "#4a005f", marginTop: "0.5rem" }}>
+        {b.unlocked}
+      </p>
+    )}
+  </motion.div>
+)}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

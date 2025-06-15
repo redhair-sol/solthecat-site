@@ -2,134 +2,122 @@
   "badges": [
     {
       "day": 1,
-      "emoji": "🐾",
       "name": {
-        "en": "Royal Follower",
-        "el": "Πιστός Ακόλουθος"
+        "en": "Trusted Paw",
+        "el": "Πιστή Πατούσα"
       },
+      "emoji": "🐾🤝",
       "description": {
-        "en": "Your first paw step on the royal path.",
-        "el": "Η πρώτη πατουσένια μέρα σου στο βασιλικό μονοπάτι."
+        "en": "Your first step as a loyal follower of the Queen.",
+        "el": "Το πρώτο σου βήμα ως πιστός ακόλουθος της Βασίλισσας."
       }
     },
     {
       "day": 2,
-      "emoji": "👑",
       "name": {
-        "en": "Queen’s Acquaintance",
-        "el": "Queen’s Acquaintance"
+        "en": "Royal Companion",
+        "el": "Βασιλικός Σύντροφος"
       },
+      "emoji": "👑🐾",
       "description": {
-        "en": "Sol is starting to notice you — a fine start!",
-        "el": "Η Sol αρχίζει να σε προσέχει — καλά ξεκίνησες!"
+        "en": "The Queen notices your presence — stay close!",
+        "el": "Η Βασίλισσα παρατηρεί την παρουσία σου — μείνε κοντά!"
       }
     },
     {
       "day": 3,
-      "emoji": "🎀",
       "name": {
-        "en": "Trusted Paw",
-        "el": "Trusted Paw"
+        "en": "Devoted Follower",
+        "el": "Αφοσιωμένος Ακόλουθος"
       },
+      "emoji": "🎀🐾",
       "description": {
-        "en": "The Queen recognizes your loyalty — keep going!",
-        "el": "Η Βασίλισσα αναγνωρίζει την πίστη σου — συνέχισε!"
+        "en": "Your loyalty glows brighter each day.",
+        "el": "Η αφοσίωσή σου λάμπει μέρα με τη μέρα."
       }
     },
     {
       "day": 4,
-      "emoji": "🗝️",
       "name": {
-        "en": "Inner Circle Kitten",
-        "el": "Inner Circle Kitten"
+        "en": "Inner Circle Paw",
+        "el": "Πατούσα του Στενού Κύκλου"
       },
+      "emoji": "🗝️🐾",
       "description": {
-        "en": "A little member of the royal inner circle.",
-        "el": "Ένα μικρό μέλος του βασιλικού κύκλου."
+        "en": "You’re now part of the Queen’s inner circle.",
+        "el": "Πλέον ανήκεις στον στενό κύκλο της Βασίλισσας."
       }
     },
     {
       "day": 5,
-      "emoji": "🏅",
       "name": {
-        "en": "Royal Companion",
-        "el": "Royal Companion"
+        "en": "Faithful Guardian",
+        "el": "Πιστός Φύλακας"
       },
+      "emoji": "🛡️🐾",
       "description": {
-        "en": "Faithful companion of Sol — already important.",
-        "el": "Πιστός σύντροφος της Sol — ήδη σημαντικός."
-      }
-    },
-    {
-      "day": 6,
-      "emoji": "💫",
-      "name": {
-        "en": "Queen’s Favorite",
-        "el": "Queen’s Favorite"
-      },
-      "description": {
-        "en": "You’ve stood out — Sol deems you chosen!",
-        "el": "Ξεχώρισες — η Sol σε θεωρεί εκλεκτό!"
+        "en": "Your devotion protects the royal realm.",
+        "el": "Η αφοσίωσή σου προστατεύει το βασιλικό βασίλειο."
       }
     },
     {
       "day": 7,
-      "emoji": "📸",
       "name": {
-        "en": "Guardian of Secrets",
-        "el": "Guardian of Secrets"
+        "en": "Weeklong Loyalist",
+        "el": "Πιστός Εβδομαδιαίος"
       },
+      "emoji": "🌟🐾",
       "description": {
-        "en": "Secrets and snapshots unfold before you.",
-        "el": "Μυστικά και εικόνες ξεδιπλώνονται μπροστά σου."
+        "en": "A whole week of loyalty — the Queen purrs with pride.",
+        "el": "Μια ολόκληρη εβδομάδα πίστης — η Βασίλισσα γουργουρίζει από περηφάνια."
       }
     },
     {
       "day": 10,
-      "emoji": "💎",
       "name": {
-        "en": "Elite Paw Holder",
-        "el": "Elite Paw Holder"
+        "en": "Royal Confidant",
+        "el": "Βασιλικός Έμπιστος"
       },
+      "emoji": "💎🐾",
       "description": {
-        "en": "You hold rare wisdom — Sol honors you.",
-        "el": "Κατέχεις σπάνια γνώση — η Sol σε τιμά."
+        "en": "Your trustworthiness shines like a royal jewel.",
+        "el": "Η αξιοπιστία σου λάμπει σαν βασιλικό πετράδι."
       }
     },
     {
       "day": 14,
-      "emoji": "📖",
       "name": {
-        "en": "Keeper of Tales",
-        "el": "Keeper of Tales"
+        "en": "Fortnight Faithful",
+        "el": "Πιστός Δεκαπενθήμερος"
       },
+      "emoji": "🔮🐾",
       "description": {
-        "en": "Guardian of Sol’s secret stories.",
-        "el": "Φύλακας των κρυφών ιστοριών της Sol."
+        "en": "Two weeks of devotion — your bond grows stronger.",
+        "el": "Δύο εβδομάδες αφοσίωσης — ο δεσμός δυναμώνει."
       }
     },
     {
       "day": 20,
-      "emoji": "🌟",
       "name": {
-        "en": "Noble Whisker",
-        "el": "Noble Whisker"
+        "en": "Royal Guardian",
+        "el": "Βασιλικός Φύλακας"
       },
+      "emoji": "🗡️🐾",
       "description": {
-        "en": "Sol entrusts you with royal missions.",
-        "el": "Η Sol σου εμπιστεύεται βασιλικές αποστολές."
+        "en": "You guard the Queen’s path with unwavering loyalty.",
+        "el": "Φυλάς το μονοπάτι της Βασίλισσας με αταλάντευτη πίστη."
       }
     },
     {
       "day": 30,
-      "emoji": "👑",
       "name": {
-        "en": "Crowned Royal Fan",
-        "el": "Crowned Royal Fan"
+        "en": "Legendary Loyalist",
+        "el": "Θρυλικός Πιστός"
       },
+      "emoji": "🏆🐾",
       "description": {
-        "en": "The highest honor — you’re officially Sol’s Royal Family.",
-        "el": "Η πιο υψηλή τιμή — είσαι επίσημα μέρος της Βασιλικής Οικογένειας της Sol."
+        "en": "A full month of royal devotion — you are now legendary!",
+        "el": "Ένας ολόκληρος μήνας βασιλικής αφοσίωσης — είσαι πλέον θρύλος!"
       }
     }
   ]
