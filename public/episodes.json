@@ -149,16 +149,16 @@
   },
   {
     "id": 5,
-    "title": "SOLadventure #5 – London, mind the queen 🕰️🇬🇧",
+    "title": "SOLadventure #5 – London, mind the Queen 🕰️🇬🇧",
     "quote": "Fog lifted. She didn’t need directions.",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
     "image": "episodes/london.png",
     "location": { "lat": 51.5074, "lng": -0.1278 },
-    "visible": false,
+    "visible": true,
     "city": "london",
     "story": {
       "en": "London greeted her with the chime of Big Ben, but she answered with a yawn. The city's rituals bent softly around her as she walked — measured, majestic, and wholly unimpressed. The pavement echoed like a royal procession. Even the corgis knew: this queen didn’t need ceremony. Her stride was the statement.",
-      "el": "Το Λονδίνο την καλοδέχτηκε με το χτύπο του Big Ben, μα εκείνη απάντησε με ένα χασμουρητό. Οι τελετουργίες της πόλης λύγισαν απαλά γύρω της καθώς περπατούσε — μετρημένα, μεγαλόπρεπα, αδιάφορη. Το πεζοδρόμιο αντήχησε σαν βασιλική πομπή. Ακόμα και τα κόργκι κατάλαβαν: αυτή η βασίλισσα δεν χρειαζόταν τελετές. Το βήμα της ήταν η δήλωση."
+      "el": "Το Λονδίνο την καλοδέχτηκε με το χτύπο του Big Ben, μα εκείνη απάντησε με ένα χασμουρητό. Οι τελετουργίες της πόλης λύγισαν απαλά γύρω της καθώς περπατούσε — μετρημένα, μεγαλόπρεπα, αδιάφορα. Το πεζοδρόμιο αντήχησε σαν βασιλική πομπή. Ακόμα και τα κόργκι κατάλαβαν: αυτή η βασίλισσα δεν χρειαζόταν τελετές. Το βήμα της ήταν η δήλωση."
     },
     "snapQuestions": [
       {
@@ -186,44 +186,7 @@
   },
   {
     "id": 6,
-    "title": "SOLadventure #6 – Berlin, straight through the gate 🏛 ️🇩🇪",
-    "quote": "Power spoke. She didn’t need to.",
-    "caption": "She walked. History saluted. 🐾🐾🐾",
-    "image": "episodes/berlin.png",
-    "location": { "lat": 52.52, "lng": 13.405 },
-    "visible": false,
-    "city": "berlin",
-    "story": {
-      "en": "Beneath the solemn gaze of the Brandenburg Gate, Sol walked with the weight of poise and paradox. Her silence said what speeches couldn’t. She didn’t just pass by history — she folded it into her presence, like a pawprint pressed into stone. In Berlin, she didn’t follow the past. She led it forward.",
-      "el": "Κάτω από το επιβλητικό βλέμμα της Πύλης του Βρανδεμβούργου, η Sol περπάτησε με το βάρος της αυτοκυριαρχίας και της αντίφασης. Η σιωπή της είπε όσα δεν μπορούν οι λόγοι. Δεν διέσχισε απλώς την ιστορία — την ενσωμάτωσε στην παρουσία της, σαν αποτύπωμα πατούσας σε πέτρα. Στο Βερολίνο, δεν ακολούθησε το παρελθόν. Το οδήγησε πιο πέρα."
-    },
-    "snapQuestions": [
-      {
-        "question": {
-          "en": "Did Sol pass by the Brandenburg Gate silently?",
-          "el": "Πέρασε η Sol από την Πύλη του Βρανδεμβούργου σιωπηλά;"
-        },
-        "answer": true
-      },
-      {
-        "question": {
-          "en": "Did her silence echo louder than speeches?",
-          "el": "Η σιωπή της ήχησε πιο δυνατά από τα λόγια;"
-        },
-        "answer": true
-      },
-      {
-        "question": {
-          "en": "Did Sol only glimpse history instead of pacing it?",
-          "el": "Μόνο είδε η Sol την Ιστορία αντί να την περπατήσει;"
-        },
-        "answer": false
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "SOLadventure #7 – Amsterdam, paws & petals 🌷 🇳🇱",
+    "title": "SOLadventure #6 – Amsterdam, paws & petals 🌷 🇳🇱",
     "quote": "Paws before pedals.",
     "caption": "No bike. No boat. Just grace on cobblestones. 🐾🐾🐾",
     "image": "episodes/amsterdam.png",
@@ -259,6 +222,43 @@
     ]
   },
   {
+    "id": 7,
+    "title": "SOLadventure #7 – Berlin, straight through the gate 🏛 ️🇩🇪",
+    "quote": "Power spoke. She didn’t need to.",
+    "caption": "She walked. History saluted. 🐾🐾🐾",
+    "image": "episodes/berlin.png",
+    "location": { "lat": 52.52, "lng": 13.405 },
+    "visible": false,
+    "city": "berlin",
+    "story": {
+      "en": "Beneath the solemn gaze of the Brandenburg Gate, Sol walked with the weight of poise and paradox. Her silence said what speeches couldn’t. She didn’t just pass by history — she folded it into her presence, like a pawprint pressed into stone. In Berlin, she didn’t follow the past. She led it forward.",
+      "el": "Κάτω από το επιβλητικό βλέμμα της Πύλης του Βρανδεμβούργου, η Sol περπάτησε με το βάρος της αυτοκυριαρχίας και της αντίφασης. Η σιωπή της είπε όσα δεν μπορούν οι λόγοι. Δεν διέσχισε απλώς την ιστορία — την ενσωμάτωσε στην παρουσία της, σαν αποτύπωμα πατούσας σε πέτρα. Στο Βερολίνο, δεν ακολούθησε το παρελθόν. Το οδήγησε πιο πέρα."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol pass by the Brandenburg Gate silently?",
+          "el": "Πέρασε η Sol από την Πύλη του Βρανδεμβούργου σιωπηλά;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did her silence echo louder than speeches?",
+          "el": "Η σιωπή της ήχησε πιο δυνατά από τα λόγια;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol only glimpse history instead of pacing it?",
+          "el": "Μόνο είδε η Sol την Ιστορία αντί να την περπατήσει;"
+        },
+        "answer": false
+      }
+    ]
+  },
+    {
     "id": 8,
     "title": "SOLadventure #8 – Swiss, air, alpine stare 🏔 ️🇨🇭",
     "quote": "Height never humbled her.",

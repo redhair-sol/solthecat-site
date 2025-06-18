@@ -1,10 +1,27 @@
-// src/pages/Games.jsx
-
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+
+// ✅ ΙΔΙΟ BUTTON ΠΑΝΤΟΥ
+const SolButton = styled(Link)`
+  padding: 0.8rem 1.5rem;
+  background-color: #c187d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
+  transition: transform 0.2s ease-in-out;
+  margin-top: 1rem;
+  align-self: center;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
 
 const Heading = styled.h1`
   font-size: 2rem;
@@ -28,7 +45,7 @@ const GamesGrid = styled.div`
   margin: 0 auto;
   grid-template-columns: 1fr;
   margin-bottom: 2rem;
-  
+
   @media (min-width: 640px) {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
@@ -42,9 +59,20 @@ const GameCard = styled.div`
   text-align: center;
   transition: transform 0.2s ease-in-out;
 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   &:hover {
     transform: scale(1.03);
   }
+`;
+
+const CardContent = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 `;
 
 const GameEmoji = styled.div`
@@ -65,24 +93,10 @@ const GameTitle = styled.h2`
 const GameDescription = styled.p`
   font-size: 0.95rem;
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
 
   @media (max-width: 480px) {
     font-size: 0.85rem;
-  }
-`;
-
-const PlayButton = styled(Link)`
-  background-color: #f8bbd0;
-  color: #fff;
-  padding: 0.5rem 1.2rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.2s;
-
-  &:hover {
-    background-color: #f48fb1;
   }
 `;
 
@@ -137,10 +151,12 @@ export default function Games() {
         <GamesGrid>
           {t.games.map((game) => (
             <GameCard key={game.id}>
-              <GameEmoji>{game.emoji}</GameEmoji>
-              <GameTitle>{game.name}</GameTitle>
-              <GameDescription>{game.description}</GameDescription>
-              <PlayButton to={game.route}>{t.playText}</PlayButton>
+              <CardContent>
+                <GameEmoji>{game.emoji}</GameEmoji>
+                <GameTitle>{game.name}</GameTitle>
+                <GameDescription>{game.description}</GameDescription>
+              </CardContent>
+              <SolButton to={game.route}>{t.playText}</SolButton>
             </GameCard>
           ))}
         </GamesGrid>
