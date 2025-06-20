@@ -23,6 +23,7 @@ const Games = lazy(() => import("./pages/Games.jsx"));
 const PawprintsGame = lazy(() => import("./pages/PawprintsGame.jsx"));
 const PuzzleMapGame = lazy(() => import("./pages/PuzzleMapGame.jsx"));
 const QuizPlayer = lazy(() => import("./pages/QuizPlayer.jsx"));
+const RoyalPuzzleGame = lazy(() => import("./pages/RoyalPuzzleGame.jsx"));
 const SolSnap = lazy(() => import("./pages/SolSnap.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -46,6 +47,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Route path="games/pawprints" element={<PawprintsGame />} />
               <Route path="games/puzzlemap" element={<PuzzleMapGame />} />
               <Route path="games/cityquiz" element={<QuizPlayer />} />
+			  <Route path="games/royalpuzzle" element={<RoyalPuzzleGame />} />
               <Route path="games/solsnap" element={<SolSnap />} />
 
               {/* Αν χρειαστεί custom 404 σελίδα, μπορεί να προστεθεί εδώ */}
