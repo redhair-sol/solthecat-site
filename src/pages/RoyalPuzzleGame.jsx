@@ -7,7 +7,7 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import SolButton from "../components/SolButton.jsx";
 
-// ✅ Level buttons: ίδια με SolButton
+// ✅ Level buttons consistent with SolButton
 const LevelButton = styled(SolButton).attrs({ as: "button" })`
   margin: 0.5rem;
 `;
@@ -21,38 +21,30 @@ const Title = styled.h1`
 const Subtitle = styled.p`
   font-size: 1rem;
   color: #5b2b7b;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 `;
 
 const Description = styled.p`
   font-size: 0.95rem;
-  color: #5b2b7b;
+  color: #555;
   margin-bottom: 2rem;
   text-align: center;
 `;
 
-const DropdownWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-`;
-
 const Dropdown = styled.select`
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  margin-right: 1rem;
   border: 2px solid #aa4dc8;
   border-radius: 8px;
-  background: #fff;
   color: #6a1b9a;
-  cursor: pointer;
   max-width: 90vw;
 `;
 
 const PuzzleArea = styled.div`
   position: relative;
   width: 100%;
-  max-width: 600px;
-  height: 600px;
+  max-width: 90vw;
+  aspect-ratio: 1/1;
   background: #fce4ec;
   margin: 2rem auto;
   border-radius: 12px;
@@ -61,8 +53,8 @@ const PuzzleArea = styled.div`
 
 const Piece = styled.img`
   position: absolute;
+  cursor: grab;
   user-select: none;
-  touch-action: none; /* critical for mobile drag */
 `;
 
 const Info = styled.p`
@@ -70,19 +62,6 @@ const Info = styled.p`
   margin-top: 1rem;
   font-weight: bold;
   color: #8e24aa;
-`;
-
-const BackLink = styled(Link)`
-  display: block;
-  margin-top: 2rem;
-  color: #d35ca3;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;
 
 export default function RoyalPuzzleGame() {
@@ -93,17 +72,18 @@ export default function RoyalPuzzleGame() {
   const [solved, setSolved] = useState(false);
   const [startTime, setStartTime] = useState(null);
   const [elapsed, setElapsed] = useState(0);
+  const [areaSize, setAreaSize] = useState(600);
   const areaRef = useRef();
   const { language } = useLanguage();
 
   const gridMap = { easy: [2, 5], medium: [4, 5], hard: [5, 6] };
 
-  const content = {
+  const t = {
     en: {
       pageTitle: "Royal Puzzle – SolTheCat",
       title: "Royal Puzzle 🧩",
-      subtitle: selectedId ? `Puzzle: SOLadventure #${selectedId}` : "",
-      description: "Choose your episode, pick a difficulty and piece together the royal puzzle!",
+      subtitle: (id) => `Puzzle: SOLadventure: ${id}`,
+      desc: "Choose your episode, pick your challenge level and piece together the royal puzzle!",
       solved: "🎉 Puzzle Solved!",
       playAgain: "🔁 Play Again",
       download: "⬇️ Download Puzzle",
@@ -113,16 +93,15 @@ export default function RoyalPuzzleGame() {
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
       title: "Βασιλικό Παζλ 🧩",
-      subtitle: selectedId ? `Παζλ: SOLadventure #${selectedId}` : "",
-      description: "Διάλεξε επεισόδιο, επέλεξε δυσκολία και φτιάξε το βασιλικό παζλ!",
+      subtitle: (id) => `Παζλ: SOLadventure: ${id}`,
+      desc: "Διάλεξε επεισόδιο, επίπεδο δυσκολίας και φτιάξε το βασιλικό παζλ!",
       solved: "🎉 Το Παζλ Λύθηκε!",
       playAgain: "🔁 Παίξε Ξανά",
       download: "⬇️ Κατέβασε το Παζλ",
       back: "← Επιστροφή στα παιχνίδια",
       best: "🏆 Καλύτερος Χρόνος: ",
     },
-  };
-  const t = content[language];
+  }[language];
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -132,6 +111,15 @@ export default function RoyalPuzzleGame() {
         setEpisodes(vis);
         if (vis.length) setSelectedId(vis[0].id.toString());
       });
+  }, []);
+
+  useEffect(() => {
+    const updateSize = () => {
+      if (areaRef.current) setAreaSize(areaRef.current.offsetWidth);
+    };
+    updateSize();
+    window.addEventListener("resize", updateSize);
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
   useEffect(() => {
@@ -161,10 +149,10 @@ export default function RoyalPuzzleGame() {
           tmp.push({
             id: r * cols + c,
             img: canvas.toDataURL(),
-            x: Math.random() * 400,
-            y: Math.random() * 400,
-            correctX: c * (600 / cols),
-            correctY: r * (600 / rows),
+            x: Math.random() * (areaSize - areaSize / cols),
+            y: Math.random() * (areaSize - areaSize / rows),
+            correctX: c * (areaSize / cols),
+            correctY: r * (areaSize / rows),
           });
         }
       }
@@ -173,7 +161,7 @@ export default function RoyalPuzzleGame() {
       setStartTime(Date.now());
       setElapsed(0);
     };
-  }, [imagePath, level]);
+  }, [imagePath, level, areaSize]);
 
   useEffect(() => {
     if (!startTime || solved) return;
@@ -210,54 +198,6 @@ export default function RoyalPuzzleGame() {
     }
   };
 
-  // ✅ New: Cross-device drag (pointer + touch)
-  const bindDragHandlers = (idx, el) => {
-    if (!el) return;
-
-    let lastX, lastY;
-
-    const move = (ev) => {
-      let clientX, clientY;
-      if (ev.touches) {
-        clientX = ev.touches[0].clientX;
-        clientY = ev.touches[0].clientY;
-      } else {
-        clientX = ev.clientX;
-        clientY = ev.clientY;
-      }
-
-      if (lastX !== undefined) {
-        const dx = clientX - lastX;
-        const dy = clientY - lastY;
-        onDrag(idx, { movementX: dx, movementY: dy });
-      }
-      lastX = clientX;
-      lastY = clientY;
-    };
-
-    const up = () => {
-      window.removeEventListener("pointermove", move);
-      window.removeEventListener("pointerup", up);
-      window.removeEventListener("touchmove", move);
-      window.removeEventListener("touchend", up);
-      lastX = lastY = undefined;
-    };
-
-    el.onpointerdown = (e) => {
-      lastX = e.clientX;
-      lastY = e.clientY;
-      window.addEventListener("pointermove", move, { passive: false });
-      window.addEventListener("pointerup", up);
-    };
-
-    el.ontouchstart = (e) => {
-      lastX = e.touches[0].clientX;
-      lastY = e.touches[0].clientY;
-      window.addEventListener("touchmove", move, { passive: false });
-      window.addEventListener("touchend", up);
-    };
-  };
-
   const downloadImage = async () => {
     if (!areaRef.current) return;
     const canvas = await html2canvas(areaRef.current);
@@ -284,21 +224,25 @@ export default function RoyalPuzzleGame() {
         transition={{ duration: 0.8 }}
       >
         <Title>{t.title}</Title>
-        {selectedId && <Subtitle>{t.subtitle}</Subtitle>}
-        <Description>{t.description}</Description>
+        {selectedId && <Subtitle>{t.subtitle(selectedId)}</Subtitle>}
+        <Description>{t.desc}</Description>
 
-        <DropdownWrapper>
-          <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
-            {episodes.map((ep) => (
-              <option key={ep.id} value={ep.id}>
-                {typeof ep.title === "object" ? ep.title[language] : ep.title}
-              </option>
-            ))}
-          </Dropdown>
-        </DropdownWrapper>
+        <Dropdown
+          value={selectedId}
+          onChange={(e) => setSelectedId(e.target.value)}
+        >
+          {episodes.map(ep => (
+            <option key={ep.id} value={ep.id}>
+              {typeof ep.title === "object" ? ep.title[language] : ep.title}
+            </option>
+          ))}
+        </Dropdown>
 
-        {!level && ["easy", "medium", "hard"].map((l) => (
-          <LevelButton key={l} onClick={() => setLevel(l)}>
+        {!level && ["easy", "medium", "hard"].map(l => (
+          <LevelButton
+            key={l}
+            onClick={() => setLevel(l)}
+          >
             {l.charAt(0).toUpperCase() + l.slice(1)}
           </LevelButton>
         ))}
@@ -309,9 +253,23 @@ export default function RoyalPuzzleGame() {
               <Piece
                 key={p.id}
                 src={p.img}
-                style={{ left: p.x, top: p.y, width: `${600 / cols}px`, height: `${600 / rows}px` }}
+                style={{
+                  left: p.x,
+                  top: p.y,
+                  width: `${areaSize / cols}px`,
+                  height: `${areaSize / rows}px`,
+                }}
                 draggable="false"
-                ref={(el) => bindDragHandlers(i, el)}
+                onPointerDown={e => {
+                  e.target.setPointerCapture(e.pointerId);
+                  const move = ev => onDrag(i, ev);
+                  const up = () => {
+                    window.removeEventListener("pointermove", move);
+                    window.removeEventListener("pointerup", up);
+                  };
+                  window.addEventListener("pointermove", move);
+                  window.addEventListener("pointerup", up);
+                }}
               />
             ))}
           </PuzzleArea>
@@ -331,7 +289,16 @@ export default function RoyalPuzzleGame() {
 
         {level && <Info>{elapsed}s</Info>}
 
-        <BackLink to="/games">{t.back}</BackLink>
+        {level && (
+          <Link to="/games" style={{
+            display: "block",
+            marginTop: "2rem",
+            color: "#d35ca3",
+            textDecoration: "none",
+            fontWeight: "bold",
+            textAlign: "center",
+          }}>{t.back}</Link>
+        )}
       </PageContainer>
     </>
   );
