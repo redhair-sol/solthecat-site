@@ -72,26 +72,26 @@ export default function RoyalPuzzleGame() {
 
   const gridMap = { easy: [2, 5], medium: [4, 5], hard: [5, 6] };
 
-  const content = {
+  const t = {
     en: {
       pageTitle: "Royal Puzzle – SolTheCat",
       title: "Royal Puzzle 🧩",
+      desc: "Pick an episode, choose your difficulty level and solve the royal puzzle!",
       solved: "🎉 Puzzle Solved!",
       playAgain: "🔁 Play Again",
       download: "⬇️ Download Puzzle",
       back: "← Back to games",
       best: "🏆 Best Time: ",
-      desc: "Choose your episode, pick your challenge level and piece together the royal puzzle!"
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
       title: "Βασιλικό Παζλ 🧩",
+      desc: "Επίλεξε επεισόδιο, επίπεδο δυσκολίας και λύσε το βασιλικό παζλ!",
       solved: "🎉 Το Παζλ Λύθηκε!",
       playAgain: "🔁 Παίξε Ξανά",
       download: "⬇️ Κατέβασε το Παζλ",
       back: "← Επιστροφή στα παιχνίδια",
       best: "🏆 Καλύτερος Χρόνος: ",
-      desc: "Επίλεξε επεισόδιο, επίπεδο δυσκολίας και φτιάξε το βασιλικό παζλ!"
     },
   }[language];
 
@@ -117,23 +117,21 @@ export default function RoyalPuzzleGame() {
     img.crossOrigin = "anonymous";
     img.src = imagePath;
     img.onload = () => {
-      const w = img.width / cols;
-      const h = img.height / rows;
       const tmp = [];
       for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
           const canvas = document.createElement("canvas");
-          canvas.width = w;
-          canvas.height = h;
+          canvas.width = img.width / cols;
+          canvas.height = img.height / rows;
           const ctx = canvas.getContext("2d");
-          ctx.drawImage(img, c * w, r * h, w, h, 0, 0, w, h);
+          ctx.drawImage(img, c * canvas.width, r * canvas.height, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
           tmp.push({
             id: r * cols + c,
             img: canvas.toDataURL(),
-            x: Math.random() * 400,
-            y: Math.random() * 400,
-            correctX: c * (600 / cols),
-            correctY: r * (600 / rows),
+            x: Math.random() * 80,
+            y: Math.random() * 80,
+            correctX: (c * 100) / cols,
+            correctY: (r * 100) / rows,
           });
         }
       }
@@ -152,14 +150,17 @@ export default function RoyalPuzzleGame() {
     return () => clearInterval(timer);
   }, [startTime, solved]);
 
-  const onDrag = (idx, e) => {
+  const onDrag = (idx, dx, dy) => {
     if (solved) return;
     const newPieces = [...pieces];
-    newPieces[idx].x += e.movementX;
-    newPieces[idx].y += e.movementY;
+    const area = areaRef.current?.getBoundingClientRect();
+    const w = area?.width || 1;
+    const h = area?.height || 1;
+    newPieces[idx].x += (dx / w) * 100;
+    newPieces[idx].y += (dy / h) * 100;
     setPieces(newPieces);
 
-    const snap = 20;
+    const snap = 2; // % units
     if (
       Math.abs(newPieces[idx].x - newPieces[idx].correctX) < snap &&
       Math.abs(newPieces[idx].y - newPieces[idx].correctY) < snap
@@ -192,18 +193,10 @@ export default function RoyalPuzzleGame() {
 
   return (
     <>
-      <Helmet>
-        <title>{content.pageTitle}</title>
-      </Helmet>
-
-      <PageContainer
-        alignTop
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <Title>{content.title}</Title>
-        <Subtitle>{content.desc}</Subtitle>
+      <Helmet><title>{t.pageTitle}</title></Helmet>
+      <PageContainer alignTop initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <Title>{t.title}</Title>
+        <Subtitle>{t.desc}</Subtitle>
         <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
           {episodes.map((ep) => (
             <option key={ep.id} value={ep.id}>
@@ -225,15 +218,22 @@ export default function RoyalPuzzleGame() {
                 key={p.id}
                 src={p.img}
                 style={{
-                  left: p.x,
-                  top: p.y,
-                  width: `${600 / cols}px`,
-                  height: `${600 / rows}px`,
+                  left: `${p.x}%`,
+                  top: `${p.y}%`,
+                  width: `${100 / cols}%`,
+                  height: `${100 / rows}%`,
                 }}
                 draggable="false"
                 onPointerDown={e => {
+                  e.preventDefault();
                   e.target.setPointerCapture(e.pointerId);
-                  const move = ev => onDrag(i, ev);
+                  let lastX = e.clientX;
+                  let lastY = e.clientY;
+                  const move = ev => {
+                    onDrag(i, ev.clientX - lastX, ev.clientY - lastY);
+                    lastX = ev.clientX;
+                    lastY = ev.clientY;
+                  };
                   const up = () => {
                     window.removeEventListener("pointermove", move);
                     window.removeEventListener("pointerup", up);
@@ -243,23 +243,18 @@ export default function RoyalPuzzleGame() {
                 }}
                 onTouchStart={e => {
                   const t = e.touches[0];
-                  let prevX = t.clientX;
-                  let prevY = t.clientY;
-
+                  let lastX = t.clientX;
+                  let lastY = t.clientY;
                   const move = ev => {
                     const tt = ev.touches[0];
-                    const dx = tt.clientX - prevX;
-                    const dy = tt.clientY - prevY;
-                    prevX = tt.clientX;
-                    prevY = tt.clientY;
-                    onDrag(i, { movementX: dx, movementY: dy });
+                    onDrag(i, tt.clientX - lastX, tt.clientY - lastY);
+                    lastX = tt.clientX;
+                    lastY = tt.clientY;
                   };
-
                   const end = () => {
                     window.removeEventListener("touchmove", move);
                     window.removeEventListener("touchend", end);
                   };
-
                   window.addEventListener("touchmove", move, { passive: false });
                   window.addEventListener("touchend", end);
                 }}
@@ -270,22 +265,15 @@ export default function RoyalPuzzleGame() {
 
         {solved && (
           <>
-            <Info>{content.solved}</Info>
-            <Info>{content.best} {best ? `${best}s` : `${elapsed}s`}</Info>
-            <SolButton as="button" onClick={downloadImage}>{content.download}</SolButton>
-            <SolButton as="button" onClick={() => { setLevel(""); setSolved(false); }}>{content.playAgain}</SolButton>
+            <Info>{t.solved}</Info>
+            <Info>{t.best} {best ? `${best}s` : `${elapsed}s`}</Info>
+            <SolButton as="button" onClick={downloadImage}>{t.download}</SolButton>
+            <SolButton as="button" onClick={() => { setLevel(""); setSolved(false); }}>{t.playAgain}</SolButton>
           </>
         )}
 
         {level && <Info>{elapsed}s</Info>}
-        <Link to="/games" style={{
-          display: "block",
-          marginTop: "2rem",
-          color: "#d35ca3",
-          textDecoration: "none",
-          fontWeight: "bold",
-          textAlign: "center"
-        }}>{content.back}</Link>
+        <Link to="/games" style={{ display: "block", marginTop: "2rem", color: "#d35ca3", textDecoration: "none", fontWeight: "bold", textAlign: "center" }}>{t.back}</Link>
       </PageContainer>
     </>
   );
