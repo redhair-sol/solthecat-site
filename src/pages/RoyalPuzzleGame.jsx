@@ -7,9 +7,8 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import SolButton from "../components/SolButton.jsx";
 
-// ✅ Level buttons ίδιο στυλ με SolButton αλλά ως <button>
+// ✅ Level buttons: ίδια με SolButton
 const LevelButton = styled(SolButton).attrs({ as: "button" })`
-  background: ${({ active }) => (active ? "#c187d8" : "#f8bbd0")};
   margin: 0.5rem;
 `;
 
@@ -46,7 +45,7 @@ const Dropdown = styled.select`
   background: #fff;
   color: #6a1b9a;
   cursor: pointer;
-  max-width: 90vw; /* ✅ fixes overflow */
+  max-width: 90vw;
 `;
 
 const PuzzleArea = styled.div`
@@ -62,8 +61,8 @@ const PuzzleArea = styled.div`
 
 const Piece = styled.img`
   position: absolute;
-  cursor: grab;
   user-select: none;
+  touch-action: none; /* critical for mobile drag */
 `;
 
 const Info = styled.p`
@@ -104,7 +103,7 @@ export default function RoyalPuzzleGame() {
       pageTitle: "Royal Puzzle – SolTheCat",
       title: "Royal Puzzle 🧩",
       subtitle: selectedId ? `Puzzle: SOLadventure #${selectedId}` : "",
-      description: "Choose your episode, pick your challenge level and piece together the royal puzzle!",
+      description: "Choose your episode, pick a difficulty and piece together the royal puzzle!",
       solved: "🎉 Puzzle Solved!",
       playAgain: "🔁 Play Again",
       download: "⬇️ Download Puzzle",
@@ -115,7 +114,7 @@ export default function RoyalPuzzleGame() {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
       title: "Βασιλικό Παζλ 🧩",
       subtitle: selectedId ? `Παζλ: SOLadventure #${selectedId}` : "",
-      description: "Διάλεξε επεισόδιο, επέλεξε επίπεδο δυσκολίας και φτιάξε το βασιλικό παζλ!",
+      description: "Διάλεξε επεισόδιο, επέλεξε δυσκολία και φτιάξε το βασιλικό παζλ!",
       solved: "🎉 Το Παζλ Λύθηκε!",
       playAgain: "🔁 Παίξε Ξανά",
       download: "⬇️ Κατέβασε το Παζλ",
@@ -211,6 +210,54 @@ export default function RoyalPuzzleGame() {
     }
   };
 
+  // ✅ New: Cross-device drag (pointer + touch)
+  const bindDragHandlers = (idx, el) => {
+    if (!el) return;
+
+    let lastX, lastY;
+
+    const move = (ev) => {
+      let clientX, clientY;
+      if (ev.touches) {
+        clientX = ev.touches[0].clientX;
+        clientY = ev.touches[0].clientY;
+      } else {
+        clientX = ev.clientX;
+        clientY = ev.clientY;
+      }
+
+      if (lastX !== undefined) {
+        const dx = clientX - lastX;
+        const dy = clientY - lastY;
+        onDrag(idx, { movementX: dx, movementY: dy });
+      }
+      lastX = clientX;
+      lastY = clientY;
+    };
+
+    const up = () => {
+      window.removeEventListener("pointermove", move);
+      window.removeEventListener("pointerup", up);
+      window.removeEventListener("touchmove", move);
+      window.removeEventListener("touchend", up);
+      lastX = lastY = undefined;
+    };
+
+    el.onpointerdown = (e) => {
+      lastX = e.clientX;
+      lastY = e.clientY;
+      window.addEventListener("pointermove", move, { passive: false });
+      window.addEventListener("pointerup", up);
+    };
+
+    el.ontouchstart = (e) => {
+      lastX = e.touches[0].clientX;
+      lastY = e.touches[0].clientY;
+      window.addEventListener("touchmove", move, { passive: false });
+      window.addEventListener("touchend", up);
+    };
+  };
+
   const downloadImage = async () => {
     if (!areaRef.current) return;
     const canvas = await html2canvas(areaRef.current);
@@ -251,7 +298,7 @@ export default function RoyalPuzzleGame() {
         </DropdownWrapper>
 
         {!level && ["easy", "medium", "hard"].map((l) => (
-          <LevelButton key={l} active={level === l} onClick={() => setLevel(l)}>
+          <LevelButton key={l} onClick={() => setLevel(l)}>
             {l.charAt(0).toUpperCase() + l.slice(1)}
           </LevelButton>
         ))}
@@ -264,16 +311,7 @@ export default function RoyalPuzzleGame() {
                 src={p.img}
                 style={{ left: p.x, top: p.y, width: `${600 / cols}px`, height: `${600 / rows}px` }}
                 draggable="false"
-                onPointerDown={(e) => {
-                  e.target.setPointerCapture(e.pointerId);
-                  const move = (ev) => onDrag(i, ev);
-                  const up = () => {
-                    window.removeEventListener("pointermove", move);
-                    window.removeEventListener("pointerup", up);
-                  };
-                  window.addEventListener("pointermove", move);
-                  window.addEventListener("pointerup", up);
-                }}
+                ref={(el) => bindDragHandlers(i, el)}
               />
             ))}
           </PuzzleArea>
