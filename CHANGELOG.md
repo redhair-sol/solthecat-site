@@ -4,6 +4,23 @@
 
 ---
 
+## [5.7] - 2025-06-20
+
+### Added
+- ? Νέο παιχνίδι: Royal Puzzle (`/games/royalpuzzle`)
+- ? Περιγραφή και κουμπί download εικόνας στο τέλος του Royal Puzzle
+- ? Προσθήκη Royal Puzzle στην σελίδα Games, ακριβώς δίπλα από το SOL's Puzzle Map
+
+### Fixed
+- ? Σωστή στοίχιση puzzle κομματιών και responsive μέγεθος περιοχής για mobile και desktop
+- ? Βελτίωση drag συμπεριφοράς σε touch devices χωρίς react-draggable
+- ? Ομοιομορφία κουμπιών με SolButton
+- ? Διορθώθηκε το Dropdown επιλογής επεισοδίου σε mobile
+
+### Updated
+- ?? Ενημέρωση Games.jsx για σωστή σειρά παιχνιδιών (Puzzle Map και Royal Puzzle συνεχόμενα)
+- ?? Γενική συντήρηση styled components για consistency σε όλο το site
+
 ## [5.6.0] - 2024-06-14
 
 ### Added

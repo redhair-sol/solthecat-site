@@ -110,10 +110,41 @@ export default function Games() {
       subtitle: "Pick your royal challenge",
       playText: "Play",
       games: [
-        { id: 1, emoji: "🐾", name: "Pawprints Memory", description: "Find matching pawprint pairs!", route: "/games/pawprints" },
-        { id: 2, emoji: "🧩", name: "SOL's Puzzle Map", description: "Rebuild the cities Sol has visited!", route: "/games/puzzlemap" },
-        { id: 3, emoji: "🧠", name: "SOL Quiz", description: "Test your knowledge!", route: "/games/cityquiz" },
-        { id: 4, emoji: "📷", name: "SolSnap", description: "Snap decision: 3 yes/no questions per episode.", route: "/games/solsnap" },
+        {
+          id: 1,
+          emoji: "🐾",
+          name: "Pawprints Memory",
+          description: "Find matching pawprint pairs!",
+          route: "/games/pawprints"
+        },
+        {
+          id: 2,
+          emoji: "🧩",
+          name: "SOL's Puzzle Map",
+          description: "Rebuild the cities Sol has visited!",
+          route: "/games/puzzlemap"
+        },
+        {
+          id: 3,
+          emoji: "🧩",
+          name: "Royal Puzzle",
+          description: "Piece together the royal puzzle with Sol!",
+          route: "/games/royalpuzzle"
+        },
+        {
+          id: 4,
+          emoji: "🧠",
+          name: "SOL Quiz",
+          description: "Test your knowledge!",
+          route: "/games/cityquiz"
+        },
+        {
+          id: 5,
+          emoji: "📷",
+          name: "SolSnap",
+          description: "Snap decision: 3 yes/no questions per episode.",
+          route: "/games/solsnap"
+        },
       ],
     },
     el: {
@@ -122,10 +153,41 @@ export default function Games() {
       subtitle: "Διάλεξε τη βασιλική σου πρόκληση",
       playText: "Παίξε",
       games: [
-        { id: 1, emoji: "🐾", name: "Μνήμη με Πατουσάκια", description: "Βρες τα ζευγάρια των πατουσακιών!", route: "/games/pawprints" },
-        { id: 2, emoji: "🧩", name: "Παζλ Χάρτης της Sol", description: "Συγκέντρωσε πάλι τις πόλεις που επισκέφθηκε η Sol!", route: "/games/puzzlemap" },
-        { id: 3, emoji: "🧠", name: "Quiz της Sol", description: "Δοκίμασε τις γνώσεις σου!", route: "/games/cityquiz" },
-        { id: 4, emoji: "📷", name: "SolSnap", description: "Snap decision: 3 yes/no ερωτήσεις ανά επεισόδιο.", route: "/games/solsnap" },
+        {
+          id: 1,
+          emoji: "🐾",
+          name: "Μνήμη με Πατουσάκια",
+          description: "Βρες τα ζευγάρια των πατουσακιών!",
+          route: "/games/pawprints"
+        },
+        {
+          id: 2,
+          emoji: "🧩",
+          name: "Παζλ Χάρτης της Sol",
+          description: "Συγκέντρωσε πάλι τις πόλεις που επισκέφθηκε η Sol!",
+          route: "/games/puzzlemap"
+        },
+        {
+          id: 3,
+          emoji: "🧩",
+          name: "Βασιλικό Παζλ",
+          description: "Συναρμολόγησε το βασιλικό παζλ με τη Sol!",
+          route: "/games/royalpuzzle"
+        },
+        {
+          id: 4,
+          emoji: "🧠",
+          name: "Quiz της Sol",
+          description: "Δοκίμασε τις γνώσεις σου!",
+          route: "/games/cityquiz"
+        },
+        {
+          id: 5,
+          emoji: "📷",
+          name: "SolSnap",
+          description: "Snap decision: 3 yes/no ερωτήσεις ανά επεισόδιο.",
+          route: "/games/solsnap"
+        },
       ],
     },
   };
