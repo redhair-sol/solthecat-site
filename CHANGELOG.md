@@ -3,6 +3,24 @@
 Όλες οι σημαντικές αλλαγές που έγιναν στη SOLadventures ιστοσελίδα.
 
 ---
+## [5.8] - 2025-06-21
+
+### Added
+- ? **Structured SEO:** Πλήρης ρύθμιση SEO στο `index.html` (Open Graph, Twitter Card, JSON-LD Organization, Website & Person).
+- ? **Helmet-Async:** Αντικατάσταση του `react-helmet` με `react-helmet-async` για συμβατότητα με React 19 και ασφαλή Strict Mode.
+
+### Fixed
+- ?? **Preload warnings:** Αφαίρεση άχρηστου `preload` για το `sol-menu.webp` που έβγαζε warning στο PageSpeed.
+- ?? **Console warnings:** Μείωση των unsafe warnings με νέα βιβλιοθήκη `helmet-async`.
+- ?? **Royal Puzzle Best Time:** Ολοκληρωμένη αποθήκευση και εμφάνιση καλύτερου χρόνου στο puzzle (per episode & level).
+
+### Updated
+- ?? **Royal Puzzle:** Καλύτερη μέτρηση χρόνου και σταθερό download κουμπί στο τέλος του puzzle.
+- ?? **SEO Meta & Preloads:** Σταθεροποιήθηκαν τα preloads: LCP font μόνο `Dancing Script`, υπόλοιπα lazy.
+- ?? **Deploy instructions:** Προσθήκη clear οδηγιών για `uninstall` και `install` του `react-helmet-async` με `--legacy-peer-deps`.
+
+### Removed
+- ? **react-helmet:** Πλήρης αφαίρεση της παλιάς βιβλιοθήκης από όλα τα components.
 
 ## [5.7] - 2025-06-20
 

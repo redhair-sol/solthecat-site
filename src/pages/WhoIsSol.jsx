@@ -1,7 +1,7 @@
 // src/pages/WhoIsSol.jsx
 
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import styled from "styled-components";

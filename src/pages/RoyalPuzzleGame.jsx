@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import html2canvas from "html2canvas";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
