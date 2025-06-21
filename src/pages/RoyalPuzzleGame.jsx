@@ -1,13 +1,13 @@
-// ✅ src/pages/RoyalPuzzleGame.jsx
-
 import { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import html2canvas from "html2canvas";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import SolButton from "../components/SolButton.jsx";
 
+// ✅ Styled Components
 const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
@@ -43,13 +43,15 @@ const LevelButton = styled(SolButton).attrs({ as: "button" })`
 
 const PuzzleArea = styled.div`
   position: relative;
-  width: 90vw;
+  width: 100%;
+  max-width: 90vw;
   max-width: 600px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   background: #fce4ec;
   border-radius: 12px;
   overflow: hidden;
   margin: 2rem auto;
+  box-sizing: border-box;
 `;
 
 const Piece = styled.img`
@@ -89,16 +91,18 @@ export default function RoyalPuzzleGame() {
     en: {
       pageTitle: "Royal Puzzle – SolTheCat",
       title: "Royal Puzzle 🧩",
-      subtitle: "Puzzle: SOLadventure: ",
+      subtitle: "Puzzle: SOLadventure:",
       description: "Choose your episode, pick your challenge level and piece together the royal puzzle!",
       back: "← Back to games",
+      download: "⬇️ Download Puzzle",
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
       title: "Βασιλικό Παζλ 🧩",
-      subtitle: "Παζλ: SOLadventure: ",
+      subtitle: "Παζλ: SOLadventure:",
       description: "Διάλεξε επεισόδιο, επίπεδο δυσκολίας και συναρμολόγησε το βασιλικό παζλ!",
       back: "← Επιστροφή στα παιχνίδια",
+      download: "⬇️ Κατέβασε το Παζλ",
     },
   }[language];
 
@@ -130,7 +134,7 @@ export default function RoyalPuzzleGame() {
     img.src = imagePath;
 
     img.onload = () => {
-      const areaSize = areaRef.current.clientWidth; // dynamic
+      const areaSize = areaRef.current.clientWidth;
       const w = img.width / cols;
       const h = img.height / rows;
       const tmp = [];
@@ -191,6 +195,16 @@ export default function RoyalPuzzleGame() {
     window.addEventListener("pointerup", up);
   };
 
+  const downloadImage = async () => {
+    if (!areaRef.current) return;
+    const html2canvas = (await import("html2canvas")).default;
+    const canvas = await html2canvas(areaRef.current);
+    const link = document.createElement("a");
+    link.download = "sol_puzzle.png";
+    link.href = canvas.toDataURL();
+    link.click();
+  };
+
   return (
     <>
       <Helmet>
@@ -198,12 +212,7 @@ export default function RoyalPuzzleGame() {
         <link rel="canonical" href="https://solthecat.com/games/royalpuzzle" />
       </Helmet>
 
-      <PageContainer
-        alignTop
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+      <PageContainer alignTop>
         <Title>{t.title}</Title>
         {selectedId && <Subtitle>{t.subtitle} {selectedId}</Subtitle>}
         <Description>{t.description}</Description>
@@ -241,7 +250,13 @@ export default function RoyalPuzzleGame() {
           </PuzzleArea>
         )}
 
-        {solved && <Info>🎉 {language === "el" ? "Το Παζλ Λύθηκε!" : "Puzzle Solved!"}</Info>}
+        {solved && (
+          <>
+            <Info>🎉 {language === "el" ? "Το Παζλ Λύθηκε!" : "Puzzle Solved!"}</Info>
+            <SolButton as="button" onClick={downloadImage}>{t.download}</SolButton>
+          </>
+        )}
+
         <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>
     </>
