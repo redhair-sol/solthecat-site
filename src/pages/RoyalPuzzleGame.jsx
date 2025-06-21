@@ -83,6 +83,8 @@ export default function RoyalPuzzleGame() {
   const [level, setLevel] = useState("");
   const [pieces, setPieces] = useState([]);
   const [solved, setSolved] = useState(false);
+  const [startTime, setStartTime] = useState(null);
+  const [elapsed, setElapsed] = useState(0);
   const areaRef = useRef();
 
   const gridMap = { easy: [2, 5], medium: [4, 5], hard: [5, 6] };
@@ -95,6 +97,7 @@ export default function RoyalPuzzleGame() {
       description: "Choose your episode, pick your challenge level and piece together the royal puzzle!",
       back: "← Back to games",
       download: "⬇️ Download Puzzle",
+      best: "🏆 Best Time: ",
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
@@ -103,6 +106,7 @@ export default function RoyalPuzzleGame() {
       description: "Διάλεξε επεισόδιο, επίπεδο δυσκολίας και συναρμολόγησε το βασιλικό παζλ!",
       back: "← Επιστροφή στα παιχνίδια",
       download: "⬇️ Κατέβασε το Παζλ",
+      best: "🏆 Καλύτερος Χρόνος: ",
     },
   }[language];
 
@@ -120,6 +124,8 @@ export default function RoyalPuzzleGame() {
     setLevel("");
     setPieces([]);
     setSolved(false);
+    setStartTime(null);
+    setElapsed(0);
   }, [selectedId]);
 
   const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
@@ -160,8 +166,18 @@ export default function RoyalPuzzleGame() {
 
       setPieces(tmp);
       setSolved(false);
+      setStartTime(Date.now());
+      setElapsed(0);
     };
   }, [imagePath, level]);
+
+  useEffect(() => {
+    if (!startTime || solved) return;
+    const timer = setInterval(() => {
+      setElapsed(Math.floor((Date.now() - startTime) / 1000));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [startTime, solved]);
 
   const handleDrag = (idx, e) => {
     const newPieces = [...pieces];
@@ -180,6 +196,11 @@ export default function RoyalPuzzleGame() {
 
       if (newPieces.every(p => p.x === p.correctX && p.y === p.correctY)) {
         setSolved(true);
+        const key = `royalpuzzle_${selectedId}_${level}`;
+        const best = localStorage.getItem(key);
+        if (!best || elapsed < parseInt(best)) {
+          localStorage.setItem(key, elapsed);
+        }
       }
     }
   };
@@ -197,13 +218,15 @@ export default function RoyalPuzzleGame() {
 
   const downloadImage = async () => {
     if (!areaRef.current) return;
-    const html2canvas = (await import("html2canvas")).default;
     const canvas = await html2canvas(areaRef.current);
     const link = document.createElement("a");
     link.download = "sol_puzzle.png";
     link.href = canvas.toDataURL();
     link.click();
   };
+
+  const bestKey = `royalpuzzle_${selectedId}_${level}`;
+  const best = localStorage.getItem(bestKey);
 
   return (
     <>
@@ -249,6 +272,8 @@ export default function RoyalPuzzleGame() {
             ))}
           </PuzzleArea>
         )}
+
+        {level && <Info>⏱️ {elapsed}s {best && ` — ${t.best} ${best}s`}</Info>}
 
         {solved && (
           <>
