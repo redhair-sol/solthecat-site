@@ -186,16 +186,16 @@
   },
   {
     "id": 6,
-    "title": "SOLadventure #6 – Amsterdam, paws & petals 🌷 🇳🇱",
+    "title": "SOLadventure #6 – Amsterdam, quiet reigns & reflections 🌷 🇳🇱",
     "quote": "Paws before pedals.",
     "caption": "No bike. No boat. Just grace on cobblestones. 🐾🐾🐾",
     "image": "episodes/amsterdam.png",
     "location": { "lat": 52.3676, "lng": 4.9041 },
-    "visible": false,
+    "visible": true,
     "city": "amsterdam",
     "story": {
-      "en": "Amsterdam bloomed. Its canals shimmered in her wake, the waters mirroring the quiet she left behind. Tulips nodded on instinct — tiny, colorful sentinels standing guard just for her. She walked on petals, as if the city itself unfurled a path beneath her — soft, regal, undeniable. The air hummed with secrets and sighs from old bicycles that paused to admire her. No crown. No noise. Just presence. Amsterdam knew who reigned.",
-      "el": "Το Άμστερνταμ άνθισε. Τα κανάλια έλαμψαν στο πέρασμά της, τα νερά καθρέφτισαν τη σιωπή που άφηνε πίσω της. Οι τουλίπες έγνεψαν σαν από ένστικτο — μικρές, πολύχρωμες φρουρές σε παράταξη, μόνο για εκείνη. Περπάτησε πάνω σε πέταλα, λες και η ίδια η πόλη της άνοιξε τον δρόμο· απαλό, αρχοντικό, αδιαμφισβήτητο. Ο αέρας γέμισε μυστικά κι αναστεναγμούς από παλιά ποδήλατα που σταμάτησαν για να την κοιτάξουν. Χωρίς στέμμα, χωρίς θόρυβο. Μόνο παρουσία. Το Άμστερνταμ ήξερε ποια κυβερνούσε."
+      "en": "Amsterdam bloomed. Its canals shimmered in her wake, the waters mirroring the quiet she left behind. Tulips nodded on instinct — tiny, colorful sentinels standing guard just for her. She walked on petals, as if the city itself unfurled a path beneath her — dreamlike, regal, flawless. The air hummed with secrets and sighs from old bicycles that paused to admire her. No crown. No noise. Just presence. Amsterdam knew who reigned.",
+      "el": "Το Άμστερνταμ άνθισε. Τα κανάλια έλαμψαν στο πέρασμά της, τα νερά καθρέφτισαν τη σιωπή που άφηνε πίσω της. Οι τουλίπες έγνεψαν σαν από ένστικτο — μικρές, πολύχρωμες φρουρές σε παράταξη, μόνο για εκείνη. Περπάτησε πάνω σε πέταλα, λες και η ίδια η πόλη της άνοιξε τον δρόμο· ονειρικό, αρχοντικό, αψεγάδιαστο. Ο αέρας γέμισε μυστικά κι αναστεναγμούς από παλιά ποδήλατα που σταμάτησαν για να την κοιτάξουν. Χωρίς στέμμα, χωρίς θόρυβο. Μόνο παρουσία. Το Άμστερνταμ ήξερε ποια κυβερνούσε."
     },
     "snapQuestions": [
       {

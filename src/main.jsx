@@ -47,7 +47,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="games/cityquiz" element={<QuizPlayer />} />
                 <Route path="games/royalpuzzle" element={<RoyalPuzzleGame />} />
                 <Route path="games/solsnap" element={<SolSnap />} />
-
+				
                 {/* Custom 404 (προαιρετικό) */}
                 {/* <Route path="*" element={<NotFound />} /> */}
               </Route>

@@ -264,7 +264,8 @@ export default function RoyalPuzzleGame() {
                   left: `${p.x}px`,
                   top: `${p.y}px`,
                   width: `${100 / cols}%`,
-                  height: `${100 / rows}%`
+                  height: `${100 / rows}%`,
+                  zIndex: p.x === p.correctX && p.y === p.correctY ? 1 : 2
                 }}
                 draggable="false"
                 onPointerDown={(e) => handlePointerDown(e, i)}
