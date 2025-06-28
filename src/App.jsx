@@ -2,6 +2,7 @@ import React from "react";
 import GlobalStyle from "./styles/GlobalStyle.js";
 import ScrollToTop from "./components/ScrollToTop";
 import Topbar from "./components/Topbar";
+import InstagramFloatingButton from "./components/InstagramFloatingButton"; // ✅ ΝΕΟ
 import { Outlet } from "react-router-dom";
 import "./index.css";
 
@@ -22,6 +23,9 @@ function App() {
           </main>
         </div>
       </div>
+
+      {/* ✅ Floating κουμπί Instagram μόνο σε κινητό */}
+      <InstagramFloatingButton />
     </>
   );
 }
