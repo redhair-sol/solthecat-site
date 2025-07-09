@@ -259,8 +259,8 @@
     ]
   },
     {
-    "id": 8,
-    "title": "SOLadventure #8 – Swiss, air, alpine stare 🏔 ️🇨🇭",
+    "id": 9,
+    "title": "SOLadventure #9 – Swiss, air, alpine stare 🏔 ️🇨🇭",
     "quote": "Height never humbled her.",
     "caption": "The Alps called. She brought silence. 🐾🐾🐾",
     "image": "episodes/swiss.png",
@@ -296,17 +296,17 @@
     ]
   },
   {
-    "id": 9,
-    "title": "SOLadventure #9 – Vienna, paws & poise 🎻 🇦🇹",
+    "id": 8,
+    "title": "SOLadventure #8 – Vienna, velvet paws 🎻 🇦🇹",
     "quote": "She didn’t knock. The doors knew.",
-    "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
+    "caption": "In stillness, she reigned. In stone, she bloomed 🐾🐾🐾",
     "image": "episodes/vienna.png",
     "location": { "lat": 48.2082, "lng": 16.3738 },
-    "visible": false,
+    "visible": true,
     "city": "vienna",
     "story": {
-      "en": "Vienna whispered of waltzes and empires, but Sol needed no music. She moved through golden halls and imperial courtyards as if memory itself had shaped them for her. No crown, no title — yet every corridor yielded. The city, rich in tradition, softened beneath her paws like silk under command.",
-      "el": "Η Βιέννη ψιθύριζε για βαλς και αυτοκρατορίες, μα η Sol δεν χρειαζόταν μουσική. Πέρασε μέσα από χρυσές αίθουσες και αυτοκρατορικά προαύλια σαν να τα είχε διαμορφώσει η ίδια η μνήμη. Χωρίς στέμμα, χωρίς τίτλο — κι όμως κάθε διάδρομος υπάκουσε. Η πόλη, γεμάτη παράδοση, μαλάκωσε κάτω από τις πατούσες της σαν μετάξι με διαταγή."
+      "en": "Vienna whispered of waltzes and empires, but Sol needed no music. She didn’t follow the rhythm of tradition — she moved with her own, the kind that cities recognize without ever being taught. She wandered through golden halls and imperial courtyards not as a guest, but as someone memory had been waiting to return. No crown. No title. And yet, every corridor gave way. The marble beneath her paws didn’t echo — it hushed, as if reverence itself had taken form. The breeze carried traces of centuries past, but her silence was louder, richer, more lasting. The scent of distant gardens, the softness of petals, the hush of strings waiting to play — everything leaned toward her. Not out of obligation. Out of recognition. She made no claim. No declaration. She simply walked, and the city listened. Vienna, built for rulers and composers, paused. And in that pause, she reigned.",
+      "el": "Η Βιέννη ψιθύριζε βαλς και αυτοκρατορίες, μα η Sol δεν χρειαζόταν μουσική. Δεν ακολούθησε τον ρυθμό της παράδοσης — κινήθηκε με τον δικό της, αυτόν που οι πόλεις αναγνωρίζουν χωρίς να τους έχει διδαχθεί. Περιπλανήθηκε σε χρυσαφένιες αίθουσες και αυτοκρατορικές αυλές, όχι σαν επισκέπτρια, αλλά σαν κάτι που η μνήμη περίμενε να επιστρέψει. Χωρίς στέμμα. Χωρίς τίτλο. Κι όμως, κάθε διάδρομος υποχώρησε. Το μάρμαρο κάτω από τις πατούσες της δεν αντήχησε — σώπασε, σαν να πήρε μορφή ο σεβασμός. Το αεράκι έφερνε ίχνη από περασμένους αιώνες, μα η σιωπή της ήταν δυνατότερη, βαθύτερη, διαρκέστερη. Η ευωδιά των κήπων, η απαλότητα των πετάλων, η αναμονή μιας μελωδίας που δεν έπαιξε ποτέ — όλα έγειραν προς το μέρος της. Όχι από υποχρέωση. Από αναγνώριση. Δεν διεκδίκησε τίποτα. Δεν δήλωσε τίποτα, απλώς περπάτησε και η πόλη την άκουσε. Η Βιέννη, χτισμένη για βασιλείς και συνθέτες, σταμάτησε. Και μέσα σ’ αυτή τη παύση, εκείνη βασίλεψε."
     },
     "snapQuestions": [
       {
