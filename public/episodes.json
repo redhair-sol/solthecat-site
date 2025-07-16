@@ -259,8 +259,8 @@
     ]
   },
     {
-    "id": 9,
-    "title": "SOLadventure #9 – Swiss, air, alpine stare 🏔 ️🇨🇭",
+    "id": 10,
+    "title": "SOLadventure #10 – Swiss, air, alpine stare 🏔 ️🇨🇭",
     "quote": "Height never humbled her.",
     "caption": "The Alps called. She brought silence. 🐾🐾🐾",
     "image": "episodes/swiss.png",
@@ -333,17 +333,17 @@
     ]
   },
   {
-    "id": 10,
-    "title": "SOLadventure #10 – Prague, with royal mischief 👑 🇨🇿",
-    "quote": "Crowned in whispers",
-    "caption": "Past meets paws. Silently. 🐾🐾🐾",
+    "id": 9,
+    "title": "SOLadventure #9 – Prague, spellbound in gold 🕯️🇨🇿",
+    "quote": "She wandered slow. The shadows bent",
+    "caption": "Where myths curled, she glowed. 🐾🐾🐾",
     "image": "episodes/prague.png",
     "location": { "lat": 50.0755, "lng": 14.4378 },
-    "visible": false,
+    "visible": true,
     "city": "prague",
     "story": {
-      "en": "Prague was already a fairytale — all arches, whispers, and centuries of memory. But as Sol crossed its bridges, something changed. Her steps wrote new verses between the stones. No need for proclamations. Just stillness, gaze, and a single royal breath. Quietly. Imperially. Purrfectly.",
-      "el": "Η Πράγα ήταν ήδη ένα παραμύθι — με καμάρες, ψιθύρους και αιώνες μνήμης. Μα καθώς η Sol διέσχιζε τις γέφυρές της, κάτι άλλαξε. Τα βήματά της έγραψαν νέους στίχους ανάμεσα στις πέτρες. Χωρίς δηλώσεις. Μόνο ησυχία, βλέμμα και μια βασιλική ανάσα. Ήσυχα. Αυτοκρατορικά. Νιαουριστά τέλεια."
+      "en": "Prague is not a city that shouts. It speaks in shadows, in footsteps echoing over cobblestone lanes, in colors that feel forgotten by an old master’s brush. It stretched before her like an alchemical manuscript — rivers of light slipped down the Vltava, bell towers dripped stories, and the ancient astronomical clock twisted time into spirals. Sol moved through the layers of legend as if turning pages in a familiar chapter. Each step lit up a flamboyant gargoyle above, each glance unlocked arcades long lost. Marionettes in shop windows stirred, twitching with a shiver only old legends understand. And when she paused at the heart of Charles Bridge, the river changed rhythm, as if carving a new current just for her. She needed no crown — it was enough to breathe the golden air that lit up the city’s nights. That night, Prague ceased to be the “Golden City.” It became Sol’s memory — etched forever into the earthly realm.",
+      "el": "Η Πράγα δεν είναι πόλη που φωνάζει. Μιλά με σκιές, με ήχους από πέλματα στους λιθόστρωτους δρόμους, με χρώματα που μοιάζουν να έχουν ξεχαστεί από κάποιον παλιό ζωγράφο. Απλώθηκε μπροστά της σαν αλχημικό χειρόγραφο∙ ποταμοί από φως γλιστρούσαν στον Μολδάβα, τα καμπαναριά έσταζαν ιστορίες, και το παλιό αστρονομικό ρολόι έστριβε τον χρόνο σε σπείρες. Η Sol  διέσχισε τα στρώματα του μύθου σαν να γύριζε σε οικείο κεφάλαιο. Κάθε της βήμα άναβε μια φανταχτερή γκροτέσκα στη στέγη, κάθε της βλέμμα ξεκλείδωνε στοές ξεχασμένες. Οι μαριονέτες στα βιτρίνες σάλεψαν μ’ ένα σκίρτημα που μόνο οι παλιοί θρύλοι καταλαβαίνουν. Κι όταν στάθηκε στο μέσο της Γέφυρας του Καρόλου, το νερό άλλαξε ρυθμό, σα να ήθελε να χαράξει καινούργιο ρεύμα. Δεν χρειάστηκε στέμμα· της αρκούσε να αναπνέει τον χρυσό αέρα που φώτιζε τα βράδια της πόλης. Εκείνη τη νύχτα, η Πράγα δεν παρέμεινε η “Χρυσή Πόλη”· έγινε η ανάμνηση της Sol στη γήινη επικράτεια."
     },
     "snapQuestions": [
       {
@@ -379,8 +379,8 @@
     "visible": false,
     "city": "budapest",
     "story": {
-      "en": "She moved across the Danube not as a visitor, but as if she had crossed it for centuries. From Buda’s heights to Pest’s grandeur, her stride was both grace and command. The Parliament shimmered below, not in pride, but in acknowledgment. The city didn't just light up — it bowed.",
-      "el": "Πέρασε τον Δούναβη όχι σαν επισκέπτρια, αλλά σαν να τον είχε διασχίσει αιώνες τώρα. Από τα υψώματα της Βούδας ως τη μεγαλοπρέπεια της Πέστης, το βήμα της ήταν χάρη και εξουσία μαζί. Το Κοινοβούλιο λαμποκοπούσε κάτω της — όχι από περηφάνια, αλλά από αναγνώριση. Η πόλη δεν φωτίστηκε απλώς. Υποκλίθηκε."
+      "en": "She crossed the Danube not like a visitor, but like a story returning to its origin. From Buda’s ancient hills to Pest’s illuminated grace, her steps carried no urgency — only certainty. The Parliament shimmered not to impress, but to acknowledge. Bridges held their breath, domes tilted slightly, and the marble along the riverbank hushed beneath her paws. No crown. No claim. And yet, Budapest paused — not to surrender, but to salute.",
+      "el": "Διέσχισε τον Δούναβη όχι σαν επισκέπτρια, αλλά σαν μια ιστορία που επιστρέφει στη ρίζα της. Από τους αρχαίους λόφους της Βούδας ως τη φωτισμένη αρχοντιά της Πέστης, τα βήματά της δεν είχαν βιασύνη — μόνο βεβαιότητα. Το Κοινοβούλιο έλαμψε όχι για να εντυπωσιάσει, αλλά για να αναγνωρίσει. Οι γέφυρες κράτησαν την ανάσα τους, οι θόλοι έκλιναν ελαφρά, και το μάρμαρο στην όχθη σίγησε κάτω από τις πατούσες της. Ούτε στέμμα. Ούτε διεκδίκηση. Κι όμως, η Βουδαπέστη στάθηκε — όχι για να υποταχθεί, αλλά για να τιμήσει."
     },
     "snapQuestions": [
       {
@@ -408,7 +408,7 @@
   },
   {
     "id": 12,
-    "title": "SOLadventure #12 – Ljubljana, softly crowned 🏰 🇸🇮",
+    "title": "SOLadventure #9 – Ljubljana, softly crowned 🏰 🇸🇮",
     "quote": "Crowned by calm.",
     "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
     "image": "episodes/ljubljana.png",
