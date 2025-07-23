@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is Bergen the second‑largest city in Norway?",
+      "el": "Είναι το Μπέργκεν η δεύτερη μεγαλύτερη πόλη της Νορβηγίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s third", "el": "Είναι τρίτη" }, "correct": false },
+      { "text": { "en": "It’s the capital", "el": "Είναι η πρωτεύουσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Is Bergen called the Gateway to the Fjords?",
+      "el": "Ονομάζεται το Μπέργκεν «Πύλη προς τα φιόρδ»;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s Gateway to the Mountains", "el": "Είναι Πύλη προς τα Βουνά" }, "correct": false },
+      { "text": { "en": "It’s Bridge to the Sea", "el": "Είναι Γέφυρα προς τη Θάλασσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Does the story mention wooden houses?",
+      "el": "Αναφέρει η αφήγηση ξύλινα σπίτια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only stone houses", "el": "Μόνο πέτρινα σπίτια" }, "correct": false },
+      { "text": { "en": "Only glass facades", "el": "Μόνο γυάλινες προσόψεις" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Did SOL chase the cobblestones?",
+      "el": "Κυνήγησε η SOL τα λιθόστρωτα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "She skipped them", "el": "Τα υπέρπηδησε" }, "correct": false },
+      { "text": { "en": "She hid under them", "el": "Κρυφτηκε από κάτω" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Is the harbor described as exhaling in rhythm?",
+      "el": "Περιγράφεται το λιμάνι σαν να εκπνέει με ρυθμό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It roared", "el": "Βρυχήθηκε" }, "correct": false },
+      { "text": { "en": "It whispered", "el": "Σψίθυρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Does the story mention a crescendo?",
+      "el": "Αναφέρει η ιστορία κορύφωση;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only a climax", "el": "Μόνο ένα κλιμαξ" }, "correct": false },
+      { "text": { "en": "Only a finale", "el": "Μόνο ένα φινάλε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Is Fløibanen a famous funicular in Bergen?",
+      "el": "Είναι το Fløibanen διάσημο τελεφερίκ στο Μπέργκεν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s in Oslo", "el": "Είναι στο Όσλο" }, "correct": false },
+      { "text": { "en": "It’s a museum", "el": "Είναι μουσείο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Is Bryggen the old wharf area in Bergen?",
+      "el": "Είναι το Bryggen η παλιά προβλήτα στο Μπέργκεν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s a church", "el": "Είναι εκκλησία" }, "correct": false },
+      { "text": { "en": "It’s a forest", "el": "Είναι δάσος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Is Bergen famous for a dry climate?",
+      "el": "Είναι το Μπέργκεν γνωστό για ξηρό κλίμα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "It has deserts", "el": "Έχει ερήμους" }, "correct": false },
+      { "text": { "en": "It’s always sunny", "el": "Είναι πάντα ηλιόλουστο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Are seven mountains surrounding Bergen?",
+      "el": "Περιστοιχίζεται το Μπέργκεν από επτά βουνά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Five", "el": "Πέντε" }, "correct": false },
+      { "text": { "en": "Nine", "el": "Εννιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Is Bergen the capital of Sweden?",
+      "el": "Είναι το Μπέργκεν πρωτεύουσα της Σουηδίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "It’s capital of Denmark", "el": "Είναι πρωτεύουσα της Δανίας" }, "correct": false },
+      { "text": { "en": "It’s capital of Finland", "el": "Είναι πρωτεύουσα της Φινλανδίας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Is Bergen known for heavy rainfall?",
+      "el": "Είναι το Μπέργκεν γνωστό για έντονες βροχοπτώσεις;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s desert climate", "el": "Έρημος" }, "correct": false },
+      { "text": { "en": "It’s snow only", "el": "Μόνο χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Is the city described as calm in the story?",
+      "el": "Περιγράφεται η πόλη ως ήρεμη στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s busy", "el": "Είναι πολυσύχναστη" }, "correct": false },
+      { "text": { "en": "It’s chaotic", "el": "Είναι χαοτική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Did SOL listen as the air composed around her?",
+      "el": "Άκουγε η SOL ενώ ο αέρας συνθέτονταν γύρω της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She spoke", "el": "Μίλησε" }, "correct": false },
+      { "text": { "en": "She slept", "el": "Κοιμήθηκε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Does the story mention lanterns flickering?",
+      "el": "Αναφέρει η ιστορία φανάρια να τρεμοπαίζουν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They shone steadily", "el": "Έλαμπαν σταθερά" }, "correct": false },
+      { "text": { "en": "They were absent", "el": "Δεν υπήρχαν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Did SOL run across the harbor?",
+      "el": "Έτρεξε η SOL στο λιμάνι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "She swam", "el": "Κολύμπησε" }, "correct": false },
+      { "text": { "en": "She flew", "el": "Πετούσε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Is Bergen located on the coast of Norway?",
+      "el": "Βρίσκεται το Μπέργκεν στην ακτή της Νορβηγίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s inland", "el": "Είναι στην ενδοχώρα" }, "correct": false },
+      { "text": { "en": "It’s an island", "el": "Είναι νησί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Is Bergen built on islands like Stockholm?",
+      "el": "Είναι το Μπέργκεν χτισμένο πάνω σε νησιά όπως η Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "It’s on a peninsula", "el": "Είναι σε χερσόνησο" }, "correct": false },
+      { "text": { "en": "It’s floating", "el": "Πλωτό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is the quote “Fjords cradle her melody” used in this episode?",
+      "el": "Χρησιμοποιείται το quote “Fjords cradle her melody” στο επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s a different quote", "el": "Είναι διαφορετικό quote" }, "correct": false },
+      { "text": { "en": "It’s for Stockholm", "el": "Είναι για Στοκχόλμη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Is Bryggen a UNESCO World Heritage site?",
+      "el": "Είναι το Bryggen Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s in Stockholm", "el": "Είναι στη Στοκχόλμη" }, "correct": false },
+      { "text": { "en": "It’s in Copenhagen", "el": "Είναι στην Κοπεγχάγη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Does the story mention any storms?",
+      "el": "Αναφέρει η ιστορία καταιγίδες;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only wind", "el": "Μόνο άνεμο" }, "correct": false },
+      { "text": { "en": "Only rain", "el": "Μόνο βροχή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Does the Instagram caption end with paw emojis?",
+      "el": "Τελειώνει το caption του Instagram με emoji πατουσών;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It ends with hearts", "el": "Τελειώνει με καρδιές" }, "correct": false },
+      { "text": { "en": "It ends with stars", "el": "Τελειώνει με αστέρια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Is Bergen famous for its Fish Market?",
+      "el": "Είναι το Μπέργκεν διάσημο για την αγορά ψαριών;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s known for cheese", "el": "Είναι γνωστό για τυρί" }, "correct": false },
+      { "text": { "en": "It’s known for wine", "el": "Είναι γνωστό για κρασί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Does the story describe mountains meeting the sea?",
+      "el": "Περιγράφει η ιστορία βουνά που συναντούν τη θάλασσα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only hills", "el": "Μόνο λόφους" }, "correct": false },
+      { "text": { "en": "Only plains", "el": "Μόνο πεδιάδες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Bergen noted for its calm harmony in the story?",
+      "el": "Σημειώνεται το Μπέργκεν για την ήρεμη αρμονία του στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s chaotic", "el": "Είναι χαοτικό" }, "correct": false },
+      { "text": { "en": "It’s loud", "el": "Είναι θορυβώδες" }, "correct": false }
+    ]
+  }
+]

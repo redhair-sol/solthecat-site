@@ -1,0 +1,302 @@
+[
+  {
+    "question": {
+      "en": "What is Tallinn’s medieval Old Town called in Estonian?",
+      "el": "Πώς ονομάζεται η μεσαιωνική Παλιά Πόλη του Ταλίν στα εσθονικά;"
+    },
+    "answers": [
+      { "text": { "en": "Vanalinn", "el": "Vanalinn" }, "correct": true },
+      { "text": { "en": "Uuslinn", "el": "Uuslinn" }, "correct": false },
+      { "text": { "en": "Keskmunak", "el": "Keskmunak" }, "correct": false },
+      { "text": { "en": "Põhjalinn", "el": "Põhjalinn" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What heritage designation does Tallinn Old Town hold?",
+      "el": "Τι είδους παγκόσμιας πολιτιστικής κληρονομιάς θεωρείται η Παλιά Πόλη του Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "UNESCO World Heritage Site", "el": "Μνημείο Παγκόσμιας Κληρονομιάς UNESCO" }, "correct": true },
+      { "text": { "en": "European Capital of Culture", "el": "Ευρωπαϊκή Πρωτεύουσα Πολιτισμού" }, "correct": false },
+      { "text": { "en": "EU Cultural Capital", "el": "Πολιτιστική Πρωτεύουσα ΕΕ" }, "correct": false },
+      { "text": { "en": "Nordic Heritage Site", "el": "Nordic Heritage Site" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which castle overlooks the city from Toompea Hill?",
+      "el": "Ποιο κάστρο δεσπόζει στην κορυφή του λόφου Τοομπέα;"
+    },
+    "answers": [
+      { "text": { "en": "Toompea Castle", "el": "Κάστρο Τοομπέα" }, "correct": true },
+      { "text": { "en": "Kadriorg Castle", "el": "Κάστρο Καδριόργκ" }, "correct": false },
+      { "text": { "en": "Viru Fortress", "el": "Οχυρό Βίρου" }, "correct": false },
+      { "text": { "en": "Old Town Castle", "el": "Κάστρο Παλιάς Πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which onion‑domed cathedral stands near Toompea Castle?",
+      "el": "Ποιος καθεδρικός ναός με κρεμμυδόσχημες θόλους βρίσκεται κοντά στο κάστρο Τοομπέα;"
+    },
+    "answers": [
+      { "text": { "en": "Alexander Nevsky Cathedral", "el": "Καθεδρικός Αλεξάντερ Νέφσκι" }, "correct": true },
+      { "text": { "en": "St. Olaf’s Cathedral", "el": "Καθεδρικός Άγιου Όλαφ" }, "correct": false },
+      { "text": { "en": "St. Mary’s Cathedral", "el": "Καθεδρικός Παναγίας" }, "correct": false },
+      { "text": { "en": "St. Peter’s Cathedral", "el": "Καθεδρικός Αγίου Πέτρου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Under what name was Tallinn known for centuries?",
+      "el": "Με ποιο όνομα ήταν γνωστό το Ταλίν για αιώνες;"
+    },
+    "answers": [
+      { "text": { "en": "Reval", "el": "Reval" }, "correct": true },
+      { "text": { "en": "Tallinna", "el": "Tallinna" }, "correct": false },
+      { "text": { "en": "Vanalinn", "el": "Vanalinn" }, "correct": false },
+      { "text": { "en": "Narva", "el": "Narva" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What medieval fortification still encircles the Old Town?",
+      "el": "Ποια μεσαιωνική οχύρωση περιβάλλει ακόμη την Παλιά Πόλη;"
+    },
+    "answers": [
+      { "text": { "en": "The City Wall", "el": "Τα Τείχη της Πόλης" }, "correct": true },
+      { "text": { "en": "Viru Wall", "el": "Τείχος Βίρου" }, "correct": false },
+      { "text": { "en": "Kadriorg Wall", "el": "Τείχος Καδριόργκ" }, "correct": false },
+      { "text": { "en": "Peter’s Ramparts", "el": "Τείχη του Πέτρου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which church was once considered the tallest building in the world?",
+      "el": "Ποια εκκλησία θεωρούνταν κάποτε το ψηλότερο κτίριο στον κόσμο;"
+    },
+    "answers": [
+      { "text": { "en": "St. Olaf’s Church", "el": "Εκκλησία Αγίου Όλαφ" }, "correct": true },
+      { "text": { "en": "St. Mary’s Church", "el": "Εκκλησία Παναγίας" }, "correct": false },
+      { "text": { "en": "Toomkirik", "el": "Τοομκιρκ" }, "correct": false },
+      { "text": { "en": "Songar’s Church", "el": "Εκκλησία Σονγκάρ" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What maritime museum is housed in a seaplane hangar?",
+      "el": "Ποιο θαλάσσιο μουσείο στεγάζεται σε υπόστεγο υδροπλάνου;"
+    },
+    "answers": [
+      { "text": { "en": "Seaplane Harbour", "el": "Μουσείο Υδροπλάνου" }, "correct": true },
+      { "text": { "en": "Kalamaja Dock", "el": "Ντάκος Καλαμάια" }, "correct": false },
+      { "text": { "en": "Tallinn Port Museum", "el": "Μουσείο Λιμανιού" }, "correct": false },
+      { "text": { "en": "Maritime Vault", "el": "Θαλάσσια Αποθήκη" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which palace did Peter the Great commission in Tallinn?",
+      "el": "Ποιο παλάτι ανέθεσε ο Πέτρος ο Μέγας στο Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Kadriorg Palace", "el": "Παλάτι Καδριόργκ" }, "correct": true },
+      { "text": { "en": "Toompea Palace", "el": "Παλάτι Τοομπέα" }, "correct": false },
+      { "text": { "en": "Viru Grove", "el": "Κτήμα Βίρου" }, "correct": false },
+      { "text": { "en": "Old Town Manor", "el": "Αρχοντικό Παλιάς Πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What festival of songs and dances is held every five years in Tallinn?",
+      "el": "Ποιο φεστιβάλ τραγουδιών και χορών γίνεται κάθε πέντε χρόνια στο Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Song Festival (Laulupidu)", "el": "Φεστιβάλ Τραγουδιού (Laulupidu)" }, "correct": true },
+      { "text": { "en": "Dance Gala", "el": "Γκαλά Χορού" }, "correct": false },
+      { "text": { "en": "Music Marathon", "el": "Μαραθώνιος Μουσικής" }, "correct": false },
+      { "text": { "en": "Heritage Parade", "el": "Παρέλαση Κληρονομιάς" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What Christmas tradition takes place in Town Hall Square?",
+      "el": "Ποια χριστουγεννιάτικη παράδοση γίνεται στην Πλατεία του Δημαρχείου;"
+    },
+    "answers": [
+      { "text": { "en": "Christmas Market", "el": "Χριστουγεννιάτικη Αγορά" }, "correct": true },
+      { "text": { "en": "Ice Sculpture Fair", "el": "Έκθεση Παγωμένων Γλυπτών" }, "correct": false },
+      { "text": { "en": "Santa Parade", "el": "Παρέλαση του Άι Βασίλη" }, "correct": false },
+      { "text": { "en": "Light Festival", "el": "Φεστιβάλ Φωτός" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which traditional open sandwich is a Tallinn specialty?",
+      "el": "Ποιο παραδοσιακό ανοιχτό σάντουιτς είναι σπεσιαλιτέ του Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Kiluvõileib", "el": "Kiluvõileib" }, "correct": true },
+      { "text": { "en": "Smørrebrød", "el": "Smørrebrød" }, "correct": false },
+      { "text": { "en": "Bruschetta", "el": "Μπρουσκέτα" }, "correct": false },
+      { "text": { "en": "Melt sandwich", "el": "Τοστ" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which e-government initiative is Estonia famous for?",
+      "el": "Για ποια ψηφιακή πρωτοβουλία είναι γνωστή η Εσθονία;"
+    },
+    "answers": [
+      { "text": { "en": "e‑Estonia", "el": "e‑Εσθονία" }, "correct": true },
+      { "text": { "en": "i‑Tallinn", "el": "i‑Ταλίν" }, "correct": false },
+      { "text": { "en": "e‑Reval", "el": "e‑Reval" }, "correct": false },
+      { "text": { "en": "Digital Baltic", "el": "Ψηφιακό Βαλτικό" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What popular communication app was co-founded in Tallinn?",
+      "el": "Ποια δημοφιλής εφαρμογή επικοινωνίας συνιδρύθηκε στο Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Skype", "el": "Skype" }, "correct": true },
+      { "text": { "en": "Viber", "el": "Viber" }, "correct": false },
+      { "text": { "en": "WhatsApp", "el": "WhatsApp" }, "correct": false },
+      { "text": { "en": "Telegram", "el": "Telegram" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "On which gulf is Tallinn located?",
+      "el": "Σε ποιον κόλπο βρίσκεται το Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Gulf of Finland", "el": "Κόλπος της Φινλανδίας" }, "correct": true },
+      { "text": { "en": "Gulf of Riga", "el": "Κόλπος του Ριγα" }, "correct": false },
+      { "text": { "en": "Bay of Bothnia", "el": "Κόλπος του Μπόθνια" }, "correct": false },
+      { "text": { "en": "Gulf of Riga", "el": "Κόλπος του Ριγα" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which creative district was built in a former industrial area?",
+      "el": "Ποια δημιουργική γειτονιά δημιουργήθηκε σε πρώην βιομηχανική περιοχή;"
+    },
+    "answers": [
+      { "text": { "en": "Telliskivi Creative City", "el": "Telliskivi Creative City" }, "correct": true },
+      { "text": { "en": "Kadriorg Village", "el": "Χωριό Καδριόργκ" }, "correct": false },
+      { "text": { "en": "Old Town Plaza", "el": "Πλατεία Παλιάς Πόλης" }, "correct": false },
+      { "text": { "en": "Seaplane District", "el": "Γειτονιά Υδροπλάνων" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What tower offers panoramic views and is 314 meters tall?",
+      "el": "Ποιος πύργος προσφέρει πανοραμική θέα και έχει ύψος 314 μέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "Tallinn TV Tower", "el": "Πύργος Τηλεόρασης Ταλίν" }, "correct": true },
+      { "text": { "en": "St. Olaf’s Tower", "el": "Πύργος Αγίου Όλαφ" }, "correct": false },
+      { "text": { "en": "Toompea Tower", "el": "Πύργος Τοομπέα" }, "correct": false },
+      { "text": { "en": "Viru Gate Tower", "el": "Πύργος Πύλης Βίρου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which park was commissioned by Peter the Great in Tallinn?",
+      "el": "Ποιο πάρκο διαμορφώθηκε από τον Πέτρο τον Μέγα στο Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Kadriorg Park", "el": "Πάρκο Καδριόργκ" }, "correct": true },
+      { "text": { "en": "Vanalinn Gardens", "el": "Κήποι Παλιάς Πόλης" }, "correct": false },
+      { "text": { "en": "Seaplane Park", "el": "Πάρκο Υδροπλάνων" }, "correct": false },
+      { "text": { "en": "Harbor Park", "el": "Λιμενικό Πάρκο" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "In which year did Estonia regain its independence?",
+      "el": "Σε ποιο έτος αποκαταστάθηκε η ανεξαρτησία της Εσθονίας;"
+    },
+    "answers": [
+      { "text": { "en": "1991", "el": "1991" }, "correct": true },
+      { "text": { "en": "1989", "el": "1989" }, "correct": false },
+      { "text": { "en": "1995", "el": "1995" }, "correct": false },
+      { "text": { "en": "2000", "el": "2000" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What is the name of the gate with two towers leading into the Old Town?",
+      "el": "Πώς ονομάζεται η πύλη με δύο πύργους που οδηγεί στην Παλιά Πόλη;"
+    },
+    "answers": [
+      { "text": { "en": "Viru Gate", "el": "Πύλη Βίρου" }, "correct": true },
+      { "text": { "en": "Toom Gate", "el": "Πύλη Τοομ" }, "correct": false },
+      { "text": { "en": "Sea Gate", "el": "Θάλασσινη Πύλη" }, "correct": false },
+      { "text": { "en": "Northern Gate", "el": "Βόρεια Πύλη" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What is the main square of Tallinn called?",
+      "el": "Πώς ονομάζεται η κεντρική πλατεία του Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Town Hall Square", "el": "Πλατεία Δημαρχείου" }, "correct": true },
+      { "text": { "en": "Freedom Square", "el": "Πλατεία Ελευθερίας" }, "correct": false },
+      { "text": { "en": "Viru Square", "el": "Πλατεία Βίρου" }, "correct": false },
+      { "text": { "en": "Old Town Square", "el": "Πλατεία Παλιάς Πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Tallinn joined the Hanseatic League in which year?",
+      "el": "Σε ποιο έτος το Ταλίν εντάχθηκε στην Χανσεατική Ένωση;"
+    },
+    "answers": [
+      { "text": { "en": "1285", "el": "1285" }, "correct": true },
+      { "text": { "en": "1350", "el": "1350" }, "correct": false },
+      { "text": { "en": "1400", "el": "1400" }, "correct": false },
+      { "text": { "en": "1200", "el": "1200" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which animal appears on Tallinn’s coat of arms?",
+      "el": "Ποιο ζώο εμφανίζεται στο έμβλημα του Ταλίν;"
+    },
+    "answers": [
+      { "text": { "en": "Lion", "el": "Λιοντάρι" }, "correct": true },
+      { "text": { "en": "Eagle", "el": "Αετός" }, "correct": false },
+      { "text": { "en": "Bear", "el": "Αρκούδα" }, "correct": false },
+      { "text": { "en": "Wolf", "el": "Λύκος" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which museum is housed in the Great Guild Hall?",
+      "el": "Ποιο μουσείο στεγάζεται στη Μεγάλη Αίθουσα Συντεχνιών;"
+    },
+    "answers": [
+      { "text": { "en": "Estonian History Museum", "el": "Εσθονικό Μουσείο Ιστορίας" }, "correct": true },
+      { "text": { "en": "Art Museum", "el": "Μουσείο Τέχνης" }, "correct": false },
+      { "text": { "en": "Maritime Museum", "el": "Θαλάσσιο Μουσείο" }, "correct": false },
+      { "text": { "en": "Natural History Museum", "el": "Μουσείο Φυσικής Ιστορίας" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What nickname is given to Tallinn for its medieval towers?",
+      "el": "Ποιο παρατσούκλι δίνεται στο Ταλίν για τους μεσαιωνικούς πύργους του;"
+    },
+    "answers": [
+      { "text": { "en": "City of a Hundred Spires", "el": "Πόλη των Εκατό Πύργων" }, "correct": true },
+      { "text": { "en": "Venice of the North", "el": "Βενετία του Βορρά" }, "correct": false },
+      { "text": { "en": "Pearl of the Baltics", "el": " Μαργαριτάρι των Βαλτικών" }, "correct": false },
+      { "text": { "en": "Northern Jewel", "el": "Βόρειο Κόσμημα" }, "correct": false }
+    ]
+  }
+]

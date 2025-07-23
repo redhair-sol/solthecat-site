@@ -258,43 +258,6 @@
       }
     ]
   },
-    {
-    "id": 10,
-    "title": "SOLadventure #10 – Swiss, air, alpine stare 🏔 ️🇨🇭",
-    "quote": "Height never humbled her.",
-    "caption": "The Alps called. She brought silence. 🐾🐾🐾",
-    "image": "episodes/swiss.png",
-    "location": { "lat": 46.8182, "lng": 8.2275 },
-    "visible": false,
-    "city": "swiss",
-    "story": {
-      "en": "She didn’t climb the Alps — she summoned them. In the hush of the Swiss air, she stood motionless, and the peaks responded with reverence. No need for movement when presence alone reshapes the skyline. Silence is easy when you’re already majestic.",
-      "el": "Δεν ανέβηκε στις Άλπεις — τις κάλεσε. Στην ησυχία του ελβετικού αέρα, στάθηκε ακίνητη, και οι κορυφές έγειραν με σεβασμό. Δεν χρειάζεται κίνηση όταν η ίδια η παρουσία ανασχηματίζει τον ορίζοντα. Η σιωπή είναι εύκολη όταν είσαι ήδη μεγαλείο."
-    },
-    "snapQuestions": [
-      {
-        "question": {
-          "en": "Did Sol stand still so the mountains bowed in Switzerland?",
-          "el": "Στάθηκε η Sol ακίνητη ώστε τα βουνά να υποκλιθούν στην Ελβετία;"
-        },
-        "answer": true
-      },
-      {
-        "question": {
-          "en": "Did the mountains bow to Sol’s presence?",
-          "el": "Υποκλίθηκαν τα βουνά στην παρουσία της Sol;"
-        },
-        "answer": true
-      },
-      {
-        "question": {
-          "en": "Did Sol climb the Alps quickly?",
-          "el": "Ανέβηκε γρήγορα η Sol στις Άλπεις;"
-        },
-        "answer": false
-      }
-    ]
-  },
   {
     "id": 8,
     "title": "SOLadventure #8 – Vienna, velvet paws 🎻 🇦🇹",
@@ -369,9 +332,83 @@
       }
     ]
   },
-  {
+   {
+    "id": 10,
+    "title": "SOLadventure #10 – Swiss, air, alpine stare 🏔 ️🇨🇭",
+    "quote": "Height never humbled her.",
+    "caption": "The Alps called. She brought silence. 🐾🐾🐾",
+    "image": "episodes/swiss.png",
+    "location": { "lat": 46.8182, "lng": 8.2275 },
+    "visible": true,
+    "city": "swiss",
+    "story": {
+      "en": "She didn’t climb the Alps — she approached them as one approaches something pure, untouched, and unconquerable. She had no need to assert herself; her stillness alone was sovereignty. Upon the rock she stood, not to challenge the altitude, but to lend it rhythm. The light did not reach for her — it adjusted to her form. The air, ancient and crystal-clear, did not even dare to whisper. The peaks around her didn’t rise — they bowed, aligning themselves with her silence. She followed no trail; she became the path. And when she rested upon the stone, the landscape didn’t surrender — it exhaled. The Alps did not open the way because she crossed them. They yielded because she was truly, undeniably present.",
+      "el": "Δεν ανέβηκε στις Άλπεις, τις προσέγγισε όπως προσεγγίζει κανείς κάτι ανόθευτο, που δεν χρειάζεται κατάκτηση. Δεν χρειαζόταν να επιβληθεί· η ηρεμία της ήταν ήδη κυριαρχία. Πάνω στον βράχο στάθηκε ήρεμη, όχι για να νικήσει το υψόμετρο, αλλά για να του δώσει ρυθμό. Το φως, αντί να την αγγίξει, προσαρμόστηκε πάνω της∙ ο αέρας, πεντακάθαρος και αρχαίος, δεν τόλμησε καν να ψιθυρίσει. Οι κορυφές γύρω της δεν ορθώθηκαν — έγειραν, σαν να συγχρονίστηκαν με τη σιγή της. Δεν ακολούθησε διαδρομή· εκείνη έγινε το μονοπάτι. Και όταν ακούμπησε στην πέτρα, το τοπίο δεν εξημερώθηκε — ησύχασε. Οι Άλπεις δεν της άνοιξαν δρόμο επειδή τις πέρασε. Της παραδόθηκαν επειδή στάθηκε αληθινά παρούσα."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol stand still so the mountains bowed in Switzerland?",
+          "el": "Στάθηκε η Sol ακίνητη ώστε τα βουνά να υποκλιθούν στην Ελβετία;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the mountains bow to Sol’s presence?",
+          "el": "Υποκλίθηκαν τα βουνά στην παρουσία της Sol;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol climb the Alps quickly?",
+          "el": "Ανέβηκε γρήγορα η Sol στις Άλπεις;"
+        },
+        "answer": false
+      }
+    ]
+  },
+   {
     "id": 11,
-    "title": "SOLadventure #11 – Budapest, throne by the river 🌉 🇭🇺",
+    "title": "SOLadventure #11 – Ljubljana, softly crowned 🏰 🇸🇮",
+    "quote": "Crowned by calm.",
+    "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
+    "image": "episodes/ljubljana.png",
+    "location": { "lat": 46.0569, "lng": 14.5058 },
+    "visible": false,
+    "city": "ljubljana",
+    "story": {
+      "en": "Ljubljana didn’t need to be claimed — it recognized her from the moment she appeared. No guards lined the streets, no trumpets sounded. Yet the air shifted. She walked as if the throne had been waiting. With every blink, the city softened. She didn’t conquer. She reigned.",
+      "el": "Η Λιουμπλιάνα δεν χρειάστηκε να κατακτηθεί — την αναγνώρισε από την πρώτη στιγμή. Δεν υπήρχαν φρουροί, δεν ηχούσαν σάλπιγγες. Κι όμως, ο αέρας άλλαξε. Περπάτησε σαν να την περίμενε ο θρόνος. Με κάθε ανοιγοκλείσιμο των ματιών της, η πόλη γινόταν πιο απαλή. Δεν κατέκτησε. Βασίλεψε."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol reign quietly without guards in Ljubljana?",
+          "el": "Βασίλεψε η Sol σιωπηλά χωρίς φρουρούς στη Λιουμπιάνα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol use trumpets to declare her rule?",
+          "el": "Χρησιμοποίησε η Sol σάλπιγγες για να ανακοινώσει την κυριαρχία της;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did guards try to stop Sol in Ljubljana?",
+          "el": "Προσπάθησαν φρουροί να σταματήσουν τη Sol στη Λιουμπιάνα;"
+        },
+        "answer": false
+      }
+    ]
+  },
+   {
+    "id": 12,
+    "title": "SOLadventure #12 – Budapest, throne by the river 🌉 🇭🇺",
     "quote": "She cast no shadow. Just authority.",
     "caption": "She sat. The Parliament bowed. 🐾🐾🐾",
     "image": "episodes/budapest.png",
@@ -406,41 +443,164 @@
       }
     ]
   },
-  {
-    "id": 12,
-    "title": "SOLadventure #9 – Ljubljana, softly crowned 🏰 🇸🇮",
-    "quote": "Crowned by calm.",
-    "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
-    "image": "episodes/ljubljana.png",
-    "location": { "lat": 46.0569, "lng": 14.5058 },
-    "visible": false,
-    "city": "ljubljana",
-    "story": {
-      "en": "Ljubljana didn’t need to be claimed — it recognized her from the moment she appeared. No guards lined the streets, no trumpets sounded. Yet the air shifted. She walked as if the throne had been waiting. With every blink, the city softened. She didn’t conquer. She reigned.",
-      "el": "Η Λιουμπλιάνα δεν χρειάστηκε να κατακτηθεί — την αναγνώρισε από την πρώτη στιγμή. Δεν υπήρχαν φρουροί, δεν ηχούσαν σάλπιγγες. Κι όμως, ο αέρας άλλαξε. Περπάτησε σαν να την περίμενε ο θρόνος. Με κάθε ανοιγοκλείσιμο των ματιών της, η πόλη γινόταν πιο απαλή. Δεν κατέκτησε. Βασίλεψε."
+{
+  "id": 13,
+  "title": "SOLadventure #13 – Kraków, echoes in stone 🏰🇵🇱",
+  "quote": "She walked soft. The city whispered back.",
+  "caption": "Past and pawprints never fade. 🐾🐾🐾",
+  "image": "episodes/Kraków.png",
+  "location": {
+    "lat": 50.0647,
+    "lng": 19.945
+  },
+  "visible": false,
+  "city": "krakow",
+  "story": {
+    "en": "Kraków doesn’t narrate; it reveals. It doesn’t exhibit its history, it seeps it. Sol walked through alleys where kings once whispered their doubts, and courtyards that still echoed revolutions written in ink. Somewhere, behind shuttered windows, a violin played. She paused. She listened. And moved again, as if following a memory that wasn’t hers—but she knew it. Somewhere in Kazimierz, an old inscription cracked—not from time, but from remembrance. Where people once erased, Sol recalled. She didn’t change anything; she simply existed. And for a moment, the city wasn’t a place, but a face: aged and calm, looking at her and smiling.",
+    "el": "Η Κρακοβία δεν αφηγείται· αποκαλύπτει. Δεν εκθέτει την ιστορία της, τη διαρρέει. Περπάτησε σε σοκάκια όπου άλλοτε οι βασιλιάδες ψιθύριζαν τις αμφιβολίες τους και σε αυλές που ακόμα αντηχούσαν επαναστάσεις γραμμένες με μελάνι. Κάπου, πίσω από κλειστά παραθυρόφυλλα, ένα βιολί έπαιζε. Στάθηκε. Άκουσε. Και προχώρησε ξανά, σαν να ακολουθούσε μια μνήμη που δεν ήταν δική της — μα την γνώριζε. Κάπου, στα στενά του Καζιμιέρζ, μια παλιά επιγραφή ράγισε· όχι από χρόνο, μα από μνήμη. Εκεί όπου οι άνθρωποι διέγραψαν, η Sol ανακάλεσε. Δεν άλλαξε τίποτα· απλώς υπήρξε. Και για λίγο, η πόλη δεν ήταν τόπος, ήταν πρόσωπο: ένα βλέμμα γερασμένο και ήρεμο, που την κοιτούσε και χαμογελούσε."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol hear a violin behind shuttered windows?",
+        "el": "Άκουσε η Sol ένα βιολί πίσω από κλειστά παραθυρόφυλλα;"
+      },
+      "answer": true
     },
-    "snapQuestions": [
-      {
-        "question": {
-          "en": "Did Sol reign quietly without guards in Ljubljana?",
-          "el": "Βασίλεψε η Sol σιωπηλά χωρίς φρουρούς στη Λιουμπιάνα;"
-        },
-        "answer": true
+    {
+      "question": {
+        "en": "Did Sol erase a memory in Kazimierz?",
+        "el": "Διέγραψε η Sol μια μνήμη στο Καζιμιέρζ;"
       },
-      {
-        "question": {
-          "en": "Did Sol use trumpets to declare her rule?",
-          "el": "Χρησιμοποίησε η Sol σάλπιγγες για να ανακοινώσει την κυριαρχία της;"
-        },
-        "answer": false
+      "answer": false
+    },
+    {
+      "question": {
+        "en": "Did Kraków smile at Sol like an old face?",
+        "el": "Χαμογέλασε η Κρακοβία στη Sol σαν γέρικο πρόσωπο;"
       },
-      {
-        "question": {
-          "en": "Did guards try to stop Sol in Ljubljana?",
-          "el": "Προσπάθησαν φρουροί να σταματήσουν τη Sol στη Λιουμπιάνα;"
-        },
-        "answer": false
-      }
-    ]
-  }
-]
+      "answer": true
+    }
+  ]
+},
+{
+  "id": 14,
+  "title": "SOLadventure #14 – Tallinn, soft reign 🌫️ 🇪🇪",
+  "quote": "Even the dusk waited",
+  "caption": "When cobblestones hush, she rules. 🐾🐾🐾",
+  "image": "episodes/Tallinn.png",
+  "location": {
+    "lat": 59.437,
+    "lng": 24.7536
+  },
+  "visible": false,
+  "city": "tallinn",
+  "story": {
+    "en": "Tallinn welcomed her not with trumpets but with stillness. Between turrets and twisted lanes, Sol didn’t move to be seen — the city adjusted to see her. Old lanterns dimmed in reverence, rooftops leaned closer, and the breeze softened. In the silence of the square, time bent a little. She paused beneath the spires and blinked slowly, and even the stone seemed to inhale. It wasn’t a parade. It was a nod from history. She reigned without rising.",
+    "el": "Το Ταλίν δεν την υποδέχτηκε με σάλπιγγες αλλά με σιγή. Ανάμεσα σε πυργίσκους και στριφογυριστά σοκάκια, η Sol δεν περπάτησε για να την προσέξουν — η πόλη προσαρμόστηκε για να την δει. Τα παλιά φανάρια χαμήλωσαν, οι στέγες έγειραν, και το αεράκι μαλάκωσε. Στη σιωπή της πλατείας, ο χρόνος λύγισε λίγο. Στάθηκε κάτω από τα καμπαναριά και ανοιγόκλεισε τα μάτια αργά — κι ακόμη και το λιθόστρωτο φάνηκε να ανασαίνει. Δεν ήταν παρέλαση· ήταν ένας νεύμα από την Ιστορία. Βασίλεψε χωρίς να υψωθεί."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did the rooftops lean closer to Sol?",
+        "el": "Έγειραν οι στέγες προς τη Sol;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol demand attention in Tallinn?",
+        "el": "Απαίτησε προσοχή η Sol στο Ταλίν;"
+      },
+      "answer": false
+    },
+    {
+      "question": {
+        "en": "Did the city adjust to see her?",
+        "el": "Προσαρμόστηκε η πόλη για να τη δει;"
+      },
+      "answer": true
+    }
+  ]
+},
+{
+  "id": 15,
+  "title": "SOLadventure #15 – Stockholm, light on water 🌊🇸🇪",
+  "quote": "No shimmer, only truth.",
+  "caption": "No ripples. No echoes. Just still light. 🐾🐾🐾",
+  "image": "episodes/stockholm.png",
+  "location": {
+    "lat": 59.3293,
+    "lng": 18.0686
+  },
+  "visible": false,
+  "city": "stockholm",
+  "story": {
+    "en": "She stepped onto the bridge, where islands stitched together centuries of calm. In Stockholm, light wasn’t a flare—it was a hum. It danced on water, it floated between pastel facades and glass windows like a secret well-kept. SOL didn’t chase it; she became it. She perched near the royal palace, silent as frost, watching the city breathe in rhythm. No throne, no crown—just presence. And the water, always still, always honest, carried her reflection like it belonged.",
+    "el": "Πάτησε πάνω στη γέφυρα, εκεί όπου τα νησιά έραβαν αιώνες ηρεμίας. Στη Στοκχόλμη, το φως δεν ήταν λάμψη — ήταν ψίθυρος. Χόρευε πάνω στο νερό, αιωρούνταν ανάμεσα σε παστέλ προσόψεις και γυάλινες επιφάνειες σαν καλά κρυμμένο μυστικό. Η SOL δεν το κυνήγησε· το έγινε. Στάθηκε κοντά στο βασιλικό παλάτι, ήσυχη σαν πάχνη, παρατηρώντας την πόλη να αναπνέει με ρυθμό. Χωρίς στέμμα, χωρίς θρόνο — μόνο παρουσία. Και το νερό, πάντα ακίνητο, πάντα ειλικρινές, κουβαλούσε την αντανάκλασή της σαν κάτι που του ανήκει."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Is Stockholm built across 14 islands?",
+        "el": "Είναι η Στοκχόλμη χτισμένη πάνω σε 14 νησιά;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did SOL sit on a royal throne in Stockholm?",
+        "el": "Κάθισε η SOL σε βασιλικό θρόνο στη Στοκχόλμη;"
+      },
+      "answer": false
+    },
+    {
+      "question": {
+        "en": "Did the story say the water carried her reflection?",
+        "el": "Ανέφερε η ιστορία ότι το νερό μετέφερε την αντανάκλασή της;"
+      },
+      "answer": true
+    }
+  ]
+},
+{
+  "id": 16,
+  "title": "SOLadventure #16 – Bergen, mist and melody 🎶🇳🇴",
+  "quote": "Fjords cradle her melody.",
+  "caption": "No storm. No sorrow. Just whispered tunes. 🐾🐾🐾",
+  "image": "episodes/bergen.png",
+  "location": {
+    "lat": 60.3913,
+    "lng": 5.3221
+  },
+  "visible": false,
+  "city": "bergen",
+  "story": {
+    "en": "She arrived where mountains met the sea and mist wove songs through wooden houses. In Bergen, every stone hummed with history and every droplet carried a note. SOL didn’t just walk the cobblestones—she listened, letting the air compose around her. Lanterns flickered in greeting, and the harbor exhaled in rhythm. No crescendo, no finale—only the endless melody of stillness.",
+    "el": "Έφτασε εκεί που τα βουνά αγκαλιάζουν τη θάλασσα και η ομίχλη ύφαινε τραγούδια ανάμεσα στα ξύλινα σπίτια. Στο Μπέργκεν, κάθε πέτρα έτρεφε ιστορίες και κάθε σταγόνα μετέφερε έναν ήχο. Η SOL δεν περπάτησε απλώς στα λιθόστρωτα—άκουγε, αφήνοντας τον αέρα να συνθέσει γύρω της. Φανάρια τρεμόπαιζαν σαν χαιρετισμός και το λιμάνι ανέπνεε με ρυθμό. Χωρίς κορύφωση, χωρίς φινάλε—μόνο η ατελείωτη μελωδία της σιγής."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Is Bergen surrounded by fjords and mountains?",
+        "el": "Περιβάλλεται το Μπέργκεν από φιόρδ και βουνά;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did SOL listen to the fog sing?",
+        "el": "Άκουγε η SOL την ομίχλη να τραγουδά;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was the harbor in Bergen described as loud?",
+        "el": "Περιγράφηκε το λιμάνι στο Μπέργκεν ως θορυβώδες;"
+      },
+      "answer": false
+    }
+  ]
+}
+ ]

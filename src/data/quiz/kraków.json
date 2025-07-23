@@ -1,0 +1,278 @@
+[
+  {
+    "question": {
+      "en": "What is the name of the historic square where Sol posed in Kraków?",
+      "el": "Πώς ονομάζεται η ιστορική πλατεία όπου πόζαρε η Sol στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Main Market Square", "el": "Κεντρική Αγορά (Rynek Główny)" }, "correct": true },
+      { "text": { "en": "Castle Square", "el": "Πλατεία Κάστρου" }, "correct": false },
+      { "text": { "en": "Royal Plaza", "el": "Βασιλική Πλατεία" }, "correct": false },
+      { "text": { "en": "Kingdom Circle", "el": "Κυκλική Πλατεία" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which river flows through Kraków?",
+      "el": "Ποιος ποταμός διασχίζει την Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Vistula", "el": "Βιστούλας" }, "correct": true },
+      { "text": { "en": "Danube", "el": "Δούναβης" }, "correct": false },
+      { "text": { "en": "Oder", "el": "Όντερ" }, "correct": false },
+      { "text": { "en": "Elbe", "el": "Έλβας" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What is Wawel Castle most known for?",
+      "el": "Για ποιο λόγο είναι διάσημο το κάστρο Wawel;"
+    },
+    "answers": [
+      { "text": { "en": "Royal residence", "el": "Βασιλική κατοικία" }, "correct": true },
+      { "text": { "en": "Marketplace", "el": "Αγορά" }, "correct": false },
+      { "text": { "en": "Opera house", "el": "Όπερα" }, "correct": false },
+      { "text": { "en": "University campus", "el": "Πανεπιστημιούπολη" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which mythical creature is associated with Kraków’s legends?",
+      "el": "Ποιο μυθικό πλάσμα συνδέεται με τους θρύλους της Κρακοβίας;"
+    },
+    "answers": [
+      { "text": { "en": "Dragon", "el": "Δράκος" }, "correct": true },
+      { "text": { "en": "Griffin", "el": "Γρύπας" }, "correct": false },
+      { "text": { "en": "Phoenix", "el": "Φοίνικας" }, "correct": false },
+      { "text": { "en": "Unicorn", "el": "Μονόκερος" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What sound echoes hourly from St. Mary's Basilica tower?",
+      "el": "Τι ήχος αντηχεί κάθε ώρα από τον πύργο της Βασιλικής της Παναγίας;"
+    },
+    "answers": [
+      { "text": { "en": "Bugle call", "el": "Κάλεσμα με τρομπέτα" }, "correct": true },
+      { "text": { "en": "Church bell", "el": "Καμπάνα" }, "correct": false },
+      { "text": { "en": "Clock chime", "el": "Ήχος ρολογιού" }, "correct": false },
+      { "text": { "en": "Organ tune", "el": "Μελωδία οργάνου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which university in Kraków is among Europe’s oldest?",
+      "el": "Ποιο πανεπιστήμιο της Κρακοβίας είναι από τα παλαιότερα στην Ευρώπη;"
+    },
+    "answers": [
+      { "text": { "en": "Jagiellonian University", "el": "Πανεπιστήμιο Γιαγκελόνιαν" }, "correct": true },
+      { "text": { "en": "Warsaw University", "el": "Πανεπιστήμιο Βαρσοβίας" }, "correct": false },
+      { "text": { "en": "Cracow Institute", "el": "Ινστιτούτο Κρακοβίας" }, "correct": false },
+      { "text": { "en": "Copernicus College", "el": "Κολλέγιο Κοπέρνικου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What traditional Polish food is famous in Kraków?",
+      "el": "Ποιο παραδοσιακό πολωνικό φαγητό είναι διάσημο στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Pierogi", "el": "Πιερόγκι" }, "correct": true },
+      { "text": { "en": "Baklava", "el": "Μπακλαβάς" }, "correct": false },
+      { "text": { "en": "Goulash", "el": "Γκούλας" }, "correct": false },
+      { "text": { "en": "Sushi", "el": "Σούσι" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What style predominates Kraków’s Old Town architecture?",
+      "el": "Ποιο στυλ κυριαρχεί στην αρχιτεκτονική της Παλιάς Πόλης της Κρακοβίας;"
+    },
+    "answers": [
+      { "text": { "en": "Medieval", "el": "Μεσαιωνικό" }, "correct": true },
+      { "text": { "en": "Baroque", "el": "Μπαρόκ" }, "correct": false },
+      { "text": { "en": "Art Deco", "el": "Αρ Ντεκό" }, "correct": false },
+      { "text": { "en": "Modernist", "el": "Μοντερνιστικό" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What is the Sukiennice in Kraków?",
+      "el": "Τι είναι το Sukiennice στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Cloth Hall", "el": "Αίθουσα Υφασμάτων" }, "correct": true },
+      { "text": { "en": "City Hall", "el": "Δημαρχείο" }, "correct": false },
+      { "text": { "en": "Opera House", "el": "Όπερα" }, "correct": false },
+      { "text": { "en": "Library", "el": "Βιβλιοθήκη" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which UNESCO site lies just outside Kraków?",
+      "el": "Ποιο μνημείο της UNESCO βρίσκεται κοντά στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Wieliczka Salt Mine", "el": "Αλατωρυχείο Βιέλιτσκα" }, "correct": true },
+      { "text": { "en": "Białowieża Forest", "el": "Δάσος Μπιάουοβιέζα" }, "correct": false },
+      { "text": { "en": "Old Town of Warsaw", "el": "Παλιά Πόλη Βαρσοβίας" }, "correct": false },
+      { "text": { "en": "Malbork Castle", "el": "Κάστρο Μαλμπορκ" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which district is known as Kraków’s Jewish Quarter?",
+      "el": "Ποια περιοχή είναι γνωστή ως Εβραϊκή Συνοικία της Κρακοβίας;"
+    },
+    "answers": [
+      { "text": { "en": "Kazimierz", "el": "Καζιμιέρζ" }, "correct": true },
+      { "text": { "en": "Podgórze", "el": "Ποτγκόρζε" }, "correct": false },
+      { "text": { "en": "Nowa Huta", "el": "Νόβα Χούτα" }, "correct": false },
+      { "text": { "en": "Zwierzyniec", "el": "Ζβιεζινιέτς" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which medieval fortification stands near the city gates?",
+      "el": "Ποια μεσαιωνική οχύρωση βρίσκεται κοντά στις πύλες της πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "The Barbican", "el": "Το Μπαρμπικάνο" }, "correct": true },
+      { "text": { "en": "Kraków Fortress", "el": "Οχυρό Κρακοβίας" }, "correct": false },
+      { "text": { "en": "Royal Bastion", "el": "Βασιλικό Οχύρωμα" }, "correct": false },
+      { "text": { "en": "City Ramparts", "el": "Τείχη της Πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which factory-turned-museum recalls the Holocaust in Kraków?",
+      "el": "Ποιο μουσείο που ήταν εργοστάσιο θυμίζει το Ολοκαύτωμα στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Oskar Schindler's Factory", "el": "Εργοστάσιο του Όσκαρ Σίντλερ" }, "correct": true },
+      { "text": { "en": "Avon Factory", "el": "Εργοστάσιο Avon" }, "correct": false },
+      { "text": { "en": "Textile Mill", "el": "Υφαντουργείο" }, "correct": false },
+      { "text": { "en": "Steelworks", "el": "Χαλυβουργείο" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which gate leads directly to the Main Market Square?",
+      "el": "Ποια πύλη οδηγεί απευθείας στην Κεντρική Αγορά;"
+    },
+    "answers": [
+      { "text": { "en": "St. Florian's Gate", "el": "Πύλη Άγιου Φλοριανού" }, "correct": true },
+      { "text": { "en": "Basztowa Gate", "el": "Πύλη Μπαστσόβα" }, "correct": false },
+      { "text": { "en": "Krakowska Gate", "el": "Πύλη Κρακοβσκα" }, "correct": false },
+      { "text": { "en": "Wiślna Gate", "el": "Πύλη Βισλνα" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which tower offers panoramic views of the Old Town?",
+      "el": "Ποιος πύργος προσφέρει πανοραμική θέα στην Παλιά Πόλη;"
+    },
+    "answers": [
+      { "text": { "en": "Town Hall Tower", "el": "Πύργος του Δημαρχείου" }, "correct": true },
+      { "text": { "en": "St. Mary's Basilica Tower", "el": "Πύργος της Βασιλικής της Παναγίας" }, "correct": false },
+      { "text": { "en": "Wawel Cathedral Bell Tower", "el": "Καμπαναριό Wawel" }, "correct": false },
+      { "text": { "en": "Saint Peter’s Tower", "el": "Πύργος του Αγίου Πέτρου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What is the name of Kraków’s longest medieval street?",
+      "el": "Ποια είναι η μακρύτερη μεσαιωνική οδός της Κρακοβίας;"
+    },
+    "answers": [
+      { "text": { "en": "Floriańska Street", "el": "Οδός Φλωριανσκa" }, "correct": true },
+      { "text": { "en": "Grodzka Street", "el": "Οδός Γκροντζκα" }, "correct": false },
+      { "text": { "en": "Kanonicza Street", "el": "Οδός Κανόνικα" }, "correct": false },
+      { "text": { "en": "Szpitalna Street", "el": "Οδός Σπιτάλνα" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "In which year was the Jagiellonian University founded?",
+      "el": "Σε ποιο έτος ιδρύθηκε το Πανεπιστήμιο Γιαγκελόνιαν;"
+    },
+    "answers": [
+      { "text": { "en": "1364", "el": "1364" }, "correct": true },
+      { "text": { "en": "1450", "el": "1450" }, "correct": false },
+      { "text": { "en": "1500", "el": "1500" }, "correct": false },
+      { "text": { "en": "1200", "el": "1200" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What is the Hejnał Mariacki?",
+      "el": "Τι είναι το Hejnał Mariacki;"
+    },
+    "answers": [
+      { "text": { "en": "A trumpeter’s bugle call", "el": "Κάλεσμα τρομπέτας" }, "correct": true },
+      { "text": { "en": "A midnight choir chant", "el": "Μεσονυχτίτικη χορωδιακή μελωδία" }, "correct": false },
+      { "text": { "en": "A market hall tune", "el": "Μελωδία αίθουσας αγοράς" }, "correct": false },
+      { "text": { "en": "A church organ piece", "el": "Κομμάτι εκκλησιακού οργάνου" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which statue stands outside St. Florian’s Gate?",
+      "el": "Ποιο άγαλμα βρίσκεται έξω από την Πύλη του Αγίου Φλοριανού;"
+    },
+    "answers": [
+      { "text": { "en": "Statue of St. Florian", "el": "Άγαλμα του Αγίου Φλοριανού" }, "correct": true },
+      { "text": { "en": "Statue of Adam Mickiewicz", "el": "Άγαλμα του Αντάμ Μιτκιέβιτς" }, "correct": false },
+      { "text": { "en": "Statue of Copernicus", "el": "Άγαλμα του Κοπέρνικου" }, "correct": false },
+      { "text": { "en": "Statue of Pope John Paul II", "el": "Άγαλμα του Πάπα Ιωάννη Παύλου Β’" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What green belt surrounds Kraków’s Old Town?",
+      "el": "Ποιος πράσινος δακτύλιος περιβάλλει την Παλιά Πόλη της Κρακοβίας;"
+    },
+    "answers": [
+      { "text": { "en": "Planty Park", "el": "Πάρκο Πλάντυ" }, "correct": true },
+      { "text": { "en": "Krakus Mound", "el": "Λόφος Κράκους" }, "correct": false },
+      { "text": { "en": "Błonia Meadow", "el": "Λειβάδια Μπλόνια" }, "correct": false },
+      { "text": { "en": "Jordan Park", "el": "Πάρκο Τζόρνταν" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which future Pope was born near Kraków?",
+      "el": "Ποιος μελλοντικός πάπας γεννήθηκε κοντά στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "John Paul II", "el": "Ιωάννης Παύλος Β’" }, "correct": true },
+      { "text": { "en": "Benedict XVI", "el": "Βενέδικτος XVI" }, "correct": false },
+      { "text": { "en": "Francis", "el": "Φραγκίσκος" }, "correct": false },
+      { "text": { "en": "Pius XII", "el": "Πίος XII" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "Which district is known for socialist realist architecture?",
+      "el": "Ποια περιοχή είναι γνωστή για την αρχιτεκτονική σοσιαλιστικού ρεαλισμού;"
+    },
+    "answers": [
+      { "text": { "en": "Nowa Huta", "el": "Νόβα Χούτα" }, "correct": true },
+      { "text": { "en": "Kazimierz", "el": "Καζιμιέρζ" }, "correct": false },
+      { "text": { "en": "Podgórze", "el": "Ποτγκόρζε" }, "correct": false },
+      { "text": { "en": "Zwierzyniec", "el": "Ζβιεζινιέτς" }, "correct": false }
+    ]
+  },
+  {
+    "question": {
+      "en": "What vibrant festival is held every February in Kraków?",
+      "el": "Ποιο ζωηρό φεστιβάλ πραγματοποιείται κάθε Φεβρουάριο στην Κρακοβία;"
+    },
+    "answers": [
+      { "text": { "en": "Courtyard of Poetry", "el": "Αυλή Ποίησης" }, "correct": true },
+      { "text": { "en": "Water Festival", "el": "Φεστιβάλ Νερού" }, "correct": false },
+      { "text": { "en": "Movie Week", "el": "Εβδομάδα Κινηματογράφου" }, "correct": false },
+      { "text": { "en": "Wine Fair", "el": "Διήμερο Κρασιού" }, "correct": false }
+    ]
+  }
+]

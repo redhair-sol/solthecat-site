@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Which element reflects Stockholm’s atmosphere in Sol’s story?",
+      "el": "Ποιο στοιχείο αντικατοπτρίζει την ατμόσφαιρα της Στοκχόλμης στην ιστορία της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Chaos", "el": "Χάος" }, "correct": false },
+      { "text": { "en": "Silence", "el": "Σιωπή" }, "correct": true },
+      { "text": { "en": "Music", "el": "Μουσική" }, "correct": false },
+      { "text": { "en": "Crowds", "el": "Πλήθη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What landmark is mentioned near Sol’s spot in Stockholm?",
+      "el": "Ποιο τοπόσημο αναφέρεται κοντά στο σημείο της Sol στη Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Royal Palace", "el": "Βασιλικό Παλάτι" }, "correct": true },
+      { "text": { "en": "City Hall", "el": "Δημαρχείο" }, "correct": false },
+      { "text": { "en": "Opera House", "el": "Όπερα" }, "correct": false },
+      { "text": { "en": "Cathedral", "el": "Καθεδρικός Ναός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What material is the bridge Sol stands on made of?",
+      "el": "Από ποιο υλικό είναι φτιαγμένη η γέφυρα που στέκεται η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Wood", "el": "Ξύλο" }, "correct": false },
+      { "text": { "en": "Metal", "el": "Μέταλλο" }, "correct": false },
+      { "text": { "en": "Stone", "el": "Πέτρα" }, "correct": true },
+      { "text": { "en": "Glass", "el": "Γυαλί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What natural element carries Sol’s reflection?",
+      "el": "Ποιο φυσικό στοιχείο μεταφέρει την αντανάκλαση της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Snow", "el": "Χιόνι" }, "correct": false },
+      { "text": { "en": "Ice", "el": "Πάγος" }, "correct": false },
+      { "text": { "en": "Water", "el": "Νερό" }, "correct": true },
+      { "text": { "en": "Glass", "el": "Γυαλί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What color tones describe the buildings in the story?",
+      "el": "Ποιες χρωματικές αποχρώσεις περιγράφουν τα κτίρια στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Dark", "el": "Σκούρες" }, "correct": false },
+      { "text": { "en": "Primary", "el": "Βασικές" }, "correct": false },
+      { "text": { "en": "Pastel", "el": "Παστέλ" }, "correct": true },
+      { "text": { "en": "Neon", "el": "Νέον" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "How did Sol interact with the light in Stockholm?",
+      "el": "Πώς αλληλεπίδρασε η Sol με το φως στη Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "She chased it", "el": "Το κυνήγησε" }, "correct": false },
+      { "text": { "en": "She hid from it", "el": "Το απέφυγε" }, "correct": false },
+      { "text": { "en": "She became it", "el": "Το έγινε" }, "correct": true },
+      { "text": { "en": "She ignored it", "el": "Το αγνόησε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What mood best describes the city’s rhythm?",
+      "el": "Ποια διάθεση περιγράφει καλύτερα τον ρυθμό της πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "Chaotic", "el": "Χαοτική" }, "correct": false },
+      { "text": { "en": "Gentle", "el": "Απαλή" }, "correct": true },
+      { "text": { "en": "Lively", "el": "Ζωντανή" }, "correct": false },
+      { "text": { "en": "Reckless", "el": "Ανέμελη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which phrase appears in the story?",
+      "el": "Ποια φράση εμφανίζεται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "She ruled from above", "el": "Κυβέρνησε από ψηλά" }, "correct": false },
+      { "text": { "en": "She perched near the palace", "el": "Στάθηκε κοντά στο παλάτι" }, "correct": true },
+      { "text": { "en": "She ran across the city", "el": "Έτρεξε στην πόλη" }, "correct": false },
+      { "text": { "en": "She faded into the mist", "el": "Χάθηκε στην ομίχλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which country’s capital is Stockholm?",
+      "el": "Ποιας χώρας πρωτεύουσα είναι η Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Norway", "el": "Νορβηγία" }, "correct": false },
+      { "text": { "en": "Denmark", "el": "Δανία" }, "correct": false },
+      { "text": { "en": "Finland", "el": "Φινλανδία" }, "correct": false },
+      { "text": { "en": "Sweden", "el": "Σουηδία" }, "correct": true }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "How is the light described in the story?",
+      "el": "Πώς περιγράφεται το φως στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "As fire", "el": "Ως φωτιά" }, "correct": false },
+      { "text": { "en": "As a whisper", "el": "Ως ψίθυρος" }, "correct": true },
+      { "text": { "en": "As thunder", "el": "Ως βροντή" }, "correct": false },
+      { "text": { "en": "As a crown", "el": "Ως στέμμα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "How is Sol’s posture described while on the bridge?",
+      "el": "Πώς περιγράφεται η στάση της Sol στη γέφυρα;"
+    },
+    "answers": [
+      { "text": { "en": "Silent as frost", "el": "Ήσυχη σαν πάχνη" }, "correct": true },
+      { "text": { "en": "Bright as dawn", "el": "Λαμπρή σαν αυγή" }, "correct": false },
+      { "text": { "en": "Bold as brass", "el": "Τολμηρή" }, "correct": false },
+      { "text": { "en": "Swift as wind", "el": "Γρήγορη σαν άνεμος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Which phrase describes the light’s quality?",
+      "el": "Ποια φράση περιγράφει την ποιότητα του φωτός;"
+    },
+    "answers": [
+      { "text": { "en": "A whisper", "el": "Ένας ψίθυρος" }, "correct": true },
+      { "text": { "en": "A blaze", "el": "Ένα λαμπάρισμα" }, "correct": false },
+      { "text": { "en": "A flicker", "el": "Ένα τρεμόπαιγμα" }, "correct": false },
+      { "text": { "en": "A roar", "el": "Μια βροντή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What geographic feature surrounds Stockholm?",
+      "el": "Τι γεωγραφικό χαρακτηριστικό περιβάλλει τη Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Archipelago", "el": "Αρχιπέλαγος" }, "correct": true },
+      { "text": { "en": "Desert", "el": "Έρημος" }, "correct": false },
+      { "text": { "en": "Mountain", "el": "Βουνά" }, "correct": false },
+      { "text": { "en": "Forest", "el": "Δάσος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What is Stockholm’s old town called?",
+      "el": "Πώς ονομάζεται η παλιά πόλη της Στοκχόλμης;"
+    },
+    "answers": [
+      { "text": { "en": "Gamla Stan", "el": "Gamla Stan" }, "correct": true },
+      { "text": { "en": "Kungsholmen", "el": "Kungsholmen" }, "correct": false },
+      { "text": { "en": "Södermalm", "el": "Södermalm" }, "correct": false },
+      { "text": { "en": "Norrmalm", "el": "Norrmalm" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which museum is famous in Stockholm?",
+      "el": "Ποιο μουσείο είναι διάσημο στη Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Vasa Museum", "el": "Vasa Museum" }, "correct": true },
+      { "text": { "en": "Louvre", "el": "Λούβρο" }, "correct": false },
+      { "text": { "en": "British Museum", "el": "Βρετανικό Μουσείο" }, "correct": false },
+      { "text": { "en": "Metropolitan Museum", "el": "Μητροπολιτικό Μουσείο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which annual event takes place in Stockholm?",
+      "el": "Ποια ετήσια εκδήλωση πραγματοποιείται στη Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Nobel Prize Ceremony", "el": "Τελετή Νόμπελ" }, "correct": true },
+      { "text": { "en": "Carnival", "el": "Καραναβάλι" }, "correct": false },
+      { "text": { "en": "Oktoberfest", "el": "Οκτόμπερφεστ" }, "correct": false },
+      { "text": { "en": "Diwali", "el": "Ντιβάλι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What is the official language of Stockholm?",
+      "el": "Ποια είναι η επίσημη γλώσσα της Στοκχόλμης;"
+    },
+    "answers": [
+      { "text": { "en": "Swedish", "el": "Σουηδικά" }, "correct": true },
+      { "text": { "en": "English", "el": "Αγγλικά" }, "correct": false },
+      { "text": { "en": "Norwegian", "el": "Νορβηγικά" }, "correct": false },
+      { "text": { "en": "Danish", "el": "Δανικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What is the Stockholm metro renowned for?",
+      "el": "Για τι φημίζεται το μετρό της Στοκχόλμης;"
+    },
+    "answers": [
+      { "text": { "en": "Art gallery", "el": "Γκαλερί τέχνης" }, "correct": true },
+      { "text": { "en": "Speed", "el": "Ταχύτητα" }, "correct": false },
+      { "text": { "en": "Low fares", "el": "Χαμηλά κόστη" }, "correct": false },
+      { "text": { "en": "Size", "el": "Μέγεθος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which lake borders Stockholm?",
+      "el": "Ποια λίμνη συνορεύει με τη Στοκχόλμη;"
+    },
+    "answers": [
+      { "text": { "en": "Lake Mälaren", "el": "Λίμνη Μάλαρεν" }, "correct": true },
+      { "text": { "en": "Lake Vänern", "el": "Λίμνη Βένερν" }, "correct": false },
+      { "text": { "en": "Lake Vättern", "el": "Λίμνη Βέτερν" }, "correct": false },
+      { "text": { "en": "Lake Siljan", "el": "Λίμνη Σίλαν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "In the scene, what carries Sol’s reflection?",
+      "el": "Στη σκηνή, τι μεταφέρει την αντανάκλαση της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Water", "el": "Νερό" }, "correct": true },
+      { "text": { "en": "Wind", "el": "Άνεμος" }, "correct": false },
+      { "text": { "en": "Light", "el": "Φως" }, "correct": false },
+      { "text": { "en": "Shadow", "el": "Σκιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Does the story mention any people in the scene?",
+      "el": "Αναφέρει η ιστορία ανθρώπους στη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only tourists", "el": "Μόνο τουρίστες" }, "correct": false },
+      { "text": { "en": "Only children", "el": "Μόνο παιδιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What time of day is depicted in the story?",
+      "el": "Ποια ώρα της ημέρας απεικονίζεται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Early morning", "el": "Πρωί" }, "correct": true },
+      { "text": { "en": "Noon", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "Dusk", "el": "Δειλινό" }, "correct": false },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Which building appears in the distant background?",
+      "el": "Ποιο κτίριο φαίνεται στο βάθος;"
+    },
+    "answers": [
+      { "text": { "en": "Royal Palace", "el": "Βασιλικό Παλάτι" }, "correct": true },
+      { "text": { "en": "City Hall", "el": "Δημαρχείο" }, "correct": false },
+      { "text": { "en": "Opera House", "el": "Όπερα" }, "correct": false },
+      { "text": { "en": "Cathedral", "el": "Καθεδρικός Ναός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which emoji appears in the episode title?",
+      "el": "Ποιο emoji εμφανίζεται στον τίτλο του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "💡", "el": "💡" }, "correct": true },
+      { "text": { "en": "🐾", "el": "🐾" }, "correct": false },
+      { "text": { "en": "🌊", "el": "🌊" }, "correct": false },
+      { "text": { "en": "🏰", "el": "🏰" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What sequence ends Sol’s Instagram caption?",
+      "el": "Με ποια ακολουθία τελειώνει το caption του Instagram της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "🐾🐾🐾", "el": "🐾🐾🐾" }, "correct": true },
+      { "text": { "en": "🐾🐾", "el": "🐾🐾" }, "correct": false },
+      { "text": { "en": "🐾", "el": "🐾" }, "correct": false },
+      { "text": { "en": "🐾🐾🐾🐾", "el": "🐾🐾🐾🐾" }, "correct": false }
+    ]
+  }
+]
