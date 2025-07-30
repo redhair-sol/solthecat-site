@@ -376,11 +376,11 @@
     "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
     "image": "episodes/ljubljana.png",
     "location": { "lat": 46.0569, "lng": 14.5058 },
-    "visible": false,
+    "visible": true,
     "city": "ljubljana",
     "story": {
-      "en": "Ljubljana didn’t need to be claimed — it recognized her from the moment she appeared. No guards lined the streets, no trumpets sounded. Yet the air shifted. She walked as if the throne had been waiting. With every blink, the city softened. She didn’t conquer. She reigned.",
-      "el": "Η Λιουμπλιάνα δεν χρειάστηκε να κατακτηθεί — την αναγνώρισε από την πρώτη στιγμή. Δεν υπήρχαν φρουροί, δεν ηχούσαν σάλπιγγες. Κι όμως, ο αέρας άλλαξε. Περπάτησε σαν να την περίμενε ο θρόνος. Με κάθε ανοιγοκλείσιμο των ματιών της, η πόλη γινόταν πιο απαλή. Δεν κατέκτησε. Βασίλεψε."
+      "en": "In Ljubljana, there was no need for assertion; the city felt her as an extension of itself. It was the first time the landscape didn’t adjust to make space for her — it seemed as though it had already taken her shape long before. The bridges didn’t part to let her pass; they simply completed themselves in her silhouette. The pastel walls stretched around her not to impress, but to embrace. The river flowed calmly, not because it noticed her, but because it fell into rhythm with her. She didn’t need to look from above or claim a center; her quiet presence alone was enough to shift the sense of time and redraw the geometry of space. There was no place that “welcomed” her — she was already everywhere, like a whisper that spread silently and irreversibly, changing forever the way the city breathes.",
+      "el": "Στη Λιουμπλιάνα δεν χρειάστηκε να επιβάλει τίποτα· η ίδια η πόλη την ένιωσε σαν συνέχεια του εαυτού της. Ήταν η πρώτη φορά που το τοπίο δεν προσαρμόστηκε για να τη χωρέσει, αλλά έμοιαζε να είχε ήδη διαμορφωθεί με τη μορφή της στο νου. Οι γέφυρες δεν της άνοιξαν δρόμο — έμοιαζαν απλώς να συμπληρώνονται από τη σιλουέτα της. Τα παστέλ χρώματα των σπιτιών απλώνονταν σαν απαλό σκηνικό, όχι για να την εντυπωσιάσουν, αλλά για να την αγκαλιάσουν. Ο ποταμός κυλούσε ήρεμα, όχι επειδή την αντιλήφθηκε, αλλά επειδή συγχρονίστηκε. Δεν χρειάστηκε να κοιτάξει από ψηλά, να σταθεί σε κάποια κορυφή ή να διεκδικήσει κέντρο· η σιωπηλή της παρουσία ήταν αρκετή για να μετατοπίσει την αίσθηση του χρόνου και να επαναπροσδιορίσει τη γεωμετρία του χώρου. Δεν υπήρξε κανένα σημείο που να τη «δέχτηκε» — υπήρχε ήδη παντού, σαν ψίθυρος που απλώθηκε αθόρυβα και αμετάκλητα, αλλάζοντας για πάντα τον τρόπο που η πόλη αναπνέει."
     },
     "snapQuestions": [
       {
@@ -484,6 +484,46 @@
   ]
 },
 {
+  "id": 17,
+  "title": "SOLadventure #17 – Copenhagen, Nyhavn & cycle vibes 🚲 🇩🇰",
+  "quote": "In her wake, color blooms.",
+  "caption": "No traffic. No pause. Just pedal art. 🐾🐾🐾",
+  "image": "episodes/copenhagen.png",
+  "location": {
+    "lat": 55.6761,
+    "lng": 12.5683
+  },
+  "visible": false,
+  "city": "copenhagen",
+  "story": {
+    "en": "She arrived where water met wheels and colors soared. In Copenhagen, every canal was a gallery, every street a runway. SOL didn’t just ride — she harmonized with spokes and sunlit facades. The Nyhavn houses leaned in her direction, as if waiting to be bridged. Bicycles hummed a welcome, tires tracing arcs in cobblestone. She paused only to let the world catch up, then pedaled on. No flags, no fanfare — just motion in technicolor.",
+    "el": "Έφτασε εκεί όπου το νερό συναντά τους τροχούς και τα χρώματα πετούν. Στην Κοπεγχάγη, κάθε κανάλι ήταν γκαλερί, κάθε δρόμος πασαρέλα. Η SOL δεν οδηγούσε απλώς — εναρμονιζόταν με τις ακτίνες και τις ηλιόλουστες όψεις. Τα σπίτια του Nyhavn έγειραν προς αυτήν, σαν να περίμεναν να τις ενώσει. Τα ποδήλατα καλωσόρισαν με βουητό, οι ρόδες χάραζαν τόξα στο λιθόστρωτο. Στάθηκε μόνο για να προλάβει ο κόσμος να την ακολουθήσει, και μετά ξανάρχισε. Χωρίς σημαίες, χωρίς πανηγύρι — μόνο κίνηση σε τεχνοχρωμία."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL harmonize with bicycle spokes in Copenhagen?",
+        "el": "Εναρμονίστηκε η SOL με τις ακτίνες ποδηλάτων στην Κοπεγχάγη;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Were the Nyhavn houses described as leaning in her direction?",
+        "el": "Περιγράφηκαν τα σπίτια του Nyhavn να γέρνουν προς τη SOL;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention flags or fanfare in Copenhagen?",
+        "el": "Αναφέρθηκαν σημαίες ή πανηγύρι στην ιστορία της Κοπεγχάγης;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
   "id": 14,
   "title": "SOLadventure #14 – Tallinn, soft reign 🌫️ 🇪🇪",
   "quote": "Even the dusk waited",
@@ -525,7 +565,47 @@
 },
 {
   "id": 15,
-  "title": "SOLadventure #15 – Stockholm, light on water 🌊🇸🇪",
+  "title": "SOLadventure #15 – Helsinki, white whispers ❄️🇫🇮",
+  "quote": "She didn’t wear white — she defined it.",
+  "caption": "No chill. No hush. Just quiet grace. 🐾🐾🐾",
+  "image": "episodes/helsinki.png",
+  "location": {
+    "lat": 60.1695,
+    "lng": 24.9354
+  },
+  "visible": false,
+  "city": "helsinki",
+  "story": {
+    "en": "Helsinki waited, cloaked in white. Not the kind that erases, but the kind that reveals. SOL stepped onto Senate Square with the poise of someone expected. The snow didn’t crunch under her paws — it paused. Around her, neoclassical columns rose not as monuments, but as mirrors to her calm. She passed the cathedral without haste, as though it had once been her home. There were no crowds, no echoes, only presence. And in that moment, Helsinki wasn’t cold. It was composed.",
+    "el": "Το Ελσίνκι περίμενε, τυλιγμένο στα λευκά. Όχι από αυτά που σβήνουν — από εκείνα που αποκαλύπτουν. Η SOL πάτησε στην Πλατεία της Γερουσίας με τη σιγουριά εκείνης που την περιμένουν. Το χιόνι δεν έτριξε κάτω από τις πατούσες της — σταμάτησε. Γύρω της, νεοκλασικές κολώνες υψώνονταν όχι ως μνημεία, αλλά ως καθρέφτες της ηρεμίας της. Πέρασε μπροστά από τον Καθεδρικό χωρίς βιασύνη, λες κι ήταν κάποτε το σπίτι της. Δεν υπήρχαν πλήθη, ούτε αντίλαλοι· μόνο παρουσία. Και τότε η Ελσίνκι δεν ήταν πια ψυχρή. Ήταν ακριβής."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL walk on Senate Square in Helsinki?",
+        "el": "Περπάτησε η SOL στην Πλατεία της Γερουσίας στο Ελσίνκι;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was the snow noisy under her paws?",
+        "el": "Ήταν το χιόνι θορυβώδες κάτω από τις πατούσες της;"
+      },
+      "answer": false
+    },
+    {
+      "question": {
+        "en": "Did the story describe Helsinki as composed, not cold?",
+        "el": "Περιέγραψε η ιστορία την Ελσίνκι ως ακριβή και όχι ψυχρή;"
+      },
+      "answer": true
+    }
+  ]
+},
+{
+  "id": 16,
+  "title": "SOLadventure #16 – Stockholm, light on water 🌊🇸🇪",
   "quote": "No shimmer, only truth.",
   "caption": "No ripples. No echoes. Just still light. 🐾🐾🐾",
   "image": "episodes/stockholm.png",
@@ -564,8 +644,8 @@
   ]
 },
 {
-  "id": 16,
-  "title": "SOLadventure #16 – Bergen, mist and melody 🎶🇳🇴",
+  "id": 18,
+  "title": "SOLadventure #18 – Bergen, mist and melody 🎶🇳🇴",
   "quote": "Fjords cradle her melody.",
   "caption": "No storm. No sorrow. Just whispered tunes. 🐾🐾🐾",
   "image": "episodes/bergen.png",

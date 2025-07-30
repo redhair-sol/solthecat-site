@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is Helsinki the capital of Finland?",
+      "el": "Είναι το Ελσίνκι πρωτεύουσα της Φινλανδίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s a region", "el": "Είναι περιφέρεια" }, "correct": false },
+      { "text": { "en": "It’s a province", "el": "Είναι νομός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Is Senate Square mentioned in the Helsinki story?",
+      "el": "Αναφέρεται η Πλατεία της Γερουσίας στην ιστορία του Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only Market Square", "el": "Μόνο Πλατεία Αγοράς" }, "correct": false },
+      { "text": { "en": "Only Senate Building", "el": "Μόνο Κτίριο Γερουσίας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Did SOL walk on a frozen lake in Helsinki?",
+      "el": "Περπάτησε η SOL σε παγωμένη λίμνη στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "She swam across it", "el": "Κολύμπησε" }, "correct": false },
+      { "text": { "en": "She flew over it", "el": "Πετούσε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Is Helsinki Cathedral visible in the episode image?",
+      "el": "Φαίνεται ο Καθεδρικός Ναός του Ελσίνκι στην εικόνα του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only its shadow", "el": "Μόνο η σκιά του" }, "correct": false },
+      { "text": { "en": "Only its dome", "el": "Μόνο ο τρούλος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Was the snow described as crunchy under her paws?",
+      "el": "Περιγράφηκε το χιόνι σαν τριγμό κάτω από τις πατούσες της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "It was squishy", "el": "Ήταν σπογγώδες" }, "correct": false },
+      { "text": { "en": "It was icy", "el": "Ήταν παγωμένο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Did the story say the snow paused under her paws?",
+      "el": "Ανέφερε η ιστορία ότι το χιόνι σταμάτησε κάτω από τις πατούσες της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It melted instantly", "el": "Έλιωσε αμέσως" }, "correct": false },
+      { "text": { "en": "It cracked loudly", "el": "Έσπασε δυνατά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Does Helsinki have neoclassical architecture in the story?",
+      "el": "Υπάρχει νεοκλασική αρχιτεκτονική στην ιστορία του Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only Gothic", "el": "Μόνο γοτθική" }, "correct": false },
+      { "text": { "en": "Only Baroque", "el": "Μόνο μπαρόκ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Is Finnish an official language in Helsinki?",
+      "el": "Είναι τα φινλανδικά επίσημη γλώσσα στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only Swedish", "el": "Μόνο σουηδικά" }, "correct": false },
+      { "text": { "en": "Only English", "el": "Μόνο αγγλικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Is Swedish also an official language in Helsinki?",
+      "el": "Είναι τα σουηδικά επίσης επίσημη γλώσσα στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only Finnish", "el": "Μόνο φινλανδικά" }, "correct": false },
+      { "text": { "en": "Only English", "el": "Μόνο αγγλικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Is Helsinki located on the coast of the Baltic Sea?",
+      "el": "Βρίσκεται το Ελσίνκι στην ακτή της Βαλτικής Θάλασσας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s inland", "el": "Είναι στην ενδοχώρα" }, "correct": false },
+      { "text": { "en": "It’s on a fjord", "el": "Είναι σε φιόρδ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Did the story mention any crowds in Helsinki?",
+      "el": "Ανέφερε η ιστορία πλήθη στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only tourists", "el": "Μόνο τουρίστες" }, "correct": false },
+      { "text": { "en": "Only locals", "el": "Μόνο ντόπιοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Is Helsinki considered part of Scandinavia?",
+      "el": "Θεωρείται το Ελσίνκι μέρος της Σκανδιναβίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only in winter", "el": "Μόνο τον χειμώνα" }, "correct": false },
+      { "text": { "en": "Only geographically", "el": "Μόνο γεωγραφικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Was Helsinki described as cold in the story?",
+      "el": "Περιγράφηκε το Ελσίνκι ως ψυχρό στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only at night", "el": "Μόνο τη νύχτα" }, "correct": false },
+      { "text": { "en": "Only in spring", "el": "Μόνο την άνοιξη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Did SOL hurry through Senate Square?",
+      "el": "Έσπευσε η SOL μέσα από την Πλατεία της Γερουσίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "She danced", "el": "Χόρεψε" }, "correct": false },
+      { "text": { "en": "She slid", "el": "Γλίστρησε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Is white the dominant color in the Helsinki image?",
+      "el": "Είναι το λευκό κυρίαρχο χρώμα στην εικόνα του Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s blue", "el": "Είναι μπλε" }, "correct": false },
+      { "text": { "en": "It’s green", "el": "Είναι πράσινο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Did the story mention neoclassical columns?",
+      "el": "Ανέφερε η ιστορία νεοκλασικές κολώνες;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only arches", "el": "Μόνο τόξα" }, "correct": false },
+      { "text": { "en": "Only facades", "el": "Μόνο προσόψεις" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Is the story set during winter in Helsinki?",
+      "el": "Συμβαίνει η ιστορία κατά τη διάρκεια του χειμώνα στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only spring", "el": "Μόνο άνοιξη" }, "correct": false },
+      { "text": { "en": "Only autumn", "el": "Μόνο φθινόπωρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Did the story say SOL belonged in Helsinki?",
+      "el": "Ανέφερε η ιστορία ότι η SOL ανήκε στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only temporarily", "el": "Μόνο προσωρινά" }, "correct": false },
+      { "text": { "en": "Only at night", "el": "Μόνο τη νύχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is the narrative told in present tense?",
+      "el": "Αφηγείται η ιστορία σε ενεστώτα χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Past tense only", "el": "Μόνο αόριστος" }, "correct": false },
+      { "text": { "en": "Future tense only", "el": "Μόνο μέλλοντας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Was the sky described as overcast?",
+      "el": "Περιγράφηκε ο ουρανός ως συννεφιασμένος;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only at dawn", "el": "Μόνο το πρωί" }, "correct": false },
+      { "text": { "en": "Only at dusk", "el": "Μόνο το σούρουπο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Did the story describe the cathedral as a mirror to her calm?",
+      "el": "Περιέγραψε η ιστορία τον καθεδρικό ως καθρέφτη της ηρεμίας της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "As a monument", "el": "Ως μνημείο" }, "correct": false },
+      { "text": { "en": "As a fortress", "el": "Ως φρούριο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Does the Instagram caption end with three paw emojis?",
+      "el": "Τελειώνει το caption στο Instagram με τρία emoji πατουσών;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Two paw emojis", "el": "Δύο emoji" }, "correct": false },
+      { "text": { "en": "Four paw emojis", "el": "Τέσσερα emoji" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Is the population of Helsinki over 600,000?",
+      "el": "Υπάρχει πληθυσμός στο Ελσίνκι πάνω από 600.000;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Exactly 600,000", "el": "Ακριβώς 600.000" }, "correct": false },
+      { "text": { "en": "Under 500,000", "el": "Κάτω από 500.000" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Are Finnish design principles mentioned in the story?",
+      "el": "Αναφέρονται αρχές φινλανδικού σχεδιασμού στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only minimalism", "el": "Μόνο μινιμαλισμός" }, "correct": false },
+      { "text": { "en": "Only functionality", "el": "Μόνο λειτουργικότητα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Did the story mention echoes in Helsinki?",
+      "el": "Ανέφερε η ιστορία αντηχήσεις στο Ελσίνκι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only in tunnels", "el": "Μόνο σε τούνελ" }, "correct": false },
+      { "text": { "en": "Only in caves", "el": "Μόνο σε σπηλιές" }, "correct": false }
+    ]
+  }
+]
