@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Miami, sunlit streets'?",
+      "el": "Ο τίτλος είναι 'Miami, sunlit streets';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Miami, moonlit nights", "el": "Miami, moonlit nights" }, "correct": false },
+      { "text": { "en": "Miami, neon dreams", "el": "Miami, neon dreams" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include a sun emoji 🌞?",
+      "el": "Περιλαμβάνει ο τίτλος emoji ήλιου 🌞;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It has a moon emoji 🌙", "el": "Έχει emoji φεγγαριού 🌙" }, "correct": false },
+      { "text": { "en": "It has a wave emoji 🌊", "el": "Έχει emoji κύματος 🌊" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Does the title mention Paris?",
+      "el": "Αναφέρει ο τίτλος το Παρίσι;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It mentions Rome", "el": "Αναφέρει τη Ρώμη" }, "correct": false },
+      { "text": { "en": "It mentions London", "el": "Αναφέρει το Λονδίνο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Is the quote 'She owns the golden hour.' used?",
+      "el": "Χρησιμοποιείται το quote 'She owns the golden hour.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She owns the neon night", "el": "She owns the neon night" }, "correct": false },
+      { "text": { "en": "She owns the ocean breeze", "el": "She owns the ocean breeze" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Does the quote mention traffic?",
+      "el": "Αναφέρει το quote κυκλοφορία;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It mentions crowds", "el": "Αναφέρει πλήθη" }, "correct": false },
+      { "text": { "en": "It mentions silence", "el": "Αναφέρει σιωπή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Does the caption say 'No traffic. No hurry. Just sunlit steps.'?",
+      "el": "Λέει το caption 'No traffic. No hurry. Just sunlit steps.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Just neon nights", "el": "Just neon nights" }, "correct": false },
+      { "text": { "en": "No crowds. No noise.", "el": "No crowds. No noise." }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Does the caption mention 'No traffic'?",
+      "el": "Αναφέρει το caption 'No traffic';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "No waves", "el": "No waves" }, "correct": false },
+      { "text": { "en": "No sun", "el": "No sun" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Does the caption mention 'No forest'?",
+      "el": "Αναφέρει το caption 'No forest';"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No reef", "el": "No reef" }, "correct": false },
+      { "text": { "en": "No ocean", "el": "No ocean" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Did SOL stroll Ocean Drive?",
+      "el": "Περπάτησε η SOL στην Ocean Drive;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She flew above it", "el": "Πετούσε από πάνω" }, "correct": false },
+      { "text": { "en": "She swam along it", "el": "Κολυμπούσε δίπλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Did SOL fly over Ocean Drive?",
+      "el": "Πέταξε η SOL πάνω από την Ocean Drive;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "She drove a car", "el": "Οδήγησε αυτοκίνητο" }, "correct": false },
+      { "text": { "en": "She rode a bike", "el": "Οδήγησε ποδήλατο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Were pastel facades mentioned?",
+      "el": "Αναφέρθηκαν παστέλ προσόψεις;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Bright murals", "el": "Ζωγραφιές" }, "correct": false },
+      { "text": { "en": "Brick walls", "el": "Πετρότοιχοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Were neon lights mentioned?",
+      "el": "Αναφέρθηκαν νέον φωτισμοί;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only daylight", "el": "Μόνο η μέρα" }, "correct": false },
+      { "text": { "en": "Only moonlight", "el": "Μόνο φεγγαρόφως" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Did palm shadows dance on coral-hued pavement?",
+      "el": "Χόρεψαν οι σκιές φοίνικων στα κοραλλί πλακόστρωτα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Shadows of towers", "el": "Σκιές πύργων" }, "correct": false },
+      { "text": { "en": "Shadows of waves", "el": "Σκιές κυμάτων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Did the story mention snow?",
+      "el": "Αναφέρθηκε χιόνι στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only hail", "el": "Μόνο χαλάζι" }, "correct": false },
+      { "text": { "en": "Only frost", "el": "Μόνο πάχνη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Did every breeze carry warmth and color?",
+      "el": "Κάθε αεράκι μετέφερε ζεστασιά και χρώμα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only cool air", "el": "Μόνο ψυχρός αέρας" }, "correct": false },
+      { "text": { "en": "Only salty breeze", "el": "Μόνο θαλασσινό αεράκι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Did the story mention rain?",
+      "el": "Αναφέρθηκε βροχή;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only drizzle", "el": "Μόνο ψιχάλα" }, "correct": false },
+      { "text": { "en": "Only storm", "el": "Μόνο καταιγίδα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Is the setting described at golden hour?",
+      "el": "Περιγράφεται η ώρα ως χρυσή ώρα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "At noon", "el": "Το μεσημέρι" }, "correct": false },
+      { "text": { "en": "At dawn", "el": "Τα ξημερώματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Is the time described as midnight?",
+      "el": "Περιγράφεται ο χρόνος ως μεσάνυχτα;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "At noon", "el": "Το μεσημέρι" }, "correct": false },
+      { "text": { "en": "At dawn", "el": "Τα ξημερώματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is SOL’s silhouette framed by Art Deco towers?",
+      "el": "Πλαισιώνεται η σιλουέτα της SOL από Art Deco πύργους;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "By skyscrapers", "el": "Από ουρανοξύστες" }, "correct": false },
+      { "text": { "en": "By palm trees", "el": "Από φοίνικες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Are Gothic cathedrals mentioned?",
+      "el": "Αναφέρονται γοτθικοί ναοί;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only modern churches", "el": "Μόνο σύγχρονοι ναοί" }, "correct": false },
+      { "text": { "en": "Only mosques", "el": "Μόνο τζαμιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is the ocean described as turquoise tides?",
+      "el": "Περιγράφεται ο ωκεανός ως τυρκουάζ κύματα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Emerald waves", "el": "Σμαραγδένια κύματα" }, "correct": false },
+      { "text": { "en": "Golden seas", "el": "Χρυσαφένιες θάλασσες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Is the story about a desert oasis?",
+      "el": "Είναι η ιστορία για έρημο όαση;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only mountains", "el": "Μόνο βουνά" }, "correct": false },
+      { "text": { "en": "Only forests", "el": "Μόνο δάση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the story mention any crowds or clamor?",
+      "el": "Αναφέρει η ιστορία πλήθη ή θόρυβο;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only crowds", "el": "Μόνο πλήθη" }, "correct": false },
+      { "text": { "en": "Only silence", "el": "Μόνο σιωπή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Does the story mention sunlit elegance?",
+      "el": "Αναφέρει η ιστορία λαμπερή κομψότητα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only vibrant energy", "el": "Μόνο ζωντανή ενέργεια" }, "correct": false },
+      { "text": { "en": "Only calm waters", "el": "Μόνο ήρεμα νερά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Miami’s latitude around 25.7617?",
+      "el": "Είναι το γεωγραφικό πλάτος του Μαϊάμι περίπου 25.7617;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "23.6345", "el": "23.6345" }, "correct": false },
+      { "text": { "en": "27.9944", "el": "27.9944" }, "correct": false }
+    ]
+  }
+]

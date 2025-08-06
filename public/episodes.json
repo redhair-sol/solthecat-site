@@ -413,11 +413,11 @@
     "caption": "She sat. The Parliament bowed. 🐾🐾🐾",
     "image": "episodes/budapest.png",
     "location": { "lat": 47.4979, "lng": 19.0402 },
-    "visible": false,
+    "visible": true,
     "city": "budapest",
     "story": {
-      "en": "She crossed the Danube not like a visitor, but like a story returning to its origin. From Buda’s ancient hills to Pest’s illuminated grace, her steps carried no urgency — only certainty. The Parliament shimmered not to impress, but to acknowledge. Bridges held their breath, domes tilted slightly, and the marble along the riverbank hushed beneath her paws. No crown. No claim. And yet, Budapest paused — not to surrender, but to salute.",
-      "el": "Διέσχισε τον Δούναβη όχι σαν επισκέπτρια, αλλά σαν μια ιστορία που επιστρέφει στη ρίζα της. Από τους αρχαίους λόφους της Βούδας ως τη φωτισμένη αρχοντιά της Πέστης, τα βήματά της δεν είχαν βιασύνη — μόνο βεβαιότητα. Το Κοινοβούλιο έλαμψε όχι για να εντυπωσιάσει, αλλά για να αναγνωρίσει. Οι γέφυρες κράτησαν την ανάσα τους, οι θόλοι έκλιναν ελαφρά, και το μάρμαρο στην όχθη σίγησε κάτω από τις πατούσες της. Ούτε στέμμα. Ούτε διεκδίκηση. Κι όμως, η Βουδαπέστη στάθηκε — όχι για να υποταχθεί, αλλά για να τιμήσει."
+      "en": "She crossed the Danube not as a guest, but as a memory returning to the place where it had first been whispered. Nothing seemed to shift to welcome her — and yet everything felt subtly altered, as if it had just remembered something essential. The hills of Buda, the contemplative domes, the light brushing the Parliament’s walls, the bridges that connected without declaring — each bridge was simply a step into a dream. Everything stood still with the quiet of those who have nothing to prove. Her steps were slow, assured, free from any need to stand out; no crown was needed, no gaze cast downward. Her presence didn’t add itself to the city — it simply revealed its silent geometry. And so, without being received, Budapest contained her.She crossed the Danube not as a guest, but as a memory returning to the place where it had first been whispered. Nothing seemed to shift to welcome her — and yet everything felt subtly altered, as if it had just remembered something essential. The hills of Buda, the contemplative domes, the light brushing the Parliament’s walls, the bridges that connected without declaring — each bridge was simply a step into a dream. Everything stood still with the quiet of those who have nothing to prove. Her steps were slow, assured, free from any need to stand out; no crown was needed, no gaze cast downward. Her presence didn’t add itself to the city — it simply revealed its silent geometry. And so, without being received, Budapest contained her.",
+      "el": "Διέσχισε τον Δούναβη όχι σαν φιλοξενούμενη, αλλά σαν ανάμνηση που επιστρέφει στον τόπο απ’ όπου κάποτε γεννήθηκε. Τίποτα δεν φάνηκε να μετακινείται για να την υποδεχτεί· κι όμως, όλα έμοιαζαν ελαφρώς διαφορετικά, σαν να είχαν μόλις θυμηθεί κάτι βαθύτερο. Οι λόφοι της Βούδας, οι στοχαστικοί θόλοι, το φως που άγγιζε τους τοίχους του Κοινοβουλίου, οι γέφυρες που ένωναν χωρίς να δηλώνουν — η κάθε γέφυρα ήταν απλώς ένα πάτημα στο όνειρο. Όλα στάθηκαν με την ησυχία εκείνων που δεν έχουν να αποδείξουν τίποτα. Τα βήματά της ήταν αργά, σίγουρα, απαλλαγμένα από κάθε ανάγκη να ξεχωρίσουν· δεν χρειάστηκε να υπάρξει στέμμα ούτε βλέμμα στραμμένο προς τα κάτω. Η παρουσία της δεν προστέθηκε στην πόλη, απλώς αποκάλυψε τη σιωπηλή γεωμετρία της. Κι έτσι, χωρίς να την υποδεχτεί, η Βουδαπέστη την περιείχε."
     },
     "snapQuestions": [
       {
@@ -480,46 +480,6 @@
         "el": "Χαμογέλασε η Κρακοβία στη Sol σαν γέρικο πρόσωπο;"
       },
       "answer": true
-    }
-  ]
-},
-{
-  "id": 17,
-  "title": "SOLadventure #17 – Copenhagen, Nyhavn & cycle vibes 🚲 🇩🇰",
-  "quote": "In her wake, color blooms.",
-  "caption": "No traffic. No pause. Just pedal art. 🐾🐾🐾",
-  "image": "episodes/copenhagen.png",
-  "location": {
-    "lat": 55.6761,
-    "lng": 12.5683
-  },
-  "visible": false,
-  "city": "copenhagen",
-  "story": {
-    "en": "She arrived where water met wheels and colors soared. In Copenhagen, every canal was a gallery, every street a runway. SOL didn’t just ride — she harmonized with spokes and sunlit facades. The Nyhavn houses leaned in her direction, as if waiting to be bridged. Bicycles hummed a welcome, tires tracing arcs in cobblestone. She paused only to let the world catch up, then pedaled on. No flags, no fanfare — just motion in technicolor.",
-    "el": "Έφτασε εκεί όπου το νερό συναντά τους τροχούς και τα χρώματα πετούν. Στην Κοπεγχάγη, κάθε κανάλι ήταν γκαλερί, κάθε δρόμος πασαρέλα. Η SOL δεν οδηγούσε απλώς — εναρμονιζόταν με τις ακτίνες και τις ηλιόλουστες όψεις. Τα σπίτια του Nyhavn έγειραν προς αυτήν, σαν να περίμεναν να τις ενώσει. Τα ποδήλατα καλωσόρισαν με βουητό, οι ρόδες χάραζαν τόξα στο λιθόστρωτο. Στάθηκε μόνο για να προλάβει ο κόσμος να την ακολουθήσει, και μετά ξανάρχισε. Χωρίς σημαίες, χωρίς πανηγύρι — μόνο κίνηση σε τεχνοχρωμία."
-  },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL harmonize with bicycle spokes in Copenhagen?",
-        "el": "Εναρμονίστηκε η SOL με τις ακτίνες ποδηλάτων στην Κοπεγχάγη;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Were the Nyhavn houses described as leaning in her direction?",
-        "el": "Περιγράφηκαν τα σπίτια του Nyhavn να γέρνουν προς τη SOL;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention flags or fanfare in Copenhagen?",
-        "el": "Αναφέρθηκαν σημαίες ή πανηγύρι στην ιστορία της Κοπεγχάγης;"
-      },
-      "answer": false
     }
   ]
 },
@@ -644,6 +604,46 @@
   ]
 },
 {
+  "id": 17,
+  "title": "SOLadventure #17 – Copenhagen, Nyhavn & cycle vibes 🚲 🇩🇰",
+  "quote": "In her wake, color blooms.",
+  "caption": "No traffic. No pause. Just pedal art. 🐾🐾🐾",
+  "image": "episodes/copenhagen.png",
+  "location": {
+    "lat": 55.6761,
+    "lng": 12.5683
+  },
+  "visible": false,
+  "city": "copenhagen",
+  "story": {
+    "en": "She arrived where water met wheels and colors soared. In Copenhagen, every canal was a gallery, every street a runway. SOL didn’t just ride — she harmonized with spokes and sunlit facades. The Nyhavn houses leaned in her direction, as if waiting to be bridged. Bicycles hummed a welcome, tires tracing arcs in cobblestone. She paused only to let the world catch up, then pedaled on. No flags, no fanfare — just motion in technicolor.",
+    "el": "Έφτασε εκεί όπου το νερό συναντά τους τροχούς και τα χρώματα πετούν. Στην Κοπεγχάγη, κάθε κανάλι ήταν γκαλερί, κάθε δρόμος πασαρέλα. Η SOL δεν οδηγούσε απλώς — εναρμονιζόταν με τις ακτίνες και τις ηλιόλουστες όψεις. Τα σπίτια του Nyhavn έγειραν προς αυτήν, σαν να περίμεναν να τις ενώσει. Τα ποδήλατα καλωσόρισαν με βουητό, οι ρόδες χάραζαν τόξα στο λιθόστρωτο. Στάθηκε μόνο για να προλάβει ο κόσμος να την ακολουθήσει, και μετά ξανάρχισε. Χωρίς σημαίες, χωρίς πανηγύρι — μόνο κίνηση σε τεχνοχρωμία."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL harmonize with bicycle spokes in Copenhagen?",
+        "el": "Εναρμονίστηκε η SOL με τις ακτίνες ποδηλάτων στην Κοπεγχάγη;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Were the Nyhavn houses described as leaning in her direction?",
+        "el": "Περιγράφηκαν τα σπίτια του Nyhavn να γέρνουν προς τη SOL;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention flags or fanfare in Copenhagen?",
+        "el": "Αναφέρθηκαν σημαίες ή πανηγύρι στην ιστορία της Κοπεγχάγης;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
   "id": 18,
   "title": "SOLadventure #18 – Bergen, mist and melody 🎶🇳🇴",
   "quote": "Fjords cradle her melody.",
@@ -682,5 +682,328 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 19,
+  "title": "SOLadventure #19 – Edinburgh, where legends linger 🌫 ️🇬🇧",
+  "quote": "Legends bowed to her stride.",
+  "caption": "Storied steps, no turning back. 🐾🐾🐾",
+  "image": "episodes/edinburgh.png",
+  "location": {
+    "lat": 55.9533,
+    "lng": -3.1883
+  },
+  "visible": false,
+  "city": "edinburgh",
+  "story": {
+    "en": "She arrived as bells tolled, stepping onto the Royal Mile when dawn stretched like woven mist. Edinburgh rose before her—a castle perched on ancient rock, narrow closes spiraling above the fog. SOL didn’t merely observe the stones; she awakened them. The citadel’s silhouette sharpened under her gaze, cliffs bowed in reverence, and the city stirred in quiet homage. No march, no decree—only footsteps written into legend.",
+    "el": "Έφτασε καθώς κουδούνια χτυπούσαν, πατώντας στη Βασιλική Οδό όταν η αυγή απλωνόταν σαν υφασμένη ομίχλη. Η Εδιμβούργο υψώθηκε μπροστά της—ένα κάστρο καθισμένο πάνω σε αρχαίο βράχο, στενά σοκάκια να στροβιλίζονται πάνω από την ομίχλη. Η SOL δεν παρατήρησε μόνο τις πέτρες· τις ξύπνησε. Η σιλουέτα του κάστρου ξεκάθαρη υπό το βλέμμα της, οι πλαγιές υποκλίθηκαν σε σεβασμό, και η πόλη αναστέναξε σε σιγανό ύμνο. Χωρίς παρέλαση, χωρίς διάταγμα· μόνο βήματα χαραγμένα στον μύθο."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL walk the Royal Mile at dawn?",
+        "el": "Περπάτησε η SOL στη Βασιλική Οδό τα ξημερώματα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story say cliffs bowed in reverence?",
+        "el": "Ανέφερε η ιστορία ότι οι πλαγιές υποκλίθηκαν σε σεβασμό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention any crowds in the closes?",
+        "el": "Αναφέρθηκαν πλήθη στα στενά σοκάκια;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
+  "id": 20,
+  "title": "SOLadventure #20 – Dublin, literary pubs & Georgian squares 🍻📚🇮🇪",
+  "quote": "She wrote her story in every raised glass.",
+  "caption": "No pause. No encore. Just pages and pints. 🐾🐾🐾",
+  "image": "episodes/dublin.png",
+  "location": {
+    "lat": 53.3498,
+    "lng": -6.2603
+  },
+  "visible": false,
+  "city": "dublin",
+  "story": {
+    "en": "She arrived where words soaked into whiskey and squares held whispered secrets. In Dublin, every pub was a library of laughter and lament, each Georgian terrace a stage of history. SOL didn’t simply wander the cobblestones—she wrote her story in every raised glass. Temple Bar’s door swung wide in greeting, candlelight danced on oaken beams, and verses echoed between walls. She paused beneath the Ha’penny Bridge, listening to stories flow as freely as foam. No prologue, no epilogue—only chapters lived.",
+    "el": "Έφτασε εκεί όπου οι λέξεις ανακατεύονταν με το ουίσκι και οι πλατείες φύλαγαν ψίθυρους μυστικά. Στο Δουβλίνο, κάθε παμπ ήταν βιβλιοθήκη γέλιου και νοσταλγίας, και κάθε γεωργιανή σειρά σπιτιών μια σκηνή της ιστορίας. Η SOL δεν περιπλανήθηκε απλώς στα λιθόστρωτα—έγραψε την ιστορία της σε κάθε υψωμένο ποτήρι. Η πόρτα του Temple Bar άνοιξε πλατιά σε χαιρετισμό, το φως από τα κεριά χόρευε σε ξύλινες δοκούς, και στίχοι αντηχούσαν μέσα στους τοίχους. Στάθηκε κάτω από τη Ha’penny Bridge, ακούγοντας ιστορίες να κυλούν ελεύθερα σαν αφρό. Χωρίς πρόλογο, χωρίς επίλογο—μόνο κεφάλαια ζωντανά."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL write her story in every raised glass?",
+        "el": "Έγραψε η SOL την ιστορία της σε κάθε υψωμένο ποτήρι;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Were Georgian facades lining the squares mentioned?",
+        "el": "Αναφέρθηκαν γεωργιανές προσόψεις να περιβάλλουν τις πλατείες;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did SOL cross the River Liffey by boat?",
+        "el": "Διέσχισε η SOL τον ποταμό Liffey με βάρκα;"
+      },
+      "answer": false
+    }
+  ]
+},
+
+{
+  "id": 21,
+  "title": "SOLadventure #21 – Reykjavík, fire & ice ❄️🔥🇮🇸",
+  "quote": "She wrote warmth on ice.",
+  "caption": "No freeze. No thaw. Just fiery grace. 🐾🐾🐾",
+  "image": "episodes/reykjavik.png",
+  "location": {
+    "lat": 64.1466,
+    "lng": -21.9426
+  },
+  "visible": false,
+  "city": "reykjavik",
+  "story": {
+    "en": "She arrived where fire slept beneath ice and earth exhaled steam. In Reykjavík, lava veins pulsed beneath a crystal crust and geysers danced in the cold. SOL didn’t merely traverse the tundra—she wove warmth into frozen breath. Basalt columns rose like silent witnesses, and hot springs rippled under her gaze. The sky shimmered orange at midnight, and every breath of wind carried molten gleam. Here, she was both ember and frost—the equilibrium of extremes.",
+    "el": "Έφτασε εκεί όπου η φωτιά κοιμόταν κάτω από τον πάγο και η γη εξέπνεε ατμούς. Στο Ρέικιαβικ, φλέβες λάβας παλλόντουσαν κάτω από κρυστάλλινη επιφάνεια και οι γεϊζερ χόρευαν στο ψύχος. Η SOL δεν διέσχισε απλώς την τούνδρα—ύφανε ζεστασιά στην παγωμένη ανάσα. Βασάλτικες κολόνες υψώνονταν σαν σιωπηλοί μάρτυρες, και οι θερμές πηγές τρεμόπαιζαν κάτω από το βλέμμα της. Ο ουρανός έλαμπε πορτοκαλί στα μεσάνυχτα, και κάθε πνοή ανέμου κουβαλούσε ρευστή λάμψη. Εδώ, ήταν και σπινθήρας και παγωνιά—η ισορροπία των ακραίων."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did the story say geysers danced in the cold?",
+        "el": "Αναφέρει η ιστορία ότι οι γεϊζερ χόρευαν στο ψύχος;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Are basalt columns described as silent witnesses?",
+        "el": "Περιγράφονται οι βασάλτικες κολόνες ως σιωπηλοί μάρτυρες;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Is Reykjavík described as a silent desert?",
+        "el": "Περιγράφεται το Ρέικιαβικ ως σιωπηλή έρημος;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
+  "id": 22,
+  "title": "SOLadventure #22 – Toronto, cityscapes & Niagara tale 🏙️🌊🇨🇦",
+  "quote": "She bridged roar and reflection.",
+  "caption": "No boundaries. No divides. Just currents and towers. 🐾🐾🐾",
+  "image": "episodes/toronto.png",
+  "location": {
+    "lat": 43.6511,
+    "lng": -79.3836
+  },
+  "visible": false,
+  "city": "toronto",
+  "story": {
+    "en": "She arrived where currents whisper to concrete, where mist from Niagara met glass spires. In Toronto, water and skyline intertwined in a subtle interplay. SOL perched above the Horseshoe Falls as spray wove rainbows across the dusk. The CN Tower stood like a steadfast sentinel, lights dancing against the river’s roar. No border, no barrier—just the unity of flow and form.",
+    "el": "Έφτασε εκεί όπου τα ρεύματα ψιθύριζαν στον οπλισμένο σκυρόδεμα και η ομίχλη των Νιαγάρα συναντούσε τα γυάλινα ύψη. Στο Τορόντο, νερό και ουρανοξύστες ενώνονταν σε μια διακριτική αρμονία. Η SOL στάθηκε πάνω από τους Καταρράκτες του Χόρσσοε, ενώ το ψεκασμένο νερό ύφανε ουράνια τόξα στο σούρουπο. Ο Πύργος CN δεσπόζει σαν ακλόνητος φρουρός, τα φώτα του να χορεύουν στο βρυχηθμό του ποταμού. Χωρίς σύνορα, χωρίς φράγματα—μόνο η ενότητα του ρέοντος και του δομημένου."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL perch above the Horseshoe Falls?",
+        "el": "Στάθηκε η SOL πάνω από τους Καταρράκτες του Χόρσσοε;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Is the CN Tower described as a steadfast sentinel?",
+        "el": "Περιγράφεται ο Πύργος CN ως ακλόνητος φρουρός;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention any borders or barriers?",
+        "el": "Αναφέρει η ιστορία σύνορα ή φράγματα;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
+  "id": 23,
+  "title": "SOLadventure #23 – New York City, skyline queen 🏙️🇺🇸",
+  "quote": "Bridges bow to her gaze.",
+  "caption": "No pause. No skyline unseen. Just her and the city lights. 🐾🐾🐾",
+  "image": "episodes/newyork.png",
+  "location": {
+    "lat": 40.7128,
+    "lng": -74.0060
+  },
+  "visible": false,
+  "city": "newyork",
+  "story": {
+    "en": "She arrived where steel meets starlight, where bridges arch like bows across the river. In New York, towers dared to touch the sky and neon pulsed through every street. SOL claimed the rooftop, surveying her kingdom from the Brooklyn Bridge’s flank. Below, the East River mirrored her calm, and the skyline glittered at her command. No forest. No reef—only concrete canopies and veins of light.",
+    "el": "Έφτασε εκεί όπου ο χάλυβας συναντά το φεγγαρόφως, όπου οι γέφυρες τόξευαν πάνω από τον ποταμό. Στη Νέα Υόρκη, οι ουρανοξύστες αψηφούσαν τα σύννεφα και τα νέον αντήχησαν σε κάθε δρόμο. Η SOL κατέλαβε τη στέγη, παρατηρώντας το βασίλειό της δίπλα στη Γέφυρα του Μπρούκλιν. Κάτω, ο ποταμός East αντανακλούσε την ηρεμία της, και ο ορίζοντας έλαμπε με τη δική της εντολή. Όχι δάσος. Όχι ύφαλος—μόνο μπετονένια θόλα και νευρικά δίκτυα φωτός."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL claim the rooftop beside the Brooklyn Bridge?",
+        "el": "Κατέλαβε η SOL τη στέγη δίπλα στη Γέφυρα του Μπρούκλιν;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention neon pulsing through every street?",
+        "el": "Αναφέρει η ιστορία νέον να αντηχεί σε κάθε δρόμο;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story reference a coral reef?",
+        "el": "Αναφέρει η ιστορία ύφαλο;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
+  "id": 24,
+  "title": "SOLadventure #24 – Miami, sunlit streets 🌞🇺🇸",
+  "quote": "She owns the golden hour.",
+  "caption": "No traffic. No hurry. Just sunlit steps. 🐾🐾🐾",
+  "image": "episodes/miami.png",
+  "location": {
+    "lat": 25.7617,
+    "lng": -80.1918
+  },
+  "visible": false,
+  "city": "miami",
+  "story": {
+    "en": "She arrived where pastel facades met endless skies and palm shadows danced on coral-hued pavement. In Miami, every breeze carried warmth and color. SOL strolled Ocean Drive at golden hour, her silhouette framed by Art Deco towers and turquoise tides. No crowds. No clamor—only sunlit elegance.",
+    "el": "Έφτασε εκεί όπου οι παστέλ προσόψεις συναντούν τον ατελείωτο ουρανό και οι σκιές των φοίνικων χορεύουν στα κοραλλί πλακόστρωτα. Στο Μαϊάμι, κάθε αεράκι έφερνε ζεστασιά και χρώμα. Η SOL περπάτησε στην Ocean Drive τη χρυσή ώρα, η σιλουέτα της πλαισιωμένη από Art Deco πύργους και τυρκουάζ κύματα. Χωρίς πλήθη. Χωρίς θόρυβο—μόνο λαμπερή κομψότητα."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL stroll Ocean Drive at golden hour?",
+        "el": "Περπάτησε η SOL στην Ocean Drive τη χρυσή ώρα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Were pastel facades mentioned?",
+        "el": "Αναφέρθηκαν παστέλ προσόψεις;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention any crowds?",
+        "el": "Αναφέρθηκαν πλήθη στην ιστορία;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
+  "id": 25,
+  "title": "SOLadventure #25 – San Francisco, bridge tales 🌉🇺🇸",
+  "quote": "She draped the bridge in gold.",
+  "caption": "No crosswalks. No commutes. Just arches and dreams. 🐾🐾🐾",
+  "image": "episodes/sanfrancisco.png",
+  "location": {
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  "visible": false,
+  "city": "sanfrancisco",
+  "story": {
+    "en": "She arrived where red steel arches carved the sky and bay breezes whispered secrets. On the Golden Gate, SOL stretched across the railing, the sunrise painting her fur in amber. Fog rolled across the water like drifting clouds, and the city’s hills peeked through pockets of light. No horns. No hurry—only the bridge’s quiet vigil and her steady gaze.",
+    "el": "Έφτασε εκεί όπου οι κόκκινες αψίδες χάλυβα σκιαγραφούσαν τον ουρανό και τα θαλάσσια αεράκια ψιθύριζαν μυστικά. Στη Γέφυρα του Golden Gate, η SOL απλώθηκε στο κιγκλίδωμα, ενώ η αυγή έβαφε το τρίχωμά της σε κεχριμπαρένιες αποχρώσεις. Η ομίχλη κυλούσε πάνω από τον κόλπο σαν πλανώμενα σύννεφα, και οι λόφοι της πόλης ξεπρόβαλλαν μέσα από σποραδικές δέσμες φωτός. Χωρίς κορναρίσματα. Χωρίς βιασύνη—μόνο το διαρκές φρουρό της γέφυρας και το σταθερό της βλέμμα."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL stretch across the railing on the Golden Gate?",
+        "el": "Απλώθηκε η SOL στο κιγκλίδωμα της Γέφυρας του Golden Gate;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was fog described as rolling across the water?",
+        "el": "Αναφέρθηκε ομίχλη να κυλάει πάνω από το νερό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention any car horns?",
+        "el": "Αναφέρθηκαν κορναρίσματα αυτοκινήτων;"
+      },
+      "answer": false
+    }
+  ]
+},
+{
+  "id": 26,
+  "title": "SOLadventure #26 – Honolulu, island hush 🌺🇺🇸",
+  "quote": "She found sunrise in palms.",
+  "caption": "No bustle. No borders. Only island calm. 🐾🐾🐾",
+  "image": "episodes/honolulu.png",
+  "location": {
+    "lat": 21.3069,
+    "lng": -157.8583
+  },
+  "visible": false,
+  "city": "honolulu",
+  "story": {
+    "en": "She arrived where ocean breeze met flowered air and palms bowed in greeting. On a wooden railing above Waikiki, SOL lay amid dawn’s pink glow as Diamond Head dreamed beyond the waves. No noise. No hurry—only the heartbeat of the island in soft tides and rustling fronds.",
+    "el": "Έφτασε εκεί όπου η θαλασσινή αύρα συναντούσε αρώματα λουλουδιών και οι φοίνικες υποκλίνονταν σε χαιρετισμό. Σε ένα ξύλινο κάγκελο πάνω από τη Waikiki, η SOL ξάπλωσε μέσα στη ροζ αύρα της αυγής, ενώ το Diamond Head ονειρευόταν πέρα από τα κύματα. Χωρίς θόρυβο. Χωρίς βιασύνη—μόνο ο παλμός του νησιού σε απαλά κύματα και ψίθυρους φύλλων."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL lie on a wooden railing above Waikiki?",
+        "el": "Ξάπλωσε η SOL σε ξύλινο κάγκελο πάνω από τη Waikiki;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Is Diamond Head mentioned as dreaming beyond the waves?",
+        "el": "Αναφέρεται το Diamond Head να ονειρεύεται πέρα από τα κύματα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention any bustle or hurry?",
+        "el": "Αναφέρθηκε θόρυβος ή βιασύνη;"
+      },
+      "answer": false
+    }
+  ]
 }
+
+
  ]

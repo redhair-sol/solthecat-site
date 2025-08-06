@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Honolulu, island hush'?",
+      "el": "Ο τίτλος είναι 'Honolulu, island hush';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Honolulu, ocean breeze", "el": "Honolulu, ocean breeze" }, "correct": false },
+      { "text": { "en": "Honolulu, palm sunrise", "el": "Honolulu, palm sunrise" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the quote say 'She found sunrise in palms.'?",
+      "el": "Λέει το quote 'She found sunrise in palms.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She found sunset in palms.", "el": "Βρήκε ηλιοβασίλεμα σε φοίνικες." }, "correct": false },
+      { "text": { "en": "Sunrise palace in palms.", "el": "Παλάτι αυγής σε φοίνικες." }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the caption 'No bustle. No borders. Only island calm.'?",
+      "el": "Είναι το caption 'No bustle. No borders. Only island calm.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "No crowds. No noise.", "el": "No crowds. No noise." }, "correct": false },
+      { "text": { "en": "Only ocean breeze.", "el": "Only ocean breeze." }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Did SOL lie on a wooden railing above Waikiki?",
+      "el": "Ξάπλωσε η SOL σε ξύλινο κάγκελο πάνω από τη Waikiki;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She sat on sand", "el": "Κάθισε στην άμμο" }, "correct": false },
+      { "text": { "en": "She climbed a palm", "el": "Ανέβηκε σε φοίνικα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Is Diamond Head mentioned in the story?",
+      "el": "Αναφέρεται το Diamond Head στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Diamond Beach", "el": "Παραλία Diamond" }, "correct": false },
+      { "text": { "en": "Diamond Sky", "el": "Ουρανός Diamond" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Does the story describe ocean breeze meeting flowered air?",
+      "el": "Αναφέρει η ιστορία θαλάσσιο αεράκι να συναντά αρώματα λουλουδιών;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Breeze meets concrete", "el": "Το αεράκι συναντά το σκυρόδεμα" }, "correct": false },
+      { "text": { "en": "Wind meets snow", "el": "Αέρας συναντά χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Are palm fronds said to bow in greeting?",
+      "el": "Υποκλίνονται τα φύλλα φοίνικα σε χαιρετισμό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They waved wildly", "el": "Κινήθηκαν βίαια" }, "correct": false },
+      { "text": { "en": "They stood rigid", "el": "Στάθηκαν άκαμπτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Did the story mention any hurry or bustle?",
+      "el": "Αναφέρθηκε βιασύνη ή φασαρία;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only traffic", "el": "Μόνο κίνηση" }, "correct": false },
+      { "text": { "en": "Only crowds", "el": "Μόνο πλήθη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Is Waikiki Beach the backdrop of the image?",
+      "el": "Είναι η παραλία Waikiki το φόντο της εικόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Boracay Beach", "el": "Παραλία Boracay" }, "correct": false },
+      { "text": { "en": "Waimea Bay", "el": "Κόλπος Waimea" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Is Diamond Head described as dreaming beyond the waves?",
+      "el": "Ονειρεύεται το Diamond Head πέρα από τα κύματα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Sleeping volcano", "el": "Ηφαίστειο που κοιμάται" }, "correct": false },
+      { "text": { "en": "Awake crater", "el": "Ξύπνιος κρατήρας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Does the quote mention palms?",
+      "el": "Αναφέρει το quote φοίνικες;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It mentions waves", "el": "Αναφέρει κύματα" }, "correct": false },
+      { "text": { "en": "It mentions sand", "el": "Αναφέρει άμμο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Is the setting described at sunrise?",
+      "el": "Γίνεται η αφήγηση την ανατολή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "At noon", "el": "Το μεσημέρι" }, "correct": false },
+      { "text": { "en": "At midnight", "el": "Τα μεσάνυχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Does the story mention flowered air?",
+      "el": "Αναφέρει ανθισμένο αέρα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only salty breeze", "el": "Μόνο θαλασσινό αεράκι" }, "correct": false },
+      { "text": { "en": "Only smoky air", "el": "Μόνο καπνιστός αέρας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Is the caption first line 'No bustle.'?",
+      "el": "Είναι η πρώτη γραμμή του caption 'No bustle.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "No traffic.", "el": "No traffic." }, "correct": false },
+      { "text": { "en": "Only calm.", "el": "Μόνο ηρεμία." }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Does the story mention any borders?",
+      "el": "Αναφέρει σύνορα;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No highways", "el": "No highways" }, "correct": false },
+      { "text": { "en": "No bridges", "el": "No bridges" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Is SOL’s stance described as relaxed?",
+      "el": "Περιγράφεται η στάση της SOL χαλαρή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Tense", "el": "Τεντωμένη" }, "correct": false },
+      { "text": { "en": "Alert", "el": "Σε εγρήγορση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Is the water described as lapping below?",
+      "el": "Περιγράφεται το νερό να σκάνε από κάτω;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was still", "el": "Ήταν ακίνητο" }, "correct": false },
+      { "text": { "en": "It was stormy", "el": "Ήταν θυελλώδες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Are palm fronds framing the scene?",
+      "el": "Πλαισιώνουν φύλλα φοίνικα τη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only coconut trees", "el": "Μόνο φοινικόδεντρα" }, "correct": false },
+      { "text": { "en": "Only banana leaves", "el": "Μόνο φύλλα μπανάνας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is Diamond Head depicted as a volcanic backdrop?",
+      "el": "Περιγράφεται το Diamond Head ως ηφαιστειακό φόντο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only mountains", "el": "Μόνο βουνά" }, "correct": false },
+      { "text": { "en": "Only cliffs", "el": "Μόνο γκρεμοί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Is the island’s heartbeat described in soft tides?",
+      "el": "Περιγράφεται ο παλμός του νησιού σε απαλά κύματα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "In wild storms", "el": "Σε θυελλώδεις καταιγίδες" }, "correct": false },
+      { "text": { "en": "In silent woods", "el": "Σε σιωπηλά δάση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is Waikiki Beach located in Honolulu?",
+      "el": "Βρίσκεται η παραλία Waikiki στη Χονολουλού;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "In Maui", "el": "Στο Μάουι" }, "correct": false },
+      { "text": { "en": "In Kauai", "el": "Στο Κάουαι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Is the location latitude around 21.3069?",
+      "el": "Είναι το γεωγραφικό πλάτος περίπου 21.3069;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "20.9057", "el": "20.9057" }, "correct": false },
+      { "text": { "en": "22.3364", "el": "22.3364" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the story mention any city skyline?",
+      "el": "Αναφέρει η ιστορία κάποιο ορίζοντα πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Honolulu skyline", "el": "Ορίζοντας Χονολουλού" }, "correct": false },
+      { "text": { "en": "Manhattan skyline", "el": "Ορίζοντας Μανχάταν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Is the caption reference to borders?",
+      "el": "Αναφέρει το caption σύνορα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It mentions reefs", "el": "Αναφέρει ύφαλους" }, "correct": false },
+      { "text": { "en": "It mentions mountains", "el": "Αναφέρει βουνά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Does the image show any people or boats?",
+      "el": "Δείχνει η εικόνα ανθρώπους ή βάρκες;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only distant figures", "el": "Μόνο απομακρυσμένες φιγούρες" }, "correct": false },
+      { "text": { "en": "Only anchored boats", "el": "Μόνο αραγμένες βάρκες" }, "correct": false }
+    ]
+  }
+]

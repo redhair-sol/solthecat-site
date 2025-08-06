@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is Edinburgh the capital of Scotland?",
+      "el": "Είναι η Εδιμβούργο πρωτεύουσα της Σκωτίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s in England", "el": "Είναι στην Αγγλία" }, "correct": false },
+      { "text": { "en": "It’s in Wales", "el": "Είναι στην Ουαλία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the episode title include the phrase 'where legends linger'?",
+      "el": "Περιλαμβάνει ο τίτλος τη φράση 'where legends linger';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It says 'where myths roam'", "el": "Λέει 'where myths roam'" }, "correct": false },
+      { "text": { "en": "It says 'where stones sleep'", "el": "Λέει 'where stones sleep'" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Did SOL arrive as bells tolled?",
+      "el": "Έφτασε η SOL καθώς χτυπούσαν κουδούνια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She arrived at sunset", "el": "Έφτασε στο ηλιοβασίλεμα" }, "correct": false },
+      { "text": { "en": "She arrived at midnight", "el": "Έφτασε μεσάνυχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Did SOL walk the Royal Mile in Edinburgh?",
+      "el": "Περπάτησε η SOL στη Βασιλική Οδό στην Εδιμβούργο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She rode a horse", "el": "Ιππεύτηκε" }, "correct": false },
+      { "text": { "en": "She flew over it", "el": "Πέταξε από πάνω" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Is Edinburgh Castle described as perched on ancient rock?",
+      "el": "Περιγράφεται το Κάστρο της Εδιμβούργου ως καθισμένο σε αρχαίο βράχο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s on a riverbank", "el": "Είναι σε όχθη ποταμού" }, "correct": false },
+      { "text": { "en": "It’s on a hill of sand", "el": "Είναι σε αμμόλοφο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Are narrow closes described as spiraling above the fog?",
+      "el": "Περιγράφονται τα στενά σοκάκια να στροβιλίζονται πάνω από την ομίχλη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They lie flat", "el": "Καταλήγουν επίπεδα" }, "correct": false },
+      { "text": { "en": "They are underground", "el": "Είναι υπόγεια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Did SOL awaken the stones of the city?",
+      "el": "Ξύπνησε η SOL τις πέτρες της πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She ignored them", "el": "Τις αγνόησε" }, "correct": false },
+      { "text": { "en": "She broke them", "el": "Τις έσπασε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Did the story say cliffs bowed in reverence?",
+      "el": "Ανέφερε η ιστορία ότι οι λόφοι υποκλίθηκαν σε σεβασμό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They remained rigid", "el": "Έμειναν άκαμπτοι" }, "correct": false },
+      { "text": { "en": "They crumbled", "el": "Κατέρρευσαν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Does the story mention any crowds in the closes?",
+      "el": "Αναφέρει η ιστορία πλήθη στα στενά σοκάκια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only tourists", "el": "Μόνο τουρίστες" }, "correct": false },
+      { "text": { "en": "Only merchants", "el": "Μόνο έμποροι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Does the Instagram caption end with paw emojis?",
+      "el": "Τελειώνει το caption στο Instagram με emoji πατουσών;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It uses hearts", "el": "Χρησιμοποιεί καρδιές" }, "correct": false },
+      { "text": { "en": "It uses stars", "el": "Χρησιμοποιεί αστέρια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Does the caption begin with 'Storied steps'?",
+      "el": "Ξεκινά το caption με τη φράση 'Storied steps';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It begins with 'No silence'", "el": "Ξεκινά με 'No silence'" }, "correct": false },
+      { "text": { "en": "It begins with 'Legends bowed'", "el": "Ξεκινά με 'Legends bowed'" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Is the story set at dawn?",
+      "el": "Συμβαίνει η ιστορία τα ξημερώματα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s at noon", "el": "Είναι μεσημέρι" }, "correct": false },
+      { "text": { "en": "It’s at dusk", "el": "Είναι σούρουπο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Did the story mention a march or decree?",
+      "el": "Αναφέρθηκε παρέλαση ή διάταγμα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only a parade", "el": "Μόνο παρέλαση" }, "correct": false },
+      { "text": { "en": "Only a speech", "el": "Μόνο ομιλία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Did the story describe the city stirring in quiet homage?",
+      "el": "Περιέγραψε η ιστορία την πόλη να αναστατώνεται σε σιγανό ύμνο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It said it was silent", "el": "Έλεγε ότι ήταν σιωπηλή" }, "correct": false },
+      { "text": { "en": "It said it was boisterous", "el": "Έλεγε ότι ήταν θορυβώδης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Is the dawn described as stretching like woven mist?",
+      "el": "Περιγράφεται η αυγή σαν να απλώνεται σαν υφασμένη ομίχλη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was bright like fire", "el": "Ήταν λαμπερή σαν φωτιά" }, "correct": false },
+      { "text": { "en": "It was dark like night", "el": "Ήταν σκοτεινή σαν νύχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Is the narrative told in past tense?",
+      "el": "Αφηγείται η ιστορία σε αόριστο χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s in present tense", "el": "Είναι σε ενεστώτα" }, "correct": false },
+      { "text": { "en": "It’s in future tense", "el": "Είναι σε μέλλοντα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which festival is Edinburgh famous for?",
+      "el": "Για ποιο φεστιβάλ είναι διάσημη η Εδιμβούργο;"
+    },
+    "answers": [
+      { "text": { "en": "Fringe Festival", "el": "Fringe Festival" }, "correct": true },
+      { "text": { "en": "Oktoberfest", "el": "Oktoberfest" }, "correct": false },
+      { "text": { "en": "Carnival", "el": "Καρναβάλι" }, "correct": false },
+      { "text": { "en": "Diwali", "el": "Ντιγιαλί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What landmark stands above Edinburgh in the image?",
+      "el": "Ποιο μνημείο βρίσκεται πάνω από την Εδιμβούργο στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Edinburgh Castle", "el": "Κάστρο της Εδιμβούργου" }, "correct": true },
+      { "text": { "en": "Tower Bridge", "el": "Tower Bridge" }, "correct": false },
+      { "text": { "en": "Sagrada Familia", "el": "Sagrada Familia" }, "correct": false },
+      { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What surface did SOL walk on?",
+      "el": "Σε ποια επιφάνεια περπάτησε η SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Cobblestones", "el": "Λιθόστρωτο" }, "correct": true },
+      { "text": { "en": "Sand", "el": "Άμμος" }, "correct": false },
+      { "text": { "en": "Wooden plank", "el": "Ξύλινη σανίδα" }, "correct": false },
+      { "text": { "en": "Grass", "el": "Χορτάρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Did SOL merely observe the stones?",
+      "el": "Παρατήρησε απλώς τις πέτρες η SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "She ignored them", "el": "Τις αγνόησε" }, "correct": false },
+      { "text": { "en": "She broke them", "el": "Τις έσπασε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is the city silhouette referred to as a citadel's silhouette?",
+      "el": "Αναφέρεται η σιλουέτα της πόλης ως σιλουέτα της ακρόπολης;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s called a fortress silhouette", "el": "Ονομάζεται σιλουέτα φρουρίου" }, "correct": false },
+      { "text": { "en": "It’s called a bridge silhouette", "el": "Ονομάζεται σιλουέτα γέφυρας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Are the closes described as narrow?",
+      "el": "Περιγράφονται τα σοκάκια ως στενά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They are wide", "el": "Είναι φαρδιά" }, "correct": false },
+      { "text": { "en": "They are underground", "el": "Είναι υπόγεια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the story mention steam rising?",
+      "el": "Αναφέρει η ιστορία ατμούς να ανεβαίνουν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only in hot springs", "el": "Μόνο σε θερμές πηγές" }, "correct": false },
+      { "text": { "en": "Only in factories", "el": "Μόνο σε εργοστάσια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Did SOL pause to let the world catch up?",
+      "el": "Στάθηκε η SOL για να προλάβει ο κόσμος;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "She paused to eat", "el": "Στάθηκε για φαγητό" }, "correct": false },
+      { "text": { "en": "She paused to sleep", "el": "Στάθηκε για ύπνο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Does the story mention bells tolling upon her arrival?",
+      "el": "Αναφέρει η ιστορία κουδούνια να χτυπούν με την άφιξή της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It mentions horns", "el": "Αναφέρει σάλπιγγες" }, "correct": false },
+      { "text": { "en": "It mentions drums", "el": "Αναφέρει τύμπανα" }, "correct": false }
+    ]
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is New York City referred to as 'skyline queen'?",
+      "el": "Αναφέρεται η Νέα Υόρκη ως 'skyline queen';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "River princess", "el": "πριγκίπισσα του ποταμού" }, "correct": false },
+      { "text": { "en": "Concrete empress", "el": "αυτοκράτειρα του μπετόν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the quote say 'Bridges bow to her gaze.'?",
+      "el": "Λέει το quote 'Bridges bow to her gaze.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Bridges fear her gaze", "el": "Οι γέφυρες φοβούνται το βλέμμα της" }, "correct": false },
+      { "text": { "en": "Roads bow to her paws", "el": "Τα δρομάκια υποκλίνονται στις πατούσες της" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Did SOL arrive where steel meets starlight?",
+      "el": "Έφτασε η SOL εκεί όπου ο χάλυβας συναντά το φεγγαρόφως;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Where wood meets water", "el": "Όπου το ξύλο συναντά το νερό" }, "correct": false },
+      { "text": { "en": "Where glass meets sun", "el": "Όπου το γυαλί συναντά τον ήλιο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Is the Brooklyn Bridge described as arching like a bow?",
+      "el": "Περιγράφεται η Γέφυρα του Μπρούκλιν να τόξευε σαν τόξο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It swayed like a rope", "el": "Ταλαντευόταν σαν σχοινί" }, "correct": false },
+      { "text": { "en": "It lay flat", "el": "Ψηλώθηκε επίπεδη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Did neon pulse through every street?",
+      "el": "Περιγράφεται νέον να παλαιούσε σε κάθε δρόμο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only in the theaters", "el": "Μόνο στα θέατρα" }, "correct": false },
+      { "text": { "en": "Only in the subways", "el": "Μόνο στους υπόγειους" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Did SOL claim the rooftop beside the Brooklyn Bridge?",
+      "el": "Κατέλαβε η SOL τη στέγη δίπλα στη Γέφυρα του Μπρούκλιν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She sat under the bridge", "el": "Στεκόταν κάτω από τη γέφυρα" }, "correct": false },
+      { "text": { "en": "She climbed a tower", "el": "Ανέβηκε σε πύργο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which river mirrored her calm?",
+      "el": "Ποιος ποταμός αντανακλούσε την ηρεμία της;"
+    },
+    "answers": [
+      { "text": { "en": "East River", "el": "East River" }, "correct": true },
+      { "text": { "en": "Hudson River", "el": "Ποταμός Χάντσον" }, "correct": false },
+      { "text": { "en": "Mississippi", "el": "Μισισιπής" }, "correct": false },
+      { "text": { "en": "Thames", "el": "Τάμεσης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Is One World Trade Center mentioned by name?",
+      "el": "Αναφέρεται το One World Trade Center με το όνομα;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It’s called Freedom Tower", "el": "Ονομάζεται Πύργος της Ελευθερίας" }, "correct": false },
+      { "text": { "en": "It’s called Empire State", "el": "Ονομάζεται Empire State" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Did the story reference a coral reef?",
+      "el": "Αναφέρει η ιστορία ύφαλο;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only a reef", "el": "Μόνο ύφαλο" }, "correct": false },
+      { "text": { "en": "Only a forest", "el": "Μόνο δάσος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Is the narrative in the story past tense?",
+      "el": "Η αφήγηση γίνεται σε αόριστο χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Future tense", "el": "Μέλλοντας" }, "correct": false },
+      { "text": { "en": "Present continuous", "el": "Ενεστώτας συνεχιζόμενος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Does the caption mention 'No pause'?",
+      "el": "Αναφέρει το caption 'No pause';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "No encore", "el": "Όχι κορυφή" }, "correct": false },
+      { "text": { "en": "Just city lights", "el": "Μόνο φώτα πλοίων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Does the story say 'concrete canopies'?",
+      "el": "Λέει η ιστορία 'concrete canopies';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Steel canopies", "el": "Χάλυβδινα θόλοι" }, "correct": false },
+      { "text": { "en": "Glass canopies", "el": "Γυάλινοι θόλοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Is SOL’s territory called a kingdom?",
+      "el": "Ονομάζεται το βασίλειο της SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Empire", "el": "Αυτοκρατορία" }, "correct": false },
+      { "text": { "en": "Forest", "el": "Δάσος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Do towers dare to touch the sky?",
+      "el": "Τολμούν οι πύργοι να αγγίξουν τον ουρανό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They bow to the sky", "el": "Υποκλίνονται στον ουρανό" }, "correct": false },
+      { "text": { "en": "They hide behind clouds", "el": "Κρύβονται πίσω από σύννεφα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Is the Brooklyn Bridge’s flank mentioned?",
+      "el": "Αναφέρεται το πλάι της Γέφυρας του Μπρούκλιν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Its tower only", "el": "Μόνο ο πύργος της" }, "correct": false },
+      { "text": { "en": "Its cables only", "el": "Μόνο τα καλώδιά της" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Is concrete described as 'canopies'?",
+      "el": "Περιγράφεται το σκυρόδεμα ως 'θόλοι';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "As pillars", "el": "Ως κολόνες" }, "correct": false },
+      { "text": { "en": "As beams", "el": "Ως δοκοί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Did SOL rest on a rooftop terrace?",
+      "el": "Ξεκουράστηκε η SOL σε ταράτσα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "On a sidewalk", "el": "Σε πεζοδρόμιο" }, "correct": false },
+      { "text": { "en": "In a park", "el": "Σε πάρκο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Are concrete canopies and veins of light contrasted?",
+      "el": "Αντιπαρατίθενται θόλοι σκυροδέματος και δίκτυα φωτός;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Concrete and shadows", "el": "Σκυρόδεμα και σκιές" }, "correct": false },
+      { "text": { "en": "Water and sky", "el": "Νερό και ουρανός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is the story set at dusk?",
+      "el": "Γίνεται η ιστορία το σούρουπο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "At dawn", "el": "Τα ξημερώματα" }, "correct": false },
+      { "text": { "en": "At noon", "el": "Το μεσημέρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Does the story mention 'veins of light'?",
+      "el": "Αναφέρει η ιστορία 'δίκτυα φωτός';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Lines of neon", "el": "Γραμμές νέον" }, "correct": false },
+      { "text": { "en": "Bands of color", "el": "Λωρίδες χρώματος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is the Brooklyn Bridge’s cables visible in the image?",
+      "el": "Είναι ορατά τα καλώδια της Γέφυρας του Μπρούκλιν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only the towers", "el": "Μόνο οι πύργοι" }, "correct": false },
+      { "text": { "en": "Only the roadway", "el": "Μόνο η οδοστρωσία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Does the caption mention 'skyline unseen'?",
+      "el": "Αναφέρει το caption 'skyline unseen';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Unseen skyline", "el": "Αόρατος ορίζοντας" }, "correct": false },
+      { "text": { "en": "City lights unseen", "el": "Αόρατα φώτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Is the phrase 'No pause' part of the caption?",
+      "el": "Περιέχεται στο caption η φράση 'No pause';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "No encore", "el": "Όχι encore" }, "correct": false },
+      { "text": { "en": "Just city lights", "el": "Μόνο φώτα πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Does SOL survey her kingdom from the bridge’s flank?",
+      "el": "Παρατηρεί η SOL το βασίλειό της από το πλάι της γέφυρας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "From a tower", "el": "Από πύργο" }, "correct": false },
+      { "text": { "en": "From the street", "el": "Από το δρόμο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is there any mention of forests or reefs?",
+      "el": "Αναφέρεται δάσος ή ύφαλος;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only forests", "el": "Μόνο δάση" }, "correct": false },
+      { "text": { "en": "Only reefs", "el": "Μόνο ύφαλοι" }, "correct": false }
+    ]
+  }
+]

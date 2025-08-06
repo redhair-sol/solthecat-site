@@ -1,0 +1,40 @@
+{
+  "id": 25,
+  "title": "SOLadventure #25 – San Francisco, bridge tales 🌉🇺🇸",
+  "quote": "She draped the bridge in gold.",
+  "caption": "No crosswalks. No commutes. Just arches and dreams. 🐾🐾🐾",
+  "image": "episodes/sanfrancisco.png",
+  "location": {
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  "visible": true,
+  "city": "sanfrancisco",
+  "story": {
+    "en": "She arrived where red steel arches carved the sky and bay breezes whispered secrets. On the Golden Gate, SOL stretched across the railing, the sunrise painting her fur in amber. Fog rolled across the water like drifting clouds, and the city’s hills peeked through pockets of light. No horns. No hurry—only the bridge’s quiet vigil and her steady gaze.",
+    "el": "Έφτασε εκεί όπου οι κόκκινες αψίδες χάλυβα σκιαγραφούσαν τον ουρανό και τα θαλάσσια αεράκια ψιθύριζαν μυστικά. Στη Γέφυρα του Golden Gate, η SOL απλώθηκε στο κιγκλίδωμα, ενώ η αυγή έβαφε το τρίχωμά της σε κεχριμπαρένιες αποχρώσεις. Η ομίχλη κυλούσε πάνω από τον κόλπο σαν πλανώμενα σύννεφα, και οι λόφοι της πόλης ξεπρόβαλλαν μέσα από σποραδικές δέσμες φωτός. Χωρίς κορναρίσματα. Χωρίς βιασύνη—μόνο το διαρκές φρουρό της γέφυρας και το σταθερό της βλέμμα."
+  },
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did SOL stretch across the railing on the Golden Gate?",
+        "el": "Απλώθηκε η SOL στο κιγκλίδωμα της Γέφυρας του Golden Gate;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was fog described as rolling across the water?",
+        "el": "Αναφέρθηκε ομίχλη να κυλάει πάνω από το νερό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention any car horns?",
+        "el": "Αναφέρθηκαν κορναρίσματα αυτοκινήτων;"
+      },
+      "answer": false
+    }
+  ]
+}

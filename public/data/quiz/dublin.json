@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is Dublin the capital of Ireland?",
+      "el": "Είναι το Δουβλίνο πρωτεύουσα της Ιρλανδίας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s Belfast", "el": "Είναι το Μπέλφαστ" }, "correct": false },
+      { "text": { "en": "It’s Cork", "el": "Είναι το Κορκ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include 'literary pubs & Georgian squares'?",
+      "el": "Περιλαμβάνει ο τίτλος τη φράση 'literary pubs & Georgian squares';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It says 'pubs & bridges'", "el": "Λέει 'pubs & bridges'" }, "correct": false },
+      { "text": { "en": "It says 'squares & castles'", "el": "Λέει 'squares & castles'" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the quote 'She wrote her story in every raised glass.' used?",
+      "el": "Χρησιμοποιείται το quote 'She wrote her story in every raised glass.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It says 'She drank her story'", "el": "Λέει 'She drank her story'" }, "correct": false },
+      { "text": { "en": "It says 'Every sip tells a tale'", "el": "Λέει 'Every sip tells a tale'" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Did SOL wander the cobblestones?",
+      "el": "Περιπλανήθηκε η SOL στα λιθόστρωτα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She flew above them", "el": "Πετούσε από πάνω" }, "correct": false },
+      { "text": { "en": "She swam through them", "el": "Κολυμπά σε αυτά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Is Temple Bar’s door described as swinging wide in greeting?",
+      "el": "Περιγράφεται η πόρτα του Temple Bar να ανοίγει πλατιά σε χαιρετισμό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was closed tight", "el": "Ήταν κλειστή σφιχτά" }, "correct": false },
+      { "text": { "en": "It swung shut", "el": "Έκλεισε ξαφνικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Does the story mention candlelight dancing on oaken beams?",
+      "el": "Αναφέρει η ιστορία το φως από κεριά να χορεύει σε ξύλινες δοκούς;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It mentions lanterns only", "el": "Αναφέρει μόνο φανάρια" }, "correct": false },
+      { "text": { "en": "It mentions neon lights", "el": "Αναφέρει νέον φώτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Are Georgian terraces called a stage of history?",
+      "el": "Αναφέρονται οι γεωργιανές σειρές σπιτιών ως 'σκηνή της ιστορίας';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They’re called galleries", "el": "Ονομάζονται γκαλερί" }, "correct": false },
+      { "text": { "en": "They’re called museums", "el": "Ονομάζονται μουσεία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Did SOL pause beneath the Ha’penny Bridge?",
+      "el": "Στάθηκε η SOL κάτω από τη Ha’penny Bridge;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She swam under it", "el": "Κολύμπησε από κάτω" }, "correct": false },
+      { "text": { "en": "She climbed it", "el": "Ανέβηκε πάνω" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Does the caption mention 'pages and pints'?",
+      "el": "Αναφέρει το caption 'pages and pints';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It says 'chapters and cheers'", "el": "Λέει 'chapters and cheers'" }, "correct": false },
+      { "text": { "en": "It says 'stories and stouts'", "el": "Λέει 'stories and stouts'" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Is there any mention of an epilogue or prologue?",
+      "el": "Αναφέρεται πρόλογος ή επίλογος;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only a prologue", "el": "Μόνο πρόλογος" }, "correct": false },
+      { "text": { "en": "Only an epilogue", "el": "Μόνο επίλογος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Is Temple Bar a library of laughter and lament?",
+      "el": "Είναι το Temple Bar 'βιβλιοθήκη γέλιου και νοσταλγίας';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s called a gallery", "el": "Ονομάζεται γκαλερί" }, "correct": false },
+      { "text": { "en": "It’s called a theater", "el": "Ονομάζεται θέατρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Did SOL write stories in every pint glass?",
+      "el": "Έγραψε η SOL ιστορίες σε κάθε ποτήρι μπύρας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She drank in silence", "el": "Ήπιε σιωπηλά" }, "correct": false },
+      { "text": { "en": "She only sipped water", "el": "Ήπιε μόνο νερό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Are verses said to echo between walls?",
+      "el": "Αναφέρονται στίχοι να αντηχούν ανάμεσα στους τοίχους;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It mentions drums", "el": "Αναφέρει τύμπανα" }, "correct": false },
+      { "text": { "en": "It mentions bells", "el": "Αναφέρει καμπάνες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Is Ha’penny Bridge where SOL paused?",
+      "el": "Είναι η Ha’penny Bridge το μέρος όπου στάθηκε η SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was Ha’cliff Bridge", "el": "Ήταν η Ha’cliff Bridge" }, "correct": false },
+      { "text": { "en": "It was Millennium Bridge", "el": "Ήταν η Millennium Bridge" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Did the story mention laughter in the pubs?",
+      "el": "Αναφέρει η ιστορία γέλια στις παμπ;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only silence", "el": "Μόνο σιωπή" }, "correct": false },
+      { "text": { "en": "Only tears", "el": "Μόνο δάκρυα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Is the narrative in present tense?",
+      "el": "Αφηγείται η ιστορία σε ενεστώτα χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It’s future tense", "el": "Είναι σε μέλλοντα" }, "correct": false },
+      { "text": { "en": "It’s mixed tense", "el": "Αναμεικτός χρόνος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Is there any mention of rain-kissed streets?",
+      "el": "Αναφέρονται βρεγμένοι δρόμοι;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only snowy streets", "el": "Μόνο χιονισμένοι δρόμοι" }, "correct": false },
+      { "text": { "en": "Only dusty roads", "el": "Μόνο σκονισμένοι δρόμοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Does the caption end with three paw emojis?",
+      "el": "Τελειώνει το caption με τρία emoji πατούσες;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Two paw emojis", "el": "Δύο emoji" }, "correct": false },
+      { "text": { "en": "Four paw emojis", "el": "Τέσσερα emoji" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is the Ha’penny Bridge over the River Liffey?",
+      "el": "Βρίσκεται η Ha’penny Bridge πάνω από τον ποταμό Liffey;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s over the Thames", "el": "Βρίσκεται στον Τάμεση" }, "correct": false },
+      { "text": { "en": "It’s over the Seine", "el": "Βρίσκεται στον Σηκουάνα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Does SOL sit inside a pub in the image?",
+      "el": "Κάθεται η SOL μέσα σε παμπ στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "She sits on a stool", "el": "Κάθεται σε σκαμπό" }, "correct": false },
+      { "text": { "en": "She lies on a table", "el": "Ξαπλώνει σε τραπέζι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is the ambient light described as warm amber?",
+      "el": "Περιγράφεται το φωτιστικό ατμόσφαιρας ως ζεστό κεχριμπαρένιο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s cool blue", "el": "Είναι ψυχρό μπλε" }, "correct": false },
+      { "text": { "en": "It’s green neon", "el": "Είναι πράσινο νέον" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Are verses said to echo in the pubs?",
+      "el": "Αναφέρονται στίχοι να αντηχούν στις παμπ;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only tunes", "el": "Μόνο μελωδίες" }, "correct": false },
+      { "text": { "en": "Only laughter", "el": "Μόνο γέλια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the story call pubs a library of laughter and lament?",
+      "el": "Αποκαλεί η ιστορία τις παμπ 'βιβλιοθήκες γέλιου και νοσταλγίας';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It calls them theaters", "el": "Τις ονομάζει θέατρα" }, "correct": false },
+      { "text": { "en": "It calls them cafes", "el": "Τις ονομάζει καφέ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Is the episode set at twilight?",
+      "el": "Πραγματοποιείται το επεισόδιο στο λυκαυγές;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "At noon", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "At dawn", "el": "Τα ξημερώματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Does SOL write chapters lived, not prologue or epilogue?",
+      "el": "Γράφει η SOL μόνο κεφάλαια ζωντανά, όχι πρόλογο ή επίλογο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She writes only prologue", "el": "Γράφει μόνο πρόλογο" }, "correct": false },
+      { "text": { "en": "She writes only epilogue", "el": "Γράφει μόνο επίλογο" }, "correct": false }
+    ]
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is Toronto the capital of Canada?",
+      "el": "Είναι το Τορόντο πρωτεύουσα του Καναδά;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Ottawa", "el": "Οττάβα" }, "correct": false },
+      { "text": { "en": "Montreal", "el": "Μοντρεάλ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include 'Niagara tale'?",
+      "el": "Περιλαμβάνει ο τίτλος τη φράση 'Niagara tale';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Cityscapes & skyline", "el": "Cityscapes & skyline" }, "correct": false },
+      { "text": { "en": "Falls & towers", "el": "Καταρράκτες & πύργοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the quote 'She bridged roar and reflection.' used?",
+      "el": "Χρησιμοποιείται στο quote 'She bridged roar and reflection.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Where water greets the skyline", "el": "Όπου το νερό χαιρετά τον ορίζοντα" }, "correct": false },
+      { "text": { "en": "Currents meet concrete", "el": "Ρεύματα συναντούν σκυρόδεμα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Did SOL perch above Horseshoe Falls?",
+      "el": "Στάθηκε η SOL πάνω από τους Καταρράκτες του Horseshoe;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "American Falls", "el": "Καταρράκτες American" }, "correct": false },
+      { "text": { "en": "Bridal Veil Falls", "el": "Καταρράκτης Bridal Veil" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Is the CN Tower described as a steadfast sentinel?",
+      "el": "Περιγράφεται ο Πύργος CN ως ακλόνητος φρουρός;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Active beacon", "el": "Ενεργό φάρο" }, "correct": false },
+      { "text": { "en": "Dancing tower", "el": "Χορευτικός πύργος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Does the story mention currents whispering to concrete?",
+      "el": "Αναφέρει η ιστορία ρεύματα να ψιθυρίζουν στο σκυρόδεμα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They roar at concrete", "el": "Βρυχώνται στο σκυρόδεμα" }, "correct": false },
+      { "text": { "en": "They clash with glass", "el": "Συγκρούονται με γυαλί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Is there mention of mist from Niagara meeting glass spires?",
+      "el": "Αναφέρεται ομίχλη των Νιαγάρα να συναντά γυάλινα ύψη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Mist meets stone walls", "el": "Ομίχλη συναντά πέτρινους τοίχους" }, "correct": false },
+      { "text": { "en": "Fog meets wooden beams", "el": "Ομίχλη συναντά ξύλινες δοκούς" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Is the skyline said to dance against the river’s roar?",
+      "el": "Περιγράφεται ο ορίζοντας να χορεύει στον βρυχηθμό του ποταμού;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It bows to the roar", "el": "Υποκλίνεται στον βρυχηθμό" }, "correct": false },
+      { "text": { "en": "It hides from the roar", "el": "Κρύβεται από τον βρυχηθμό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Does the caption mention 'currents and towers'?",
+      "el": "Αναφέρει το caption 'currents and towers';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Flow and form", "el": "Ροή και μορφή" }, "correct": false },
+      { "text": { "en": "Roar and reflection", "el": "Βρυχηθμός και αντανάκλαση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Is the city described as having no borders or barriers?",
+      "el": "Περιγράφεται η πόλη χωρίς σύνορα ή φράγματα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only barriers", "el": "Μόνο φράγματα" }, "correct": false },
+      { "text": { "en": "Only bridges", "el": "Μόνο γέφυρες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Is Horseshoe Falls part of Niagara Falls?",
+      "el": "Είναι οι Καταρράκτες του Horseshoe μέρος των Νιαγάρα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They are separate falls", "el": "Είναι ξεχωριστοί καταρράκτες" }, "correct": false },
+      { "text": { "en": "They are in Ontario only", "el": "Είναι μόνο στο Οντάριο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Does the story mention rainbows woven across the dusk?",
+      "el": "Αναφέρει η ιστορία ουράνια τόξα ύφαντα στο σούρουπο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only colors at dawn", "el": "Μόνο χρώματα την αυγή" }, "correct": false },
+      { "text": { "en": "Only spray at noon", "el": "Μόνο ψεκασμός το μεσημέρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Is the mood described as unity of flow and form?",
+      "el": "Περιγράφεται η διάθεση ως ενότητα ροής και μορφής;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only contrast", "el": "Μόνο αντίθεση" }, "correct": false },
+      { "text": { "en": "Only clash", "el": "Μόνο σύγκρουση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Is the narrative told in past tense?",
+      "el": "Αφηγείται η ιστορία σε αόριστο χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Present tense", "el": "Ενεστώτας" }, "correct": false },
+      { "text": { "en": "Future tense", "el": "Μέλλοντας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Is the CN Tower located in Montreal?",
+      "el": "Βρίσκεται ο Πύργος CN στο Μοντρεάλ;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It’s in Vancouver", "el": "Είναι στο Βανκούβερ" }, "correct": false },
+      { "text": { "en": "It’s in Calgary", "el": "Είναι στο Κάλγκαρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Does SOL write her story across water and skyline?",
+      "el": "Γράφει η SOL την ιστορία της σε νερό και ορίζοντα;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only on the falls", "el": "Μόνο στους καταρράκτες" }, "correct": false },
+      { "text": { "en": "Only on the tower", "el": "Μόνο στον πύργο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Is Niagara Falls between Ontario and New York State?",
+      "el": "Βρίσκεται το Νιαγάρα μεταξύ Οντάριο και Πολιτείας Νέας Υόρκης;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only in Ontario", "el": "Μόνο στο Οντάριο" }, "correct": false },
+      { "text": { "en": "Only in New York", "el": "Μόνο στη Νέα Υόρκη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Does the photo show any people?",
+      "el": "Δείχνει η φωτογραφία ανθρώπους;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only distant figures", "el": "Μόνο απομακρυσμένες φιγούρες" }, "correct": false },
+      { "text": { "en": "Only reflections", "el": "Μόνο αντανακλάσεις" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Is the background in soft focus?",
+      "el": "Είναι το φόντο σε μαλακή εστίαση;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s sharp focus", "el": "Είναι καθαρή εστίαση" }, "correct": false },
+      { "text": { "en": "It’s out of frame", "el": "Είναι εκτός κάδρου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Does SOL appear calm and poised?",
+      "el": "Φαίνεται η SOL ήρεμη και επιβλητική;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Agitated", "el": "Ανεστατωμένη" }, "correct": false },
+      { "text": { "en": "Playful", "el": "Παιχνιδιάρικη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is the image photorealistic?",
+      "el": "Είναι η εικόνα φωτορεαλιστική;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Illustration", "el": "Εικονογράφηση" }, "correct": false },
+      { "text": { "en": "Sketch", "el": "Σκίτσο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Is the sky tinted pastel pink and blue?",
+      "el": "Έχει ο ουρανός απαλό ροζ και μπλε;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only grey", "el": "Μόνο γκρι" }, "correct": false },
+      { "text": { "en": "Only orange", "el": "Μόνο πορτοκαλί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the stone balustrade have moss patches?",
+      "el": "Έχει το πέτρινο κιγκλίδωμα μπαλώματα βρύων;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only cracks", "el": "Μόνο ρωγμές" }, "correct": false },
+      { "text": { "en": "Only graffiti", "el": "Μόνο γκράφιτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Did SOL’s fur catch the warm evening light?",
+      "el": "Άγγιξε η ζεστή βραδινή λάμψη το τρίχωμα της SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was in shadow", "el": "Ήταν στη σκιά" }, "correct": false },
+      { "text": { "en": "It was wet", "el": "Ήταν βρεγμένο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Does the story describe a dialogue between water and skyline?",
+      "el": "Περιγράφει η ιστορία διάλογο μεταξύ νερού και ορίζοντα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only clash of sounds", "el": "Μόνο σύγκρουση ήχων" }, "correct": false },
+      { "text": { "en": "Only flowing water", "el": "Μόνο τρεχούμενο νερό" }, "correct": false }
+    ]
+  }
+]
