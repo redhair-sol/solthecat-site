@@ -533,11 +533,11 @@
     "lat": 60.1695,
     "lng": 24.9354
   },
-  "visible": false,
+  "visible": true,
   "city": "helsinki",
   "story": {
-    "en": "Helsinki waited, cloaked in white. Not the kind that erases, but the kind that reveals. SOL stepped onto Senate Square with the poise of someone expected. The snow didn’t crunch under her paws — it paused. Around her, neoclassical columns rose not as monuments, but as mirrors to her calm. She passed the cathedral without haste, as though it had once been her home. There were no crowds, no echoes, only presence. And in that moment, Helsinki wasn’t cold. It was composed.",
-    "el": "Το Ελσίνκι περίμενε, τυλιγμένο στα λευκά. Όχι από αυτά που σβήνουν — από εκείνα που αποκαλύπτουν. Η SOL πάτησε στην Πλατεία της Γερουσίας με τη σιγουριά εκείνης που την περιμένουν. Το χιόνι δεν έτριξε κάτω από τις πατούσες της — σταμάτησε. Γύρω της, νεοκλασικές κολώνες υψώνονταν όχι ως μνημεία, αλλά ως καθρέφτες της ηρεμίας της. Πέρασε μπροστά από τον Καθεδρικό χωρίς βιασύνη, λες κι ήταν κάποτε το σπίτι της. Δεν υπήρχαν πλήθη, ούτε αντίλαλοι· μόνο παρουσία. Και τότε η Ελσίνκι δεν ήταν πια ψυχρή. Ήταν ακριβής."
+    "en": "Helsinki doesn’t wear the cold they speak of; it keeps it, like a rare jewel meant only for those who know how to see. Sol walked across Senate Square, through shades that weren’t simply white but a thousand reflections of light. The columns didn’t feel like stone; they felt like frost sculpted by winter air. In the streets leading to the harbor, salt mingled with thawing snow and the untold tales of sailors long gone. She paused at the Cathedral, not to admire it, but as if weighing the passage of time between its steps. And then, the north grew soft — like a whisper that had no need to bend the air, only to show her the way.",
+    "el": "Το Ελσίνκι δεν φοράει την ψυχρότητα που του αποδίδουν· τη φυλά σαν σπάνιο στολίδι για όσους ξέρουν να κοιτάζουν. Η Sol περπάτησε στην Πλατεία της Γερουσίας, ανάμεσα σε χρώματα που δεν ήταν απλώς λευκά αλλά χίλιες αποχρώσεις του φωτός. Οι κολώνες δεν έμοιαζαν με μάρμαρο· έμοιαζαν με πάχνη που είχε στερεοποιηθεί από τον χειμωνιάτικο αέρα. Στους δρόμους που οδηγούσαν στη θάλασσα, το αλάτι ανακατευόταν με χιονόνερο και ιστορίες παλιών ναυτικών που ποτέ δεν ακούστηκαν. Η Sol στάθηκε μπροστά στον Καθεδρικό, όχι για να τον θαυμάσει, αλλά σαν να ζύγιζε το πέρασμα του χρόνου ανάμεσα στις σκάλες του. Και τότε, ο βορράς έγινε απαλός — σαν ψίθυρος που δεν ήθελε να λυγίσει τον αέρα, αλλά να της δείξει τον δρόμο."
   },
   "snapQuestions": [
     {
