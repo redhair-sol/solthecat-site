@@ -566,18 +566,18 @@
 {
   "id": 16,
   "title": "SOLadventure #16 – Stockholm, light on water 🌊🇸🇪",
-  "quote": "No shimmer, only truth.",
+  "quote": "Light speaks in stillness.",
   "caption": "No ripples. No echoes. Just still light. 🐾🐾🐾",
   "image": "episodes/stockholm.png",
   "location": {
     "lat": 59.3293,
     "lng": 18.0686
   },
-  "visible": false,
+  "visible": true,
   "city": "stockholm",
   "story": {
-    "en": "She stepped onto the bridge, where islands stitched together centuries of calm. In Stockholm, light wasn’t a flare—it was a hum. It danced on water, it floated between pastel facades and glass windows like a secret well-kept. SOL didn’t chase it; she became it. She perched near the royal palace, silent as frost, watching the city breathe in rhythm. No throne, no crown—just presence. And the water, always still, always honest, carried her reflection like it belonged.",
-    "el": "Πάτησε πάνω στη γέφυρα, εκεί όπου τα νησιά έραβαν αιώνες ηρεμίας. Στη Στοκχόλμη, το φως δεν ήταν λάμψη — ήταν ψίθυρος. Χόρευε πάνω στο νερό, αιωρούνταν ανάμεσα σε παστέλ προσόψεις και γυάλινες επιφάνειες σαν καλά κρυμμένο μυστικό. Η SOL δεν το κυνήγησε· το έγινε. Στάθηκε κοντά στο βασιλικό παλάτι, ήσυχη σαν πάχνη, παρατηρώντας την πόλη να αναπνέει με ρυθμό. Χωρίς στέμμα, χωρίς θρόνο — μόνο παρουσία. Και το νερό, πάντα ακίνητο, πάντα ειλικρινές, κουβαλούσε την αντανάκλασή της σαν κάτι που του ανήκει."
+    "en": "She stepped onto the bridge, where the islands had woven centuries of serenity and the waters spoke in colors. In Stockholm, light wasn’t brilliance — it was a whisper, soft and true. It danced across the water like a translucent veil, drifting between pastel façades and glassy surfaces like a well-kept secret the city never wished to reveal. Sol didn’t chase it; she let it embrace her. She walked through the alleys of Gamla Stan, letting her pawprints merge with the echoes of centuries, and paused near the royal palace, like a queen who knows her power needs no display. The water, still yet alive, carried her reflection as something that belonged to it, and she felt that in Stockholm, light was her true companion.",
+    "el": "Πάτησε πάνω στη γέφυρα, εκεί όπου τα νησιά έραβαν αιώνες γαλήνης και τα νερά μιλούσαν με χρώματα. Στη Στοκχόλμη, το φως δεν ήταν λάμψη — ήταν ψίθυρος, απαλός και αληθινός. Χόρευε πάνω στο νερό σαν διάφανο πέπλο, αιωρούνταν ανάμεσα σε παστέλ προσόψεις και γυάλινες επιφάνειες σαν καλά κρυμμένο μυστικό που η πόλη δεν ήθελε να αποκαλύψει. Η SOL δεν το κυνήγησε· το άφησε να την αγκαλιάσει. Προχώρησε στα σοκάκια της Gamla Stan, αφήνοντας τις πατημασιές της να ενωθούν με τον απόηχο αιώνων, και στάθηκε κοντά στο βασιλικό παλάτι, σαν βασίλισσα που γνωρίζει ότι η δύναμή της δεν χρειάζεται επίδειξη. Το νερό, ακίνητο αλλά ζωντανό, κουβαλούσε την αντανάκλασή της σαν κάτι που του ανήκει, κι εκείνη ένιωθε πως, στη Στοκχόλμη, το φως ήταν ο πραγματικός συνοδοιπόρος της"
   },
   "snapQuestions": [
     {
