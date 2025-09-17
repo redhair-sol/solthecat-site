@@ -653,11 +653,11 @@
     "lat": 60.3913,
     "lng": 5.3221
   },
-  "visible": false,
+  "visible": true,
   "city": "bergen",
   "story": {
-    "en": "She arrived where mountains met the sea and mist wove songs through wooden houses. In Bergen, every stone hummed with history and every droplet carried a note. SOL didn’t just walk the cobblestones—she listened, letting the air compose around her. Lanterns flickered in greeting, and the harbor exhaled in rhythm. No crescendo, no finale—only the endless melody of stillness.",
-    "el": "Έφτασε εκεί που τα βουνά αγκαλιάζουν τη θάλασσα και η ομίχλη ύφαινε τραγούδια ανάμεσα στα ξύλινα σπίτια. Στο Μπέργκεν, κάθε πέτρα έτρεφε ιστορίες και κάθε σταγόνα μετέφερε έναν ήχο. Η SOL δεν περπάτησε απλώς στα λιθόστρωτα—άκουγε, αφήνοντας τον αέρα να συνθέσει γύρω της. Φανάρια τρεμόπαιζαν σαν χαιρετισμός και το λιμάνι ανέπνεε με ρυθμό. Χωρίς κορύφωση, χωρίς φινάλε—μόνο η ατελείωτη μελωδία της σιγής."
+    "en": "In Bergen, where the mountains embrace the sea and the mist wove songs between the wooden houses, the city felt like a stage where every stone nurtured stories and every drop carried a sound. SOL did not simply walk the cobblestones—she listened, letting the wind compose melodies around her that blended with the salt of the harbor and the timber of the old boats. Lanterns flickered like greetings, rooftops dripped in rhythm, and the port breathed with the pulse of a vibrating string. Even the mountains seemed to answer with an echo, giving depth to the silence. And so there, without climax, without finale, stretched the endless melody of quiet—a song only she could hear.",
+    "el": "Στο Μπέργκεν, εκεί που τα βουνά αγκαλιάζουν τη θάλασσα και η ομίχλη ύφαινε τραγούδια ανάμεσα στα ξύλινα σπίτια, η πόλη έμοιαζε σαν σκηνή όπου κάθε πέτρα έτρεφε ιστορίες και κάθε σταγόνα μετέφερε έναν ήχο. Η SOL δεν περπάτησε απλώς στα λιθόστρωτα—άκουγε, αφήνοντας τον αέρα να συνθέσει γύρω της μελωδίες που μπλέκονταν με το αλάτι του λιμανιού και το ξύλο των παλιών καϊκιών. Τα φανάρια τρεμόπαιζαν σαν χαιρετισμός, οι στέγες έσταζαν σε ρυθμό, και το λιμάνι ανέπνεε με παλμό που θύμιζε χορδή μουσικού οργάνου. Ακόμη και τα βουνά έμοιαζαν να απαντούν με αντίλαλο, δίνοντας βάθος στη σιωπή. Κι έτσι, εκεί, χωρίς κορύφωση, χωρίς φινάλε, απλώθηκε η ατελείωτη μελωδία της σιγής — ένα τραγούδι που μόνο η ίδια μπορούσε να ακούσει."
   },
   "snapQuestions": [
     {
