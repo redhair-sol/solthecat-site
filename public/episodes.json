@@ -693,11 +693,11 @@
     "lat": 55.9533,
     "lng": -3.1883
   },
-  "visible": false,
+  "visible": true,
   "city": "edinburgh",
   "story": {
-    "en": "She arrived as bells tolled, stepping onto the Royal Mile when dawn stretched like woven mist. Edinburgh rose before her—a castle perched on ancient rock, narrow closes spiraling above the fog. SOL didn’t merely observe the stones; she awakened them. The citadel’s silhouette sharpened under her gaze, cliffs bowed in reverence, and the city stirred in quiet homage. No march, no decree—only footsteps written into legend.",
-    "el": "Έφτασε καθώς κουδούνια χτυπούσαν, πατώντας στη Βασιλική Οδό όταν η αυγή απλωνόταν σαν υφασμένη ομίχλη. Η Εδιμβούργο υψώθηκε μπροστά της—ένα κάστρο καθισμένο πάνω σε αρχαίο βράχο, στενά σοκάκια να στροβιλίζονται πάνω από την ομίχλη. Η SOL δεν παρατήρησε μόνο τις πέτρες· τις ξύπνησε. Η σιλουέτα του κάστρου ξεκάθαρη υπό το βλέμμα της, οι πλαγιές υποκλίθηκαν σε σεβασμό, και η πόλη αναστέναξε σε σιγανό ύμνο. Χωρίς παρέλαση, χωρίς διάταγμα· μόνο βήματα χαραγμένα στον μύθο."
+    "en": "She arrived as bells tolled, stepping onto the Royal Mile just as dawn spread like woven mist. Edinburgh rose before her—a castle perched upon ancient rock, narrow closes swirling above the haze. SOL did not merely notice the stones; she awakened them, as if summoning stories that had slept for centuries. Cathedrals echoed with her presence, Gothic spires gleamed as though awaiting her, and the hills bowed in reverence. The city did not speak in words but sighed in a hushed hymn. No parade, no decree—only steps carved into legend, as if she already knew that every stride would become myth.",
+    "el": "Έφτασε καθώς κουδούνια χτυπούσαν, πατώντας στη Βασιλική Οδό όταν η αυγή απλωνόταν σαν υφασμένη ομίχλη. Η Εδιμβούργο υψώθηκε μπροστά της—ένα κάστρο καθισμένο πάνω σε αρχαίο βράχο, στενά σοκάκια να στροβιλίζονται πάνω από την πάχνη. Η SOL δεν παρατήρησε μόνο τις πέτρες· τις ξύπνησε, σαν να ανέσυρε ιστορίες που κοιμούνταν αιώνες. Οι καθεδρικοί αντήχησαν με ηχώ, τα γοτθικά κιονόκρανα έλαμψαν σαν να την περίμεναν, κι οι πλαγιές υποκλίθηκαν με σεβασμό. Η πόλη δεν μίλησε με φωνή, αλλά με αναστεναγμό που κύλησε σαν ύμνος χαμηλός. Χωρίς παρέλαση, χωρίς διάταγμα· μόνο βήματα χαραγμένα στον μύθο, σαν να ήξερε η ίδια πως κάθε της κίνηση θα γινόταν θρύλος."
   },
   "snapQuestions": [
     {
