@@ -806,7 +806,7 @@
 },
 {
   "id": 22,
-  "title": "SOLadventure #22 – Toronto, cityscapes & Niagara tale 🏙️🌊🇨🇦",
+  "title": "SOLadventure #22 – Toronto, cityscapes & Niagara tale 🌊🇨🇦",
   "quote": "She bridged roar and reflection.",
   "caption": "No boundaries. No divides. Just currents and towers. 🐾🐾🐾",
   "image": "episodes/toronto.png",
@@ -817,8 +817,8 @@
   "visible": true,
   "city": "toronto",
   "story": {
-    "en": "She arrived where currents whisper to concrete, where mist from Niagara met glass spires. In Toronto, water and skyline intertwined in a subtle interplay. SOL perched above the Horseshoe Falls as spray wove rainbows across the dusk. The CN Tower stood like a steadfast sentinel, lights dancing against the river’s roar. No border, no barrier—just the unity of flow and form.",
-    "el": "Έφτασε εκεί όπου τα ρεύματα ψιθύριζαν στον οπλισμένο σκυρόδεμα και η ομίχλη των Νιαγάρα συναντούσε τα γυάλινα ύψη. Στο Τορόντο, νερό και ουρανοξύστες ενώνονταν σε μια διακριτική αρμονία. Η SOL στάθηκε πάνω από τους Καταρράκτες του Χόρσσοε, ενώ το ψεκασμένο νερό ύφανε ουράνια τόξα στο σούρουπο. Ο Πύργος CN δεσπόζει σαν ακλόνητος φρουρός, τα φώτα του να χορεύουν στο βρυχηθμό του ποταμού. Χωρίς σύνορα, χωρίς φράγματα—μόνο η ενότητα του ρέοντος και του δομημένου."
+    "en": "She arrived where currents whisper to concrete, where mist from Niagara met glass spires. In Toronto, water and skyline intertwined in a subtle interplay. SOL perched above the Horseshoe Falls as spray wove rainbows across the dusk. The CN Tower stood like a steadfast sentinel, lights dancing against the river’s roar. No border, no barrier, just the unity of flow and form.",
+    "el": "Έφτασε εκεί όπου τα ρεύματα ψιθύριζαν στον οπλισμένο σκυρόδεμα και η ομίχλη των Νιαγάρα συναντούσε τα γυάλινα ύψη. Στο Τορόντο, νερό και ουρανοξύστες ενώνονταν σε μια διακριτική αρμονία. Η SOL στάθηκε πάνω από τους Καταρράκτες του Χόρσσοε, ενώ το ψεκασμένο νερό ύφανε ουράνια τόξα στο σούρουπο. Ο Πύργος CN δεσπόζει σαν ακλόνητος φρουρός, τα φώτα του να χορεύουν στο βρυχηθμό του ποταμού. Χωρίς σύνορα, χωρίς φράγματα, μόνο η ενότητα του ρέοντος και του δομημένου."
   },
   "snapQuestions": [
     {
