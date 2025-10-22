@@ -854,11 +854,11 @@
     "lat": 40.7128,
     "lng": -74.0060
   },
-  "visible": false,
+  "visible": true,
   "city": "newyork",
   "story": {
-    "en": "She arrived where steel meets starlight, where bridges arch like bows across the river. In New York, towers dared to touch the sky and neon pulsed through every street. SOL claimed the rooftop, surveying her kingdom from the Brooklyn Bridge’s flank. Below, the East River mirrored her calm, and the skyline glittered at her command. No forest. No reef—only concrete canopies and veins of light.",
-    "el": "Έφτασε εκεί όπου ο χάλυβας συναντά το φεγγαρόφως, όπου οι γέφυρες τόξευαν πάνω από τον ποταμό. Στη Νέα Υόρκη, οι ουρανοξύστες αψηφούσαν τα σύννεφα και τα νέον αντήχησαν σε κάθε δρόμο. Η SOL κατέλαβε τη στέγη, παρατηρώντας το βασίλειό της δίπλα στη Γέφυρα του Μπρούκλιν. Κάτω, ο ποταμός East αντανακλούσε την ηρεμία της, και ο ορίζοντας έλαμπε με τη δική της εντολή. Όχι δάσος. Όχι ύφαλος—μόνο μπετονένια θόλα και νευρικά δίκτυα φωτός."
+    "en": "She arrived where steel met moonlight, where bridges arched over the river like ribbons of light. In New York, skyscrapers defied the clouds and neon hummed through every street like a silent orchestra of dreams and noise. Sol climbed to the rooftop with her natural grace, watching her kingdom stretch from Brooklyn to Manhattan. The Brooklyn Bridge bowed subtly to her gaze as the wind played with her fur. Below, the East River mirrored her calm, and the skyline gleamed at her command. No forest. No reef — only concrete domes and nervous networks of light.",
+    "el": "Έφτασε εκεί όπου ο χάλυβας συναντά το φεγγαρόφως, όπου οι γέφυρες τόξευαν πάνω από τον ποταμό σαν κορδέλες φωτός. Στη Νέα Υόρκη, οι ουρανοξύστες αψηφούσαν τα σύννεφα και τα νέον αντήχησαν σε κάθε δρόμο σαν σιωπηλή ορχήστρα από όνειρα και θόρυβο. Η SOL ανέβηκε στη στέγη με τη φυσική της χάρη, παρατηρώντας το βασίλειό της να εκτείνεται από το Μπρούκλιν ως το Μανχάταν. Η Γέφυρα του Μπρούκλιν υποκλίθηκε διακριτικά στο βλέμμα της, καθώς ο άνεμος έπαιζε με τη γούνα της. Κάτω, ο ποταμός East αντανακλούσε την ηρεμία της, και ο ορίζοντας έλαμπε με τη δική της εντολή. Όχι δάσος. Όχι ύφαλος — μόνο μπετονένια θόλα, νευρικά δίκτυα φωτός."
   },
   "snapQuestions": [
     {
