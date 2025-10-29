@@ -897,8 +897,8 @@
   "visible": true,
   "city": "miami",
   "story": {
-    "en": "She arrived where pastel facades met endless skies and palm shadows danced on coral-hued pavement. In Miami, every breeze carried warmth and color. SOL strolled Ocean Drive at golden hour, her silhouette framed by Art Deco towers and turquoise tides. No crowds. No clamor—only sunlit elegance.",
-    "el": "Έφτασε εκεί όπου οι παστέλ προσόψεις συναντούν τον ατελείωτο ουρανό και οι σκιές των φοίνικων χορεύουν στα κοραλλί πλακόστρωτα. Στο Μαϊάμι, κάθε αεράκι έφερνε ζεστασιά και χρώμα. Η SOL περπάτησε στην Ocean Drive τη χρυσή ώρα, η σιλουέτα της πλαισιωμένη από Art Deco πύργους και τυρκουάζ κύματα. Χωρίς πλήθη. Χωρίς θόρυβο—μόνο λαμπερή κομψότητα."
+    "en": "She arrived where pastel facades met the endless sky and the shadows of palm trees danced across coral-tinted pavements. In Miami, every breeze carried warmth and color, scents of sea salt, and music drifting from old hotels. SOL walked along Ocean Drive at the golden hour, her silhouette framed by Art Deco towers and turquoise waves. Reflections played upon her fur like light on glass. No crowds, no noise, only radiant elegance and a city that seemed to breathe in her rhythm.",
+    "el": "Έφτασε εκεί όπου οι παστέλ προσόψεις συναντούν τον ατελείωτο ουρανό και οι σκιές των φοίνικων χορεύουν στα κοραλλί πλακόστρωτα. Στο Μαϊάμι κάθε αεράκι έφερνε ζεστασιά και χρώμα, μυρωδιές θαλασσινού αλατιού και μουσικές από τα παλιά ξενοδοχεία. Η SOL περπάτησε στην Ocean Drive τη χρυσή ώρα, η σιλουέτα της πλαισιωμένη από Art Deco πύργους και τυρκουάζ κύματα. Οι αντανακλάσεις έπαιζαν πάνω στο τρίχωμά της σαν φως από καθρέφτη. Χωρίς πλήθη, χωρίς θόρυβο, μόνο λαμπερή κομψότητα και μια πόλη που έμοιαζε να αναπνέει στον ρυθμό της."
   },
   "snapQuestions": [
     {
@@ -934,7 +934,7 @@
     "lat": 37.7749,
     "lng": -122.4194
   },
-  "visible": false,
+  "visible": true,
   "city": "sanfrancisco",
   "story": {
     "en": "She arrived where red steel arches carved the sky and bay breezes whispered secrets. On the Golden Gate, SOL stretched across the railing, the sunrise painting her fur in amber. Fog rolled across the water like drifting clouds, and the city’s hills peeked through pockets of light. No horns. No hurry—only the bridge’s quiet vigil and her steady gaze.",
