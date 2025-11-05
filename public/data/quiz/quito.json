@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Quito, equatorial heights'?",
+      "el": "Ο τίτλος είναι 'Quito, equatorial heights';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Quito, city of clouds", "el": "Quito, city of clouds" }, "correct": false },
+      { "text": { "en": "Quito, golden air", "el": "Quito, golden air" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include a globe emoji 🌍?",
+      "el": "Περιλαμβάνει ο τίτλος emoji υδρογείου 🌍;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It includes a mountain emoji 🏔️", "el": "Περιλαμβάνει βουνό 🏔️" }, "correct": false },
+      { "text": { "en": "It includes a cat emoji 🐾", "el": "Περιλαμβάνει γάτα 🐾" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the quote 'Where the roofs meet the sky'?",
+      "el": "Είναι το quote 'Where the roofs meet the sky';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Where the clouds meet the sun", "el": "Where the clouds meet the sun" }, "correct": false },
+      { "text": { "en": "Where the hills touch gold", "el": "Where the hills touch gold" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Does the caption mention 'Old tiles'?",
+      "el": "Αναφέρει το caption 'Old tiles';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Ancient walls", "el": "Αρχαίοι τοίχοι" }, "correct": false },
+      { "text": { "en": "Golden stairs", "el": "Χρυσές σκάλες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Does the caption end with three pawprints 🐾🐾🐾?",
+      "el": "Τελειώνει το caption με τρία πατουσάκια 🐾🐾🐾;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It ends with hearts ❤️", "el": "Τελειώνει με καρδιές ❤️" }, "correct": false },
+      { "text": { "en": "It ends with stars ✨", "el": "Τελειώνει με αστέρια ✨" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Was Quito described as lying between mountains and clouds?",
+      "el": "Αναφέρθηκε το Κίτο ως πόλη ανάμεσα σε βουνά και σύννεφα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "By the sea", "el": "Δίπλα στη θάλασσα" }, "correct": false },
+      { "text": { "en": "In the desert", "el": "Στην έρημο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Was the Andean sun mentioned in the story?",
+      "el": "Αναφέρθηκε ο ήλιος των Άνδεων στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only the moon", "el": "Μόνο το φεγγάρι" }, "correct": false },
+      { "text": { "en": "Only rain", "el": "Μόνο βροχή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Was SOL climbing to a high terrace?",
+      "el": "Ανέβηκε η SOL σε ψηλό μπαλκόνι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She stayed on the ground", "el": "Έμεινε στο έδαφος" }, "correct": false },
+      { "text": { "en": "She was inside a house", "el": "Ήταν μέσα σε σπίτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Did the story mention red rooftops?",
+      "el": "Αναφέρθηκαν κόκκινες στέγες στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Blue roofs", "el": "Μπλε στέγες" }, "correct": false },
+      { "text": { "en": "White domes", "el": "Λευκοί τρούλοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Were bells heard through the streets?",
+      "el": "Ακούστηκαν καμπάνες στα στενά σοκάκια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only drums", "el": "Μόνο τύμπανα" }, "correct": false },
+      { "text": { "en": "Only music", "el": "Μόνο μουσική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Was the air described as golden?",
+      "el": "Περιγράφηκε ο αέρας ως χρυσός;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false },
+      { "text": { "en": "Silver", "el": "Ασημί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Did SOL rest on a stone ledge?",
+      "el": "Ξεκουράστηκε η SOL σε μια πέτρινη άκρη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "On a bench", "el": "Σε παγκάκι" }, "correct": false },
+      { "text": { "en": "On a tree branch", "el": "Σε κλαδί δέντρου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Did the story mention mountains and clouds?",
+      "el": "Αναφέρθηκαν βουνά και σύννεφα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only rivers", "el": "Μόνο ποτάμια" }, "correct": false },
+      { "text": { "en": "Only forests", "el": "Μόνο δάση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Was the city described as ancient?",
+      "el": "Περιγράφηκε η πόλη ως αρχαία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Modern and metallic", "el": "Μοντέρνα και μεταλλική" }, "correct": false },
+      { "text": { "en": "Dark and ruined", "el": "Σκοτεινή και κατεστραμμένη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Was the city described as lying below SOL?",
+      "el": "Περιγράφηκε η πόλη να απλώνεται κάτω από τη SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She was below it", "el": "Ήταν κάτω από αυτή" }, "correct": false },
+      { "text": { "en": "They were level", "el": "Ήταν στο ίδιο επίπεδο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Did the story mention altitude?",
+      "el": "Αναφέρθηκε το υψόμετρο στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only temperature", "el": "Μόνο θερμοκρασία" }, "correct": false },
+      { "text": { "en": "Only distance", "el": "Μόνο απόσταση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Was the horizon described as endless?",
+      "el": "Περιγράφηκε ο ορίζοντας ως ατελείωτος;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Narrow", "el": "Στενός" }, "correct": false },
+      { "text": { "en": "Hidden", "el": "Κρυμμένος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Did SOL’s eyes reflect distant peaks?",
+      "el": "Καθρεφτίζονταν στα μάτια της SOL μακρινές κορυφές;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only the city lights", "el": "Μόνο τα φώτα της πόλης" }, "correct": false },
+      { "text": { "en": "Only clouds", "el": "Μόνο σύννεφα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Were the streets described as narrow?",
+      "el": "Περιγράφηκαν τα σοκάκια ως στενά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Wide", "el": "Φαρδιά" }, "correct": false },
+      { "text": { "en": "Invisible", "el": "Αόρατα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Was Quito described as part of the Andes?",
+      "el": "Περιγράφηκε το Κίτο ως μέρος των Άνδεων;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Of the Alps", "el": "Των Άλπεων" }, "correct": false },
+      { "text": { "en": "Of the Pyrenees", "el": "Των Πυρηναίων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Was the air described as pure?",
+      "el": "Περιγράφηκε ο αέρας ως καθαρός;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Heavy", "el": "Βαρύς" }, "correct": false },
+      { "text": { "en": "Hot", "el": "Ζεστός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Did the story describe Quito as ancient and timeless?",
+      "el": "Περιγράφηκε το Κίτο ως αρχαίο και διαχρονικό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Young and new", "el": "Νεανικό και νέο" }, "correct": false },
+      { "text": { "en": "Cold and empty", "el": "Ψυχρό και άδειο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Was Quito described as a city at the center of the Earth?",
+      "el": "Περιγράφηκε το Κίτο ως πόλη στο κέντρο της Γης;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "At the end of the world", "el": "Στο τέλος του κόσμου" }, "correct": false },
+      { "text": { "en": "Above the sea", "el": "Πάνω από τη θάλασσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Did SOL appear peaceful and majestic?",
+      "el": "Εμφανίστηκε η SOL γαλήνια και μεγαλοπρεπής;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Restless", "el": "Ανήσυχη" }, "correct": false },
+      { "text": { "en": "Playful", "el": "Παιχνιδιάρα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Quito’s latitude near the equator (0°)?",
+      "el": "Είναι το γεωγραφικό πλάτος του Κίτο κοντά στον ισημερινό (0°);"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "10° North", "el": "10° Βόρεια" }, "correct": false },
+      { "text": { "en": "15° South", "el": "15° Νότια" }, "correct": false }
+    ]
+  }
+]

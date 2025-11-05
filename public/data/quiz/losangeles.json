@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Los Angeles, Hollywood & beach vibes'? ",
+      "el": "Έχει το επεισόδιο τίτλο 'Los Angeles, Hollywood & beach vibes';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Los Angeles, golden dreams", "el": "Los Angeles, golden dreams" }, "correct": false },
+      { "text": { "en": "Los Angeles, surf tales", "el": "Los Angeles, surf tales" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the quote say 'Lights fade. Presence stays.'?",
+      "el": "Αναφέρει το quote 'Lights fade. Presence stays.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Lights rise. Stars follow.", "el": "Lights rise. Stars follow." }, "correct": false },
+      { "text": { "en": "Waves fade. Fame stays.", "el": "Waves fade. Fame stays." }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Does the caption mention 'Fame fades. Waves don’t.'?",
+      "el": "Αναφέρει το caption 'Fame fades. Waves don’t.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Fame grows. Waves rest.", "el": "Fame grows. Waves rest." }, "correct": false },
+      { "text": { "en": "Fame fades. Lights stay.", "el": "Fame fades. Lights stay." }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Where was SOL lounging in Los Angeles?",
+      "el": "Πού χαλάρωνε η SOL στο Λος Άντζελες;"
+    },
+    "answers": [
+      { "text": { "en": "On Santa Monica beach", "el": "Στην παραλία της Santa Monica" }, "correct": true },
+      { "text": { "en": "At Venice Pier", "el": "Στην προβλήτα της Venice" }, "correct": false },
+      { "text": { "en": "At Griffith Observatory", "el": "Στο Griffith Observatory" }, "correct": false },
+      { "text": { "en": "Under the palm trees of Beverly Hills", "el": "Κάτω από τους φοίνικες του Beverly Hills" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What landmark floated above the haze?",
+      "el": "Ποιο ορόσημο αιωρούταν πάνω από την αχλή;"
+    },
+    "answers": [
+      { "text": { "en": "The Hollywood sign", "el": "Το σήμα του Hollywood" }, "correct": true },
+      { "text": { "en": "The Capitol Records tower", "el": "Ο πύργος της Capitol Records" }, "correct": false },
+      { "text": { "en": "Downtown skyscrapers", "el": "Οι ουρανοξύστες του Downtown" }, "correct": false },
+      { "text": { "en": "A billboard", "el": "Μια διαφημιστική πινακίδα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What did the waves do in the story?",
+      "el": "Τι έκαναν τα κύματα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "They applauded", "el": "Χειροκρότησαν" }, "correct": true },
+      { "text": { "en": "They crashed loudly", "el": "Χτύπησαν δυνατά" }, "correct": false },
+      { "text": { "en": "They whispered softly", "el": "Ψιθύρισαν απαλά" }, "correct": false },
+      { "text": { "en": "They vanished completely", "el": "Εξαφανίστηκαν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What creature was jealous of SOL’s stillness?",
+      "el": "Ποιο πλάσμα ζήλεψε τη γαλήνη της SOL;"
+    },
+    "answers": [
+      { "text": { "en": "A seagull", "el": "Ένας γλάρος" }, "correct": true },
+      { "text": { "en": "A pelican", "el": "Ένας πελεκάνος" }, "correct": false },
+      { "text": { "en": "A surfer", "el": "Ένας σέρφερ" }, "correct": false },
+      { "text": { "en": "A crab", "el": "Ένα καβούρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "How did directors behave in the story?",
+      "el": "Πώς συμπεριφέρονταν οι σκηνοθέτες στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "They chased the light", "el": "Κυνηγούσαν το φως" }, "correct": true },
+      { "text": { "en": "They filmed SOL", "el": "Τραβούσαν τη SOL" }, "correct": false },
+      { "text": { "en": "They built sets", "el": "Έφτιαχναν σκηνικά" }, "correct": false },
+      { "text": { "en": "They ignored the scene", "el": "Αγνοούσαν τη σκηνή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What was SOL compared to in the story?",
+      "el": "Με τι συγκρίθηκε η SOL στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "The light itself", "el": "Το ίδιο το φως" }, "correct": true },
+      { "text": { "en": "A Hollywood star", "el": "Μια σταρ του Hollywood" }, "correct": false },
+      { "text": { "en": "A wave", "el": "Ένα κύμα" }, "correct": false },
+      { "text": { "en": "A crown", "el": "Ένα στέμμα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What time of day closes the story?",
+      "el": "Ποια ώρα της ημέρας κλείνει την ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Sunset", "el": "Ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Dawn", "el": "Αυγή" }, "correct": false },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false },
+      { "text": { "en": "Noon", "el": "Μεσημέρι" }, "correct": false }
+    ]
+  }
+]

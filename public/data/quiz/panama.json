@@ -1,0 +1,328 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Panama City, canal’s embrace'?",
+      "el": "Ο τίτλος είναι 'Panama City, canal’s embrace';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Canal of Dreams", "el": "Canal of Dreams" }, "correct": false },
+      { "text": { "en": "Harbor Reflections", "el": "Harbor Reflections" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include a ship emoji 🚢?",
+      "el": "Περιλαμβάνει ο τίτλος emoji πλοίου 🚢;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It includes a wave 🌊", "el": "Περιλαμβάνει κύμα 🌊" }, "correct": false },
+      { "text": { "en": "It includes a bridge 🌉", "el": "Περιλαμβάνει γέφυρα 🌉" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the quote 'Stillness steers the tide.'?",
+      "el": "Είναι το quote 'Stillness steers the tide.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Waves whisper calm.", "el": "Waves whisper calm." }, "correct": false },
+      { "text": { "en": "Peace guides the sails.", "el": "Peace guides the sails." }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Does the caption end with three pawprints 🐾🐾🐾?",
+      "el": "Τελειώνει το caption με τρία πατουσάκια 🐾🐾🐾;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It ends with hearts ❤️", "el": "Τελειώνει με καρδιές ❤️" }, "correct": false },
+      { "text": { "en": "It ends with stars ✨", "el": "Τελειώνει με αστέρια ✨" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Does the caption mention 'No noise'?",
+      "el": "Αναφέρει το caption 'No noise';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "No chaos", "el": "No chaos" }, "correct": false },
+      { "text": { "en": "No clouds", "el": "No clouds" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Was SOL watching the Panama Canal?",
+      "el": "Παρακολουθούσε η SOL το Κανάλι του Παναμά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She was by a river", "el": "Ήταν δίπλα σε ποτάμι" }, "correct": false },
+      { "text": { "en": "She was near a mountain", "el": "Ήταν κοντά σε βουνό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Was it sunrise in the story?",
+      "el": "Ήταν ανατολή στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No, it was sunset", "el": "Όχι, ήταν δύση" }, "correct": false },
+      { "text": { "en": "No, it was night", "el": "Όχι, ήταν νύχτα" }, "correct": false },
+      { "text": { "en": "No, it was noon", "el": "Όχι, ήταν μεσημέρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Did the story mention ships gliding like thoughts?",
+      "el": "Αναφέρθηκαν τα πλοία να γλιστρούν σαν σκέψεις;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They raced quickly", "el": "Έτρεχαν γρήγορα" }, "correct": false },
+      { "text": { "en": "They sank quietly", "el": "Βυθίστηκαν αθόρυβα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Was the city described as modern but gentle?",
+      "el": "Περιγράφηκε η πόλη ως σύγχρονη αλλά ήρεμη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was chaotic", "el": "Ήταν χαοτική" }, "correct": false },
+      { "text": { "en": "It was silent and empty", "el": "Ήταν σιωπηλή και άδεια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Did the story mention golden light turning steel to silk?",
+      "el": "Αναφέρθηκε το χρυσό φως που έκανε το ατσάλι να μοιάζει με μετάξι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It turned steel to glass", "el": "Έκανε το ατσάλι να μοιάζει με γυαλί" }, "correct": false },
+      { "text": { "en": "It turned water to gold", "el": "Έκανε το νερό να μοιάζει με χρυσάφι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Was there any mention of storms or rough seas?",
+      "el": "Αναφέρθηκαν καταιγίδες ή ταραγμένες θάλασσες;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only fog", "el": "Μόνο ομίχλη" }, "correct": false },
+      { "text": { "en": "Only drizzle", "el": "Μόνο ψιχάλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Was the mood described as peaceful and grand?",
+      "el": "Περιγράφηκε η ατμόσφαιρα ως γαλήνια και μεγαλοπρεπής;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Busy and loud", "el": "Πολύβουη και δυνατή" }, "correct": false },
+      { "text": { "en": "Dark and stormy", "el": "Σκοτεινή και καταιγιστική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Did the story mention the hum of distant engines?",
+      "el": "Αναφέρθηκε ο απαλός βόμβος μακρινών κινητήρων;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Loud horns", "el": "Δυνατές κόρνες" }, "correct": false },
+      { "text": { "en": "Seagull cries", "el": "Κραυγές γλάρων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Did SOL move or remain still during the story?",
+      "el": "Κινήθηκε ή έμεινε ακίνητη η SOL στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "She remained still", "el": "Έμεινε ακίνητη" }, "correct": true },
+      { "text": { "en": "She walked along the canal", "el": "Περπάτησε κατά μήκος του καναλιού" }, "correct": false },
+      { "text": { "en": "She jumped on a ship", "el": "Πήδηξε σε πλοίο" }, "correct": false },
+      { "text": { "en": "She ran into the city", "el": "Έτρεξε προς την πόλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Did the story describe the city as awake but gentle?",
+      "el": "Περιέγραψε η ιστορία την πόλη ως ξύπνια αλλά ήρεμη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Silent and abandoned", "el": "Σιωπηλή και εγκαταλελειμμένη" }, "correct": false },
+      { "text": { "en": "Noisy and crowded", "el": "Θορυβώδη και πολυσύχναστη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Was the sunlight described as golden?",
+      "el": "Περιγράφηκε το φως του ήλιου ως χρυσό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false },
+      { "text": { "en": "Silver", "el": "Ασημί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Did SOL’s gaze follow the ships?",
+      "el": "Ακολουθούσε το βλέμμα της SOL τα πλοία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She ignored them", "el": "Τα αγνόησε" }, "correct": false },
+      { "text": { "en": "She chased them", "el": "Τα κυνηγούσε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Was the breeze described as carrying peace?",
+      "el": "Περιγράφηκε το αεράκι να μεταφέρει γαλήνη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Carrying salt", "el": "Να μεταφέρει αλάτι" }, "correct": false },
+      { "text": { "en": "Carrying rain", "el": "Να μεταφέρει βροχή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Was there any mention of bridges or tunnels?",
+      "el": "Αναφέρθηκαν γέφυρες ή τούνελ;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes, many bridges", "el": "Ναι, πολλές γέφυρες" }, "correct": false },
+      { "text": { "en": "Only tunnels", "el": "Μόνο τούνελ" }, "correct": false },
+      { "text": { "en": "Only railways", "el": "Μόνο σιδηροδρομικές γραμμές" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Is the atmosphere filled with chaos?",
+      "el": "Είναι η ατμόσφαιρα γεμάτη χάος;"
+    },
+    "answers": [
+      { "text": { "en": "No, it’s calm and balanced", "el": "Όχι, είναι ήρεμη και ισορροπημένη" }, "correct": true },
+      { "text": { "en": "Yes, full of traffic", "el": "Ναι, γεμάτη κίνηση" }, "correct": false },
+      { "text": { "en": "Yes, full of storms", "el": "Ναι, γεμάτη καταιγίδες" }, "correct": false },
+      { "text": { "en": "Yes, full of lights", "el": "Ναι, γεμάτη φώτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Did SOL’s presence symbolize balance?",
+      "el": "Συμβόλιζε η παρουσία της SOL την ισορροπία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It symbolized fear", "el": "Συμβόλιζε φόβο" }, "correct": false },
+      { "text": { "en": "It symbolized adventure", "el": "Συμβόλιζε περιπέτεια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Was the canal described as connecting oceans?",
+      "el": "Περιγράφηκε το κανάλι ως σύνδεσμος ωκεανών;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Connecting rivers", "el": "Συνδέοντας ποτάμια" }, "correct": false },
+      { "text": { "en": "Connecting islands", "el": "Συνδέοντας νησιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Was the light described as transforming the scene?",
+      "el": "Περιγράφηκε το φως να μεταμορφώνει το τοπίο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It darkened the scene", "el": "Σκοτείνιαζε το τοπίο" }, "correct": false },
+      { "text": { "en": "It hid the details", "el": "Έκρυβε τις λεπτομέρειες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Did SOL represent calm observation amid motion?",
+      "el": "Αντιπροσώπευε η SOL την ήρεμη παρατήρηση μέσα στην κίνηση;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She represented chaos", "el": "Αντιπροσώπευε το χάος" }, "correct": false },
+      { "text": { "en": "She represented adventure", "el": "Αντιπροσώπευε περιπέτεια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Panama City located at approximately latitude 8.9824?",
+      "el": "Βρίσκεται η Πόλη του Παναμά περίπου στο γεωγραφικό πλάτος 8.9824;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "10.4500", "el": "10.4500" }, "correct": false },
+      { "text": { "en": "6.9000", "el": "6.9000" }, "correct": false }
+    ]
+  }
+]
+

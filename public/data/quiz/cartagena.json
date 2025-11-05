@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Cartagena, walled colors'?",
+      "el": "Ο τίτλος είναι 'Cartagena, walled colors';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Cartagena, endless waves", "el": "Cartagena, endless waves" }, "correct": false },
+      { "text": { "en": "Cartagena, sunlit walls", "el": "Cartagena, sunlit walls" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include a paint palette emoji 🎨?",
+      "el": "Περιλαμβάνει ο τίτλος emoji παλέτας 🎨;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It includes a ship 🚢", "el": "Περιλαμβάνει πλοίο 🚢" }, "correct": false },
+      { "text": { "en": "It includes a bridge 🌉", "el": "Περιλαμβάνει γέφυρα 🌉" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the quote 'She reigned in still hues.'?",
+      "el": "Είναι το quote 'She reigned in still hues.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She ruled the golden air.", "el": "She ruled the golden air." }, "correct": false },
+      { "text": { "en": "She reigned in soft tones.", "el": "She reigned in soft tones." }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Does the caption end with three pawprints 🐾🐾🐾?",
+      "el": "Τελειώνει το caption με τρία πατουσάκια 🐾🐾🐾;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It ends with stars ✨", "el": "Τελειώνει με αστέρια ✨" }, "correct": false },
+      { "text": { "en": "It ends with hearts ❤️", "el": "Τελειώνει με καρδιές ❤️" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Does the caption mention 'colors'?",
+      "el": "Αναφέρει το caption 'colors';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It mentions waves", "el": "Αναφέρει κύματα" }, "correct": false },
+      { "text": { "en": "It mentions winds", "el": "Αναφέρει ανέμους" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Was Cartagena described as a walled city?",
+      "el": "Περιγράφηκε η Καρθαγένη ως πόλη με τείχη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "As a floating island", "el": "Ως νησί που επιπλέει" }, "correct": false },
+      { "text": { "en": "As a mountain town", "el": "Ως ορεινή πόλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Did SOL stand on cobblestones smoothed by time?",
+      "el": "Στάθηκε η SOL πάνω σε λιθόστρωτα που είχε λειάνει ο χρόνος;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "On marble floors", "el": "Σε μαρμάρινα δάπεδα" }, "correct": false },
+      { "text": { "en": "On sand", "el": "Σε άμμο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Was bougainvillea mentioned in the story?",
+      "el": "Αναφέρθηκαν οι βουκαμβίλιες στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only palm trees", "el": "Μόνο φοίνικες" }, "correct": false },
+      { "text": { "en": "Only roses", "el": "Μόνο τριαντάφυλλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Were the colors described as warm?",
+      "el": "Περιγράφηκαν τα χρώματα ως ζεστά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Cold", "el": "Ψυχρά" }, "correct": false },
+      { "text": { "en": "Neutral", "el": "Ουδέτερα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Did the story mention sailors?",
+      "el": "Αναφέρθηκαν ναυτικοί στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only artists", "el": "Μόνο καλλιτέχνες" }, "correct": false },
+      { "text": { "en": "Only merchants", "el": "Μόνο έμποροι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Were sunsets mentioned in the story?",
+      "el": "Αναφέρθηκαν δειλινά στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only sunrises", "el": "Μόνο ανατολές" }, "correct": false },
+      { "text": { "en": "Only nights", "el": "Μόνο νύχτες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Did the story describe the air as quiet?",
+      "el": "Περιέγραψε η ιστορία τον αέρα ως ήσυχο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was stormy", "el": "Ήταν θυελλώδης" }, "correct": false },
+      { "text": { "en": "It was cold", "el": "Ήταν ψυχρός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Did the story mention coral tones?",
+      "el": "Αναφέρθηκαν κοραλλί αποχρώσεις;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only violet", "el": "Μόνο βιολετί" }, "correct": false },
+      { "text": { "en": "Only gray", "el": "Μόνο γκρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Was the word 'turquoise' used in the story?",
+      "el": "Χρησιμοποιήθηκε η λέξη 'τιρκουάζ' στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Emerald", "el": "Σμαραγδί" }, "correct": false },
+      { "text": { "en": "Ruby", "el": "Ρουμπινί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Did SOL pause during her walk?",
+      "el": "Στάθηκε η SOL κατά τη βόλτα της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She ran", "el": "Έτρεξε" }, "correct": false },
+      { "text": { "en": "She climbed a wall", "el": "Σκαρφάλωσε σε τοίχο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Were drums heard anywhere in the story?",
+      "el": "Ακούστηκαν τύμπανα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only bells", "el": "Μόνο καμπάνες" }, "correct": false },
+      { "text": { "en": "Only footsteps", "el": "Μόνο βήματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Did the story describe a breeze?",
+      "el": "Περιγράφηκε αεράκι στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "A storm", "el": "Μια καταιγίδα" }, "correct": false },
+      { "text": { "en": "A fog", "el": "Μια ομίχλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Was history personified as breathing?",
+      "el": "Προσωποποιήθηκε η ιστορία ως κάτι που ανασαίνει;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "As walking", "el": "Ως κάτι που περπατά" }, "correct": false },
+      { "text": { "en": "As dreaming", "el": "Ως κάτι που ονειρεύεται" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Was the city described as glowing?",
+      "el": "Περιγράφηκε η πόλη να λάμπει;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was dark", "el": "Ήταν σκοτεινή" }, "correct": false },
+      { "text": { "en": "It was silent", "el": "Ήταν σιωπηλή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Were sailors mentioned as part of the city's tales?",
+      "el": "Αναφέρθηκαν ναυτικοί ως μέρος των ιστοριών της πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only merchants", "el": "Μόνο έμποροι" }, "correct": false },
+      { "text": { "en": "Only artists", "el": "Μόνο καλλιτέχνες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Was the atmosphere described as warm and nostalgic?",
+      "el": "Περιγράφηκε η ατμόσφαιρα ως ζεστή και νοσταλγική;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Cold and modern", "el": "Ψυχρή και μοντέρνα" }, "correct": false },
+      { "text": { "en": "Dark and rainy", "el": "Σκοτεινή και βροχερή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Was the scene set during sunset?",
+      "el": "Διαδραματίζεται η σκηνή στο ηλιοβασίλεμα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No, at night", "el": "Όχι, τη νύχτα" }, "correct": false },
+      { "text": { "en": "No, at dawn", "el": "Όχι, την αυγή" }, "correct": false },
+      { "text": { "en": "No, at noon", "el": "Όχι, το μεσημέρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Did the story mention calm streets?",
+      "el": "Αναφέρθηκαν ήρεμοι δρόμοι στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Crowded streets", "el": "Πολυσύχναστοι δρόμοι" }, "correct": false },
+      { "text": { "en": "Deserted roads", "el": "Έρημοι δρόμοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Was SOL described as calm and observing?",
+      "el": "Περιγράφηκε η SOL ως ήρεμη και παρατηρητική;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Playful and restless", "el": "Παιχνιδιάρα και ανήσυχη" }, "correct": false },
+      { "text": { "en": "Running and loud", "el": "Τρέχοντας και θορυβώδης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Cartagena located near latitude 10.3910?",
+      "el": "Βρίσκεται η Καρθαγένη κοντά στο γεωγραφικό πλάτος 10.3910;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "8.9824", "el": "8.9824" }, "correct": false },
+      { "text": { "en": "11.2212", "el": "11.2212" }, "correct": false }
+    ]
+  }
+  ]
+
+

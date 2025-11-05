@@ -1,40 +1,327 @@
-{
-  "id": 25,
-  "title": "SOLadventure #25 – San Francisco, bridge tales 🌉🇺🇸",
-  "quote": "She draped the bridge in gold.",
-  "caption": "No crosswalks. No commutes. Just arches and dreams. 🐾🐾🐾",
-  "image": "episodes/sanfrancisco.png",
-  "location": {
-    "lat": 37.7749,
-    "lng": -122.4194
-  },
-  "visible": true,
-  "city": "sanfrancisco",
-  "story": {
-    "en": "She arrived where red steel arches carved the sky and bay breezes whispered secrets. On the Golden Gate, SOL stretched across the railing, the sunrise painting her fur in amber. Fog rolled across the water like drifting clouds, and the city’s hills peeked through pockets of light. No horns. No hurry—only the bridge’s quiet vigil and her steady gaze.",
-    "el": "Έφτασε εκεί όπου οι κόκκινες αψίδες χάλυβα σκιαγραφούσαν τον ουρανό και τα θαλάσσια αεράκια ψιθύριζαν μυστικά. Στη Γέφυρα του Golden Gate, η SOL απλώθηκε στο κιγκλίδωμα, ενώ η αυγή έβαφε το τρίχωμά της σε κεχριμπαρένιες αποχρώσεις. Η ομίχλη κυλούσε πάνω από τον κόλπο σαν πλανώμενα σύννεφα, και οι λόφοι της πόλης ξεπρόβαλλαν μέσα από σποραδικές δέσμες φωτός. Χωρίς κορναρίσματα. Χωρίς βιασύνη—μόνο το διαρκές φρουρό της γέφυρας και το σταθερό της βλέμμα."
-  },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL stretch across the railing on the Golden Gate?",
-        "el": "Απλώθηκε η SOL στο κιγκλίδωμα της Γέφυρας του Golden Gate;"
-      },
-      "answer": true
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'San Francisco, bridge tales'?",
+      "el": "Έχει το επεισόδιο τίτλο 'San Francisco, bridge tales';"
     },
-    {
-      "question": {
-        "en": "Was fog described as rolling across the water?",
-        "el": "Αναφέρθηκε ομίχλη να κυλάει πάνω από το νερό;"
-      },
-      "answer": true
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "San Francisco, fog tales", "el": "San Francisco, fog tales" }, "correct": false },
+      { "text": { "en": "San Francisco, city lights", "el": "San Francisco, city lights" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the quote say 'She draped the bridge in gold.'?",
+      "el": "Αναφέρει το quote 'She draped the bridge in gold.';"
     },
-    {
-      "question": {
-        "en": "Did the story mention any car horns?",
-        "el": "Αναφέρθηκαν κορναρίσματα αυτοκινήτων;"
-      },
-      "answer": false
-    }
-  ]
-}
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She crossed the bridge at dawn.", "el": "She crossed the bridge at dawn." }, "correct": false },
+      { "text": { "en": "She painted the bridge red.", "el": "She painted the bridge red." }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Does the caption mention 'arches and dreams'?",
+      "el": "Αναφέρει το caption 'arches and dreams';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Bridges and clouds", "el": "Γέφυρες και σύννεφα" }, "correct": false },
+      { "text": { "en": "Lights and tides", "el": "Φώτα και παλίρροιες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which bridge appears in the story?",
+      "el": "Ποια γέφυρα εμφανίζεται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Golden Gate Bridge", "el": "Γέφυρα του Golden Gate" }, "correct": true },
+      { "text": { "en": "Brooklyn Bridge", "el": "Γέφυρα του Brooklyn" }, "correct": false },
+      { "text": { "en": "Tower Bridge", "el": "Γέφυρα του Tower" }, "correct": false },
+      { "text": { "en": "Ponte Vecchio", "el": "Πόντε Βέκιο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What color are the bridge’s arches described as?",
+      "el": "Σε ποιο χρώμα περιγράφονται οι αψίδες της γέφυρας;"
+    },
+    "answers": [
+      { "text": { "en": "Red steel", "el": "Κόκκινο χάλυβα" }, "correct": true },
+      { "text": { "en": "Golden steel", "el": "Χρυσό χάλυβα" }, "correct": false },
+      { "text": { "en": "Gray iron", "el": "Γκρι σίδηρο" }, "correct": false },
+      { "text": { "en": "Bronze metal", "el": "Χάλκινο μέταλλο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What time of day is described?",
+      "el": "Ποια ώρα της ημέρας περιγράφεται;"
+    },
+    "answers": [
+      { "text": { "en": "Dawn", "el": "Αυγή" }, "correct": true },
+      { "text": { "en": "Noon", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "Twilight", "el": "Σούρουπο" }, "correct": false },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What natural phenomenon opens the story?",
+      "el": "Ποιο φυσικό φαινόμενο ανοίγει την ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Fog parting", "el": "Η ομίχλη που ανοίγει" }, "correct": true },
+      { "text": { "en": "Rainstorm", "el": "Καταιγίδα" }, "correct": false },
+      { "text": { "en": "Snowfall", "el": "Χιονόπτωση" }, "correct": false },
+      { "text": { "en": "Wind gusts", "el": "Ριπές ανέμου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What fills the air in the story?",
+      "el": "Τι γεμίζει τον αέρα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "The scent of salt", "el": "Η μυρωδιά του αλατιού" }, "correct": true },
+      { "text": { "en": "The sound of rain", "el": "Ο ήχος της βροχής" }, "correct": false },
+      { "text": { "en": "Music", "el": "Μουσική" }, "correct": false },
+      { "text": { "en": "Fog mist", "el": "Ομίχλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What brushed softly against the pillars?",
+      "el": "Τι χτυπούσε απαλά στα θεμέλια;"
+    },
+    "answers": [
+      { "text": { "en": "Waves", "el": "Κύματα" }, "correct": true },
+      { "text": { "en": "Wind", "el": "Άνεμος" }, "correct": false },
+      { "text": { "en": "Boats", "el": "Καράβια" }, "correct": false },
+      { "text": { "en": "Rain", "el": "Βροχή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which sense dominates the description?",
+      "el": "Ποια αίσθηση κυριαρχεί στην περιγραφή;"
+    },
+    "answers": [
+      { "text": { "en": "Sight", "el": "Η όραση" }, "correct": true },
+      { "text": { "en": "Hearing", "el": "Η ακοή" }, "correct": false },
+      { "text": { "en": "Taste", "el": "Η γεύση" }, "correct": false },
+      { "text": { "en": "Touch", "el": "Η αφή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What title fits SOL in this scene?",
+      "el": "Ποιος τίτλος ταιριάζει στη SOL σε αυτή τη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "Guardian and queen", "el": "Φρουρός και βασίλισσα" }, "correct": true },
+      { "text": { "en": "Explorer", "el": "Εξερευνήτρια" }, "correct": false },
+      { "text": { "en": "Traveler", "el": "Ταξιδιώτισσα" }, "correct": false },
+      { "text": { "en": "Dreamer", "el": "Ονειροπόλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Does the story mention car horns?",
+      "el": "Αναφέρει η ιστορία κορναρίσματα αυτοκινήτων;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only echoes", "el": "Μόνο αντίλαλοι" }, "correct": false },
+      { "text": { "en": "Only seagulls", "el": "Μόνο γλάροι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What sound remains in the air?",
+      "el": "Ποιος ήχος μένει στον αέρα;"
+    },
+    "answers": [
+      { "text": { "en": "The wind’s hum", "el": "Το βουητό του ανέμου" }, "correct": true },
+      { "text": { "en": "The sea’s roar", "el": "Το μουρμούρισμα της θάλασσας" }, "correct": false },
+      { "text": { "en": "City noise", "el": "Θόρυβος πόλης" }, "correct": false },
+      { "text": { "en": "Birdsong", "el": "Κελάηδισμα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Which U.S. city hosts the Golden Gate Bridge?",
+      "el": "Σε ποια αμερικανική πόλη βρίσκεται η γέφυρα Golden Gate;"
+    },
+    "answers": [
+      { "text": { "en": "San Francisco", "el": "Σαν Φρανσίσκο" }, "correct": true },
+      { "text": { "en": "Los Angeles", "el": "Λος Άντζελες" }, "correct": false },
+      { "text": { "en": "New York", "el": "Νέα Υόρκη" }, "correct": false },
+      { "text": { "en": "Seattle", "el": "Σιάτλ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What geographic feature surrounds San Francisco?",
+      "el": "Ποιο γεωγραφικό στοιχείο περιβάλλει το Σαν Φρανσίσκο;"
+    },
+    "answers": [
+      { "text": { "en": "A bay", "el": "Ένας κόλπος" }, "correct": true },
+      { "text": { "en": "A desert", "el": "Μια έρημος" }, "correct": false },
+      { "text": { "en": "A forest", "el": "Ένα δάσος" }, "correct": false },
+      { "text": { "en": "Mountains", "el": "Βουνά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What color did dawn paint SOL’s fur?",
+      "el": "Σε ποιο χρώμα έβαψε η αυγή το τρίχωμα της SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Amber tones", "el": "Κεχριμπαρένιες αποχρώσεις" }, "correct": true },
+      { "text": { "en": "Silver", "el": "Ασημί" }, "correct": false },
+      { "text": { "en": "Crimson", "el": "Βυσσινί" }, "correct": false },
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Did SOL stretch across the railing of the bridge?",
+      "el": "Απλώθηκε η SOL στο κιγκλίδωμα της γέφυρας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She climbed the arch", "el": "Ανέβηκε στην αψίδα" }, "correct": false },
+      { "text": { "en": "She slept below it", "el": "Κοιμήθηκε από κάτω" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "How are the city’s hills described?",
+      "el": "Πώς περιγράφονται οι λόφοι της πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "Awoke through beams of light", "el": "Ξύπνησαν μέσα σε δέσμες φωτός" }, "correct": true },
+      { "text": { "en": "Covered in fog", "el": "Καλυμμένοι με ομίχλη" }, "correct": false },
+      { "text": { "en": "Echoing traffic", "el": "Αντηχούν από κίνηση" }, "correct": false },
+      { "text": { "en": "Hidden in clouds", "el": "Κρυμμένοι στα σύννεφα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What is absent from the caption?",
+      "el": "Τι απουσιάζει από το caption;"
+    },
+    "answers": [
+      { "text": { "en": "Crosswalks and commutes", "el": "Διαβάσεις και μετακινήσεις" }, "correct": true },
+      { "text": { "en": "Waves", "el": "Κύματα" }, "correct": false },
+      { "text": { "en": "Dreams", "el": "Όνειρα" }, "correct": false },
+      { "text": { "en": "Wind", "el": "Άνεμος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What mood dominates the story?",
+      "el": "Ποιο συναίσθημα κυριαρχεί στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Tranquility", "el": "Γαλήνη" }, "correct": true },
+      { "text": { "en": "Excitement", "el": "Ενθουσιασμός" }, "correct": false },
+      { "text": { "en": "Sadness", "el": "Λύπη" }, "correct": false },
+      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Is there any mention of other animals?",
+      "el": "Αναφέρονται άλλα ζώα;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Seagulls", "el": "Γλάροι" }, "correct": false },
+      { "text": { "en": "Dogs", "el": "Σκύλοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What structure does SOL overlook?",
+      "el": "Ποιο σημείο παρατηρεί η SOL;"
+    },
+    "answers": [
+      { "text": { "en": "The bridge and the bay", "el": "Τη γέφυρα και τον κόλπο" }, "correct": true },
+      { "text": { "en": "A city square", "el": "Μια πλατεία" }, "correct": false },
+      { "text": { "en": "A mountain peak", "el": "Μια κορυφή" }, "correct": false },
+      { "text": { "en": "A forest path", "el": "Ένα δασικό μονοπάτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What is the tone of the final line?",
+      "el": "Ποιο είναι το ύφος της τελευταίας γραμμής;"
+    },
+    "answers": [
+      { "text": { "en": "Peaceful and majestic", "el": "Γαλήνιο και μεγαλοπρεπές" }, "correct": true },
+      { "text": { "en": "Playful", "el": "Παιχνιδιάρικο" }, "correct": false },
+      { "text": { "en": "Mysterious", "el": "Μυστηριώδες" }, "correct": false },
+      { "text": { "en": "Tense", "el": "Έντονο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Does the story mention rain or thunder?",
+      "el": "Αναφέρεται βροχή ή κεραυνός;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only mist", "el": "Μόνο ομίχλη" }, "correct": false },
+      { "text": { "en": "Only snow", "el": "Μόνο χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is San Francisco’s latitude around 37.7749?",
+      "el": "Είναι το γεωγραφικό πλάτος του Σαν Φρανσίσκο περίπου 37.7749;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "34.0522", "el": "34.0522" }, "correct": false },
+      { "text": { "en": "40.7128", "el": "40.7128" }, "correct": false }
+    ]
+  }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'Cancún, turquoise tides & Mayan echoes'?",
+      "el": "Έχει το επεισόδιο τίτλο 'Cancún, turquoise tides & Mayan echoes';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Cancún, ancient shores", "el": "Cancún, ancient shores" }, "correct": false },
+      { "text": { "en": "Cancún, ocean tales", "el": "Cancún, ocean tales" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the quote say 'Whispers of gods ride the waves.'?",
+      "el": "Αναφέρει το quote 'Whispers of gods ride the waves.';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Voices of stars guide the sea.", "el": "Voices of stars guide the sea." }, "correct": false },
+      { "text": { "en": "Dreams of gods paint the water.", "el": "Dreams of gods paint the water." }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Does the caption mention 'turquoise time'?",
+      "el": "Αναφέρει το caption 'turquoise time';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Golden hour", "el": "Χρυσή ώρα" }, "correct": false },
+      { "text": { "en": "Endless summer", "el": "Ατελείωτο καλοκαίρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Does the caption mention crowds or clocks?",
+      "el": "Αναφέρει το caption πλήθη ή ρολόγια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes, both", "el": "Ναι, και τα δύο" }, "correct": false },
+      { "text": { "en": "No, it says there are none", "el": "Όχι, λέει πως δεν υπάρχουν" }, "correct": true },
+      { "text": { "en": "Only clocks", "el": "Μόνο ρολόγια" }, "correct": false },
+      { "text": { "en": "Only waves", "el": "Μόνο κύματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Where is SOL during the story?",
+      "el": "Πού βρίσκεται η SOL στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "On a stone ledge above the sea", "el": "Σε πέτρινο κάγκελο πάνω από τη θάλασσα" }, "correct": true },
+      { "text": { "en": "Inside a Mayan temple", "el": "Μέσα σε ναό των Μάγια" }, "correct": false },
+      { "text": { "en": "On the beach sand", "el": "Στην άμμο της παραλίας" }, "correct": false },
+      { "text": { "en": "On a boat", "el": "Σε βάρκα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What natural element dominates the story?",
+      "el": "Ποιο φυσικό στοιχείο κυριαρχεί στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "The sea", "el": "Η θάλασσα" }, "correct": true },
+      { "text": { "en": "The desert", "el": "Η έρημος" }, "correct": false },
+      { "text": { "en": "The forest", "el": "Το δάσος" }, "correct": false },
+      { "text": { "en": "The mountains", "el": "Τα βουνά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What civilization’s echoes are mentioned?",
+      "el": "Ποιοι απόηχοι πολιτισμού αναφέρονται;"
+    },
+    "answers": [
+      { "text": { "en": "Mayan", "el": "Μάγια" }, "correct": true },
+      { "text": { "en": "Aztec", "el": "Αζτέκοι" }, "correct": false },
+      { "text": { "en": "Inca", "el": "Ίνκας" }, "correct": false },
+      { "text": { "en": "Roman", "el": "Ρωμαϊκός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What color describes the sea?",
+      "el": "Με ποιο χρώμα περιγράφεται η θάλασσα;"
+    },
+    "answers": [
+      { "text": { "en": "Turquoise", "el": "Τυρκουάζ" }, "correct": true },
+      { "text": { "en": "Emerald", "el": "Σμαραγδί" }, "correct": false },
+      { "text": { "en": "Sapphire", "el": "Σαπφείρινο" }, "correct": false },
+      { "text": { "en": "Golden", "el": "Χρυσαφένιο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What time of day is described in the story?",
+      "el": "Ποια ώρα της ημέρας περιγράφεται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Dawn", "el": "Αυγή" }, "correct": true },
+      { "text": { "en": "Noon", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "Twilight", "el": "Σούρουπο" }, "correct": false },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which landmark appears in the distance?",
+      "el": "Ποιο ορόσημο εμφανίζεται στο βάθος;"
+    },
+    "answers": [
+      { "text": { "en": "Diamond Head", "el": "Το Diamond Head" }, "correct": true },
+      { "text": { "en": "Chichen Itza", "el": "Το Chichen Itza" }, "correct": false },
+      { "text": { "en": "Temple of the Sun", "el": "Ο Ναός του Ήλιου" }, "correct": false },
+      { "text": { "en": "Pyramid of the Moon", "el": "Η Πυραμίδα του Φεγγαριού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What birds appear in the story?",
+      "el": "Ποια πουλιά εμφανίζονται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Seagulls", "el": "Γλάροι" }, "correct": true },
+      { "text": { "en": "Pelicans", "el": "Πελεκάνοι" }, "correct": false },
+      { "text": { "en": "Parrots", "el": "Παπαγάλοι" }, "correct": false },
+      { "text": { "en": "Hawks", "el": "Γεράκια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "How is the sea described in motion?",
+      "el": "Πώς περιγράφεται η κίνηση της θάλασσας;"
+    },
+    "answers": [
+      { "text": { "en": "Soft tides", "el": "Απαλές παλίρροιες" }, "correct": true },
+      { "text": { "en": "Rough waves", "el": "Άγρια κύματα" }, "correct": false },
+      { "text": { "en": "Still water", "el": "Ήρεμα νερά" }, "correct": false },
+      { "text": { "en": "Stormy swells", "el": "Θύελλες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What scent fills the air in Cancún?",
+      "el": "Τι άρωμα γεμίζει τον αέρα στο Cancún;"
+    },
+    "answers": [
+      { "text": { "en": "Plumeria", "el": "Πλουμέρια" }, "correct": true },
+      { "text": { "en": "Coconut", "el": "Καρύδα" }, "correct": false },
+      { "text": { "en": "Vanilla", "el": "Βανίλια" }, "correct": false },
+      { "text": { "en": "Salt only", "el": "Μόνο αλάτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Does the story mention hurry or noise?",
+      "el": "Αναφέρει η ιστορία βιασύνη ή θόρυβο;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only city sounds", "el": "Μόνο ήχους πόλης" }, "correct": false },
+      { "text": { "en": "Only music", "el": "Μόνο μουσική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What emotion dominates the story?",
+      "el": "Ποιο συναίσθημα κυριαρχεί στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Calmness", "el": "Ηρεμία" }, "correct": true },
+      { "text": { "en": "Excitement", "el": "Ενθουσιασμός" }, "correct": false },
+      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false },
+      { "text": { "en": "Sadness", "el": "Λύπη" }, "correct": false }
+    ]
+  },
+  [
+  {
+    "id": 16,
+    "question": {
+      "en": "What natural sounds accompany SOL’s moment?",
+      "el": "Ποιοι φυσικοί ήχοι συνοδεύουν τη στιγμή της SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Wind and waves", "el": "Άνεμος και κύματα" }, "correct": true },
+      { "text": { "en": "Rain and thunder", "el": "Βροχή και κεραυνοί" }, "correct": false },
+      { "text": { "en": "Birdsong", "el": "Κελάηδισμα" }, "correct": false },
+      { "text": { "en": "City echoes", "el": "Αντίλαλοι πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What do the waves resemble in the story?",
+      "el": "Σε τι μοιάζουν τα κύματα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Fragments of memory", "el": "Θραύσματα μνήμης" }, "correct": true },
+      { "text": { "en": "Sheets of light", "el": "Φύλλα φωτός" }, "correct": false },
+      { "text": { "en": "Golden veils", "el": "Χρυσά πέπλα" }, "correct": false },
+      { "text": { "en": "Silver mirrors", "el": "Ασημένιοι καθρέφτες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "How is SOL described in the story?",
+      "el": "Πώς περιγράφεται η SOL στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Calm and observant", "el": "Ήρεμη και παρατηρητική" }, "correct": true },
+      { "text": { "en": "Running playfully", "el": "Τρέχοντας παιχνιδιάρικα" }, "correct": false },
+      { "text": { "en": "Sleeping deeply", "el": "Κοιμισμένη βαθιά" }, "correct": false },
+      { "text": { "en": "Hiding in ruins", "el": "Κρυμμένη στα ερείπια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What human quality is given to the seagulls?",
+      "el": "Ποια ανθρώπινη ιδιότητα αποδίδεται στους γλάρους;"
+    },
+    "answers": [
+      { "text": { "en": "Reverence", "el": "Σεβασμός" }, "correct": true },
+      { "text": { "en": "Joy", "el": "Χαρά" }, "correct": false },
+      { "text": { "en": "Curiosity", "el": "Περιέργεια" }, "correct": false },
+      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What does the story say about time?",
+      "el": "Τι λέει η ιστορία για τον χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "It seems to pause between sky and sea", "el": "Φαίνεται να παύει ανάμεσα σε ουρανό και θάλασσα" }, "correct": true },
+      { "text": { "en": "It rushes quickly", "el": "Κυλά γρήγορα" }, "correct": false },
+      { "text": { "en": "It disappears completely", "el": "Εξαφανίζεται εντελώς" }, "correct": false },
+      { "text": { "en": "It turns to stone", "el": "Μετατρέπεται σε πέτρα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What mood defines the final lines?",
+      "el": "Ποιο ύφος χαρακτηρίζει τις τελευταίες γραμμές;"
+    },
+    "answers": [
+      { "text": { "en": "Peaceful and timeless", "el": "Γαλήνιο και άχρονο" }, "correct": true },
+      { "text": { "en": "Melancholic", "el": "Μελαγχολικό" }, "correct": false },
+      { "text": { "en": "Triumphant", "el": "Νικηφόρο" }, "correct": false },
+      { "text": { "en": "Mysterious", "el": "Μυστηριώδες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What natural elements move in the scene?",
+      "el": "Ποια φυσικά στοιχεία κινούνται στη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "Wind, waves, and leaves", "el": "Άνεμος, κύματα και φύλλα" }, "correct": true },
+      { "text": { "en": "Rain and sand", "el": "Βροχή και άμμος" }, "correct": false },
+      { "text": { "en": "Clouds only", "el": "Μόνο σύννεφα" }, "correct": false },
+      { "text": { "en": "Nothing moves", "el": "Τίποτα δεν κινείται" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What does the story compare the sea’s song to?",
+      "el": "Με τι συγκρίνει η ιστορία το τραγούδι της θάλασσας;"
+    },
+    "answers": [
+      { "text": { "en": "The hum of time", "el": "Τον παλμό του χρόνου" }, "correct": true },
+      { "text": { "en": "The sound of bells", "el": "Τον ήχο καμπανών" }, "correct": false },
+      { "text": { "en": "The whisper of dreams", "el": "Τον ψίθυρο των ονείρων" }, "correct": false },
+      { "text": { "en": "The beat of drums", "el": "Τον χτύπο τυμπάνων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Is the setting described as calm and sunlit?",
+      "el": "Περιγράφεται το σκηνικό ως ήρεμο και λουσμένο στο φως;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Dark and stormy", "el": "Σκοτεινό και θυελλώδες" }, "correct": false },
+      { "text": { "en": "Foggy and cold", "el": "Ομιχλώδες και ψυχρό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Cancún located on the Yucatán Peninsula?",
+      "el": "Βρίσκεται το Cancún στη χερσόνησο Γιουκατάν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "On an island", "el": "Σε νησί" }, "correct": false },
+      { "text": { "en": "In central Mexico", "el": "Στο κεντρικό Μεξικό" }, "correct": false }
+    ]
+  }
+]
+]

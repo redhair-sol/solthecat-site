@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'La Paz, sky-high wonders'?",
+      "el": "Ο τίτλος είναι 'La Paz, sky-high wonders';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "La Paz, city of clouds", "el": "La Paz, city of clouds" }, "correct": false },
+      { "text": { "en": "La Paz, cable dreams", "el": "La Paz, cable dreams" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title include a sky emoji 🌌?",
+      "el": "Περιλαμβάνει ο τίτλος emoji ουρανού 🌌;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It has a mountain emoji 🏔️", "el": "Έχει emoji βουνού 🏔️" }, "correct": false },
+      { "text": { "en": "It has a plane emoji ✈️", "el": "Έχει emoji αεροπλάνου ✈️" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Does the quote mention freedom and air?",
+      "el": "Αναφέρει το quote την ελευθερία και τον αέρα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only water and wind", "el": "Μόνο νερό και άνεμο" }, "correct": false },
+      { "text": { "en": "Only silence", "el": "Μόνο σιωπή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Does the photo quote read 'Air was her throne'?",
+      "el": "Το quote στη φωτογραφία λέει 'Air was her throne';"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Sky was her mirror", "el": "Sky was her mirror" }, "correct": false },
+      { "text": { "en": "Wind was her path", "el": "Wind was her path" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Does the caption mention roads or rails?",
+      "el": "Αναφέρει το caption δρόμους ή ράγες;"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only rivers", "el": "Μόνο ποτάμια" }, "correct": false },
+      { "text": { "en": "Only trails", "el": "Μόνο μονοπάτια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Are cable cars mentioned in the story?",
+      "el": "Αναφέρονται τελεφερίκ στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only buses", "el": "Μόνο λεωφορεία" }, "correct": false },
+      { "text": { "en": "Only planes", "el": "Μόνο αεροπλάνα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What color were the Mi Teleférico cable cars?",
+      "el": "Τι χρώμα ήταν τα τελεφερίκ Mi Teleférico;"
+    },
+    "answers": [
+      { "text": { "en": "Red", "el": "Κόκκινα" }, "correct": true },
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false },
+      { "text": { "en": "Yellow", "el": "Κίτρινα" }, "correct": false },
+      { "text": { "en": "Green", "el": "Πράσινα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Was SOL sitting on a ledge high above the city?",
+      "el": "Καθόταν η SOL σε προεξοχή πάνω από την πόλη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She was underground", "el": "Ήταν υπόγεια" }, "correct": false },
+      { "text": { "en": "She was on a rooftop", "el": "Ήταν σε ταράτσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Were the Andes visible in the background?",
+      "el": "Ήταν ορατές οι Άνδεις στο φόντο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only jungle hills", "el": "Μόνο λόφοι με ζούγκλα" }, "correct": false },
+      { "text": { "en": "Only ocean waves", "el": "Μόνο κύματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Was the story set during sunset?",
+      "el": "Εκτυλίσσεται η ιστορία στο ηλιοβασίλεμα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "At dawn", "el": "Τα ξημερώματα" }, "correct": false },
+      { "text": { "en": "At night", "el": "Τη νύχτα" }, "correct": false },
+      { "text": { "en": "At noon", "el": "Το μεσημέρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Was the air described as thin or heavy?",
+      "el": "Περιγράφηκε ο αέρας ως λεπτός ή βαρύς;"
+    },
+    "answers": [
+      { "text": { "en": "Thin", "el": "Λεπτός" }, "correct": true },
+      { "text": { "en": "Heavy", "el": "Βαρύς" }, "correct": false },
+      { "text": { "en": "Wet", "el": "Υγρός" }, "correct": false },
+      { "text": { "en": "Fragrant", "el": "Αρωματισμένος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Did the story mention mountains guarding the horizon?",
+      "el": "Αναφέρθηκαν βουνά που φυλάνε τον ορίζοντα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only clouds", "el": "Μόνο σύννεφα" }, "correct": false },
+      { "text": { "en": "Only desert dunes", "el": "Μόνο αμμόλοφοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Did SOL move during the scene?",
+      "el": "Κινήθηκε η SOL στη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "No, she observed", "el": "Όχι, παρατηρούσε" }, "correct": true },
+      { "text": { "en": "Yes, she ran", "el": "Ναι, έτρεξε" }, "correct": false },
+      { "text": { "en": "She slept", "el": "Κοιμήθηκε" }, "correct": false },
+      { "text": { "en": "She jumped on a car", "el": "Πήδηξε σε αυτοκίνητο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Were the cable cars described as drifting or rushing?",
+      "el": "Περιγράφηκαν τα τελεφερίκ να κινούνται αργά ή γρήγορα;"
+    },
+    "answers": [
+      { "text": { "en": "Drifting", "el": "Αργά" }, "correct": true },
+      { "text": { "en": "Rushing", "el": "Γρήγορα" }, "correct": false },
+      { "text": { "en": "Falling", "el": "Πέφτουν" }, "correct": false },
+      { "text": { "en": "Stopped", "el": "Σταματημένα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Did the story describe rooftops shining in sunlight?",
+      "el": "Περιέγραψε η ιστορία στέγες να λάμπουν στο φως;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "They were dark", "el": "Ήταν σκοτεινές" }, "correct": false },
+      { "text": { "en": "They were snowy", "el": "Ήταν χιονισμένες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Did SOL hear the sound of the city below?",
+      "el": "Άκουσε η SOL τον ήχο της πόλης από κάτω;"
+    },
+    "answers": [
+      { "text": { "en": "No, only motion", "el": "Όχι, μόνο κίνηση" }, "correct": true },
+      { "text": { "en": "Yes, loud traffic", "el": "Ναι, έντονη κυκλοφορία" }, "correct": false },
+      { "text": { "en": "Yes, music", "el": "Ναι, μουσική" }, "correct": false },
+      { "text": { "en": "Yes, birds", "el": "Ναι, πουλιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Were voices and colors mentioned as moving through the sky?",
+      "el": "Αναφέρθηκαν φωνές και χρώματα να κινούνται στον ουρανό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only shadows", "el": "Μόνο σκιές" }, "correct": false },
+      { "text": { "en": "Only clouds", "el": "Μόνο σύννεφα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Was the story about motion and height?",
+      "el": "Ήταν η ιστορία για την κίνηση και το ύψος;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "About the ocean", "el": "Για τον ωκεανό" }, "correct": false },
+      { "text": { "en": "About a forest", "el": "Για ένα δάσος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Did the Andes shape the horizon?",
+      "el": "Σχημάτιζαν οι Άνδεις τον ορίζοντα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Mountains were not mentioned", "el": "Δεν αναφέρθηκαν βουνά" }, "correct": false },
+      { "text": { "en": "Only towers", "el": "Μόνο πύργοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Was the atmosphere described as clear and bright?",
+      "el": "Περιγράφηκε η ατμόσφαιρα καθαρή και φωτεινή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was foggy", "el": "Είχε ομίχλη" }, "correct": false },
+      { "text": { "en": "It was stormy", "el": "Ήταν καταιγιώδης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Did SOL feel the altitude in her whiskers?",
+      "el": "Ένιωσε η SOL το υψόμετρο στα μουστάκια της;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She felt cold", "el": "Ένιωσε κρύο" }, "correct": false },
+      { "text": { "en": "She felt tired", "el": "Ένιωσε κουρασμένη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Did the story mention the hum of wind?",
+      "el": "Αναφέρθηκε ο ήχος του ανέμου;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only thunder", "el": "Μόνο κεραυνοί" }, "correct": false },
+      { "text": { "en": "Only rain", "el": "Μόνο βροχή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Did the city appear colorful from above?",
+      "el": "Η πόλη φαινόταν πολύχρωμη από ψηλά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was grey", "el": "Ήταν γκρι" }, "correct": false },
+      { "text": { "en": "It was covered in snow", "el": "Ήταν σκεπασμένη με χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What carried dreams between the hills?",
+      "el": "Τι μετέφερε όνειρα ανάμεσα στους λόφους;"
+    },
+    "answers": [
+      { "text": { "en": "The cable cars", "el": "Τα τελεφερίκ" }, "correct": true },
+      { "text": { "en": "The rivers", "el": "Τα ποτάμια" }, "correct": false },
+      { "text": { "en": "The trains", "el": "Τα τρένα" }, "correct": false },
+      { "text": { "en": "The planes", "el": "Τα αεροπλάνα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What emotion defines the La Paz story?",
+      "el": "Ποιο συναίσθημα χαρακτηρίζει την ιστορία της Λα Παζ;"
+    },
+    "answers": [
+      { "text": { "en": "Freedom and height", "el": "Ελευθερία και ύψος" }, "correct": true },
+      { "text": { "en": "Fear and noise", "el": "Φόβος και φασαρία" }, "correct": false },
+      { "text": { "en": "Loneliness and rain", "el": "Μοναξιά και βροχή" }, "correct": false },
+      { "text": { "en": "Calm and silence", "el": "Ηρεμία και σιωπή" }, "correct": false }
+    ]
+  }
+]
