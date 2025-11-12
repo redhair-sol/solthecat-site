@@ -974,11 +974,11 @@
     "lat": 21.3069,
     "lng": -157.8583
   },
-  "visible": false,
+  "visible": true,
   "city": "honolulu",
   "story": {
-    "en": "The ocean breeze carried scents of plumeria as palms bowed to the rising sun. On a wooden railing above Waikiki, SOL rested within the pink glow of dawn, her fur brushed by salt and warmth. Beyond the waves, Diamond Head dreamed in silence, its slopes bathed in gold. No noise, no rush — only the island’s rhythm in soft tides and whispering leaves.",
-    "el": "Η θαλασσινή αύρα έφερνε αρώματα πλουμέριας καθώς οι φοίνικες υποκλίνονταν στο φως της ανατολής. Σε ένα ξύλινο κάγκελο πάνω από τη Waikiki, η SOL αναπαυόταν μέσα στη ροζ λάμψη της αυγής, με το τρίχωμά της να χαϊδεύεται από αλάτι και ζεστασιά. Πέρα από τα κύματα, το Diamond Head ονειρευόταν σιωπηλά, με τις πλαγιές του να λούζονται στο χρυσό. Χωρίς θόρυβο, χωρίς βιασύνη — μόνο ο παλμός του νησιού σε απαλές παλίρροιες και ψιθύρους φύλλων."
+    "en": "The ocean breeze carried the scent of plumeria as the palms bowed to the light of dawn. On a wooden railing above Waikiki, Sol rested within the rosy glow of sunrise, her fur brushed by salt and warmth. The waves hummed ancient chants and seabirds traced slow circles across the sky. Beyond, Diamond Head dreamed in silence, its slopes bathed in gold and its shadows drifting over the palms. Sol stretched her paws as if touching the island’s pulse and for a moment everything, air, sea, and light, seemed to breathe with her. No bustle, no borders, only the rhythm of the island in soft tides and whispers of leaves.",
+    "el": "Η θαλασσινή αύρα έφερνε αρώματα πλουμέριας καθώς οι φοίνικες υποκλίνονταν στο φως της ανατολής. Σε ένα ξύλινο κάγκελο πάνω από τη Waikiki, η Sol αναπαυόταν μέσα στη ροζ λάμψη της αυγής, με το τρίχωμά της να χαϊδεύεται από αλάτι και ζεστασιά. Τα κύματα τραγουδούσαν ρυθμούς αρχαίων ψαλμών και τα γλαροπούλια σχεδίαζαν αργές τροχιές στον ουρανό. Πέρα, το Diamond Head ονειρευόταν σιωπηλά με τις πλαγιές του να λούζονται στο χρυσό και τις σκιές του να γλιστρούν πάνω στα φύλλα των φοινίκων. Η Sol τέντωσε τα πόδια της σαν να αγγίζει τον παλμό του νησιού και εκείνη τη στιγμή όλα, ο αέρας, η θάλασσα και το φως, έμοιαζαν να αναπνέουν μαζί της. Χωρίς θόρυβο, χωρίς βιασύνη, μόνο ο παλμός του νησιού σε απαλές παλίρροιες και ψιθύρους φύλλων."
   },
   "snapQuestions": [
     {
