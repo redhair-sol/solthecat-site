@@ -1,6 +1,6 @@
 // src/pages/SolCam.jsx
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import PageContainer from "../components/PageContainer.jsx";
 import styled from "styled-components";
 import Hls from "hls.js";
@@ -33,27 +33,53 @@ const VideoBox = styled.div`
   margin: 0 auto;
 `;
 
+const OfflineBox = styled.div`
+  width: 100%;
+  max-width: 950px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  background: #000;
+  color: white;
+  text-align: center;
+`;
+
+const OfflineImage = styled.img`
+  width: 100%;
+  display: block;
+  object-fit: cover;
+`;
+
+const OfflineCaption = styled.div`
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(0,0,0,0.6);
+`;
+
 const Video = styled.video`
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center;
   background: #000;
 `;
 
 export default function SolCam() {
   const videoRef = useRef(null);
   const { language } = useLanguage();
+  const [isOffline, setIsOffline] = useState(false);
 
   const text = {
     en: {
       title: "SolCam Live 🎥",
       subtitle: "Live view of Queen Sol — directly from her royal lounge.",
+      offline: "SolCam currently offline",
     },
     el: {
       title: "SolCam Live 🎥",
       subtitle: "Ζωντανή μετάδοση της Sol — απευθείας από το παλατάκι της.",
+      offline: "Το SolCam είναι εκτός λειτουργίας",
     },
   };
 
@@ -62,16 +88,24 @@ export default function SolCam() {
     const url = "https://solcam.solthecat.com/solcam/index.m3u8";
 
     if (Hls.isSupported()) {
-      const hls = new Hls({
-        maxBufferLength: 10,
-        enableWorker: true,
+      const hls = new Hls();
+
+      hls.on(Hls.Events.ERROR, () => {
+        setIsOffline(true);
       });
+
       hls.loadSource(url);
       hls.attachMedia(video);
 
       return () => hls.destroy();
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = url;
+
+      video.onerror = () => {
+        setIsOffline(true);
+      };
+    } else {
+      setIsOffline(true);
     }
   }, []);
 
@@ -91,9 +125,16 @@ export default function SolCam() {
         <Title>{text[language].title}</Title>
         <Subtitle>{text[language].subtitle}</Subtitle>
 
-        <VideoBox>
-          <Video ref={videoRef} autoPlay muted controls />
-        </VideoBox>
+        {isOffline ? (
+          <OfflineBox>
+            <OfflineImage src="/images/solcam-offline.jpg" alt="Sol offline" />
+            <OfflineCaption>{text[language].offline}</OfflineCaption>
+          </OfflineBox>
+        ) : (
+          <VideoBox>
+            <Video ref={videoRef} autoPlay muted controls />
+          </VideoBox>
+        )}
       </PageContainer>
     </>
   );
