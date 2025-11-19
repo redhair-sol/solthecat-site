@@ -22,6 +22,7 @@ const PuzzleMapGame = lazy(() => import("./pages/PuzzleMapGame.jsx"));
 const QuizPlayer = lazy(() => import("./pages/QuizPlayer.jsx"));
 const RoyalPuzzleGame = lazy(() => import("./pages/RoyalPuzzleGame.jsx"));
 const SolSnap = lazy(() => import("./pages/SolSnap.jsx"));
+const SolCam = lazy(() => import("./pages/SolCam.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -39,6 +40,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="whoissol" element={<WhoIsSol />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="shop" element={<Shop />} />
+				<Route path="solcam" element={<SolCam />} />
 
                 {/* 🎮 Games */}
                 <Route path="games" element={<Games />} />
