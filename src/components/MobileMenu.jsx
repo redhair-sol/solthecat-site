@@ -40,28 +40,38 @@ export default function MobileMenu({ isOpen, onClose }) {
 
         {/* Navigation */}
         <nav
-          className="flex flex-col p-8 gap-6 mt-12 text-2xl"
-          style={{ fontFamily: '"Dancing Script", cursive' }}
-        >
-          <NavLink to="/" onClick={onClose} className={linkClasses}>
-            Home
-          </NavLink>
-          <NavLink to="/episodes" onClick={onClose} className={linkClasses}>
-            Episodes
-          </NavLink>
-          <NavLink to="/map" onClick={onClose} className={linkClasses}>
-            Map
-          </NavLink>
-          <NavLink to="/gallery" onClick={onClose} className={linkClasses}>
-            Gallery
-          </NavLink>
-          <NavLink to="/games" onClick={onClose} className={linkClasses}>
-            Games
-          </NavLink>
-          <NavLink to="/whoissol" onClick={onClose} className={linkClasses}>
-            About
-          </NavLink>
-        </nav>
+  className="flex flex-col p-8 gap-6 mt-12 text-2xl"
+  style={{ fontFamily: '"Dancing Script", cursive' }}
+>
+  <NavLink to="/" onClick={onClose} className={linkClasses}>
+    Home
+  </NavLink>
+
+  <NavLink to="/episodes" onClick={onClose} className={linkClasses}>
+    Episodes
+  </NavLink>
+
+  <NavLink to="/map" onClick={onClose} className={linkClasses}>
+    Map
+  </NavLink>
+
+  <NavLink to="/gallery" onClick={onClose} className={linkClasses}>
+    Gallery
+  </NavLink>
+
+  <NavLink to="/games" onClick={onClose} className={linkClasses}>
+    Games
+  </NavLink>
+
+  <NavLink to="/solcam" onClick={onClose} className={linkClasses}>
+    SolCam
+  </NavLink>
+
+  <NavLink to="/whoissol" onClick={onClose} className={linkClasses}>
+    About
+  </NavLink>
+</nav>
+
 
         {/* Draggable cat at the bottom */}
         <div className="mt-auto p-4">
