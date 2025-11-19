@@ -7,23 +7,20 @@ import Hls from "hls.js";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-`;
-
 const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const Subtitle = styled.p`
   font-size: 1rem;
   color: #5b2b7b;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const VideoBox = styled.div`
@@ -33,6 +30,7 @@ const VideoBox = styled.div`
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
 `;
 
 const Video = styled.video`
@@ -55,7 +53,7 @@ export default function SolCam() {
     },
     el: {
       title: "SolCam Live 🎥",
-      subtitle: "Ζωντανή μετάδοση της βασίλισσας Sol — απευθείας από το παλατάκι της.",
+      subtitle: "Ζωντανή μετάδοση της Sol — απευθείας από το παλατάκι της.",
     },
   };
 
@@ -85,18 +83,17 @@ export default function SolCam() {
       </Helmet>
 
       <PageContainer
+        alignTop
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Wrapper>
-          <Title>{text[language].title}</Title>
-          <Subtitle>{text[language].subtitle}</Subtitle>
+        <Title>{text[language].title}</Title>
+        <Subtitle>{text[language].subtitle}</Subtitle>
 
-          <VideoBox>
-            <Video ref={videoRef} autoPlay muted controls />
-          </VideoBox>
-        </Wrapper>
+        <VideoBox>
+          <Video ref={videoRef} autoPlay muted controls />
+        </VideoBox>
       </PageContainer>
     </>
   );

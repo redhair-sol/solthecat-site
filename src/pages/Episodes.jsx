@@ -1,158 +1,99 @@
-// src/pages/Episodes.jsx
+// src/pages/SolCam.jsx
 
-import { useEffect, useState } from "react";
-import styled from "styled-components";
-import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
-import { useLanguage } from "../context/LanguageContext.jsx";
+import { useEffect, useRef } from "react";
 import PageContainer from "../components/PageContainer.jsx";
+import styled from "styled-components";
+import Hls from "hls.js";
+import { Helmet } from "react-helmet-async";
+import { useLanguage } from "../context/LanguageContext.jsx";
 
-const TopSection = styled.div`
-  margin-bottom: 2rem;
-`;
-
-const Heading = styled.h1`
+const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0;   /* ίδιο με Episodes */
+  text-align: center;
 `;
 
-const Subheading = styled.p`
+const Subtitle = styled.p`
   font-size: 1rem;
   color: #5b2b7b;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;  /* 2rem, ίδιο με Episodes */
   max-width: 600px;
   line-height: 1.5;
+  text-align: center;
 `;
 
-const EpisodeCard = styled(motion.div)`
-  background: #ffffffcc;
-  padding: 1.5rem;
-  border-radius: 1.5rem;
-  max-width: 600px;
+const VideoBox = styled.div`
   width: 100%;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 950px;
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
 `;
 
-const EpisodeImage = styled.img`
+const Video = styled.video`
   width: 100%;
-  border-radius: 1rem;
+  height: 100%;
+  display: block;
   object-fit: cover;
-  margin-bottom: 1rem;
+  object-position: center;
+  background: #000;
 `;
 
-const EpisodeTitle = styled.h2`
-  font-size: 1.2rem;
-  color: #6a1b9a;
-  margin-bottom: 0.5rem;
-`;
-
-const EpisodeQuote = styled.p`
-  font-style: italic;
-  color: #944f9e;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-`;
-
-const EpisodeCaption = styled.p`
-  font-size: 0.9rem;
-  color: #333;
-`;
-
-const StoryContainer = styled.div`
-  margin-top: 1.2rem;
-  font-size: 0.9rem;
-  color: #444;
-  text-align: justify;
-`;
-
-const StoryTitle = styled.h3`
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #6a1b9a;
-`;
-
-export default function Episodes() {
-  const [episodes, setEpisodes] = useState([]);
+export default function SolCam() {
+  const videoRef = useRef(null);
   const { language } = useLanguage();
 
+  const text = {
+    en: {
+      title: "SolCam Live 🎥",
+      subtitle: "Live view of Queen Sol — directly from her royal lounge.",
+    },
+    el: {
+      title: "SolCam Live 🎥",
+      subtitle: "Ζωντανή μετάδοση της βασίλισσας Sol — απευθείας από το παλατάκι της.",
+    },
+  };
+
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((res) => res.json())
-      .then((data) => {
-        const visibleEpisodes = data.filter((ep) => ep.visible);
-        const nextNumber = visibleEpisodes.length + 1;
+    const video = videoRef.current;
+    const url = "https://solcam.solthecat.com/solcam/index.m3u8";
 
-        const teaser = {
-          id: 999,
-          title: {
-            en: `SOLadventure #${nextNumber} – Coming Soon`,
-            el: `SOLadventure #${nextNumber} – Έρχεται Σύντομα`
-          },
-          image: "episodes/coming-soon.png",
-          caption: {
-            en: "Stay tuned for the next purrfect stop",
-            el: "Μείνε συντονισμένος για τον επόμενο σταθμό"
-          },
-          visible: false,
-          quote: "",
-          story: { en: "", el: "" }
-        };
+    if (Hls.isSupported()) {
+      const hls = new Hls({
+        maxBufferLength: 10,
+        enableWorker: true,
+      });
+      hls.loadSource(url);
+      hls.attachMedia(video);
 
-        visibleEpisodes.push(teaser);
-        setEpisodes(visibleEpisodes);
-      })
-      .catch((err) => console.error("Failed to load episodes:", err));
+      return () => hls.destroy();
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = url;
+    }
   }, []);
 
   return (
     <>
       <Helmet>
-        <title>Episodes – SolTheCat</title>
-        <link rel="canonical" href="https://solthecat.com/episodes" />
+        <title>SolCam Live – SolTheCat</title>
+        <link rel="canonical" href="https://solthecat.com/solcam" />
       </Helmet>
 
       <PageContainer
+	    alignTop
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <TopSection>
-          <Heading>
-            {language === "el" ? "Τα επεισόδια της Sol 🎥" : "Sol’s Episodes 🎥"}
-          </Heading>
-          <Subheading>
-            {language === "el"
-              ? "Ακολούθησε τα πατουσάκια της βασίλισσας"
-              : "Follow the pawprints of royalty"}
-          </Subheading>
-        </TopSection>
+        <Title>{text[language].title}</Title>
+        <Subtitle>{text[language].subtitle}</Subtitle>
 
-        {episodes.map((ep) => (
-          <EpisodeCard key={ep.id}>
-            <EpisodeImage
-              src={`${import.meta.env.BASE_URL}${ep.image}`}
-              alt={typeof ep.title === "object" ? ep.title[language] : ep.title}
-            />
-            <EpisodeTitle>
-              {typeof ep.title === "object" ? ep.title[language] : ep.title}
-            </EpisodeTitle>
-            {ep.quote && <EpisodeQuote>{ep.quote}</EpisodeQuote>}
-            <EpisodeCaption>
-              {typeof ep.caption === "object" ? ep.caption[language] : ep.caption}
-            </EpisodeCaption>
-
-            {ep.story && ep.story[language] && (
-              <StoryContainer>
-                <StoryTitle>
-                  {language === "en" ? "SOL’s Tale" : "Το Παραμύθι της SOL"}
-                </StoryTitle>
-                <p>{ep.story[language]}</p>
-              </StoryContainer>
-            )}
-          </EpisodeCard>
-        ))}
+        <VideoBox>
+          <Video ref={videoRef} autoPlay muted controls />
+        </VideoBox>
       </PageContainer>
     </>
   );
