@@ -136,7 +136,7 @@ export default function SolCam() {
 
       if (Hls.isSupported()) {
         hls = new Hls();
-        hls.loadSource(streamURL + `?t=${Date.now()}`);
+        hls.loadSource(streamURL + "?force=" + Date.now());
         hls.attachMedia(video);
 
         // ⭐ ΜΟΝΟ Η ΜΙΑ ΑΛΛΑΓΗ ΠΟΥ ΖΗΤΗΣΕΣ ⭐
