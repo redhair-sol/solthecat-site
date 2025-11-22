@@ -121,7 +121,7 @@ export default function SolCam() {
       const video = videoRef.current;
       if (!video) return;
 
-      // 1. Ελεγχος πραγματικού online (όχι cache)
+      // 1. Έλεγχος πραγματικού online (όχι cache)
       const online = await checkStream(streamURL);
 
       if (!online) {
@@ -136,8 +136,13 @@ export default function SolCam() {
 
       if (Hls.isSupported()) {
         hls = new Hls();
-        hls.loadSource(streamURL + `?t=${Date.now()}`); 
+        hls.loadSource(streamURL + `?t=${Date.now()}`);
         hls.attachMedia(video);
+
+        // ⭐ ΜΟΝΟ Η ΜΙΑ ΑΛΛΑΓΗ ΠΟΥ ΖΗΤΗΣΕΣ ⭐
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          setIsOffline(false);
+        });
 
         hls.on(Hls.Events.ERROR, (event, data) => {
           if (data.fatal) setIsOffline(true);
@@ -160,13 +165,13 @@ export default function SolCam() {
     // retry when offline
     const interval = setInterval(() => {
       if (isOffline) loadStream();
-    }, 8000); // 8 sec πιο responsive από 10
+    }, 8000);
 
     return () => {
       clearInterval(interval);
       if (hls) hls.destroy();
     };
-  }, [isOffline]);
+  }, []);
 
   return (
     <>
