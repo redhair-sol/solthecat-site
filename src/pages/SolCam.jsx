@@ -191,7 +191,14 @@ export default function SolCam() {
 
         {isOffline ? (
           <OfflineBox>
-            <OfflineImage src="/images/solcam-offline.jpg" alt="SolCam offline" />
+            <video 
+  src="/images/solcam-offline.mp4" 
+  autoPlay 
+  loop 
+  muted 
+  playsInline 
+  style={{ width: "100%", display: "block", objectFit: "cover" }}
+/>
             <OfflineCaption>{text[language].offline}</OfflineCaption>
           </OfflineBox>
         ) : (
