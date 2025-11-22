@@ -166,7 +166,7 @@ export default function SolCam() {
       clearInterval(interval);
       if (hls) hls.destroy();
     };
-  }, []);
+  }, [isOffline]);
 
   return (
     <>
