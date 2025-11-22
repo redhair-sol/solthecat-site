@@ -6,7 +6,7 @@ import Hls from "hls.js";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-// ----- STYLES (ίδια με πριν, δεν τα πειράζω) -----
+// ----- STYLES (χωρίς αλλαγές) -----
 const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
@@ -83,7 +83,7 @@ const Video = styled.video`
   background: #000;
 `;
 
-// ----- CHECK STREAM WITH NON-CACHED GET -----
+// ----- CHECK STREAM -----
 async function checkStream(url) {
   try {
     const noCacheUrl = `${url}?t=${Date.now()}`;
@@ -97,7 +97,7 @@ async function checkStream(url) {
 export default function SolCam() {
   const videoRef = useRef(null);
   const { language } = useLanguage();
-  const [isOffline, setIsOffline] = useState(false);
+  const [isOffline, setIsOffline] = useState(true);
 
   const text = {
     en: {
@@ -114,6 +114,7 @@ export default function SolCam() {
 
   const streamURL = "https://solcam.solthecat.com/solcam/index.m3u8";
 
+  // ----------- FIXED useEffect (always running) -------------
   useEffect(() => {
     let hls;
 
@@ -121,7 +122,7 @@ export default function SolCam() {
       const video = videoRef.current;
       if (!video) return;
 
-      // 1. Ελεγχος πραγματικού online (όχι cache)
+      // 1. Check if online
       const online = await checkStream(streamURL);
 
       if (!online) {
@@ -129,44 +130,47 @@ export default function SolCam() {
         return;
       }
 
-      // 2. Stream is online → παίξε
+      // 2. Stream is online
       setIsOffline(false);
 
       if (hls) hls.destroy();
 
+      // HLS load
       if (Hls.isSupported()) {
         hls = new Hls();
-        hls.loadSource(streamURL + `?t=${Date.now()}`); 
+        hls.loadSource(streamURL + `?t=${Date.now()}`);
         hls.attachMedia(video);
 
         hls.on(Hls.Events.ERROR, (event, data) => {
-          if (data.fatal) setIsOffline(true);
+          if (data.fatal) {
+            setIsOffline(true);
+          }
         });
       } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
         video.src = streamURL + `?t=${Date.now()}`;
         video.onerror = () => setIsOffline(true);
       }
 
-      // autoplay fix
+      // Fix autoplay
       video.play().catch(() => {
         video.muted = true;
         video.play();
       });
     };
 
-    // initial load
+    // 🔥 FIX: run initial load
     loadStream();
 
-    // retry when offline
+    // 🔥 FIX: ALWAYS retry, not only when isOffline changes
     const interval = setInterval(() => {
-      if (isOffline) loadStream();
-    }, 8000); // 8 sec πιο responsive από 10
+      loadStream();
+    }, 6000);
 
     return () => {
       clearInterval(interval);
       if (hls) hls.destroy();
     };
-  }, [isOffline]);
+  }, []); // <-- FIX: no dependencies
 
   return (
     <>
@@ -175,12 +179,7 @@ export default function SolCam() {
         <link rel="canonical" href="https://solthecat.com/solcam" />
       </Helmet>
 
-      <PageContainer
-        alignTop
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+      <PageContainer alignTop>
         <Title>{text[language].title}</Title>
         <Subtitle>{text[language].subtitle}</Subtitle>
 
