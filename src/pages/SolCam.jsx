@@ -102,13 +102,13 @@ export default function SolCam() {
   const text = {
     en: {
       title: "SolCam Live 🎥",
-      subtitle: "Live view of Queen Sol — directly from her royal lounge.",
+      subtitle: "Live view of Queen Sol.",
       offline: "SolCam currently offline",
     },
     el: {
       title: "SolCam Live 🎥",
-      subtitle: "Ζωντανή μετάδοση της Sol — απευθείας από το παλατάκι της.",
-      offline: "Το SolCam είναι εκτός λειτουργίας",
+      subtitle: "Ζωντανή μετάδοση της Sol.",
+      offline: "Η SolCam είναι εκτός λειτουργίας",
     },
   };
 
@@ -192,12 +192,12 @@ export default function SolCam() {
         {isOffline ? (
           <OfflineBox>
             <video 
-			src="/images/solcam-offline.webm" 
-			autoPlay 
-			loop 
-			muted 
-			playsInline 
-			style={{ width: "100%", display: "block", objectFit: "cover" }}
+			 src="/images/solcam-offline.webm" 
+			 autoPlay 
+			 loop 
+			 muted 
+			 playsInline 
+			 style={{ width: "100%", display: "block", objectFit: "cover" }}
 			/>
             <OfflineCaption>{text[language].offline}</OfflineCaption>
           </OfflineBox>
