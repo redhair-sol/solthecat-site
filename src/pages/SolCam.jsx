@@ -6,7 +6,7 @@ import Hls from "hls.js";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-// ----- STYLES (ίδια με πριν, δεν τα πειράζω) -----
+// ----- STYLES -----
 const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
@@ -35,17 +35,35 @@ const VideoBox = styled.div`
   transition: opacity 0.4s ease;
 `;
 
+/* ⭐ NEW LIVE BADGE WITH BLINKING DOT ⭐ */
 const LiveBadge = styled.div`
   position: absolute;
   top: 12px;
   left: 12px;
-  background: red;
+  background: #ff0000;
   color: white;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: 6px;
   font-size: 0.9rem;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+`;
+
+const LiveDot = styled.div`
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  animation: pulse 1.2s infinite ease-in-out;
+
+  @keyframes pulse {
+    0% { transform: scale(0.7); opacity: 0.6; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.7); opacity: 0.6; }
+  }
 `;
 
 const OfflineBox = styled.div`
@@ -121,7 +139,7 @@ export default function SolCam() {
       const video = videoRef.current;
       if (!video) return;
 
-      // 1. Έλεγχος πραγματικού online (όχι cache)
+      // 1. Έλεγχος πραγματικού online
       const online = await checkStream(streamURL);
 
       if (!online) {
@@ -139,7 +157,6 @@ export default function SolCam() {
         hls.loadSource(streamURL + "?force=" + Date.now());
         hls.attachMedia(video);
 
-        // ⭐ ΜΟΝΟ Η ΜΙΑ ΑΛΛΑΓΗ ΠΟΥ ΖΗΤΗΣΕΣ ⭐
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
           setIsOffline(false);
         });
@@ -152,7 +169,6 @@ export default function SolCam() {
         video.onerror = () => setIsOffline(true);
       }
 
-      // autoplay fix
       video.play().catch(() => {
         video.muted = true;
         video.play();
@@ -191,19 +207,22 @@ export default function SolCam() {
 
         {isOffline ? (
           <OfflineBox>
-            <video 
-			 src="/images/solcam-offline.webm" 
-			 autoPlay 
-			 loop 
-			 muted 
-			 playsInline 
-			 style={{ width: "100%", display: "block", objectFit: "cover" }}
-			/>
+            <video
+              src="/images/solcam-offline.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              style={{ width: "100%", display: "block", objectFit: "cover" }}
+            />
             <OfflineCaption>{text[language].offline}</OfflineCaption>
           </OfflineBox>
         ) : (
           <VideoBox>
-            <LiveBadge>LIVE</LiveBadge>
+            <LiveBadge>
+              <LiveDot />
+              LIVE
+            </LiveBadge>
             <Video ref={videoRef} autoPlay muted controls />
           </VideoBox>
         )}
