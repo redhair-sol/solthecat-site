@@ -95,19 +95,17 @@ const Video = styled.video`
   background: #000;
 `;
 
-// ----- CHECK STREAM FUNCTION (ΕΔΩ ΕΙΝΑΙ ΤΟ LOGGING) -----
+// ----- CHECK STREAM FUNCTION (ΕΛΕΓΧΟΣ MANIFEST) -----
 async function checkStream(url) {
   try {
+    // Προσθέτουμε timestamp για να παρακάμψουμε το cache
     const noCacheUrl = `${url}?t=${Date.now()}`;
     const res = await fetch(noCacheUrl, { method: "GET" });
     
-    if (res.status !== 200) {
-        console.warn(`[SolCam Recovery] Manifest check failed. Status: ${res.status}`);
-    }
-
+    // Επιστρέφουμε true μόνο αν το Status είναι 200
     return res.status === 200;
   } catch (err) {
-    console.error(`[SolCam Recovery] Fetch Error (Network/CORS): ${err.name} - The main manifest is unreachable.`);
+    // Σε περίπτωση σφάλματος δικτύου/fetch, θεωρούμε ότι είναι offline
     return false;
   }
 }
@@ -117,9 +115,8 @@ export default function SolCam() {
   const { language } = useLanguage();
   const [isOffline, setIsOffline] = useState(false);
 
-  // Αν θέλεις να χρησιμοποιήσεις τη μέθοδο debugging window.hls = hls,
-  // μπορείς να ορίσεις εδώ τη ref
-  const hlsRef = useRef(null);
+  // Χρήση Ref για την HLS instance (για να είναι διαθέσιμη στο cleanup)
+  const hlsRef = useRef(null); 
 
   const text = {
     en: {
@@ -135,18 +132,19 @@ export default function SolCam() {
   };
 
   const streamURL = "https://solcam.solthecat.com/solcam/index.m3u8";
+  // Η συχνότητα του polling για ανάκαμψη (5 δευτερόλεπτα)
+  const RECOVERY_INTERVAL_MS = 5000; 
 
   useEffect(() => {
     let hls;
     let recoveryInterval;
-    const video = videoRef.current; // Παίρνουμε το video element μία φορά
+    const video = videoRef.current;
 
     // 1. Συνάρτηση για φόρτωση του Player (τρέχει όταν isOffline === false)
     const initPlayer = async () => {
       // Κάνουμε έναν γρήγορο αρχικό έλεγχο
       const online = await checkStream(streamURL);
       if (!online) {
-        console.warn("[SolCam] Initial check failed. Switching to Offline mode.");
         setIsOffline(true);
         return;
       }
@@ -155,13 +153,12 @@ export default function SolCam() {
 
       if (Hls.isSupported()) {
         hls = new Hls();
-        hlsRef.current = hls; // Αποθήκευση της HLS instance στη ref
+        hlsRef.current = hls;
         
         hls.loadSource(`${streamURL}?force=${Date.now()}`);
         hls.attachMedia(video);
 
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
-          console.log("[SolCam HLS] Manifest parsed successfully.");
           video.play().catch(() => {
             video.muted = true;
             video.play();
@@ -170,7 +167,6 @@ export default function SolCam() {
 
         hls.on(Hls.Events.ERROR, (event, data) => {
           if (data.fatal) {
-            console.error(`[SolCam HLS] Fatal Error detected: ${data.details}. Switching to Offline.`);
             hls.destroy();
             hlsRef.current = null;
             setIsOffline(true);
@@ -182,7 +178,6 @@ export default function SolCam() {
         video.play();
         
         video.onerror = () => {
-          console.error("[SolCam] Native HLS error. Switching to Offline.");
           setIsOffline(true);
         };
       }
@@ -191,28 +186,23 @@ export default function SolCam() {
     // 2. Συνάρτηση επαναφοράς (τρέχει όταν isOffline === true)
     const checkRecovery = async () => {
       const online = await checkStream(streamURL);
-      
-      // Αυτό το log θα σου δείξει αν το Polling περνάει ή όχι
-      console.log(`[SolCam Recovery] Polling for manifest (5s interval). Result: ${online}`); 
-
       if (online) {
-        setIsOffline(false); // Επανεκκίνηση!
+        // Η ανάκαμψη επιτεύχθηκε, επανεκκινούμε το component
+        setIsOffline(false); 
       }
     };
 
     // --- ΚΥΡΙΑ ΛΟΓΙΚΗ EFFECT ---
     if (isOffline) {
-      // Είμαστε Offline: Ξεκινάμε το polling για να δούμε πότε θα επιστρέψει
-      console.log("[SolCam] Entering Offline Recovery Loop.");
-      recoveryInterval = setInterval(checkRecovery, 5000);
+      // Είμαστε Offline: Ξεκινάμε το polling (τον "ανιχνευτή")
+      recoveryInterval = setInterval(checkRecovery, RECOVERY_INTERVAL_MS);
     } else {
-      // Είμαστε Online (θεωρητικά): Προσπαθούμε να φορτώσουμε τον player
+      // Είμαστε Online: Προσπαθούμε να φορτώσουμε τον player
       initPlayer();
     }
 
-    // Cleanup function
+    // Cleanup function: Πολύ σημαντικό για να μην τρέχουν πολλαπλά intervals/players
     return () => {
-      // Καθαρίζουμε player και intervals
       if (recoveryInterval) clearInterval(recoveryInterval);
       if (hlsRef.current) {
         hlsRef.current.destroy();
@@ -220,7 +210,7 @@ export default function SolCam() {
       }
     };
     
-  }, [isOffline]); // <--- Τρέχει ξανά όταν αλλάζει το isOffline
+  }, [isOffline]); // <-- Τρέχει ξανά κάθε φορά που αλλάζει το status
 
   return (
     <>
