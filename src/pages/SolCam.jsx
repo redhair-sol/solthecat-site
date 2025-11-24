@@ -6,7 +6,7 @@ import Hls from "hls.js";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
-// ----- STYLES -----
+// ----- STYLES (Παραμένουν ως έχουν) -----
 const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
@@ -35,7 +35,6 @@ const VideoBox = styled.div`
   transition: opacity 0.4s ease;
 `;
 
-/* ⭐ NEW LIVE BADGE WITH BLINKING DOT ⭐ */
 const LiveBadge = styled.div`
   position: absolute;
   top: 12px;
@@ -50,6 +49,7 @@ const LiveBadge = styled.div`
   display: flex;
   align-items: center;
   gap: 6px;
+  z-index: 10;
 `;
 
 const LiveDot = styled.div`
@@ -79,12 +79,6 @@ const OfflineBox = styled.div`
   transition: opacity 0.4s ease;
 `;
 
-const OfflineImage = styled.img`
-  width: 100%;
-  display: block;
-  object-fit: cover;
-`;
-
 const OfflineCaption = styled.div`
   padding: 1rem;
   font-size: 1rem;
@@ -101,13 +95,19 @@ const Video = styled.video`
   background: #000;
 `;
 
-// ----- CHECK STREAM WITH NON-CACHED GET -----
+// ----- CHECK STREAM FUNCTION (ΕΔΩ ΕΙΝΑΙ ΤΟ LOGGING) -----
 async function checkStream(url) {
   try {
     const noCacheUrl = `${url}?t=${Date.now()}`;
     const res = await fetch(noCacheUrl, { method: "GET" });
+    
+    if (res.status !== 200) {
+        console.warn(`[SolCam Recovery] Manifest check failed. Status: ${res.status}`);
+    }
+
     return res.status === 200;
-  } catch {
+  } catch (err) {
+    console.error(`[SolCam Recovery] Fetch Error (Network/CORS): ${err.name} - The main manifest is unreachable.`);
     return false;
   }
 }
@@ -116,6 +116,10 @@ export default function SolCam() {
   const videoRef = useRef(null);
   const { language } = useLanguage();
   const [isOffline, setIsOffline] = useState(false);
+
+  // Αν θέλεις να χρησιμοποιήσεις τη μέθοδο debugging window.hls = hls,
+  // μπορείς να ορίσεις εδώ τη ref
+  const hlsRef = useRef(null);
 
   const text = {
     en: {
@@ -134,60 +138,89 @@ export default function SolCam() {
 
   useEffect(() => {
     let hls;
+    let recoveryInterval;
+    const video = videoRef.current; // Παίρνουμε το video element μία φορά
 
-    const loadStream = async () => {
-      const video = videoRef.current;
-      if (!video) return;
-
-      // 1. Έλεγχος πραγματικού online
+    // 1. Συνάρτηση για φόρτωση του Player (τρέχει όταν isOffline === false)
+    const initPlayer = async () => {
+      // Κάνουμε έναν γρήγορο αρχικό έλεγχο
       const online = await checkStream(streamURL);
-
       if (!online) {
+        console.warn("[SolCam] Initial check failed. Switching to Offline mode.");
         setIsOffline(true);
         return;
       }
 
-      // 2. Stream is online → παίξε
-      setIsOffline(false);
-
-      if (hls) hls.destroy();
+      if (!video) return; 
 
       if (Hls.isSupported()) {
         hls = new Hls();
-        hls.loadSource(streamURL + "?force=" + Date.now());
+        hlsRef.current = hls; // Αποθήκευση της HLS instance στη ref
+        
+        hls.loadSource(`${streamURL}?force=${Date.now()}`);
         hls.attachMedia(video);
 
         hls.on(Hls.Events.MANIFEST_PARSED, () => {
-          setIsOffline(false);
+          console.log("[SolCam HLS] Manifest parsed successfully.");
+          video.play().catch(() => {
+            video.muted = true;
+            video.play();
+          });
         });
 
         hls.on(Hls.Events.ERROR, (event, data) => {
-          if (data.fatal) setIsOffline(true);
+          if (data.fatal) {
+            console.error(`[SolCam HLS] Fatal Error detected: ${data.details}. Switching to Offline.`);
+            hls.destroy();
+            hlsRef.current = null;
+            setIsOffline(true);
+          }
         });
       } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        video.src = streamURL + `?t=${Date.now()}`;
-        video.onerror = () => setIsOffline(true);
-      }
-
-      video.play().catch(() => {
-        video.muted = true;
+        // Safari Support
+        video.src = `${streamURL}?t=${Date.now()}`;
         video.play();
-      });
+        
+        video.onerror = () => {
+          console.error("[SolCam] Native HLS error. Switching to Offline.");
+          setIsOffline(true);
+        };
+      }
     };
 
-    // initial load
-    loadStream();
+    // 2. Συνάρτηση επαναφοράς (τρέχει όταν isOffline === true)
+    const checkRecovery = async () => {
+      const online = await checkStream(streamURL);
+      
+      // Αυτό το log θα σου δείξει αν το Polling περνάει ή όχι
+      console.log(`[SolCam Recovery] Polling for manifest (5s interval). Result: ${online}`); 
 
-    // retry when offline
-    const interval = setInterval(() => {
-      if (isOffline) loadStream();
-    }, 8000);
+      if (online) {
+        setIsOffline(false); // Επανεκκίνηση!
+      }
+    };
 
+    // --- ΚΥΡΙΑ ΛΟΓΙΚΗ EFFECT ---
+    if (isOffline) {
+      // Είμαστε Offline: Ξεκινάμε το polling για να δούμε πότε θα επιστρέψει
+      console.log("[SolCam] Entering Offline Recovery Loop.");
+      recoveryInterval = setInterval(checkRecovery, 5000);
+    } else {
+      // Είμαστε Online (θεωρητικά): Προσπαθούμε να φορτώσουμε τον player
+      initPlayer();
+    }
+
+    // Cleanup function
     return () => {
-      clearInterval(interval);
-      if (hls) hls.destroy();
+      // Καθαρίζουμε player και intervals
+      if (recoveryInterval) clearInterval(recoveryInterval);
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
+      }
     };
-  }, []);
+    
+  }, [isOffline]); // <--- Τρέχει ξανά όταν αλλάζει το isOffline
 
   return (
     <>
