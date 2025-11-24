@@ -57,7 +57,7 @@ const LiveDot = styled.div`
   height: 10px;
   background: white;
   border-radius: 50%;
-  animation: pulse 1.2s infinite ease-in-out;
+  animation: pulse 2.5s infinite ease-in-out;
 
   @keyframes pulse {
     0% { transform: scale(0.7); opacity: 0.6; }
