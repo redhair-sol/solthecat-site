@@ -300,7 +300,7 @@ export default function Home() {
         </motion.div>
 
         {/* QUOTE TOGGLE */}
-        <LanguageToggle style={{ marginTop: "2.2rem" }}>
+        <LanguageToggle style={{ marginTop: "2.4rem" }}>
           <ToggleButton onClick={() => setMode("mood")} $active={mode === "mood"}>
             {t.toggleMood}
           </ToggleButton>
@@ -319,7 +319,7 @@ export default function Home() {
               backgroundColor: "#fff3f8",
               padding: "1.2rem",
               borderRadius: "1.5rem",
-              marginTop: "1.5rem",
+              marginTop: "1.6rem",
               maxWidth: "600px",
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
               textAlign: "center",
@@ -345,7 +345,7 @@ export default function Home() {
               maxWidth: "600px",
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
               textAlign: "center",
-              marginTop: "1.5rem",
+              marginTop: "1.6rem",
             }}
           >
             <p style={{ color: "#5b2b7b" }}>
@@ -382,7 +382,7 @@ export default function Home() {
             padding: "1.5rem",
             borderRadius: "1.5rem",
             maxWidth: "600px",
-            marginTop: "2.5rem",
+            marginTop: "1.6rem",
             textAlign: "center",
             boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
           }}
@@ -416,7 +416,7 @@ export default function Home() {
             display: "inline-flex",
             alignItems: "center",
             color: "#c187d8",
-            marginTop: "1.8rem",
+            marginTop: "1.6rem",
             textDecoration: "none",
           }}
         >
