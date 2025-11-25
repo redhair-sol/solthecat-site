@@ -284,7 +284,7 @@ export default function Home() {
         <p
           style={{
             maxWidth: "600px",
-            margin: "0 auto 2rem",
+            margin: "0 auto 0.5rem",
             padding: "0 1rem",
             color: "#5b2b7b",
             fontSize: "1rem",
