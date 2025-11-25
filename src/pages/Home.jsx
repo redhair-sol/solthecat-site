@@ -7,6 +7,35 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import useStreakBadges from "../hooks/useStreakBadges";
 
+// ----- LIVE BADGE -----
+const LiveBadge = styled.div`
+  background: #ff0000;
+  color: white;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 9999;
+`;
+
+const LiveDot = styled.div`
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: pulse 2.5s infinite ease-in-out;
+
+  @keyframes pulse {
+    0% { transform: scale(0.7); opacity: 0.6; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.7); opacity: 0.6; }
+  }
+`;
+
 const JourneyButton = styled(Link)`
   padding: 0.8rem 1.5rem;
   background-color: #c187d8;
@@ -15,9 +44,8 @@ const JourneyButton = styled(Link)`
   border-radius: 16px;
   font-weight: bold;
   display: inline-block;
-  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
-  transition: transform 0.2s ease-in-out;
   margin-top: 1.5rem;
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
@@ -45,22 +73,7 @@ const ToggleButton = styled.button`
   justify-content: center;
   gap: 0.4rem;
   font-weight: 500;
-  text-align: center;
 `;
-
-function getDailyMessage(mode, language, options) {
-  const today = new Date().toISOString().slice(0, 10);
-  const key = `solDaily-${mode}-${language}-${today}`;
-  const cached = localStorage.getItem(key);
-
-  if (cached) {
-    return JSON.parse(cached);
-  } else {
-    const selected = options[Math.floor(Math.random() * options.length)];
-    localStorage.setItem(key, JSON.stringify(selected));
-    return selected;
-  }
-}
 
 export default function Home() {
   const { language, setLanguage } = useLanguage();
@@ -70,43 +83,68 @@ export default function Home() {
 
   const [quote, setQuote] = useState("");
   const [mode, setMode] = useState("mood");
+  const [isLive, setIsLive] = useState(false);
 
-  const { streak, currentBadge, nextBadge, unlockedToday } = useStreakBadges();
+  const streamURL = "https://solcam.solthecat.com/solcam/index.m3u8";
 
-  const badgeContent = {
-  en: {
-    streak: "Visit Streak",
-    next: "Next",
-    unlocked: "🎉 New Badge Unlocked Today!"
-  },
-  el: {
-    streak: "Σερί Επισκέψεων",
-    next: "Επόμενο",
-    unlocked: "🎉 Νέο Badge Ξεκλειδώθηκε Σήμερα!"
+  const checkStream = async () => {
+    try {
+      const res = await fetch(`${streamURL}?t=${Date.now()}`);
+      setIsLive(res.status === 200);
+    } catch {
+      setIsLive(false);
+    }
+  };
+
+  useEffect(() => { checkStream(); }, []);
+  useEffect(() => {
+    const interval = setInterval(checkStream, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const { streak, currentBadge, unlockedToday } = useStreakBadges();
+
+  function getDailyMessage(mode, language, options) {
+    const today = new Date().toISOString().slice(0, 10);
+    const key = `solDaily-${mode}-${language}-${today}`;
+    const cached = localStorage.getItem(key);
+
+    if (cached) return JSON.parse(cached);
+
+    const selected = options[Math.floor(Math.random() * options.length)];
+    localStorage.setItem(key, JSON.stringify(selected));
+    return selected;
   }
-};
-  const b = badgeContent[language];
 
   useEffect(() => {
     const today = new Date();
     const isoDate = today.toISOString().slice(0, 10);
-    const dayOfWeek = today.toLocaleDateString("en-US", { weekday: "long" }).toLowerCase();
+    const dayOfWeek = today
+      .toLocaleDateString("en-US", { weekday: "long" })
+      .toLowerCase();
     const month = today.getMonth();
-    const season = ["winter", "winter", "spring", "spring", "spring", "summer", "summer", "summer", "autumn", "autumn", "autumn", "winter"][month];
 
-    const file = mode === "fortune" ? "/data/smartFortunes.json" : "/data/smartQuotes.json";
+    const season = [
+      "winter","winter","spring","spring","spring",
+      "summer","summer","summer","autumn","autumn","autumn","winter"
+    ][month];
+
+    const file =
+      mode === "fortune"
+        ? "/data/smartFortunes.json"
+        : "/data/smartQuotes.json";
 
     fetch(file)
       .then((res) => res.json())
       .then((data) => {
-        const options = mode === "fortune"
-          ? (Array.isArray(data.fortunes)
-              ? data.fortunes.map(f => f[language]).filter(Boolean)
-              : [])
-          : data[isoDate]?.[language] ||
-            data[dayOfWeek]?.[language] ||
-            data[season]?.[language] ||
-            data["default"]?.[language] || [];
+        const options =
+          mode === "fortune"
+            ? data.fortunes.map((f) => f[language]).filter(Boolean)
+            : data[isoDate]?.[language] ||
+              data[dayOfWeek]?.[language] ||
+              data[season]?.[language] ||
+              data["default"]?.[language] ||
+              [];
 
         const selected = getDailyMessage(mode, language, options);
         setQuote(
@@ -122,28 +160,34 @@ export default function Home() {
     en: {
       title: "the journey of a Queen",
       flair: "Fluffy. Fierce. Fabulous. 🐾🐾🐾",
-      bio: `Welcome to the official home of solthecat — the feline queen behind the SOLadventures series. From Athens to Paris and beyond, Sol brings elegance, attitude, and a touch of royal paw-power to every destination. Follow her travels, her tales, and her timeless stare.`,
+      bio: "Welcome to the official home...",
       viewJourney: "View the Journey",
-      quoteTitle: mode === "fortune" ? "Royal Fortune of the Day" : "Royal Mood of the Day",
-      gamesTitle: "🎮 Ready to play with Sol?",
-      gamesText: "Explore mini-games inspired by her royal travels — from memory cards to paw-powered puzzles!",
-      gamesCTA: "Play the Games",
-      instagram: "Follow on Instagram",
+      quoteTitle:
+        mode === "fortune"
+          ? "Royal Fortune of the Day"
+          : "Royal Mood of the Day",
       toggleMood: "Mood of the Day",
-      toggleFortune: "Words of Sol"
+      toggleFortune: "Words of Sol",
+      instagram: "Follow on Instagram",
+      gamesTitle: "🎮 Ready to play with Sol?",
+      gamesText: "Explore mini-games inspired by her travels!",
+      gamesCTA: "Play the Games",
     },
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
       flair: "Χνουδωτή. Δυναμική. Ακαταμάχητη. 🐾🐾🐾",
-      bio: `Καλωσήρθες στο επίσημο σπίτι της solthecat — της βασίλισσας με πατούσες πίσω από τη σειρά SOLadventures. Από την Αθήνα ως το Παρίσι και πέρα, η Sol φέρνει κομψότητα, ύφος και βασιλική γοητεία σε κάθε της στάση.`,
+      bio: "Καλωσήρθες στο επίσημο σπίτι...",
       viewJourney: "Δες το Ταξίδι",
-      quoteTitle: mode === "fortune" ? "Η Πατουσένια Συμβουλή της Ημέρας" : "Η Πατουσένια Στιγμή της Ημέρας",
-      gamesTitle: "🎮 Παίξε με τη Sol!",
-      gamesText: "Ανακάλυψε mini-games εμπνευσμένα από τα βασιλικά της ταξίδια — memory cards, παζλ και άλλα!",
-      gamesCTA: "Παίξε Παιχνίδια",
-      instagram: "Ακολούθησε στο Instagram",
+      quoteTitle:
+        mode === "fortune"
+          ? "Η Πατουσένια Συμβουλή της Ημέρας"
+          : "Η Πατουσένια Στιγμή της Ημέρας",
       toggleMood: "Διάθεση Ημέρας",
-      toggleFortune: "Λόγια της Sol"
+      toggleFortune: "Λόγια της Sol",
+      instagram: "Ακολούθησε στο Instagram",
+      gamesTitle: "🎮 Παίξε με τη Sol!",
+      gamesText: "Ανακάλυψε mini-games...",
+      gamesCTA: "Παίξε Παιχνίδια",
     },
   };
 
@@ -157,11 +201,52 @@ export default function Home() {
         {hasSearchParam && <meta name="robots" content="noindex, follow" />}
       </Helmet>
 
+      {/* LIVE BADGE POSITION FIX */}
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .live-badge-link {
+              top: 10px !important;
+              left: 50% !important;
+              transform: translateX(-50%) !important;
+              right: auto !important;
+            }
+          }
+
+          @media (max-width: 360px) {
+            .live-badge-link {
+              top: 30px !important;
+            }
+          }
+        `}
+      </style>
+
       <PageContainer
+        style={{ position: "relative" }}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
+
+        {isLive && (
+          <Link
+            to="/solcam"
+            className="live-badge-link"
+            style={{
+              position: "absolute",
+              top: "18px",
+              right: "18px",
+              textDecoration: "none",
+              zIndex: 9999,
+            }}
+          >
+            <LiveBadge>
+              <LiveDot /> LIVE
+            </LiveBadge>
+          </Link>
+        )}
+
+        {/* LANGUAGE */}
         <LanguageToggle>
           <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
             🇬🇧 English
@@ -171,6 +256,7 @@ export default function Home() {
           </ToggleButton>
         </LanguageToggle>
 
+        {/* TITLE */}
         <h2
           style={{
             fontSize: "1.8rem",
@@ -179,7 +265,6 @@ export default function Home() {
             color: "#4a005f",
             fontStyle: "italic",
             margin: "1.2rem 0",
-            textShadow: "0 1px 1px rgba(0, 0, 0, 0.05)",
           }}
         >
           {t.title}
@@ -189,7 +274,6 @@ export default function Home() {
           style={{
             fontSize: "1.3rem",
             fontStyle: "italic",
-            fontWeight: 500,
             color: "#6a1b9a",
             marginBottom: "2rem",
           }}
@@ -200,26 +284,22 @@ export default function Home() {
         <p
           style={{
             maxWidth: "600px",
-            width: "100%",
-            fontSize: "1rem",
-            color: "#5b2b7b",
-            lineHeight: "1.6",
-            margin: "0 auto 2rem auto",
+            margin: "0 auto 2rem",
             padding: "0 1rem",
-            fontFamily: "'Segoe UI', 'Helvetica Neue', sans-serif",
+            color: "#5b2b7b",
+            fontSize: "1rem",
+            lineHeight: "1.6",
           }}
         >
           {t.bio}
         </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-        >
+        {/* JOURNEY BUTTON */}
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <JourneyButton to="/episodes">{t.viewJourney}</JourneyButton>
         </motion.div>
 
+        {/* QUOTE TOGGLE */}
         <LanguageToggle style={{ marginTop: "2.2rem" }}>
           <ToggleButton onClick={() => setMode("mood")} $active={mode === "mood"}>
             {t.toggleMood}
@@ -229,11 +309,12 @@ export default function Home() {
           </ToggleButton>
         </LanguageToggle>
 
+        {/* QUOTE BOX */}
         {quote && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 0.3 }}
             style={{
               backgroundColor: "#fff3f8",
               padding: "1.2rem",
@@ -244,143 +325,106 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            <h3
-              style={{
-                fontSize: "1.3rem",
-                fontWeight: "bold",
-                color: "#8e24aa",
-                marginBottom: "0.5rem",
-              }}
-            >
+            <h3 style={{ fontSize: "1.3rem", color: "#8e24aa", marginBottom: "0.5rem" }}>
               {t.quoteTitle}
             </h3>
-            <p
-              style={{
-                fontSize: "1rem",
-                fontStyle: "italic",
-                color: "#6a1b9a",
-              }}
-            >
-              {quote}
-            </p>
+            <p style={{ fontStyle: "italic", color: "#6a1b9a" }}>{quote}</p>
           </motion.div>
         )}
 
+        {/* BADGE */}
         {currentBadge && (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 1.4 }}
-    style={{
-      marginTop: "1.5rem",
-      backgroundColor: "#fff3f8",
-      padding: "1rem",
-      borderRadius: "1.5rem",
-      maxWidth: "600px",
-      boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-      textAlign: "center",
-    }}
-  >
-    <p style={{ fontSize: "0.95rem", color: "#5b2b7b", marginBottom: "0.6rem" }}>
-      {language === "en"
-        ? "Your loyalty badge shows how many days you’ve walked the royal path with Sol."
-        : "Το badge πίστης σου δείχνει πόσες μέρες ακολουθείς το βασιλικό μονοπάτι με τη Sol."}
-    </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            style={{
+              backgroundColor: "#fff3f8",
+              padding: "1rem",
+              borderRadius: "1.5rem",
+              maxWidth: "600px",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+              textAlign: "center",
+              marginTop: "1.5rem",
+            }}
+          >
+            <p style={{ color: "#5b2b7b" }}>
+              {language === "en"
+                ? "Your loyalty badge shows how many days you’ve walked the royal path with Sol."
+                : "Το badge πίστης σου δείχνει πόσες μέρες ακολουθείς το βασιλικό μονοπάτι με τη Sol."}
+            </p>
 
-    <p style={{ fontSize: "1.1rem", fontWeight: "bold", color: "#8e24aa" }}>
-      {currentBadge.emoji} {currentBadge.name[language]}
-    </p>
-    <p style={{ fontSize: "0.95rem", color: "#6a1b9a" }}>
-      {currentBadge.description[language]}
-    </p>
-    <p style={{ fontSize: "0.9rem", color: "#5b2b7b", marginTop: "0.5rem" }}>
-      {b.streak}: {streak} day{streak > 1 ? "s" : ""}
-    </p>
-    {unlockedToday && (
-      <p style={{ fontSize: "0.9rem", color: "#4a005f", marginTop: "0.5rem" }}>
-        {b.unlocked}
-      </p>
-    )}
-  </motion.div>
-)}
+            <p style={{ fontSize: "1.1rem", color: "#8e24aa", fontWeight: 600 }}>
+              {currentBadge.emoji} {currentBadge.name[language]}
+            </p>
 
+            <p style={{ color: "#6a1b9a" }}>{currentBadge.description[language]}</p>
+
+            <p style={{ color: "#5b2b7b", marginTop: "0.5rem" }}>
+              Visit Streak: {streak} day{streak > 1 ? "s" : ""}
+            </p>
+
+            {unlockedToday && (
+              <p style={{ color: "#4a005f", marginTop: "0.5rem" }}>
+                🎉 New Badge Unlocked Today!
+              </p>
+            )}
+          </motion.div>
+        )}
+
+        {/* GAMES */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2 }}
+          transition={{ delay: 0.8 }}
           style={{
             backgroundColor: "#f8bbd0",
             padding: "1.5rem",
             borderRadius: "1.5rem",
-            marginTop: "2.5rem",
             maxWidth: "600px",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+            marginTop: "2.5rem",
+            textAlign: "center",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
           }}
         >
-          <h3
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              color: "#6a1b9a",
-              marginBottom: "0.8rem",
-            }}
-          >
+          <h3 style={{ color: "#6a1b9a", fontSize: "1.5rem", fontWeight: 700 }}>
             {t.gamesTitle}
           </h3>
-          <p
-            style={{
-              fontSize: "1rem",
-              color: "#4a005f",
-              marginBottom: "1.2rem",
-            }}
-          >
-            {t.gamesText}
-          </p>
+          <p style={{ color: "#4a005f", marginBottom: "1.2rem" }}>{t.gamesText}</p>
           <Link
             to="/games"
             style={{
               display: "inline-block",
               padding: "0.6rem 1.2rem",
               backgroundColor: "#c187d8",
-              color: "#fff",
+              color: "white",
+              textDecoration: "none",
               borderRadius: "1rem",
               fontWeight: "bold",
-              textDecoration: "none",
-              transition: "transform 0.2s ease-in-out",
             }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
-            onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1.0)")}
           >
             {t.gamesCTA}
           </Link>
         </motion.div>
 
+        {/* INSTAGRAM */}
         <a
           href="https://www.instagram.com/solthecat01/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            color: "#c187d8",
-            textDecoration: "none",
             display: "inline-flex",
             alignItems: "center",
-            fontWeight: "normal",
-            fontSize: "0.95rem",
+            color: "#c187d8",
             marginTop: "1.8rem",
+            textDecoration: "none",
           }}
         >
-          <picture style={{ display: "inline-block", marginRight: "0.4rem" }}>
-            <source srcSet="/icons/instagram-icon.webp" type="image/webp" />
-            <img
-              src="/icons/instagram-icon.png"
-              alt="Instagram"
-              style={{
-                width: "20px",
-                height: "20px",
-                verticalAlign: "middle",
-              }}
-            />
-          </picture>
+          <img
+            src="/icons/instagram-icon.png"
+            alt="Instagram"
+            style={{ width: "20px", height: "20px", marginRight: "0.4rem" }}
+          />
           {t.instagram}
         </a>
       </PageContainer>
