@@ -160,7 +160,7 @@ export default function Home() {
     en: {
       title: "the journey of a Queen",
       flair: "Fluffy. Fierce. Fabulous. 🐾🐾🐾",
-      bio: "Welcome to the official home...",
+      bio: "Welcome to the official home of solthecat, the feline queen behind the SOLadventures series. From Athens to Paris and beyond, Sol brings elegance, attitude, and a touch of royal paw-power to every destination. Follow her travels, her tales, and her timeless stare.",
       viewJourney: "View the Journey",
       quoteTitle:
         mode === "fortune"
@@ -176,7 +176,7 @@ export default function Home() {
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
       flair: "Χνουδωτή. Δυναμική. Ακαταμάχητη. 🐾🐾🐾",
-      bio: "Καλωσήρθες στο επίσημο σπίτι...",
+      bio: "Καλωσήρθες στο επίσημο σπίτι της solthecat,της βασίλισσας με πατούσες πίσω από τη σειρά SOLadventures. Από την Αθήνα ως το Παρίσι και πέρα, η Sol φέρνει κομψότητα, ύφος και βασιλική γοητεία σε κάθε της στάση.",
       viewJourney: "Δες το Ταξίδι",
       quoteTitle:
         mode === "fortune"
