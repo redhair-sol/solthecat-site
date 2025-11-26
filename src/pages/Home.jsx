@@ -9,7 +9,7 @@ import useStreakBadges from "../hooks/useStreakBadges";
 
 // ----- LIVE BADGE -----
 const LiveBadge = styled.div`
-  background: #ff0000;
+  background: #47c9a0;
   color: white;
   font-weight: 600;
   padding: 4px 10px;
@@ -18,7 +18,7 @@ const LiveBadge = styled.div`
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   z-index: 9999;
 `;
 

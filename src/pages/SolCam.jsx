@@ -39,12 +39,12 @@ const LiveBadge = styled.div`
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #ff0000;
+  background: #47c9a0;
   color: white;
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
