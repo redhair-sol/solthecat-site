@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the main pyramid at Chichén Itzá called El Castillo?",
+      "el": "Η κύρια πυραμίδα στο Chichén Itzá ονομάζεται El Castillo;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Temple of the Sun", "el": "Ναός του Ήλιου" }, "correct": false },
+      { "text": { "en": "Pyramid of Tlaloc", "el": "Πυραμίδα του Τλαλόκ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Which civilization built Chichén Itzá?",
+      "el": "Ποιος πολιτισμός έχτισε το Chichén Itzá;"
+    },
+    "answers": [
+      { "text": { "en": "The Maya", "el": "Οι Μάγια" }, "correct": true },
+      { "text": { "en": "The Aztecs", "el": "Οι Αζτέκοι" }, "correct": false },
+      { "text": { "en": "The Inca", "el": "Οι Ίνκα" }, "correct": false },
+      { "text": { "en": "The Olmecs", "el": "Οι Ολμέκοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is Chichén Itzá located in Mexico?",
+      "el": "Βρίσκεται το Chichén Itzá στο Μεξικό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Peru", "el": "Περού" }, "correct": false },
+      { "text": { "en": "Guatemala", "el": "Γουατεμάλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Is Chichén Itzá located on the Yucatán Peninsula?",
+      "el": "Βρίσκεται το Chichén Itzá στη χερσόνησο Γιουκατάν;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Baja California", "el": "Μπάχα Καλιφόρνια" }, "correct": false },
+      { "text": { "en": "Patagonia", "el": "Παταγονία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which astronomical event creates the serpent shadow on El Castillo?",
+      "el": "Ποιο αστρονομικό γεγονός δημιουργεί τη σκιά του φιδιού στο El Castillo;"
+    },
+    "answers": [
+      { "text": { "en": "The equinox", "el": "Η ισημερία" }, "correct": true },
+      { "text": { "en": "The solstice", "el": "Το ηλιοστάσιο" }, "correct": false },
+      { "text": { "en": "A lunar eclipse", "el": "Μια σεληνιακή έκλειψη" }, "correct": false },
+      { "text": { "en": "The full moon", "el": "Η πανσέληνος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Does El Castillo have four sides?",
+      "el": "Έχει το El Castillo τέσσερις πλευρές;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Three", "el": "Τρεις" }, "correct": false },
+      { "text": { "en": "Six", "el": "Έξι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "How many steps does El Castillo have in total?",
+      "el": "Πόσα συνολικά σκαλοπάτια έχει το El Castillo;"
+    },
+    "answers": [
+      { "text": { "en": "365", "el": "365" }, "correct": true },
+      { "text": { "en": "91", "el": "91" }, "correct": false },
+      { "text": { "en": "180", "el": "180" }, "correct": false },
+      { "text": { "en": "52", "el": "52" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Is El Castillo designed as a solar calendar?",
+      "el": "Είναι το El Castillo σχεδιασμένο ως ηλιακό ημερολόγιο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is a lunar calendar", "el": "Είναι σεληνιακό ημερολόγιο" }, "correct": false },
+      { "text": { "en": "It is a star map", "el": "Είναι χάρτης αστεριών" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which deity is linked to the pyramid?",
+      "el": "Ποια θεότητα συνδέεται με την πυραμίδα;"
+    },
+    "answers": [
+      { "text": { "en": "Kukulkan", "el": "Κουκουλκάν" }, "correct": true },
+      { "text": { "en": "Quetzalcoatl", "el": "Κετσαλκοάτλ" }, "correct": false },
+      { "text": { "en": "Tlaloc", "el": "Τλαλόκ" }, "correct": false },
+      { "text": { "en": "Huitzilopochtli", "el": "Ουιτζιλοπότστλι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which structure at Chichén Itzá is famous for its echo?",
+      "el": "Ποιο κτίσμα στο Chichén Itzá είναι διάσημο για την ηχώ του;"
+    },
+    "answers": [
+      { "text": { "en": "The Great Ball Court", "el": "Το Μεγάλο Γήπεδο Παιχνιδιού" }, "correct": true },
+      { "text": { "en": "The Sacred Pool", "el": "Η Ιερή Πισίνα" }, "correct": false },
+      { "text": { "en": "The Red House", "el": "Το Κόκκινο Σπίτι" }, "correct": false },
+      { "text": { "en": "The Warriors’ Temple", "el": "Ο Ναός των Πολεμιστών" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which structure was used for observing the stars?",
+      "el": "Ποιο κτίσμα χρησιμοποιούνταν για παρατήρηση των άστρων;"
+    },
+    "answers": [
+      { "text": { "en": "El Caracol", "el": "El Caracol" }, "correct": true },
+      { "text": { "en": "Temple of Jaguars", "el": "Ναός των Ιαγουάρων" }, "correct": false },
+      { "text": { "en": "Nunnery", "el": "Το Μοναστήρι" }, "correct": false },
+      { "text": { "en": "Red House", "el": "Κόκκινο Σπίτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What is a cenote?",
+      "el": "Τι είναι η «cenote»;"
+    },
+    "answers": [
+      { "text": { "en": "A natural sinkhole", "el": "Φυσική καταβόθρα" }, "correct": true },
+      { "text": { "en": "A pyramid", "el": "Πυραμίδα" }, "correct": false },
+      { "text": { "en": "A ceremonial mask", "el": "Τελετουργική μάσκα" }, "correct": false },
+      { "text": { "en": "A Mayan king", "el": "Βασιλιάς των Μάγια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Which cenote near Chichén Itzá is the most famous?",
+      "el": "Ποια cenote κοντά στο Chichén Itzá είναι η πιο διάσημη;"
+    },
+    "answers": [
+      { "text": { "en": "Cenote Sagrado", "el": "Cenote Sagrado" }, "correct": true },
+      { "text": { "en": "Cenote Azul", "el": "Cenote Azul" }, "correct": false },
+      { "text": { "en": "Cenote Verde", "el": "Cenote Verde" }, "correct": false },
+      { "text": { "en": "Cenote Angel", "el": "Cenote Angel" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Was the Great Ball Court used for ritual games?",
+      "el": "Χρησιμοποιούνταν το Μεγάλο Γήπεδο Παιχνιδιού για τελετουργικά παιχνίδια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was used for markets", "el": "Χρησιμοποιούνταν για αγορές" }, "correct": false },
+      { "text": { "en": "It was a palace", "el": "Ήταν παλάτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What material was mainly used in Maya construction?",
+      "el": "Ποιο υλικό χρησιμοποιούσαν κυρίως οι Μάγια στις κατασκευές τους;"
+    },
+    "answers": [
+      { "text": { "en": "Limestone", "el": "Ασβεστόλιθος" }, "correct": true },
+      { "text": { "en": "Granite", "el": "Γρανίτης" }, "correct": false },
+      { "text": { "en": "Marble", "el": "Μάρμαρο" }, "correct": false },
+      { "text": { "en": "Sandstone", "el": "Ψαμμίτης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Is Chichén Itzá a UNESCO World Heritage Site?",
+      "el": "Είναι το Chichén Itzá Μνημείο Παγκόσμιας Κληρονομιάς της UNESCO;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is a Biosphere Reserve", "el": "Είναι Απόθεμα Βιόσφαιρας" }, "correct": false },
+      { "text": { "en": "It has no designation", "el": "Δεν έχει χαρακτηρισμό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Did Chichén Itzá reach its peak influence around the 8th–9th centuries?",
+      "el": "Έφτασε το Chichén Itzá στο απόγειό του τον 8ο–9ο αιώνα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "In the 15th century", "el": "Τον 15ο αιώνα" }, "correct": false },
+      { "text": { "en": "In the 5th century", "el": "Τον 5ο αιώνα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Is the shape of the Great Ball Court like the letter I?",
+      "el": "Έχει το Μεγάλο Γήπεδο Παιχνιδιού σχήμα σαν το γράμμα I;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is circular", "el": "Είναι κυκλικό" }, "correct": false },
+      { "text": { "en": "It is square", "el": "Είναι τετράγωνο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Does the word 'cenote' refer to a natural sinkhole?",
+      "el": "Αναφέρεται η λέξη «cenote» σε φυσική καταβόθρα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It means 'temple'", "el": "Σημαίνει «ναός»" }, "correct": false },
+      { "text": { "en": "It means 'calendar'", "el": "Σημαίνει «ημερολόγιο»" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Does the main staircase of El Castillo face north?",
+      "el": "Βλέπει η κύρια σκάλα του El Castillo προς τον βορρά;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "East", "el": "Ανατολή" }, "correct": false },
+      { "text": { "en": "West", "el": "Δύση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Was Chichén Itzá an important center for trade and religion?",
+      "el": "Ήταν το Chichén Itzá σημαντικό κέντρο εμπορίου και θρησκείας;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only trade", "el": "Μόνο εμπόριο" }, "correct": false },
+      { "text": { "en": "Only religion", "el": "Μόνο θρησκεία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Is the jaguar commonly found in Maya carvings?",
+      "el": "Εμφανίζεται συχνά ο ιαγουάρος στις χαράξεις των Μάγια;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "The wolf appears more often", "el": "Ο λύκος εμφανίζεται πιο συχνά" }, "correct": false },
+      { "text": { "en": "The camel appears more often", "el": "Η καμήλα εμφανίζεται πιο συχνά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the Observatory (El Caracol) have a circular tower?",
+      "el": "Έχει το Παρατηρητήριο (El Caracol) κυκλικό πύργο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is triangular", "el": "Είναι τριγωνικό" }, "correct": false },
+      { "text": { "en": "It is octagonal", "el": "Είναι οκταγωνικό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Does Chichén Itzá show a mix of Maya-Toltec architecture?",
+      "el": "Εμφανίζει το Chichén Itzá μίξη αρχιτεκτονικής Μάγια-Τολτέκ;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is Romanesque", "el": "Είναι ρομανική" }, "correct": false },
+      { "text": { "en": "It is Baroque", "el": "Είναι μπαρόκ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is Chichén Itzá one of the New Seven Wonders of the World?",
+      "el": "Είναι το Chichén Itzá ένα από τα Νέα Επτά Θαύματα του Κόσμου;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It used to be, but not anymore", "el": "Ήταν παλιά, αλλά όχι πλέον" }, "correct": false },
+      { "text": { "en": "It has never been listed", "el": "Δεν έχει μπει ποτέ στη λίστα" }, "correct": false }
+    ]
+  }
+]
