@@ -6,10 +6,10 @@
       "el": "Είναι το Τορόντο πρωτεύουσα του Καναδά;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "Ottawa", "el": "Οττάβα" }, "correct": false },
-      { "text": { "en": "Montreal", "el": "Μοντρεάλ" }, "correct": false }
+      { "text": { "en": "Montreal", "el": "Μοντρεάλ" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false }
     ]
   },
   {
@@ -32,10 +32,10 @@
       "el": "Χρησιμοποιείται στο quote 'She bridged roar and reflection.';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Currents meet concrete", "el": "Ρεύματα συναντούν σκυρόδεμα" }, "correct": false },
       { "text": { "en": "Where water greets the skyline", "el": "Όπου το νερό χαιρετά τον ορίζοντα" }, "correct": false },
-      { "text": { "en": "Currents meet concrete", "el": "Ρεύματα συναντούν σκυρόδεμα" }, "correct": false }
+      { "text": { "en": "It is not used", "el": "Δεν χρησιμοποιείται" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -45,8 +45,8 @@
       "el": "Στάθηκε η SOL πάνω από τους Καταρράκτες του Horseshoe;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "American Falls", "el": "Καταρράκτες American" }, "correct": false },
       { "text": { "en": "Bridal Veil Falls", "el": "Καταρράκτης Bridal Veil" }, "correct": false }
     ]
@@ -58,10 +58,10 @@
       "el": "Περιγράφεται ο Πύργος CN ως ακλόνητος φρουρός;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Active beacon", "el": "Ενεργό φάρο" }, "correct": false },
-      { "text": { "en": "Dancing tower", "el": "Χορευτικός πύργος" }, "correct": false }
+      { "text": { "en": "Dancing tower", "el": "Χορευτικός πύργος" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -71,10 +71,10 @@
       "el": "Αναφέρει η ιστορία ρεύματα να ψιθυρίζουν στο σκυρόδεμα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "They roar at concrete", "el": "Βρυχώνται στο σκυρόδεμα" }, "correct": false },
-      { "text": { "en": "They clash with glass", "el": "Συγκρούονται με γυαλί" }, "correct": false }
+      { "text": { "en": "They clash with glass", "el": "Συγκρούονται με γυαλί" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -97,10 +97,10 @@
       "el": "Περιγράφεται ο ορίζοντας να χορεύει στον βρυχηθμό του ποταμού;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It bows to the roar", "el": "Υποκλίνεται στον βρυχηθμό" }, "correct": false },
-      { "text": { "en": "It hides from the roar", "el": "Κρύβεται από τον βρυχηθμό" }, "correct": false }
+      { "text": { "en": "It hides from the roar", "el": "Κρύβεται από τον βρυχηθμό" }, "correct": true }
     ]
   },
   {
@@ -110,10 +110,10 @@
       "el": "Αναφέρει το caption 'currents and towers';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Flow and form", "el": "Ροή και μορφή" }, "correct": false },
-      { "text": { "en": "Roar and reflection", "el": "Βρυχηθμός και αντανάκλαση" }, "correct": false }
+      { "text": { "en": "Roar and reflection", "el": "Βρυχηθμός και αντανάκλαση" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -123,12 +123,13 @@
       "el": "Περιγράφεται η πόλη χωρίς σύνορα ή φράγματα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only bridges", "el": "Μόνο γέφυρες" }, "correct": false },
       { "text": { "en": "Only barriers", "el": "Μόνο φράγματα" }, "correct": false },
-      { "text": { "en": "Only bridges", "el": "Μόνο γέφυρες" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 11,
     "question": {
@@ -136,12 +137,13 @@
       "el": "Είναι οι Καταρράκτες του Horseshoe μέρος των Νιαγάρα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "They are separate falls", "el": "Είναι ξεχωριστοί καταρράκτες" }, "correct": false },
-      { "text": { "en": "They are in Ontario only", "el": "Είναι μόνο στο Οντάριο" }, "correct": false }
+      { "text": { "en": "They are in Ontario only", "el": "Είναι μόνο στο Οντάριο" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
+
   {
     "id": 12,
     "question": {
@@ -149,12 +151,13 @@
       "el": "Αναφέρει η ιστορία ουράνια τόξα ύφαντα στο σούρουπο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "Only colors at dawn", "el": "Μόνο χρώματα την αυγή" }, "correct": false },
-      { "text": { "en": "Only spray at noon", "el": "Μόνο ψεκασμός το μεσημέρι" }, "correct": false }
+      { "text": { "en": "Only spray at noon", "el": "Μόνο ψεκασμός το μεσημέρι" }, "correct": false },
+      { "text": { "en": "Yes, woven at dusk", "el": "Ναι, υφασμένα στο σούρουπο" }, "correct": true }
     ]
   },
+
   {
     "id": 13,
     "question": {
@@ -162,12 +165,13 @@
       "el": "Περιγράφεται η διάθεση ως ενότητα ροής και μορφής;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only contrast", "el": "Μόνο αντίθεση" }, "correct": false },
-      { "text": { "en": "Only clash", "el": "Μόνο σύγκρουση" }, "correct": false }
+      { "text": { "en": "Only clash", "el": "Μόνο σύγκρουση" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 14,
     "question": {
@@ -175,12 +179,13 @@
       "el": "Αφηγείται η ιστορία σε αόριστο χρόνο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Present tense", "el": "Ενεστώτας" }, "correct": false },
-      { "text": { "en": "Future tense", "el": "Μέλλοντας" }, "correct": false }
+      { "text": { "en": "Future tense", "el": "Μέλλοντας" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
+
   {
     "id": 15,
     "question": {
@@ -194,6 +199,7 @@
       { "text": { "en": "It’s in Calgary", "el": "Είναι στο Κάλγκαρι" }, "correct": false }
     ]
   },
+
   {
     "id": 16,
     "question": {
@@ -201,12 +207,13 @@
       "el": "Γράφει η SOL την ιστορία της σε νερό και ορίζοντα;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "Only on the falls", "el": "Μόνο στους καταρράκτες" }, "correct": false },
-      { "text": { "en": "Only on the tower", "el": "Μόνο στον πύργο" }, "correct": false }
+      { "text": { "en": "Only on the tower", "el": "Μόνο στον πύργο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   },
+
   {
     "id": 17,
     "question": {
@@ -214,12 +221,13 @@
       "el": "Βρίσκεται το Νιαγάρα μεταξύ Οντάριο και Πολιτείας Νέας Υόρκης;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only in Ontario", "el": "Μόνο στο Οντάριο" }, "correct": false },
-      { "text": { "en": "Only in New York", "el": "Μόνο στη Νέα Υόρκη" }, "correct": false }
+      { "text": { "en": "Only in New York", "el": "Μόνο στη Νέα Υόρκη" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
+
   {
     "id": 18,
     "question": {
@@ -227,12 +235,13 @@
       "el": "Δείχνει η φωτογραφία ανθρώπους;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "Only distant figures", "el": "Μόνο απομακρυσμένες φιγούρες" }, "correct": false },
-      { "text": { "en": "Only reflections", "el": "Μόνο αντανακλάσεις" }, "correct": false }
+      { "text": { "en": "Only reflections", "el": "Μόνο αντανακλάσεις" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   },
+
   {
     "id": 19,
     "question": {
@@ -240,12 +249,13 @@
       "el": "Είναι το φόντο σε μαλακή εστίαση;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It’s sharp focus", "el": "Είναι καθαρή εστίαση" }, "correct": false },
-      { "text": { "en": "It’s out of frame", "el": "Είναι εκτός κάδρου" }, "correct": false }
+      { "text": { "en": "It’s out of frame", "el": "Είναι εκτός κάδρου" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 20,
     "question": {
@@ -259,6 +269,7 @@
       { "text": { "en": "Playful", "el": "Παιχνιδιάρικη" }, "correct": false }
     ]
   },
+
   {
     "id": 21,
     "question": {
@@ -266,12 +277,13 @@
       "el": "Είναι η εικόνα φωτορεαλιστική;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Illustration", "el": "Εικονογράφηση" }, "correct": false },
-      { "text": { "en": "Sketch", "el": "Σκίτσο" }, "correct": false }
+      { "text": { "en": "Sketch", "el": "Σκίτσο" }, "correct": false },
+      { "text": { "en": "Photorealistic yes", "el": "Ναι, φωτορεαλιστική" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 22,
     "question": {
@@ -279,12 +291,13 @@
       "el": "Έχει ο ουρανός απαλό ροζ και μπλε;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only grey", "el": "Μόνο γκρι" }, "correct": false },
-      { "text": { "en": "Only orange", "el": "Μόνο πορτοκαλί" }, "correct": false }
+      { "text": { "en": "Only orange", "el": "Μόνο πορτοκαλί" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
+
   {
     "id": 23,
     "question": {
@@ -292,12 +305,13 @@
       "el": "Έχει το πέτρινο κιγκλίδωμα μπαλώματα βρύων;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only cracks", "el": "Μόνο ρωγμές" }, "correct": false },
-      { "text": { "en": "Only graffiti", "el": "Μόνο γκράφιτι" }, "correct": false }
+      { "text": { "en": "Only graffiti", "el": "Μόνο γκράφιτι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 24,
     "question": {
@@ -305,12 +319,13 @@
       "el": "Άγγιξε η ζεστή βραδινή λάμψη το τρίχωμα της SOL;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It was in shadow", "el": "Ήταν στη σκιά" }, "correct": false },
-      { "text": { "en": "It was wet", "el": "Ήταν βρεγμένο" }, "correct": false }
+      { "text": { "en": "It was wet", "el": "Ήταν βρεγμένο" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Yes, it caught the warm light", "el": "Ναι, άγγιξε το φως" }, "correct": true }
     ]
   },
+
   {
     "id": 25,
     "question": {
@@ -318,10 +333,10 @@
       "el": "Περιγράφει η ιστορία διάλογο μεταξύ νερού και ορίζοντα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only clash of sounds", "el": "Μόνο σύγκρουση ήχων" }, "correct": false },
-      { "text": { "en": "Only flowing water", "el": "Μόνο τρεχούμενο νερό" }, "correct": false }
+      { "text": { "en": "Only flowing water", "el": "Μόνο τρεχούμενο νερό" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Yes, described as dialogue", "el": "Ναι, περιγράφεται ως διάλογος" }, "correct": true }
     ]
   }
 ]

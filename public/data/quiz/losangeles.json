@@ -2,12 +2,12 @@
   {
     "id": 1,
     "question": {
-      "en": "Is the episode titled 'Los Angeles, Hollywood & beach vibes'? ",
+      "en": "Is the episode titled 'Los Angeles, Hollywood & beach vibes'?",
       "el": "Έχει το επεισόδιο τίτλο 'Los Angeles, Hollywood & beach vibes';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Los Angeles, golden dreams", "el": "Los Angeles, golden dreams" }, "correct": false },
       { "text": { "en": "Los Angeles, surf tales", "el": "Los Angeles, surf tales" }, "correct": false }
     ]
@@ -19,10 +19,10 @@
       "el": "Αναφέρει το quote 'Lights fade. Presence stays.';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Lights rise. Stars follow.", "el": "Lights rise. Stars follow." }, "correct": false },
-      { "text": { "en": "Waves fade. Fame stays.", "el": "Waves fade. Fame stays." }, "correct": false }
+      { "text": { "en": "Waves fade. Fame stays.", "el": "Waves fade. Fame stays." }, "correct": true }
     ]
   },
   {
@@ -45,9 +45,9 @@
       "el": "Πού χαλάρωνε η SOL στο Λος Άντζελες;"
     },
     "answers": [
-      { "text": { "en": "On Santa Monica beach", "el": "Στην παραλία της Santa Monica" }, "correct": true },
+      { "text": { "en": "On Santa Monica beach", "el": "Στην παραλία της Santa Monica" }, "correct": false },
       { "text": { "en": "At Venice Pier", "el": "Στην προβλήτα της Venice" }, "correct": false },
-      { "text": { "en": "At Griffith Observatory", "el": "Στο Griffith Observatory" }, "correct": false },
+      { "text": { "en": "At Griffith Observatory", "el": "Στο Griffith Observatory" }, "correct": true },
       { "text": { "en": "Under the palm trees of Beverly Hills", "el": "Κάτω από τους φοίνικες του Beverly Hills" }, "correct": false }
     ]
   },
@@ -58,8 +58,8 @@
       "el": "Ποιο ορόσημο αιωρούταν πάνω από την αχλή;"
     },
     "answers": [
-      { "text": { "en": "The Hollywood sign", "el": "Το σήμα του Hollywood" }, "correct": true },
-      { "text": { "en": "The Capitol Records tower", "el": "Ο πύργος της Capitol Records" }, "correct": false },
+      { "text": { "en": "The Hollywood sign", "el": "Το σήμα του Hollywood" }, "correct": false },
+      { "text": { "en": "The Capitol Records tower", "el": "Ο πύργος της Capitol Records" }, "correct": true },
       { "text": { "en": "Downtown skyscrapers", "el": "Οι ουρανοξύστες του Downtown" }, "correct": false },
       { "text": { "en": "A billboard", "el": "Μια διαφημιστική πινακίδα" }, "correct": false }
     ]
@@ -71,9 +71,9 @@
       "el": "Τι έκαναν τα κύματα στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "They applauded", "el": "Χειροκρότησαν" }, "correct": true },
+      { "text": { "en": "They applauded", "el": "Χειροκρότησαν" }, "correct": false },
       { "text": { "en": "They crashed loudly", "el": "Χτύπησαν δυνατά" }, "correct": false },
-      { "text": { "en": "They whispered softly", "el": "Ψιθύρισαν απαλά" }, "correct": false },
+      { "text": { "en": "They whispered softly", "el": "Ψιθύρισαν απαλά" }, "correct": true },
       { "text": { "en": "They vanished completely", "el": "Εξαφανίστηκαν" }, "correct": false }
     ]
   },
@@ -84,9 +84,9 @@
       "el": "Ποιο πλάσμα ζήλεψε τη γαλήνη της SOL;"
     },
     "answers": [
-      { "text": { "en": "A seagull", "el": "Ένας γλάρος" }, "correct": true },
+      { "text": { "en": "A seagull", "el": "Ένας γλάρος" }, "correct": false },
       { "text": { "en": "A pelican", "el": "Ένας πελεκάνος" }, "correct": false },
-      { "text": { "en": "A surfer", "el": "Ένας σέρφερ" }, "correct": false },
+      { "text": { "en": "A surfer", "el": "Ένας σέρφερ" }, "correct": true },
       { "text": { "en": "A crab", "el": "Ένα καβούρι" }, "correct": false }
     ]
   },
@@ -110,8 +110,8 @@
       "el": "Με τι συγκρίθηκε η SOL στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "The light itself", "el": "Το ίδιο το φως" }, "correct": true },
-      { "text": { "en": "A Hollywood star", "el": "Μια σταρ του Hollywood" }, "correct": false },
+      { "text": { "en": "The light itself", "el": "Το ίδιο το φως" }, "correct": false },
+      { "text": { "en": "A Hollywood star", "el": "Μια σταρ του Hollywood" }, "correct": true },
       { "text": { "en": "A wave", "el": "Ένα κύμα" }, "correct": false },
       { "text": { "en": "A crown", "el": "Ένα στέμμα" }, "correct": false }
     ]
@@ -123,10 +123,220 @@
       "el": "Ποια ώρα της ημέρας κλείνει την ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Sunset", "el": "Ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Sunset", "el": "Ηλιοβασίλεμα" }, "correct": false },
       { "text": { "en": "Dawn", "el": "Αυγή" }, "correct": false },
-      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": true },
       { "text": { "en": "Noon", "el": "Μεσημέρι" }, "correct": false }
+    ]
+  },
+ 
+ {
+    "id": 11,
+    "question": {
+      "en": "Are palm shadows mentioned in the scene?",
+      "el": "Αναφέρονται σκιές από φοίνικες στη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only passing silhouettes", "el": "Μόνο περαστικές σιλουέτες" }, "correct": true },
+      { "text": { "en": "Only building shadows", "el": "Μόνο σκιές κτιρίων" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 12,
+    "question": {
+      "en": "Is the ocean breeze described as warm?",
+      "el": "Περιγράφεται το θαλασσινό αεράκι ζεστό;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was cool", "el": "Ήταν δροσερό" }, "correct": false },
+      { "text": { "en": "It was mild", "el": "Ήταν απαλό" }, "correct": true }
+    ]
+  },
+
+  {
+    "id": 13,
+    "question": {
+      "en": "Was SOL described as completely still?",
+      "el": "Περιγράφεται η SOL εντελώς ακίνητη;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Sometimes", "el": "Μερικές φορές" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Always moving", "el": "Πάντα κινούμενη" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 14,
+    "question": {
+      "en": "Are distant hills mentioned?",
+      "el": "Αναφέρονται μακρινοί λόφοι;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only cliffs", "el": "Μόνο γκρεμοί" }, "correct": false },
+      { "text": { "en": "Only ridges", "el": "Μόνο κορυφογραμμές" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 15,
+    "question": {
+      "en": "Is Santa Monica pier shown as crowded?",
+      "el": "Δείχνεται η προβλήτα της Santa Monica γεμάτη κόσμο;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is quiet", "el": "Είναι ήσυχη" }, "correct": true },
+      { "text": { "en": "It is stormy", "el": "Είναι θυελλώδης" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 16,
+    "question": {
+      "en": "Did SOL watch the waves rise?",
+      "el": "Παρακολουθούσε η SOL τα κύματα να υψώνονται;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She ignored them", "el": "Τα αγνόησε" }, "correct": false },
+      { "text": { "en": "She chased them", "el": "Τα κυνήγησε" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 17,
+    "question": {
+      "en": "Is the Hollywood haze described as golden?",
+      "el": "Περιγράφεται η αχλή του Hollywood χρυσή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was silver", "el": "Ήταν ασημένια" }, "correct": false },
+      { "text": { "en": "It was soft", "el": "Ήταν απαλή" }, "correct": true }
+    ]
+  },
+
+  {
+    "id": 18,
+    "question": {
+      "en": "Were filmmakers rushing in the scene?",
+      "el": "Έτρεχαν οι κινηματογραφιστές στη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "They were shouting", "el": "Φώναζαν" }, "correct": false },
+      { "text": { "en": "They were resting", "el": "Ξεκουράζονταν" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 19,
+    "question": {
+      "en": "Is SOL described as glowing?",
+      "el": "Περιγράφεται η SOL να λάμπει;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She was dull", "el": "Ήταν θαμπή" }, "correct": false },
+      { "text": { "en": "She was hidden", "el": "Ήταν κρυμμένη" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 20,
+    "question": {
+      "en": "Did the sand shimmer in the story?",
+      "el": "Άστραφτε η άμμος στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It shimmered softly", "el": "Άστραφτε απαλά" }, "correct": true },
+      { "text": { "en": "It was dark", "el": "Ήταν σκοτεινή" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 21,
+    "question": {
+      "en": "Does the story mention traffic sounds?",
+      "el": "Αναφέρει ήχους κυκλοφορίας η ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Only distant horns", "el": "Μόνο μακριές κόρνες" }, "correct": false },
+      { "text": { "en": "Only engines", "el": "Μόνο μηχανές" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 22,
+    "question": {
+      "en": "Was the Hollywood sign visible at sunset?",
+      "el": "Ήταν ορατό το Hollywood sign στο ηλιοβασίλεμα;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "It was bright", "el": "Ήταν φωτεινό" }, "correct": false },
+      { "text": { "en": "It was hidden", "el": "Ήταν κρυμμένο" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 23,
+    "question": {
+      "en": "Is the ocean sound described as rhythmic?",
+      "el": "Περιγράφεται ο ήχος του ωκεανού ρυθμικός;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Chaotic", "el": "Χαοτικός" }, "correct": false },
+      { "text": { "en": "Silent", "el": "Σιωπηλός" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 24,
+    "question": {
+      "en": "Did SOL’s shadow stretch long?",
+      "el": "Μάκρυνε η σκιά της SOL;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "A little", "el": "Λίγο" }, "correct": true },
+      { "text": { "en": "Not at all", "el": "Καθόλου" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 25,
+    "question": {
+      "en": "Was the sky described as soft pink?",
+      "el": "Περιγράφεται ο ουρανός απαλό ροζ;"
+    },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was pale orange", "el": "Ήταν απαλό πορτοκαλί" }, "correct": false },
+      { "text": { "en": "It was deep blue", "el": "Ήταν βαθύ μπλε" }, "correct": true }
     ]
   }
 ]

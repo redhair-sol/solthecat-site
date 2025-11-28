@@ -6,9 +6,9 @@
       "el": "Ο τίτλος είναι 'Honolulu, island hush';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Honolulu, ocean breeze", "el": "Honolulu, ocean breeze" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Honolulu, palm sunrise", "el": "Honolulu, palm sunrise" }, "correct": false }
     ]
   },
@@ -19,8 +19,8 @@
       "el": "Λέει το quote 'She found sunrise in palms.';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "She found sunset in palms.", "el": "Βρήκε ηλιοβασίλεμα σε φοίνικες." }, "correct": false },
       { "text": { "en": "Sunrise palace in palms.", "el": "Παλάτι αυγής σε φοίνικες." }, "correct": false }
     ]
@@ -32,9 +32,9 @@
       "el": "Είναι το caption 'No bustle. No borders. Only island calm.';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Honolulu, island calm", "el": "Honolulu, island calm" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "No crowds. No noise.", "el": "No crowds. No noise." }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Only ocean breeze.", "el": "Only ocean breeze." }, "correct": false }
     ]
   },
@@ -58,9 +58,9 @@
       "el": "Αναφέρεται το Diamond Head στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Diamond Beach", "el": "Παραλία Diamond" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Diamond Sky", "el": "Ουρανός Diamond" }, "correct": false }
     ]
   },
@@ -71,10 +71,10 @@
       "el": "Αναφέρει η ιστορία θαλάσσιο αεράκι να συναντά αρώματα λουλουδιών;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Breeze meets concrete", "el": "Το αεράκι συναντά το σκυρόδεμα" }, "correct": false },
-      { "text": { "en": "Wind meets snow", "el": "Αέρας συναντά χιόνι" }, "correct": false }
+      { "text": { "en": "Wind meets snow", "el": "Αέρας συναντά χιόνι" }, "correct": false },
+      { "text": { "en": "Sunlit breeze", "el": "Αεράκι στο φως" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -84,8 +84,8 @@
       "el": "Υποκλίνονται τα φύλλα φοίνικα σε χαιρετισμό;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "They waved wildly", "el": "Κινήθηκαν βίαια" }, "correct": false },
       { "text": { "en": "They stood rigid", "el": "Στάθηκαν άκαμπτα" }, "correct": false }
     ]
@@ -97,8 +97,8 @@
       "el": "Αναφέρθηκε βιασύνη ή φασαρία;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Only traffic", "el": "Μόνο κίνηση" }, "correct": false },
       { "text": { "en": "Only crowds", "el": "Μόνο πλήθη" }, "correct": false }
     ]
@@ -110,9 +110,9 @@
       "el": "Είναι η παραλία Waikiki το φόντο της εικόνας;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Boracay Beach", "el": "Παραλία Boracay" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Waimea Bay", "el": "Κόλπος Waimea" }, "correct": false }
     ]
   },
@@ -123,9 +123,9 @@
       "el": "Ονειρεύεται το Diamond Head πέρα από τα κύματα;"
     },
     "answers": [
+      { "text": { "en": "Sleeping volcano", "el": "Ηφαίστειο που κοιμάται" }, "correct": false },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "Sleeping volcano", "el": "Ηφαίστειο που κοιμάται" }, "correct": false },
       { "text": { "en": "Awake crater", "el": "Ξύπνιος κρατήρας" }, "correct": false }
     ]
   },
@@ -136,10 +136,10 @@
       "el": "Αναφέρει το quote φοίνικες;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It mentions sand", "el": "Αναφέρει άμμο" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "It mentions waves", "el": "Αναφέρει κύματα" }, "correct": false },
-      { "text": { "en": "It mentions sand", "el": "Αναφέρει άμμο" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It mentions waves", "el": "Αναφέρει κύματα" }, "correct": false }
     ]
   },
   {
@@ -149,10 +149,10 @@
       "el": "Γίνεται η αφήγηση την ανατολή;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "At noon", "el": "Το μεσημέρι" }, "correct": false },
-      { "text": { "en": "At midnight", "el": "Τα μεσάνυχτα" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "At midnight", "el": "Τα μεσάνυχτα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -162,9 +162,9 @@
       "el": "Αναφέρει ανθισμένο αέρα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only salty breeze", "el": "Μόνο θαλασσινό αεράκι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Only smoky air", "el": "Μόνο καπνιστός αέρας" }, "correct": false }
     ]
   },
@@ -175,10 +175,10 @@
       "el": "Είναι η πρώτη γραμμή του caption 'No bustle.';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "No traffic.", "el": "No traffic." }, "correct": false },
-      { "text": { "en": "Only calm.", "el": "Μόνο ηρεμία." }, "correct": false }
+      { "text": { "en": "Only calm.", "el": "Μόνο ηρεμία." }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No traffic.", "el": "No traffic." }, "correct": false }
     ]
   },
   {
@@ -188,8 +188,8 @@
       "el": "Αναφέρει σύνορα;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "No highways", "el": "No highways" }, "correct": false },
       { "text": { "en": "No bridges", "el": "No bridges" }, "correct": false }
     ]
@@ -202,9 +202,9 @@
     },
     "answers": [
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Alert", "el": "Σε εγρήγορση" }, "correct": false },
       { "text": { "en": "Tense", "el": "Τεντωμένη" }, "correct": false },
-      { "text": { "en": "Alert", "el": "Σε εγρήγορση" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -214,10 +214,10 @@
       "el": "Περιγράφεται το νερό να σκάνε από κάτω;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It was still", "el": "Ήταν ακίνητο" }, "correct": false },
-      { "text": { "en": "It was stormy", "el": "Ήταν θυελλώδες" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was stormy", "el": "Ήταν θυελλώδες" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -227,9 +227,9 @@
       "el": "Πλαισιώνουν φύλλα φοίνικα τη σκηνή;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only coconut trees", "el": "Μόνο φοινικόδεντρα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Only banana leaves", "el": "Μόνο φύλλα μπανάνας" }, "correct": false }
     ]
   },
@@ -240,9 +240,9 @@
       "el": "Περιγράφεται το Diamond Head ως ηφαιστειακό φόντο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only mountains", "el": "Μόνο βουνά" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "Only cliffs", "el": "Μόνο γκρεμοί" }, "correct": false }
     ]
   },
@@ -266,8 +266,8 @@
       "el": "Βρίσκεται η παραλία Waikiki στη Χονολουλού;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "In Maui", "el": "Στο Μάουι" }, "correct": false },
       { "text": { "en": "In Kauai", "el": "Στο Κάουαι" }, "correct": false }
     ]
@@ -279,10 +279,10 @@
       "el": "Είναι το γεωγραφικό πλάτος περίπου 21.3069;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "20.9057", "el": "20.9057" }, "correct": false },
-      { "text": { "en": "22.3364", "el": "22.3364" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "22.3364", "el": "22.3364" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -292,9 +292,9 @@
       "el": "Αναφέρει η ιστορία κάποιο ορίζοντα πόλης;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "Honolulu skyline", "el": "Ορίζοντας Χονολουλού" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Manhattan skyline", "el": "Ορίζοντας Μανχάταν" }, "correct": false }
     ]
   },
@@ -305,9 +305,9 @@
       "el": "Αναφέρει το caption σύνορα;"
     },
     "answers": [
+      { "text": { "en": "It mentions reefs", "el": "Αναφέρει ύφαλους" }, "correct": false },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "It mentions reefs", "el": "Αναφέρει ύφαλους" }, "correct": false },
       { "text": { "en": "It mentions mountains", "el": "Αναφέρει βουνά" }, "correct": false }
     ]
   },
@@ -318,10 +318,10 @@
       "el": "Δείχνει η εικόνα ανθρώπους ή βάρκες;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "Only distant figures", "el": "Μόνο απομακρυσμένες φιγούρες" }, "correct": false },
-      { "text": { "en": "Only anchored boats", "el": "Μόνο αραγμένες βάρκες" }, "correct": false }
+      { "text": { "en": "Only anchored boats", "el": "Μόνο αραγμένες βάρκες" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   }
 ]

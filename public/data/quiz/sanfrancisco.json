@@ -6,12 +6,13 @@
       "el": "Έχει το επεισόδιο τίτλο 'San Francisco, bridge tales';"
     },
     "answers": [
+      { "text": { "en": "San Francisco, fog tales", "el": "San Francisco, fog tales" }, "correct": false },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "San Francisco, fog tales", "el": "San Francisco, fog tales" }, "correct": false },
       { "text": { "en": "San Francisco, city lights", "el": "San Francisco, city lights" }, "correct": false }
     ]
   },
+
   {
     "id": 2,
     "question": {
@@ -25,6 +26,7 @@
       { "text": { "en": "She painted the bridge red.", "el": "She painted the bridge red." }, "correct": false }
     ]
   },
+
   {
     "id": 3,
     "question": {
@@ -32,12 +34,13 @@
       "el": "Αναφέρει το caption 'arches and dreams';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Bridges and clouds", "el": "Γέφυρες και σύννεφα" }, "correct": false },
-      { "text": { "en": "Lights and tides", "el": "Φώτα και παλίρροιες" }, "correct": false }
+      { "text": { "en": "Arches and dreams", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Lights and tides", "el": "Φώτα και παλίρροιες" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 4,
     "question": {
@@ -45,12 +48,13 @@
       "el": "Ποια γέφυρα εμφανίζεται στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Golden Gate Bridge", "el": "Γέφυρα του Golden Gate" }, "correct": true },
       { "text": { "en": "Brooklyn Bridge", "el": "Γέφυρα του Brooklyn" }, "correct": false },
+      { "text": { "en": "Golden Gate Bridge", "el": "Γέφυρα του Golden Gate" }, "correct": true },
       { "text": { "en": "Tower Bridge", "el": "Γέφυρα του Tower" }, "correct": false },
       { "text": { "en": "Ponte Vecchio", "el": "Πόντε Βέκιο" }, "correct": false }
     ]
   },
+
   {
     "id": 5,
     "question": {
@@ -64,6 +68,7 @@
       { "text": { "en": "Bronze metal", "el": "Χάλκινο μέταλλο" }, "correct": false }
     ]
   },
+
   {
     "id": 6,
     "question": {
@@ -77,6 +82,7 @@
       { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false }
     ]
   },
+
   {
     "id": 7,
     "question": {
@@ -90,6 +96,7 @@
       { "text": { "en": "Wind gusts", "el": "Ριπές ανέμου" }, "correct": false }
     ]
   },
+
   {
     "id": 8,
     "question": {
@@ -103,6 +110,7 @@
       { "text": { "en": "Fog mist", "el": "Ομίχλη" }, "correct": false }
     ]
   },
+
   {
     "id": 9,
     "question": {
@@ -110,12 +118,13 @@
       "el": "Τι χτυπούσε απαλά στα θεμέλια;"
     },
     "answers": [
-      { "text": { "en": "Waves", "el": "Κύματα" }, "correct": true },
       { "text": { "en": "Wind", "el": "Άνεμος" }, "correct": false },
+      { "text": { "en": "Waves", "el": "Κύματα" }, "correct": true },
       { "text": { "en": "Boats", "el": "Καράβια" }, "correct": false },
       { "text": { "en": "Rain", "el": "Βροχή" }, "correct": false }
     ]
   },
+
   {
     "id": 10,
     "question": {
@@ -124,11 +133,12 @@
     },
     "answers": [
       { "text": { "en": "Sight", "el": "Η όραση" }, "correct": true },
-      { "text": { "en": "Hearing", "el": "Η ακοή" }, "correct": false },
       { "text": { "en": "Taste", "el": "Η γεύση" }, "correct": false },
+      { "text": { "en": "Hearing", "el": "Η ακοή" }, "correct": false },
       { "text": { "en": "Touch", "el": "Η αφή" }, "correct": false }
     ]
   },
+
   {
     "id": 11,
     "question": {
@@ -136,12 +146,13 @@
       "el": "Ποιος τίτλος ταιριάζει στη SOL σε αυτή τη σκηνή;"
     },
     "answers": [
-      { "text": { "en": "Guardian and queen", "el": "Φρουρός και βασίλισσα" }, "correct": true },
+      { "text": { "en": "Dreamer", "el": "Ονειροπόλα" }, "correct": false },
       { "text": { "en": "Explorer", "el": "Εξερευνήτρια" }, "correct": false },
-      { "text": { "en": "Traveler", "el": "Ταξιδιώτισσα" }, "correct": false },
-      { "text": { "en": "Dreamer", "el": "Ονειροπόλα" }, "correct": false }
+      { "text": { "en": "Guardian and queen", "el": "Φρουρός και βασίλισσα" }, "correct": true },
+      { "text": { "en": "Traveler", "el": "Ταξιδιώτισσα" }, "correct": false }
     ]
   },
+
   {
     "id": 12,
     "question": {
@@ -149,12 +160,13 @@
       "el": "Αναφέρει η ιστορία κορναρίσματα αυτοκινήτων;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "Only seagulls", "el": "Μόνο γλάροι" }, "correct": false },
       { "text": { "en": "Only echoes", "el": "Μόνο αντίλαλοι" }, "correct": false },
-      { "text": { "en": "Only seagulls", "el": "Μόνο γλάροι" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false }
     ]
   },
+
   {
     "id": 13,
     "question": {
@@ -163,11 +175,12 @@
     },
     "answers": [
       { "text": { "en": "The wind’s hum", "el": "Το βουητό του ανέμου" }, "correct": true },
-      { "text": { "en": "The sea’s roar", "el": "Το μουρμούρισμα της θάλασσας" }, "correct": false },
+      { "text": { "en": "Birdsong", "el": "Κελάηδισμα" }, "correct": false },
       { "text": { "en": "City noise", "el": "Θόρυβος πόλης" }, "correct": false },
-      { "text": { "en": "Birdsong", "el": "Κελάηδισμα" }, "correct": false }
+      { "text": { "en": "The sea’s roar", "el": "Το μουρμούρισμα της θάλασσας" }, "correct": false }
     ]
   },
+
   {
     "id": 14,
     "question": {
@@ -181,6 +194,7 @@
       { "text": { "en": "Seattle", "el": "Σιάτλ" }, "correct": false }
     ]
   },
+
   {
     "id": 15,
     "question": {
@@ -188,12 +202,13 @@
       "el": "Ποιο γεωγραφικό στοιχείο περιβάλλει το Σαν Φρανσίσκο;"
     },
     "answers": [
+      { "text": { "en": "Desert", "el": "Μια έρημος" }, "correct": false },
       { "text": { "en": "A bay", "el": "Ένας κόλπος" }, "correct": true },
-      { "text": { "en": "A desert", "el": "Μια έρημος" }, "correct": false },
       { "text": { "en": "A forest", "el": "Ένα δάσος" }, "correct": false },
       { "text": { "en": "Mountains", "el": "Βουνά" }, "correct": false }
     ]
   },
+
   {
     "id": 16,
     "question": {
@@ -201,12 +216,13 @@
       "el": "Σε ποιο χρώμα έβαψε η αυγή το τρίχωμα της SOL;"
     },
     "answers": [
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false },
       { "text": { "en": "Amber tones", "el": "Κεχριμπαρένιες αποχρώσεις" }, "correct": true },
       { "text": { "en": "Silver", "el": "Ασημί" }, "correct": false },
-      { "text": { "en": "Crimson", "el": "Βυσσινί" }, "correct": false },
-      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false }
+      { "text": { "en": "Crimson", "el": "Βυσσινί" }, "correct": false }
     ]
   },
+
   {
     "id": 17,
     "question": {
@@ -220,6 +236,7 @@
       { "text": { "en": "She slept below it", "el": "Κοιμήθηκε από κάτω" }, "correct": false }
     ]
   },
+
   {
     "id": 18,
     "question": {
@@ -233,6 +250,7 @@
       { "text": { "en": "Hidden in clouds", "el": "Κρυμμένοι στα σύννεφα" }, "correct": false }
     ]
   },
+
   {
     "id": 19,
     "question": {
@@ -246,6 +264,7 @@
       { "text": { "en": "Wind", "el": "Άνεμος" }, "correct": false }
     ]
   },
+
   {
     "id": 20,
     "question": {
@@ -253,12 +272,13 @@
       "el": "Ποιο συναίσθημα κυριαρχεί στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Tranquility", "el": "Γαλήνη" }, "correct": true },
+      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false },
       { "text": { "en": "Excitement", "el": "Ενθουσιασμός" }, "correct": false },
-      { "text": { "en": "Sadness", "el": "Λύπη" }, "correct": false },
-      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false }
+      { "text": { "en": "Tranquility", "el": "Γαλήνη" }, "correct": true },
+      { "text": { "en": "Sadness", "el": "Λύπη" }, "correct": false }
     ]
   },
+
   {
     "id": 21,
     "question": {
@@ -266,12 +286,13 @@
       "el": "Αναφέρονται άλλα ζώα;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Seagulls", "el": "Γλάροι" }, "correct": false },
       { "text": { "en": "Dogs", "el": "Σκύλοι" }, "correct": false }
     ]
   },
+
   {
     "id": 22,
     "question": {
@@ -279,12 +300,13 @@
       "el": "Ποιο σημείο παρατηρεί η SOL;"
     },
     "answers": [
+      { "text": { "en": "A forest path", "el": "Ένα δασικό μονοπάτι" }, "correct": false },
       { "text": { "en": "The bridge and the bay", "el": "Τη γέφυρα και τον κόλπο" }, "correct": true },
       { "text": { "en": "A city square", "el": "Μια πλατεία" }, "correct": false },
-      { "text": { "en": "A mountain peak", "el": "Μια κορυφή" }, "correct": false },
-      { "text": { "en": "A forest path", "el": "Ένα δασικό μονοπάτι" }, "correct": false }
+      { "text": { "en": "A mountain peak", "el": "Μια κορυφή" }, "correct": false }
     ]
   },
+
   {
     "id": 23,
     "question": {
@@ -292,12 +314,13 @@
       "el": "Ποιο είναι το ύφος της τελευταίας γραμμής;"
     },
     "answers": [
-      { "text": { "en": "Peaceful and majestic", "el": "Γαλήνιο και μεγαλοπρεπές" }, "correct": true },
       { "text": { "en": "Playful", "el": "Παιχνιδιάρικο" }, "correct": false },
+      { "text": { "en": "Peaceful and majestic", "el": "Γαλήνιο και μεγαλοπρεπές" }, "correct": true },
       { "text": { "en": "Mysterious", "el": "Μυστηριώδες" }, "correct": false },
       { "text": { "en": "Tense", "el": "Έντονο" }, "correct": false }
     ]
   },
+
   {
     "id": 24,
     "question": {
@@ -307,10 +330,11 @@
     "answers": [
       { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
-      { "text": { "en": "Only mist", "el": "Μόνο ομίχλη" }, "correct": false },
-      { "text": { "en": "Only snow", "el": "Μόνο χιόνι" }, "correct": false }
+      { "text": { "en": "Only snow", "el": "Μόνο χιόνι" }, "correct": false },
+      { "text": { "en": "Only mist", "el": "Μόνο ομίχλη" }, "correct": false }
     ]
   },
+
   {
     "id": 25,
     "question": {
@@ -318,10 +342,10 @@
       "el": "Είναι το γεωγραφικό πλάτος του Σαν Φρανσίσκο περίπου 37.7749;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "34.0522", "el": "34.0522" }, "correct": false },
-      { "text": { "en": "40.7128", "el": "40.7128" }, "correct": false }
+      { "text": { "en": "40.7128", "el": "40.7128" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "34.0522", "el": "34.0522" }, "correct": false }
     ]
   }
 ]

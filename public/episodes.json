@@ -1126,40 +1126,40 @@
 },
 {
   "id": 30,
-  "title": "SOLadventure #30 – San José, valley’s green heart 🇨🇷",
-  "quote": "Peace blooms in silence.",
-  "caption": "No rush. No roar. Just green breath. 🐾🐾🐾",
-  "image": "episodes/sanjose.png",
+  "title": "SOLadventure #30 – La Fortuna, where the wild breathes 🇨🇷",
+  "quote": "The earth has music for those who will listen.",
+  "caption": "Mist, calm and wild echoes all around her. 🐾🐾🐾",
+  "image": "episodes/lafortuna.png",
   "location": {
-    "lat": 9.9281,
-    "lng": -84.0907
+    "lat": 10.4700,
+    "lng": -84.7034
   },
   "visible": false,
-  "city": "sanjose",
+  "city": "lafortuna",
   "story": {
-    "en": "In the misty folds above San José, SOL found a rhythm slower than time. The air shimmered with dew and coffee fragrance, and the hills rolled endlessly like waves of emerald. She perched upon a mossed wall, her gaze tracing the drifting clouds that caressed the peaks. No echoes of engines, no haste — only the living breath of the valley, whispering stories of calm.",
-    "el": "Στις ομιχλώδεις πλαγιές πάνω από το Σαν Χοσέ, η SOL βρήκε έναν ρυθμό πιο αργό κι από τον χρόνο. Ο αέρας άστραφτε από δροσιά και άρωμα καφέ, κι οι λόφοι κυλούσαν ατελείωτοι σαν κύματα σμαραγδένια. Καθισμένη σε έναν τοίχο σκεπασμένο με βρύα, ακολουθούσε με το βλέμμα τα σύννεφα που χάιδευαν τις κορυφές. Χωρίς ήχους μηχανών, χωρίς βιασύνη — μόνο η ανάσα της κοιλάδας να ψιθυρίζει ιστορίες γαλήνης."
+    "en": "At La Fortuna Waterfall, SOL stood before a curtain of white water crashing into a basin carved by time. The rainforest wrapped around her like a living emerald wall, warm with mist and the soft roar of falling water. She paused on a smooth river stone, watching droplets dance in the air as sunlight broke through the canopy. No engines, no distant noise — only the steady breath of the wild, rising and falling like a quiet promise.",
+    "el": "Στον καταρράκτη La Fortuna, η SOL στάθηκε μπροστά σε μια λευκή κουρτίνα νερού που έπεφτε σε μια λεκάνη σμιλεμένη από τον χρόνο. Το τροπικό δάσος την τύλιγε σαν ένας ζωντανός σμαραγδένιος τοίχος, γεμάτος ζεστή υγρασία και τον απαλό βρυχηθμό του νερού που έπεφτε. Στάθηκε σε μια λεία ποταμίσια πέτρα, παρακολουθώντας σταγονίδια να χορεύουν στον αέρα καθώς το φως περνούσε μέσα από την κόμη. Χωρίς μηχανές, χωρίς μακρινούς θορύβους — μόνο η σταθερή ανάσα της άγριας φύσης, που ανέβαινε και κατέβαινε σαν μια ήσυχη υπόσχεση."
   },
   "photoQuote": "She listened to the mountains breathe.",
   "snapQuestions": [
     {
       "question": {
-        "en": "Did SOL sit on a moss-covered wall overlooking the valley?",
-        "el": "Κάθισε η SOL σε τοίχο σκεπασμένο με βρύα με θέα την κοιλάδα;"
+        "en": "Did SOL stand on a smooth river stone near the waterfall?",
+        "el": "Στάθηκε η SOL σε λεία ποταμίσια πέτρα κοντά στον καταρράκτη;"
       },
       "answer": true
     },
     {
       "question": {
-        "en": "Was the scent of coffee mentioned in the story?",
-        "el": "Αναφέρθηκε το άρωμα του καφέ στην ιστορία;"
+        "en": "Was the rainforest described as wrapping around her like an emerald wall?",
+        "el": "Περιγράφηκε το τροπικό δάσος σαν σμαραγδένιος τοίχος γύρω της;"
       },
       "answer": true
     },
     {
       "question": {
-        "en": "Did the story describe sounds of cars or engines?",
-        "el": "Περιέγραψε η ιστορία ήχους αυτοκινήτων ή μηχανών;"
+        "en": "Was the waterfall described as a white curtain of water?",
+        "el": "Περιγράφηκε ο καταρράκτης σαν λευκή κουρτίνα νερού;"
       },
       "answer": false
     }

@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Is the episode titled 'La Fortuna, where the wild breathes'?",
+      "el": "Είναι ο τίτλος 'La Fortuna, where the wild breathes';"
+    },
+    "answers": [
+      { "text": { "en": "Costa Rica, wild queen", "el": "Costa Rica, wild queen" }, "correct": false },
+      { "text": { "en": "La Fortuna, emerald thunder", "el": "La Fortuna, emerald thunder" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Does the title mention the wild breathing?",
+      "el": "Αναφέρει ο τίτλος την άγρια φύση που αναπνέει;"
+    },
+    "answers": [
+      { "text": { "en": "It mentions silence", "el": "Αναφέρει σιωπή" }, "correct": false },
+      { "text": { "en": "It mentions storms", "el": "Αναφέρει καταιγίδες" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Is the photo quote 'She listened to the mountains breathe'?",
+      "el": "Είναι το photo quote 'She listened to the mountains breathe';"
+    },
+    "answers": [
+      { "text": { "en": "She dreamed of rain", "el": "She dreamed of rain" }, "correct": false },
+      { "text": { "en": "She followed the waterfall's call", "el": "She followed the waterfall's call" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Is the episode quote 'The earth has music for those who will listen'?",
+      "el": "Είναι το episode quote 'The earth has music for those who will listen';"
+    },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Silence is the purest sound", "el": "Silence is the purest sound" }, "correct": false },
+      { "text": { "en": "The forest remembers everything", "el": "The forest remembers everything" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Does the caption mention mist and echoes?",
+      "el": "Αναφέρει το caption ομίχλη και αντίλαλους;"
+    },
+    "answers": [
+      { "text": { "en": "It mentions rain", "el": "Αναφέρει βροχή" }, "correct": false },
+      { "text": { "en": "It mentions sunlight only", "el": "Αναφέρει μόνο φως" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Is the waterfall described as a white curtain of water?",
+      "el": "Περιγράφεται ο καταρράκτης σαν λευκή κουρτίνα νερού;"
+    },
+    "answers": [
+      { "text": { "en": "As a thin stream", "el": "Ως λεπτό ρυάκι" }, "correct": false },
+      { "text": { "en": "As silver mist", "el": "Ως ασημένια ομίχλη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Did the rainforest wrap around SOL like a living emerald wall?",
+      "el": "Την τύλιγε το τροπικό δάσος σαν ζωντανός σμαραγδένιος τοίχος;"
+    },
+    "answers": [
+      { "text": { "en": "It was a desert landscape", "el": "Ήταν έρημος" }, "correct": false },
+      { "text": { "en": "It was an open field", "el": "Ήταν ανοιχτό πεδίο" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Did SOL pause on a smooth river stone?",
+      "el": "Στάθηκε η SOL σε λεία ποταμίσια πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "On a wooden platform", "el": "Σε ξύλινη πλατφόρμα" }, "correct": false },
+      { "text": { "en": "On a fallen tree", "el": "Σε πεσμένο δέντρο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Did sunlight break through the canopy above her?",
+      "el": "Περνούσε το φως μέσα από την κόμη πάνω της;"
+    },
+    "answers": [
+      { "text": { "en": "It was fully dark", "el": "Ήταν εντελώς σκοτάδι" }, "correct": false },
+      { "text": { "en": "It was raining heavily", "el": "Έβρεχε δυνατά" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Were droplets described as dancing in the air?",
+      "el": "Περιγράφηκαν σταγονίδια να χορεύουν στον αέρα;"
+    },
+    "answers": [
+      { "text": { "en": "They fell heavily", "el": "Έπεφταν βαριά" }, "correct": false },
+      { "text": { "en": "They stayed still", "el": "Έμεναν ακίνητα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Did the story mention the sound of falling water?",
+      "el": "Αναφέρθηκε ο ήχος του νερού που έπεφτε;"
+    },
+    "answers": [
+      { "text": { "en": "Only wind", "el": "Μόνο άνεμος" }, "correct": false },
+      { "text": { "en": "Only birdsong", "el": "Μόνο πουλιά" }, "correct": false },
+      { "text": { "en": "Yes, a soft roar", "el": "Ναι, ένας απαλός βρυχηθμός" }, "correct": true },
+      { "text": { "en": "No sound at all", "el": "Κανένας ήχος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Did the story mention any city noise?",
+      "el": "Αναφέρθηκαν θόρυβοι πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "Yes, distant traffic", "el": "Ναι, μακρινή κίνηση" }, "correct": false },
+      { "text": { "en": "Yes, voices", "el": "Ναι, φωνές" }, "correct": false },
+      { "text": { "en": "Yes, engines", "el": "Ναι, μηχανές" }, "correct": false },
+      { "text": { "en": "No, none at all", "el": "Όχι, καθόλου" }, "correct": true }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Was the atmosphere warm with mist?",
+      "el": "Ήταν η ατμόσφαιρα ζεστή με ομίχλη;"
+    },
+    "answers": [
+      { "text": { "en": "Cold and snowy", "el": "Κρύα και χιονισμένη" }, "correct": false },
+      { "text": { "en": "Dry and dusty", "el": "Ξηρή και σκονισμένη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Did the story describe time shaping the basin?",
+      "el": "Περιγράφεται ο χρόνος να έχει σμιλέψει τη λεκάνη;"
+    },
+    "answers": [
+      { "text": { "en": "Wind shaped it", "el": "Τη διαμόρφωσε ο άνεμος" }, "correct": false },
+      { "text": { "en": "Animals shaped it", "el": "Τη διαμόρφωσαν ζώα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Was the environment described as rising and falling like a quiet promise?",
+      "el": "Περιγράφεται το περιβάλλον να ανεβαίνει και να κατεβαίνει σαν ήσυχη υπόσχεση;"
+    },
+    "answers": [
+      { "text": { "en": "It was harsh and loud", "el": "Ήταν έντονο και θορυβώδες" }, "correct": false },
+      { "text": { "en": "It was frozen still", "el": "Ήταν παγωμένο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Did SOL observe sunlight breaking through the canopy?",
+      "el": "Είδε η SOL το φως να περνά μέσα από την κόμη;"
+    },
+    "answers": [
+      { "text": { "en": "She saw moonlight", "el": "Είδε φως του φεγγαριού" }, "correct": false },
+      { "text": { "en": "She saw stars instead", "el": "Είδε αστέρια" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Does the story mention mist dancing in the air?",
+      "el": "Αναφέρει η ιστορία ομίχλη που χορεύει στον αέρα;"
+    },
+    "answers": [
+      { "text": { "en": "Fog covered everything", "el": "Η ομίχλη κάλυπτε τα πάντα" }, "correct": false },
+      { "text": { "en": "The air was completely clear", "el": "Ο αέρας ήταν τελείως καθαρός" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Was the setting centered around water and rainforest?",
+      "el": "Ήταν το σκηνικό βασισμένο σε νερό και τροπικό δάσος;"
+    },
+    "answers": [
+      { "text": { "en": "A snowy mountain", "el": "Χιονισμένο βουνό" }, "correct": false },
+      { "text": { "en": "A desert scene", "el": "Σκηνικό ερήμου" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Was the mood quiet and reflective?",
+      "el": "Ήταν η διάθεση ήσυχη και στοχαστική;"
+    },
+    "answers": [
+      { "text": { "en": "Energetic and loud", "el": "Ενεργητική και θορυβώδης" }, "correct": false },
+      { "text": { "en": "Chaotic", "el": "Χαοτική" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Is the story set in Costa Rica?",
+      "el": "Διαδραματίζεται η ιστορία στην Κόστα Ρίκα;"
+    },
+    "answers": [
+      { "text": { "en": "No, in Panama", "el": "Όχι, στον Παναμά" }, "correct": false },
+      { "text": { "en": "In Peru", "el": "Στο Περού" }, "correct": false },
+      { "text": { "en": "In Colombia", "el": "Στην Κολομβία" }, "correct": false },
+      { "text": { "en": "Yes, at La Fortuna Waterfall", "el": "Ναι, στον καταρράκτη La Fortuna" }, "correct": true }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Was SOL surrounded by rainforest rather than city streets?",
+      "el": "Ήταν η SOL περιτριγυρισμένη από τροπικό δάσος και όχι από δρόμους πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "She was in a plaza", "el": "Ήταν σε πλατεία" }, "correct": false },
+      { "text": { "en": "She was on a rooftop", "el": "Ήταν σε ταράτσα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Was the waterfall basin described as carved by time?",
+      "el": "Περιγράφεται η λεκάνη του καταρράκτη ως σμιλεμένη από τον χρόνο;"
+    },
+    "answers": [
+      { "text": { "en": "Carved by machines", "el": "Σμιλεμένη από μηχανές" }, "correct": false },
+      { "text": { "en": "Carved by animals", "el": "Σμιλεμένη από ζώα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Does the story mention the steady breath of the wild?",
+      "el": "Αναφέρει η ιστορία τη σταθερή ανάσα της άγριας φύσης;"
+    },
+    "answers": [
+      { "text": { "en": "It mentions desert wind", "el": "Αναφέρει έρημο άνεμο" }, "correct": false },
+      { "text": { "en": "It mentions thunder", "el": "Αναφέρει βροντές" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Was the environment free of engines or human noise?",
+      "el": "Ήταν το περιβάλλον χωρίς μηχανές ή ανθρώπινους θορύβους;"
+    },
+    "answers": [
+      { "text": { "en": "No, there were voices", "el": "Όχι, υπήρχαν φωνές" }, "correct": false },
+      { "text": { "en": "No, there were engines", "el": "Όχι, υπήρχαν μηχανές" }, "correct": false },
+      { "text": { "en": "No, there was traffic", "el": "Όχι, υπήρχε κίνηση" }, "correct": false },
+      { "text": { "en": "Yes, completely", "el": "Ναι, εντελώς" }, "correct": true }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Is La Fortuna located near latitude 10.4700?",
+      "el": "Βρίσκεται το La Fortuna περίπου στο γεωγραφικό πλάτος 10.4700;"
+    },
+    "answers": [
+      { "text": { "en": "No, 12.5555", "el": "Όχι, 12.5555" }, "correct": false },
+      { "text": { "en": "No, 5.1010", "el": "Όχι, 5.1010" }, "correct": false },
+      { "text": { "en": "No, 9.1234", "el": "Όχι, 9.1234" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  }
+]

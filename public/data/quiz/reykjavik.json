@@ -6,10 +6,10 @@
       "el": "Είναι το Ρέικιαβικ πρωτεύουσα της Ισλανδίας;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It’s in Norway", "el": "Βρίσκεται στη Νορβηγία" }, "correct": false },
       { "text": { "en": "It’s in Greenland", "el": "Βρίσκεται στη Γροιλανδία" }, "correct": false },
-      { "text": { "en": "It’s in Norway", "el": "Βρίσκεται στη Νορβηγία" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -32,10 +32,10 @@
       "el": "Έφτασε η SOL εκεί όπου η φωτιά κοιμόταν κάτω από τον πάγο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only on frozen lakes", "el": "Μόνο σε παγωμένες λίμνες" }, "correct": false },
       { "text": { "en": "Only where ice sleeps under fire", "el": "Μόνο όπου ο πάγος κοιμάται κάτω από τη φωτιά" }, "correct": false },
-      { "text": { "en": "Only on frozen lakes", "el": "Μόνο σε παγωμένες λίμνες" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -46,9 +46,9 @@
     },
     "answers": [
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It said earth roared", "el": "Έλεγε ότι η γη βρόντηξε" }, "correct": false },
       { "text": { "en": "It said earth held breath", "el": "Έλεγε ότι η γη κρατούσε την ανάσα" }, "correct": false },
-      { "text": { "en": "It said earth roared", "el": "Έλεγε ότι η γη βρόντηξε" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -58,10 +58,10 @@
       "el": "Περιγράφονται φλέβες λάβας να παλλο­ύνται κάτω από κρυστάλλινη επιφάνεια;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It said lava was still", "el": "Έλεγε ότι η λάβα ήταν ακίνητη" }, "correct": false },
-      { "text": { "en": "It mentioned ice veins", "el": "Αναφέρει φλέβες πάγου" }, "correct": false }
+      { "text": { "en": "It mentioned ice veins", "el": "Αναφέρει φλέβες πάγου" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -71,10 +71,10 @@
       "el": "Αναφέρει η ιστορία ότι οι γεωθέρμες χόρευαν στο ψύχος;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It said geysers slept", "el": "Έλεγε ότι οι γεωθέρμες κοιμόντουσαν" }, "correct": false },
-      { "text": { "en": "It said geysers roared", "el": "Έλεγε ότι βρόντηξαν" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It said geysers roared", "el": "Έλεγε ότι βρόντηξαν" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -84,10 +84,10 @@
       "el": "Περιγράφονται οι βασάλτικες κολόνες ως σιωπηλοί μάρτυρες;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "They are described as loud", "el": "Περιγράφονται ως θορυβώδεις" }, "correct": false },
-      { "text": { "en": "They are called pillars of flame", "el": "Αποκαλούνται φλόγες" }, "correct": false }
+      { "text": { "en": "They are called pillars of flame", "el": "Αποκαλούνται φλόγες" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -97,10 +97,10 @@
       "el": "Ύφανε η SOL ζεστασιά στην παγωμένη ανάσα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She melted the wind", "el": "Έλιωσε τον άνεμο" }, "correct": false },
       { "text": { "en": "She froze the warmth", "el": "Πάγωσε τη ζεστασιά" }, "correct": false },
-      { "text": { "en": "She melted the wind", "el": "Έλιωσε τον άνεμο" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -110,10 +110,10 @@
       "el": "Διέσχισε η SOL δάσος στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": true },
-      { "text": { "en": "She swam through a lake", "el": "Κολύμπησε σε λίμνη" }, "correct": false },
-      { "text": { "en": "She climbed a mountain", "el": "Ανέβηκε σε βουνό" }, "correct": false }
+      { "text": { "en": "She climbed a mountain", "el": "Ανέβηκε σε βουνό" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "She swam through a lake", "el": "Κολύμπησε σε λίμνη" }, "correct": false }
     ]
   },
   {
@@ -123,12 +123,13 @@
       "el": "Περιγράφεται ο ουρανός να λάμπει πορτοκαλί τα μεσάνυχτα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It shimmered blue at dawn", "el": "Έλαμπε μπλε τα ξημερώματα" }, "correct": false },
-      { "text": { "en": "It was gray at noon", "el": "Ήταν γκρι το μεσημέρι" }, "correct": false }
+      { "text": { "en": "It was gray at noon", "el": "Ήταν γκρι το μεσημέρι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 11,
     "question": {
@@ -136,12 +137,13 @@
       "el": "Αναφέρει η ιστορία θερμές πηγές να κυματίζουν κάτω από το βλέμμα της;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only cold springs", "el": "Μόνο κρύες πηγές" }, "correct": false },
-      { "text": { "en": "Only geyser pools", "el": "Μόνο γεωθερμικές λίμνες" }, "correct": false }
+      { "text": { "en": "Only geyser pools", "el": "Μόνο γεωθερμικές λίμνες" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 12,
     "question": {
@@ -149,12 +151,13 @@
       "el": "Χρησιμοποιείται το quote 'She wrote warmth on ice' σε αυτό το επεισόδιο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It says 'Ice carried fire'", "el": "Λέει 'Ice carried fire'" }, "correct": false },
       { "text": { "en": "It says 'Heat carved the frost'", "el": "Λέει 'Heat carved the frost'" }, "correct": false },
-      { "text": { "en": "It says 'Ice carried fire'", "el": "Λέει 'Ice carried fire'" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
+
   {
     "id": 13,
     "question": {
@@ -162,12 +165,13 @@
       "el": "Τελειώνει το caption με τρία emoji πατούσες;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Four paw emojis", "el": "Τέσσερα emoji" }, "correct": false },
-      { "text": { "en": "Two paw emojis", "el": "Δύο emoji" }, "correct": false }
+      { "text": { "en": "Two paw emojis", "el": "Δύο emoji" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
+
   {
     "id": 14,
     "question": {
@@ -175,10 +179,10 @@
       "el": "Αναφέρει η ιστορία ισορροπία ακραίων;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only extremes clashed", "el": "Μόνο ακραία συγκρούστηκαν" }, "correct": false },
-      { "text": { "en": "Only harmony reigned", "el": "Μόνο αρμονία κυριαρχούσε" }, "correct": false }
+      { "text": { "en": "Only harmony reigned", "el": "Μόνο αρμονία κυριαρχούσε" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
     ]
   },
   {
@@ -188,10 +192,10 @@
       "el": "Αναφέρεται η σιλουέτα της πόλης ως 'σιλουέτα της ακρόπολης';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "It calls it 'castle silhouette'", "el": "Την ονομάζει 'σιλουέτα κάστρου'" }, "correct": false },
-      { "text": { "en": "It calls it 'mountain silhouette'", "el": "Την ονομάζει 'σιλουέτα βουνού'" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
+      { "text": { "en": "It calls it 'mountain silhouette'", "el": "Την ονομάζει 'σιλουέτα βουνού'" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false }
     ]
   },
   {
@@ -201,10 +205,10 @@
       "el": "Δείχνει η εικόνα ανθρώπους ή σύγχρονα κτήρια;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "Only a distant town", "el": "Μόνο απομακρυσμένη πόλη" }, "correct": false },
-      { "text": { "en": "Only vehicles", "el": "Μόνο οχήματα" }, "correct": false }
+      { "text": { "en": "Only vehicles", "el": "Μόνο οχήματα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   },
   {
@@ -214,10 +218,10 @@
       "el": "Αναφέρει το prompt σκοτεινούς βασάλτικους βράχους;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It mentioned glass columns", "el": "Αναφέρει γυάλινες κολόνες" }, "correct": false },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It mentioned black sand", "el": "Αναφέρει μαύρη άμμο" }, "correct": false },
-      { "text": { "en": "It mentioned glass columns", "el": "Αναφέρει γυάλινες κολόνες" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -227,10 +231,10 @@
       "el": "Αφηγείται η ιστορία σε ενεστώτα χρόνο;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
       { "text": { "en": "It mixes tenses", "el": "Αναμεικνύει χρόνους" }, "correct": false },
-      { "text": { "en": "It’s in future tense", "el": "Είναι στο μέλλοντα" }, "correct": false }
+      { "text": { "en": "It’s in future tense", "el": "Είναι στο μέλλοντα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   },
   {
@@ -240,10 +244,10 @@
       "el": "Είναι η αφήγηση σε πρώτο πρόσωπο;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It’s third plural", "el": "Είναι σε τρίτο πληθυντικό" }, "correct": false },
       { "text": { "en": "It’s second person", "el": "Είναι σε δεύτερο πρόσωπο" }, "correct": false },
-      { "text": { "en": "It’s third plural", "el": "Είναι σε τρίτο πληθυντικό" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   },
   {
@@ -253,10 +257,10 @@
       "el": "Αναφέρει η ιστορία ρευστή λάμψη που κουβαλά ο άνεμος;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It mentions flame on water", "el": "Αναφέρει φλόγα στο νερό" }, "correct": false },
-      { "text": { "en": "It mentions ice on wind", "el": "Αναφέρει πάγο στον άνεμο" }, "correct": false }
+      { "text": { "en": "It mentions ice on wind", "el": "Αναφέρει πάγο στον άνεμο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -266,10 +270,10 @@
       "el": "Κοιμήθηκε η SOL πάνω στους βράχους στην εικόνα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She jumped", "el": "Πέταξε" }, "correct": false },
       { "text": { "en": "She stood", "el": "Στάθηκε" }, "correct": false },
-      { "text": { "en": "She jumped", "el": "Πέταξε" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -279,10 +283,10 @@
       "el": "Αναφέρει η ιστορία μεσάνυχτα στο Ρέικιαβικ;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only at dawn", "el": "Μόνο ξημερώματα" }, "correct": false },
       { "text": { "en": "Only at noon", "el": "Μόνο μεσημέρι" }, "correct": false },
-      { "text": { "en": "Only at dawn", "el": "Μόνο ξημερώματα" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -293,8 +297,8 @@
     },
     "answers": [
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It says 'snow & steam'", "el": "Λέει 'χιόνι & ατμός'" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It says 'lava & frost'", "el": "Λέει 'λάβα & πάγος'" }, "correct": false }
     ]
   },
@@ -305,10 +309,10 @@
       "el": "Αναφέρει το caption απόψυξη;"
     },
     "answers": [
-      { "text": { "en": "No", "el": "Όχι" }, "correct": true },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It mentions storm", "el": "Αναφέρει καταιγίδα" }, "correct": false },
       { "text": { "en": "It mentions freeze only", "el": "Αναφέρει μόνο πάγωμα" }, "correct": false },
-      { "text": { "en": "It mentions storm", "el": "Αναφέρει καταιγίδα" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": true }
     ]
   },
   {
@@ -318,10 +322,10 @@
       "el": "Περιγράφεται το Ρέικιαβικ ως 'η ισορροπία των ακραίων';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It says 'duality of fire and ice'", "el": "Λέει 'δυαδικότητα φωτιάς και πάγου'" }, "correct": false },
       { "text": { "en": "It says 'balance of opposites'", "el": "Λέει 'ισορροπία των αντιθέτων'" }, "correct": false },
-      { "text": { "en": "It says 'duality of fire and ice'", "el": "Λέει 'δυαδικότητα φωτιάς και πάγου'" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   }
 ]

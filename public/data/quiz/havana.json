@@ -6,10 +6,10 @@
       "el": "Είναι ο τίτλος 'Havana, vintage soul';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Cuba, old charm", "el": "Cuba, old charm" }, "correct": false },
       { "text": { "en": "Havana, modern beat", "el": "Havana, modern beat" }, "correct": false },
-      { "text": { "en": "Cuba, old charm", "el": "Cuba, old charm" }, "correct": false }
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -19,10 +19,10 @@
       "el": "Περιλαμβάνει ο τίτλος emoji αυτοκινήτου 🚗;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It includes a palm tree 🌴", "el": "Περιλαμβάνει φοίνικα 🌴" }, "correct": false },
-      { "text": { "en": "It includes a sun ☀️", "el": "Περιλαμβάνει ήλιο ☀️" }, "correct": false }
+      { "text": { "en": "It includes a sun ☀️", "el": "Περιλαμβάνει ήλιο ☀️" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -32,10 +32,10 @@
       "el": "Είναι το quote στη φωτογραφία 'She walked to the rhythm of memories';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "She danced with the wind", "el": "She danced with the wind" }, "correct": false },
       { "text": { "en": "Time slowed to her rhythm", "el": "Time slowed to her rhythm" }, "correct": false },
-      { "text": { "en": "She danced with the wind", "el": "She danced with the wind" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -45,10 +45,10 @@
       "el": "Αναφέρει το JSON quote μουσική στον αέρα;"
     },
     "answers": [
+      { "text": { "en": "No, it mentions silence", "el": "Όχι, αναφέρει σιωπή" }, "correct": false },
       { "text": { "en": "Yes, it says 'The air itself remembered the music.'", "el": "Ναι, λέει 'The air itself remembered the music.'" }, "correct": true },
       { "text": { "en": "No, it mentions the sea", "el": "Όχι, αναφέρει τη θάλασσα" }, "correct": false },
-      { "text": { "en": "No, it mentions the sun", "el": "Όχι, αναφέρει τον ήλιο" }, "correct": false },
-      { "text": { "en": "No, it mentions silence", "el": "Όχι, αναφέρει σιωπή" }, "correct": false }
+      { "text": { "en": "No, it mentions the sun", "el": "Όχι, αναφέρει τον ήλιο" }, "correct": false }
     ]
   },
   {
@@ -58,10 +58,10 @@
       "el": "Αναφέρει το caption 'No horns';"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It says 'No lights'", "el": "Λέει 'No lights'" }, "correct": false },
-      { "text": { "en": "It says 'No voices'", "el": "Λέει 'No voices'" }, "correct": false }
+      { "text": { "en": "It says 'No voices'", "el": "Λέει 'No voices'" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -71,10 +71,10 @@
       "el": "Περιγράφεται η SOL να περπατά ανάμεσα σε ρετρό αυτοκίνητα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "She was in a boat", "el": "Ήταν σε βάρκα" }, "correct": false },
-      { "text": { "en": "She was in a park", "el": "Ήταν σε πάρκο" }, "correct": false }
+      { "text": { "en": "She was in a park", "el": "Ήταν σε πάρκο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -84,9 +84,9 @@
       "el": "Περιγράφονται οι δρόμοι της Αβάνας ως παστέλ και ηλιόλουστοι;"
     },
     "answers": [
+      { "text": { "en": "They were rainy", "el": "Ήταν βροχεροί" }, "correct": false },
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
-      { "text": { "en": "They were rainy", "el": "Ήταν βροχεροί" }, "correct": false },
       { "text": { "en": "They were snowy", "el": "Ήταν χιονισμένοι" }, "correct": false }
     ]
   },
@@ -97,10 +97,10 @@
       "el": "Περιγράφεται ο αέρας να μεταφέρει μουσική σαν άρωμα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It carried leaves", "el": "Μετέφερε φύλλα" }, "correct": false },
       { "text": { "en": "It carried dust", "el": "Μετέφερε σκόνη" }, "correct": false },
-      { "text": { "en": "It carried leaves", "el": "Μετέφερε φύλλα" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -110,10 +110,10 @@
       "el": "Στάθηκε η SOL δίπλα σε ένα ροζ κάμπριο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was yellow", "el": "Ήταν κίτρινο" }, "correct": false },
       { "text": { "en": "It was blue", "el": "Ήταν μπλε" }, "correct": false },
-      { "text": { "en": "It was yellow", "el": "Ήταν κίτρινο" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -123,10 +123,10 @@
       "el": "Φαινόταν το είδωλό της στο χρώμιο;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "In water", "el": "Σε νερό" }, "correct": false },
       { "text": { "en": "In glass", "el": "Σε γυαλί" }, "correct": false },
-      { "text": { "en": "In water", "el": "Σε νερό" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -136,10 +136,10 @@
       "el": "Αναφέρεται ότι τα λιθόστρωτα αντηχούσαν τα βήματά της;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "They were silent", "el": "Ήταν σιωπηλά" }, "correct": false },
-      { "text": { "en": "It mentioned marble floors", "el": "Αναφέρθηκαν μαρμάρινα δάπεδα" }, "correct": false }
+      { "text": { "en": "It mentioned marble floors", "el": "Αναφέρθηκαν μαρμάρινα δάπεδα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -149,10 +149,10 @@
       "el": "Περιγράφεται η Αβάνα ως πολύχρωμη και ζεστή;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Cold and grey", "el": "Κρύα και γκρίζα" }, "correct": false },
-      { "text": { "en": "Foggy and blue", "el": "Ομιχλώδης και μπλε" }, "correct": false }
+      { "text": { "en": "Foggy and blue", "el": "Ομιχλώδης και μπλε" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -162,10 +162,10 @@
       "el": "Περιγράφεται η ατμόσφαιρα ως αργή και διαχρονική;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Fast and busy", "el": "Γρήγορη και πολυάσχολη" }, "correct": false },
-      { "text": { "en": "Noisy and crowded", "el": "Θορυβώδης και γεμάτη πλήθη" }, "correct": false }
+      { "text": { "en": "Noisy and crowded", "el": "Θορυβώδης και γεμάτη πλήθη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -175,10 +175,10 @@
       "el": "Η ιστορία διαδραματίζεται τη μέρα;"
     },
     "answers": [
-      { "text": { "en": "Yes, under the sun", "el": "Ναι, κάτω από τον ήλιο" }, "correct": true },
-      { "text": { "en": "At night", "el": "Τη νύχτα" }, "correct": false },
       { "text": { "en": "At dawn", "el": "Τα ξημερώματα" }, "correct": false },
-      { "text": { "en": "At sunset", "el": "Το ηλιοβασίλεμα" }, "correct": false }
+      { "text": { "en": "At sunset", "el": "Το ηλιοβασίλεμα" }, "correct": false },
+      { "text": { "en": "At night", "el": "Τη νύχτα" }, "correct": false },
+      { "text": { "en": "Yes, under the sun", "el": "Ναι, κάτω από τον ήλιο" }, "correct": true }
     ]
   },
   {
@@ -188,10 +188,10 @@
       "el": "Χόρεψε η SOL στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "No, but her steps had rhythm", "el": "Όχι, αλλά τα βήματά της είχαν ρυθμό" }, "correct": true },
       { "text": { "en": "Yes, she danced with people", "el": "Ναι, χόρεψε με ανθρώπους" }, "correct": false },
       { "text": { "en": "Yes, she danced in a club", "el": "Ναι, χόρεψε σε κλαμπ" }, "correct": false },
-      { "text": { "en": "No, she was asleep", "el": "Όχι, κοιμόταν" }, "correct": false }
+      { "text": { "en": "No, she was asleep", "el": "Όχι, κοιμόταν" }, "correct": false },
+      { "text": { "en": "No, but her steps had rhythm", "el": "Όχι, αλλά τα βήματά της είχαν ρυθμό" }, "correct": true }
     ]
   },
   {
@@ -201,10 +201,10 @@
       "el": "Η μουσική συγκρίνεται με άρωμα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was compared to rain", "el": "Συγκρίνεται με βροχή" }, "correct": false },
       { "text": { "en": "It was compared to wind", "el": "Συγκρίνεται με άνεμο" }, "correct": false },
-      { "text": { "en": "It was compared to rain", "el": "Συγκρίνεται με βροχή" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -214,10 +214,10 @@
       "el": "Αναφέρθηκαν μπαλκόνια στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Yes, open balconies", "el": "Ναι, ανοιχτά μπαλκόνια" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Closed windows", "el": "Κλειστά παράθυρα" }, "correct": false },
-      { "text": { "en": "Shops", "el": "Καταστήματα" }, "correct": false }
+      { "text": { "en": "Shops", "el": "Καταστήματα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes, open balconies", "el": "Ναι, ανοιχτά μπαλκόνια" }, "correct": true }
     ]
   },
   {
@@ -227,10 +227,10 @@
       "el": "Περιγράφονται τα αυτοκίνητα ως μοντέρνα ή ρετρό;"
     },
     "answers": [
-      { "text": { "en": "Vintage", "el": "Ρετρό" }, "correct": true },
       { "text": { "en": "Modern", "el": "Μοντέρνα" }, "correct": false },
       { "text": { "en": "Electric", "el": "Ηλεκτρικά" }, "correct": false },
-      { "text": { "en": "Racing", "el": "Αγωνιστικά" }, "correct": false }
+      { "text": { "en": "Racing", "el": "Αγωνιστικά" }, "correct": false },
+      { "text": { "en": "Vintage", "el": "Ρετρό" }, "correct": true }
     ]
   },
   {
@@ -240,10 +240,10 @@
       "el": "Αναφέρεται άρωμα στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "Yes, music drifted like perfume", "el": "Ναι, η μουσική γλιστρούσε σαν άρωμα" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Only smoke", "el": "Μόνο καπνός" }, "correct": false },
-      { "text": { "en": "Only food scents", "el": "Μόνο μυρωδιές φαγητού" }, "correct": false }
+      { "text": { "en": "Only food scents", "el": "Μόνο μυρωδιές φαγητού" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes, music drifted like perfume", "el": "Ναι, η μουσική γλιστρούσε σαν άρωμα" }, "correct": true }
     ]
   },
   {
@@ -253,10 +253,10 @@
       "el": "Περιγράφεται η πόλη να χορεύει με το χρώμα;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It was grey and cold", "el": "Ήταν γκρίζα και ψυχρή" }, "correct": false },
       { "text": { "en": "It was colorless", "el": "Ήταν άχρωμη" }, "correct": false },
-      { "text": { "en": "It was grey and cold", "el": "Ήταν γκρίζα και ψυχρή" }, "correct": false }
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -266,10 +266,10 @@
       "el": "Τελειώνει το caption με πατουσάκια 🐾🐾🐾;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It ends with stars", "el": "Τελειώνει με αστέρια" }, "correct": false },
-      { "text": { "en": "It ends with music notes", "el": "Τελειώνει με νότες" }, "correct": false }
+      { "text": { "en": "It ends with music notes", "el": "Τελειώνει με νότες" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
   {
@@ -279,23 +279,23 @@
       "el": "Είναι η ατμόσφαιρα νοσταλγική και ζεστή;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "Cold and distant", "el": "Ψυχρή και απόμακρη" }, "correct": false },
-      { "text": { "en": "Mysterious and dark", "el": "Μυστηριώδης και σκοτεινή" }, "correct": false }
+      { "text": { "en": "Mysterious and dark", "el": "Μυστηριώδης και σκοτεινή" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   },
-    {
+  {
     "id": 23,
     "question": {
       "en": "Was there any mention of the sea or ocean in the story?",
       "el": "Αναφέρθηκε η θάλασσα ή ο ωκεανός στην ιστορία;"
     },
     "answers": [
-      { "text": { "en": "No, the focus was on the city streets", "el": "Όχι, η ιστορία εστιάζει στους δρόμους της πόλης" }, "correct": true },
       { "text": { "en": "Yes, the sea was described", "el": "Ναι, περιγράφεται η θάλασσα" }, "correct": false },
+      { "text": { "en": "Only waves were heard", "el": "Ακούστηκαν μόνο κύματα" }, "correct": false },
       { "text": { "en": "Yes, near the harbor", "el": "Ναι, κοντά στο λιμάνι" }, "correct": false },
-      { "text": { "en": "Only waves were heard", "el": "Ακούστηκαν μόνο κύματα" }, "correct": false }
+      { "text": { "en": "No, the focus was on the city streets", "el": "Όχι, η ιστορία εστιάζει στους δρόμους της πόλης" }, "correct": true }
     ]
   },
   {
@@ -305,10 +305,10 @@
       "el": "Περιγράφεται η SOL ως φρουρός ή βασίλισσα στην Αβάνα;"
     },
     "answers": [
-      { "text": { "en": "No, just graceful and free", "el": "Όχι, μόνο κομψή και ελεύθερη" }, "correct": true },
-      { "text": { "en": "Yes, a queen of the streets", "el": "Ναι, βασίλισσα των δρόμων" }, "correct": false },
+      { "text": { "en": "Yes, protector of the sea", "el": "Ναι, προστάτιδα της θάλασσας" }, "correct": false },
       { "text": { "en": "Yes, guardian of the bridge", "el": "Ναι, φρουρός της γέφυρας" }, "correct": false },
-      { "text": { "en": "Yes, protector of the sea", "el": "Ναι, προστάτιδα της θάλασσας" }, "correct": false }
+      { "text": { "en": "Yes, a queen of the streets", "el": "Ναι, βασίλισσα των δρόμων" }, "correct": false },
+      { "text": { "en": "No, just graceful and free", "el": "Όχι, μόνο κομψή και ελεύθερη" }, "correct": true }
     ]
   },
   {
@@ -318,11 +318,10 @@
       "el": "Βρίσκεται η Αβάνα περίπου στο γεωγραφικό πλάτος 23.1136;"
     },
     "answers": [
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "No, closer to 25.7617", "el": "Όχι, πιο κοντά στο 25.7617" }, "correct": false },
       { "text": { "en": "No, around 20.2333", "el": "Όχι, γύρω στο 20.2333" }, "correct": false },
-      { "text": { "en": "No, near 19.4326", "el": "Όχι, κοντά στο 19.4326" }, "correct": false }
+      { "text": { "en": "No, near 19.4326", "el": "Όχι, κοντά στο 19.4326" }, "correct": false },
+      { "text": { "en": "No, closer to 25.7617", "el": "Όχι, πιο κοντά στο 25.7617" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
     ]
   }
 ]
-
