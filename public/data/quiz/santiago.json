@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": { "en": "Is Santiago the capital city of Chile?", "el": "Είναι το Σαντιάγκο η πρωτεύουσα της Χιλής;" },
+    "answers": [
+      { "text": { "en": "It is a coastal city", "el": "Είναι παραθαλάσσια πόλη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is the capital of Peru", "el": "Είναι πρωτεύουσα του Περού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": { "en": "Do the Andes mountains rise behind Santiago?", "el": "Υψώνονται οι Άνδεις πίσω από το Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "Only hills are visible", "el": "Φαίνονται μόνο λόφοι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "The city is surrounded by ocean", "el": "Η πόλη περιβάλλεται από ωκεανό" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": { "en": "Is Gran Torre Santiago the tallest building in Chile?", "el": "Είναι η Gran Torre Santiago το ψηλότερο κτίριο στη Χιλή;" },
+    "answers": [
+      { "text": { "en": "It is a government palace", "el": "Είναι κυβερνητικό κτίριο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is a historic monument", "el": "Είναι ιστορικό μνημείο" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 4,
+    "question": { "en": "Is Santiago located near the Pacific coast?", "el": "Βρίσκεται το Σαντιάγκο κοντά στις ακτές του Ειρηνικού;" },
+    "answers": [
+      { "text": { "en": "It is directly on the coast", "el": "Βρίσκεται ακριβώς στην ακτή" }, "correct": false },
+      { "text": { "en": "Yes, but it is inland", "el": "Ναι, αλλά είναι στην ενδοχώρα" }, "correct": true },
+      { "text": { "en": "No, it is landlocked", "el": "Όχι, είναι περίκλειστη" }, "correct": false },
+      { "text": { "en": "It is on an island", "el": "Βρίσκεται σε νησί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": { "en": "Does the Mapocho River run through Santiago?", "el": "Διασχίζει ο ποταμός Mapocho το Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "It is a seasonal lake", "el": "Είναι εποχική λίμνη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It runs underground only", "el": "Ρέει μόνο υπόγεια" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 6,
+    "question": { "en": "Is Plaza de Armas a central square in Santiago?", "el": "Είναι η Plaza de Armas κεντρική πλατεία του Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "It is an airport terminal", "el": "Είναι τερματικός σταθμός αεροδρομίου" }, "correct": false },
+      { "text": { "en": "It is outside the city", "el": "Βρίσκεται εκτός πόλης" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": { "en": "Is La Moneda an important building in Santiago?", "el": "Είναι η La Moneda σημαντικό κτίριο στο Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "It is a sports stadium", "el": "Είναι αθλητικό στάδιο" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is a shopping mall", "el": "Είναι εμπορικό κέντρο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": { "en": "Is Bellavista known as a lively neighborhood in Santiago?", "el": "Είναι η Bellavista γνωστή ως ζωντανή γειτονιά στο Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "It is an industrial zone", "el": "Είναι βιομηχανική ζώνη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is a desert area", "el": "Είναι έρημος" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 9,
+    "question": { "en": "Is Santiago known for its clear views of the Andes on bright days?", "el": "Είναι γνωστό το Σαντιάγκο για καθαρή θέα στις Άνδεις τις φωτεινές μέρες;" },
+    "answers": [
+      { "text": { "en": "Only at night", "el": "Μόνο τη νύχτα" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only during winter storms", "el": "Μόνο σε χειμερινές καταιγίδες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": { "en": "Is Santiago located in the Southern Hemisphere?", "el": "Βρίσκεται το Σαντιάγκο στο νότιο ημισφαίριο;" },
+    "answers": [
+      { "text": { "en": "It is in the Northern Hemisphere", "el": "Βρίσκεται στο βόρειο ημισφαίριο" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It lies on the equator", "el": "Βρίσκεται στον ισημερινό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": { "en": "Does Santiago experience earthquakes due to tectonic activity?", "el": "Επηρεάζεται το Σαντιάγκο από σεισμούς λόγω τεκτονικής δραστηριότητας;" },
+    "answers": [
+      { "text": { "en": "Only floods", "el": "Μόνο πλημμύρες" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only volcanic eruptions", "el": "Μόνο ηφαιστειακές εκρήξεις" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 12,
+    "question": { "en": "Is Santiago one of the largest cities in South America?", "el": "Είναι το Σαντιάγκο μία από τις μεγαλύτερες πόλεις της Νότιας Αμερικής;" },
+    "answers": [
+      { "text": { "en": "It is a village", "el": "Είναι χωριό" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is a small town", "el": "Είναι μικρή πόλη" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": { "en": "Is Cerro San Cristóbal a popular viewpoint over Santiago?", "el": "Είναι ο Cerro San Cristóbal δημοφιλές σημείο θέας στο Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is in another country", "el": "Βρίσκεται σε άλλη χώρα" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is underground", "el": "Είναι υπόγειο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": { "en": "Is Santiago known for a mix of modern and historic architecture?", "el": "Είναι το Σαντιάγκο γνωστό για συνδυασμό μοντέρνας και ιστορικής αρχιτεκτονικής;" },
+    "answers": [
+      { "text": { "en": "Only skyscrapers", "el": "Μόνο ουρανοξύστες" }, "correct": false },
+      { "text": { "en": "Only ancient ruins", "el": "Μόνο αρχαία ερείπια" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 15,
+    "question": { "en": "Does the episode describe the skyline as distant for realism?", "el": "Περιγράφεται το skyline ως μακρινό για ρεαλισμό στο επεισόδιο;" },
+    "answers": [
+      { "text": { "en": "It is not mentioned", "el": "Δεν αναφέρεται" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "It is centered and close", "el": "Είναι κεντραρισμένο και κοντινό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": { "en": "Is Santiago surrounded by vineyards and valleys nearby?", "el": "Περιβάλλεται το Σαντιάγκο από αμπελώνες και κοιλάδες σε κοντινή απόσταση;" },
+    "answers": [
+      { "text": { "en": "Only deserts surround it", "el": "Περιβάλλεται μόνο από ερήμους" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Only glaciers surround it", "el": "Περιβάλλεται μόνο από παγετώνες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": { "en": "Is Santiago known for strong sunlight due to its climate?", "el": "Είναι το Σαντιάγκο γνωστό για έντονο ηλιακό φως λόγω κλίματος;" },
+    "answers": [
+      { "text": { "en": "It is polar", "el": "Έχει πολικό κλίμα" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is always cloudy", "el": "Έχει πάντα συννεφιά" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": { "en": "Is Santiago positioned between mountains and plains?", "el": "Βρίσκεται το Σαντιάγκο ανάμεσα σε βουνά και πεδιάδες;" },
+    "answers": [
+      { "text": { "en": "It is entirely coastal", "el": "Είναι αποκλειστικά παραθαλάσσιο" }, "correct": false },
+      { "text": { "en": "It is entirely mountainous", "el": "Είναι αποκλειστικά ορεινό" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": { "en": "Does the episode focus on mountains dominating the background?", "el": "Εστιάζει το επεισόδιο στα βουνά που κυριαρχούν στο φόντο;" },
+    "answers": [
+      { "text": { "en": "Only beaches are described", "el": "Περιγράφονται μόνο παραλίες" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "Only forests are mentioned", "el": "Αναφέρονται μόνο δάση" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": { "en": "Is Santiago described as calm rather than chaotic in the episode?", "el": "Περιγράφεται το Σαντιάγκο ως ήρεμο και όχι χαοτικό στο επεισόδιο;" },
+    "answers": [
+      { "text": { "en": "It is described as noisy", "el": "Περιγράφεται ως θορυβώδες" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is described as crowded", "el": "Περιγράφεται ως υπερπλήρες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": { "en": "Does the episode mention walking through historic parts of the city?", "el": "Αναφέρει το επεισόδιο περιήγηση σε ιστορικά σημεία της πόλης;" },
+    "answers": [
+      { "text": { "en": "Only rural areas are mentioned", "el": "Αναφέρονται μόνο αγροτικές περιοχές" }, "correct": false },
+      { "text": { "en": "Only highways are mentioned", "el": "Αναφέρονται μόνο αυτοκινητόδρομοι" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 22,
+    "question": { "en": "Is Santiago shown as a city beneath the mountains?", "el": "Παρουσιάζεται το Σαντιάγκο ως πόλη κάτω από τα βουνά;" },
+    "answers": [
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It is shown underwater", "el": "Παρουσιάζεται κάτω από το νερό" }, "correct": false },
+      { "text": { "en": "It is shown above the clouds only", "el": "Παρουσιάζεται μόνο πάνω από τα σύννεφα" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": { "en": "Does the episode avoid describing crowds or traffic?", "el": "Αποφεύγει το επεισόδιο την περιγραφή πλήθους ή κυκλοφορίας;" },
+    "answers": [
+      { "text": { "en": "It focuses on protests", "el": "Εστιάζει σε διαδηλώσεις" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "It focuses on traffic", "el": "Εστιάζει στην κυκλοφορία" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": { "en": "Is Santiago portrayed as balanced between city life and nature?", "el": "Παρουσιάζεται το Σαντιάγκο ως ισορροπία πόλης και φύσης;" },
+    "answers": [
+      { "text": { "en": "Only nature is shown", "el": "Παρουσιάζεται μόνο φύση" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false },
+      { "text": { "en": "Only urban chaos is shown", "el": "Παρουσιάζεται μόνο αστικό χάος" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 25,
+    "question": { "en": "Does SOL remain calm and observant throughout the Santiago episode?", "el": "Παραμένει η SOL ήρεμη και παρατηρητική σε όλο το επεισόδιο του Σαντιάγκο;" },
+    "answers": [
+      { "text": { "en": "She is described as hiding", "el": "Περιγράφεται να κρύβεται" }, "correct": false },
+      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
+      { "text": { "en": "She is described as rushing", "el": "Περιγράφεται να βιάζεται" }, "correct": false },
+      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+    ]
+  }
+]

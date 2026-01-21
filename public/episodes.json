@@ -1365,5 +1365,47 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 36,
+  "title": "SOLadventure #36 – Santiago, Andean skyline 🏔️🇨🇱",
+  "quote": "The city shimmered, the peaks stayed bold.",
+  "caption": "Santiago below, Andes above, Sol in control. 🐾🐾🐾",
+  "image": "episodes/santiago.png",
+  "location": {
+    "lat": -33.4489,
+    "lng": -70.6693
+  },
+  "visible": true,
+  "city": "santiago",
+  "story": {
+    "en": "From a sunlit viewpoint above Santiago, SOL watched the city spread out in tidy blocks while the Andes filled the horizon with snow and scale. Far away, Gran Torre Santiago stood small but unmistakable among the skyline, a crisp marker against the bright afternoon. She drifted through Plaza de Armas, traced the Mapocho, paused by La Moneda, and ended in Bellavista where the streets felt alive with music and color, with the mountains holding the backdrop like a promise.",
+    "el": "Από ένα φωτεινό σημείο πάνω από το Σαντιάγκο, η SOL έβλεπε την πόλη να απλώνεται σε καθαρές γραμμές, ενώ οι Άνδεις γέμιζαν τον ορίζοντα με χιόνι και όγκο. Μακριά, η Gran Torre Santiago φαινόταν μικρή αλλά ξεκάθαρη μέσα στο skyline, σαν λεπτός δείκτης στο καθαρό απόγευμα. Πέρασε από την Plaza de Armas, ακολούθησε τον Mapocho, στάθηκε στη La Moneda και έκλεισε στη Bellavista όπου οι δρόμοι είχαν μουσική και χρώμα, με τα βουνά να κρατούν σταθερό το φόντο σαν υπόσχεση."
+  },
+  "photoQuote": "Watch the peaks. Own the view.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Were the Andes described as filling the horizon behind Santiago?",
+        "el": "Περιγράφηκαν οι Άνδεις να γεμίζουν τον ορίζοντα πίσω από το Σαντιάγκο;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was Gran Torre Santiago mentioned as a distant but recognizable skyline marker?",
+        "el": "Αναφέρθηκε η Gran Torre Santiago ως μακρινό αλλά αναγνωρίσιμο σημείο στο skyline;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story say SOL took a boat ride on the ocean in Santiago?",
+        "el": "Είπε η ιστορία ότι η SOL έκανε βόλτα με βάρκα στον ωκεανό στο Σαντιάγκο;"
+      },
+      "answer": false
+    }
+  ]
 }
+
  ]
