@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Buenos Aires is the capital city of which country?",
+      "el": "Το Μπουένος Άιρες είναι η πρωτεύουσα ποιας χώρας;"
+    },
+    "answers": [
+      { "text": { "en": "Chile", "el": "Χιλή" }, "correct": false },
+      { "text": { "en": "Argentina", "el": "Αργεντινή" }, "correct": true },
+      { "text": { "en": "Uruguay", "el": "Ουρουγουάη" }, "correct": false },
+      { "text": { "en": "Paraguay", "el": "Παραγουάη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Which neighborhood is famously linked with tango and old cobblestone streets?",
+      "el": "Ποια γειτονιά συνδέεται διάσημα με το τάνγκο και τα παλιά καλντερίμια;"
+    },
+    "answers": [
+      { "text": { "en": "Belgrano", "el": "Belgrano" }, "correct": false },
+      { "text": { "en": "San Telmo", "el": "San Telmo" }, "correct": true },
+      { "text": { "en": "Caballito", "el": "Caballito" }, "correct": false },
+      { "text": { "en": "Palermo", "el": "Palermo" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What is the name of the famous white and pink presidential palace in Buenos Aires?",
+      "el": "Πώς λέγεται το διάσημο προεδρικό μέγαρο με ροζ απόχρωση στο Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "El Capitolio", "el": "El Capitolio" }, "correct": false },
+      { "text": { "en": "Casa Rosada", "el": "Casa Rosada" }, "correct": true },
+      { "text": { "en": "La Moneda", "el": "La Moneda" }, "correct": false },
+      { "text": { "en": "Palacio Real", "el": "Βασιλικό Παλάτι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "The Obelisco stands on which major avenue in Buenos Aires?",
+      "el": "Ο Obelisco βρίσκεται πάνω σε ποια μεγάλη λεωφόρο του Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "Avenida 9 de Julio", "el": "Avenida 9 de Julio" }, "correct": true },
+      { "text": { "en": "Karl-Marx-Allee", "el": "Karl-Marx-Allee" }, "correct": false },
+      { "text": { "en": "Las Ramblas", "el": "Las Ramblas" }, "correct": false },
+      { "text": { "en": "Champs-Élysées", "el": "Champs-Élysées" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Buenos Aires sits beside which large body of water?",
+      "el": "Το Μπουένος Άιρες βρίσκεται δίπλα σε ποιο μεγάλο υδάτινο σύστημα;"
+    },
+    "answers": [
+      { "text": { "en": "Danube River", "el": "Δούναβης" }, "correct": false },
+      { "text": { "en": "Río de la Plata", "el": "Río de la Plata" }, "correct": true },
+      { "text": { "en": "Vltava River", "el": "Μολδάβας" }, "correct": false },
+      { "text": { "en": "Thames River", "el": "Τάμεσης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Which colorful neighborhood is famous for Caminito street and La Boca vibes?",
+      "el": "Ποια πολύχρωμη γειτονιά είναι διάσημη για το Caminito και τη La Boca αισθητική;"
+    },
+    "answers": [
+      { "text": { "en": "Microcentro", "el": "Microcentro" }, "correct": false },
+      { "text": { "en": "Recoleta", "el": "Recoleta" }, "correct": false },
+      { "text": { "en": "La Boca", "el": "La Boca" }, "correct": true },
+      { "text": { "en": "Retiro", "el": "Retiro" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What is the traditional Argentine drink often sipped from a gourd with a metal straw?",
+      "el": "Ποιο είναι το παραδοσιακό ρόφημα της Αργεντινής που πίνεται από κολοκύθα με μεταλλικό καλαμάκι;"
+    },
+    "answers": [
+      { "text": { "en": "Bubble tea", "el": "Bubble tea" }, "correct": false },
+      { "text": { "en": "Mate", "el": "Μάτε" }, "correct": true },
+      { "text": { "en": "Sake", "el": "Σάκε" }, "correct": false },
+      { "text": { "en": "Espresso", "el": "Εσπρέσο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which famous opera house is a cultural icon of Buenos Aires?",
+      "el": "Ποιο διάσημο θέατρο όπερας είναι πολιτιστικό σύμβολο του Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "Sydney Opera House", "el": "Όπερα του Σίδνεϊ" }, "correct": false },
+      { "text": { "en": "La Scala", "el": "La Scala" }, "correct": false },
+      { "text": { "en": "Teatro Colón", "el": "Teatro Colón" }, "correct": true },
+      { "text": { "en": "Royal Opera House", "el": "Βασιλική Όπερα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which square is the historic heart near Casa Rosada and major civic buildings?",
+      "el": "Ποια πλατεία είναι η ιστορική καρδιά κοντά στην Casa Rosada και σε σημαντικά δημόσια κτίρια;"
+    },
+    "answers": [
+      { "text": { "en": "Dam Square", "el": "Πλατεία Νταμ" }, "correct": false },
+      { "text": { "en": "Trafalgar Square", "el": "Πλατεία Τραφάλγκαρ" }, "correct": false },
+      { "text": { "en": "Plaza de Mayo", "el": "Plaza de Mayo" }, "correct": true },
+      { "text": { "en": "Piazza Navona", "el": "Piazza Navona" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Tango music is strongly associated with which instrument in many classic arrangements?",
+      "el": "Η μουσική του τάνγκο συνδέεται έντονα με ποιο όργανο σε πολλές κλασικές εκτελέσεις;"
+    },
+    "answers": [
+      { "text": { "en": "Didgeridoo", "el": "Ντιτζεριντού" }, "correct": false },
+      { "text": { "en": "Bandoneón", "el": "Μπαντονεόν" }, "correct": true },
+      { "text": { "en": "Sitar", "el": "Σιτάρ" }, "correct": false },
+      { "text": { "en": "Bagpipes", "el": "Γκάιντες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which neighborhood is known for grand architecture and the famous Recoleta Cemetery?",
+      "el": "Ποια γειτονιά είναι γνωστή για την επιβλητική αρχιτεκτονική και το κοιμητήριο Recoleta;"
+    },
+    "answers": [
+      { "text": { "en": "San Telmo", "el": "San Telmo" }, "correct": false },
+      { "text": { "en": "Recoleta", "el": "Recoleta" }, "correct": true },
+      { "text": { "en": "Once", "el": "Once" }, "correct": false },
+      { "text": { "en": "La Boca", "el": "La Boca" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Which modern waterfront area was redeveloped with docks and sleek buildings?",
+      "el": "Ποια σύγχρονη παραποτάμια περιοχή αναπτύχθηκε ξανά με αποβάθρες και μοντέρνα κτίρια;"
+    },
+    "answers": [
+      { "text": { "en": "Gamla Stan", "el": "Gamla Stan" }, "correct": false },
+      { "text": { "en": "Puerto Madero", "el": "Puerto Madero" }, "correct": true },
+      { "text": { "en": "Montmartre", "el": "Μονμάρτη" }, "correct": false },
+      { "text": { "en": "Gothic Quarter", "el": "Γοτθική Συνοικία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What is a classic Argentine grilled meal often centered on beef?",
+      "el": "Ποιο είναι το κλασικό αργεντίνικο γεύμα στη σχάρα που βασίζεται συχνά στο μοσχάρι;"
+    },
+    "answers": [
+      { "text": { "en": "Pho", "el": "Φο" }, "correct": false },
+      { "text": { "en": "Asado", "el": "Ασάδο" }, "correct": true },
+      { "text": { "en": "Paella", "el": "Παέγια" }, "correct": false },
+      { "text": { "en": "Sushi", "el": "Σούσι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "In the episode story, where did Sol drift first to catch the tango mood?",
+      "el": "Στην ιστορία του επεισοδίου, πού πήγε πρώτα η Sol για να πιάσει το τάνγκο vibe;"
+    },
+    "answers": [
+      { "text": { "en": "Charles Bridge", "el": "Γέφυρα του Καρόλου" }, "correct": false },
+      { "text": { "en": "San Telmo", "el": "San Telmo" }, "correct": true },
+      { "text": { "en": "Machu Picchu", "el": "Μάτσου Πίτσου" }, "correct": false },
+      { "text": { "en": "Waikiki", "el": "Γουαϊκίκι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which European language strongly influenced Argentine Spanish accent and rhythm in Buenos Aires?",
+      "el": "Ποια ευρωπαϊκή γλώσσα επηρέασε έντονα τον τόνο και τον ρυθμό των ισπανικών στο Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "Arabic", "el": "Αραβικά" }, "correct": false },
+      { "text": { "en": "Japanese", "el": "Ιαπωνικά" }, "correct": false },
+      { "text": { "en": "Swedish", "el": "Σουηδικά" }, "correct": false },
+      { "text": { "en": "Italian", "el": "Ιταλικά" }, "correct": true }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which word best describes the time-of-day vibe in the photoQuote 'Twilight. Tango. Whispers.'?",
+      "el": "Ποια λέξη περιγράφει καλύτερα το vibe της ώρας στη φράση 'Twilight. Tango. Whispers.';"
+    },
+    "answers": [
+      { "text": { "en": "Midday", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "Noon", "el": "Μεσημέρι (12:00)" }, "correct": false },
+      { "text": { "en": "Twilight", "el": "Δειλινό" }, "correct": true },
+      { "text": { "en": "Dawn", "el": "Αυγή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which of these is a common street scene linked with tango in Buenos Aires?",
+      "el": "Ποιο από τα παρακάτω ταιριάζει με συνηθισμένη street εικόνα τάνγκο στο Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "Geysers erupting downtown", "el": "Γκέιζερ στο κέντρο" }, "correct": false },
+      { "text": { "en": "Tulip fields by canals", "el": "Χωράφια με τουλίπες δίπλα σε κανάλια" }, "correct": false },
+      { "text": { "en": "A couple dancing on cobblestones", "el": "Ένα ζευγάρι που χορεύει σε καλντερίμι" }, "correct": true },
+      { "text": { "en": "Ski lifts crossing the city", "el": "Τελεφερίκ σκι πάνω από την πόλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What is the large, broad boulevard often cited among the widest avenues, where the Obelisco is located?",
+      "el": "Ποια είναι η μεγάλη, φαρδιά λεωφόρος που συχνά αναφέρεται ως από τις πιο πλατιές, όπου βρίσκεται ο Obelisco;"
+    },
+    "answers": [
+      { "text": { "en": "Ringstrasse", "el": "Ringstrasse" }, "correct": false },
+      { "text": { "en": "Via del Corso", "el": "Via del Corso" }, "correct": false },
+      { "text": { "en": "Fifth Avenue", "el": "Fifth Avenue" }, "correct": false },
+      { "text": { "en": "Avenida 9 de Julio", "el": "Avenida 9 de Julio" }, "correct": true }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "In the episode story, what did Sol do with the tango rhythm?",
+      "el": "Στην ιστορία του επεισοδίου, τι έκανε η Sol με τον ρυθμό του τάνγκο;"
+    },
+    "answers": [
+      { "text": { "en": "She watched calmly, like a queen", "el": "Παρακολούθησε ήρεμα, σαν βασίλισσα" }, "correct": true },
+      { "text": { "en": "She asked for directions from tourists", "el": "Ζήτησε οδηγίες από τουρίστες" }, "correct": false },
+      { "text": { "en": "She joined loudly and led a crowd", "el": "Μπήκε δυνατά και οδήγησε πλήθος" }, "correct": false },
+      { "text": { "en": "She ran away from the music", "el": "Έφυγε τρέχοντας από τη μουσική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which river estuary forms the watery edge of Buenos Aires?",
+      "el": "Ποιο εκβολικό σύστημα (estuário) σχηματίζει το υδάτινο όριο του Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "Tagus River", "el": "Τάγος" }, "correct": false },
+      { "text": { "en": "Río de la Plata", "el": "Río de la Plata" }, "correct": true },
+      { "text": { "en": "Seine River", "el": "Σηκουάνας" }, "correct": false },
+      { "text": { "en": "Amazon River", "el": "Αμαζόνιος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which of these is a well known green area in Buenos Aires popular for parks and Palermo vibes?",
+      "el": "Ποιο από τα παρακάτω είναι γνωστή περιοχή στο Μπουένος Άιρες με πάρκα και Palermo vibes;"
+    },
+    "answers": [
+      { "text": { "en": "Niagara Falls", "el": "Καταρράκτες Νιαγάρα" }, "correct": false },
+      { "text": { "en": "Sagrada Família", "el": "Sagrada Família" }, "correct": false },
+      { "text": { "en": "Palermo", "el": "Palermo" }, "correct": true },
+      { "text": { "en": "Old Town Tallinn", "el": "Παλιά Πόλη Ταλίν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which of these foods is commonly associated with Argentina and Buenos Aires street menus?",
+      "el": "Ποιο από αυτά τα φαγητά συνδέεται συχνά με την Αργεντινή και τα μενού του Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "Fish and chips", "el": "Fish and chips" }, "correct": false },
+      { "text": { "en": "Empanadas", "el": "Εμπανάδας" }, "correct": true },
+      { "text": { "en": "Pierogi", "el": "Πιερόγκι" }, "correct": false },
+      { "text": { "en": "Ramen", "el": "Ράμεν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "In the episode story, which landmark was mentioned as flashing past in the distance?",
+      "el": "Στην ιστορία του επεισοδίου, ποιο αξιοθέατο αναφέρθηκε ότι φάνηκε να λάμπει μακριά;"
+    },
+    "answers": [
+      { "text": { "en": "Parthenon", "el": "Παρθενώνας" }, "correct": false },
+      { "text": { "en": "Obelisco", "el": "Obelisco" }, "correct": true },
+      { "text": { "en": "Brandenburg Gate", "el": "Πύλη του Βρανδεμβούργου" }, "correct": false },
+      { "text": { "en": "Big Ben", "el": "Big Ben" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What is the main city described in the episode as turning twilight into a dance?",
+      "el": "Ποια πόλη περιγράφεται στο επεισόδιο ότι κάνει το δειλινό να χορεύει;"
+    },
+    "answers": [
+      { "text": { "en": "Prague", "el": "Πράγα" }, "correct": false },
+      { "text": { "en": "Santiago", "el": "Σαντιάγκο" }, "correct": false },
+      { "text": { "en": "Buenos Aires", "el": "Μπουένος Άιρες" }, "correct": true },
+      { "text": { "en": "Havana", "el": "Αβάνα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which statement matches the tone of the Buenos Aires episode?",
+      "el": "Ποια πρόταση ταιριάζει με τον τόνο του επεισοδίου για το Μπουένος Άιρες;"
+    },
+    "answers": [
+      { "text": { "en": "The scene is a snowy mountain climb at high altitude", "el": "Η σκηνή είναι χιονισμένη ανάβαση σε μεγάλο υψόμετρο" }, "correct": false },
+      { "text": { "en": "Twilight feels like a slow tango under street lamps", "el": "Το δειλινό μοιάζει με αργό τάνγκο κάτω από τα φανάρια" }, "correct": true },
+      { "text": { "en": "The city is loud with rush-hour horns and chaos", "el": "Η πόλη είναι γεμάτη κορναρίσματα και χάος" }, "correct": false },
+      { "text": { "en": "The episode is set on tropical reefs and coral lagoons", "el": "Το επεισόδιο είναι σε τροπικούς υφάλους και κοραλλιογενείς λιμνοθάλασσες" }, "correct": false }
+    ]
+  }
+]

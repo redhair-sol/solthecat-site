@@ -1406,6 +1406,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 37,
+  "title": "SOLadventure #37 – Buenos Aires, tango twilight 💃 🇦🇷",
+  "quote": "She didn’t follow the rhythm. She set it.",
+  "caption": "Cobblestones, bandoneón, and a queen in slow motion. 🐾🐾🐾",
+  "image": "episodes/buenosaires.png",
+  "location": { "lat": -34.6037, "lng": -58.3816 },
+  "visible": true,
+  "city": "buenosaires",
+  "story": {
+    "en": "Buenos Aires arrived like perfume at dusk, soft, warm, and impossible to ignore. Sol drifted into San Telmo where cobblestones held old footsteps and street lamps stitched gold into the evening. A bandoneón breathed its first notes, and a tango couple turned slowly in the midground, as if the city itself was learning how to move again. Sol did not watch like a tourist. She watched like a ruler checking her territory, calm and certain. She crossed Plaza de Mayo, let the Obelisco flash past in the distance, and ended by the river where the air tasted of salt and stories. Twilight did not fall here. It danced.",
+    "el": "Το Μπουένος Άιρες ήρθε σαν άρωμα στο δειλινό, απαλό, ζεστό και αδύνατο να το αγνοήσεις. Η Sol γλίστρησε στο San Telmo, εκεί όπου τα καλντερίμια κρατούν παλιά βήματα και τα φανάρια ράβουν χρυσό μέσα στη νύχτα. Ένα μπαντονεόν πήρε ανάσα στις πρώτες νότες, και ένα ζευγάρι τάνγκο γύρισε αργά στο βάθος, σαν να ξαναμάθαινε η πόλη να κινείται. Η Sol δεν κοιτούσε σαν τουρίστρια. Κοιτούσε σαν βασίλισσα που επιθεωρεί τον χώρο της, ήρεμη και βέβαιη. Πέρασε από την Plaza de Mayo, άφησε τον Obelisco να λάμψει μακριά, και έκλεισε κοντά στο ποτάμι όπου ο αέρας είχε αλάτι και ιστορίες. Εδώ το δειλινό δεν πέφτει. Χορεύει."
+  },
+  "photoQuote": "Twilight. Tango. Whispers.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol drift into San Telmo at dusk?",
+        "el": "Γλίστρησε η Sol στο San Telmo στο δειλινό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was a bandoneón mentioned as starting the tango mood?",
+        "el": "Αναφέρθηκε μπαντονεόν που έδωσε το τάνγκο vibe;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol take a loud boat ride through the city?",
+        "el": "Έκανε η Sol θορυβώδη βόλτα με βάρκα μέσα στην πόλη;"
+      },
+      "answer": false
+    }
+  ]
 }
-
  ]
