@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Montevideo is the capital city of which country?",
+      "el": "Το Μοντεβιδέο είναι η πρωτεύουσα ποιας χώρας;"
+    },
+    "answers": [
+      { "text": { "en": "Argentina", "el": "Αργεντινή" }, "correct": false },
+      { "text": { "en": "Chile", "el": "Χιλή" }, "correct": false },
+      { "text": { "en": "Uruguay", "el": "Ουρουγουάη" }, "correct": true },
+      { "text": { "en": "Paraguay", "el": "Παραγουάη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Montevideo sits on the shores of which large body of water?",
+      "el": "Το Μοντεβιδέο βρίσκεται στις όχθες ποιας μεγάλης υδάτινης έκτασης;"
+    },
+    "answers": [
+      { "text": { "en": "Amazon River", "el": "Αμαζόνιος" }, "correct": false },
+      { "text": { "en": "Caribbean Sea", "el": "Καραϊβική Θάλασσα" }, "correct": false },
+      { "text": { "en": "Río de la Plata", "el": "Río de la Plata" }, "correct": true },
+      { "text": { "en": "Lake Titicaca", "el": "Λίμνη Τιτικάκα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What is the name of Montevideo’s famous waterfront promenade featured in the episode vibe?",
+      "el": "Πώς λέγεται ο διάσημος παραλιακός περίπατος του Μοντεβιδέο που ταιριάζει με το vibe του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Canal Ring", "el": "Ζώνη Καναλιών" }, "correct": false },
+      { "text": { "en": "Rambla", "el": "Rambla" }, "correct": true },
+      { "text": { "en": "The High Line", "el": "High Line" }, "correct": false },
+      { "text": { "en": "Las Ramblas (Barcelona)", "el": "Las Ramblas (Βαρκελώνη)" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which Afro-Uruguayan rhythm is especially associated with Montevideo’s street culture?",
+      "el": "Ποιος αφρο-ουρουγουανικός ρυθμός συνδέεται ιδιαίτερα με τη street κουλτούρα του Μοντεβιδέο;"
+    },
+    "answers": [
+      { "text": { "en": "Samba", "el": "Σάμπα" }, "correct": false },
+      { "text": { "en": "Flamenco", "el": "Φλαμένκο" }, "correct": false },
+      { "text": { "en": "Candombe", "el": "Καντόμπε" }, "correct": true },
+      { "text": { "en": "Fado", "el": "Φάντο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What is the name of Montevideo’s historic old town district?",
+      "el": "Πώς λέγεται η ιστορική παλιά πόλη του Μοντεβιδέο;"
+    },
+    "answers": [
+      { "text": { "en": "Alfama", "el": "Αλφάμα" }, "correct": false },
+      { "text": { "en": "Trastevere", "el": "Τραστέβερε" }, "correct": false },
+      { "text": { "en": "Ciudad Vieja", "el": "Ciudad Vieja" }, "correct": true },
+      { "text": { "en": "Old Town (Gamla Stan)", "el": "Παλιά Πόλη (Gamla Stan)" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Which iconic square is often considered the heart of central Montevideo?",
+      "el": "Ποια εμβληματική πλατεία θεωρείται συχνά η καρδιά του κέντρου του Μοντεβιδέο;"
+    },
+    "answers": [
+      { "text": { "en": "Dam Square", "el": "Πλατεία Νταμ" }, "correct": false },
+      { "text": { "en": "Plaza Independencia", "el": "Plaza Independencia" }, "correct": true },
+      { "text": { "en": "Trafalgar Square", "el": "Πλατεία Τραφάλγκαρ" }, "correct": false },
+      { "text": { "en": "Plaza Mayor", "el": "Plaza Mayor" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which traditional drink is famously common in Uruguay and often sipped from a gourd?",
+      "el": "Ποιο παραδοσιακό ρόφημα είναι πολύ συνηθισμένο στην Ουρουγουάη και πίνεται συχνά από κολοκύθα;"
+    },
+    "answers": [
+      { "text": { "en": "Sake", "el": "Σάκε" }, "correct": false },
+      { "text": { "en": "Mate", "el": "Μάτε" }, "correct": true },
+      { "text": { "en": "Matcha", "el": "Μάτσα" }, "correct": false },
+      { "text": { "en": "Bubble tea", "el": "Bubble tea" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which type of meal best matches the classic ‘parrilla’ culture in Montevideo?",
+      "el": "Ποιο είδος γεύματος ταιριάζει καλύτερα με την κλασική κουλτούρα ‘parrilla’ στο Μοντεβιδέο;"
+    },
+    "answers": [
+      { "text": { "en": "Fondue night", "el": "Βραδιά φοντύ" }, "correct": false },
+      { "text": { "en": "Sushi tasting menu", "el": "Μενού σούσι" }, "correct": false },
+      { "text": { "en": "A grilled meat feast (asado)", "el": "Γιορτή στη σχάρα (ασάδο)" }, "correct": true },
+      { "text": { "en": "Dim sum brunch", "el": "Brunch με dim sum" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which market is famous in Montevideo for grilled food stalls and local dining vibes?",
+      "el": "Ποια αγορά είναι διάσημη στο Μοντεβιδέο για ψησταριές και τοπικό φαγητό;"
+    },
+    "answers": [
+      { "text": { "en": "Naschmarkt", "el": "Naschmarkt" }, "correct": false },
+      { "text": { "en": "Mercado del Puerto", "el": "Mercado del Puerto" }, "correct": true },
+      { "text": { "en": "La Boqueria", "el": "La Boqueria" }, "correct": false },
+      { "text": { "en": "Borough Market", "el": "Borough Market" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "In the story, where did Sol sit to watch the water and the evening lamps?",
+      "el": "Στην ιστορία, πού κάθισε η Sol για να βλέπει το νερό και τα φανάρια;"
+    },
+    "answers": [
+      { "text": { "en": "Inside a subway station", "el": "Μέσα σε σταθμό μετρό" }, "correct": false },
+      { "text": { "en": "On a desert dune", "el": "Σε αμμόλοφο ερήμου" }, "correct": false },
+      { "text": { "en": "On the Rambla seawall", "el": "Στο τοιχίο της Rambla" }, "correct": true },
+      { "text": { "en": "On a mountain ridge", "el": "Σε μια ορεινή ράχη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What did the water look like in the story’s description of the river at dusk?",
+      "el": "Πώς περιγράφεται το νερό στο δειλινό μέσα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Like neon green glass", "el": "Σαν νέον πράσινο γυαλί" }, "correct": false },
+      { "text": { "en": "Like brushed silver", "el": "Σαν ασημένιο πέπλο" }, "correct": true },
+      { "text": { "en": "Like thick fog", "el": "Σαν πυκνή ομίχλη" }, "correct": false },
+      { "text": { "en": "Like black ink", "el": "Σαν μαύρο μελάνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Which phrase best matches the episode’s idea that the city feels calm and unhurried?",
+      "el": "Ποια φράση ταιριάζει καλύτερα με την ιδέα ότι η πόλη είναι ήρεμη και χωρίς βιασύνη;"
+    },
+    "answers": [
+      { "text": { "en": "Nothing ever stops", "el": "Τίποτα δεν σταματά ποτέ" }, "correct": false },
+      { "text": { "en": "Everything is a loud race", "el": "Όλα είναι ένας δυνατός αγώνας" }, "correct": false },
+      { "text": { "en": "Everything moves in slow light", "el": "Όλα κινούνται σε αργό φως" }, "correct": true },
+      { "text": { "en": "Only storms and sirens", "el": "Μόνο καταιγίδες και σειρήνες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Which element helps define Montevideo’s ‘riverside’ atmosphere in this episode?",
+      "el": "Ποιο στοιχείο ορίζει περισσότερο την ‘παραποτάμια’ ατμόσφαιρα του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "A jungle canopy walkway", "el": "Διάδρομος μέσα σε ζούγκλα" }, "correct": false },
+      { "text": { "en": "A long waterfront promenade", "el": "Ένας μεγάλος παραλιακός περίπατος" }, "correct": true },
+      { "text": { "en": "A frozen lake crossing", "el": "Διάσχιση παγωμένης λίμνης" }, "correct": false },
+      { "text": { "en": "A ski slope in the city center", "el": "Μια πίστα σκι στο κέντρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Which of these is a well-known cultural venue in Montevideo often mentioned by visitors?",
+      "el": "Ποιο από αυτά είναι γνωστό πολιτιστικό σημείο στο Μοντεβιδέο που αναφέρεται συχνά από επισκέπτες;"
+    },
+    "answers": [
+      { "text": { "en": "Royal Albert Hall", "el": "Royal Albert Hall" }, "correct": false },
+      { "text": { "en": "Teatro Solís", "el": "Teatro Solís" }, "correct": true },
+      { "text": { "en": "Sydney Opera House", "el": "Όπερα του Σίδνεϊ" }, "correct": false },
+      { "text": { "en": "La Scala", "el": "La Scala" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "In the story, did Sol chase the rhythm or let it come to her?",
+      "el": "Στην ιστορία, η Sol κυνήγησε τον ρυθμό ή τον άφησε να έρθει σε εκείνη;"
+    },
+    "answers": [
+      { "text": { "en": "She let it come to her", "el": "Τον άφησε να έρθει σε εκείνη" }, "correct": true },
+      { "text": { "en": "She chased it through the crowd", "el": "Τον κυνήγησε μέσα στο πλήθος" }, "correct": false },
+      { "text": { "en": "She tried to silence it", "el": "Προσπάθησε να τον σταματήσει" }, "correct": false },
+      { "text": { "en": "She ignored all sounds", "el": "Αγνόησε όλους τους ήχους" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which word best matches the episode’s recurring theme about time and movement?",
+      "el": "Ποια λέξη ταιριάζει καλύτερα με το κεντρικό θέμα του επεισοδίου για χρόνο και κίνηση;"
+    },
+    "answers": [
+      { "text": { "en": "Labyrinth", "el": "Λαβύρινθος" }, "correct": false },
+      { "text": { "en": "Rhythm", "el": "Ρυθμός" }, "correct": true },
+      { "text": { "en": "Thunderstorm", "el": "Καταιγίδα" }, "correct": false },
+      { "text": { "en": "Avalanche", "el": "Χιονοστιβάδα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which of these describes the mood of the Rambla lights in the episode image vibe?",
+      "el": "Ποιο από τα παρακάτω περιγράφει το mood των φώτων στη Rambla στο vibe του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Bright stadium floodlights", "el": "Προβολείς γηπέδου" }, "correct": false },
+      { "text": { "en": "Warm lamplight and soft glow", "el": "Ζεστό φως φαναριών και απαλό glow" }, "correct": true },
+      { "text": { "en": "Harsh neon and cold flicker", "el": "Σκληρό νέον και ψυχρό τρεμόπαιγμα" }, "correct": false },
+      { "text": { "en": "Total darkness with no lights", "el": "Απόλυτο σκοτάδι χωρίς φώτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Which detail best fits the episode’s ‘royal’ tone for Sol?",
+      "el": "Ποια λεπτομέρεια ταιριάζει καλύτερα με τον ‘βασιλικό’ τόνο της Sol στο επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "She hides from every sound", "el": "Κρύβεται από κάθε ήχο" }, "correct": false },
+      { "text": { "en": "She claims the promenade with calm certainty", "el": "Παίρνει την προκυμαία με ήρεμη βεβαιότητα" }, "correct": true },
+      { "text": { "en": "She gets lost and panics", "el": "Χάνεται και πανικοβάλλεται" }, "correct": false },
+      { "text": { "en": "She begs tourists for snacks", "el": "Παρακαλά τουρίστες για σνακ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which statement matches Uruguay’s strong ‘mate culture’ you’d notice in Montevideo?",
+      "el": "Ποια πρόταση ταιριάζει με την έντονη ‘κουλτούρα μάτε’ που θα παρατηρούσες στο Μοντεβιδέο;"
+    },
+    "answers": [
+      { "text": { "en": "Coffee is served only at midnight", "el": "Ο καφές σερβίρεται μόνο τα μεσάνυχτα" }, "correct": false },
+      { "text": { "en": "People often carry a thermos and mate cup", "el": "Πολλοί κρατούν θερμός και ποτήρι μάτε" }, "correct": true },
+      { "text": { "en": "Tea is forbidden by tradition", "el": "Το τσάι απαγορεύεται παραδοσιακά" }, "correct": false },
+      { "text": { "en": "Everyone drinks only iced soda", "el": "Όλοι πίνουν μόνο παγωμένα αναψυκτικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which simple action did Sol do in the story to ‘own the tempo’?",
+      "el": "Ποια απλή κίνηση έκανε η Sol στην ιστορία για να ‘ορίσει το τέμπο’;"
+    },
+    "answers": [
+      { "text": { "en": "She rode a bicycle through traffic", "el": "Καβάλησε ποδήλατο μέσα στην κίνηση" }, "correct": false },
+      { "text": { "en": "She blinked once and lifted her chin", "el": "Ανοιγόκλεισε τα μάτια μία φορά και σήκωσε το πηγούνι" }, "correct": true },
+      { "text": { "en": "She climbed a lighthouse", "el": "Σκαρφάλωσε σε φάρο" }, "correct": false },
+      { "text": { "en": "She sprinted into the water", "el": "Έτρεξε μέσα στο νερό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which of these best describes the episode’s overall soundscape?",
+      "el": "Ποιο από τα παρακάτω περιγράφει καλύτερα το ηχητικό τοπίο του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "A blizzard windstorm", "el": "Χιονοθύελλα" }, "correct": false },
+      { "text": { "en": "A soft hush with distant rhythm", "el": "Μια απαλή σιωπή με μακρινό ρυθμό" }, "correct": true },
+      { "text": { "en": "Roaring waterfalls in the streets", "el": "Βροντερά νερά στους δρόμους" }, "correct": false },
+      { "text": { "en": "Constant sirens and loud alarms", "el": "Συνεχείς σειρήνες και δυνατοί συναγερμοί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What does the episode suggest the river does instead of rushing?",
+      "el": "Τι προτείνει το επεισόδιο ότι κάνει το ποτάμι αντί να βιάζεται;"
+    },
+    "answers": [
+      { "text": { "en": "It turns into a waterfall", "el": "Γίνεται καταρράκτης" }, "correct": false },
+      { "text": { "en": "It simply keeps the rhythm", "el": "Απλώς κρατά τον ρυθμό" }, "correct": true },
+      { "text": { "en": "It disappears at dusk", "el": "Εξαφανίζεται στο δειλινό" }, "correct": false },
+      { "text": { "en": "It freezes into ice", "el": "Παγώνει" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Which pair matches the episode title ‘riverside rhythms’ best?",
+      "el": "Ποιο ζευγάρι ταιριάζει καλύτερα με τον τίτλο ‘riverside rhythms’;"
+    },
+    "answers": [
+      { "text": { "en": "Desert + sandstorm", "el": "Έρημος + αμμοθύελλα" }, "correct": false },
+      { "text": { "en": "Waterfront + steady beat", "el": "Παραλία/ποτάμι + σταθερός ρυθμός" }, "correct": true },
+      { "text": { "en": "Jungle + wild roar", "el": "Ζούγκλα + άγριο βρυχηθμό" }, "correct": false },
+      { "text": { "en": "Mountains + ski race", "el": "Βουνά + αγώνας σκι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which of these is a correct way to describe Sol’s attitude in Montevideo?",
+      "el": "Ποιο από τα παρακάτω περιγράφει σωστά τη στάση της Sol στο Μοντεβιδέο;"
+    },
+    "answers": [
+      { "text": { "en": "Sleepy and lost", "el": "Νυσταγμένη και χαμένη" }, "correct": false },
+      { "text": { "en": "Unhurried, observant, and in control", "el": "Ήρεμη, παρατηρητική και κυρίαρχη" }, "correct": true },
+      { "text": { "en": "Noisy and chaotic", "el": "Θορυβώδης και χαοτική" }, "correct": false },
+      { "text": { "en": "Nervous and constantly rushing", "el": "Αγχωμένη και συνέχεια βιαστική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which sentence best matches the photo quote ‘Riverside rhythms, royal footsteps.’?",
+      "el": "Ποια πρόταση ταιριάζει καλύτερα με το photo quote ‘Riverside rhythms, royal footsteps.’;"
+    },
+    "answers": [
+      { "text": { "en": "A crowded subway sprint at noon", "el": "Σπριντ σε γεμάτο μετρό το μεσημέρι" }, "correct": false },
+      { "text": { "en": "A queen strolling the waterfront in perfect tempo", "el": "Μια βασίλισσα που περπατά στην προκυμαία με τέλειο τέμπο" }, "correct": true },
+      { "text": { "en": "A tropical beach party with fireworks", "el": "Τροπικό πάρτι με πυροτεχνήματα" }, "correct": false },
+      { "text": { "en": "A snowy rescue mission in a blizzard", "el": "Αποστολή διάσωσης σε χιονοθύελλα" }, "correct": false }
+    ]
+  }
+]

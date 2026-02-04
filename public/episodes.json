@@ -1444,5 +1444,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 38,
+  "title": "SOLadventure #38 – Montevideo, riverside rhythms 🌊 🇺🇾",
+  "quote": "The river kept time. She owned the beat.",
+  "caption": "Lamplight, waterfront air, and a queen who moves like music. 🐾🐾🐾",
+  "image": "episodes/montevideo.png",
+  "location": { "lat": -34.9011, "lng": -56.1645 },
+  "visible": true,
+  "city": "montevideo",
+  "story": {
+    "en": "Montevideo unfolded in slow light, where the river meets the city and everything feels unhurried. Sol perched on the seawall of the Rambla, watching the Río de la Plata shimmer like brushed silver under the first evening lamps. People wandered past with quiet smiles, and the water carried a soft hush that made even footsteps sound gentle. Somewhere in the distance, a candombe rhythm floated in, steady and warm, like the city’s heartbeat. Sol did not chase it. She let it come to her. She blinked once, lifted her chin, and claimed the promenade with calm certainty. Here, the river does not rush. It simply keeps the rhythm, and the queen decides the tempo.",
+    "el": "Το Μοντεβιδέο άνοιξε σε αργό φως, εκεί όπου το ποτάμι συναντά την πόλη και όλα μοιάζουν ήρεμα. Η Sol κάθισε στο χαμηλό τοιχίο της Rambla, κοιτώντας το Río de la Plata να λαμπυρίζει σαν ασημένιο πέπλο κάτω από τα πρώτα φανάρια του δειλινού. Ο κόσμος περνούσε με ήσυχα χαμόγελα και το νερό κουβαλούσε μια γαλήνη που έκανε ακόμη και τα βήματα να ακούγονται απαλά. Κάπου μακριά, ένας ρυθμός candombe έφτασε μέχρι εδώ, σταθερός και ζεστός, σαν καρδιά της πόλης. Η Sol δεν τον κυνήγησε. Τον άφησε να έρθει σε εκείνη. Ανοιγόκλεισε τα μάτια μία φορά, σήκωσε το πηγούνι και πήρε την προκυμαία με ήρεμη βεβαιότητα. Εδώ το ποτάμι δεν βιάζεται. Απλώς κρατά τον ρυθμό, και η βασίλισσα αποφασίζει το τέμπο."
+  },
+  "photoQuote": "Riverside rhythms, royal footsteps.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol sit on the seawall along the Rambla by the Río de la Plata?",
+        "el": "Κάθισε η Sol στο τοιχίο της Rambla δίπλα στο Río de la Plata;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was a distant candombe rhythm mentioned in the story?",
+        "el": "Αναφέρεται στην ιστορία ένας μακρινός ρυθμός candombe;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did it snow on the promenade during Sol’s walk?",
+        "el": "Χιόνιζε στην προκυμαία κατά τη βόλτα της Sol;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
