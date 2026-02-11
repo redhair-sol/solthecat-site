@@ -1,0 +1,927 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Rio de Janeiro is a city in which country?",
+      "el": "Το Ρίο ντε Ζανέιρο είναι πόλη ποιας χώρας;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Portugal",
+          "el": "Πορτογαλία"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Argentina",
+          "el": "Αργεντινή"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Mexico",
+          "el": "Μεξικό"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Brazil",
+          "el": "Βραζιλία"
+        },
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Which famous beach is strongly linked with Rio’s seaside vibe?",
+      "el": "Ποια διάσημη παραλία συνδέεται έντονα με το seaside vibe του Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Bondi Beach",
+          "el": "Bondi Beach"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Waikiki",
+          "el": "Waikiki"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Santa Monica",
+          "el": "Santa Monica"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Copacabana",
+          "el": "Copacabana"
+        },
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Sugarloaf Mountain is also known in Portuguese as what?",
+      "el": "Το Sugarloaf Mountain είναι γνωστό στα πορτογαλικά ως τι;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Serra Azul",
+          "el": "Serra Azul"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Pão de Açúcar",
+          "el": "Pão de Açúcar"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Morro do Sol",
+          "el": "Morro do Sol"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Monte Verde",
+          "el": "Monte Verde"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What is the name of the iconic statue overlooking Rio from Corcovado?",
+      "el": "Πώς λέγεται το εμβληματικό άγαλμα που αγναντεύει το Ρίο από το Corcovado;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "The Thinker",
+          "el": "Ο Σκεπτόμενος"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Christ the Redeemer",
+          "el": "Χριστός ο Λυτρωτής"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "The Little Mermaid",
+          "el": "Η Μικρή Γοργόνα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Statue of Liberty",
+          "el": "Άγαλμα της Ελευθερίας"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Rio’s Carnival is most closely associated with which dance and music style?",
+      "el": "Το Καρναβάλι του Ρίο συνδέεται περισσότερο με ποιον χορό και μουσικό ρυθμό;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Flamenco",
+          "el": "Φλαμένκο"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Polka",
+          "el": "Πόλκα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Waltz",
+          "el": "Βαλς"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Samba",
+          "el": "Σάμπα"
+        },
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Rio de Janeiro lies along which ocean?",
+      "el": "Το Ρίο ντε Ζανέιρο βρίσκεται δίπλα σε ποιον ωκεανό;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Pacific Ocean",
+          "el": "Ειρηνικός Ωκεανός"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Arctic Ocean",
+          "el": "Αρκτικός Ωκεανός"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Atlantic Ocean",
+          "el": "Ατλαντικός Ωκεανός"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Indian Ocean",
+          "el": "Ινδικός Ωκεανός"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which bay is famously associated with Rio’s waterfront geography?",
+      "el": "Ποιος κόλπος συνδέεται διάσημα με τη γεωγραφία του Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Hudson Bay",
+          "el": "Κόλπος Χάντσον"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Bay of Bengal",
+          "el": "Κόλπος της Βεγγάλης"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Guanabara Bay",
+          "el": "Κόλπος Γκουαναμπάρα"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "San Francisco Bay",
+          "el": "Κόλπος Σαν Φρανσίσκο"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which famous stadium in Rio has hosted major football matches?",
+      "el": "Ποιο διάσημο στάδιο στο Ρίο έχει φιλοξενήσει μεγάλους αγώνες ποδοσφαίρου;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "San Siro",
+          "el": "San Siro"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Wembley",
+          "el": "Wembley"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Maracanã",
+          "el": "Maracanã"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Camp Nou",
+          "el": "Camp Nou"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "The Lapa Arches in Rio are historically linked to what original purpose?",
+      "el": "Οι Αψίδες της Lapa στο Ρίο συνδέονται ιστορικά με ποια αρχική χρήση;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "A royal palace balcony",
+          "el": "Μπαλκόνι βασιλικού παλατιού"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "A suspension bridge",
+          "el": "Κρεμαστή γέφυρα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "An aqueduct for water",
+          "el": "Υδραγωγείο για νερό"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "A medieval fortress wall",
+          "el": "Μεσαιωνικό τείχος φρουρίου"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which colorful landmark is known for its tiled steps in Rio?",
+      "el": "Ποιο πολύχρωμο σημείο είναι γνωστό για τα σκαλιά με πλακάκια στο Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Tower Bridge",
+          "el": "Tower Bridge"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Spanish Steps",
+          "el": "Ισπανικά Σκαλιά"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Escadaria Selarón",
+          "el": "Escadaria Selarón"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Charles Bridge",
+          "el": "Γέφυρα του Καρόλου"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which large urban rainforest park is located within Rio de Janeiro?",
+      "el": "Ποιο μεγάλο αστικό τροπικό δάσος βρίσκεται μέσα στο Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Tijuca National Park",
+          "el": "Εθνικό Πάρκο Tijuca"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Central Park",
+          "el": "Central Park"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Ueno Park",
+          "el": "Ueno Park"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Hyde Park",
+          "el": "Hyde Park"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "A classic Brazilian cocktail often associated with Rio is made with which spirit?",
+      "el": "Ένα κλασικό βραζιλιάνικο κοκτέιλ που συνδέεται συχνά με το Ρίο φτιάχνεται με ποιο ποτό;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Cachaça",
+          "el": "Κασάσα (cachaça)"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Vodka",
+          "el": "Βότκα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Tequila",
+          "el": "Τεκίλα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Whiskey",
+          "el": "Ουίσκι"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Feijoada, a well-known Brazilian dish, is best described as what?",
+      "el": "Η feijoada, ένα γνωστό βραζιλιάνικο φαγητό, περιγράφεται καλύτερα ως τι;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "A sweet chocolate mousse",
+          "el": "Γλυκό μους σοκολάτας"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "A bean stew with meats",
+          "el": "Στιφάδο με φασόλια και κρέατα"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "A cold noodle salad",
+          "el": "Κρύα σαλάτα με νουντλς"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "A baked fish pie",
+          "el": "Πίτα με ψάρι"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "In the episode story, what did the beach haze do to the scene?",
+      "el": "Στην ιστορία του επεισοδίου, τι έκανε το beach haze στο σκηνικό;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Made the city disappear completely",
+          "el": "Έκανε την πόλη να εξαφανιστεί τελείως"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Made the sea turn purple",
+          "el": "Έκανε τη θάλασσα μωβ"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Turned everything into gold",
+          "el": "Έκανε τα πάντα χρυσά"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Covered the beach in snow",
+          "el": "Σκέπασε την παραλία με χιόνι"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "How was the distant skyline described in the story?",
+      "el": "Πώς περιγράφεται ο μακρινός ορίζοντας της πόλης στην ιστορία;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "It looked like a wall of ice",
+          "el": "Έμοιαζε με τείχος πάγου"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "It was dark with no lights at all",
+          "el": "Ήταν σκοτεινός χωρίς καθόλου φώτα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "It flickered like tiny festival candles",
+          "el": "Τρεμόπαιζε σαν μικρά κεράκια γιορτής"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "It flashed like lightning nonstop",
+          "el": "Άστραφτε σαν αστραπές συνέχεια"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "In the story, the ‘carnival pulse’ was described as something you mostly…",
+      "el": "Στην ιστορία, ο ‘παλμός του καρναβαλιού’ περιγράφεται ως κάτι που κυρίως…"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "felt more than heard",
+          "el": "το ένιωθες περισσότερο απ’ όσο το άκουγες"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "tasted in a spicy sauce",
+          "el": "το γευόσουν σε πικάντικη σάλτσα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "read in neon letters on buildings",
+          "el": "το διάβαζες σε νέον γράμματα στα κτίρια"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "saw as fireworks overhead",
+          "el": "το έβλεπες σαν πυροτεχνήματα από πάνω"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which sentence matches Sol’s attitude in the Rio story?",
+      "el": "Ποια πρόταση ταιριάζει με τη στάση της Sol στην ιστορία του Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "She asked strangers for directions",
+          "el": "Ζητούσε οδηγίες από αγνώστους"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "She sat like she owned the horizon",
+          "el": "Κάθισε σαν να της ανήκει ο ορίζοντας"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "She hid behind umbrellas all day",
+          "el": "Κρυβόταν πίσω από ομπρέλες όλη μέρα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "She panicked and ran from the beach",
+          "el": "Πανικοβλήθηκε και έφυγε τρέχοντας"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Which hill is Christ the Redeemer located on?",
+      "el": "Σε ποιον λόφο βρίσκεται ο Χριστός ο Λυτρωτής;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Arthur’s Seat",
+          "el": "Arthur’s Seat"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Montmartre",
+          "el": "Μονμάρτη"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Table Mountain",
+          "el": "Table Mountain"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Corcovado",
+          "el": "Corcovado"
+        },
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What is the common name for the cable car ride to Sugarloaf in Rio?",
+      "el": "Πώς λέγεται συνήθως το τελεφερίκ προς το Sugarloaf στο Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "SkyRail",
+          "el": "SkyRail"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Bondinho",
+          "el": "Bondinho"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "MetroLift",
+          "el": "MetroLift"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Funiculaire",
+          "el": "Funiculaire"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Where do samba schools famously parade during Rio’s Carnival?",
+      "el": "Πού παρελαύνουν διάσημα οι σχολές σάμπας στο Καρναβάλι του Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Times Square",
+          "el": "Times Square"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Piazza San Marco",
+          "el": "Πλατεία Αγίου Μάρκου"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "The Sambadrome (Marquês de Sapucaí)",
+          "el": "Στο Sambadrome (Marquês de Sapucaí)"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Red Square",
+          "el": "Κόκκινη Πλατεία"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which beach is also famously linked with Rio, alongside Copacabana?",
+      "el": "Ποια παραλία συνδέεται επίσης διάσημα με το Ρίο, μαζί με την Copacabana;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Balandra",
+          "el": "Balandra"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Ipanema",
+          "el": "Ipanema"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Navagio",
+          "el": "Ναυάγιο"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Whitehaven",
+          "el": "Whitehaven"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which word best fits the episode’s ‘beach haze’ mood?",
+      "el": "Ποια λέξη ταιριάζει καλύτερα με το mood ‘beach haze’ του επεισοδίου;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Icy",
+          "el": "Παγωμένο"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Misty",
+          "el": "Ομιχλώδες"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Stormy",
+          "el": "Θυελλώδες"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Dusty",
+          "el": "Σκονισμένο"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Which statement matches the story’s idea about Rio’s party vibe?",
+      "el": "Ποια πρόταση ταιριάζει με την ιδέα της ιστορίας για το party vibe του Ρίο;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "It is always silent and empty",
+          "el": "Είναι πάντα σιωπηλή και άδεια"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "It happens only underground",
+          "el": "Γίνεται μόνο υπόγεια"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "It is only about snow and ice",
+          "el": "Έχει να κάνει μόνο με χιόνι και πάγο"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "It’s not always loud, sometimes it simply glows",
+          "el": "Δεν είναι πάντα δυνατή, μερικές φορές απλώς λάμπει"
+        },
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which neighborhood is well known in Rio for nightlife and bohemian vibes?",
+      "el": "Ποια περιοχή στο Ρίο είναι γνωστή για νυχτερινή ζωή και μποέμ vibe;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Recoleta",
+          "el": "Recoleta"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Lapa",
+          "el": "Lapa"
+        },
+        "correct": true
+      },
+      {
+        "text": {
+          "en": "Trastevere",
+          "el": "Trastevere"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Gamla Stan",
+          "el": "Gamla Stan"
+        },
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which pairing best fits the Rio episode title ‘carnival pulse & beach haze’?",
+      "el": "Ποιο ζευγάρι ταιριάζει καλύτερα με τον τίτλο ‘carnival pulse & beach haze’;"
+    },
+    "answers": [
+      {
+        "text": {
+          "en": "Mountain blizzard + frozen streets",
+          "el": "Χιονοθύελλα + παγωμένοι δρόμοι"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Desert heat + sandstorm",
+          "el": "Καύσωνας ερήμου + αμμοθύελλα"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Rainforest storm + thunder",
+          "el": "Καταιγίδα ζούγκλας + βροντές"
+        },
+        "correct": false
+      },
+      {
+        "text": {
+          "en": "Warm rhythm + golden sea mist",
+          "el": "Ζεστός ρυθμός + χρυσή θαλασσινή αχλή"
+        },
+        "correct": true
+      }
+    ]
+  }
+]

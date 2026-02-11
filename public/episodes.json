@@ -1482,5 +1482,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 39,
+  "title": "SOLadventure #39 – Rio de Janeiro, carnival pulse & beach haze 🎉🏖️ 🇧🇷",
+  "quote": "She didn’t need the parade. The rhythm found her anyway.",
+  "caption": "Golden haze, shoreline lights. 🐾🐾🐾",
+  "image": "episodes/riodejaneiro.png",
+  "location": { "lat": -22.9068, "lng": -43.1729 },
+  "visible": true,
+  "city": "riodejaneiro",
+  "story": {
+    "en": "Rio de Janeiro arrived in a warm blur of sun and sea, as if the whole coastline was exhaling. Sol stepped onto the sand and let the beach haze soften everything into gold. The water rolled in with quiet confidence, and the skyline flickered far away like tiny festival candles. Sugarloaf rose in the distance, dark and steady against the pastel sky, while the city kept its secrets behind a gentle shimmer. Somewhere beyond the shore, a carnival pulse could be felt more than heard, a rhythm tucked inside the evening air. Sol did not need a parade to recognize it. She sat like she owned the horizon, eyes half closed, whiskers catching the breeze. In Rio, the party is not always loud. Sometimes it glows, and the queen simply listens.",
+    "el": "Το Ρίο ντε Ζανέιρο ήρθε σαν ζεστό θόλωμα από ήλιο και θάλασσα, λες και η ακτογραμμή ανέπνεε. Η Sol πάτησε στην άμμο και άφησε το beach haze να μαλακώσει τα πάντα σε χρυσό. Το νερό ερχόταν με ήρεμη αυτοπεποίθηση και ο ορίζοντας άναβε μακριά σαν μικρά κεράκια γιορτής. Το Sugarloaf στεκόταν στο βάθος, σκοτεινό και σταθερό κάτω από τον παστέλ ουρανό, ενώ η πόλη κρατούσε τα μυστικά της πίσω από ένα απαλό τρεμόπαιγμα. Κάπου πέρα από την ακτή, ο παλμός του καρναβαλιού ένιωθε περισσότερο απ’ όσο ακουγόταν, ένας ρυθμός κρυμμένος μέσα στον βραδινό αέρα. Η Sol δεν χρειαζόταν παρέλαση για να τον αναγνωρίσει. Κάθισε σαν να της ανήκει ο ορίζοντας, με βλέμμα μισόκλειστο και μουστάκια που έπιαναν το αεράκι. Στο Ρίο, η γιορτή δεν είναι πάντα δυνατή. Μερικές φορές απλώς λάμπει, και η βασίλισσα ακούει."
+  },
+  "photoQuote": "Salt air. Samba soul.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol sit on the sand while the beach haze turned everything golden?",
+        "el": "Κάθισε η Sol στην άμμο ενώ το beach haze έκανε τα πάντα χρυσά;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was Sugarloaf described as rising in the distance against the pastel sky?",
+        "el": "Περιγράφεται το Sugarloaf να υψώνεται στο βάθος κάτω από παστέλ ουρανό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol watch fireworks exploding directly above her head on the beach?",
+        "el": "Έβλεπε η Sol πυροτεχνήματα να σκάνε ακριβώς πάνω από το κεφάλι της στην παραλία;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
