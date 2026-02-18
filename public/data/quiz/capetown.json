@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "question": { "en": "Cape Town is a city in which country?", "el": "Το Κέιπ Τάουν είναι πόλη ποιας χώρας;" },
+    "answers": [
+      { "text": { "en": "Kenya", "el": "Κένυα" }, "correct": false },
+      { "text": { "en": "South Africa", "el": "Νότια Αφρική" }, "correct": true },
+      { "text": { "en": "Morocco", "el": "Μαρόκο" }, "correct": false },
+      { "text": { "en": "Namibia", "el": "Ναμίμπια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": { "en": "Which iconic mountain dominates Cape Town’s skyline?", "el": "Ποιο εμβληματικό βουνό κυριαρχεί στον ορίζοντα του Κέιπ Τάουν;" },
+    "answers": [
+      { "text": { "en": "Table Mountain", "el": "Table Mountain" }, "correct": true },
+      { "text": { "en": "Kilimanjaro", "el": "Κιλιμάντζαρο" }, "correct": false },
+      { "text": { "en": "Mount Kenya", "el": "Όρος Κένυα" }, "correct": false },
+      { "text": { "en": "Drakensberg", "el": "Ντράκενσμπεργκ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": { "en": "The famous cloud draping over Table Mountain is often nicknamed what?", "el": "Το διάσημο σύννεφο που «σκεπάζει» την Table Mountain λέγεται συχνά πώς;" },
+    "answers": [
+      { "text": { "en": "The tablecloth", "el": "Το «tablecloth»" }, "correct": true },
+      { "text": { "en": "The fog crown", "el": "Το στέμμα ομίχλης" }, "correct": false },
+      { "text": { "en": "The silver ribbon", "el": "Η ασημένια κορδέλα" }, "correct": false },
+      { "text": { "en": "The cloud curtain", "el": "Η κουρτίνα σύννεφων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": { "en": "Which waterfront area is a major hub for shops and harbor views in Cape Town?", "el": "Ποια περιοχή-λιμάνι είναι μεγάλο hub για βόλτα, μαγαζιά και θέα στο Κέιπ Τάουν;" },
+    "answers": [
+      { "text": { "en": "Circular Quay", "el": "Circular Quay" }, "correct": false },
+      { "text": { "en": "V&A Waterfront", "el": "V&A Waterfront" }, "correct": true },
+      { "text": { "en": "Navy Pier", "el": "Navy Pier" }, "correct": false },
+      { "text": { "en": "Fisherman’s Wharf", "el": "Fisherman’s Wharf" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": { "en": "Which nearby island is famous for its prison history?", "el": "Ποιο κοντινό νησί είναι διάσημο για την ιστορία φυλακών;" },
+    "answers": [
+      { "text": { "en": "Skye", "el": "Σκάι" }, "correct": false },
+      { "text": { "en": "Robben Island", "el": "Robben Island" }, "correct": true },
+      { "text": { "en": "Alcatraz", "el": "Αλκατράζ" }, "correct": false },
+      { "text": { "en": "Santorini", "el": "Σαντορίνη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": { "en": "Which Cape Town neighborhood is known for brightly painted houses and Cape Malay culture?", "el": "Ποια γειτονιά είναι γνωστή για τα πολύχρωμα σπίτια και την Cape Malay κουλτούρα;" },
+    "answers": [
+      { "text": { "en": "La Boca", "el": "La Boca" }, "correct": false },
+      { "text": { "en": "Bo-Kaap", "el": "Bo-Kaap" }, "correct": true },
+      { "text": { "en": "SoHo", "el": "SoHo" }, "correct": false },
+      { "text": { "en": "Trastevere", "el": "Trastevere" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": { "en": "Which botanical garden on Table Mountain’s slopes is world-renowned?", "el": "Ποιος βοτανικός κήπος στις πλαγιές της Table Mountain είναι παγκοσμίως γνωστός;" },
+    "answers": [
+      { "text": { "en": "Luxembourg Gardens", "el": "Κήποι του Λουξεμβούργου" }, "correct": false },
+      { "text": { "en": "Kew Gardens", "el": "Kew Gardens" }, "correct": false },
+      { "text": { "en": "Kirstenbosch", "el": "Kirstenbosch" }, "correct": true },
+      { "text": { "en": "Ueno Park", "el": "Ueno" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": { "en": "Boulders Beach is especially known for which animals?", "el": "Η Boulders Beach είναι ιδιαίτερα γνωστή για ποια ζώα;" },
+    "answers": [
+      { "text": { "en": "Koalas", "el": "Κοάλα" }, "correct": false },
+      { "text": { "en": "African penguins", "el": "Αφρικανικούς πιγκουίνους" }, "correct": true },
+      { "text": { "en": "Polar bears", "el": "Πολικές αρκούδες" }, "correct": false },
+      { "text": { "en": "Red pandas", "el": "Κόκκινα πάντα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": { "en": "Which dramatic coastal road near Cape Town is famous for cliffside views?", "el": "Ποιος παραθαλάσσιος δρόμος είναι διάσημος για θέα σε γκρεμούς κοντά στο Κέιπ Τάουν;" },
+    "answers": [
+      { "text": { "en": "Great Ocean Road", "el": "Great Ocean Road" }, "correct": false },
+      { "text": { "en": "Chapman’s Peak Drive", "el": "Chapman’s Peak Drive" }, "correct": true },
+      { "text": { "en": "Amalfi Drive", "el": "Amalfi Drive" }, "correct": false },
+      { "text": { "en": "Pacific Coast Highway", "el": "Pacific Coast Highway" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": { "en": "Cape Point is part of which protected area?", "el": "Το Cape Point ανήκει σε ποια προστατευόμενη περιοχή;" },
+    "answers": [
+      { "text": { "en": "Kruger National Park", "el": "Εθνικό Πάρκο Κρούγκερ" }, "correct": false },
+      { "text": { "en": "Serengeti National Park", "el": "Εθνικό Πάρκο Σερενγκέτι" }, "correct": false },
+      { "text": { "en": "Table Mountain National Park", "el": "Table Mountain National Park" }, "correct": true },
+      { "text": { "en": "Etosha National Park", "el": "Εθνικό Πάρκο Ετόσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": { "en": "Cape Town is widely known as South Africa’s…", "el": "Το Κέιπ Τάουν είναι ευρέως γνωστό ως η… της Νότιας Αφρικής." },
+    "answers": [
+      { "text": { "en": "Legislative capital (home of Parliament)", "el": "Νομοθετική πρωτεύουσα (έδρα Κοινοβουλίου)" }, "correct": true },
+      { "text": { "en": "Only capital city", "el": "Μοναδική πρωτεύουσα" }, "correct": false },
+      { "text": { "en": "Largest city by population", "el": "Μεγαλύτερη πόλη σε πληθυσμό" }, "correct": false },
+      { "text": { "en": "Capital of Namibia", "el": "Πρωτεύουσα της Ναμίμπια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": { "en": "Which ocean is Cape Town’s west-facing coast associated with?", "el": "Με ποιον ωκεανό συνδέεται η δυτική πλευρά του Κέιπ Τάουν;" },
+    "answers": [
+      { "text": { "en": "Indian Ocean", "el": "Ινδικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Atlantic Ocean", "el": "Ατλαντικός Ωκεανός" }, "correct": true },
+      { "text": { "en": "Pacific Ocean", "el": "Ειρηνικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Arctic Ocean", "el": "Αρκτικός Ωκεανός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": { "en": "A famous nearby wine region often visited from Cape Town is…", "el": "Μια γνωστή κοντινή οινοπαραγωγική περιοχή που επισκέπτονται συχνά από το Κέιπ Τάουν είναι…" },
+    "answers": [
+      { "text": { "en": "Tokaj", "el": "Tokaj" }, "correct": false },
+      { "text": { "en": "Champagne", "el": "Champagne" }, "correct": false },
+      { "text": { "en": "Stellenbosch", "el": "Stellenbosch" }, "correct": true },
+      { "text": { "en": "Napa Valley", "el": "Napa Valley" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": { "en": "What is South Africa’s currency?", "el": "Ποιο είναι το νόμισμα της Νότιας Αφρικής;" },
+    "answers": [
+      { "text": { "en": "Euro", "el": "Ευρώ" }, "correct": false },
+      { "text": { "en": "Rand", "el": "Ραντ (Rand)" }, "correct": true },
+      { "text": { "en": "Dollar", "el": "Δολάριο" }, "correct": false },
+      { "text": { "en": "Pound", "el": "Λίρα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": { "en": "Which cold ocean current influences the Atlantic side near Cape Town?", "el": "Ποιο ψυχρό θαλάσσιο ρεύμα επηρεάζει την Atlantic πλευρά κοντά στο Κέιπ Τάουν;" },
+    "answers": [
+      { "text": { "en": "Benguela Current", "el": "Ρεύμα Benguela" }, "correct": true },
+      { "text": { "en": "Gulf Stream", "el": "Ρεύμα του Κόλπου" }, "correct": false },
+      { "text": { "en": "Kuroshio Current", "el": "Ρεύμα Kuroshio" }, "correct": false },
+      { "text": { "en": "Agulhas Current", "el": "Ρεύμα Agulhas" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": { "en": "The Cape Town story’s mood is set mostly at…", "el": "Το mood της ιστορίας στο Κέιπ Τάουν «στήνεται» κυρίως στο…" },
+    "answers": [
+      { "text": { "en": "Dusk / twilight", "el": "Σούρουπο" }, "correct": true },
+      { "text": { "en": "High noon", "el": "Μεσημέρι" }, "correct": false },
+      { "text": { "en": "Stormy midnight", "el": "Μεσάνυχτα με καταιγίδα" }, "correct": false },
+      { "text": { "en": "Snowy dawn", "el": "Χαραυγή με χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": { "en": "In the story, where did Sol curl up above the city lights?", "el": "Στην ιστορία, πού κουλουριάστηκε η Sol πάνω από τα φώτα της πόλης;" },
+    "answers": [
+      { "text": { "en": "On a wooden pier", "el": "Σε μια ξύλινη προβλήτα" }, "correct": false },
+      { "text": { "en": "On a dark rock", "el": "Πάνω σε έναν σκούρο βράχο" }, "correct": true },
+      { "text": { "en": "On a sandy dune", "el": "Σε έναν αμμόλοφο" }, "correct": false },
+      { "text": { "en": "On a rooftop chair", "el": "Σε καρέκλα ταράτσας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": { "en": "How were the lights below described in the story?", "el": "Πώς περιγράφονται τα φώτα χαμηλά στην ιστορία;" },
+    "answers": [
+      { "text": { "en": "Like scattered jewelry", "el": "Σαν σκορπισμένα κοσμήματα" }, "correct": true },
+      { "text": { "en": "Like falling snow", "el": "Σαν χιονόπτωση" }, "correct": false },
+      { "text": { "en": "Like a black ocean", "el": "Σαν μαύρος ωκεανός" }, "correct": false },
+      { "text": { "en": "Like a thunderstorm", "el": "Σαν καταιγίδα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": { "en": "What was the air like in Sol’s Cape Town tale?", "el": "Πώς ήταν ο αέρας στην ιστορία του Κέιπ Τάουν;" },
+    "answers": [
+      { "text": { "en": "Hot and dusty", "el": "Ζεστός και σκονισμένος" }, "correct": false },
+      { "text": { "en": "Cool and clean", "el": "Δροσερός και καθαρός" }, "correct": true },
+      { "text": { "en": "Sticky and humid", "el": "Κολλώδης και υγρός" }, "correct": false },
+      { "text": { "en": "Icy with snow", "el": "Παγωμένος με χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": { "en": "Which detail matches the mountain’s presence in the story?", "el": "Ποια λεπτομέρεια ταιριάζει με την παρουσία του βουνού στην ιστορία;" },
+    "answers": [
+      { "text": { "en": "It was huge and still behind her", "el": "Ήταν τεράστιο και ακίνητο πίσω της" }, "correct": true },
+      { "text": { "en": "It erupted with lava", "el": "Ξέσπασε με λάβα" }, "correct": false },
+      { "text": { "en": "It was covered in deep snow", "el": "Ήταν σκεπασμένο με χιόνι" }, "correct": false },
+      { "text": { "en": "It was completely invisible", "el": "Ήταν εντελώς αόρατο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": { "en": "Which line is the episode’s signature quote?", "el": "Ποια φράση είναι το signature quote του επεισοδίου;" },
+    "answers": [
+      { "text": { "en": "Even the skyline whispers when the queen is watching.", "el": "Ακόμα κι ο ορίζοντας ψιθυρίζει όταν η βασίλισσα κοιτάζει." }, "correct": false },
+      { "text": { "en": "The mountain kept watch. She kept calm.", "el": "Το βουνό κρατούσε σκοπιά. Εκείνη έμενε ήρεμη." }, "correct": true },
+      { "text": { "en": "Past and pawprints never fade.", "el": "Το παρελθόν και οι πατούσες δεν ξεθωριάζουν." }, "correct": false },
+      { "text": { "en": "Royalty has arrived.", "el": "Η βασιλική άφιξη έγινε." }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": { "en": "Which sentence matches the episode caption?", "el": "Ποια πρόταση ταιριάζει με το caption του επεισοδίου;" },
+    "answers": [
+      { "text": { "en": "The city shouts when the queen is watching.", "el": "Η πόλη φωνάζει όταν η βασίλισσα κοιτάζει." }, "correct": false },
+      { "text": { "en": "Even the skyline whispers when the queen is watching.", "el": "Ακόμα κι ο ορίζοντας ψιθυρίζει όταν η βασίλισσα κοιτάζει." }, "correct": true },
+      { "text": { "en": "The skyline disappears forever.", "el": "Ο ορίζοντας εξαφανίζεται για πάντα." }, "correct": false },
+      { "text": { "en": "The skyline turns into snow.", "el": "Ο ορίζοντας γίνεται χιόνι." }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": { "en": "In one vivid image, Cape Town felt like…", "el": "Σε μια χαρακτηριστική εικόνα, το Κέιπ Τάουν έμοιαζε σαν…" },
+    "answers": [
+      { "text": { "en": "A city built on a deep breath", "el": "Πόλη χτισμένη πάνω σε μια βαθιά ανάσα" }, "correct": true },
+      { "text": { "en": "A city made only of glass", "el": "Πόλη φτιαγμένη μόνο από γυαλί" }, "correct": false },
+      { "text": { "en": "A city floating on lava", "el": "Πόλη που επιπλέει πάνω σε λάβα" }, "correct": false },
+      { "text": { "en": "A city inside a snow globe", "el": "Πόλη μέσα σε χιονόμπαλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": { "en": "According to the story, Sol wasn’t chasing the view. What was she doing instead?", "el": "Σύμφωνα με την ιστορία, η Sol δεν κυνηγούσε τη θέα. Τι έκανε αντί γι’ αυτό;" },
+    "answers": [
+      { "text": { "en": "She was hiding from it", "el": "Κρυβόταν από αυτήν" }, "correct": false },
+      { "text": { "en": "She was making it hers", "el": "Την έκανε δική της" }, "correct": true },
+      { "text": { "en": "She was ignoring it completely", "el": "Την αγνοούσε τελείως" }, "correct": false },
+      { "text": { "en": "She was racing it", "el": "Την ανταγωνιζόταν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": { "en": "Which pairing best fits the episode title ‘ocean’s edge’ and the story’s ‘mountain above’ mood?", "el": "Ποιο ζευγάρι ταιριάζει καλύτερα με το ‘ocean’s edge’ και το ‘mountain above’ mood;" },
+    "answers": [
+      { "text": { "en": "Sea horizon + mountain sentinel", "el": "Θαλάσσιος ορίζοντας + βουνό-φρουρός" }, "correct": true },
+      { "text": { "en": "Ice fjords + blizzard", "el": "Παγωμένα φιόρδ + χιονοθύελλα" }, "correct": false },
+      { "text": { "en": "Desert dunes + cactus forest", "el": "Αμμόλοφοι ερήμου + δάσος κάκτων" }, "correct": false },
+      { "text": { "en": "Jungle rain + volcano eruption", "el": "Ζούγκλα στη βροχή + έκρηξη ηφαιστείου" }, "correct": false }
+    ]
+  }
+]

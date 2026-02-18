@@ -1520,5 +1520,44 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 40,
+  "title": "SOLadventure #40 – Cape Town, ocean’s edge 🌊 🇿🇦",
+  "quote": "The mountain kept watch. She kept calm.",
+  "caption": "Even the skyline whispers when the queen is watching. 🐾🐾🐾",
+  "image": "episodes/capetown.png",
+  "location": { "lat": -33.9249, "lng": 18.4241 },
+  "visible": true,
+  "city": "capetown",
+  "story": {
+    "en": "Cape Town felt like a city built on a deep breath. Sol settled on a dark rock above the lights, where the streets glittered below like scattered jewels. Table Mountain rose behind her, vast and unmoving, and the famous tablecloth of cloud drifted low across its shoulders as the sky softened into dusk. The air was cool and clean, carrying the quiet of height and the hum of a city that never fully sleeps. Sol did not chase the view. She claimed it. Eyes half closed, paws tucked, she let the mountain do the talking. In Cape Town, the world looks bigger, and the queen looks unbothered.",
+    "el": "Το Κέιπ Τάουν έμοιαζε με πόλη που χτίστηκε πάνω σε μια βαθιά ανάσα. Η Sol κουλουριάστηκε σε έναν σκούρο βράχο πάνω από τα φώτα, εκεί όπου οι δρόμοι λαμπύριζαν χαμηλά σαν σκορπισμένα κοσμήματα. Πίσω της υψωνόταν η Table Mountain, τεράστια και ακίνητη, και το διάσημο “tablecloth” σύννεφο γλιστρούσε χαμηλά στους ώμους της καθώς ο ουρανός μαλάκωνε στο σούρουπο. Ο αέρας ήταν δροσερός και καθαρός, κουβαλώντας τη σιωπή του ύψους και το βουητό μιας πόλης που δεν κοιμάται ποτέ εντελώς. Η Sol δεν κυνηγούσε τη θέα. Την έκανε δική της. Με βλέμμα μισόκλειστο και πατούσες μαζεμένες, άφησε το βουνό να μιλήσει. Στο Κέιπ Τάουν, ο κόσμος δείχνει πιο μεγάλος, και η βασίλισσα πιο ατάραχη."
+  },
+  "photoQuote": "City below. Mountain above.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol rest on a dark rock above Cape Town’s evening lights?",
+        "el": "Ξάπλωσε η Sol σε έναν σκούρο βράχο πάνω από τα βραδινά φώτα του Κέιπ Τάουν;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was the ‘tablecloth’ cloud drifting across Table Mountain mentioned?",
+        "el": "Αναφέρεται το ‘tablecloth’ σύννεφο που απλώνεται πάνω από την Table Mountain;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol take a subway ride under the mountain to escape the cold?",
+        "el": "Έκανε η Sol βόλτα με μετρό κάτω από το βουνό για να γλιτώσει το κρύο;"
+      },
+      "answer": false
+    }
+  ]
 }
+
  ]
