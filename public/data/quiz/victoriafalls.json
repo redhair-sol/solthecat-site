@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Victoria Falls lies primarily in which country (as in this SOLadventure)?",
+      "el": "Οι Καταρράκτες Βικτώριας βρίσκονται κυρίως σε ποια χώρα (όπως στο SOLadventure);"
+    },
+    "answers": [
+      { "text": { "en": "Zimbabwe", "el": "Ζιμπάμπουε" }, "correct": true },
+      { "text": { "en": "Botswana", "el": "Μποτσουάνα" }, "correct": false },
+      { "text": { "en": "Namibia", "el": "Ναμίμπια" }, "correct": false },
+      { "text": { "en": "South Africa", "el": "Νότια Αφρική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Which river feeds Victoria Falls?",
+      "el": "Ποιος ποταμός τροφοδοτεί τους Καταρράκτες Βικτώριας;"
+    },
+    "answers": [
+      { "text": { "en": "Nile", "el": "Νείλος" }, "correct": false },
+      { "text": { "en": "Congo River", "el": "Κονγκό" }, "correct": false },
+      { "text": { "en": "Zambezi River", "el": "Ζαμβέζης" }, "correct": true },
+      { "text": { "en": "Limpopo River", "el": "Λιμπόπο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Victoria Falls sits on the border between Zimbabwe and…",
+      "el": "Οι Καταρράκτες Βικτώριας βρίσκονται στα σύνορα Ζιμπάμπουε και…"
+    },
+    "answers": [
+      { "text": { "en": "Mozambique", "el": "Μοζαμβίκη" }, "correct": false },
+      { "text": { "en": "Zambia", "el": "Ζάμπια" }, "correct": true },
+      { "text": { "en": "Angola", "el": "Αγκόλα" }, "correct": false },
+      { "text": { "en": "Tanzania", "el": "Τανζανία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What is the well-known local name for Victoria Falls?",
+      "el": "Ποια είναι η γνωστή τοπική ονομασία των Καταρρακτών Βικτώριας;"
+    },
+    "answers": [
+      { "text": { "en": "Mosi-oa-Tunya", "el": "Μόσι-οα-Τούνια (Mosi-oa-Tunya)" }, "correct": true },
+      { "text": { "en": "Serengeti", "el": "Σερενγκέτι" }, "correct": false },
+      { "text": { "en": "Okavango", "el": "Οκαβάνγκο" }, "correct": false },
+      { "text": { "en": "Kalahari", "el": "Καλαχάρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Mosi-oa-Tunya is often translated as…",
+      "el": "Το Mosi-oa-Tunya μεταφράζεται συχνά ως…"
+    },
+    "answers": [
+      { "text": { "en": "The Sleeping Water", "el": "Το Κοιμισμένο Νερό" }, "correct": false },
+      { "text": { "en": "The Singing River", "el": "Το Τραγουδιστό Ποτάμι" }, "correct": false },
+      { "text": { "en": "The Smoke that Thunders", "el": "Ο Καπνός που Βροντά" }, "correct": true },
+      { "text": { "en": "The River of Gold", "el": "Ο Ποταμός του Χρυσού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Victoria Falls is recognized as a UNESCO…",
+      "el": "Οι Καταρράκτες Βικτώριας είναι αναγνωρισμένοι από την UNESCO ως…"
+    },
+    "answers": [
+      { "text": { "en": "World Heritage Site", "el": "Μνημείο Παγκόσμιας Κληρονομιάς" }, "correct": true },
+      { "text": { "en": "Biosphere Reserve only", "el": "Μόνο Απόθεμα Βιόσφαιρας" }, "correct": false },
+      { "text": { "en": "World Capital City", "el": "Παγκόσμια Πρωτεύουσα" }, "correct": false },
+      { "text": { "en": "Protected Coral Reef", "el": "Προστατευμένος Κοραλλιογενής Ύφαλος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "The Zimbabwean town next to the falls is commonly called…",
+      "el": "Η πόλη στη Ζιμπάμπουε δίπλα στους καταρράκτες λέγεται συνήθως…"
+    },
+    "answers": [
+      { "text": { "en": "Victoria Falls", "el": "Victoria Falls" }, "correct": true },
+      { "text": { "en": "Harare", "el": "Χαράρε" }, "correct": false },
+      { "text": { "en": "Bulawayo", "el": "Μπουλαβάγιο" }, "correct": false },
+      { "text": { "en": "Gaborone", "el": "Γκαμπορόνε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which country’s town ‘Livingstone’ is near the falls?",
+      "el": "Η πόλη ‘Livingstone’ κοντά στους καταρράκτες ανήκει σε ποια χώρα;"
+    },
+    "answers": [
+      { "text": { "en": "Zambia", "el": "Ζάμπια" }, "correct": true },
+      { "text": { "en": "Zimbabwe", "el": "Ζιμπάμπουε" }, "correct": false },
+      { "text": { "en": "Malawi", "el": "Μαλάουι" }, "correct": false },
+      { "text": { "en": "Lesotho", "el": "Λεσότο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "In Sol’s story, what rises like a veil above the gorge?",
+      "el": "Στην ιστορία της Sol, τι ανεβαίνει σαν πέπλο πάνω από το φαράγγι;"
+    },
+    "answers": [
+      { "text": { "en": "Mist and spray", "el": "Ομίχλη και σταγονίδια" }, "correct": true },
+      { "text": { "en": "Sandstorm dust", "el": "Αμμοθύελλα" }, "correct": false },
+      { "text": { "en": "Snow flurries", "el": "Νιφάδες χιονιού" }, "correct": false },
+      { "text": { "en": "Volcanic ash", "el": "Ηφαιστειακή στάχτη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What colorful arc is often seen in the spray in the episode image vibe?",
+      "el": "Ποια πολύχρωμη αψίδα φαίνεται συχνά μέσα στο ψιλό νερό στην ατμόσφαιρα της εικόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Aurora", "el": "Σέλας" }, "correct": false },
+      { "text": { "en": "Rainbow", "el": "Ουράνιο τόξο" }, "correct": true },
+      { "text": { "en": "Comet tail", "el": "Ουρά κομήτη" }, "correct": false },
+      { "text": { "en": "Lightning ring", "el": "Δαχτυλίδι αστραπών" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which continent is Zimbabwe part of?",
+      "el": "Σε ποια ήπειρο ανήκει η Ζιμπάμπουε;"
+    },
+    "answers": [
+      { "text": { "en": "South America", "el": "Νότια Αμερική" }, "correct": false },
+      { "text": { "en": "Asia", "el": "Ασία" }, "correct": false },
+      { "text": { "en": "Africa", "el": "Αφρική" }, "correct": true },
+      { "text": { "en": "Europe", "el": "Ευρώπη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Victoria Falls is famous for being the world’s largest…",
+      "el": "Οι Καταρράκτες Βικτώριας είναι διάσημοι ως ο μεγαλύτερος στον κόσμο…"
+    },
+    "answers": [
+      { "text": { "en": "Single sheet of falling water", "el": "ενιαίος «τοίχος» πτώσης νερού" }, "correct": true },
+      { "text": { "en": "Waterfall inside a cave", "el": "καταρράκτης μέσα σε σπηλιά" }, "correct": false },
+      { "text": { "en": "Frozen waterfall", "el": "παγωμένος καταρράκτης" }, "correct": false },
+      { "text": { "en": "Underground waterfall", "el": "υπόγειος καταρράκτης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "The gorge below Victoria Falls was carved mainly by…",
+      "el": "Το φαράγγι κάτω από τους Καταρράκτες Βικτώριας έχει σχηματιστεί κυρίως από…"
+    },
+    "answers": [
+      { "text": { "en": "Wind erosion only", "el": "μόνο από τον άνεμο" }, "correct": false },
+      { "text": { "en": "River erosion over time", "el": "διάβρωση του ποταμού με τον χρόνο" }, "correct": true },
+      { "text": { "en": "Glaciers", "el": "παγετώνες" }, "correct": false },
+      { "text": { "en": "Meteor impact", "el": "πρόσκρουση μετεωρίτη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Which ocean does the Zambezi ultimately flow into?",
+      "el": "Σε ποιον ωκεανό εκβάλλει τελικά ο Ζαμβέζης;"
+    },
+    "answers": [
+      { "text": { "en": "Atlantic Ocean", "el": "Ατλαντικός" }, "correct": false },
+      { "text": { "en": "Indian Ocean", "el": "Ινδικός" }, "correct": true },
+      { "text": { "en": "Pacific Ocean", "el": "Ειρηνικός" }, "correct": false },
+      { "text": { "en": "Arctic Ocean", "el": "Αρκτικός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which explorer is often credited (in European records) with naming Victoria Falls?",
+      "el": "Ποιος εξερευνητής συνδέεται συχνά (στην ευρωπαϊκή ιστορία) με την ονομασία Victoria Falls;"
+    },
+    "answers": [
+      { "text": { "en": "Marco Polo", "el": "Μάρκο Πόλο" }, "correct": false },
+      { "text": { "en": "Ibn Battuta", "el": "Ιμπν Μπατούτα" }, "correct": false },
+      { "text": { "en": "David Livingstone", "el": "Ντέιβιντ Λίβινγκστον" }, "correct": true },
+      { "text": { "en": "Roald Amundsen", "el": "Ρόαλντ Αμούνδσεν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which word best matches the episode title ‘thunder’s veil’?",
+      "el": "Ποια λέξη ταιριάζει καλύτερα με τον τίτλο ‘thunder’s veil’; "
+    },
+    "answers": [
+      { "text": { "en": "Mist", "el": "Ομίχλη" }, "correct": true },
+      { "text": { "en": "Dust", "el": "Σκόνη" }, "correct": false },
+      { "text": { "en": "Snow", "el": "Χιόνι" }, "correct": false },
+      { "text": { "en": "Smoke from fire", "el": "Καπνός από φωτιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "In the episode, Sol’s pose is described as…",
+      "el": "Στο επεισόδιο, η στάση της Sol περιγράφεται ως…"
+    },
+    "answers": [
+      { "text": { "en": "Paws tucked, slow blink calm", "el": "Πατούσες μαζεμένες, αργό βλέμμα, ηρεμία" }, "correct": true },
+      { "text": { "en": "Running and shouting", "el": "Έτρεχε και φώναζε" }, "correct": false },
+      { "text": { "en": "Jumping into the water", "el": "Πηδούσε στο νερό" }, "correct": false },
+      { "text": { "en": "Hiding behind trees", "el": "Κρυβόταν πίσω από δέντρα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "The falls drop into a steep…",
+      "el": "Οι καταρράκτες πέφτουν μέσα σε ένα απότομο…"
+    },
+    "answers": [
+      { "text": { "en": "Gorge", "el": "Φαράγγι" }, "correct": true },
+      { "text": { "en": "Desert dune", "el": "Αμμόλοφο" }, "correct": false },
+      { "text": { "en": "Glacier crevasse", "el": "Ρωγμή παγετώνα" }, "correct": false },
+      { "text": { "en": "Volcano crater", "el": "Κρατήρα ηφαιστείου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which description best fits the air near the falls in Sol’s tale?",
+      "el": "Ποια περιγραφή ταιριάζει καλύτερα στον αέρα κοντά στους καταρράκτες στο παραμύθι της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Dry and dusty", "el": "Ξηρός και σκονισμένος" }, "correct": false },
+      { "text": { "en": "Clean and electric", "el": "Καθαρός και ηλεκτρισμένος" }, "correct": true },
+      { "text": { "en": "Freezing with snow", "el": "Παγωμένος με χιόνι" }, "correct": false },
+      { "text": { "en": "Smoky from fires", "el": "Καπνισμένος από φωτιές" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which statement matches the photo quote used on the image?",
+      "el": "Ποια πρόταση ταιριάζει με το photo quote που μπήκε στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "City below. Mountain above.", "el": "City below. Mountain above." }, "correct": false },
+      { "text": { "en": "The roar bows to the calm.", "el": "The roar bows to the calm." }, "correct": true },
+      { "text": { "en": "Royalty has arrived.", "el": "Royalty has arrived." }, "correct": false },
+      { "text": { "en": "Past and pawprints never fade.", "el": "Past and pawprints never fade." }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which pair best captures the episode vibe: power + composure?",
+      "el": "Ποιο ζευγάρι αποτυπώνει καλύτερα το vibe: δύναμη + αυτοκυριαρχία;"
+    },
+    "answers": [
+      { "text": { "en": "Thunder below, calm above", "el": "Βροντή χαμηλά, ηρεμία ψηλά" }, "correct": true },
+      { "text": { "en": "Snow below, panic above", "el": "Χιόνι χαμηλά, πανικός ψηλά" }, "correct": false },
+      { "text": { "en": "Dust below, chaos above", "el": "Σκόνη χαμηλά, χάος ψηλά" }, "correct": false },
+      { "text": { "en": "Silence below, shouting above", "el": "Σιωπή χαμηλά, φωνές ψηλά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which side is commonly known for ‘Knife-Edge Bridge’ viewpoints of the spray?",
+      "el": "Ποια πλευρά είναι γνωστή για θέα από το ‘Knife-Edge Bridge’ μέσα στα σταγονίδια;"
+    },
+    "answers": [
+      { "text": { "en": "Zimbabwe side", "el": "Πλευρά Ζιμπάμπουε" }, "correct": true },
+      { "text": { "en": "Namibia side", "el": "Πλευρά Ναμίμπια" }, "correct": false },
+      { "text": { "en": "Kenya side", "el": "Πλευρά Κένυα" }, "correct": false },
+      { "text": { "en": "Egypt side", "el": "Πλευρά Αιγύπτου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "‘Devil’s Pool’ is a famous natural pool near the edge on the…",
+      "el": "Η ‘Devil’s Pool’ είναι μια διάσημη φυσική «πισίνα» κοντά στην άκρη στην…"
+    },
+    "answers": [
+      { "text": { "en": "Zambia side", "el": "Πλευρά Ζάμπια" }, "correct": true },
+      { "text": { "en": "South Africa side", "el": "Πλευρά Νότιας Αφρικής" }, "correct": false },
+      { "text": { "en": "Morocco side", "el": "Πλευρά Μαρόκου" }, "correct": false },
+      { "text": { "en": "Ethiopia side", "el": "Πλευρά Αιθιοπίας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "In the story, Sol does NOT do which of the following?",
+      "el": "Στην ιστορία, τι ΔΕΝ κάνει η Sol από τα παρακάτω;"
+    },
+    "answers": [
+      { "text": { "en": "Slow blink calmly", "el": "Κλείνει αργά τα μάτια ήρεμα" }, "correct": false },
+      { "text": { "en": "Let the noise do its work", "el": "Αφήνει τον θόρυβο να κάνει τη δουλειά του" }, "correct": false },
+      { "text": { "en": "Flinch at the roar", "el": "Τινάζεται/φοβάται από τον βρυχηθμό" }, "correct": true },
+      { "text": { "en": "Sit above the gorge", "el": "Κάθεται πάνω από το φαράγγι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which statement best fits the episode’s queen logic?",
+      "el": "Ποια πρόταση ταιριάζει καλύτερα στη “λογική” της βασίλισσας στο επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "The louder the power, the calmer the queen.", "el": "Όσο πιο δυνατή η δύναμη, τόσο πιο ήρεμη η βασίλισσα." }, "correct": true },
+      { "text": { "en": "If it’s loud, run away.", "el": "Αν είναι δυνατό, τρέξε να φύγεις." }, "correct": false },
+      { "text": { "en": "Rainbows mean it’s snowing.", "el": "Τα ουράνια τόξα σημαίνουν ότι χιονίζει." }, "correct": false },
+      { "text": { "en": "Mist means the desert is near.", "el": "Η ομίχλη σημαίνει ότι η έρημος είναι κοντά." }, "correct": false }
+    ]
+  }
+]

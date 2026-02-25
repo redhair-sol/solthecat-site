@@ -1558,6 +1558,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 41,
+  "title": "SOLadventure #41 – Victoria Falls, thunder’s veil 🌋 🇿🇼",
+  "quote": "Mist took the noise. She kept the calm.",
+  "caption": "Even thunder learns manners when the queen is watching. 🐾🐾🐾",
+  "image": "episodes/victoria.png",
+  "location": { "lat": -17.9329, "lng": 25.8307 },
+  "visible": true,
+  "city": "victoriafalls",
+  "story": {
+    "en": "Victoria Falls did not just fall. It roared. Sol sat on a dark, wet rock above the gorge, while the Zambezi rushed into white chaos and the mist rose like a veil that hid and revealed the world at the same time. A rainbow held steady in the spray, as if the sky signed the scene. The air tasted clean and electric, full of water and thunder, but Sol did not flinch. She blinked slow, paws tucked, and let the noise do its work. In Victoria Falls, power is loud, and the queen is quieter.",
+    "el": "Οι Καταρράκτες της Βικτώριας δεν έπεφταν απλώς. Βούιζαν. Η Sol κάθισε σε έναν σκούρο, βρεγμένο βράχο πάνω από το φαράγγι, ενώ ο Ζαμβέζης χυνόταν σε λευκό χάος και η ομίχλη ανέβαινε σαν πέπλο που έκρυβε και αποκάλυπτε τον κόσμο μαζί. Ένα ουράνιο τόξο στεκόταν σταθερό μέσα στο ψιλό νερό, σαν να υπέγραφε ο ουρανός τη σκηνή. Ο αέρας ήταν καθαρός και ηλεκτρισμένος, γεμάτος νερό και βροντή, αλλά η Sol δεν κουνήθηκε. Έκλεισε αργά τα μάτια, μάζεψε τις πατούσες, και άφησε τον θόρυβο να κάνει τη δουλειά του. Στη Βικτώρια, η δύναμη είναι δυνατή, και η βασίλισσα πιο ήσυχη."
+  },
+  "photoQuote": "The roar bows to the calm.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol sit on a dark wet rock above the gorge while the falls roared?",
+        "el": "Κάθισε η Sol σε σκούρο βρεγμένο βράχο πάνω από το φαράγγι ενώ οι καταρράκτες βούιζαν;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was a rainbow described as holding steady in the spray?",
+        "el": "Περιγράφεται ένα ουράνιο τόξο που μένει σταθερό μέσα στο ψιλό νερό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol go scuba diving under the waterfall to find treasure?",
+        "el": "Έκανε η Sol κατάδυση κάτω από τον καταρράκτη για να βρει θησαυρό;"
+      },
+      "answer": false
+    }
+  ]
 }
-
  ]
