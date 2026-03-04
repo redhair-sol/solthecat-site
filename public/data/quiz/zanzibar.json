@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Zanzibar belongs to which country?",
+      "el": "Η Ζανζιβάρη ανήκει σε ποια χώρα;"
+    },
+    "answers": [
+      { "text": { "en": "Kenya", "el": "Κένυα" }, "correct": false },
+      { "text": { "en": "Mozambique", "el": "Μοζαμβίκη" }, "correct": false },
+      { "text": { "en": "Tanzania", "el": "Τανζανία" }, "correct": true },
+      { "text": { "en": "Madagascar", "el": "Μαδαγασκάρη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Zanzibar lies in which ocean?",
+      "el": "Η Ζανζιβάρη βρίσκεται σε ποιον ωκεανό;"
+    },
+    "answers": [
+      { "text": { "en": "Indian Ocean", "el": "Ινδικός Ωκεανός" }, "correct": true },
+      { "text": { "en": "Atlantic Ocean", "el": "Ατλαντικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Pacific Ocean", "el": "Ειρηνικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Arctic Ocean", "el": "Αρκτικός Ωκεανός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What is Zanzibar especially famous for?",
+      "el": "Για τι είναι ιδιαίτερα γνωστή η Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "Heavy industry", "el": "Βαριά βιομηχανία" }, "correct": false },
+      { "text": { "en": "Spice trade", "el": "Εμπόριο μπαχαρικών" }, "correct": true },
+      { "text": { "en": "Snow resorts", "el": "Χιονοδρομικά θέρετρα" }, "correct": false },
+      { "text": { "en": "Oil fields", "el": "Πετρελαιοπηγές" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What is the traditional wooden sailboat seen around Zanzibar called?",
+      "el": "Πώς λέγεται το παραδοσιακό ξύλινο ιστιοπλοϊκό που βλέπουμε στη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "Dhow", "el": "Ντάου" }, "correct": true },
+      { "text": { "en": "Gondola", "el": "Γόνδολα" }, "correct": false },
+      { "text": { "en": "Yacht", "el": "Γιοτ" }, "correct": false },
+      { "text": { "en": "Canoe", "el": "Κανό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What is the historic district of Zanzibar City called?",
+      "el": "Πώς λέγεται η ιστορική συνοικία της Zanzibar City;"
+    },
+    "answers": [
+      { "text": { "en": "Stone Town", "el": "Stone Town" }, "correct": true },
+      { "text": { "en": "Old Port", "el": "Old Port" }, "correct": false },
+      { "text": { "en": "Coral Square", "el": "Coral Square" }, "correct": false },
+      { "text": { "en": "King’s Bay", "el": "King’s Bay" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Stone Town is located on which island?",
+      "el": "Το Stone Town βρίσκεται σε ποιο νησί;"
+    },
+    "answers": [
+      { "text": { "en": "Pemba", "el": "Πέμπα" }, "correct": false },
+      { "text": { "en": "Unguja", "el": "Ουνγκούτζα" }, "correct": true },
+      { "text": { "en": "Mafia", "el": "Μάφια" }, "correct": false },
+      { "text": { "en": "Lamu", "el": "Λάμου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which is the other major island of Zanzibar besides Unguja?",
+      "el": "Ποιο είναι το άλλο κύριο νησί της Ζανζιβάρης εκτός από το Ουνγκούτζα;"
+    },
+    "answers": [
+      { "text": { "en": "Pemba", "el": "Πέμπα" }, "correct": true },
+      { "text": { "en": "Kilwa", "el": "Κίλουα" }, "correct": false },
+      { "text": { "en": "Mombasa", "el": "Μομπάσα" }, "correct": false },
+      { "text": { "en": "Tumbatu", "el": "Τουμπάτου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Which language is most widely spoken in Zanzibar?",
+      "el": "Ποια γλώσσα μιλιέται περισσότερο στη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "Swahili", "el": "Σουαχίλι" }, "correct": true },
+      { "text": { "en": "Zulu", "el": "Ζουλού" }, "correct": false },
+      { "text": { "en": "Amharic", "el": "Αμχαρικά" }, "correct": false },
+      { "text": { "en": "Somali", "el": "Σομαλικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Jozani Forest is famous for which rare animal?",
+      "el": "Το δάσος Jozani είναι γνωστό για ποιο σπάνιο ζώο;"
+    },
+    "answers": [
+      { "text": { "en": "Zanzibar red colobus", "el": "Κόκκινος κολόμπους της Ζανζιβάρης" }, "correct": true },
+      { "text": { "en": "Mountain gorilla", "el": "Γορίλας του βουνού" }, "correct": false },
+      { "text": { "en": "Fennec fox", "el": "Αλεπού fennec" }, "correct": false },
+      { "text": { "en": "Snow leopard", "el": "Λεοπάρδαλη του χιονιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which spice is especially associated with Zanzibar?",
+      "el": "Ποιο μπαχαρικό συνδέεται ιδιαίτερα με τη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "Clove", "el": "Γαρύφαλλο" }, "correct": true },
+      { "text": { "en": "Paprika", "el": "Πάπρικα" }, "correct": false },
+      { "text": { "en": "Dill", "el": "Άνηθος" }, "correct": false },
+      { "text": { "en": "Saffron", "el": "Κρόκος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Zanzibar is located off the coast of which part of Africa?",
+      "el": "Η Ζανζιβάρη βρίσκεται ανοιχτά από ποιο μέρος της Αφρικής;"
+    },
+    "answers": [
+      { "text": { "en": "West Africa", "el": "Δυτική Αφρική" }, "correct": false },
+      { "text": { "en": "East Africa", "el": "Ανατολική Αφρική" }, "correct": true },
+      { "text": { "en": "North Africa", "el": "Βόρεια Αφρική" }, "correct": false },
+      { "text": { "en": "Central Africa", "el": "Κεντρική Αφρική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What natural beach feature is very noticeable in Zanzibar?",
+      "el": "Ποιο φυσικό χαρακτηριστικό των παραλιών είναι πολύ έντονο στη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "Glaciers", "el": "Παγετώνες" }, "correct": false },
+      { "text": { "en": "Volcanic lava", "el": "Ηφαιστειακή λάβα" }, "correct": false },
+      { "text": { "en": "Strong tides", "el": "Έντονες παλίρροιες" }, "correct": true },
+      { "text": { "en": "Snowdrifts", "el": "Συσσωρεύσεις χιονιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Stone Town is especially known for its carved…",
+      "el": "Το Stone Town είναι ιδιαίτερα γνωστό για τις σκαλιστές του…"
+    },
+    "answers": [
+      { "text": { "en": "Wooden doors", "el": "Ξύλινες πόρτες" }, "correct": true },
+      { "text": { "en": "Ice statues", "el": "Παγωμένα αγάλματα" }, "correct": false },
+      { "text": { "en": "Glass bridges", "el": "Γυάλινες γέφυρες" }, "correct": false },
+      { "text": { "en": "Steel towers", "el": "Ατσάλινους πύργους" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Stone Town has been recognized by UNESCO as a…",
+      "el": "Το Stone Town έχει αναγνωριστεί από την UNESCO ως…"
+    },
+    "answers": [
+      { "text": { "en": "Modern business zone", "el": "Σύγχρονη επιχειρηματική ζώνη" }, "correct": false },
+      { "text": { "en": "World Heritage Site", "el": "Μνημείο Παγκόσμιας Κληρονομιάς" }, "correct": true },
+      { "text": { "en": "Protected glacier", "el": "Προστατευόμενος παγετώνας" }, "correct": false },
+      { "text": { "en": "National airport", "el": "Εθνικό αεροδρόμιο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "In Sol’s story, what kind of sand did she step onto?",
+      "el": "Στην ιστορία της Sol, σε τι είδους άμμο πάτησε;"
+    },
+    "answers": [
+      { "text": { "en": "Black volcanic sand", "el": "Μαύρη ηφαιστειακή άμμος" }, "correct": false },
+      { "text": { "en": "Powdery white sand", "el": "Λευκή απαλή άμμος" }, "correct": true },
+      { "text": { "en": "Rocky gravel", "el": "Πετρώδες χαλίκι" }, "correct": false },
+      { "text": { "en": "Red clay", "el": "Κόκκινος πηλός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "In the episode story, the sea kept turning shades of…",
+      "el": "Στην ιστορία του επεισοδίου, η θάλασσα άλλαζε αποχρώσεις του…"
+    },
+    "answers": [
+      { "text": { "en": "Turquoise", "el": "Τιρκουάζ" }, "correct": true },
+      { "text": { "en": "Dark gray", "el": "Σκούρου γκρι" }, "correct": false },
+      { "text": { "en": "Burgundy", "el": "Μπορντό" }, "correct": false },
+      { "text": { "en": "Purple", "el": "Μωβ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "In the story, the palm trees leaned in like…",
+      "el": "Στην ιστορία, οι φοίνικες έγερναν σαν…"
+    },
+    "answers": [
+      { "text": { "en": "Quiet courtiers", "el": "Ήσυχοι αυλικοί" }, "correct": true },
+      { "text": { "en": "Wild dancers", "el": "Άγριοι χορευτές" }, "correct": false },
+      { "text": { "en": "Storm soldiers", "el": "Στρατιώτες καταιγίδας" }, "correct": false },
+      { "text": { "en": "Frozen statues", "el": "Παγωμένα αγάλματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What rested offshore in Sol’s Zanzibar story?",
+      "el": "Τι στεκόταν ανοιχτά στη θάλασσα στην ιστορία της Sol στη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "A submarine", "el": "Ένα υποβρύχιο" }, "correct": false },
+      { "text": { "en": "A wooden dhow", "el": "Ένα ξύλινο ντάου" }, "correct": true },
+      { "text": { "en": "A cargo ship", "el": "Ένα φορτηγό πλοίο" }, "correct": false },
+      { "text": { "en": "A helicopter raft", "el": "Μια πλωτή εξέδρα ελικοπτέρου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What did the breeze carry besides salt in the story?",
+      "el": "Τι έφερνε το αεράκι εκτός από αλάτι στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Snow and cedar", "el": "Χιόνι και κέδρο" }, "correct": false },
+      { "text": { "en": "Warm coconut and sweet spice", "el": "Ζεστή καρύδα και γλυκά μπαχαρικά" }, "correct": true },
+      { "text": { "en": "Smoke and diesel", "el": "Καπνό και ντίζελ" }, "correct": false },
+      { "text": { "en": "Dust and iron", "el": "Σκόνη και σίδηρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which group of spices is mentioned in the story?",
+      "el": "Ποια ομάδα μπαχαρικών αναφέρεται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Basil, mint, parsley, sage", "el": "Βασιλικός, δυόσμος, μαϊντανός, φασκόμηλο" }, "correct": false },
+      { "text": { "en": "Chili, cumin, mustard, pepper", "el": "Τσίλι, κύμινο, μουστάρδα, πιπέρι" }, "correct": false },
+      { "text": { "en": "Clove, cinnamon, cardamom, vanilla", "el": "Γαρύφαλλο, κανέλα, κάρδαμο, βανίλια" }, "correct": true },
+      { "text": { "en": "Rosemary, dill, thyme, oregano", "el": "Δεντρολίβανο, άνηθος, θυμάρι, ρίγανη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "At the tide line, what did the waves do in the story?",
+      "el": "Στο όριο της παλίρροιας, τι έκαναν τα κύματα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Built sand towers", "el": "Έχτιζαν πύργους από άμμο" }, "correct": false },
+      { "text": { "en": "Drew and erased little signatures", "el": "Ζωγράφιζαν και έσβηναν μικρές υπογραφές" }, "correct": true },
+      { "text": { "en": "Brought in fishing nets", "el": "Έφερναν δίχτυα ψαρέματος" }, "correct": false },
+      { "text": { "en": "Turned the sea black", "el": "Έκαναν τη θάλασσα μαύρη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which phrase best matches the mood of the Zanzibar episode?",
+      "el": "Ποια φράση ταιριάζει καλύτερα στο κλίμα του επεισοδίου της Ζανζιβάρης;"
+    },
+    "answers": [
+      { "text": { "en": "Fast traffic and panic", "el": "Γρήγορη κίνηση και πανικός" }, "correct": false },
+      { "text": { "en": "Slow light and royal calm", "el": "Αργό φως και βασιλική ηρεμία" }, "correct": true },
+      { "text": { "en": "Steel noise and tension", "el": "Μεταλλικός θόρυβος και ένταση" }, "correct": false },
+      { "text": { "en": "Storm and fear", "el": "Καταιγίδα και φόβος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "According to the story, what happens to the world in Zanzibar?",
+      "el": "Σύμφωνα με την ιστορία, τι συμβαίνει στον κόσμο στη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "It hardens", "el": "Σκληραίνει" }, "correct": false },
+      { "text": { "en": "It freezes", "el": "Παγώνει" }, "correct": false },
+      { "text": { "en": "It softens", "el": "Μαλακώνει" }, "correct": true },
+      { "text": { "en": "It vanishes", "el": "Εξαφανίζεται" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which photo quote belongs to the Zanzibar image?",
+      "el": "Ποιο photo quote ανήκει στην εικόνα της Ζανζιβάρης;"
+    },
+    "answers": [
+      { "text": { "en": "Royalty has arrived.", "el": "Royalty has arrived." }, "correct": false },
+      { "text": { "en": "Past and pawprints never fade.", "el": "Past and pawprints never fade." }, "correct": false },
+      { "text": { "en": "Where the tide bows", "el": "Where the tide bows" }, "correct": true },
+      { "text": { "en": "The roar bows to the calm.", "el": "The roar bows to the calm." }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which statement best fits Sol’s role in the Zanzibar episode?",
+      "el": "Ποια πρόταση ταιριάζει καλύτερα στον ρόλο της Sol στο επεισόδιο της Ζανζιβάρης;"
+    },
+    "answers": [
+      { "text": { "en": "She is lost in the crowd", "el": "Χάνεται μέσα στο πλήθος" }, "correct": false },
+      { "text": { "en": "She is frightened by the sea", "el": "Φοβάται τη θάλασσα" }, "correct": false },
+      { "text": { "en": "She is perfectly in charge", "el": "Είναι απόλυτα κυρίαρχη" }, "correct": true },
+      { "text": { "en": "She is racing to escape", "el": "Τρέχει για να ξεφύγει" }, "correct": false }
+    ]
+  }
+]

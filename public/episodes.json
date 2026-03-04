@@ -1596,5 +1596,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 42,
+  "title": "SOLadventure #42 – Zanzibar, spice islands 🏝️ 🇹🇿",
+  "quote": "She ruled the hush between waves.",
+  "caption": "Sun on the sand, spice in the air, and the queen in her element. 🐾🐾🐾",
+  "image": "episodes/zanzibar.png",
+  "location": { "lat": -6.1659, "lng": 39.2026 },
+  "visible": true,
+  "city": "zanzibar",
+  "story": {
+    "en": "Zanzibar felt like silk under the sun. Sol stepped onto powdery white sand and watched the sea turn every shade of turquoise, as if the water could not decide which jewel to be. Palm trees leaned in like quiet courtiers, and a wooden dhow rested offshore, patient and proud. The breeze carried salt, warm coconut, and something sweeter. Clove and cinnamon, cardamom and vanilla, a spice whisper that made the whole island smell like a secret. Sol sat near the tide line and let the waves draw and erase their little signatures in the sand. No rush, no noise, just slow light and royal calm. In Zanzibar, the world softens, and Sol stays perfectly in charge.",
+    "el": "Η Ζανζιβάρη έμοιαζε σαν μετάξι κάτω από τον ήλιο. Η Sol πάτησε στη λευκή, απαλή άμμο και κοίταξε τη θάλασσα να αλλάζει αποχρώσεις του τιρκουάζ, σαν να μην αποφάσιζε ποιο πετράδι να γίνει. Οι φοίνικες έγερναν σαν ήσυχοι αυλικοί, και ένα ξύλινο dhow στεκόταν ανοιχτά, υπομονετικό και περήφανο. Το αεράκι έφερνε αλάτι, ζεστή καρύδα, και κάτι πιο γλυκό. Γαρύφαλλο και κανέλα, κάρδαμο και βανίλια, ένα ψίθυρο μπαχαρικών που έκανε όλο το νησί να μυρίζει σαν μυστικό. Η Sol κάθισε κοντά στο νερό και άφησε τα κύματα να γράφουν και να σβήνουν τα μικρά τους σημάδια στην άμμο. Χωρίς βιασύνη, χωρίς θόρυβο, μόνο αργό φως και βασιλική ηρεμία. Στη Ζανζιβάρη ο κόσμος μαλακώνει, και η Sol μένει απόλυτα αρχηγός."
+  },
+  "photoQuote": "Where the tide bows",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did the story describe the sea shifting through many shades of turquoise?",
+        "el": "Περιγράφει η ιστορία τη θάλασσα να αλλάζει πολλές αποχρώσεις του τιρκουάζ;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Was there a wooden dhow resting offshore in the scene?",
+        "el": "Υπήρχε ένα ξύλινο dhow ανοιχτά στη σκηνή;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol ride a camel across the desert dunes of Zanzibar?",
+        "el": "Καβάλησε η Sol καμήλα σε αμμόλοφους ερήμου στη Ζανζιβάρη;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
