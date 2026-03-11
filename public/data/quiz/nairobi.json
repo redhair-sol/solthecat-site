@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Nairobi is the capital of which country?",
+      "el": "Το Ναϊρόμπι είναι η πρωτεύουσα ποιας χώρας;"
+    },
+    "answers": [
+      { "text": { "en": "Ethiopia", "el": "Αιθιοπία" }, "correct": false },
+      { "text": { "en": "Kenya", "el": "Κένυα" }, "correct": true },
+      { "text": { "en": "Uganda", "el": "Ουγκάντα" }, "correct": false },
+      { "text": { "en": "Rwanda", "el": "Ρουάντα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "Which national park is famous for sitting right next to Nairobi?",
+      "el": "Ποιο εθνικό πάρκο είναι διάσημο επειδή βρίσκεται ακριβώς δίπλα στο Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Amboseli National Park", "el": "Εθνικό Πάρκο Amboseli" }, "correct": false },
+      { "text": { "en": "Tsavo East National Park", "el": "Εθνικό Πάρκο Tsavo East" }, "correct": false },
+      { "text": { "en": "Nairobi National Park", "el": "Εθνικό Πάρκο Nairobi" }, "correct": true },
+      { "text": { "en": "Aberdare National Park", "el": "Εθνικό Πάρκο Aberdare" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which language is widely spoken in Nairobi alongside English?",
+      "el": "Ποια γλώσσα μιλιέται ευρέως στο Ναϊρόμπι μαζί με τα Αγγλικά;"
+    },
+    "answers": [
+      { "text": { "en": "Zulu", "el": "Ζουλού" }, "correct": false },
+      { "text": { "en": "Amharic", "el": "Αμχαρικά" }, "correct": false },
+      { "text": { "en": "Swahili", "el": "Σουαχίλι" }, "correct": true },
+      { "text": { "en": "Arabic", "el": "Αραβικά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which animal is clearly featured in Sol’s Nairobi image?",
+      "el": "Ποιο ζώο φαίνεται καθαρά στην εικόνα της Sol στο Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Lion", "el": "Λιοντάρι" }, "correct": false },
+      { "text": { "en": "Giraffe", "el": "Καμηλοπάρδαλη" }, "correct": false },
+      { "text": { "en": "Elephant", "el": "Ελέφαντας" }, "correct": false },
+      { "text": { "en": "Zebra", "el": "Ζέβρα" }, "correct": true }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which photo quote belongs to the Nairobi episode image?",
+      "el": "Ποιο photo quote ανήκει στην εικόνα του επεισοδίου του Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Where the tide bows", "el": "Where the tide bows" }, "correct": false },
+      { "text": { "en": "Where the city meets the wild", "el": "Where the city meets the wild" }, "correct": true },
+      { "text": { "en": "Shadows bow slow", "el": "Shadows bow slow" }, "correct": false },
+      { "text": { "en": "Royalty has arrived", "el": "Royalty has arrived" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "In the story, what shimmered in the distance through the heat?",
+      "el": "Στην ιστορία, τι λαμπύριζε στο βάθος μέσα στη ζέστη;"
+    },
+    "answers": [
+      { "text": { "en": "A river", "el": "Ένα ποτάμι" }, "correct": false },
+      { "text": { "en": "A mountain ridge", "el": "Μια οροσειρά" }, "correct": false },
+      { "text": { "en": "A line of beaches", "el": "Μια σειρά από παραλίες" }, "correct": false },
+      { "text": { "en": "The skyline", "el": "Το skyline" }, "correct": true }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which tree is strongly associated with the safari landscape around Nairobi?",
+      "el": "Ποιο δέντρο συνδέεται έντονα με το σαφάρι τοπίο γύρω από το Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Acacia", "el": "Ακακία" }, "correct": true },
+      { "text": { "en": "Palm", "el": "Φοίνικας" }, "correct": false },
+      { "text": { "en": "Pine", "el": "Πεύκο" }, "correct": false },
+      { "text": { "en": "Cypress", "el": "Κυπαρίσσι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "According to the story, the city did not interrupt the…",
+      "el": "Σύμφωνα με την ιστορία, η πόλη δεν διέκοπτε την…"
+    },
+    "answers": [
+      { "text": { "en": "river", "el": "ποτάμι" }, "correct": false },
+      { "text": { "en": "desert road", "el": "έρημη διαδρομή" }, "correct": false },
+      { "text": { "en": "wild", "el": "άγρια φύση" }, "correct": true },
+      { "text": { "en": "storm", "el": "καταιγίδα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What scent did the breeze carry in the Nairobi story?",
+      "el": "Ποια μυρωδιά έφερνε το αεράκι στην ιστορία του Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Salt and snow", "el": "Αλάτι και χιόνι" }, "correct": false },
+      { "text": { "en": "Sunlit grass and dry soil", "el": "Χορτάρι ζεσταμένο από τον ήλιο και ξερό χώμα" }, "correct": true },
+      { "text": { "en": "Diesel and rain", "el": "Ντίζελ και βροχή" }, "correct": false },
+      { "text": { "en": "Pine and ice", "el": "Πεύκο και πάγος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What is the main international airport serving Nairobi?",
+      "el": "Ποιο είναι το κύριο διεθνές αεροδρόμιο που εξυπηρετεί το Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Moi International Airport", "el": "Διεθνές Αεροδρόμιο Moi" }, "correct": false },
+      { "text": { "en": "Kisumu International Airport", "el": "Διεθνές Αεροδρόμιο Kisumu" }, "correct": false },
+      { "text": { "en": "Eldoret International Airport", "el": "Διεθνές Αεροδρόμιο Eldoret" }, "correct": false },
+      { "text": { "en": "Jomo Kenyatta International Airport", "el": "Διεθνές Αεροδρόμιο Jomo Kenyatta" }, "correct": true }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What makes Nairobi National Park especially unusual?",
+      "el": "Τι κάνει το Εθνικό Πάρκο Nairobi ιδιαίτερα ασυνήθιστο;"
+    },
+    "answers": [
+      { "text": { "en": "It is a wildlife park next to a capital city", "el": "Είναι πάρκο άγριας ζωής δίπλα σε πρωτεύουσα" }, "correct": true },
+      { "text": { "en": "It is located under the ocean", "el": "Βρίσκεται κάτω από τον ωκεανό" }, "correct": false },
+      { "text": { "en": "It is Kenya’s only glacier reserve", "el": "Είναι το μοναδικό παγετωνικό καταφύγιο της Κένυας" }, "correct": false },
+      { "text": { "en": "It is built entirely indoors", "el": "Είναι χτισμένο εξ ολοκλήρου σε εσωτερικό χώρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "The Giraffe Centre in Nairobi is known for helping conserve which giraffe?",
+      "el": "Το Giraffe Centre στο Ναϊρόμπι είναι γνωστό για τη συμβολή του στη διατήρηση ποιας καμηλοπάρδαλης;"
+    },
+    "answers": [
+      { "text": { "en": "Masai giraffe", "el": "Καμηλοπάρδαλη Masai" }, "correct": false },
+      { "text": { "en": "Reticulated giraffe", "el": "Δικτυωτή καμηλοπάρδαλη" }, "correct": false },
+      { "text": { "en": "Rothschild’s giraffe", "el": "Καμηλοπάρδαλη Rothschild" }, "correct": true },
+      { "text": { "en": "Nubian giraffe", "el": "Νουβιακή καμηλοπάρδαλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "Which nickname is often used for Nairobi?",
+      "el": "Ποιο προσωνύμιο χρησιμοποιείται συχνά για το Ναϊρόμπι;"
+    },
+    "answers": [
+      { "text": { "en": "Safari Port", "el": "Λιμάνι του Σαφάρι" }, "correct": false },
+      { "text": { "en": "Green Harbor", "el": "Πράσινο Λιμάνι" }, "correct": false },
+      { "text": { "en": "The Green City in the Sun", "el": "Η Πράσινη Πόλη στον Ήλιο" }, "correct": true },
+      { "text": { "en": "City of Ice Winds", "el": "Πόλη των Παγωμένων Ανέμων" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Nairobi is located on which continent?",
+      "el": "Το Ναϊρόμπι βρίσκεται σε ποια ήπειρο;"
+    },
+    "answers": [
+      { "text": { "en": "Asia", "el": "Ασία" }, "correct": false },
+      { "text": { "en": "South America", "el": "Νότια Αμερική" }, "correct": false },
+      { "text": { "en": "Europe", "el": "Ευρώπη" }, "correct": false },
+      { "text": { "en": "Africa", "el": "Αφρική" }, "correct": true }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "In the story, how did Sol look against the vast landscape?",
+      "el": "Στην ιστορία, πώς έμοιαζε η Sol μέσα στο απέραντο τοπίο;"
+    },
+    "answers": [
+      { "text": { "en": "Small and regal", "el": "Μικρή και βασιλική" }, "correct": true },
+      { "text": { "en": "Lost and frightened", "el": "Χαμένη και φοβισμένη" }, "correct": false },
+      { "text": { "en": "Hidden and hurried", "el": "Κρυμμένη και βιαστική" }, "correct": false },
+      { "text": { "en": "Noisy and restless", "el": "Θορυβώδης και ανήσυχη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "How did the zebras move across the dust in the story?",
+      "el": "Πώς κινούνταν οι ζέβρες πάνω στη σκόνη στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "With panic", "el": "Με πανικό" }, "correct": false },
+      { "text": { "en": "With heavy thunder", "el": "Με βαρύ βρόντο" }, "correct": false },
+      { "text": { "en": "With quiet confidence", "el": "Με ήσυχη σιγουριά" }, "correct": true },
+      { "text": { "en": "With sudden fear", "el": "Με ξαφνικό φόβο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Which currency is used in Kenya?",
+      "el": "Ποιο νόμισμα χρησιμοποιείται στην Κένυα;"
+    },
+    "answers": [
+      { "text": { "en": "Ugandan shilling", "el": "Ουγκαντικό σελίνι" }, "correct": false },
+      { "text": { "en": "Kenyan shilling", "el": "Κενυατικό σελίνι" }, "correct": true },
+      { "text": { "en": "Tanzanian shilling", "el": "Τανζανικό σελίνι" }, "correct": false },
+      { "text": { "en": "Kenyan pound", "el": "Κενυατική λίρα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Beyond the zebras in the Nairobi image, what can be seen?",
+      "el": "Πέρα από τις ζέβρες στην εικόνα του Ναϊρόμπι, τι φαίνεται;"
+    },
+    "answers": [
+      { "text": { "en": "Glacier peaks", "el": "Παγετωνικές κορυφές" }, "correct": false },
+      { "text": { "en": "A stone fortress", "el": "Ένα πέτρινο φρούριο" }, "correct": false },
+      { "text": { "en": "An ocean harbor", "el": "Ένα θαλάσσιο λιμάνι" }, "correct": false },
+      { "text": { "en": "The city skyline", "el": "Το skyline της πόλης" }, "correct": true }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "According to the caption, where does the queen already belong?",
+      "el": "Σύμφωνα με το caption, πού ανήκει ήδη η βασίλισσα;"
+    },
+    "answers": [
+      { "text": { "en": "Where the city softens and the wild steps forward", "el": "Εκεί όπου η πόλη μαλακώνει και η άγρια φύση προχωρά μπροστά" }, "correct": true },
+      { "text": { "en": "Only on tropical islands", "el": "Μόνο σε τροπικά νησιά" }, "correct": false },
+      { "text": { "en": "In crowded markets only", "el": "Μόνο σε πολυσύχναστες αγορές" }, "correct": false },
+      { "text": { "en": "Under snowy skies", "el": "Κάτω από χιονισμένους ουρανούς" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which country does the flag in the Nairobi title represent?",
+      "el": "Ποια χώρα αντιπροσωπεύει η σημαία στον τίτλο του Nairobi;"
+    },
+    "answers": [
+      { "text": { "en": "Tanzania", "el": "Τανζανία" }, "correct": false },
+      { "text": { "en": "Uganda", "el": "Ουγκάντα" }, "correct": false },
+      { "text": { "en": "Kenya", "el": "Κένυα" }, "correct": true },
+      { "text": { "en": "Ethiopia", "el": "Αιθιοπία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "In the story, Nairobi opened like a…",
+      "el": "Στην ιστορία, το Ναϊρόμπι άνοιγε σαν…"
+    },
+    "answers": [
+      { "text": { "en": "storm", "el": "καταιγίδα" }, "correct": false },
+      { "text": { "en": "gateway", "el": "πύλη" }, "correct": true },
+      { "text": { "en": "maze", "el": "λαβύρινθος" }, "correct": false },
+      { "text": { "en": "mirror", "el": "καθρέφτης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which striped animal best matches the Nairobi episode scene?",
+      "el": "Ποιο ριγωτό ζώο ταιριάζει καλύτερα στη σκηνή του επεισοδίου του Nairobi;"
+    },
+    "answers": [
+      { "text": { "en": "Cheetah", "el": "Τσιτάχ" }, "correct": false },
+      { "text": { "en": "Hyena", "el": "Ύαινα" }, "correct": false },
+      { "text": { "en": "Okapi", "el": "Οκάπι" }, "correct": false },
+      { "text": { "en": "Zebra", "el": "Ζέβρα" }, "correct": true }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "The horizon in the story seemed to hold which two worlds at once?",
+      "el": "Ο ορίζοντας στην ιστορία έμοιαζε να κρατά ποιους δύο κόσμους μαζί;"
+    },
+    "answers": [
+      { "text": { "en": "The city and the savannah", "el": "Την πόλη και τη σαβάνα" }, "correct": true },
+      { "text": { "en": "The sea and the glacier", "el": "Τη θάλασσα και τον παγετώνα" }, "correct": false },
+      { "text": { "en": "The canyon and the volcano", "el": "Το φαράγγι και το ηφαίστειο" }, "correct": false },
+      { "text": { "en": "The jungle and the reef", "el": "Τη ζούγκλα και τον ύφαλο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which phrase best matches the mood of the Nairobi episode?",
+      "el": "Ποια φράση ταιριάζει καλύτερα στο κλίμα του επεισοδίου του Nairobi;"
+    },
+    "answers": [
+      { "text": { "en": "Icy silence and frozen air", "el": "Παγωμένη σιωπή και παγωμένος αέρας" }, "correct": false },
+      { "text": { "en": "Fast traffic and panic", "el": "Γρήγορη κίνηση και πανικός" }, "correct": false },
+      { "text": { "en": "Warm earth and wild calm", "el": "Ζεστή γη και άγρια ηρεμία" }, "correct": true },
+      { "text": { "en": "Neon lights and club noise", "el": "Φώτα νέον και θόρυβος κλαμπ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which detail belongs to Zanzibar and not to Nairobi?",
+      "el": "Ποια λεπτομέρεια ανήκει στη Ζανζιβάρη και όχι στο Nairobi;"
+    },
+    "answers": [
+      { "text": { "en": "Acacia trees", "el": "Ακακίες" }, "correct": false },
+      { "text": { "en": "A wooden dhow", "el": "Ένα ξύλινο ντάου" }, "correct": true },
+      { "text": { "en": "Zebras near a skyline", "el": "Ζέβρες κοντά σε skyline" }, "correct": false },
+      { "text": { "en": "A safari gateway mood", "el": "Αίσθηση πύλης προς σαφάρι" }, "correct": false }
+    ]
+  }
+]

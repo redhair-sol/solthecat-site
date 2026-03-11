@@ -1634,5 +1634,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 43,
+  "title": "SOLadventure #43 – Nairobi, safari gateway 🦓🌍 🇰🇪",
+  "quote": "She sat where the skyline gave way to stripes.",
+  "caption": "Where the city softens and the wild steps forward, the queen already belongs. 🐾🐾🐾",
+  "image": "episodes/nairobi.png",
+  "location": { "lat": -1.286389, "lng": 36.817223 },
+  "visible": true,
+  "city": "nairobi",
+  "story": {
+    "en": "Nairobi greeted Sol with warm earth, tall acacias, and a horizon that seemed to hold two worlds at once. In the distance, the skyline shimmered through the heat, calm and modern. Closer to her, the land opened wide, golden and still, while zebras crossed the dust with quiet confidence. Sol sat at the edge of it all and watched the moment settle. Nothing felt divided here. The city did not interrupt the wild. It stood beside it, respectful and watchful, as if it knew the savannah had its own older rhythm. A soft breeze moved through the trees, carrying the scent of sunlit grass and dry soil. Sol remained perfectly composed, small and regal against the vastness, as though Nairobi had been waiting for her exact kind of presence. Some places welcome you gently. Nairobi opens like a gateway, and Sol walked through it like she had always known the way.",
+    "el": "Το Ναϊρόμπι υποδέχτηκε τη Sol με ζεστή γη, ψηλές ακακίες και έναν ορίζοντα που έμοιαζε να κρατά δύο κόσμους μαζί. Στο βάθος, το skyline λαμπύριζε μέσα στη ζέστη, ήρεμο και σύγχρονο. Πιο κοντά της, η γη άνοιγε πλατιά, χρυσαφένια και ακίνητη, ενώ οι ζέβρες περνούσαν πάνω στη σκόνη με ήσυχη σιγουριά. Η Sol κάθισε στο όριο όλων αυτών και άφησε τη στιγμή να σταθεί. Τίποτα δεν έμοιαζε χωρισμένο εδώ. Η πόλη δεν διέκοπτε την άγρια φύση. Στεκόταν δίπλα της με σεβασμό και προσοχή, σαν να ήξερε πως η σαβάνα έχει τον δικό της αρχαιότερο ρυθμό. Ένα απαλό αεράκι περνούσε μέσα από τα δέντρα και έφερνε τη μυρωδιά από χορτάρι που είχε ζεσταθεί στον ήλιο και από ξερό χώμα. Η Sol έμενε απόλυτα ήρεμη, μικρή και βασιλική μέσα στην απεραντοσύνη, σαν το Ναϊρόμπι να περίμενε ακριβώς μια τέτοια παρουσία. Κάποια μέρη σε καλωσορίζουν απαλά. Το Ναϊρόμπι ανοίγει σαν πύλη, και η Sol πέρασε μέσα του σαν να ήξερε πάντα τον δρόμο."
+  },
+  "photoQuote": "Where the city meets the wild",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did the story place Nairobi between the modern skyline and the open savannah?",
+        "el": "Τοποθετούσε η ιστορία το Ναϊρόμπι ανάμεσα στο σύγχρονο skyline και την ανοιχτή σαβάνα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Were zebras crossing the dusty ground near Sol in the scene?",
+        "el": "Υπήρχαν ζέβρες που περνούσαν από το σκονισμένο έδαφος κοντά στη Sol στη σκηνή;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol spend the day sailing on a wooden dhow off the coast of Nairobi?",
+        "el": "Πέρασε η Sol τη μέρα της ταξιδεύοντας με ξύλινο dhow ανοιχτά στις ακτές του Ναϊρόμπι;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
