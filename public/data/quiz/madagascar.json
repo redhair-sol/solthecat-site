@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country does this SOLadventure take place?",
+      "el": "Σε ποια χώρα διαδραματίζεται αυτό το SOLadventure;"
+    },
+    "answers": [
+      { "text": { "en": "Kenya", "el": "Κένυα" }, "correct": false },
+      { "text": { "en": "Madagascar", "el": "Μαδαγασκάρη" }, "correct": true },
+      { "text": { "en": "Tanzania", "el": "Τανζανία" }, "correct": false },
+      { "text": { "en": "Mozambique", "el": "Μοζαμβίκη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What iconic natural landmark appears in this episode image?",
+      "el": "Ποιο εμβληματικό φυσικό τοπόσημο εμφανίζεται στην εικόνα αυτού του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Avenue of the Baobabs", "el": "Avenue of the Baobabs" }, "correct": true },
+      { "text": { "en": "Victoria Falls", "el": "Καταρράκτες Victoria" }, "correct": false },
+      { "text": { "en": "Table Mountain", "el": "Table Mountain" }, "correct": false },
+      { "text": { "en": "Mount Kilimanjaro", "el": "Όρος Κιλιμάντζαρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What color is the road beneath Sol in the Madagascar episode?",
+      "el": "Τι χρώμα έχει ο δρόμος κάτω από τη Sol στο επεισόδιο της Μαδαγασκάρης;"
+    },
+    "answers": [
+      { "text": { "en": "White", "el": "Λευκό" }, "correct": false },
+      { "text": { "en": "Black", "el": "Μαύρο" }, "correct": false },
+      { "text": { "en": "Red", "el": "Κόκκινο" }, "correct": true },
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which photo quote belongs to this episode?",
+      "el": "Ποιο photo quote ανήκει σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Where the city meets the wild", "el": "Where the city meets the wild" }, "correct": false },
+      { "text": { "en": "At the roots of the sky", "el": "At the roots of the sky" }, "correct": true },
+      { "text": { "en": "Where the tide bows", "el": "Where the tide bows" }, "correct": false },
+      { "text": { "en": "Shadows bow slow", "el": "Shadows bow slow" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What time of day defines the mood of the image?",
+      "el": "Ποια ώρα της ημέρας καθορίζει την ατμόσφαιρα της εικόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Sunset", "el": "Ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Midnight", "el": "Μεσάνυχτα" }, "correct": false },
+      { "text": { "en": "Rainy noon", "el": "Βροχερό μεσημέρι" }, "correct": false },
+      { "text": { "en": "Snowy dawn", "el": "Χιονισμένη αυγή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "In the story, the baobabs rose like what?",
+      "el": "Στην ιστορία, τα baobabs υψώνονταν σαν τι;"
+    },
+    "answers": [
+      { "text": { "en": "Ancient guardians", "el": "Αρχαίοι φύλακες" }, "correct": true },
+      { "text": { "en": "Broken towers", "el": "Σπασμένοι πύργοι" }, "correct": false },
+      { "text": { "en": "Sailing masts", "el": "Κατάρτια πλοίων" }, "correct": false },
+      { "text": { "en": "Crystal sculptures", "el": "Κρυστάλλινα γλυπτά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What did the story say Sol did not need?",
+      "el": "Τι έλεγε η ιστορία ότι δεν χρειαζόταν η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "A crown", "el": "Ένα στέμμα" }, "correct": false },
+      { "text": { "en": "A throne", "el": "Έναν θρόνο" }, "correct": true },
+      { "text": { "en": "A map", "el": "Έναν χάρτη" }, "correct": false },
+      { "text": { "en": "A caravan", "el": "Ένα καραβάνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Madagascar is an island in which ocean?",
+      "el": "Η Μαδαγασκάρη είναι νησί σε ποιον ωκεανό;"
+    },
+    "answers": [
+      { "text": { "en": "Atlantic Ocean", "el": "Ατλαντικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Arctic Ocean", "el": "Αρκτικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Indian Ocean", "el": "Ινδικός Ωκεανός" }, "correct": true },
+      { "text": { "en": "Pacific Ocean", "el": "Ειρηνικός Ωκεανός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "The Avenue of the Baobabs is associated with which part of Madagascar?",
+      "el": "Το Avenue of the Baobabs συνδέεται με ποιο μέρος της Μαδαγασκάρης;"
+    },
+    "answers": [
+      { "text": { "en": "Near Morondava", "el": "Κοντά στη Morondava" }, "correct": true },
+      { "text": { "en": "Inside Antananarivo city center", "el": "Μέσα στο κέντρο της Ανταναναρίβο" }, "correct": false },
+      { "text": { "en": "On a snowy mountain peak", "el": "Σε μια χιονισμένη βουνοκορφή" }, "correct": false },
+      { "text": { "en": "Inside a royal palace garden", "el": "Μέσα σε κήπο βασιλικού παλατιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which phrase appears in the title of episode #44?",
+      "el": "Ποια φράση εμφανίζεται στον τίτλο του επεισοδίου #44;"
+    },
+    "answers": [
+      { "text": { "en": "city of lemurs", "el": "πόλη των λεμούριων" }, "correct": false },
+      { "text": { "en": "tree of life", "el": "tree of life" }, "correct": true },
+      { "text": { "en": "queen of the reef", "el": "βασίλισσα του υφάλου" }, "correct": false },
+      { "text": { "en": "sunset crown road", "el": "δρόμος του στέμματος στο ηλιοβασίλεμα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "How did the land around Sol feel in the story?",
+      "el": "Πώς έμοιαζε η γη γύρω από τη Sol στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Open and endless", "el": "Ανοιχτή και ατελείωτη" }, "correct": true },
+      { "text": { "en": "Crowded and noisy", "el": "Γεμάτη και θορυβώδης" }, "correct": false },
+      { "text": { "en": "Frozen and empty", "el": "Παγωμένη και άδεια" }, "correct": false },
+      { "text": { "en": "Urban and metallic", "el": "Αστική και μεταλλική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "According to the story, what slowly settled into the branches?",
+      "el": "Σύμφωνα με την ιστορία, τι καθόταν αργά πάνω στα κλαδιά;"
+    },
+    "answers": [
+      { "text": { "en": "Morning fog", "el": "Πρωινή ομίχλη" }, "correct": false },
+      { "text": { "en": "Birdsong", "el": "Κελάηδισμα πουλιών" }, "correct": false },
+      { "text": { "en": "The sunset", "el": "Το ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Desert rain", "el": "Βροχή της ερήμου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "How were the baobabs described in the story?",
+      "el": "Πώς περιγράφονταν τα baobabs στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Like ordinary trees", "el": "Σαν συνηθισμένα δέντρα" }, "correct": false },
+      { "text": { "en": "Like underwater plants", "el": "Σαν υποθαλάσσια φυτά" }, "correct": false },
+      { "text": { "en": "Like ancient guardians", "el": "Σαν αρχαίοι φύλακες" }, "correct": true },
+      { "text": { "en": "Like crystal towers", "el": "Σαν κρυστάλλινοι πύργοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What stretched forward between the giants in the story?",
+      "el": "Τι απλωνόταν μπροστά ανάμεσα στους γίγαντες στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "A canal", "el": "Ένα κανάλι" }, "correct": false },
+      { "text": { "en": "A railway", "el": "Ένας σιδηρόδρομος" }, "correct": false },
+      { "text": { "en": "A road", "el": "Ένας δρόμος" }, "correct": true },
+      { "text": { "en": "A marble staircase", "el": "Μια μαρμάρινη σκάλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which mood best matches the Madagascar episode?",
+      "el": "Ποια διάθεση ταιριάζει καλύτερα στο επεισόδιο της Μαδαγασκάρης;"
+    },
+    "answers": [
+      { "text": { "en": "Hurried and chaotic", "el": "Βιαστική και χαοτική" }, "correct": false },
+      { "text": { "en": "Royal and calm", "el": "Βασιλική και ήρεμη" }, "correct": true },
+      { "text": { "en": "Cold and mechanical", "el": "Κρύα και μηχανική" }, "correct": false },
+      { "text": { "en": "Dark and threatening", "el": "Σκοτεινή και απειλητική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "In the story, Sol was small only in her…",
+      "el": "Στην ιστορία, η Sol ήταν μικρή μόνο σε…"
+    },
+    "answers": [
+      { "text": { "en": "voice", "el": "φωνή" }, "correct": false },
+      { "text": { "en": "shadow", "el": "σκιά" }, "correct": false },
+      { "text": { "en": "size", "el": "μέγεθος" }, "correct": true },
+      { "text": { "en": "footsteps", "el": "βήματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What had already made a throne for Sol in the story?",
+      "el": "Τι είχε ήδη φτιάξει έναν θρόνο για τη Sol στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "The road, the sky, and the trees", "el": "Ο δρόμος, ο ουρανός και τα δέντρα" }, "correct": true },
+      { "text": { "en": "A palace, a guard, and a crown", "el": "Ένα παλάτι, ένας φρουρός και ένα στέμμα" }, "correct": false },
+      { "text": { "en": "A market, a lantern, and a song", "el": "Μια αγορά, ένα φανάρι και ένα τραγούδι" }, "correct": false },
+      { "text": { "en": "A river, a bridge, and a tower", "el": "Ένα ποτάμι, μια γέφυρα και ένας πύργος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What kind of environment appears behind Sol in the image?",
+      "el": "Τι είδους περιβάλλον εμφανίζεται πίσω από τη Sol στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "A snowy city square", "el": "Μια χιονισμένη πλατεία πόλης" }, "correct": false },
+      { "text": { "en": "A beach with boats", "el": "Μια παραλία με βάρκες" }, "correct": false },
+      { "text": { "en": "A red earth landscape with baobabs", "el": "Ένα τοπίο με κόκκινη γη και baobabs" }, "correct": true },
+      { "text": { "en": "A dense glass skyline", "el": "Ένα πυκνό skyline από γυαλί" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "According to the caption, what knows who rules the road?",
+      "el": "Σύμφωνα με το caption, τι ξέρει ποιος κυβερνά τον δρόμο;"
+    },
+    "answers": [
+      { "text": { "en": "The sunset", "el": "Το ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "The palace", "el": "Το παλάτι" }, "correct": false },
+      { "text": { "en": "The river", "el": "Το ποτάμι" }, "correct": false },
+      { "text": { "en": "The marketplace", "el": "Η αγορά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What is Madagascar geographically?",
+      "el": "Τι είναι γεωγραφικά η Μαδαγασκάρη;"
+    },
+    "answers": [
+      { "text": { "en": "A desert kingdom", "el": "Ένα βασίλειο της ερήμου" }, "correct": false },
+      { "text": { "en": "An island country", "el": "Μια νησιωτική χώρα" }, "correct": true },
+      { "text": { "en": "A mountain range", "el": "Μια οροσειρά" }, "correct": false },
+      { "text": { "en": "A river delta", "el": "Ένα δέλτα ποταμού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which color combination best matches the visual mood of this episode?",
+      "el": "Ποιος συνδυασμός χρωμάτων ταιριάζει καλύτερα με το οπτικό κλίμα αυτού του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Silver and icy blue", "el": "Ασημί και παγωμένο μπλε" }, "correct": false },
+      { "text": { "en": "Green neon and black", "el": "Νέον πράσινο και μαύρο" }, "correct": false },
+      { "text": { "en": "Red earth and warm sunset tones", "el": "Κόκκινη γη και ζεστοί τόνοι ηλιοβασιλέματος" }, "correct": true },
+      { "text": { "en": "White snow and gray sky", "el": "Λευκό χιόνι και γκρίζος ουρανός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "How do the baobab trunks look in the image?",
+      "el": "Πώς φαίνονται οι κορμοί των baobabs στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Thin and fragile", "el": "Λεπτοί και εύθραυστοι" }, "correct": false },
+      { "text": { "en": "Massive and thick", "el": "Τεράστιοι και χοντροί" }, "correct": true },
+      { "text": { "en": "Covered in snow", "el": "Καλυμμένοι με χιόνι" }, "correct": false },
+      { "text": { "en": "Bent underwater", "el": "Λυγισμένοι μέσα στο νερό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What whispered in the fading light according to the story?",
+      "el": "Τι ψιθύριζε στο φως που έσβηνε σύμφωνα με την ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Dry grass", "el": "Τα ξερά χόρτα" }, "correct": true },
+      { "text": { "en": "Stone walls", "el": "Οι πέτρινοι τοίχοι" }, "correct": false },
+      { "text": { "en": "Ocean waves", "el": "Τα κύματα του ωκεανού" }, "correct": false },
+      { "text": { "en": "City traffic", "el": "Η κίνηση της πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which statement fits this episode best?",
+      "el": "Ποια πρόταση ταιριάζει καλύτερα σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Sol explored a frozen northern harbor", "el": "Η Sol εξερεύνησε ένα παγωμένο βόρειο λιμάνι" }, "correct": false },
+      { "text": { "en": "Sol crossed a canyon under heavy rain", "el": "Η Sol διέσχισε ένα φαράγγι κάτω από δυνατή βροχή" }, "correct": false },
+      { "text": { "en": "Sol stood beneath Madagascar’s giants at sunset", "el": "Η Sol στάθηκε κάτω από τους γίγαντες της Μαδαγασκάρης στο ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Sol sailed between tropical islands at noon", "el": "Η Sol ταξίδεψε ανάμεσα σε τροπικά νησιά το μεσημέρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which detail belongs to this Madagascar episode and not to Nairobi?",
+      "el": "Ποια λεπτομέρεια ανήκει σε αυτό το επεισόδιο της Μαδαγασκάρης και όχι στο Nairobi;"
+    },
+    "answers": [
+      { "text": { "en": "A skyline behind zebras", "el": "Ένα skyline πίσω από ζέβρες" }, "correct": false },
+      { "text": { "en": "A safari gateway mood", "el": "Μια αίσθηση πύλης προς σαφάρι" }, "correct": false },
+      { "text": { "en": "Giant baobabs at sunset", "el": "Γιγάντια baobabs στο ηλιοβασίλεμα" }, "correct": true },
+      { "text": { "en": "Where the city meets the wild", "el": "Where the city meets the wild" }, "correct": false }
+    ]
+  }
+]

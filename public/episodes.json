@@ -1672,5 +1672,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 44,
+  "title": "SOLadventure #44 – Madagascar, tree of life 🌅🌴 🇲🇬",
+  "quote": "She paused where giants hold the evening.",
+  "caption": "Under Madagascar’s giants, even the sunset knows who rules the road. 🐾🐾🐾",
+  "image": "episodes/madagascar.png",
+  "location": { "lat": -20.250833, "lng": 44.418333 },
+  "visible": true,
+  "city": "madagascar",
+  "story": {
+    "en": "Madagascar opened in red earth and firelight. Sol stepped onto the dusty road as the evening sky turned gold, rose, and violet above the baobabs. They did not look like ordinary trees. They rose like ancient guardians, heavy with silence, their wide trunks holding the last warmth of the day. Sol stood still beneath them, small only in size, never in presence. Around her, the land felt open and endless, dry grass whispering in the fading light while the road stretched forward between giants. Nothing hurried here. The sunset did not fall. It slowly settled into the branches, as if the whole landscape knew how to keep a queen company. In Madagascar, even the horizon felt older, deeper, and full of memory. Sol did not need a throne. The road, the sky, and the trees had already made one for her.",
+    "el": "Η Μαδαγασκάρη άνοιξε μπροστά στη Sol με κόκκινη γη και φως που έμοιαζε να καίει απαλά. Πάτησε στον σκονισμένο δρόμο την ώρα που ο ουρανός γινόταν χρυσός, ρόδινος και μωβ πάνω από τα baobabs. Δεν έμοιαζαν με συνηθισμένα δέντρα. Υψώνονταν σαν αρχαίοι φύλακες, με κορμούς γεμάτους σιωπή, κρατώντας μέσα τους την τελευταία ζέστη της μέρας. Η Sol στάθηκε ήρεμη κάτω τους, μικρή μόνο στο μέγεθος, ποτέ στην παρουσία. Γύρω της, η γη έμοιαζε ανοιχτή και ατελείωτη, με τα ξερά χόρτα να ψιθυρίζουν στο φως που έσβηνε και τον δρόμο να χάνεται ανάμεσα σε γίγαντες. Τίποτα δεν βιαζόταν εδώ. Το ηλιοβασίλεμα δεν έπεφτε. Καθόταν αργά πάνω στα κλαδιά, σαν όλο το τοπίο να ήξερε πώς να κρατήσει συντροφιά σε μια βασίλισσα. Στη Μαδαγασκάρη ακόμη και ο ορίζοντας έμοιαζε πιο παλιός, πιο βαθύς και γεμάτος μνήμη. Η Sol δεν χρειαζόταν θρόνο. Ο δρόμος, ο ουρανός και τα δέντρα είχαν ήδη φτιάξει έναν για εκείνη."
+  },
+  "photoQuote": "At the roots of the sky",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol stand on a red dusty road beneath giant baobab trees at sunset?",
+        "el": "Στάθηκε η Sol σε έναν κόκκινο σκονισμένο δρόμο κάτω από γιγάντια baobabs στο ηλιοβασίλεμα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story describe the sky turning gold, rose, and violet above the trees?",
+        "el": "Περιέγραφε η ιστορία τον ουρανό να γίνεται χρυσός, ρόδινος και μωβ πάνω από τα δέντρα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol explore a snowy mountain village in Madagascar in this episode?",
+        "el": "Εξερεύνησε η Sol ένα χιονισμένο ορεινό χωριό στη Μαδαγασκάρη σε αυτό το επεισόδιο;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
