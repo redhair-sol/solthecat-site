@@ -1710,5 +1710,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 45,
+  "title": "SOLadventure #45 – Lalibela, sacred stones ⛪🪨 🇪🇹",
+  "quote": "She rested where the stone remembers.",
+  "caption": "Among carved silence and ancient faith, even a queen learns to tread softly. 🐾🐾🐾",
+  "image": "episodes/lalibela.png",
+  "location": { "lat": 12.0317, "lng": 39.0476 },
+  "visible": true,
+  "city": "lalibela",
+  "story": {
+    "en": "Lalibela welcomed Sol with stone, stillness, and a kind of silence that felt older than words. She rested on the warm carved ground while the rock hewn church rose behind her, shaped not by ornament alone but by patience, devotion, and time. Everything here felt close to the earth and close to the sky at once. The walls held shadow, the paths held memory, and even the air seemed to move more gently between the sacred stones. Sol did not need to hurry. She simply paused, calm and watchful, as though she understood that some places ask for presence more than movement. In Lalibela, faith feels carved into the land itself. And in that quiet red world of stone and depth, Sol looked less like a visitor and more like a soul who already knew how to belong.",
+    "el": "Η Lalibela υποδέχτηκε τη Sol με πέτρα, γαλήνη και μια σιωπή που έμοιαζε πιο παλιά από τις λέξεις. Ξάπλωσε πάνω στη ζεστή λαξευμένη γη ενώ πίσω της υψωνόταν η βραχοσκάλιστη εκκλησία, σμιλεμένη όχι μόνο από τέχνη αλλά και από υπομονή, πίστη και χρόνο. Εδώ όλα έμοιαζαν κοντά στη γη και κοντά στον ουρανό ταυτόχρονα. Οι τοίχοι κρατούσαν σκιά, τα περάσματα κρατούσαν μνήμη, και ακόμη και ο αέρας έμοιαζε να κινείται πιο απαλά ανάμεσα στις ιερές πέτρες. Η Sol δεν χρειαζόταν να βιαστεί. Απλώς στάθηκε ήρεμη και παρατηρητική, σαν να καταλάβαινε πως κάποια μέρη ζητούν παρουσία περισσότερο παρά κίνηση. Στη Lalibela η πίστη μοιάζει χαραγμένη μέσα στην ίδια τη γη. Και μέσα σε αυτόν τον ήσυχο κόκκινο κόσμο από πέτρα και βάθος, η Sol έμοιαζε λιγότερο με επισκέπτρια και περισσότερο με ψυχή που ήξερε ήδη πώς να ανήκει εκεί."
+  },
+  "photoQuote": "Where the stone remembers",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear in front of a rock hewn church in Lalibela?",
+        "el": "Εμφανίστηκε η Sol μπροστά από μια βραχοσκάλιστη εκκλησία στη Lalibela;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story describe Lalibela as a place of stone, silence, and memory?",
+        "el": "Περιέγραφε η ιστορία τη Lalibela ως τόπο πέτρας, σιωπής και μνήμης;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol sail across a tropical lagoon in this episode?",
+        "el": "Ταξίδεψε η Sol σε μια τροπική λιμνοθάλασσα σε αυτό το επεισόδιο;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]

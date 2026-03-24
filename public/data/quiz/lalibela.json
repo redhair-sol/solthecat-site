@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Lalibela located?",
+      "el": "Σε ποια χώρα βρίσκεται η Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Kenya", "el": "Κένυα" }, "correct": false },
+      { "text": { "en": "Ethiopia", "el": "Αιθιοπία" }, "correct": true },
+      { "text": { "en": "Eritrea", "el": "Ερυθραία" }, "correct": false },
+      { "text": { "en": "Sudan", "el": "Σουδάν" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What makes Lalibela famous around the world?",
+      "el": "Τι κάνει τη Lalibela γνωστή σε όλο τον κόσμο;"
+    },
+    "answers": [
+      { "text": { "en": "Its desert pyramids", "el": "Τις πυραμίδες της ερήμου" }, "correct": false },
+      { "text": { "en": "Its rock-hewn churches", "el": "Τις βραχοσκάλιστες εκκλησίες της" }, "correct": true },
+      { "text": { "en": "Its coral reefs", "el": "Τους κοραλλιογενείς υφάλους της" }, "correct": false },
+      { "text": { "en": "Its glass skyscrapers", "el": "Τους γυάλινους ουρανοξύστες της" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which photo quote belongs to this episode?",
+      "el": "Ποιο photo quote ανήκει σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Where the stone remembers", "el": "Where the stone remembers" }, "correct": true },
+      { "text": { "en": "At the roots of the sky", "el": "At the roots of the sky" }, "correct": false },
+      { "text": { "en": "Where the city meets the wild", "el": "Where the city meets the wild" }, "correct": false },
+      { "text": { "en": "Where the tide bows", "el": "Where the tide bows" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What color dominates the stone in the Lalibela image?",
+      "el": "Ποιο χρώμα κυριαρχεί στην πέτρα της εικόνας της Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false },
+      { "text": { "en": "Red or reddish brown", "el": "Κόκκινο ή κοκκινοκαφέ" }, "correct": true },
+      { "text": { "en": "Bright white", "el": "Έντονο λευκό" }, "correct": false },
+      { "text": { "en": "Deep green", "el": "Βαθύ πράσινο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "How is Sol shown in the Lalibela image?",
+      "el": "Πώς παρουσιάζεται η Sol στην εικόνα της Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Sailing on a boat", "el": "Να ταξιδεύει με βάρκα" }, "correct": false },
+      { "text": { "en": "Flying above the church", "el": "Να πετά πάνω από την εκκλησία" }, "correct": false },
+      { "text": { "en": "Lying calmly on carved stone", "el": "Να ξαπλώνει ήρεμα πάνω σε λαξευμένη πέτρα" }, "correct": true },
+      { "text": { "en": "Running through snow", "el": "Να τρέχει μέσα στο χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Which Ethiopian site is Lalibela best known as?",
+      "el": "Ως ποιο αιθιοπικό σημείο είναι περισσότερο γνωστή η Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "A modern harbor district", "el": "Μια σύγχρονη λιμενική περιοχή" }, "correct": false },
+      { "text": { "en": "A sacred church complex", "el": "Ένα ιερό εκκλησιαστικό σύμπλεγμα" }, "correct": true },
+      { "text": { "en": "A volcanic beach resort", "el": "Ένα ηφαιστειακό παραθαλάσσιο θέρετρο" }, "correct": false },
+      { "text": { "en": "A safari capital", "el": "Μια πρωτεύουσα σαφάρι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What does the story say the walls held?",
+      "el": "Τι λέει η ιστορία ότι κρατούσαν οι τοίχοι;"
+    },
+    "answers": [
+      { "text": { "en": "Shadow", "el": "Σκιά" }, "correct": true },
+      { "text": { "en": "Music", "el": "Μουσική" }, "correct": false },
+      { "text": { "en": "Rainwater", "el": "Βρόχινο νερό" }, "correct": false },
+      { "text": { "en": "Golden paint", "el": "Χρυσή μπογιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What did the paths hold in the story?",
+      "el": "Τι κρατούσαν τα περάσματα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Snow", "el": "Χιόνι" }, "correct": false },
+      { "text": { "en": "Memory", "el": "Μνήμη" }, "correct": true },
+      { "text": { "en": "Crowds", "el": "Πλήθη" }, "correct": false },
+      { "text": { "en": "Lanterns", "el": "Φανάρια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which mood best matches the Lalibela episode?",
+      "el": "Ποια διάθεση ταιριάζει καλύτερα στο επεισόδιο της Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Sacred and quiet", "el": "Ιερή και ήσυχη" }, "correct": true },
+      { "text": { "en": "Wild and chaotic", "el": "Άγρια και χαοτική" }, "correct": false },
+      { "text": { "en": "Playful and tropical", "el": "Παιχνιδιάρικη και τροπική" }, "correct": false },
+      { "text": { "en": "Fast and urban", "el": "Γρήγορη και αστική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which famous church is especially associated with Lalibela?",
+      "el": "Ποια διάσημη εκκλησία συνδέεται ιδιαίτερα με τη Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Bete Giyorgis", "el": "Bete Giyorgis" }, "correct": true },
+      { "text": { "en": "Hagia Sophia", "el": "Αγία Σοφία" }, "correct": false },
+      { "text": { "en": "Notre Dame", "el": "Notre Dame" }, "correct": false },
+      { "text": { "en": "St Peter’s Basilica", "el": "Βασιλική του Αγίου Πέτρου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What kind of church appears behind Sol in the image?",
+      "el": "Τι είδους εκκλησία εμφανίζεται πίσω από τη Sol στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "A glass cathedral", "el": "Ένας γυάλινος καθεδρικός" }, "correct": false },
+      { "text": { "en": "A wooden chapel", "el": "Ένα ξύλινο παρεκκλήσι" }, "correct": false },
+      { "text": { "en": "A rock-hewn church", "el": "Μια βραχοσκάλιστη εκκλησία" }, "correct": true },
+      { "text": { "en": "A floating temple", "el": "Ένας πλωτός ναός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Lalibela is especially important to followers of which faith tradition?",
+      "el": "Η Lalibela είναι ιδιαίτερα σημαντική για τους πιστούς ποιας θρησκευτικής παράδοσης;"
+    },
+    "answers": [
+      { "text": { "en": "Ethiopian Christianity", "el": "Του αιθιοπικού χριστιανισμού" }, "correct": true },
+      { "text": { "en": "Shinto", "el": "Του Σίντο" }, "correct": false },
+      { "text": { "en": "Buddhism", "el": "Του βουδισμού" }, "correct": false },
+      { "text": { "en": "Hinduism", "el": "Του ινδουισμού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "According to the story, some places ask for presence more than…",
+      "el": "Σύμφωνα με την ιστορία, κάποια μέρη ζητούν παρουσία περισσότερο από…"
+    },
+    "answers": [
+      { "text": { "en": "movement", "el": "κίνηση" }, "correct": true },
+      { "text": { "en": "music", "el": "μουσική" }, "correct": false },
+      { "text": { "en": "sunlight", "el": "φως του ήλιου" }, "correct": false },
+      { "text": { "en": "distance", "el": "απόσταση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What does the title of episode #45 emphasize?",
+      "el": "Τι τονίζει ο τίτλος του επεισοδίου #45;"
+    },
+    "answers": [
+      { "text": { "en": "Sacred stones", "el": "Ιερές πέτρες" }, "correct": true },
+      { "text": { "en": "Ocean tides", "el": "Ωκεάνιες παλίρροιες" }, "correct": false },
+      { "text": { "en": "City lights", "el": "Φώτα της πόλης" }, "correct": false },
+      { "text": { "en": "Jungle rhythms", "el": "Ρυθμούς της ζούγκλας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What was carved into the land itself in the story?",
+      "el": "Τι ήταν χαραγμένο μέσα στην ίδια τη γη στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "A highway", "el": "Ένας αυτοκινητόδρομος" }, "correct": false },
+      { "text": { "en": "Faith", "el": "Η πίστη" }, "correct": true },
+      { "text": { "en": "A shopping market", "el": "Μια αγορά" }, "correct": false },
+      { "text": { "en": "A harbor", "el": "Ένα λιμάνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which detail fits Lalibela better than Madagascar?",
+      "el": "Ποια λεπτομέρεια ταιριάζει περισσότερο στη Lalibela παρά στη Μαδαγασκάρη;"
+    },
+    "answers": [
+      { "text": { "en": "Giant baobabs at sunset", "el": "Γιγάντια baobabs στο ηλιοβασίλεμα" }, "correct": false },
+      { "text": { "en": "Rock-hewn sacred stone passages", "el": "Βραχοσκάλιστα ιερά πέτρινα περάσματα" }, "correct": true },
+      { "text": { "en": "Red dirt road between baobabs", "el": "Κόκκινος χωματόδρομος ανάμεσα σε baobabs" }, "correct": false },
+      { "text": { "en": "Tree of life sunset", "el": "Ηλιοβασίλεμα του tree of life" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What kind of atmosphere moves through the Lalibela story?",
+      "el": "Τι είδους ατμόσφαιρα διαπερνά την ιστορία της Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Noisy festival energy", "el": "Θορυβώδης εορταστική ενέργεια" }, "correct": false },
+      { "text": { "en": "Modern luxury nightlife", "el": "Σύγχρονη πολυτελής νυχτερινή ζωή" }, "correct": false },
+      { "text": { "en": "Ancient calm and reverence", "el": "Αρχαία γαλήνη και ευλάβεια" }, "correct": true },
+      { "text": { "en": "Stormy danger", "el": "Θυελλώδης κίνδυνος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "How many famous medieval rock-hewn churches is Lalibela known for?",
+      "el": "Για πόσες διάσημες μεσαιωνικές βραχοσκάλιστες εκκλησίες είναι γνωστή η Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Three", "el": "Τρεις" }, "correct": false },
+      { "text": { "en": "Eleven", "el": "Έντεκα" }, "correct": true },
+      { "text": { "en": "Twenty one", "el": "Είκοσι μία" }, "correct": false },
+      { "text": { "en": "Fifty", "el": "Πενήντα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What did the story say even the air seemed to do?",
+      "el": "Τι έλεγε η ιστορία ότι ακόμη και ο αέρας έμοιαζε να κάνει;"
+    },
+    "answers": [
+      { "text": { "en": "Move more gently", "el": "Να κινείται πιο απαλά" }, "correct": true },
+      { "text": { "en": "Turn to rain", "el": "Να γίνεται βροχή" }, "correct": false },
+      { "text": { "en": "Freeze in place", "el": "Να παγώνει" }, "correct": false },
+      { "text": { "en": "Sound like drums", "el": "Να ακούγεται σαν τύμπανα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which statement best matches Sol in this episode?",
+      "el": "Ποια πρόταση ταιριάζει καλύτερα στη Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "She rushed across a busy plaza", "el": "Βιάστηκε να περάσει μια πολυσύχναστη πλατεία" }, "correct": false },
+      { "text": { "en": "She floated across a lagoon", "el": "Γλίστρησε πάνω από μια λιμνοθάλασσα" }, "correct": false },
+      { "text": { "en": "She rested calmly among sacred stone", "el": "Ξεκουράστηκε ήρεμα ανάμεσα σε ιερές πέτρες" }, "correct": true },
+      { "text": { "en": "She chased zebras near a skyline", "el": "Κυνήγησε ζέβρες κοντά σε skyline" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What kind of details might you expect in a Lalibela church setting?",
+      "el": "Τι είδους λεπτομέρειες θα περίμενες σε ένα εκκλησιαστικό σκηνικό της Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Cross carvings and stone passages", "el": "Σκαλισμένους σταυρούς και πέτρινα περάσματα" }, "correct": true },
+      { "text": { "en": "Skyscraper elevators", "el": "Ανελκυστήρες ουρανοξυστών" }, "correct": false },
+      { "text": { "en": "Palm beach umbrellas", "el": "Ομπρέλες παραλίας με φοίνικες" }, "correct": false },
+      { "text": { "en": "Neon signs", "el": "Πινακίδες νέον" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which continent is Ethiopia part of?",
+      "el": "Σε ποια ήπειρο ανήκει η Αιθιοπία;"
+    },
+    "answers": [
+      { "text": { "en": "Asia", "el": "Ασία" }, "correct": false },
+      { "text": { "en": "Europe", "el": "Ευρώπη" }, "correct": false },
+      { "text": { "en": "Africa", "el": "Αφρική" }, "correct": true },
+      { "text": { "en": "South America", "el": "Νότια Αμερική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What does the caption suggest even a queen learns to do in Lalibela?",
+      "el": "Τι υπονοεί το caption ότι ακόμη και μια βασίλισσα μαθαίνει να κάνει στη Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Tread softly", "el": "Να περπατά απαλά" }, "correct": true },
+      { "text": { "en": "Roar loudly", "el": "Να βρυχάται δυνατά" }, "correct": false },
+      { "text": { "en": "Run quickly", "el": "Να τρέχει γρήγορα" }, "correct": false },
+      { "text": { "en": "Dance wildly", "el": "Να χορεύει άγρια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which visual mood fits the Lalibela image best?",
+      "el": "Ποιο οπτικό κλίμα ταιριάζει καλύτερα στην εικόνα της Lalibela;"
+    },
+    "answers": [
+      { "text": { "en": "Warm carved stone and quiet depth", "el": "Ζεστή λαξευμένη πέτρα και ήσυχο βάθος" }, "correct": true },
+      { "text": { "en": "Frozen blue glacier light", "el": "Παγωμένο μπλε φως παγετώνα" }, "correct": false },
+      { "text": { "en": "Tropical beach noon", "el": "Τροπικό μεσημέρι σε παραλία" }, "correct": false },
+      { "text": { "en": "Crowded city nightlife", "el": "Πολυσύχναστη νυχτερινή ζωή πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "Which detail belongs to Lalibela and not to Zanzibar?",
+      "el": "Ποια λεπτομέρεια ανήκει στη Lalibela και όχι στη Ζανζιβάρη;"
+    },
+    "answers": [
+      { "text": { "en": "A wooden dhow", "el": "Ένα ξύλινο dhow" }, "correct": false },
+      { "text": { "en": "Turquoise sea", "el": "Τιρκουάζ θάλασσα" }, "correct": false },
+      { "text": { "en": "Spice island mood", "el": "Ατμόσφαιρα νησιού μπαχαρικών" }, "correct": false },
+      { "text": { "en": "Rock-hewn sacred church", "el": "Βραχοσκάλιστη ιερή εκκλησία" }, "correct": true }
+    ]
+  }
+]
