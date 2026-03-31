@@ -1748,5 +1748,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 46,
+  "title": "SOLadventure #46 – Saint-Louis, river-wind beats 🌬️ 🇸🇳",
+  "quote": "She listened where the river kept its old songs.",
+  "caption": "Where river light and old facades meet, even a queen lets the wind set the rhythm. 🐾🐾🐾",
+  "image": "episodes/saint-louis.png",
+  "location": { "lat": 16.0179, "lng": -16.4896 },
+  "visible": true,
+  "city": "saint-louis",
+  "story": {
+    "en": "Saint-Louis welcomed Sol with water, color, and a breeze that never seemed to rest. She sat quietly by the riverside while pastel facades glowed in the warm light and long pirogues drifted across the water with easy grace. Everything moved with its own rhythm here. The river carried reflections, the boats carried stories, and the wind seemed to pass through the town like music. Sol did not need to chase the moment. She only had to sit still and let it come to her. There was something gentle in the faded walls, something proud in the old balconies, and something alive in the way the whole place seemed to breathe with the water. In Saint-Louis, history does not feel trapped in stone. It moves in the light, in the air, and in the river itself. And as the evening softened around her, Sol looked less like a traveler passing through and more like a queen already known by the wind.",
+    "el": "Το Saint-Louis υποδέχτηκε τη Sol με νερό, χρώμα και ένα αεράκι που έμοιαζε να μην σταματά ποτέ. Κάθισε ήσυχα δίπλα στο ποτάμι ενώ οι παστέλ προσόψεις φωτίζονταν από το ζεστό φως και οι μακριές πιρόγες γλιστρούσαν στο νερό με φυσική χάρη. Εδώ όλα κινούνταν με τον δικό τους ρυθμό. Το ποτάμι κουβαλούσε αντανακλάσεις, οι βάρκες κουβαλούσαν ιστορίες, και ο αέρας έμοιαζε να περνά μέσα από την πόλη σαν μουσική. Η Sol δεν χρειαζόταν να κυνηγήσει τη στιγμή. Αρκούσε να μείνει ακίνητη και να την αφήσει να έρθει κοντά της. Υπήρχε κάτι απαλό στους ξεθωριασμένους τοίχους, κάτι περήφανο στα παλιά μπαλκόνια και κάτι ζωντανό στον τρόπο που όλος ο τόπος ανέπνεε μαζί με το νερό. Στο Saint-Louis η ιστορία δεν μοιάζει παγιδευμένη στην πέτρα. Κινείται μέσα στο φως, στον αέρα και στο ίδιο το ποτάμι. Και καθώς το δειλινό μαλάκωνε γύρω της, η Sol έμοιαζε λιγότερο με ταξιδιώτισσα που περνά και περισσότερο με βασίλισσα που την ήξερε ήδη ο άνεμος."
+  },
+  "photoQuote": "The river slowed for royalty.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear by the riverside in Saint-Louis, Senegal?",
+        "el": "Εμφανίστηκε η Sol δίπλα στο ποτάμι στο Saint-Louis της Σενεγάλης;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention pastel facades and pirogues on the water?",
+        "el": "Ανέφερε η ιστορία παστέλ προσόψεις και πιρόγες πάνω στο νερό;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol explore snowy mountains in this episode?",
+        "el": "Εξερεύνησε η Sol χιονισμένα βουνά σε αυτό το επεισόδιο;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]

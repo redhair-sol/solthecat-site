@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Saint-Louis located?",
+      "el": "Σε ποια χώρα βρίσκεται το Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "Mauritania", "el": "Μαυριτανία" }, "correct": false },
+      { "text": { "en": "Senegal", "el": "Σενεγάλη" }, "correct": true },
+      { "text": { "en": "Mali", "el": "Μάλι" }, "correct": false },
+      { "text": { "en": "Gambia", "el": "Γκάμπια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What kind of boats appear in the Saint-Louis episode?",
+      "el": "Τι είδους βάρκες εμφανίζονται στο επεισόδιο του Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "Gondolas", "el": "Γόνδολες" }, "correct": false },
+      { "text": { "en": "Cruise ships", "el": "Κρουαζιερόπλοια" }, "correct": false },
+      { "text": { "en": "Submarines", "el": "Υποβρύχια" }, "correct": false },
+      { "text": { "en": "Pirogues", "el": "Πιρόγες" }, "correct": true }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which photo quote belongs to this episode?",
+      "el": "Ποιο photo quote ανήκει σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "The river slowed for royalty.", "el": "The river slowed for royalty." }, "correct": true },
+      { "text": { "en": "Historic? So am I.", "el": "Historic? So am I." }, "correct": false },
+      { "text": { "en": "Where the stone remembers", "el": "Where the stone remembers" }, "correct": false },
+      { "text": { "en": "Queen of the peaks", "el": "Queen of the peaks" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which atmosphere best matches the Saint-Louis episode?",
+      "el": "Ποια ατμόσφαιρα ταιριάζει καλύτερα στο επεισόδιο του Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "Frozen and silent", "el": "Παγωμένη και σιωπηλή" }, "correct": false },
+      { "text": { "en": "Crowded and industrial", "el": "Πολυσύχναστη και βιομηχανική" }, "correct": false },
+      { "text": { "en": "Warm, breezy, and rhythmic", "el": "Ζεστή, ανεμώδης και ρυθμική" }, "correct": true },
+      { "text": { "en": "Snowy and alpine", "el": "Χιονισμένη και αλπική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What did the wind seem to pass through the town like in the story?",
+      "el": "Σαν τι έμοιαζε να περνά ο άνεμος μέσα από την πόλη στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Thunder", "el": "Βροντή" }, "correct": false },
+      { "text": { "en": "Music", "el": "Μουσική" }, "correct": true },
+      { "text": { "en": "Smoke", "el": "Καπνός" }, "correct": false },
+      { "text": { "en": "Dust", "el": "Σκόνη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What glowed in the warm light behind Sol?",
+      "el": "Τι φωτιζόταν από το ζεστό φως πίσω από τη Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Pastel facades", "el": "Παστέλ προσόψεις" }, "correct": true },
+      { "text": { "en": "Ice caves", "el": "Παγωμένες σπηλιές" }, "correct": false },
+      { "text": { "en": "Glass towers", "el": "Γυάλινοι πύργοι" }, "correct": false },
+      { "text": { "en": "Sand dunes", "el": "Αμμόλοφοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Saint-Louis stands near the mouth of which river?",
+      "el": "Το Saint-Louis βρίσκεται κοντά στις εκβολές ποιου ποταμού;"
+    },
+    "answers": [
+      { "text": { "en": "Senegal River", "el": "Ποταμός Σενεγάλης" }, "correct": true },
+      { "text": { "en": "Nile", "el": "Νείλος" }, "correct": false },
+      { "text": { "en": "Congo River", "el": "Ποταμός Κονγκό" }, "correct": false },
+      { "text": { "en": "Zambezi", "el": "Ζαμβέζης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What visual style fits the Saint-Louis waterfront buildings best?",
+      "el": "Ποιο οπτικό ύφος ταιριάζει καλύτερα στα παραποτάμια κτίρια του Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "Dark glass modernism", "el": "Σκούρος γυάλινος μοντερνισμός" }, "correct": false },
+      { "text": { "en": "Concrete megablocks", "el": "Τεράστια τσιμεντένια συγκροτήματα" }, "correct": false },
+      { "text": { "en": "Pastel colonial facades", "el": "Παστέλ αποικιακές προσόψεις" }, "correct": true },
+      { "text": { "en": "Steel skyscrapers", "el": "Ατσάλινοι ουρανοξύστες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "According to the story, what did the boats carry?",
+      "el": "Σύμφωνα με την ιστορία, τι κουβαλούσαν οι βάρκες;"
+    },
+    "answers": [
+      { "text": { "en": "Lanterns", "el": "Φανάρια" }, "correct": false },
+      { "text": { "en": "Stories", "el": "Ιστορίες" }, "correct": true },
+      { "text": { "en": "Snow", "el": "Χιόνι" }, "correct": false },
+      { "text": { "en": "Maps", "el": "Χάρτες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "How is Sol shown in the Saint-Louis image?",
+      "el": "Πώς παρουσιάζεται η Sol στην εικόνα του Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "Running across a desert", "el": "Να τρέχει σε έρημο" }, "correct": false },
+      { "text": { "en": "Climbing a mountain ridge", "el": "Να ανεβαίνει σε ορεινή κορυφογραμμή" }, "correct": false },
+      { "text": { "en": "Flying above the town", "el": "Να πετά πάνω από την πόλη" }, "correct": false },
+      { "text": { "en": "Sitting quietly by the riverside", "el": "Να κάθεται ήσυχα δίπλα στο ποτάμι" }, "correct": true }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which body of water lies just beyond Saint-Louis on the coast?",
+      "el": "Ποιο υδάτινο σώμα βρίσκεται ακριβώς πέρα από το Saint-Louis στην ακτή;"
+    },
+    "answers": [
+      { "text": { "en": "Atlantic Ocean", "el": "Ατλαντικός Ωκεανός" }, "correct": true },
+      { "text": { "en": "Indian Ocean", "el": "Ινδικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Mediterranean Sea", "el": "Μεσόγειος Θάλασσα" }, "correct": false },
+      { "text": { "en": "Red Sea", "el": "Ερυθρά Θάλασσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What did the story suggest about the old balconies?",
+      "el": "Τι υπονοούσε η ιστορία για τα παλιά μπαλκόνια;"
+    },
+    "answers": [
+      { "text": { "en": "They were broken by storms", "el": "Ότι είχαν σπάσει από καταιγίδες" }, "correct": false },
+      { "text": { "en": "They were painted neon green", "el": "Ότι ήταν βαμμένα νέον πράσινα" }, "correct": false },
+      { "text": { "en": "They carried something proud", "el": "Ότι κουβαλούσαν κάτι περήφανο" }, "correct": true },
+      { "text": { "en": "They were covered with snow", "el": "Ότι ήταν σκεπασμένα με χιόνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What did the river carry in the story?",
+      "el": "Τι κουβαλούσε το ποτάμι στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Fog horns", "el": "Κόρνες ομίχλης" }, "correct": false },
+      { "text": { "en": "Crowds", "el": "Πλήθη" }, "correct": false },
+      { "text": { "en": "Dry leaves", "el": "Ξερά φύλλα" }, "correct": false },
+      { "text": { "en": "Reflections", "el": "Αντανακλάσεις" }, "correct": true }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What does the title of episode #46 emphasize?",
+      "el": "Τι τονίζει ο τίτλος του επεισοδίου #46;"
+    },
+    "answers": [
+      { "text": { "en": "Sacred stone silence", "el": "Ιερή πέτρινη σιωπή" }, "correct": false },
+      { "text": { "en": "River-wind beats", "el": "Ρυθμούς ποταμίσιου ανέμου" }, "correct": true },
+      { "text": { "en": "Royal desert heat", "el": "Βασιλική ζέστη της ερήμου" }, "correct": false },
+      { "text": { "en": "Northern lights", "el": "Βόρειο σέλας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Saint-Louis is part of which region of Africa?",
+      "el": "Το Saint-Louis ανήκει σε ποια περιοχή της Αφρικής;"
+    },
+    "answers": [
+      { "text": { "en": "West Africa", "el": "Δυτική Αφρική" }, "correct": true },
+      { "text": { "en": "Southern Africa", "el": "Νότια Αφρική" }, "correct": false },
+      { "text": { "en": "Central Africa", "el": "Κεντρική Αφρική" }, "correct": false },
+      { "text": { "en": "East Africa", "el": "Ανατολική Αφρική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which mood best fits Sol in this episode?",
+      "el": "Ποια διάθεση ταιριάζει καλύτερα στη Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Panicked and hurried", "el": "Αγχωμένη και βιαστική" }, "correct": false },
+      { "text": { "en": "Noisy and restless", "el": "Θορυβώδης και ανήσυχη" }, "correct": false },
+      { "text": { "en": "Snowbound and cold", "el": "Αποκλεισμένη στο χιόνι και κρύα" }, "correct": false },
+      { "text": { "en": "Calm, observant, and rhythmic", "el": "Ήρεμη, παρατηρητική και ρυθμική" }, "correct": true }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What kind of city is Saint-Louis especially known as?",
+      "el": "Ως τι είδους πόλη είναι ιδιαίτερα γνωστό το Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "A ski resort town", "el": "Μια χιονοδρομική πόλη" }, "correct": false },
+      { "text": { "en": "A historic island city", "el": "Μια ιστορική νησιωτική πόλη" }, "correct": true },
+      { "text": { "en": "A mining capital", "el": "Μια μεταλλευτική πρωτεύουσα" }, "correct": false },
+      { "text": { "en": "A rainforest village", "el": "Ένα χωριό τροπικού δάσους" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What kind of light shapes the Saint-Louis image?",
+      "el": "Τι είδους φως διαμορφώνει την εικόνα του Saint-Louis;"
+    },
+    "answers": [
+      { "text": { "en": "Harsh noon light", "el": "Σκληρό μεσημεριανό φως" }, "correct": false },
+      { "text": { "en": "Blue moonlight", "el": "Μπλε σεληνόφως" }, "correct": true },
+      { "text": { "en": "Neon nightclub glow", "el": "Λάμψη νυχτερινού κλαμπ" }, "correct": false },
+      { "text": { "en": "Warm golden hour light", "el": "Ζεστό φως χρυσής ώρας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "According to the story, what did Sol not need to do?",
+      "el": "Σύμφωνα με την ιστορία, τι δεν χρειαζόταν να κάνει η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Chase the moment", "el": "Να κυνηγήσει τη στιγμή" }, "correct": true },
+      { "text": { "en": "Cross a bridge", "el": "Να περάσει μια γέφυρα" }, "correct": false },
+      { "text": { "en": "Watch the river", "el": "Να κοιτάξει το ποτάμι" }, "correct": false },
+      { "text": { "en": "Follow a crowd", "el": "Να ακολουθήσει ένα πλήθος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "How did the whole place seem to breathe in the story?",
+      "el": "Πώς έμοιαζε να αναπνέει όλος ο τόπος στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "With desert sand", "el": "Με άμμο της ερήμου" }, "correct": false },
+      { "text": { "en": "With city traffic", "el": "Με την κίνηση της πόλης" }, "correct": false },
+      { "text": { "en": "With the water", "el": "Μαζί με το νερό" }, "correct": true },
+      { "text": { "en": "With thunder", "el": "Με βροντές" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "Which detail fits Saint-Louis better than a desert scene?",
+      "el": "Ποια λεπτομέρεια ταιριάζει περισσότερο στο Saint-Louis παρά σε σκηνικό ερήμου;"
+    },
+    "answers": [
+      { "text": { "en": "Rolling sand dunes", "el": "Κυματιστοί αμμόλοφοι" }, "correct": false },
+      { "text": { "en": "Pastel facades and pirogues", "el": "Παστέλ προσόψεις και πιρόγες" }, "correct": true },
+      { "text": { "en": "Camel caravans", "el": "Καραβάνια καμήλων" }, "correct": false },
+      { "text": { "en": "Salt flats", "el": "Αλυκές" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which continent is Senegal part of?",
+      "el": "Σε ποια ήπειρο ανήκει η Σενεγάλη;"
+    },
+    "answers": [
+      { "text": { "en": "Europe", "el": "Ευρώπη" }, "correct": false },
+      { "text": { "en": "Asia", "el": "Ασία" }, "correct": false },
+      { "text": { "en": "South America", "el": "Νότια Αμερική" }, "correct": false },
+      { "text": { "en": "Africa", "el": "Αφρική" }, "correct": true }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What does the caption suggest even a queen lets set the rhythm?",
+      "el": "Τι υπονοεί το caption ότι ακόμη και μια βασίλισσα αφήνει να δίνει τον ρυθμό;"
+    },
+    "answers": [
+      { "text": { "en": "The wind", "el": "Τον άνεμο" }, "correct": true },
+      { "text": { "en": "The traffic", "el": "Την κίνηση" }, "correct": false },
+      { "text": { "en": "The rain", "el": "Τη βροχή" }, "correct": false },
+      { "text": { "en": "The market bells", "el": "Τα κουδούνια της αγοράς" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which line belongs to the episode quote field?",
+      "el": "Ποια φράση ανήκει στο πεδίο quote του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "The river slowed for royalty.", "el": "The river slowed for royalty." }, "correct": false },
+      { "text": { "en": "Paws touched the Parthenon.", "el": "Paws touched the Parthenon." }, "correct": false },
+      { "text": { "en": "Historic? So am I.", "el": "Historic? So am I." }, "correct": false },
+      { "text": { "en": "She listened where the river kept its old songs.", "el": "She listened where the river kept its old songs." }, "correct": true }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "How does Sol seem by the end of the story?",
+      "el": "Πώς μοιάζει η Sol στο τέλος της ιστορίας;"
+    },
+    "answers": [
+      { "text": { "en": "Like a lost tourist", "el": "Σαν χαμένη τουρίστρια" }, "correct": false },
+      { "text": { "en": "Like a queen already known by the wind", "el": "Σαν βασίλισσα που την ήξερε ήδη ο άνεμος" }, "correct": false },
+      { "text": { "en": "Like a queen already known by the wind", "el": "Σαν βασίλισσα που την ήξερε ήδη ο άνεμος" }, "correct": true },
+      { "text": { "en": "Like a sailor searching for a harbor", "el": "Σαν ναυτικός που ψάχνει λιμάνι" }, "correct": false }
+    ]
+  }
+]
