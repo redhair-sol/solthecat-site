@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Marrakech located?",
+      "el": "Σε ποια χώρα βρίσκεται το Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "Algeria", "el": "Αλγερία" }, "correct": false },
+      { "text": { "en": "Morocco", "el": "Μαρόκο" }, "correct": true },
+      { "text": { "en": "Tunisia", "el": "Τυνησία" }, "correct": false },
+      { "text": { "en": "Egypt", "el": "Αίγυπτος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What type of streets does Sol explore in Marrakech?",
+      "el": "Τι είδους δρόμους εξερευνά η Sol στο Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "Wide highways", "el": "Μεγάλες λεωφόροι" }, "correct": false },
+      { "text": { "en": "Frozen paths", "el": "Παγωμένα μονοπάτια" }, "correct": false },
+      { "text": { "en": "Narrow souk streets", "el": "Στενά σοκάκια σουκ" }, "correct": true },
+      { "text": { "en": "Mountain trails", "el": "Ορεινά μονοπάτια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "Which photo quote belongs to this episode?",
+      "el": "Ποιο photo quote ανήκει σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Queen of the peaks", "el": "Queen of the peaks" }, "correct": false },
+      { "text": { "en": "Historic? So am I.", "el": "Historic? So am I." }, "correct": false },
+      { "text": { "en": "In these streets, I don’t follow. I arrive 🐾", "el": "In these streets, I don’t follow. I arrive 🐾" }, "correct": true },
+      { "text": { "en": "The river slowed for royalty.", "el": "The river slowed for royalty." }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What hangs above the streets in the Marrakech scene?",
+      "el": "Τι κρέμεται πάνω από τα σοκάκια στη σκηνή του Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "Snow lights", "el": "Χιονισμένα φώτα" }, "correct": false },
+      { "text": { "en": "Glass panels", "el": "Γυάλινα πάνελ" }, "correct": false },
+      { "text": { "en": "Carpets and lanterns", "el": "Χαλιά και φανάρια" }, "correct": true },
+      { "text": { "en": "Flags only", "el": "Μόνο σημαίες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What kind of light defines the Marrakech image?",
+      "el": "Τι είδους φως χαρακτηρίζει την εικόνα του Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "Cold blue light", "el": "Κρύο μπλε φως" }, "correct": false },
+      { "text": { "en": "Neon city light", "el": "Νέον φως πόλης" }, "correct": false },
+      { "text": { "en": "Warm golden light", "el": "Ζεστό χρυσό φως" }, "correct": true },
+      { "text": { "en": "Storm lightning", "el": "Αστραπές καταιγίδας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What best describes Sol’s behavior in this episode?",
+      "el": "Τι περιγράφει καλύτερα τη συμπεριφορά της Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Rushing through crowds", "el": "Τρέχει μέσα στο πλήθος" }, "correct": false },
+      { "text": { "en": "Quietly observing", "el": "Παρατηρεί ήσυχα" }, "correct": true },
+      { "text": { "en": "Climbing rooftops", "el": "Ανεβαίνει σε ταράτσες" }, "correct": false },
+      { "text": { "en": "Running away", "el": "Φεύγει τρέχοντας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What is a souk?",
+      "el": "Τι είναι το σουκ;"
+    },
+    "answers": [
+      { "text": { "en": "A desert", "el": "Έρημος" }, "correct": false },
+      { "text": { "en": "A traditional market", "el": "Παραδοσιακή αγορά" }, "correct": true },
+      { "text": { "en": "A river", "el": "Ποτάμι" }, "correct": false },
+      { "text": { "en": "A mountain", "el": "Βουνό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What textures are emphasized in the story?",
+      "el": "Ποιες υφές τονίζονται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Metal and glass", "el": "Μέταλλο και γυαλί" }, "correct": false },
+      { "text": { "en": "Ice and snow", "el": "Πάγος και χιόνι" }, "correct": false },
+      { "text": { "en": "Woven fabrics and stone", "el": "Υφασμένα υλικά και πέτρα" }, "correct": true },
+      { "text": { "en": "Plastic surfaces", "el": "Πλαστικές επιφάνειες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What does Sol NOT do in this episode?",
+      "el": "Τι ΔΕΝ κάνει η Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Observe the surroundings", "el": "Παρατηρεί το περιβάλλον" }, "correct": false },
+      { "text": { "en": "Chase spectacle", "el": "Κυνηγά εντυπωσιασμούς" }, "correct": true },
+      { "text": { "en": "Sit calmly", "el": "Κάθεται ήρεμα" }, "correct": false },
+      { "text": { "en": "Stay present", "el": "Μένει παρούσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "Which continent is Morocco part of?",
+      "el": "Σε ποια ήπειρο ανήκει το Μαρόκο;"
+    },
+    "answers": [
+      { "text": { "en": "Europe", "el": "Ευρώπη" }, "correct": false },
+      { "text": { "en": "Asia", "el": "Ασία" }, "correct": false },
+      { "text": { "en": "Africa", "el": "Αφρική" }, "correct": true },
+      { "text": { "en": "South America", "el": "Νότια Αμερική" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 11,
+    "question": {
+      "en": "What fills the air visually in the scene?",
+      "el": "Τι γεμίζει οπτικά τον χώρο στη σκηνή;"
+    },
+    "answers": [
+      { "text": { "en": "Fog", "el": "Ομίχλη" }, "correct": false },
+      { "text": { "en": "Golden warmth", "el": "Χρυσή ζεστασιά" }, "correct": true },
+      { "text": { "en": "Snowflakes", "el": "Νιφάδες χιονιού" }, "correct": false },
+      { "text": { "en": "Rain", "el": "Βροχή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What gives depth to the Marrakech image?",
+      "el": "Τι δίνει βάθος στην εικόνα του Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "Flat walls", "el": "Επίπεδοι τοίχοι" }, "correct": false },
+      { "text": { "en": "Long narrow alleys", "el": "Μακριά στενά σοκάκια" }, "correct": true },
+      { "text": { "en": "Empty space", "el": "Κενός χώρος" }, "correct": false },
+      { "text": { "en": "Fog layers", "el": "Στρώματα ομίχλης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What role does detail play in this episode?",
+      "el": "Τι ρόλο παίζει η λεπτομέρεια σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Ignored completely", "el": "Αγνοείται πλήρως" }, "correct": false },
+      { "text": { "en": "Central to the beauty", "el": "Κεντρική στην ομορφιά" }, "correct": true },
+      { "text": { "en": "Only background noise", "el": "Μόνο φόντο" }, "correct": false },
+      { "text": { "en": "Distracting", "el": "Αποσπαστική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What kind of movement defines the city?",
+      "el": "Τι είδους κίνηση χαρακτηρίζει την πόλη;"
+    },
+    "answers": [
+      { "text": { "en": "Chaotic and fast", "el": "Χαοτική και γρήγορη" }, "correct": false },
+      { "text": { "en": "Calm but alive", "el": "Ήρεμη αλλά ζωντανή" }, "correct": true },
+      { "text": { "en": "Frozen stillness", "el": "Παγωμένη ακινησία" }, "correct": false },
+      { "text": { "en": "Mechanical rhythm", "el": "Μηχανικός ρυθμός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What kind of environment is Marrakech known for?",
+      "el": "Για τι είδους περιβάλλον είναι γνωστό το Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "Industrial zones", "el": "Βιομηχανικές ζώνες" }, "correct": false },
+      { "text": { "en": "Historic markets and culture", "el": "Ιστορικές αγορές και πολιτισμό" }, "correct": true },
+      { "text": { "en": "Arctic landscapes", "el": "Αρκτικά τοπία" }, "correct": false },
+      { "text": { "en": "Jungle terrain", "el": "Ζούγκλα" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 16,
+    "question": {
+      "en": "What does Sol represent in this episode?",
+      "el": "Τι αντιπροσωπεύει η Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "A lost tourist", "el": "Χαμένη τουρίστρια" }, "correct": false },
+      { "text": { "en": "A quiet observer with presence", "el": "Ήρεμη παρουσία με δύναμη" }, "correct": true },
+      { "text": { "en": "A guide", "el": "Ξεναγός" }, "correct": false },
+      { "text": { "en": "A street performer", "el": "Καλλιτέχνης δρόμου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What material is commonly seen hanging in the streets?",
+      "el": "Ποιο υλικό φαίνεται συχνά να κρέμεται στα σοκάκια;"
+    },
+    "answers": [
+      { "text": { "en": "Steel", "el": "Ατσάλι" }, "correct": false },
+      { "text": { "en": "Fabric carpets", "el": "Υφασμάτινα χαλιά" }, "correct": true },
+      { "text": { "en": "Glass sheets", "el": "Γυάλινα φύλλα" }, "correct": false },
+      { "text": { "en": "Concrete panels", "el": "Τσιμεντένια πάνελ" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What does the city NOT rely on for beauty?",
+      "el": "Σε τι ΔΕΝ βασίζεται η ομορφιά της πόλης;"
+    },
+    "answers": [
+      { "text": { "en": "Details", "el": "Λεπτομέρειες" }, "correct": false },
+      { "text": { "en": "Textures", "el": "Υφές" }, "correct": false },
+      { "text": { "en": "One single landmark", "el": "Ένα μόνο μνημείο" }, "correct": true },
+      { "text": { "en": "Light", "el": "Φως" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What kind of architecture appears in the background?",
+      "el": "Τι είδους αρχιτεκτονική εμφανίζεται στο φόντο;"
+    },
+    "answers": [
+      { "text": { "en": "Modern skyscrapers", "el": "Σύγχρονοι ουρανοξύστες" }, "correct": false },
+      { "text": { "en": "Traditional Moroccan style", "el": "Παραδοσιακό μαροκινό στυλ" }, "correct": true },
+      { "text": { "en": "Glass towers", "el": "Γυάλινοι πύργοι" }, "correct": false },
+      { "text": { "en": "Industrial buildings", "el": "Βιομηχανικά κτίρια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What does Sol understand immediately about Marrakech?",
+      "el": "Τι καταλαβαίνει αμέσως η Sol για το Μαρακές;"
+    },
+    "answers": [
+      { "text": { "en": "It is too loud", "el": "Ότι είναι πολύ θορυβώδες" }, "correct": false },
+      { "text": { "en": "It has no rhythm", "el": "Ότι δεν έχει ρυθμό" }, "correct": false },
+      { "text": { "en": "It is a city of layered beauty", "el": "Ότι είναι πόλη με στρωματική ομορφιά" }, "correct": true },
+      { "text": { "en": "It is empty", "el": "Ότι είναι άδειο" }, "correct": false }
+    ]
+  },
+
+  {
+    "id": 21,
+    "question": {
+      "en": "What kind of feeling dominates the episode?",
+      "el": "Ποιο συναίσθημα κυριαρχεί στο επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Tension", "el": "Ένταση" }, "correct": false },
+      { "text": { "en": "Calm confidence", "el": "Ήρεμη αυτοπεποίθηση" }, "correct": true },
+      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false },
+      { "text": { "en": "Chaos", "el": "Χάος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What does the caption emphasize?",
+      "el": "Τι τονίζει το caption;"
+    },
+    "answers": [
+      { "text": { "en": "Silence and belonging", "el": "Σιωπή και ανήκειν" }, "correct": true },
+      { "text": { "en": "Speed and chaos", "el": "Ταχύτητα και χάος" }, "correct": false },
+      { "text": { "en": "Cold weather", "el": "Κρύο καιρό" }, "correct": false },
+      { "text": { "en": "Technology", "el": "Τεχνολογία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What kind of visual palette dominates the image?",
+      "el": "Τι είδους χρωματική παλέτα κυριαρχεί στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Cold blues", "el": "Ψυχρά μπλε" }, "correct": false },
+      { "text": { "en": "Warm earthy tones", "el": "Ζεστοί γήινοι τόνοι" }, "correct": true },
+      { "text": { "en": "Black and white", "el": "Ασπρόμαυρο" }, "correct": false },
+      { "text": { "en": "Neon colors", "el": "Νέον χρώματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What does Sol NOT need to do to belong?",
+      "el": "Τι ΔΕΝ χρειάζεται να κάνει η Sol για να ανήκει;"
+    },
+    "answers": [
+      { "text": { "en": "Observe", "el": "Να παρατηρήσει" }, "correct": false },
+      { "text": { "en": "Follow the rhythm", "el": "Να ακολουθήσει τον ρυθμό" }, "correct": true },
+      { "text": { "en": "Sit still", "el": "Να μείνει ακίνητη" }, "correct": false },
+      { "text": { "en": "Be present", "el": "Να είναι παρούσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "How does the street seem to react to Sol?",
+      "el": "Πώς φαίνεται να αντιδρά ο δρόμος στη Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Ignores her", "el": "Την αγνοεί" }, "correct": false },
+      { "text": { "en": "Welcomes her presence", "el": "Αναγνωρίζει την παρουσία της" }, "correct": true },
+      { "text": { "en": "Pushes her away", "el": "Την διώχνει" }, "correct": false },
+      { "text": { "en": "Confuses her", "el": "Την μπερδεύει" }, "correct": false }
+    ]
+  }
+]

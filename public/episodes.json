@@ -1786,5 +1786,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 47,
+  "title": "SOLadventure #47 – Marrakech, desert’s jewel 🏜️ 🇲🇦",
+  "quote": "In these streets, I don’t follow. I arrive 🐾",
+  "caption": "Colors above, quiet below, and one queen exactly where she belongs. 🐾🐾🐾",
+  "image": "episodes/marrakech.png",
+  "location": { "lat": 31.6295, "lng": -7.9811 },
+  "visible": true,
+  "city": "marrakech",
+  "story": {
+    "en": "Marrakech did not need to call for attention. It was already full of color, texture, and presence. Sol stepped into its narrow streets beneath hanging carpets and old lanterns, where warm walls held the light and every corner felt rich with detail. The city moved with life, but never with haste. She did not rush through the souk searching for spectacle. She simply sat, watched, and let the place reveal itself around her. In Marrakech, beauty lives in layers. It hangs in woven threads, glows across old stone, and lingers in the stillness between footsteps. Sol understood that kind of city immediately. She did not need to follow its rhythm to belong there. The street already knew she had arrived.",
+    "el": "Το Μαρακές δεν χρειαζόταν να ζητήσει προσοχή. Ήταν ήδη γεμάτο χρώμα, υφή και παρουσία. Η Sol μπήκε στα στενά του κάτω από κρεμαστά χαλιά και παλιά φανάρια, εκεί όπου οι ζεστοί τοίχοι κρατούσαν το φως και κάθε γωνιά ήταν γεμάτη λεπτομέρεια. Η πόλη έσφυζε από ζωή, αλλά ποτέ δεν βιαζόταν. Δεν έτρεξε στο σουκ αναζητώντας εντυπωσιασμούς. Απλώς στάθηκε, παρατήρησε και άφησε τον τόπο να φανερωθεί γύρω της. Στο Μαρακές, η ομορφιά ζει σε στρώσεις. Κρέμεται στα υφασμένα νήματα, λάμπει πάνω στην παλιά πέτρα και μένει στη σιωπή ανάμεσα στα βήματα. Η Sol κατάλαβε αμέσως αυτό το είδος πόλης. Δεν χρειαζόταν να ακολουθήσει τον ρυθμό της για να ανήκει εκεί. Ο δρόμος ήξερε ήδη πως είχε φτάσει."
+  },
+  "photoQuote": "In these streets, I don’t follow. I arrive 🐾",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear in the narrow souk streets of Marrakech, Morocco?",
+        "el": "Εμφανίστηκε η Sol στα στενά σοκάκια του σουκ στο Μαρακές του Μαρόκου;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention hanging carpets and lanterns above Sol?",
+        "el": "Ανέφερε η ιστορία κρεμαστά χαλιά και φανάρια πάνω από τη Sol;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol explore a frozen lake in this episode?",
+        "el": "Εξερεύνησε η Sol μια παγωμένη λίμνη σε αυτό το επεισόδιο;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
