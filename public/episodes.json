@@ -1824,5 +1824,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 48,
+  "title": "SOLadventure #48 – Lisbon, pastel tiles & Atlantic tides 🏰🌊 🇵🇹",
+  "quote": "Where tiles meet the tide.",
+  "caption": "Lisbon didn’t ask for a queen. It already had one. 🐾🐾🐾",
+  "image": "episodes/lisbon.png",
+  "location": { "lat": 38.7223, "lng": -9.1393 },
+  "visible": true,
+  "city": "lisbon",
+  "story": {
+    "en": "Lisbon rose in soft color and quiet confidence. Sol sat above its steep streets, where pastel facades, tiled walls, and old tramlines carried the city toward the sea. Below her, the yellow tram moved with the calm certainty of something that had done this forever. Beyond it, the Atlantic light spread across the horizon and turned the whole city warm for a moment. Lisbon did not ask to be admired. It simply existed in layers of beauty, history, and movement. Sol understood that immediately. She did not need to chase the view or follow the streets below. She only had to sit above them, still and certain, exactly where the city met the tide.",
+    "el": "Η Λισαβόνα υψωνόταν με απαλά χρώματα και ήσυχη αυτοπεποίθηση. Η Sol καθόταν πάνω από τους απότομους δρόμους της, εκεί όπου οι παστέλ προσόψεις, τα πλακάκια στους τοίχους και οι παλιές γραμμές του τραμ οδηγούσαν την πόλη προς τη θάλασσα. Κάτω της, το κίτρινο τραμ προχωρούσε με τη γαλήνια βεβαιότητα κάποιου που κάνει αυτή τη διαδρομή για πάντα. Πιο πέρα, το φως του Ατλαντικού άπλωνε ζεστασιά στον ορίζοντα και έντυνε όλη την πόλη με χρυσή λάμψη για μια στιγμή. Η Λισαβόνα δεν ζητούσε να την θαυμάσουν. Υπήρχε απλώς μέσα σε στρώσεις ομορφιάς, ιστορίας και κίνησης. Η Sol το κατάλαβε αμέσως. Δεν χρειαζόταν να κυνηγήσει τη θέα ούτε να ακολουθήσει τους δρόμους από κάτω. Αρκούσε να σταθεί από πάνω τους, ήρεμη και βέβαιη, ακριβώς εκεί όπου η πόλη συναντά την παλίρροια."
+  },
+  "photoQuote": "Where tiles meet the tide.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear above a steep Lisbon street with a yellow tram below?",
+        "el": "Εμφανίστηκε η Sol πάνω από έναν απότομο δρόμο της Λισαβόνας με ένα κίτρινο τραμ πιο κάτω;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention tiled walls and pastel buildings in Lisbon?",
+        "el": "Ανέφερε η ιστορία πλακάκια στους τοίχους και παστέλ κτίρια στη Λισαβόνα;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did Sol travel through snowy mountains in this episode?",
+        "el": "Ταξίδεψε η Sol μέσα από χιονισμένα βουνά σε αυτό το επεισόδιο;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
