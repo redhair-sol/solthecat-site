@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Lisbon located?",
+      "el": "Σε ποια χώρα βρίσκεται η Λισαβόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Portugal", "el": "Πορτογαλία" }, "correct": true },
+      { "text": { "en": "Spain", "el": "Ισπανία" }, "correct": false },
+      { "text": { "en": "France", "el": "Γαλλία" }, "correct": false },
+      { "text": { "en": "Italy", "el": "Ιταλία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What iconic vehicle appears in the Lisbon scene?",
+      "el": "Ποιο χαρακτηριστικό όχημα εμφανίζεται στη σκηνή της Λισαβόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Cable car", "el": "Τελεφερίκ" }, "correct": false },
+      { "text": { "en": "Taxi", "el": "Ταξί" }, "correct": false },
+      { "text": { "en": "Yellow tram", "el": "Κίτρινο τραμ" }, "correct": true },
+      { "text": { "en": "Metro train", "el": "Μετρό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What decorative element is common on Lisbon buildings?",
+      "el": "Ποιο διακοσμητικό στοιχείο είναι συχνό στα κτίρια της Λισαβόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Glass panels", "el": "Γυάλινα πάνελ" }, "correct": false },
+      { "text": { "en": "Azulejos tiles", "el": "Πλακάκια azulejos" }, "correct": true },
+      { "text": { "en": "Steel frames", "el": "Μεταλλικοί σκελετοί" }, "correct": false },
+      { "text": { "en": "Wood carvings", "el": "Ξύλινα σκαλίσματα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "Which ocean is near Lisbon?",
+      "el": "Ποιος ωκεανός βρίσκεται κοντά στη Λισαβόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Pacific Ocean", "el": "Ειρηνικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Indian Ocean", "el": "Ινδικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Arctic Ocean", "el": "Αρκτικός Ωκεανός" }, "correct": false },
+      { "text": { "en": "Atlantic Ocean", "el": "Ατλαντικός Ωκεανός" }, "correct": true }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What kind of streets define Lisbon?",
+      "el": "Τι είδους δρόμοι χαρακτηρίζουν τη Λισαβόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Steep narrow streets", "el": "Απότομοι στενοί δρόμοι" }, "correct": true },
+      { "text": { "en": "Flat boulevards", "el": "Επίπεδες λεωφόροι" }, "correct": false },
+      { "text": { "en": "Snow trails", "el": "Χιονισμένα μονοπάτια" }, "correct": false },
+      { "text": { "en": "Desert paths", "el": "Ερημικά μονοπάτια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What is the mood of the Lisbon scene?",
+      "el": "Ποιο είναι το mood της σκηνής στη Λισαβόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Dark and tense", "el": "Σκοτεινό και έντονο" }, "correct": false },
+      { "text": { "en": "Calm and warm", "el": "Ήρεμο και ζεστό" }, "correct": true },
+      { "text": { "en": "Chaotic", "el": "Χαοτικό" }, "correct": false },
+      { "text": { "en": "Cold and distant", "el": "Κρύο και απόμακρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What does Sol do in this episode?",
+      "el": "Τι κάνει η Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Swims in the ocean", "el": "Κολυμπά στη θάλασσα" }, "correct": false },
+      { "text": { "en": "Runs through the streets", "el": "Τρέχει στους δρόμους" }, "correct": false },
+      { "text": { "en": "Observes from above", "el": "Παρατηρεί από ψηλά" }, "correct": true },
+      { "text": { "en": "Climbs mountains", "el": "Ανεβαίνει σε βουνά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What kind of light appears in the image?",
+      "el": "Τι είδους φως εμφανίζεται στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Golden sunset light", "el": "Χρυσό φως ηλιοβασιλέματος" }, "correct": true },
+      { "text": { "en": "Blue night light", "el": "Μπλε νυχτερινό φως" }, "correct": false },
+      { "text": { "en": "Storm light", "el": "Φως καταιγίδας" }, "correct": false },
+      { "text": { "en": "Neon light", "el": "Νέον φως" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What does the quote refer to?",
+      "el": "Σε τι αναφέρεται το quote;"
+    },
+    "answers": [
+      { "text": { "en": "Desert and sand", "el": "Έρημος και άμμος" }, "correct": false },
+      { "text": { "en": "Mountains and snow", "el": "Βουνά και χιόνι" }, "correct": false },
+      { "text": { "en": "Tiles and the sea", "el": "Πλακάκια και θάλασσα" }, "correct": true },
+      { "text": { "en": "Forests and rivers", "el": "Δάση και ποτάμια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What defines Lisbon’s visual identity?",
+      "el": "Τι ορίζει την οπτική ταυτότητα της Λισαβόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Skyscrapers", "el": "Ουρανοξύστες" }, "correct": false },
+      { "text": { "en": "Minimalism", "el": "Μινιμαλισμός" }, "correct": false },
+      { "text": { "en": "Pastel colors and tiles", "el": "Παστέλ χρώματα και πλακάκια" }, "correct": true },
+      { "text": { "en": "Snow landscapes", "el": "Χιονισμένα τοπία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What does Sol represent here?",
+      "el": "Τι αντιπροσωπεύει η Sol εδώ;"
+    },
+    "answers": [
+      { "text": { "en": "A guide", "el": "Ξεναγός" }, "correct": false },
+      { "text": { "en": "A lost traveler", "el": "Χαμένη ταξιδιώτισσα" }, "correct": false },
+      { "text": { "en": "A queen observing her city", "el": "Μια βασίλισσα που παρατηρεί την πόλη" }, "correct": true },
+      { "text": { "en": "A tourist", "el": "Τουρίστρια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What does Lisbon NOT rely on for beauty?",
+      "el": "Σε τι ΔΕΝ βασίζεται η ομορφιά της Λισαβόνας;"
+    },
+    "answers": [
+      { "text": { "en": "One landmark", "el": "Ένα μόνο μνημείο" }, "correct": true },
+      { "text": { "en": "Color", "el": "Χρώμα" }, "correct": false },
+      { "text": { "en": "Texture", "el": "Υφή" }, "correct": false },
+      { "text": { "en": "Light", "el": "Φως" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What gives depth to the image?",
+      "el": "Τι δίνει βάθος στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Fog only", "el": "Μόνο ομίχλη" }, "correct": false },
+      { "text": { "en": "Empty sky", "el": "Άδειος ουρανός" }, "correct": false },
+      { "text": { "en": "Layered streets and sea", "el": "Στρωματικοί δρόμοι και θάλασσα" }, "correct": true },
+      { "text": { "en": "Flat horizon", "el": "Επίπεδος ορίζοντας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What kind of movement is present?",
+      "el": "Τι είδους κίνηση υπάρχει;"
+    },
+    "answers": [
+      { "text": { "en": "Mechanical", "el": "Μηχανική" }, "correct": false },
+      { "text": { "en": "Frozen", "el": "Παγωμένη" }, "correct": false },
+      { "text": { "en": "Slow and steady", "el": "Αργή και σταθερή" }, "correct": true },
+      { "text": { "en": "Fast and chaotic", "el": "Γρήγορη και χαοτική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What is the Tagus?",
+      "el": "Τι είναι ο Τάγος;"
+    },
+    "answers": [
+      { "text": { "en": "A road", "el": "Δρόμος" }, "correct": false },
+      { "text": { "en": "A building", "el": "Κτίριο" }, "correct": false },
+      { "text": { "en": "A river", "el": "Ποτάμι" }, "correct": true },
+      { "text": { "en": "A mountain", "el": "Βουνό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What kind of palette dominates?",
+      "el": "Τι είδους παλέτα κυριαρχεί;"
+    },
+    "answers": [
+      { "text": { "en": "Neon", "el": "Νέον" }, "correct": false },
+      { "text": { "en": "Warm pastel tones", "el": "Ζεστοί παστέλ τόνοι" }, "correct": true },
+      { "text": { "en": "Black and white", "el": "Ασπρόμαυρο" }, "correct": false },
+      { "text": { "en": "Cold tones", "el": "Ψυχροί τόνοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What does Sol NOT do?",
+      "el": "Τι ΔΕΝ κάνει η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Watch", "el": "Παρακολουθεί" }, "correct": false },
+      { "text": { "en": "Chase the city", "el": "Κυνηγά την πόλη" }, "correct": true },
+      { "text": { "en": "Observe", "el": "Παρατηρεί" }, "correct": false },
+      { "text": { "en": "Stay still", "el": "Μένει ακίνητη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What gives Lisbon character?",
+      "el": "Τι δίνει χαρακτήρα στη Λισαβόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Modern design", "el": "Σύγχρονος σχεδιασμός" }, "correct": false },
+      { "text": { "en": "Layers of history", "el": "Στρώσεις ιστορίας" }, "correct": true },
+      { "text": { "en": "Repetition", "el": "Επανάληψη" }, "correct": false },
+      { "text": { "en": "Silence only", "el": "Μόνο σιωπή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What kind of city is Lisbon in the story?",
+      "el": "Τι είδους πόλη είναι η Λισαβόνα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Industrial", "el": "Βιομηχανική" }, "correct": false },
+      { "text": { "en": "Quiet and confident", "el": "Ήσυχη και σίγουρη" }, "correct": true },
+      { "text": { "en": "Empty", "el": "Άδεια" }, "correct": false },
+      { "text": { "en": "Loud and chaotic", "el": "Θορυβώδης και χαοτική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What reacts to Sol’s presence?",
+      "el": "Τι αντιδρά στην παρουσία της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Only people", "el": "Μόνο οι άνθρωποι" }, "correct": false },
+      { "text": { "en": "Animals", "el": "Ζώα" }, "correct": false },
+      { "text": { "en": "Nothing", "el": "Τίποτα" }, "correct": false },
+      { "text": { "en": "The city itself", "el": "Η ίδια η πόλη" }, "correct": true }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What defines the horizon?",
+      "el": "Τι ορίζει τον ορίζοντα;"
+    },
+    "answers": [
+      { "text": { "en": "Buildings only", "el": "Μόνο κτίρια" }, "correct": false },
+      { "text": { "en": "The Atlantic light", "el": "Το φως του Ατλαντικού" }, "correct": true },
+      { "text": { "en": "Mountains", "el": "Βουνά" }, "correct": false },
+      { "text": { "en": "Fog", "el": "Ομίχλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What does the tram symbolize?",
+      "el": "Τι συμβολίζει το τραμ;"
+    },
+    "answers": [
+      { "text": { "en": "Tourism only", "el": "Μόνο τουρισμό" }, "correct": false },
+      { "text": { "en": "Speed", "el": "Ταχύτητα" }, "correct": false },
+      { "text": { "en": "Routine and continuity", "el": "Συνέχεια και ρυθμό" }, "correct": true },
+      { "text": { "en": "Chaos", "el": "Χάος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What kind of feeling dominates?",
+      "el": "Ποιο συναίσθημα κυριαρχεί;"
+    },
+    "answers": [
+      { "text": { "en": "Confusion", "el": "Σύγχυση" }, "correct": false },
+      { "text": { "en": "Fear", "el": "Φόβος" }, "correct": false },
+      { "text": { "en": "Tension", "el": "Ένταση" }, "correct": false },
+      { "text": { "en": "Calm authority", "el": "Ήρεμη κυριαρχία" }, "correct": true }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What does Sol NOT need to do?",
+      "el": "Τι ΔΕΝ χρειάζεται να κάνει η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Stay still", "el": "Να μείνει ακίνητη" }, "correct": false },
+      { "text": { "en": "Observe", "el": "Να παρατηρεί" }, "correct": false },
+      { "text": { "en": "Prove herself", "el": "Να αποδείξει κάτι" }, "correct": true },
+      { "text": { "en": "Be present", "el": "Να είναι παρούσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "How does Lisbon relate to Sol?",
+      "el": "Πώς σχετίζεται η Λισαβόνα με τη Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Rejects her", "el": "Την απορρίπτει" }, "correct": false },
+      { "text": { "en": "Challenges her", "el": "Την προκαλεί" }, "correct": false },
+      { "text": { "en": "Recognizes her", "el": "Την αναγνωρίζει" }, "correct": true },
+      { "text": { "en": "Ignores her", "el": "Την αγνοεί" }, "correct": false }
+    ]
+  }
+]

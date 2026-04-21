@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Tunis located?",
+      "el": "Σε ποια χώρα βρίσκεται η Τύνιδα;"
+    },
+    "answers": [
+      { "text": { "en": "Morocco", "el": "Μαρόκο" }, "correct": false },
+      { "text": { "en": "Tunisia", "el": "Τυνησία" }, "correct": true },
+      { "text": { "en": "Algeria", "el": "Αλγερία" }, "correct": false },
+      { "text": { "en": "Egypt", "el": "Αίγυπτος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What part of Tunis defines this episode’s setting?",
+      "el": "Ποιο μέρος της Τύνιδας ορίζει το σκηνικό αυτού του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Modern business district", "el": "Σύγχρονη επιχειρηματική συνοικία" }, "correct": false },
+      { "text": { "en": "Port area", "el": "Λιμενική ζώνη" }, "correct": false },
+      { "text": { "en": "Historic medina", "el": "Ιστορική μεδίνα" }, "correct": true },
+      { "text": { "en": "Beachfront promenade", "el": "Παραθαλάσσιος πεζόδρομος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What architectural feature appears repeatedly in the Tunis image and story?",
+      "el": "Ποιο αρχιτεκτονικό στοιχείο εμφανίζεται επανειλημμένα στην εικόνα και την ιστορία της Τύνιδας;"
+    },
+    "answers": [
+      { "text": { "en": "High arches", "el": "Ψηλές αψίδες" }, "correct": true },
+      { "text": { "en": "Glass elevators", "el": "Γυάλινοι ανελκυστήρες" }, "correct": false },
+      { "text": { "en": "Steel bridges", "el": "Μεταλλικές γέφυρες" }, "correct": false },
+      { "text": { "en": "Snow-covered roofs", "el": "Χιονισμένες στέγες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What kind of streets shape the medina atmosphere?",
+      "el": "Τι είδους δρόμοι διαμορφώνουν την ατμόσφαιρα της μεδίνας;"
+    },
+    "answers": [
+      { "text": { "en": "Wide highways", "el": "Φαρδιοί αυτοκινητόδρομοι" }, "correct": false },
+      { "text": { "en": "Flat boulevards", "el": "Επίπεδες λεωφόροι" }, "correct": false },
+      { "text": { "en": "Snow trails", "el": "Χιονισμένα μονοπάτια" }, "correct": false },
+      { "text": { "en": "Narrow alleys", "el": "Στενά σοκάκια" }, "correct": true }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What material gives the Tunis scene much of its texture?",
+      "el": "Ποιο υλικό δίνει στη σκηνή της Τύνιδας μεγάλο μέρος της υφής της;"
+    },
+    "answers": [
+      { "text": { "en": "Worn stone", "el": "Φθαρμένη πέτρα" }, "correct": true },
+      { "text": { "en": "Glass panels", "el": "Γυάλινα πάνελ" }, "correct": false },
+      { "text": { "en": "Chrome surfaces", "el": "Χρωμιωμένες επιφάνειες" }, "correct": false },
+      { "text": { "en": "Ice", "el": "Πάγος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What kind of doors are mentioned in the story?",
+      "el": "Τι είδους πόρτες αναφέρονται στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Automatic doors", "el": "Αυτόματες πόρτες" }, "correct": false },
+      { "text": { "en": "Carved wooden doors", "el": "Σκαλιστές ξύλινες πόρτες" }, "correct": true },
+      { "text": { "en": "Sliding glass doors", "el": "Συρόμενες γυάλινες πόρτες" }, "correct": false },
+      { "text": { "en": "Metal security doors", "el": "Μεταλλικές πόρτες ασφαλείας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "What is the overall mood of the Tunis episode?",
+      "el": "Ποιο είναι το συνολικό mood του επεισοδίου της Τύνιδας;"
+    },
+    "answers": [
+      { "text": { "en": "Loud and chaotic", "el": "Θορυβώδες και χαοτικό" }, "correct": false },
+      { "text": { "en": "Playful and crowded", "el": "Παιχνιδιάρικο και γεμάτο κόσμο" }, "correct": false },
+      { "text": { "en": "Quiet and mysterious", "el": "Ήσυχο και μυστηριώδες" }, "correct": true },
+      { "text": { "en": "Cold and distant", "el": "Κρύο και απόμακρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What does the quote 'Even the maze made room for her.' suggest?",
+      "el": "Τι υποδηλώνει το quote 'Even the maze made room for her.';"
+    },
+    "answers": [
+      { "text": { "en": "The city rejected Sol", "el": "Η πόλη απέρριψε τη Sol" }, "correct": false },
+      { "text": { "en": "The medina still welcomed her presence", "el": "Η μεδίνα παρ’ όλα αυτά καλωσόρισε την παρουσία της" }, "correct": true },
+      { "text": { "en": "She got lost and needed help", "el": "Χάθηκε και χρειαζόταν βοήθεια" }, "correct": false },
+      { "text": { "en": "The streets were empty", "el": "Οι δρόμοι ήταν άδειοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What does the caption imply about Tunis?",
+      "el": "Τι υπονοεί το caption για την Τύνιδα;"
+    },
+    "answers": [
+      { "text": { "en": "It tried too hard to impress", "el": "Προσπάθησε υπερβολικά να εντυπωσιάσει" }, "correct": false },
+      { "text": { "en": "It opened gradually, turn by turn", "el": "Ανοιγόταν σταδιακά, στροφή με στροφή" }, "correct": true },
+      { "text": { "en": "It was full of noise", "el": "Ήταν γεμάτη θόρυβο" }, "correct": false },
+      { "text": { "en": "It focused on the sea view", "el": "Εστίαζε στη θέα της θάλασσας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What does Sol NOT need in this episode?",
+      "el": "Τι ΔΕΝ χρειάζεται η Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "A grand square", "el": "Μια μεγάλη πλατεία" }, "correct": false },
+      { "text": { "en": "A modern skyline", "el": "Έναν σύγχρονο ορίζοντα" }, "correct": false },
+      { "text": { "en": "An open sea view", "el": "Μια ανοιχτή θέα στη θάλασσα" }, "correct": false },
+      { "text": { "en": "A grand square or open view", "el": "Μια μεγάλη πλατεία ή μια ανοιχτή θέα" }, "correct": true }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "How does the medina reveal itself in the story?",
+      "el": "Πώς αποκαλύπτεται η μεδίνα στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "All at once", "el": "Μονομιάς" }, "correct": false },
+      { "text": { "en": "Only at night", "el": "Μόνο τη νύχτα" }, "correct": false },
+      { "text": { "en": "Corner by corner, arch by arch", "el": "Γωνία με γωνία, αψίδα με αψίδα" }, "correct": true },
+      { "text": { "en": "Through one famous landmark", "el": "Μέσα από ένα διάσημο μνημείο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What dominates the visual identity of this Tunis episode?",
+      "el": "Τι κυριαρχεί στην οπτική ταυτότητα αυτού του επεισοδίου της Τύνιδας;"
+    },
+    "answers": [
+      { "text": { "en": "Neon lights and glass towers", "el": "Νέον φώτα και γυάλινοι πύργοι" }, "correct": false },
+      { "text": { "en": "Stone, shadow, and arches", "el": "Πέτρα, σκιά και αψίδες" }, "correct": true },
+      { "text": { "en": "Snow and pine trees", "el": "Χιόνι και πεύκα" }, "correct": false },
+      { "text": { "en": "Open water and boats", "el": "Ανοιχτό νερό και βάρκες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What kind of beauty does Tunis offer in this story?",
+      "el": "Τι είδους ομορφιά προσφέρει η Τύνιδα σε αυτή την ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Only modern luxury", "el": "Μόνο σύγχρονη πολυτέλεια" }, "correct": false },
+      { "text": { "en": "Fast-moving spectacle", "el": "Γρήγορο εντυπωσιασμό" }, "correct": false },
+      { "text": { "en": "Hidden detail and slow revelation", "el": "Κρυμμένη λεπτομέρεια και αργή αποκάλυψη" }, "correct": true },
+      { "text": { "en": "Bright beach glamour", "el": "Λαμπερή παραθαλάσσια αίγλη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What kind of place is a medina?",
+      "el": "Τι είδους τόπος είναι μια μεδίνα;"
+    },
+    "answers": [
+      { "text": { "en": "An airport terminal", "el": "Ένας τερματικός αεροδρομίου" }, "correct": false },
+      { "text": { "en": "A historic old quarter", "el": "Μια ιστορική παλιά συνοικία" }, "correct": true },
+      { "text": { "en": "A mountain pass", "el": "Ένα ορεινό πέρασμα" }, "correct": false },
+      { "text": { "en": "A train station", "el": "Ένας σιδηροδρομικός σταθμός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What does the story say about every turn in Tunis?",
+      "el": "Τι λέει η ιστορία για κάθε στροφή στην Τύνιδα;"
+    },
+    "answers": [
+      { "text": { "en": "It looked exactly the same", "el": "Έμοιαζε ακριβώς ίδια" }, "correct": false },
+      { "text": { "en": "It kept a secret for years", "el": "Κρατούσε ένα μυστικό για χρόνια" }, "correct": true },
+      { "text": { "en": "It opened to the sea", "el": "Άνοιγε προς τη θάλασσα" }, "correct": false },
+      { "text": { "en": "It was full of traffic", "el": "Ήταν γεμάτη κίνηση" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What kind of light fits the Tunis image best?",
+      "el": "Τι είδους φως ταιριάζει καλύτερα στην εικόνα της Τύνιδας;"
+    },
+    "answers": [
+      { "text": { "en": "Harsh nightclub light", "el": "Σκληρό φως νυχτερινού κλαμπ" }, "correct": false },
+      { "text": { "en": "Cool shade and soft natural light", "el": "Δροσερή σκιά και απαλό φυσικό φως" }, "correct": true },
+      { "text": { "en": "Flashing neon", "el": "Αναβοσβήνον νέον" }, "correct": false },
+      { "text": { "en": "Snow glare", "el": "Αντανάκλαση χιονιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What gives Tunis its power in this episode?",
+      "el": "Τι δίνει στην Τύνιδα τη δύναμή της σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "One famous monument", "el": "Ένα διάσημο μνημείο" }, "correct": false },
+      { "text": { "en": "Its rhythm, texture, and silence", "el": "Ο ρυθμός, η υφή και η σιωπή της" }, "correct": true },
+      { "text": { "en": "Skyscrapers and traffic", "el": "Ουρανοξύστες και κίνηση" }, "correct": false },
+      { "text": { "en": "Huge open plazas", "el": "Τεράστιες ανοιχτές πλατείες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What does Sol do in the Tunis episode?",
+      "el": "Τι κάνει η Sol στο επεισόδιο της Τύνιδας;"
+    },
+    "answers": [
+      { "text": { "en": "Drives through the city", "el": "Οδηγεί μέσα στην πόλη" }, "correct": false },
+      { "text": { "en": "Sits calmly inside the medina", "el": "Κάθεται ήρεμα μέσα στη μεδίνα" }, "correct": true },
+      { "text": { "en": "Swims near the harbor", "el": "Κολυμπά κοντά στο λιμάνι" }, "correct": false },
+      { "text": { "en": "Runs through a market", "el": "Τρέχει μέσα από μια αγορά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What does Tunis NOT rely on in this story?",
+      "el": "Σε τι ΔΕΝ βασίζεται η Τύνιδα σε αυτή την ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Texture", "el": "Υφή" }, "correct": false },
+      { "text": { "en": "Calm mystery", "el": "Ήρεμο μυστήριο" }, "correct": false },
+      { "text": { "en": "Spectacle", "el": "Θέαμα" }, "correct": true },
+      { "text": { "en": "History", "el": "Ιστορία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What relation does the city seem to have with Sol?",
+      "el": "Τι σχέση φαίνεται να έχει η πόλη με τη Sol;"
+    },
+    "answers": [
+      { "text": { "en": "It ignores her completely", "el": "Την αγνοεί εντελώς" }, "correct": false },
+      { "text": { "en": "It competes with her", "el": "Ανταγωνίζεται μαζί της" }, "correct": false },
+      { "text": { "en": "It makes room for her", "el": "Της ανοίγει χώρο" }, "correct": true },
+      { "text": { "en": "It sends her away", "el": "Τη διώχνει" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What kind of walls surround Sol in this episode?",
+      "el": "Τι είδους τοίχοι περιβάλλουν τη Sol σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Mirrored walls", "el": "Καθρεφτισμένοι τοίχοι" }, "correct": false },
+      { "text": { "en": "Worn old walls", "el": "Φθαρμένοι παλιοί τοίχοι" }, "correct": true },
+      { "text": { "en": "Painted glass walls", "el": "Βαμμένοι γυάλινοι τοίχοι" }, "correct": false },
+      { "text": { "en": "Concrete towers", "el": "Τσιμεντένιοι πύργοι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What is the best description of the Tunis palette in this episode?",
+      "el": "Ποια είναι η καλύτερη περιγραφή της παλέτας της Τύνιδας σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Warm stone and shaded neutrals", "el": "Ζεστή πέτρα και ουδέτεροι τόνοι σκιάς" }, "correct": true },
+      { "text": { "en": "Icy blue and white", "el": "Παγωμένο μπλε και λευκό" }, "correct": false },
+      { "text": { "en": "Black and neon pink", "el": "Μαύρο και νέον ροζ" }, "correct": false },
+      { "text": { "en": "Bright tropical greens", "el": "Έντονα τροπικά πράσινα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What does Sol understand immediately about Tunis?",
+      "el": "Τι καταλαβαίνει αμέσως η Sol για την Τύνιδα;"
+    },
+    "answers": [
+      { "text": { "en": "That it is all about speed", "el": "Ότι τα πάντα είναι θέμα ταχύτητας" }, "correct": false },
+      { "text": { "en": "That it reveals itself slowly", "el": "Ότι αποκαλύπτεται αργά" }, "correct": true },
+      { "text": { "en": "That it depends on sea views", "el": "Ότι βασίζεται στις θαλασσινές θέες" }, "correct": false },
+      { "text": { "en": "That it is purely modern", "el": "Ότι είναι καθαρά σύγχρονη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which statement is false for this Tunis episode?",
+      "el": "Ποια δήλωση είναι λανθασμένη για αυτό το επεισόδιο της Τύνιδας;"
+    },
+    "answers": [
+      { "text": { "en": "The setting includes arches and narrow alleys", "el": "Το σκηνικό περιλαμβάνει αψίδες και στενά σοκάκια" }, "correct": false },
+      { "text": { "en": "The mood is quiet and refined", "el": "Το mood είναι ήσυχο και εκλεπτυσμένο" }, "correct": false },
+      { "text": { "en": "The focus is a beach with open sea views", "el": "Το επίκεντρο είναι μια παραλία με ανοιχτή θέα στη θάλασσα" }, "correct": true },
+      { "text": { "en": "The medina unfolds slowly", "el": "Η μεδίνα ξεδιπλώνεται αργά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "How does Tunis finally relate to Sol in the story?",
+      "el": "Πώς σχετίζεται τελικά η Τύνιδα με τη Sol στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "As a city that hides from her", "el": "Ως μια πόλη που κρύβεται από αυτήν" }, "correct": false },
+      { "text": { "en": "As a city that quietly recognizes her presence", "el": "Ως μια πόλη που αναγνωρίζει ήσυχα την παρουσία της" }, "correct": true },
+      { "text": { "en": "As a city that overwhelms her", "el": "Ως μια πόλη που την κατακλύζει" }, "correct": false },
+      { "text": { "en": "As a city that stays unreadable", "el": "Ως μια πόλη που μένει ακατανόητη" }, "correct": false }
+    ]
+  }
+]

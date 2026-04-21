@@ -1862,5 +1862,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 49,
+  "title": "SOLadventure #49 – Tunis, medina maze & quiet arches 🏙️🕌 🇹🇳",
+  "quote": "Even the maze made room for her.",
+  "caption": "Tunis did not try to impress her. It simply opened, turn by turn. 🐾🐾🐾",
+  "image": "episodes/tunis.png",
+  "location": { "lat": 36.8065, "lng": 10.1815 },
+  "visible": true,
+  "city": "tunis",
+  "story": {
+    "en": "Tunis welcomed Sol in its own quiet way. She sat inside the medina where narrow alleys, high arches, worn stone, and carved doors held the city close around her. Nothing here needed to announce itself. The beauty of Tunis lived in its details, in the cool shade between old walls, in the texture of the streets, and in the feeling that every turn had kept a secret for years. Sol did not need a grand square or an open view. She belonged easily among places that revealed themselves slowly. The medina did not open all at once. It unfolded corner by corner, arch by arch, with the calm confidence of a city that knew exactly what it was. And somehow, in all that stone and silence, it still seemed to make room for her.",
+    "el": "Η Τύνιδα υποδέχθηκε τη Sol με τον δικό της ήσυχο τρόπο. Καθόταν μέσα στη μεδίνα, εκεί όπου τα στενά σοκάκια, οι ψηλές αψίδες, η φθαρμένη πέτρα και οι σκαλιστές πόρτες κρατούσαν την πόλη γύρω της σαν μυστικό. Τίποτα εδώ δεν χρειαζόταν να αναγγείλει τον εαυτό του. Η ομορφιά της Τύνιδας ζούσε στις λεπτομέρειες, στη δροσερή σκιά ανάμεσα στους παλιούς τοίχους, στην υφή των δρόμων και στην αίσθηση ότι κάθε στροφή κρατούσε κάτι κρυφό για χρόνια. Η Sol δεν χρειαζόταν μια μεγάλη πλατεία ούτε μια ανοιχτή θέα. Ταίριαζε φυσικά σε τόπους που αποκαλύπτονται αργά. Η μεδίνα δεν άνοιγε μονομιάς. Ξεδιπλωνόταν γωνία με γωνία, αψίδα με αψίδα, με την ήρεμη βεβαιότητα μιας πόλης που ήξερε ακριβώς τι είναι. Και κάπως έτσι, μέσα σε όλη αυτή την πέτρα και τη σιωπή, έμοιαζε πάλι να της ανοίγει χώρο."
+  },
+  "photoQuote": "Even the maze made room for her.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear inside the medina of Tunis among narrow alleys and arches?",
+        "el": "Εμφανίστηκε η Sol μέσα στη μεδίνα της Τύνιδας ανάμεσα σε στενά σοκάκια και αψίδες;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention carved doors and worn stone streets?",
+        "el": "Ανέφερε η ιστορία σκαλιστές πόρτες και φθαρμένους πέτρινους δρόμους;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did this episode take place on a beach with open sea views?",
+        "el": "Έλαβε χώρα αυτό το επεισόδιο σε παραλία με ανοιχτή θέα στη θάλασσα;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
