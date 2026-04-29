@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Cairo located?",
+      "el": "Σε ποια χώρα βρίσκεται το Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "Morocco", "el": "Μαρόκο" }, "correct": false },
+      { "text": { "en": "Egypt", "el": "Αίγυπτος" }, "correct": true },
+      { "text": { "en": "Tunisia", "el": "Τυνησία" }, "correct": false },
+      { "text": { "en": "Jordan", "el": "Ιορδανία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What landmark dominates the background of this Cairo episode?",
+      "el": "Ποιο μνημείο κυριαρχεί στο φόντο αυτού του επεισοδίου στο Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "A medieval castle", "el": "Ένα μεσαιωνικό κάστρο" }, "correct": false },
+      { "text": { "en": "A Roman amphitheater", "el": "Ένα ρωμαϊκό αμφιθέατρο" }, "correct": false },
+      { "text": { "en": "A pyramid", "el": "Μια πυραμίδα" }, "correct": true },
+      { "text": { "en": "A mountain lake", "el": "Μια ορεινή λίμνη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What kind of landscape surrounds Sol in the image?",
+      "el": "Τι είδους τοπίο περιβάλλει τη Sol στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "Desert sand", "el": "Άμμος της ερήμου" }, "correct": true },
+      { "text": { "en": "Snowy forest", "el": "Χιονισμένο δάσος" }, "correct": false },
+      { "text": { "en": "Tropical jungle", "el": "Τροπική ζούγκλα" }, "correct": false },
+      { "text": { "en": "Rocky coastline", "el": "Βραχώδης ακτή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What is the overall mood of the Cairo episode?",
+      "el": "Ποιο είναι το συνολικό mood του επεισοδίου στο Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "Loud and chaotic", "el": "Θορυβώδες και χαοτικό" }, "correct": false },
+      { "text": { "en": "Cold and distant", "el": "Κρύο και απόμακρο" }, "correct": false },
+      { "text": { "en": "Playful and neon-lit", "el": "Παιχνιδιάρικο και φωτισμένο με νέον" }, "correct": false },
+      { "text": { "en": "Ancient and majestic", "el": "Αρχαίο και μεγαλοπρεπές" }, "correct": true }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "What does the photo quote say?",
+      "el": "Τι λέει το photo quote;"
+    },
+    "answers": [
+      { "text": { "en": "The desert chose her crown.", "el": "Η έρημος διάλεξε το στέμμα της." }, "correct": false },
+      { "text": { "en": "Cairo bowed in silence.", "el": "Το Κάιρο υποκλίθηκε στη σιωπή." }, "correct": false },
+      { "text": { "en": "Ancient eyes. Royal silence.", "el": "Αρχαία μάτια. Βασιλική σιωπή." }, "correct": true },
+      { "text": { "en": "Golden sand, golden queen.", "el": "Χρυσή άμμος, χρυσή βασίλισσα." }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "What does the caption say had already spoken?",
+      "el": "Τι λέει το caption ότι είχε ήδη μιλήσει;"
+    },
+    "answers": [
+      { "text": { "en": "The wind", "el": "Ο άνεμος" }, "correct": false },
+      { "text": { "en": "The stones", "el": "Οι πέτρες" }, "correct": true },
+      { "text": { "en": "The tourists", "el": "Οι τουρίστες" }, "correct": false },
+      { "text": { "en": "The river", "el": "Το ποτάμι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "How does Sol listen in the caption?",
+      "el": "Πώς ακούει η Sol στο caption;"
+    },
+    "answers": [
+      { "text": { "en": "Like a traveler in a hurry", "el": "Σαν ταξιδιώτισσα που βιάζεται" }, "correct": false },
+      { "text": { "en": "Like a lost explorer", "el": "Σαν χαμένη εξερευνήτρια" }, "correct": false },
+      { "text": { "en": "Like a curious kitten", "el": "Σαν περίεργο γατάκι" }, "correct": false },
+      { "text": { "en": "Like royalty", "el": "Σαν βασίλισσα" }, "correct": true }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What kind of light shapes the Cairo image?",
+      "el": "Τι είδους φως διαμορφώνει την εικόνα του Καΐρου;"
+    },
+    "answers": [
+      { "text": { "en": "Warm golden desert light", "el": "Ζεστό χρυσό φως της ερήμου" }, "correct": true },
+      { "text": { "en": "Blue moonlight", "el": "Μπλε φως του φεγγαριού" }, "correct": false },
+      { "text": { "en": "Neon city light", "el": "Φως νέον της πόλης" }, "correct": false },
+      { "text": { "en": "Snow reflection", "el": "Αντανάκλαση χιονιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What is Sol doing in this episode’s image?",
+      "el": "Τι κάνει η Sol στην εικόνα αυτού του επεισοδίου;"
+    },
+    "answers": [
+      { "text": { "en": "Running through a market", "el": "Τρέχει μέσα σε μια αγορά" }, "correct": false },
+      { "text": { "en": "Sleeping inside a palace", "el": "Κοιμάται μέσα σε ένα παλάτι" }, "correct": false },
+      { "text": { "en": "Sitting calmly in front of the pyramid", "el": "Κάθεται ήρεμα μπροστά στην πυραμίδα" }, "correct": true },
+      { "text": { "en": "Sailing on the Nile", "el": "Ταξιδεύει με βάρκα στον Νείλο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What does the story describe as older than memory?",
+      "el": "Τι περιγράφει η ιστορία ως παλαιότερο από τη μνήμη;"
+    },
+    "answers": [
+      { "text": { "en": "The city noise", "el": "Ο θόρυβος της πόλης" }, "correct": false },
+      { "text": { "en": "The silence", "el": "Η σιωπή" }, "correct": true },
+      { "text": { "en": "The traffic", "el": "Η κίνηση" }, "correct": false },
+      { "text": { "en": "The skyline", "el": "Ο ορίζοντας της πόλης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "What does the title 'pharaoh’s gaze' suggest?",
+      "el": "Τι υποδηλώνει ο τίτλος 'pharaoh’s gaze';"
+    },
+    "answers": [
+      { "text": { "en": "A modern shopping mood", "el": "Μια σύγχρονη εμπορική ατμόσφαιρα" }, "correct": false },
+      { "text": { "en": "A beach holiday feeling", "el": "Μια αίσθηση καλοκαιρινών διακοπών" }, "correct": false },
+      { "text": { "en": "A snowy northern journey", "el": "Ένα χιονισμένο βόρειο ταξίδι" }, "correct": false },
+      { "text": { "en": "Ancient royal presence", "el": "Αρχαία βασιλική παρουσία" }, "correct": true }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What ancient structures are strongly connected with Giza near Cairo?",
+      "el": "Ποιες αρχαίες κατασκευές συνδέονται έντονα με τη Γκίζα κοντά στο Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "The pyramids", "el": "Οι πυραμίδες" }, "correct": true },
+      { "text": { "en": "The Eiffel Tower", "el": "Ο Πύργος του Άιφελ" }, "correct": false },
+      { "text": { "en": "The Colosseum", "el": "Το Κολοσσαίο" }, "correct": false },
+      { "text": { "en": "The Acropolis", "el": "Η Ακρόπολη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What does the story say the great stones do?",
+      "el": "Τι λέει η ιστορία ότι κάνουν οι μεγάλες πέτρες;"
+    },
+    "answers": [
+      { "text": { "en": "They collapse into the sand", "el": "Καταρρέουν στην άμμο" }, "correct": false },
+      { "text": { "en": "They glow like neon signs", "el": "Λάμπουν σαν επιγραφές νέον" }, "correct": false },
+      { "text": { "en": "They keep their watch without a word", "el": "Φυλάνε τον χρόνο χωρίς λέξη" }, "correct": true },
+      { "text": { "en": "They disappear at sunset", "el": "Εξαφανίζονται στο ηλιοβασίλεμα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What does Sol understand about some places in the story?",
+      "el": "Τι καταλαβαίνει η Sol για κάποιους τόπους στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "They need loud music", "el": "Χρειάζονται δυνατή μουσική" }, "correct": false },
+      { "text": { "en": "They do not need to explain their power", "el": "Δεν χρειάζεται να εξηγήσουν τη δύναμή τους" }, "correct": true },
+      { "text": { "en": "They must always be modern", "el": "Πρέπει πάντα να είναι σύγχρονοι" }, "correct": false },
+      { "text": { "en": "They only matter at night", "el": "Μετρούν μόνο τη νύχτα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "Which color palette best fits this Cairo episode?",
+      "el": "Ποια χρωματική παλέτα ταιριάζει καλύτερα σε αυτό το επεισόδιο στο Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "Icy blue and silver", "el": "Παγωμένο μπλε και ασημί" }, "correct": false },
+      { "text": { "en": "Neon pink and black", "el": "Νέον ροζ και μαύρο" }, "correct": false },
+      { "text": { "en": "Rainy grey and green", "el": "Βροχερό γκρι και πράσινο" }, "correct": false },
+      { "text": { "en": "Sand, gold, and warm stone", "el": "Άμμος, χρυσό και ζεστή πέτρα" }, "correct": true }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What does Cairo place behind Sol in the story?",
+      "el": "Τι βάζει το Κάιρο πίσω από τη Sol στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "History", "el": "Την ιστορία" }, "correct": true },
+      { "text": { "en": "A busy train station", "el": "Έναν πολυσύχναστο σταθμό τρένων" }, "correct": false },
+      { "text": { "en": "A frozen lake", "el": "Μια παγωμένη λίμνη" }, "correct": false },
+      { "text": { "en": "A tropical garden", "el": "Έναν τροπικό κήπο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What natural element is strongly present in the image foreground?",
+      "el": "Ποιο φυσικό στοιχείο είναι έντονα παρόν στο μπροστινό μέρος της εικόνας;"
+    },
+    "answers": [
+      { "text": { "en": "Snow", "el": "Χιόνι" }, "correct": false },
+      { "text": { "en": "Rainwater", "el": "Νερό βροχής" }, "correct": false },
+      { "text": { "en": "Sand", "el": "Άμμος" }, "correct": true },
+      { "text": { "en": "Grass", "el": "Γρασίδι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What does the story say stretched across the sand?",
+      "el": "Τι λέει η ιστορία ότι απλώθηκε στην άμμο;"
+    },
+    "answers": [
+      { "text": { "en": "Flowers", "el": "Λουλούδια" }, "correct": false },
+      { "text": { "en": "Shadows", "el": "Σκιές" }, "correct": true },
+      { "text": { "en": "Boats", "el": "Βάρκες" }, "correct": false },
+      { "text": { "en": "Snowflakes", "el": "Νιφάδες χιονιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "What is the best description of Sol’s pose in the Cairo image?",
+      "el": "Ποια είναι η καλύτερη περιγραφή της στάσης της Sol στην εικόνα του Καΐρου;"
+    },
+    "answers": [
+      { "text": { "en": "Rushed and nervous", "el": "Βιαστική και νευρική" }, "correct": false },
+      { "text": { "en": "Hidden and afraid", "el": "Κρυμμένη και φοβισμένη" }, "correct": false },
+      { "text": { "en": "Playful and jumping", "el": "Παιχνιδιάρικη και πηδηχτή" }, "correct": false },
+      { "text": { "en": "Calm and royal", "el": "Ήρεμη και βασιλική" }, "correct": true }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "Which statement is false for this Cairo episode?",
+      "el": "Ποια δήλωση είναι λανθασμένη για αυτό το επεισόδιο στο Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "The episode takes place in a snowy mountain village", "el": "Το επεισόδιο διαδραματίζεται σε ένα χιονισμένο ορεινό χωριό" }, "correct": true },
+      { "text": { "en": "The image includes desert sand", "el": "Η εικόνα περιλαμβάνει άμμο της ερήμου" }, "correct": false },
+      { "text": { "en": "The background includes a pyramid", "el": "Το φόντο περιλαμβάνει μια πυραμίδα" }, "correct": false },
+      { "text": { "en": "The mood is ancient and royal", "el": "Το mood είναι αρχαίο και βασιλικό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What does the Cairo story NOT focus on?",
+      "el": "Σε τι ΔΕΝ εστιάζει η ιστορία του Καΐρου;"
+    },
+    "answers": [
+      { "text": { "en": "Ancient stone", "el": "Αρχαία πέτρα" }, "correct": false },
+      { "text": { "en": "Golden sand", "el": "Χρυσή άμμος" }, "correct": false },
+      { "text": { "en": "Modern glass towers", "el": "Σύγχρονοι γυάλινοι πύργοι" }, "correct": true },
+      { "text": { "en": "Royal silence", "el": "Βασιλική σιωπή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "What famous ancient civilization is evoked by this episode?",
+      "el": "Ποιος διάσημος αρχαίος πολιτισμός ανακαλείται από αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Ancient Roman", "el": "Αρχαίος ρωμαϊκός" }, "correct": false },
+      { "text": { "en": "Ancient Egyptian", "el": "Αρχαίος αιγυπτιακός" }, "correct": true },
+      { "text": { "en": "Ancient Viking", "el": "Αρχαίος βίκινγκ" }, "correct": false },
+      { "text": { "en": "Ancient Incan", "el": "Αρχαίος ίνκας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "What feeling does the phrase 'Royal silence' create?",
+      "el": "Τι αίσθηση δημιουργεί η φράση 'Royal silence';"
+    },
+    "answers": [
+      { "text": { "en": "Noise and confusion", "el": "Θόρυβο και σύγχυση" }, "correct": false },
+      { "text": { "en": "Comedy and chaos", "el": "Κωμωδία και χάος" }, "correct": false },
+      { "text": { "en": "Dignity and calm power", "el": "Αξιοπρέπεια και ήρεμη δύναμη" }, "correct": true },
+      { "text": { "en": "Speed and panic", "el": "Ταχύτητα και πανικό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What is the role of the pyramid in the image?",
+      "el": "Ποιος είναι ο ρόλος της πυραμίδας στην εικόνα;"
+    },
+    "answers": [
+      { "text": { "en": "It is a small hidden detail", "el": "Είναι μια μικρή κρυφή λεπτομέρεια" }, "correct": false },
+      { "text": { "en": "It provides the main historical background", "el": "Δίνει το βασικό ιστορικό φόντο" }, "correct": true },
+      { "text": { "en": "It appears only as text", "el": "Εμφανίζεται μόνο ως κείμενο" }, "correct": false },
+      { "text": { "en": "It is not visible at all", "el": "Δεν είναι καθόλου ορατή" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "How does this episode connect Sol with Cairo?",
+      "el": "Πώς συνδέει αυτό το επεισόδιο τη Sol με το Κάιρο;"
+    },
+    "answers": [
+      { "text": { "en": "As a visitor who ignores the place", "el": "Ως επισκέπτρια που αγνοεί τον τόπο" }, "correct": false },
+      { "text": { "en": "As a tourist lost in traffic", "el": "Ως τουρίστρια χαμένη στην κίνηση" }, "correct": false },
+      { "text": { "en": "As a queen listening to ancient history", "el": "Ως βασίλισσα που ακούει την αρχαία ιστορία" }, "correct": true },
+      { "text": { "en": "As a cat hiding from the desert", "el": "Ως γάτα που κρύβεται από την έρημο" }, "correct": false }
+    ]
+  }
+]

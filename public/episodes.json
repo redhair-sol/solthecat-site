@@ -1900,5 +1900,43 @@
       "answer": false
     }
   ]
+},
+{
+  "id": 50,
+  "title": "SOLadventure #50 – Cairo, pharaoh’s gaze 🏺 🇪🇬",
+  "quote": "Ancient eyes. Royal silence.",
+  "caption": "The stones had already spoken, and Sol listened like royalty. 🐾🐾🐾",
+  "image": "episodes/cairo.png",
+  "location": { "lat": 30.0444, "lng": 31.2357 },
+  "visible": true,
+  "city": "cairo",
+  "story": {
+    "en": "Cairo welcomed Sol with golden sand, ancient stone, and a silence that felt older than memory. She sat before the pyramids as the desert light softened around her, calm and certain, as if the whole horizon had been waiting for her arrival. Nothing moved quickly here. The sun lowered slowly, the shadows stretched across the sand, and the great stones kept their watch without a word. Sol looked upward with the quiet confidence of a queen who understood that some places do not need to explain their power. Cairo did not ask her to pose. It simply placed history behind her and let the moment speak. Among footprints, warm wind, and royal silence, Sol became part of the gaze that never fades.",
+    "el": "Το Κάιρο υποδέχθηκε τη Sol με χρυσή άμμο, αρχαία πέτρα και μια σιωπή που έμοιαζε παλαιότερη από τη μνήμη. Κάθισε μπροστά στις πυραμίδες, καθώς το φως της ερήμου μαλάκωνε γύρω της, ήρεμη και σίγουρη, σαν να την περίμενε ολόκληρος ο ορίζοντας. Τίποτα εδώ δεν κινούνταν βιαστικά. Ο ήλιος χαμήλωνε αργά, οι σκιές απλώνονταν στην άμμο και οι μεγάλες πέτρες φύλαγαν τον χρόνο χωρίς λέξη. Η Sol κοίταξε ψηλά με την ήσυχη αυτοπεποίθηση μιας βασίλισσας που καταλαβαίνει πως κάποιοι τόποι δεν χρειάζεται να εξηγήσουν τη δύναμή τους. Το Κάιρο δεν της ζήτησε να ποζάρει. Απλώς έβαλε την ιστορία πίσω της και άφησε τη στιγμή να μιλήσει. Ανάμεσα σε πατημασιές, ζεστό άνεμο και βασιλική σιωπή, η Sol έγινε μέρος ενός βλέμματος που δεν σβήνει ποτέ."
+  },
+  "photoQuote": "Ancient eyes. Royal silence.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear near the pyramids in Cairo?",
+        "el": "Εμφανίστηκε η Sol κοντά στις πυραμίδες στο Κάιρο;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story describe golden sand, ancient stone, and desert light?",
+        "el": "Περιέγραψε η ιστορία χρυσή άμμο, αρχαία πέτρα και φως της ερήμου;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did this episode take place in a snowy mountain village?",
+        "el": "Έλαβε χώρα αυτό το επεισόδιο σε ένα χιονισμένο ορεινό χωριό;"
+      },
+      "answer": false
+    }
+  ]
 }
  ]
