@@ -85,29 +85,18 @@ export default function Home() {
   const [mode, setMode] = useState("mood");
   const [isLive, setIsLive] = useState(false);
 
-  // In dev, fetch via Vite proxy (same-origin) to avoid CORS spam.
-  // In prod, solthecat.com → solcam.solthecat.com is same-site.
-  const streamURL = import.meta.env.DEV
-    ? "/solcam-check"
-    : "https://solcam.solthecat.com/solcam/index.m3u8";
-
-  // Dev: opt-in via ?check-stream=1 (else skip to keep console clean
-  // when the stream is offline — same 5xx errors would otherwise flood every 5s).
-  const streamCheckEnabled =
-    !import.meta.env.DEV ||
-    (typeof window !== "undefined" &&
-      new URLSearchParams(window.location.search).has("check-stream"));
-
+  // Same-origin endpoint backed by functions/solcam-check.js (prod) and a
+  // matching Vite middleware (dev). Always returns { live: boolean }, status 200.
   const checkStream = async () => {
-    if (!streamCheckEnabled) {
-      setIsLive(false);
-      return;
-    }
     try {
-      const res = await fetch(`${streamURL}?t=${Date.now()}`);
-      setIsLive(res.status === 200);
-    } catch (err) {
-      // Polled every 5s; avoid console spam on persistent offline state.
+      const res = await fetch(`/solcam-check?t=${Date.now()}`);
+      if (!res.ok) {
+        setIsLive(false);
+        return;
+      }
+      const data = await res.json();
+      setIsLive(data.live === true);
+    } catch {
       setIsLive(false);
     }
   };

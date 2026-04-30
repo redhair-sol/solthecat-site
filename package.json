@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://redhair-sol.github.io/solthecat-site/",
+  "homepage": "https://solthecat.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
