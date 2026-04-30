@@ -24,6 +24,11 @@
   <meta name="twitter:image" content="https://solthecat.com/icons/sol-preview.png" />
 
   <!-- ✅ Structured Data -->
+  <!-- ⚠️ CSP NOTE: the 3 JSON-LD blocks below are pinned by SHA256 hash in
+       public/_headers (script-src directive). If you edit any of their
+       contents (even whitespace), the browser will block them silently and
+       crawlers lose structured data. Recompute hashes and update _headers:
+       node -e 'const fs=require("fs"),c=require("crypto"),h=fs.readFileSync("index.html","utf8");for(const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g))console.log("sha256-"+c.createHash("sha256").update(m[1]).digest("base64"));' -->
   <!-- Organization schema -->
   <script type="application/ld+json">
     {

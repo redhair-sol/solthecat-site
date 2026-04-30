@@ -4,7 +4,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://solcam.solthecat.com https://cloudflareinsights.com https://*.cloudflareinsights.com; frame-src https://docs.google.com; media-src 'self' https://solcam.solthecat.com blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://docs.google.com
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-eEQAWFK24co38avejUWDTQdQJJG/lSrr55ByEkmO/WY=' 'sha256-h6m11rTYITmlfJAgJWqoLnWCK/xpG/fGFIx0qQw4nP8=' 'sha256-OnW0VALQnyxUcNtltJyEKVwik3qH7fjqfJmeaoXDC8U=' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://solcam.solthecat.com https://cloudflareinsights.com https://*.cloudflareinsights.com; frame-src https://docs.google.com; media-src 'self' https://solcam.solthecat.com blob:; object-src 'none'; base-uri 'self'; form-action 'self' https://docs.google.com
 
 /sitemap.xml
   Content-Type: application/xml
