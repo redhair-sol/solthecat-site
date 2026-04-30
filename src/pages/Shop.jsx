@@ -84,15 +84,36 @@ const StatusLabel = styled.span`
   color: #333;
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 export default function Shop() {
   const [products, setProducts] = useState([]);
+  const [loadError, setLoadError] = useState(false);
   const { language } = useLanguage();
 
   useEffect(() => {
     fetch("/data/products.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error("Failed to load products:", err));
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((data) => {
+        setProducts(data);
+        setLoadError(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load products:", err);
+        setLoadError(true);
+      });
   }, []);
 
   return (
@@ -121,6 +142,14 @@ export default function Shop() {
             ? "Every feline deserves treats"
             : "Κάθε γάτα αξίζει λιχουδιές"}
         </Subtitle>
+
+        {loadError && (
+          <ErrorBox role="alert">
+            {language === "en"
+              ? "Couldn't load products. Please try refreshing the page."
+              : "Δεν φόρτωσαν τα προϊόντα. Παρακαλώ δοκίμασε refresh."}
+          </ErrorBox>
+        )}
 
         <ProductGrid>
           {products.map((product) => (

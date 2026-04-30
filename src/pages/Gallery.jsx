@@ -108,20 +108,39 @@ const Tile = styled.div`
   }
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 export default function GalleryPage() {
   const [episodes, setEpisodes] = useState([]);
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const [loadError, setLoadError] = useState(false);
   const { language } = useLanguage();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data) => {
         const visibleEpisodes = data.filter((ep) => ep.visible);
         setEpisodes(visibleEpisodes);
+        setLoadError(false);
       })
-      .catch((err) => console.error("Failed to load episodes:", err));
+      .catch((err) => {
+        console.error("Failed to load episodes:", err);
+        setLoadError(true);
+      });
   }, []);
 
   useEffect(() => {
@@ -161,6 +180,14 @@ export default function GalleryPage() {
             ? "Μια ματιά από κάθε της στάση"
             : "A glimpse from every royal stop"}
         </Subheading>
+
+        {loadError && (
+          <ErrorBox role="alert">
+            {language === "el"
+              ? "Δεν φόρτωσε η συλλογή. Παρακαλώ δοκίμασε refresh."
+              : "Couldn't load the gallery. Please try refreshing the page."}
+          </ErrorBox>
+        )}
 
         <Grid>
           {episodes.map((ep, i) => {

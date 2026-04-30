@@ -85,13 +85,29 @@ export default function Home() {
   const [mode, setMode] = useState("mood");
   const [isLive, setIsLive] = useState(false);
 
-  const streamURL = "https://solcam.solthecat.com/solcam/index.m3u8";
+  // In dev, fetch via Vite proxy (same-origin) to avoid CORS spam.
+  // In prod, solthecat.com → solcam.solthecat.com is same-site.
+  const streamURL = import.meta.env.DEV
+    ? "/solcam-check"
+    : "https://solcam.solthecat.com/solcam/index.m3u8";
+
+  // Dev: opt-in via ?check-stream=1 (else skip to keep console clean
+  // when the stream is offline — same 5xx errors would otherwise flood every 5s).
+  const streamCheckEnabled =
+    !import.meta.env.DEV ||
+    (typeof window !== "undefined" &&
+      new URLSearchParams(window.location.search).has("check-stream"));
 
   const checkStream = async () => {
+    if (!streamCheckEnabled) {
+      setIsLive(false);
+      return;
+    }
     try {
       const res = await fetch(`${streamURL}?t=${Date.now()}`);
       setIsLive(res.status === 200);
-    } catch {
+    } catch (err) {
+      // Polled every 5s; avoid console spam on persistent offline state.
       setIsLive(false);
     }
   };
@@ -135,7 +151,10 @@ export default function Home() {
         : "/data/smartQuotes.json";
 
     fetch(file)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data) => {
         const options =
           mode === "fortune"
@@ -152,6 +171,14 @@ export default function Home() {
             (language === "el"
               ? "Η Sol ξεκουράζεται βασιλικά σήμερα. 🐾"
               : "Sol is taking a royal pause today. 🐾")
+        );
+      })
+      .catch((err) => {
+        console.error("Failed to load daily quote:", err);
+        setQuote(
+          language === "el"
+            ? "Η Sol ξεκουράζεται βασιλικά σήμερα. 🐾"
+            : "Sol is taking a royal pause today. 🐾"
         );
       });
   }, [language, mode]);

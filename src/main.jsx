@@ -23,6 +23,7 @@ const QuizPlayer = lazy(() => import("./pages/QuizPlayer.jsx"));
 const RoyalPuzzleGame = lazy(() => import("./pages/RoyalPuzzleGame.jsx"));
 const SolSnap = lazy(() => import("./pages/SolSnap.jsx"));
 const SolCam = lazy(() => import("./pages/SolCam.jsx"));
+const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -50,8 +51,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="games/royalpuzzle" element={<RoyalPuzzleGame />} />
                 <Route path="games/solsnap" element={<SolSnap />} />
 				
-                {/* Custom 404 (προαιρετικό) */}
-                {/* <Route path="*" element={<NotFound />} /> */}
+                {/* Custom 404 */}
+                <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
           </Suspense>

@@ -73,13 +73,28 @@ const StoryTitle = styled.h3`
   color: #6a1b9a;
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
+  const [loadError, setLoadError] = useState(false);
   const { language } = useLanguage();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data) => {
         const visibleEpisodes = data.filter((ep) => ep.visible);
         const nextNumber = visibleEpisodes.length + 1;
@@ -102,8 +117,12 @@ export default function Episodes() {
 
         visibleEpisodes.push(teaser);
         setEpisodes(visibleEpisodes);
+        setLoadError(false);
       })
-      .catch((err) => console.error("Failed to load episodes:", err));
+      .catch((err) => {
+        console.error("Failed to load episodes:", err);
+        setLoadError(true);
+      });
   }, []);
 
   return (
@@ -128,6 +147,14 @@ export default function Episodes() {
               : "Follow the pawprints of royalty"}
           </Subheading>
         </TopSection>
+
+        {loadError && (
+          <ErrorBox role="alert">
+            {language === "el"
+              ? "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh."
+              : "Couldn't load episodes. Please try refreshing the page."}
+          </ErrorBox>
+        )}
 
         {episodes.map((ep) => (
           <EpisodeCard key={ep.id}>

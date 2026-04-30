@@ -47,6 +47,17 @@ const Subheading = styled.p`
   margin-bottom: 1.5rem;
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 function SetViewOnLastLocation({ position, route }) {
   const map = useMap();
   useEffect(() => {
@@ -61,17 +72,25 @@ function SetViewOnLastLocation({ position, route }) {
 
 export default function SolsJourney() {
   const [episodes, setEpisodes] = useState([]);
+  const [loadError, setLoadError] = useState(false);
   const { language } = useLanguage();
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
       .then((data) => {
         const visible = data.filter((ep) => ep.visible && ep.location);
         visible.sort((a, b) => a.id - b.id);
         setEpisodes(visible);
+        setLoadError(false);
       })
-      .catch((err) => console.error("Failed to load episodes:", err));
+      .catch((err) => {
+        console.error("Failed to load episodes:", err);
+        setLoadError(true);
+      });
   }, []);
 
   const route = episodes.map((ep) => [ep.location.lat, ep.location.lng]);
@@ -107,6 +126,14 @@ export default function SolsJourney() {
             ? `Current Location: ${currentTitle}`
             : `Τρέχουσα Τοποθεσία: ${currentTitle}`}
         </Subheading>
+
+        {loadError && (
+          <ErrorBox role="alert">
+            {language === "el"
+              ? "Δεν φόρτωσε ο χάρτης. Παρακαλώ δοκίμασε refresh."
+              : "Couldn't load the map data. Please try refreshing the page."}
+          </ErrorBox>
+        )}
 
         {route.length > 0 && (
           <MapWrapper>

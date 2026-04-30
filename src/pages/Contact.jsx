@@ -97,6 +97,8 @@ export default function Contact() {
           src={forms[language]}
           title="Contact Form"
           loading="lazy"
+          sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+          referrerPolicy="no-referrer-when-downgrade"
         >
           {language === "en" ? "Contact form" : "Φόρμα επικοινωνίας"}
         </iframe>
