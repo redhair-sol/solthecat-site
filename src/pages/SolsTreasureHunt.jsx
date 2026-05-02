@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { Link } from "react-router-dom";
+import { celebrate } from "../utils/celebrate.js";
+import SolButton from "../components/SolButton.jsx";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -83,6 +85,7 @@ export default function SolsTreasureHunt() {
       description: "Sol hid 3 royal treasures in this area. Can you find them all?",
       back: "← Back to games",
       done: "🎉 Well done! You found all the treasures!",
+      playAgain: "🔁 Play Again",
     },
     el: {
       pageTitle: "Κυνήγι Θησαυρού της Sol – SolTheCat",
@@ -91,6 +94,7 @@ export default function SolsTreasureHunt() {
       description: "Η Sol έκρυψε 3 βασιλικούς θησαυρούς εδώ. Μπορείς να τους βρεις όλους;",
       back: "← Επιστροφή στα παιχνίδια",
       done: "🎉 Μπράβο! Βρήκες όλους τους θησαυρούς!",
+      playAgain: "🔁 Παίξε Ξανά",
     },
   }[language];
 
@@ -125,7 +129,17 @@ export default function SolsTreasureHunt() {
 
   const handleFind = (id) => {
     setItems((prev) => prev.filter((item) => item.id !== id));
-    setFound((prev) => prev + 1);
+    setFound((prev) => {
+      const next = prev + 1;
+      if (next === 3) celebrate();
+      return next;
+    });
+  };
+
+  const playAgain = () => {
+    if (!episodes.length) return;
+    const random = episodes[Math.floor(Math.random() * episodes.length)];
+    setSelectedEpisode(random);
   };
 
   const bg = selectedEpisode
@@ -160,6 +174,12 @@ export default function SolsTreasureHunt() {
         </TreasureArea>
 
         <Info>{found === 3 ? t.done : `${found} / 3`}</Info>
+
+        {found === 3 && (
+          <SolButton as="button" onClick={playAgain}>
+            {t.playAgain}
+          </SolButton>
+        )}
 
         <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>

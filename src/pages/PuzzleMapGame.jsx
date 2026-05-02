@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { celebrate } from "../utils/celebrate.js";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -204,6 +205,7 @@ export default function PuzzleMapGame() {
       sol.splice(e, 1);
       if (chk.every((v, i) => v === sol[i])) {
         setIsSolved(true);
+        celebrate();
       }
     }
   };

@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import SolButton from "../components/SolButton.jsx";
 import useStreakBadges from "../hooks/useStreakBadges";
 
 // ----- LIVE BADGE -----
@@ -36,19 +37,22 @@ const LiveDot = styled.div`
   }
 `;
 
-const JourneyButton = styled(Link)`
-  padding: 0.8rem 1.5rem;
-  background-color: #c187d8;
-  color: white;
+const LiveBadgeLink = styled(Link)`
+  position: absolute;
+  top: 18px;
+  right: 18px;
   text-decoration: none;
-  border-radius: 16px;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 1.5rem;
-  transition: transform 0.2s ease-in-out;
+  z-index: 9999;
 
-  &:hover {
-    transform: scale(1.05);
+  @media (max-width: 768px) {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
+
+  @media (max-width: 360px) {
+    top: 30px;
   }
 `;
 
@@ -73,6 +77,135 @@ const ToggleButton = styled.button`
   justify-content: center;
   gap: 0.4rem;
   font-weight: 500;
+`;
+
+const HeroTagline = styled.h2`
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  color: #4a005f;
+  font-style: italic;
+  margin: 1.2rem 0;
+`;
+
+const Flair = styled.p`
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #6a1b9a;
+  margin-bottom: 2rem;
+`;
+
+const Bio = styled.p`
+  max-width: 600px;
+  margin: 0 auto 0.5rem;
+  padding: 0 1rem;
+  color: #5b2b7b;
+  font-size: 1rem;
+  line-height: 1.6;
+`;
+
+const QuoteBox = styled(motion.div)`
+  background-color: #fff3f8;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  margin-top: 1.6rem;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+`;
+
+const QuoteTitle = styled.h3`
+  font-size: 1.3rem;
+  color: #8e24aa;
+  margin-bottom: 0.5rem;
+`;
+
+const QuoteText = styled.p`
+  font-style: italic;
+  color: #6a1b9a;
+`;
+
+const BadgeBox = styled(motion.div)`
+  background-color: #fff3f8;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-top: 1.6rem;
+`;
+
+const BadgeIntro = styled.p`
+  color: #5b2b7b;
+`;
+
+const BadgeName = styled.p`
+  font-size: 1.1rem;
+  color: #8e24aa;
+  font-weight: 600;
+`;
+
+const BadgeDesc = styled.p`
+  color: #6a1b9a;
+`;
+
+const StreakText = styled.p`
+  color: #5b2b7b;
+  margin-top: 0.5rem;
+`;
+
+const UnlockedText = styled.p`
+  color: #4a005f;
+  margin-top: 0.5rem;
+`;
+
+const GamesCard = styled(motion.div)`
+  background-color: #f8bbd0;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  margin-top: 1.6rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+`;
+
+const GamesTitle = styled.h3`
+  color: #6a1b9a;
+  font-size: 1.5rem;
+  font-weight: 700;
+`;
+
+const GamesText = styled.p`
+  color: #4a005f;
+  margin-bottom: 1.2rem;
+`;
+
+const GamesCTA = styled(Link)`
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #c187d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-weight: bold;
+`;
+
+const InstagramLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  color: #c187d8;
+  margin-top: 1.6rem;
+  text-decoration: none;
+`;
+
+const InstagramIcon = styled.img`
+  width: 20px;
+  height: 20px;
+  margin-right: 0.4rem;
+`;
+
+const RelativePageContainer = styled(PageContainer)`
+  position: relative;
 `;
 
 export default function Home() {
@@ -217,49 +350,18 @@ export default function Home() {
         {hasSearchParam && <meta name="robots" content="noindex, follow" />}
       </Helmet>
 
-      {/* LIVE BADGE POSITION FIX */}
-      <style>
-        {`
-          @media (max-width: 768px) {
-            .live-badge-link {
-              top: 10px !important;
-              left: 50% !important;
-              transform: translateX(-50%) !important;
-              right: auto !important;
-            }
-          }
-
-          @media (max-width: 360px) {
-            .live-badge-link {
-              top: 30px !important;
-            }
-          }
-        `}
-      </style>
-
-      <PageContainer
-        style={{ position: "relative" }}
+      <RelativePageContainer
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
 
         {isLive && (
-          <Link
-            to="/solcam"
-            className="live-badge-link"
-            style={{
-              position: "absolute",
-              top: "18px",
-              right: "18px",
-              textDecoration: "none",
-              zIndex: 9999,
-            }}
-          >
+          <LiveBadgeLink to="/solcam">
             <LiveBadge>
               <LiveDot /> LIVE
             </LiveBadge>
-          </Link>
+          </LiveBadgeLink>
         )}
 
         {/* LANGUAGE */}
@@ -272,47 +374,13 @@ export default function Home() {
           </ToggleButton>
         </LanguageToggle>
 
-        {/* TITLE */}
-        <h2
-          style={{
-            fontSize: "1.8rem",
-            fontWeight: 600,
-            fontFamily: "'Playfair Display', serif",
-            color: "#4a005f",
-            fontStyle: "italic",
-            margin: "1.2rem 0",
-          }}
-        >
-          {t.title}
-        </h2>
-
-        <p
-          style={{
-            fontSize: "1.3rem",
-            fontStyle: "italic",
-            color: "#6a1b9a",
-            marginBottom: "2rem",
-          }}
-        >
-          {t.flair}
-        </p>
-
-        <p
-          style={{
-            maxWidth: "600px",
-            margin: "0 auto 0.5rem",
-            padding: "0 1rem",
-            color: "#5b2b7b",
-            fontSize: "1rem",
-            lineHeight: "1.6",
-          }}
-        >
-          {t.bio}
-        </p>
+        <HeroTagline>{t.title}</HeroTagline>
+        <Flair>{t.flair}</Flair>
+        <Bio>{t.bio}</Bio>
 
         {/* JOURNEY BUTTON */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-          <JourneyButton to="/episodes">{t.viewJourney}</JourneyButton>
+          <SolButton to="/episodes">{t.viewJourney}</SolButton>
         </motion.div>
 
         {/* QUOTE TOGGLE */}
@@ -327,123 +395,66 @@ export default function Home() {
 
         {/* QUOTE BOX */}
         {quote && (
-          <motion.div
+          <QuoteBox
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            style={{
-              backgroundColor: "#fff3f8",
-              padding: "1.2rem",
-              borderRadius: "1.5rem",
-              marginTop: "1.6rem",
-              maxWidth: "600px",
-              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-              textAlign: "center",
-            }}
           >
-            <h3 style={{ fontSize: "1.3rem", color: "#8e24aa", marginBottom: "0.5rem" }}>
-              {t.quoteTitle}
-            </h3>
-            <p style={{ fontStyle: "italic", color: "#6a1b9a" }}>{quote}</p>
-          </motion.div>
+            <QuoteTitle>{t.quoteTitle}</QuoteTitle>
+            <QuoteText>{quote}</QuoteText>
+          </QuoteBox>
         )}
 
         {/* BADGE */}
         {currentBadge && (
-          <motion.div
+          <BadgeBox
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            style={{
-              backgroundColor: "#fff3f8",
-              padding: "1rem",
-              borderRadius: "1.5rem",
-              maxWidth: "600px",
-              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
-              textAlign: "center",
-              marginTop: "1.6rem",
-            }}
           >
-            <p style={{ color: "#5b2b7b" }}>
+            <BadgeIntro>
               {language === "en"
                 ? "Your loyalty badge shows how many days you’ve walked the royal path with Sol."
                 : "Το badge πίστης σου δείχνει πόσες μέρες ακολουθείς το βασιλικό μονοπάτι με τη Sol."}
-            </p>
+            </BadgeIntro>
 
-            <p style={{ fontSize: "1.1rem", color: "#8e24aa", fontWeight: 600 }}>
+            <BadgeName>
               {currentBadge.emoji} {currentBadge.name[language]}
-            </p>
+            </BadgeName>
 
-            <p style={{ color: "#6a1b9a" }}>{currentBadge.description[language]}</p>
+            <BadgeDesc>{currentBadge.description[language]}</BadgeDesc>
 
-            <p style={{ color: "#5b2b7b", marginTop: "0.5rem" }}>
+            <StreakText>
               Visit Streak: {streak} day{streak > 1 ? "s" : ""}
-            </p>
+            </StreakText>
 
             {unlockedToday && (
-              <p style={{ color: "#4a005f", marginTop: "0.5rem" }}>
-                🎉 New Badge Unlocked Today!
-              </p>
+              <UnlockedText>🎉 New Badge Unlocked Today!</UnlockedText>
             )}
-          </motion.div>
+          </BadgeBox>
         )}
 
         {/* GAMES */}
-        <motion.div
+        <GamesCard
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
-          style={{
-            backgroundColor: "#f8bbd0",
-            padding: "1.5rem",
-            borderRadius: "1.5rem",
-            maxWidth: "600px",
-            marginTop: "1.6rem",
-            textAlign: "center",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-          }}
         >
-          <h3 style={{ color: "#6a1b9a", fontSize: "1.5rem", fontWeight: 700 }}>
-            {t.gamesTitle}
-          </h3>
-          <p style={{ color: "#4a005f", marginBottom: "1.2rem" }}>{t.gamesText}</p>
-          <Link
-            to="/games"
-            style={{
-              display: "inline-block",
-              padding: "0.6rem 1.2rem",
-              backgroundColor: "#c187d8",
-              color: "white",
-              textDecoration: "none",
-              borderRadius: "1rem",
-              fontWeight: "bold",
-            }}
-          >
-            {t.gamesCTA}
-          </Link>
-        </motion.div>
+          <GamesTitle>{t.gamesTitle}</GamesTitle>
+          <GamesText>{t.gamesText}</GamesText>
+          <GamesCTA to="/games">{t.gamesCTA}</GamesCTA>
+        </GamesCard>
 
         {/* INSTAGRAM */}
-        <a
+        <InstagramLink
           href="https://www.instagram.com/solthecat01/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            color: "#c187d8",
-            marginTop: "1.6rem",
-            textDecoration: "none",
-          }}
         >
-          <img
-            src="/icons/instagram-icon.png"
-            alt="Instagram"
-            style={{ width: "20px", height: "20px", marginRight: "0.4rem" }}
-          />
+          <InstagramIcon src="/icons/instagram-icon.png" alt="Instagram" />
           {t.instagram}
-        </a>
-      </PageContainer>
+        </InstagramLink>
+      </RelativePageContainer>
     </>
   );
 }

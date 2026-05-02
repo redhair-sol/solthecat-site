@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import confetti from "canvas-confetti";
+import { celebrate } from "../utils/celebrate.js";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 
@@ -184,12 +184,7 @@ export default function PawprintsGame() {
   useEffect(() => {
     if (matched.length === cards.length && cards.length > 0) {
       setWon(true);
-      confetti({
-        particleCount: 150,
-        spread: 100,
-        origin: { y: 0.6 },
-        zIndex: 9999,
-      });
+      celebrate();
     }
   }, [matched, cards]);
 

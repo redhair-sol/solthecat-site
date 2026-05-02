@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { celebrate } from "../utils/celebrate.js";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -154,6 +155,7 @@ export default function QuizPlayer() {
       quizUrl: "https://solthecat.com/games/cityquiz",
       back: "← Back to games",
       scoreText: (s, total) => `🎉 You got ${s} out of ${total} correct!`,
+      playAgain: "🔁 Play Again",
       errLoadEpisodes: "Failed to load episodes.",
       errLoadQuiz: "Quiz file not found or invalid.",
       dropdownLabel: (title) => title,
@@ -166,6 +168,7 @@ export default function QuizPlayer() {
       quizUrl: "https://solthecat.com/games/cityquiz",
       back: "← Επιστροφή στα παιχνίδια",
       scoreText: (s, total) => `🎉 Είχες ${s} σωστές από ${total}!`,
+      playAgain: "🔁 Παίξε Ξανά",
       errLoadEpisodes: "Αποτυχία φόρτωσης επεισοδίων.",
       errLoadQuiz: "Το αρχείο quiz δεν βρέθηκε ή δεν είναι έγκυρο.",
       dropdownLabel: (title) => title,
@@ -232,6 +235,7 @@ export default function QuizPlayer() {
         setSelectedAnswer(null);
       } else {
         setShowResults(true);
+        celebrate();
       }
     }, 1000);
   };
@@ -299,7 +303,12 @@ export default function QuizPlayer() {
           </QuestionCard>
         )}
 
-        {showResults && <ScoreText>{t.scoreText(score, questions.length)}</ScoreText>}
+        {showResults && (
+          <>
+            <ScoreText>{t.scoreText(score, questions.length)}</ScoreText>
+            <StyledButton onClick={loadQuiz}>{t.playAgain}</StyledButton>
+          </>
+        )}
 
         <BackLink to="/games">{t.back}</BackLink>
       </PageContainer>

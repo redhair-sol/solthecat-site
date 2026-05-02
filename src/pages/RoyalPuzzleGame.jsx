@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import SolButton from "../components/SolButton.jsx";
+import { celebrate } from "../utils/celebrate.js";
 
 // ✅ Styled Components
 const Title = styled.h1`
@@ -98,6 +99,8 @@ export default function RoyalPuzzleGame() {
       back: "← Back to games",
       download: "⬇️ Download Puzzle",
       best: "🏆 Best Time: ",
+      solvedMessage: "🎉 Royal Puzzle Solved!",
+      playAgain: "🔁 Play Again",
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
@@ -107,6 +110,8 @@ export default function RoyalPuzzleGame() {
       back: "← Επιστροφή στα παιχνίδια",
       download: "⬇️ Κατέβασε το Παζλ",
       best: "🏆 Καλύτερος Χρόνος: ",
+      solvedMessage: "🎉 Λύθηκε το Βασιλικό Παζλ!",
+      playAgain: "🔁 Παίξε Ξανά",
     },
   }[language];
 
@@ -196,6 +201,7 @@ export default function RoyalPuzzleGame() {
 
       if (newPieces.every(p => p.x === p.correctX && p.y === p.correctY)) {
         setSolved(true);
+        celebrate();
         const key = `royalpuzzle_${selectedId}_${level}`;
         const best = localStorage.getItem(key);
         if (!best || elapsed < parseInt(best)) {
@@ -278,8 +284,20 @@ export default function RoyalPuzzleGame() {
 
         {solved && (
           <>
-            <Info>🎉 {language === "el" ? "Το Παζλ Λύθηκε!" : "Puzzle Solved!"}</Info>
+            <Info>{t.solvedMessage}</Info>
             <SolButton as="button" onClick={downloadImage}>{t.download}</SolButton>
+            <SolButton
+              as="button"
+              onClick={() => {
+                setLevel("");
+                setPieces([]);
+                setSolved(false);
+                setStartTime(null);
+                setElapsed(0);
+              }}
+            >
+              {t.playAgain}
+            </SolButton>
           </>
         )}
 

@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { celebrate } from "../utils/celebrate.js";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -212,6 +213,7 @@ export default function SolSnap() {
           setQIndex((i) => i + 1);
         } else {
           setInSummary(true);
+          if (epScore + 1 === 3) celebrate();
         }
       }, 800);
     } else {

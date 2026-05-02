@@ -145,6 +145,13 @@ export default function Games() {
           description: "Snap decision: 3 yes/no questions per episode.",
           route: "/games/solsnap"
         },
+        {
+          id: 6,
+          emoji: "🗺️",
+          name: "Sol's Treasure Hunt",
+          description: "Find 3 hidden treasures in each city!",
+          route: "/games/treasurehunt"
+        },
       ],
     },
     el: {
@@ -187,6 +194,13 @@ export default function Games() {
           name: "SolSnap",
           description: "Snap decision: 3 yes/no ερωτήσεις ανά επεισόδιο.",
           route: "/games/solsnap"
+        },
+        {
+          id: 6,
+          emoji: "🗺️",
+          name: "Κυνήγι Θησαυρού της Sol",
+          description: "Βρες 3 κρυμμένους θησαυρούς σε κάθε πόλη!",
+          route: "/games/treasurehunt"
         },
       ],
     },

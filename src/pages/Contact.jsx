@@ -1,19 +1,7 @@
-import { useState } from "react";
 import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
-
-const Container = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  background: linear-gradient(to bottom, #fff1f9, #fce4ec);
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
-
-  @media (max-width: 480px) {
-    padding: 1.5rem 1rem;
-  }
-`;
+import { useLanguage } from "../context/LanguageContext.jsx";
+import PageContainer from "../components/PageContainer.jsx";
 
 const Title = styled.h1`
   font-size: 2.5rem;
@@ -25,7 +13,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.p`
   font-size: 1rem;
-  color: #333;
+  color: #5b2b7b;
   margin-bottom: 2rem;
   text-align: center;
 `;
@@ -63,7 +51,7 @@ const ToggleButton = styled.button`
 `;
 
 export default function Contact() {
-  const [language, setLanguage] = useState("en");
+  const { language, setLanguage } = useLanguage();
 
   const subtitles = {
     en: "Sol personally reviews every message you send – or so she claims.",
@@ -76,7 +64,12 @@ export default function Contact() {
   };
 
   return (
-    <Container>
+    <PageContainer
+      alignTop
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <Title>
         <SolBrand size="2.5rem" centered />
       </Title>
@@ -103,6 +96,6 @@ export default function Contact() {
           {language === "en" ? "Contact form" : "Φόρμα επικοινωνίας"}
         </iframe>
       </IframeWrapper>
-    </Container>
+    </PageContainer>
   );
 }

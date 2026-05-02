@@ -1,15 +1,17 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { colors, shadows } from "../theme.js";
 
 const SolButton = styled(Link)`
   padding: 0.8rem 1.5rem;
-  background-color: #c187d8;
+  background-color: ${colors.accentLight};
   color: white;
   text-decoration: none;
+  border: none;
   border-radius: 16px;
   font-weight: bold;
   display: inline-block;
-  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
+  box-shadow: ${shadows.button};
   transition: transform 0.2s ease-in-out;
   margin-top: 1rem;
   align-self: center;
