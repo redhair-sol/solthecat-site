@@ -37,6 +37,7 @@ const EpisodeCard = styled(motion.div)`
 
 const EpisodeImage = styled.img`
   width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 1rem;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -158,12 +159,15 @@ export default function Episodes() {
           </ErrorBox>
         )}
 
-        {episodes.map((ep) => (
+        {episodes.map((ep, idx) => (
           <EpisodeCard key={ep.id}>
             <EpisodeImage
               src={`${import.meta.env.BASE_URL}${ep.image}`}
               alt={typeof ep.title === "object" ? ep.title[language] : ep.title}
-              loading="lazy"
+              width="1080"
+              height="1080"
+              loading={idx === 0 ? "eager" : "lazy"}
+              fetchpriority={idx === 0 ? "high" : "auto"}
               decoding="async"
             />
             <EpisodeTitle>

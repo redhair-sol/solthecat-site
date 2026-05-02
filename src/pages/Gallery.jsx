@@ -62,6 +62,7 @@ const Tile = styled.div`
   img {
     width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
@@ -206,7 +207,15 @@ export default function GalleryPage() {
                   setOpen(true);
                 }}
               >
-                <img src={`/${ep.image}`} alt={titleText} loading="lazy" decoding="async" />
+                <img
+                  src={`/${ep.image}`}
+                  alt={titleText}
+                  width="1080"
+                  height="1080"
+                  loading={i === 0 ? "eager" : "lazy"}
+                  fetchpriority={i === 0 ? "high" : "auto"}
+                  decoding="async"
+                />
                 <div className="caption-overlay">{cleanCaption(captionText)}</div>
                 <div className="caption-static">{cleanCaption(captionText)}</div>
               </Tile>
