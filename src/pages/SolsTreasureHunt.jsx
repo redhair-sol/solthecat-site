@@ -121,7 +121,7 @@ export default function SolsTreasureHunt() {
       id: i,
       x: margin + Math.random() * (size - margin * 2 - 20),
       y: margin + Math.random() * (size - margin * 2 - 20),
-      img: `/icons/treasure-${i + 1}.png`,
+      img: `/icons/treasure-${i + 1}.webp`,
     }));
     setItems(newItems);
     setFound(0);

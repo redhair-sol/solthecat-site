@@ -460,7 +460,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <InstagramIcon src="/icons/instagram-icon.png" alt="Instagram" />
+          <InstagramIcon
+            src="/icons/instagram-icon.webp"
+            alt="Instagram"
+            width="20"
+            height="20"
+          />
           {t.instagram}
         </InstagramLink>
       </RelativePageContainer>

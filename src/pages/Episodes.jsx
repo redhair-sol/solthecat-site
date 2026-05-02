@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 
@@ -25,7 +24,7 @@ const Subheading = styled.p`
   line-height: 1.5;
 `;
 
-const EpisodeCard = styled(motion.div)`
+const EpisodeCard = styled.div`
   background: #ffffffcc;
   padding: 1.5rem;
   border-radius: 1.5rem;

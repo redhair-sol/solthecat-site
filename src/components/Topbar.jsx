@@ -24,8 +24,10 @@ export default function Topbar() {
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <Link to="/">
               <img
-                src="/icons/soladventures.png"
+                src="/icons/soladventures.webp"
                 alt="SOLadventures"
+                width="240"
+                height="64"
                 className="!h-16 md:!h-12 object-contain"
               />
             </Link>

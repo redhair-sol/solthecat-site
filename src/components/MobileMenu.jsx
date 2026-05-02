@@ -34,6 +34,7 @@ export default function MobileMenu({ isOpen, onClose }) {
         <button
           onClick={onClose}
           className="absolute top-4 right-4 p-2 rounded-full bg-white/80 shadow-md hover:scale-110 transition-transform z-50"
+          aria-label="Close menu"
         >
           <X className="w-5 h-5 text-black" />
         </button>

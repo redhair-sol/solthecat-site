@@ -60,7 +60,7 @@ const MapWrapper = styled.div`
 `;
 
 const pawIcon = new L.Icon({
-  iconUrl: "/icons/toe.png",
+  iconUrl: "/icons/toe.webp",
   iconSize: [40, 40],
   iconAnchor: [20, 20]
 });

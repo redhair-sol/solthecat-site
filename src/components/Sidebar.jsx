@@ -13,6 +13,7 @@ export default function Sidebar() {
           <button
             className="fixed top-4 left-4 z-50 p-2 bg-[#f8bbd0] text-black rounded shadow-md hover:scale-105 transition-transform"
             onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
           >
             <Menu className="w-6 h-6" />
           </button>
