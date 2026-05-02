@@ -328,6 +328,9 @@ export default function Home() {
       gamesTitle: "🎮 Ready to play with Sol?",
       gamesText: "Explore mini-games inspired by her travels!",
       gamesCTA: "Play the Games",
+      live: "LIVE",
+      visitStreak: (n) => `Visit Streak: ${n} day${n > 1 ? "s" : ""}`,
+      newBadge: "🎉 New Badge Unlocked Today!",
     },
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
@@ -344,6 +347,9 @@ export default function Home() {
       gamesTitle: "🎮 Παίξε με τη Sol!",
       gamesText: "Ανακάλυψε mini-games...",
       gamesCTA: "Παίξε Παιχνίδια",
+      live: "ΖΩΝΤΑΝΑ",
+      visitStreak: (n) => `Σερί επισκέψεων: ${n} ${n === 1 ? "ημέρα" : "ημέρες"}`,
+      newBadge: "🎉 Ξεκλείδωσες νέο Badge σήμερα!",
     },
   };
 
@@ -366,7 +372,7 @@ export default function Home() {
         {isLive && (
           <LiveBadgeLink to="/solcam">
             <LiveBadge>
-              <LiveDot /> LIVE
+              <LiveDot /> {t.live}
             </LiveBadge>
           </LiveBadgeLink>
         )}
@@ -431,13 +437,9 @@ export default function Home() {
 
             <BadgeDesc>{currentBadge.description[language]}</BadgeDesc>
 
-            <StreakText>
-              Visit Streak: {streak} day{streak > 1 ? "s" : ""}
-            </StreakText>
+            <StreakText>{t.visitStreak(streak)}</StreakText>
 
-            {unlockedToday && (
-              <UnlockedText>🎉 New Badge Unlocked Today!</UnlockedText>
-            )}
+            {unlockedToday && <UnlockedText>{t.newBadge}</UnlockedText>}
           </BadgeBox>
         )}
 

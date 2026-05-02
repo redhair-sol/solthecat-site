@@ -154,7 +154,10 @@ export default function Shop() {
         <ProductGrid>
           {products.map((product) => (
             <ProductCard key={product.id}>
-              <ProductImage src={product.image} alt={product.nameEN} />
+              <ProductImage
+                src={product.image}
+                alt={language === "en" ? product.nameEN : product.nameGR}
+              />
               <ProductName>
                 {language === "en" ? product.nameEN : product.nameGR}
               </ProductName>

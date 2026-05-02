@@ -101,6 +101,7 @@ export default function RoyalPuzzleGame() {
       best: "🏆 Best Time: ",
       solvedMessage: "🎉 Royal Puzzle Solved!",
       playAgain: "🔁 Play Again",
+      levels: { easy: "Easy", medium: "Medium", hard: "Hard" },
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
@@ -112,6 +113,7 @@ export default function RoyalPuzzleGame() {
       best: "🏆 Καλύτερος Χρόνος: ",
       solvedMessage: "🎉 Λύθηκε το Βασιλικό Παζλ!",
       playAgain: "🔁 Παίξε Ξανά",
+      levels: { easy: "Εύκολο", medium: "Μέσο", hard: "Δύσκολο" },
     },
   }[language];
 
@@ -256,7 +258,7 @@ export default function RoyalPuzzleGame() {
 
         {!level && ["easy", "medium", "hard"].map(l => (
           <LevelButton key={l} onClick={() => setLevel(l)}>
-            {l.charAt(0).toUpperCase() + l.slice(1)}
+            {t.levels[l]}
           </LevelButton>
         ))}
 

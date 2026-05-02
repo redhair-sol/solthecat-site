@@ -88,7 +88,7 @@ export default function Contact() {
       <IframeWrapper>
         <iframe
           src={forms[language]}
-          title="Contact Form"
+          title={language === "en" ? "Contact Form" : "Φόρμα Επικοινωνίας"}
           loading="lazy"
           sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
           referrerPolicy="no-referrer-when-downgrade"

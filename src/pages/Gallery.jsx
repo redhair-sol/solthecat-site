@@ -164,7 +164,9 @@ export default function GalleryPage() {
   return (
     <>
       <Helmet>
-        <title>Gallery – SolTheCat</title>
+        <title>
+          {language === "el" ? "Συλλογή" : "Gallery"} – SolTheCat
+        </title>
         <link rel="canonical" href="https://solthecat.com/gallery" />
       </Helmet>
 

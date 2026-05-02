@@ -128,7 +128,9 @@ export default function Episodes() {
   return (
     <>
       <Helmet>
-        <title>Episodes – SolTheCat</title>
+        <title>
+          {language === "el" ? "Επεισόδια" : "Episodes"} – SolTheCat
+        </title>
         <link rel="canonical" href="https://solthecat.com/episodes" />
       </Helmet>
 

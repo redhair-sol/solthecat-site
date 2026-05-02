@@ -192,7 +192,7 @@ export default function Games() {
           id: 5,
           emoji: "📷",
           name: "SolSnap",
-          description: "Snap decision: 3 yes/no ερωτήσεις ανά επεισόδιο.",
+          description: "Απόφαση Snap: 3 ναι/όχι ερωτήσεις ανά επεισόδιο.",
           route: "/games/solsnap"
         },
         {

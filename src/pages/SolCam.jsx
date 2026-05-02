@@ -123,11 +123,13 @@ export default function SolCam() {
       title: "SolCam Live 🎥",
       subtitle: "Live view of Queen Sol.",
       offline: "SolCam currently offline",
+      live: "LIVE",
     },
     el: {
       title: "SolCam Live 🎥",
       subtitle: "Ζωντανή μετάδοση της Sol.",
       offline: "Η SolCam είναι εκτός λειτουργίας",
+      live: "ΖΩΝΤΑΝΑ",
     },
   };
 
@@ -244,7 +246,7 @@ export default function SolCam() {
           <VideoBox>
             <LiveBadge>
               <LiveDot />
-              LIVE
+              {text[language].live}
             </LiveBadge>
             <Video ref={videoRef} autoPlay muted controls />
           </VideoBox>
