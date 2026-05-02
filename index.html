@@ -8,7 +8,8 @@
   <meta name="description" content="solthecat – also known as Sol the Cat – is the traveling feline queen. Follow her SOLadventures around the world and explore her story. 🐾" />
   <meta name="keywords" content="solthecat, Sol the Cat, SOLadventures, cat travel, feline queen, cat blog, cat Instagram" />
   <meta name="author" content="solthecat.com" />
-  <link rel="canonical" href="https://solthecat.com/" />
+  <!-- canonical is managed per-route by react-helmet-async (was duplicating
+       with Helmet's per-page canonical, causing Lighthouse SEO failure). -->
 
   <!-- ✅ hreflang — site is bilingual EN/EL via client-side toggle (single URL).
        Both alternates and x-default point to the same URL. Limited SEO value

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Helmet } from "react-helmet-async";
 import SolBrand from "../components/SolBrand";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
@@ -62,6 +63,14 @@ export default function Contact() {
   const forms = CONTACT_FORM_URL;
 
   return (
+    <>
+      <Helmet>
+        <title>
+          {language === "el" ? "Επικοινωνία" : "Contact"} – SolTheCat
+        </title>
+        <link rel="canonical" href="https://solthecat.com/contact" />
+      </Helmet>
+
     <PageContainer
       alignTop
       initial={{ opacity: 0, y: 30 }}
@@ -95,5 +104,6 @@ export default function Contact() {
         </iframe>
       </IframeWrapper>
     </PageContainer>
+    </>
   );
 }
