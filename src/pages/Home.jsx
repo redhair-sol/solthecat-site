@@ -243,11 +243,18 @@ export default function Home() {
   const { streak, currentBadge, unlockedToday } = useStreakBadges();
 
   function getDailyMessage(mode, language, options) {
+    if (!options || options.length === 0) return null;
     const today = new Date().toISOString().slice(0, 10);
     const key = `solDaily-${mode}-${language}-${today}`;
     const cached = localStorage.getItem(key);
 
-    if (cached) return JSON.parse(cached);
+    if (cached) {
+      try {
+        return JSON.parse(cached);
+      } catch {
+        // Corrupt cache (e.g. legacy "undefined" entry) — fall through and re-pick.
+      }
+    }
 
     const selected = options[Math.floor(Math.random() * options.length)];
     localStorage.setItem(key, JSON.stringify(selected));

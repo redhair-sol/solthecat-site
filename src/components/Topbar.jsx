@@ -40,15 +40,15 @@ export default function Topbar() {
       <nav className="hidden md:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-0.1">
         <div className="max-w-screen-xl mx-auto px-4">
           <div
-            className="flex space-x-8 text-2xl font-medium"
+            className="flex justify-center space-x-8 text-2xl font-medium"
             style={{ fontFamily: '"Dancing Script", cursive' }}
           >
-            <NavLink to="/" className={linkClasses}>Home</NavLink>
+            <NavLink to="/" className={linkClasses} end>Home</NavLink>
             <NavLink to="/episodes" className={linkClasses}>Episodes</NavLink>
             <NavLink to="/map" className={linkClasses}>Map</NavLink>
             <NavLink to="/gallery" className={linkClasses}>Gallery</NavLink>
             <NavLink to="/games" className={linkClasses}>Games</NavLink>
-			<NavLink to="/solcam" className={linkClasses}>SolCam</NavLink>
+            <NavLink to="/solcam" className={linkClasses}>SolCam</NavLink>
             <NavLink to="/whoissol" className={linkClasses}>About</NavLink>
           </div>
         </div>
