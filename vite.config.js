@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react';
 
 // Mirrors functions/solcam-check.js for the dev server so the client uses one
 // URL contract (`/solcam-check` returning { live: bool }) in both dev and prod.
+//
+// NOTE: solcam URL also lives in functions/solcam-check.js and src/utils/streamUtils.js.
+// Three runtimes (build / Cloudflare Workers / browser) can't share imports —
+// keep all three in sync if the stream URL ever changes.
 function solcamCheckDevPlugin() {
   return {
     name: 'solcam-check-dev',

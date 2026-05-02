@@ -11,7 +11,7 @@
       "en": "Tender, bite-sized delights for royal cravings.",
       "gr": "Τρυφερές, μικρές μπουκιές για βασιλικές ορέξεις."
     },
-    "image": "/images/products/royal-chicken-bites.png",
+    "image": "/images/products/royal-chicken-bites.webp",
     "status": "coming_soon"
   },
   {
@@ -26,7 +26,7 @@
       "en": "A noble recipe from the depths of the sea.",
       "gr": "Μια ευγενική συνταγή από τα βάθη της θάλασσας."
     },
-    "image": "/images/products/sea-queen-formula.png",
+    "image": "/images/products/sea-queen-formula.webp",
     "status": "coming_soon"
   },
   {
@@ -41,7 +41,7 @@
       "en": "Crispy bites straight from nature’s garden.",
       "gr": "Τραγανές λιχουδιές κατευθείαν από τον κήπο της φύσης."
     },
-    "image": "/images/products/garden-crunch.png",
+    "image": "/images/products/garden-crunch.webp",
     "status": "coming_soon"
   }
 ]

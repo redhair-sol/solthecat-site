@@ -79,7 +79,7 @@ export default function MobileMenu({ isOpen, onClose }) {
         {/* Draggable cat at the bottom */}
         <div className="mt-auto p-4">
           <motion.img
-            src="/images/SOL.png"
+            src="/images/SOL.webp"
             alt="Sol the Cat"
             className="w-full max-h-52 object-contain mx-auto rounded-xl cursor-grab active:cursor-grabbing"
             drag

@@ -14,7 +14,7 @@ const WatermarkedContainer = styled(PageContainer)`
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/images/sol-watermark.png');
+    background-image: url('/images/sol-watermark.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  /* γεμίζει όλη την επιφάνεια */

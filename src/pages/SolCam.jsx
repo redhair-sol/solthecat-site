@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Hls from "hls.js";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { streamURL, checkStream } from "../utils/streamUtils.js";
 
 // ----- STYLES (Παραμένουν ως έχουν) -----
 const Title = styled.h1`
@@ -95,21 +96,6 @@ const Video = styled.video`
   background: #000;
 `;
 
-// ----- CHECK STREAM FUNCTION (ΕΛΕΓΧΟΣ MANIFEST) -----
-async function checkStream(url) {
-  try {
-    // Προσθέτουμε timestamp για να παρακάμψουμε το cache
-    const noCacheUrl = `${url}?t=${Date.now()}`;
-    const res = await fetch(noCacheUrl, { method: "GET" });
-    
-    // Επιστρέφουμε true μόνο αν το Status είναι 200
-    return res.status === 200;
-  } catch (err) {
-    // Σε περίπτωση σφάλματος δικτύου/fetch, θεωρούμε ότι είναι offline
-    return false;
-  }
-}
-
 export default function SolCam() {
   const videoRef = useRef(null);
   const { language } = useLanguage();
@@ -133,9 +119,8 @@ export default function SolCam() {
     },
   };
 
-  const streamURL = "https://solcam.solthecat.com/solcam/index.m3u8";
   // Η συχνότητα του polling για ανάκαμψη (5 δευτερόλεπτα)
-  const RECOVERY_INTERVAL_MS = 5000; 
+  const RECOVERY_INTERVAL_MS = 5000;
 
   useEffect(() => {
     let hls;

@@ -206,7 +206,7 @@ export default function GalleryPage() {
                   setOpen(true);
                 }}
               >
-                <img src={`/${ep.image}`} alt={titleText} />
+                <img src={`/${ep.image}`} alt={titleText} loading="lazy" decoding="async" />
                 <div className="caption-overlay">{cleanCaption(captionText)}</div>
                 <div className="caption-static">{cleanCaption(captionText)}</div>
               </Tile>

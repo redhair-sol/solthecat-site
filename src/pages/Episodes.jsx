@@ -105,7 +105,7 @@ export default function Episodes() {
             en: `SOLadventure #${nextNumber} – Coming Soon`,
             el: `SOLadventure #${nextNumber} – Έρχεται Σύντομα`
           },
-          image: "episodes/coming-soon.png",
+          image: "episodes/coming-soon.webp",
           caption: {
             en: "Stay tuned for the next purrfect stop",
             el: "Μείνε συντονισμένος για τον επόμενο σταθμό"
@@ -163,6 +163,8 @@ export default function Episodes() {
             <EpisodeImage
               src={`${import.meta.env.BASE_URL}${ep.image}`}
               alt={typeof ep.title === "object" ? ep.title[language] : ep.title}
+              loading="lazy"
+              decoding="async"
             />
             <EpisodeTitle>
               {typeof ep.title === "object" ? ep.title[language] : ep.title}

@@ -10,6 +10,13 @@
   <meta name="author" content="solthecat.com" />
   <link rel="canonical" href="https://solthecat.com/" />
 
+  <!-- ✅ hreflang — site is bilingual EN/EL via client-side toggle (single URL).
+       Both alternates and x-default point to the same URL. Limited SEO value
+       without distinct /en/ and /el/ paths, but signals the intent to crawlers. -->
+  <link rel="alternate" hreflang="en" href="https://solthecat.com/" />
+  <link rel="alternate" hreflang="el" href="https://solthecat.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://solthecat.com/" />
+
   <!-- ✅ Open Graph -->
   <meta property="og:title" content="solthecat (Sol the Cat) – The Feline Queen's Official Journey | SOLadventures" />
   <meta property="og:description" content="solthecat – also known as Sol the Cat – is the traveling feline queen. Follow her journey through cities and stories." />
@@ -83,12 +90,8 @@
   <!-- ✅ Favicon -->
   <link rel="icon" href="/icons/instagram-icon.webp" />
 
-  <!-- ✅ Preconnect for Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- ✅ Google Fonts (final, no preload warnings) -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@1,400&family=Poppins:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+  <!-- Fonts are self-hosted via @fontsource (imported in src/main.jsx).
+       This removes the Google Fonts CDN dependency for privacy + CSP. -->
 
   <!-- ✅ Preload hero image only if it's LCP -->
   <!-- If your sol-menu.webp is the LCP image, keep this. If not, remove it. -->

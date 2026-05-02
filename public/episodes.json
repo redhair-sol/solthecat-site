@@ -4,7 +4,7 @@
     "title": "SOLadventure #1 – Athens, obviously 🦉 🇬🇷",
     "quote": "Historic? So am I.",
     "caption": "Paws touched the Parthenon. 🐾🐾🐾",
-    "image": "episodes/athens.png",
+    "image": "episodes/athens.webp",
     "location": { "lat": 37.9715, "lng": 23.7257 },
     "visible": true,
     "city": "athens",
@@ -41,7 +41,7 @@
     "title": "SOLadventure #2 – Rome, with attitude 🍕 🇮🇹",
     "quote": "She came. She saw. She purred.",
     "caption": "Colosseum? Just her playground. History bows when she walks 🐾🐾🐾",
-    "image": "episodes/rome.png",
+    "image": "episodes/rome.webp",
     "location": { "lat": 41.8902, "lng": 12.4922 },
     "visible": true,
     "city": "rome",
@@ -78,7 +78,7 @@
     "title": "SOLadventure #3 – Feline flair meets Parisian air 🗼 🇫🇷",
     "quote": "Allure built in. Like her gaze.",
     "caption": "Paris didn’t stand a chance. 🐾🐾🐾",
-    "image": "episodes/paris.png",
+    "image": "episodes/paris.webp",
     "location": { "lat": 48.8566, "lng": 2.3522 },
     "visible": true,
     "city": "paris",
@@ -115,7 +115,7 @@
     "title": "SOLadventure #4 – Barcelona, architected to impress 🎨 🇪🇸",
     "quote": "Curves, spires, and one queen.",
     "caption": "She danced with Gaudí’s ghosts. 🐾🐾🐾",
-    "image": "episodes/barcelona.png",
+    "image": "episodes/barcelona.webp",
     "location": { "lat": 41.3851, "lng": 2.1734 },
     "visible": true,
     "city": "barcelona",
@@ -152,7 +152,7 @@
     "title": "SOLadventure #5 – London, mind the Queen 🕰️🇬🇧",
     "quote": "Fog lifted. She didn’t need directions.",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
-    "image": "episodes/london.png",
+    "image": "episodes/london.webp",
     "location": { "lat": 51.5074, "lng": -0.1278 },
     "visible": true,
     "city": "london",
@@ -189,7 +189,7 @@
     "title": "SOLadventure #6 – Amsterdam, quiet reigns & reflections 🌷 🇳🇱",
     "quote": "Paws before pedals.",
     "caption": "No bike. No boat. Just grace on cobblestones. 🐾🐾🐾",
-    "image": "episodes/amsterdam.png",
+    "image": "episodes/amsterdam.webp",
     "location": { "lat": 52.3676, "lng": 4.9041 },
     "visible": true,
     "city": "amsterdam",
@@ -226,7 +226,7 @@
     "title": "SOLadventure #7 – Berlin, straight through the gate 🏛 ️🇩🇪",
     "quote": "Power spoke. She didn’t need to.",
     "caption": "She walked. History saluted. 🐾🐾🐾",
-    "image": "episodes/berlin.png",
+    "image": "episodes/berlin.webp",
     "location": { "lat": 52.52, "lng": 13.405 },
     "visible": true,
     "city": "berlin",
@@ -263,7 +263,7 @@
     "title": "SOLadventure #8 – Vienna, velvet paws 🎻 🇦🇹",
     "quote": "She didn’t knock. The doors knew.",
     "caption": "In stillness, she reigned. In stone, she bloomed 🐾🐾🐾",
-    "image": "episodes/vienna.png",
+    "image": "episodes/vienna.webp",
     "location": { "lat": 48.2082, "lng": 16.3738 },
     "visible": true,
     "city": "vienna",
@@ -300,7 +300,7 @@
     "title": "SOLadventure #9 – Prague, spellbound in gold 🕯️🇨🇿",
     "quote": "She wandered slow. The shadows bent",
     "caption": "Where myths curled, she glowed. 🐾🐾🐾",
-    "image": "episodes/prague.png",
+    "image": "episodes/prague.webp",
     "location": { "lat": 50.0755, "lng": 14.4378 },
     "visible": true,
     "city": "prague",
@@ -337,7 +337,7 @@
     "title": "SOLadventure #10 – Swiss, air, alpine stare 🏔 ️🇨🇭",
     "quote": "Height never humbled her.",
     "caption": "The Alps called. She brought silence. 🐾🐾🐾",
-    "image": "episodes/swiss.png",
+    "image": "episodes/swiss.webp",
     "location": { "lat": 46.8182, "lng": 8.2275 },
     "visible": true,
     "city": "swiss",
@@ -374,7 +374,7 @@
     "title": "SOLadventure #11 – Ljubljana, softly crowned 🏰 🇸🇮",
     "quote": "Crowned by calm.",
     "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
-    "image": "episodes/ljubljana.png",
+    "image": "episodes/ljubljana.webp",
     "location": { "lat": 46.0569, "lng": 14.5058 },
     "visible": true,
     "city": "ljubljana",
@@ -411,7 +411,7 @@
     "title": "SOLadventure #12 – Budapest, throne by the river 🌉 🇭🇺",
     "quote": "She cast no shadow. Just authority.",
     "caption": "She sat. The Parliament bowed. 🐾🐾🐾",
-    "image": "episodes/budapest.png",
+    "image": "episodes/budapest.webp",
     "location": { "lat": 47.4979, "lng": 19.0402 },
     "visible": true,
     "city": "budapest",
@@ -448,7 +448,7 @@
   "title": "SOLadventure #13 – Kraków, echoes in stone 🏰🇵🇱",
   "quote": "She walked soft. The city whispered back.",
   "caption": "Past and pawprints never fade. 🐾🐾🐾",
-  "image": "episodes/Kraków.png",
+  "image": "episodes/Kraków.webp",
   "location": {
     "lat": 50.0647,
     "lng": 19.945
@@ -488,7 +488,7 @@
   "title": "SOLadventure #14 – Tallinn, soft reign 🌫️ 🇪🇪",
   "quote": "Even the dusk waited",
   "caption": "When cobblestones hush, she rules. 🐾🐾🐾",
-  "image": "episodes/Tallinn.png",
+  "image": "episodes/Tallinn.webp",
   "location": {
     "lat": 59.437,
     "lng": 24.7536
@@ -528,7 +528,7 @@
   "title": "SOLadventure #15 – Helsinki, white whispers ❄️🇫🇮",
   "quote": "She didn’t wear white — she defined it.",
   "caption": "No chill. No hush. Just quiet grace. 🐾🐾🐾",
-  "image": "episodes/helsinki.png",
+  "image": "episodes/helsinki.webp",
   "location": {
     "lat": 60.1695,
     "lng": 24.9354
@@ -568,7 +568,7 @@
   "title": "SOLadventure #16 – Stockholm, light on water 🌊🇸🇪",
   "quote": "Light speaks in stillness.",
   "caption": "No ripples. No echoes. Just still light. 🐾🐾🐾",
-  "image": "episodes/stockholm.png",
+  "image": "episodes/stockholm.webp",
   "location": {
     "lat": 59.3293,
     "lng": 18.0686
@@ -608,7 +608,7 @@
   "title": "SOLadventure #17 – Copenhagen, Nyhavn & cycle vibes 🚲 🇩🇰",
   "quote": "In her wake, color blooms.",
   "caption": "No traffic. No pause. Just pedal art. 🐾🐾🐾",
-  "image": "episodes/copenhagen.png",
+  "image": "episodes/copenhagen.webp",
   "location": {
     "lat": 55.6761,
     "lng": 12.5683
@@ -648,7 +648,7 @@
   "title": "SOLadventure #18 – Bergen, mist and melody 🎶🇳🇴",
   "quote": "Fjords cradle her melody.",
   "caption": "No storm. No sorrow. Just whispered tunes. 🐾🐾🐾",
-  "image": "episodes/bergen.png",
+  "image": "episodes/bergen.webp",
   "location": {
     "lat": 60.3913,
     "lng": 5.3221
@@ -688,7 +688,7 @@
   "title": "SOLadventure #19 – Edinburgh, where legends linger 🌫 ️🇬🇧",
   "quote": "Legends bowed to her stride.",
   "caption": "Storied steps, no turning back. 🐾🐾🐾",
-  "image": "episodes/edinburgh.png",
+  "image": "episodes/edinburgh.webp",
   "location": {
     "lat": 55.9533,
     "lng": -3.1883
@@ -728,7 +728,7 @@
   "title": "SOLadventure #20 – Dublin, literary pubs & Georgian squares 🍻📚🇮🇪",
   "quote": "She wrote her story in every raised glass.",
   "caption": "No pause. No encore. Just pages and pints. 🐾🐾🐾",
-  "image": "episodes/dublin.png",
+  "image": "episodes/dublin.webp",
   "location": {
     "lat": 53.3498,
     "lng": -6.2603
@@ -769,7 +769,7 @@
   "title": "SOLadventure #21 – Reykjavík, fire & ice ❄️🔥🇮🇸",
   "quote": "She wrote warmth on ice.",
   "caption": "No freeze. No thaw. Just fiery grace. 🐾🐾🐾",
-  "image": "episodes/reykjavik.png",
+  "image": "episodes/reykjavik.webp",
   "location": {
     "lat": 64.1466,
     "lng": -21.9426
@@ -809,7 +809,7 @@
   "title": "SOLadventure #22 – Toronto, cityscapes & Niagara tale 🌊🇨🇦",
   "quote": "She bridged roar and reflection.",
   "caption": "No boundaries. No divides. Just currents and towers. 🐾🐾🐾",
-  "image": "episodes/toronto.png",
+  "image": "episodes/toronto.webp",
   "location": {
     "lat": 43.6511,
     "lng": -79.3836
@@ -849,7 +849,7 @@
   "title": "SOLadventure #23 – New York City, skyline queen 🏙️🇺🇸",
   "quote": "Bridges bow to her gaze.",
   "caption": "No pause. No skyline unseen. Just her and the city lights. 🐾🐾🐾",
-  "image": "episodes/newyork.png",
+  "image": "episodes/newyork.webp",
   "location": {
     "lat": 40.7128,
     "lng": -74.0060
@@ -889,7 +889,7 @@
   "title": "SOLadventure #24 – Miami, sunlit streets 🌞🇺🇸",
   "quote": "She owns the golden hour.",
   "caption": "No traffic. No hurry. Just sunlit steps. 🐾🐾🐾",
-  "image": "episodes/miami.png",
+  "image": "episodes/miami.webp",
   "location": {
     "lat": 25.7617,
     "lng": -80.1918
@@ -929,7 +929,7 @@
   "title": "SOLadventure #25 – San Francisco, bridge tales 🌉🇺🇸",
   "quote": "She draped the bridge in gold.",
   "caption": "No crosswalks. No commutes. Just arches and dreams. 🐾🐾🐾",
-  "image": "episodes/sanfrancisco.png",
+  "image": "episodes/sanfrancisco.webp",
   "location": {
     "lat": 37.7749,
     "lng": -122.4194
@@ -969,7 +969,7 @@
   "title": "SOLadventure #26 – Honolulu, island hush 🌺🇺🇸",
   "quote": "She found sunrise in palms.",
   "caption": "No bustle. No borders. Only island calm. 🐾🐾🐾",
-  "image": "episodes/honolulu.png",
+  "image": "episodes/honolulu.webp",
   "location": {
     "lat": 21.3069,
     "lng": -157.8583
@@ -1009,7 +1009,7 @@
   "title": "SOLadventure #27 – Los Angeles, Hollywood & beach vibes 🎬🌴🇺🇸",
   "quote": "Dreams moved slower under the sun.",
   "caption": "Fame fades. Waves don’t. 🐾🐾🐾",
-  "image": "episodes/LosAngeles.png",
+  "image": "episodes/LosAngeles.webp",
   "location": {
     "lat": 34.0522,
     "lng": -118.2437
@@ -1049,7 +1049,7 @@
   "title": "SOLadventure #28 – Chichén Itzá, steps of time & silent kings 🗿🇲🇽",
   "quote": "Time watched quietly as she passed.",
   "caption": "Stone, sun and quiet footsteps of history. 🐾🐾🐾",
-  "image": "episodes/chichenitza.png",
+  "image": "episodes/chichenitza.webp",
   "location": {
     "lat": 20.6843,
     "lng": -88.5678
@@ -1089,7 +1089,7 @@
   "title": "SOLadventure #29 – Havana, vintage soul 🚗🇨🇺",
   "quote": "The air itself remembered the music.",
   "caption": "No hurry. No horns. Just rhythm in the air. 🐾🐾🐾",
-  "image": "episodes/havana.png",
+  "image": "episodes/havana.webp",
   "location": {
     "lat": 23.1136,
     "lng": -82.3666
@@ -1129,7 +1129,7 @@
   "title": "SOLadventure #30 – La Fortuna, where the wild breathes 🌋🇨🇷",
   "quote": "The earth has music for those who will listen.",
   "caption": "Mist, calm and wild echoes all around her. 🐾🐾🐾",
-  "image": "episodes/lafortuna.png",
+  "image": "episodes/lafortuna.webp",
   "location": {
     "lat": 10.4700,
     "lng": -84.7034
@@ -1170,7 +1170,7 @@
   "title": "SOLadventure #31 – Panama City, canal’s embrace 🚢🇵🇦",
   "quote": "Stillness steers the tide.",
   "caption": "No hurry. No noise. Just motion made calm. 🐾🐾🐾",
-  "image": "episodes/panama.png",
+  "image": "episodes/panama.webp",
   "location": {
     "lat": 8.9824,
     "lng": -79.5199
@@ -1211,7 +1211,7 @@
   "title": "SOLadventure #32 – Cartagena, walled colors 🎨🇨🇴",
   "quote": "She reigned in still hues.",
   "caption": "No drums. No rush. Just colors breathing history. 🐾🐾🐾",
-  "image": "episodes/cartagena.png",
+  "image": "episodes/cartagena.webp",
   "location": {
     "lat": 10.3910,
     "lng": -75.4794
@@ -1251,7 +1251,7 @@
   "title": "SOLadventure #33 – Quito, equatorial heights 🌍🇪🇨",
   "quote": "Where the roofs meet the sky",
   "caption": "Old tiles, thin air, timeless view. 🐾🐾🐾",
-  "image": "episodes/quito.png",
+  "image": "episodes/quito.webp",
   "location": {
     "lat": -0.1807,
     "lng": -78.4678
@@ -1291,7 +1291,7 @@
   "title": "SOLadventure #34 – Machu Picchu, Inca’s crown 🏯🇵🇪",
   "quote": "The mountain kept her secret.",
   "caption": "No words. No throne. Just stone and silence. 🐾🐾🐾",
-  "image": "episodes/machupicchu.png",
+  "image": "episodes/machupicchu.webp",
   "location": {
     "lat": -13.1631,
     "lng": -72.5450
@@ -1331,7 +1331,7 @@
   "title": "SOLadventure #35 – La Paz, sky-high wonders 🌌🇧🇴",
   "quote": "She rode where the air whispered freedom.",
   "caption": "No roads. No rails. Just sky trails. 🐾🐾🐾",
-  "image": "episodes/lapaz.png",
+  "image": "episodes/lapaz.webp",
   "location": {
     "lat": -16.4897,
     "lng": -68.1193
@@ -1371,7 +1371,7 @@
   "title": "SOLadventure #36 – Santiago, Andean skyline 🏔️🇨🇱",
   "quote": "The city shimmered, the peaks stayed bold.",
   "caption": "Santiago below, Andes above, Sol in control. 🐾🐾🐾",
-  "image": "episodes/santiago.png",
+  "image": "episodes/santiago.webp",
   "location": {
     "lat": -33.4489,
     "lng": -70.6693
@@ -1412,7 +1412,7 @@
   "title": "SOLadventure #37 – Buenos Aires, tango twilight 💃 🇦🇷",
   "quote": "She didn’t follow the rhythm. She set it.",
   "caption": "Cobblestones, bandoneón, and a queen in slow motion. 🐾🐾🐾",
-  "image": "episodes/buenosaires.png",
+  "image": "episodes/buenosaires.webp",
   "location": { "lat": -34.6037, "lng": -58.3816 },
   "visible": true,
   "city": "buenosaires",
@@ -1450,7 +1450,7 @@
   "title": "SOLadventure #38 – Montevideo, riverside rhythms 🌊 🇺🇾",
   "quote": "The river kept time. She owned the beat.",
   "caption": "Lamplight, waterfront air, and a queen who moves like music. 🐾🐾🐾",
-  "image": "episodes/montevideo.png",
+  "image": "episodes/montevideo.webp",
   "location": { "lat": -34.9011, "lng": -56.1645 },
   "visible": true,
   "city": "montevideo",
@@ -1488,7 +1488,7 @@
   "title": "SOLadventure #39 – Rio de Janeiro, carnival pulse & beach haze 🎉🏖️ 🇧🇷",
   "quote": "She didn’t need the parade. The rhythm found her anyway.",
   "caption": "Golden haze, shoreline lights. 🐾🐾🐾",
-  "image": "episodes/riodejaneiro.png",
+  "image": "episodes/riodejaneiro.webp",
   "location": { "lat": -22.9068, "lng": -43.1729 },
   "visible": true,
   "city": "riodejaneiro",
@@ -1526,7 +1526,7 @@
   "title": "SOLadventure #40 – Cape Town, ocean’s edge 🌊 🇿🇦",
   "quote": "The mountain kept watch. She kept calm.",
   "caption": "Even the skyline whispers when the queen is watching. 🐾🐾🐾",
-  "image": "episodes/capetown.png",
+  "image": "episodes/capetown.webp",
   "location": { "lat": -33.9249, "lng": 18.4241 },
   "visible": true,
   "city": "capetown",
@@ -1564,7 +1564,7 @@
   "title": "SOLadventure #41 – Victoria Falls, thunder’s veil 🌋 🇿🇼",
   "quote": "Mist took the noise. She kept the calm.",
   "caption": "Even thunder learns manners when the queen is watching. 🐾🐾🐾",
-  "image": "episodes/victoria.png",
+  "image": "episodes/victoria.webp",
   "location": { "lat": -17.9329, "lng": 25.8307 },
   "visible": true,
   "city": "victoriafalls",
@@ -1602,7 +1602,7 @@
   "title": "SOLadventure #42 – Zanzibar, spice islands 🏝️ 🇹🇿",
   "quote": "She ruled the hush between waves.",
   "caption": "Sun on the sand, spice in the air, and the queen in her element. 🐾🐾🐾",
-  "image": "episodes/zanzibar.png",
+  "image": "episodes/zanzibar.webp",
   "location": { "lat": -6.1659, "lng": 39.2026 },
   "visible": true,
   "city": "zanzibar",
@@ -1640,7 +1640,7 @@
   "title": "SOLadventure #43 – Nairobi, safari gateway 🦓🌍 🇰🇪",
   "quote": "She sat where the skyline gave way to stripes.",
   "caption": "Where the city softens and the wild steps forward, the queen already belongs. 🐾🐾🐾",
-  "image": "episodes/nairobi.png",
+  "image": "episodes/nairobi.webp",
   "location": { "lat": -1.286389, "lng": 36.817223 },
   "visible": true,
   "city": "nairobi",
@@ -1678,7 +1678,7 @@
   "title": "SOLadventure #44 – Madagascar, tree of life 🌅🌴 🇲🇬",
   "quote": "She paused where giants hold the evening.",
   "caption": "Under Madagascar’s giants, even the sunset knows who rules the road. 🐾🐾🐾",
-  "image": "episodes/madagascar.png",
+  "image": "episodes/madagascar.webp",
   "location": { "lat": -20.250833, "lng": 44.418333 },
   "visible": true,
   "city": "madagascar",
@@ -1716,7 +1716,7 @@
   "title": "SOLadventure #45 – Lalibela, sacred stones ⛪🪨 🇪🇹",
   "quote": "She rested where the stone remembers.",
   "caption": "Among carved silence and ancient faith, even a queen learns to tread softly. 🐾🐾🐾",
-  "image": "episodes/lalibela.png",
+  "image": "episodes/lalibela.webp",
   "location": { "lat": 12.0317, "lng": 39.0476 },
   "visible": true,
   "city": "lalibela",
@@ -1754,7 +1754,7 @@
   "title": "SOLadventure #46 – Saint-Louis, river-wind beats 🌬️ 🇸🇳",
   "quote": "She listened where the river kept its old songs.",
   "caption": "Where river light and old facades meet, even a queen lets the wind set the rhythm. 🐾🐾🐾",
-  "image": "episodes/saint-louis.png",
+  "image": "episodes/saint-louis.webp",
   "location": { "lat": 16.0179, "lng": -16.4896 },
   "visible": true,
   "city": "saint-louis",
@@ -1792,7 +1792,7 @@
   "title": "SOLadventure #47 – Marrakech, desert’s jewel 🏜️ 🇲🇦",
   "quote": "In these streets, I don’t follow. I arrive 🐾",
   "caption": "Colors above, quiet below, and one queen exactly where she belongs. 🐾🐾🐾",
-  "image": "episodes/marrakech.png",
+  "image": "episodes/marrakech.webp",
   "location": { "lat": 31.6295, "lng": -7.9811 },
   "visible": true,
   "city": "marrakech",
@@ -1830,7 +1830,7 @@
   "title": "SOLadventure #48 – Lisbon, pastel tiles & Atlantic tides 🏰🌊 🇵🇹",
   "quote": "Where tiles meet the tide.",
   "caption": "Lisbon didn’t ask for a queen. It already had one. 🐾🐾🐾",
-  "image": "episodes/lisbon.png",
+  "image": "episodes/lisbon.webp",
   "location": { "lat": 38.7223, "lng": -9.1393 },
   "visible": true,
   "city": "lisbon",
@@ -1868,7 +1868,7 @@
   "title": "SOLadventure #49 – Tunis, medina maze & quiet arches 🏙️🕌 🇹🇳",
   "quote": "Even the maze made room for her.",
   "caption": "Tunis did not try to impress her. It simply opened, turn by turn. 🐾🐾🐾",
-  "image": "episodes/tunis.png",
+  "image": "episodes/tunis.webp",
   "location": { "lat": 36.8065, "lng": 10.1815 },
   "visible": true,
   "city": "tunis",
@@ -1906,7 +1906,7 @@
   "title": "SOLadventure #50 – Cairo, pharaoh’s gaze 🏺 🇪🇬",
   "quote": "Ancient eyes. Royal silence.",
   "caption": "The stones had already spoken, and Sol listened like royalty. 🐾🐾🐾",
-  "image": "episodes/cairo.png",
+  "image": "episodes/cairo.webp",
   "location": { "lat": 30.0444, "lng": 31.2357 },
   "visible": true,
   "city": "cairo",

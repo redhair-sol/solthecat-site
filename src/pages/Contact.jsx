@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SolBrand from "../components/SolBrand";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { CONTACT_FORM_URL } from "../config.js";
 
 const Title = styled.h1`
   font-size: 2.5rem;
@@ -58,10 +59,7 @@ export default function Contact() {
     el: "Η Sol λαμβάνει προσωπικά κάθε μήνυμα που της στέλνεις – ή τουλάχιστον έτσι θέλει να πιστεύεις.",
   };
 
-  const forms = {
-    en: "https://docs.google.com/forms/d/e/1FAIpQLSewVmGzPREJWL8I7jmLisaPUcgiN7hV9uDSuRZyX7hIuyIQdQ/viewform?embedded=true",
-    el: "https://docs.google.com/forms/d/e/1FAIpQLSeJq77VFhKxVPaLMNnYPua3EU0hxBAQ7qz5IWGlCI1nhMRFaA/viewform?embedded=true",
-  };
+  const forms = CONTACT_FORM_URL;
 
   return (
     <PageContainer

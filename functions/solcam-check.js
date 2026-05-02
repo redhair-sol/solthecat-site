@@ -7,6 +7,10 @@
 // the production console free of error noise when the stream is offline.
 //
 // Returns: { live: boolean }, always HTTP 200, no caching.
+//
+// NOTE: This URL is duplicated in src/utils/streamUtils.js (client) and
+// vite.config.js (dev middleware). The three runtimes are isolated and
+// can't share imports — keep all three in sync if the stream URL ever changes.
 
 const STREAM_URL = "https://solcam.solthecat.com/solcam/index.m3u8";
 

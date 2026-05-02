@@ -109,7 +109,7 @@ export default function DressTheQueen() {
 
       {city && (
         <Canvas>
-          <SolImage src="/images/sol-menu.png" alt="Sol the Cat" />
+          <SolImage src="/images/sol-menu.webp" alt="Sol the Cat" />
           {accessories.map((url, index) => (
             <Accessory
               key={url}

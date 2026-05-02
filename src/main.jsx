@@ -3,6 +3,16 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async"; // ✅ ΝΕΟ
 
+// Self-hosted fonts (replace Google Fonts CDN — better privacy + CSP).
+// Match the previous Google Fonts URL exactly: Dancing Script 700,
+// Playfair Display italic 400, Poppins 400/500/600, Marcellus default.
+import "@fontsource/dancing-script/700.css";
+import "@fontsource/playfair-display/400-italic.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/marcellus";
+
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import App from "./App.jsx";
 import "./index.css";
