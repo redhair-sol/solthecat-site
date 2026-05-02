@@ -129,17 +129,21 @@ export default function SolsTreasureHunt() {
 
   const handleFind = (id) => {
     setItems((prev) => prev.filter((item) => item.id !== id));
-    setFound((prev) => {
-      const next = prev + 1;
-      if (next === 3) celebrate();
-      return next;
-    });
+    setFound((prev) => prev + 1);
   };
+
+  // Win effect — runs once whenever `found` lands on 3.
+  // (Side effects inside state updaters fire twice in React 18 dev/strict mode.)
+  useEffect(() => {
+    if (found === 3) celebrate();
+  }, [found]);
 
   const playAgain = () => {
     if (!episodes.length) return;
     const random = episodes[Math.floor(Math.random() * episodes.length)];
-    setSelectedEpisode(random);
+    // Spread to force a new reference even if the same episode is picked again,
+    // so the placement effect re-fires and resets items + found.
+    setSelectedEpisode({ ...random });
   };
 
   const bg = selectedEpisode
