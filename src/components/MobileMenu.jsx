@@ -70,6 +70,10 @@ export default function MobileMenu({ isOpen, onClose }) {
           <NavLink to="/whoissol" onClick={onClose} className={linkClasses}>
             About
           </NavLink>
+
+          <NavLink to="/contact" onClick={onClose} className={linkClasses}>
+            Contact
+          </NavLink>
         </nav>
 
         {/* Draggable cat at the bottom */}
