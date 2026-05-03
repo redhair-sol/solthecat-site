@@ -1,11 +1,24 @@
 // src/pages/Episodes.jsx
 
 import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { Search, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+
+// Region keys must match values written by scripts/optimize-images.js... no,
+// match values produced by the lat/lng classifier into episodes.json.
+const REGION_KEYS = [
+  "all",
+  "europe",
+  "north-america",
+  "south-america",
+  "africa",
+  "asia",
+  "oceania",
+];
 
 const TopSection = styled.div`
   margin-bottom: 2rem;
@@ -23,6 +36,33 @@ const Subheading = styled.p`
   margin: 0 auto;
   max-width: 600px;
   line-height: 1.5;
+`;
+
+const ChipsRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 1rem;
+`;
+
+const Chip = styled.button`
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  border: 1.5px solid #c187d8;
+  background: ${({ $active }) => ($active ? "#c187d8" : "#ffffffee")};
+  color: ${({ $active }) => ($active ? "#fff" : "#5b2b7b")};
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: ${({ $active }) => ($active ? "#aa4dc8" : "#fce4ec")};
+    border-color: #aa4dc8;
+  }
 `;
 
 const SearchWrapper = styled.div`
@@ -169,7 +209,22 @@ export default function Episodes() {
   const [episodes, setEpisodes] = useState([]);
   const [loadError, setLoadError] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
   const { language } = useLanguage();
+
+  // Region from URL (?region=europe). Default "all" = no filter.
+  const urlRegion = searchParams.get("region");
+  const selectedRegion = REGION_KEYS.includes(urlRegion) ? urlRegion : "all";
+
+  const handleRegionChange = (region) => {
+    const next = new URLSearchParams(searchParams);
+    if (region === "all") {
+      next.delete("region");
+    } else {
+      next.set("region", region);
+    }
+    setSearchParams(next, { replace: true });
+  };
 
   const t = {
     en: {
@@ -181,6 +236,15 @@ export default function Episodes() {
       clearLabel: "Clear search",
       storyTitle: "SOL’s Tale",
       loadFail: "Couldn't load episodes. Please try refreshing the page.",
+      regions: {
+        all: "All",
+        europe: "Europe",
+        "north-america": "N. America",
+        "south-america": "S. America",
+        africa: "Africa",
+        asia: "Asia",
+        oceania: "Oceania",
+      },
     },
     el: {
       heading: "Τα επεισόδια της Sol 🎥",
@@ -191,6 +255,15 @@ export default function Episodes() {
       clearLabel: "Καθαρισμός αναζήτησης",
       storyTitle: "Το Παραμύθι της SOL",
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
+      regions: {
+        all: "Όλα",
+        europe: "Ευρώπη",
+        "north-america": "Β. Αμερική",
+        "south-america": "Ν. Αμερική",
+        africa: "Αφρική",
+        asia: "Ασία",
+        oceania: "Ωκεανία",
+      },
     },
   }[language];
 
@@ -232,26 +305,41 @@ export default function Episodes() {
 
   const trimmedQuery = searchQuery.trim();
   const isSearching = trimmedQuery.length > 0;
+  const isFilteringRegion = selectedRegion !== "all";
+  // Hide teaser whenever any filter is active.
+  const isFiltered = isSearching || isFilteringRegion;
+
+  // Only show region chips for regions that actually have episodes.
+  const availableRegions = useMemo(() => {
+    const present = new Set(
+      episodes.filter((ep) => ep.visible !== false && ep.region).map((ep) => ep.region)
+    );
+    return REGION_KEYS.filter((k) => k === "all" || present.has(k));
+  }, [episodes]);
 
   const filteredEpisodes = useMemo(() => {
-    if (!isSearching) return episodes;
+    if (!isFiltered) return episodes;
     const q = trimmedQuery.toLowerCase();
     return episodes.filter((ep) => {
-      // Hide the "Coming Soon" teaser while searching — it is not a real result.
+      // Hide the "Coming Soon" teaser while filtering — it is not a real result.
       if (ep.visible === false) return false;
-      const title =
-        (typeof ep.title === "object" ? ep.title[language] : ep.title) || "";
-      const caption =
-        (typeof ep.caption === "object" ? ep.caption[language] : ep.caption) ||
-        "";
-      const city = ep.city || "";
-      return (
-        title.toLowerCase().includes(q) ||
-        caption.toLowerCase().includes(q) ||
-        city.toLowerCase().includes(q)
-      );
+      if (isFilteringRegion && ep.region !== selectedRegion) return false;
+      if (isSearching) {
+        const title =
+          (typeof ep.title === "object" ? ep.title[language] : ep.title) || "";
+        const caption =
+          (typeof ep.caption === "object" ? ep.caption[language] : ep.caption) ||
+          "";
+        const city = ep.city || "";
+        return (
+          title.toLowerCase().includes(q) ||
+          caption.toLowerCase().includes(q) ||
+          city.toLowerCase().includes(q)
+        );
+      }
+      return true;
     });
-  }, [episodes, isSearching, trimmedQuery, language]);
+  }, [episodes, isFiltered, isSearching, isFilteringRegion, selectedRegion, trimmedQuery, language]);
 
   return (
     <>
@@ -271,6 +359,20 @@ export default function Episodes() {
           <Heading>{t.heading}</Heading>
           <Subheading>{t.subheading}</Subheading>
         </TopSection>
+
+        <ChipsRow role="group" aria-label={t.regions.all}>
+          {availableRegions.map((r) => (
+            <Chip
+              key={r}
+              type="button"
+              $active={selectedRegion === r}
+              onClick={() => handleRegionChange(r)}
+              aria-pressed={selectedRegion === r}
+            >
+              {t.regions[r]}
+            </Chip>
+          ))}
+        </ChipsRow>
 
         <SearchWrapper>
           <SearchIconWrapper>
@@ -294,7 +396,7 @@ export default function Episodes() {
           )}
         </SearchWrapper>
 
-        {isSearching && filteredEpisodes.length > 0 && (
+        {isFiltered && filteredEpisodes.length > 0 && (
           <ResultCount>{t.matches(filteredEpisodes.length)}</ResultCount>
         )}
 
@@ -302,8 +404,12 @@ export default function Episodes() {
           <ErrorBox role="alert">{t.loadFail}</ErrorBox>
         )}
 
-        {!loadError && isSearching && filteredEpisodes.length === 0 && (
-          <NoResults>{t.noResults(trimmedQuery)}</NoResults>
+        {!loadError && isFiltered && filteredEpisodes.length === 0 && (
+          <NoResults>
+            {isSearching
+              ? t.noResults(trimmedQuery)
+              : t.noResults(t.regions[selectedRegion])}
+          </NoResults>
         )}
 
         {filteredEpisodes.map((ep, idx) => (

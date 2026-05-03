@@ -5,7 +5,10 @@
     "quote": "Historic? So am I.",
     "caption": "Paws touched the Parthenon. 🐾🐾🐾",
     "image": "episodes/athens.webp",
-    "location": { "lat": 37.9715, "lng": 23.7257 },
+    "location": {
+      "lat": 37.9715,
+      "lng": 23.7257
+    },
     "visible": true,
     "city": "athens",
     "story": {
@@ -34,7 +37,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 2,
@@ -42,7 +46,10 @@
     "quote": "She came. She saw. She purred.",
     "caption": "Colosseum? Just her playground. History bows when she walks 🐾🐾🐾",
     "image": "episodes/rome.webp",
-    "location": { "lat": 41.8902, "lng": 12.4922 },
+    "location": {
+      "lat": 41.8902,
+      "lng": 12.4922
+    },
     "visible": true,
     "city": "rome",
     "story": {
@@ -71,7 +78,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 3,
@@ -79,7 +87,10 @@
     "quote": "Allure built in. Like her gaze.",
     "caption": "Paris didn’t stand a chance. 🐾🐾🐾",
     "image": "episodes/paris.webp",
-    "location": { "lat": 48.8566, "lng": 2.3522 },
+    "location": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
     "visible": true,
     "city": "paris",
     "story": {
@@ -108,7 +119,8 @@
         },
         "answer": true
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 4,
@@ -116,7 +128,10 @@
     "quote": "Curves, spires, and one queen.",
     "caption": "She danced with Gaudí’s ghosts. 🐾🐾🐾",
     "image": "episodes/barcelona.webp",
-    "location": { "lat": 41.3851, "lng": 2.1734 },
+    "location": {
+      "lat": 41.3851,
+      "lng": 2.1734
+    },
     "visible": true,
     "city": "barcelona",
     "story": {
@@ -145,7 +160,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 5,
@@ -153,7 +169,10 @@
     "quote": "Fog lifted. She didn’t need directions.",
     "caption": "No fanfare. No velvet. Just presence. 🐾🐾🐾",
     "image": "episodes/london.webp",
-    "location": { "lat": 51.5074, "lng": -0.1278 },
+    "location": {
+      "lat": 51.5074,
+      "lng": -0.1278
+    },
     "visible": true,
     "city": "london",
     "story": {
@@ -182,7 +201,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 6,
@@ -190,7 +210,10 @@
     "quote": "Paws before pedals.",
     "caption": "No bike. No boat. Just grace on cobblestones. 🐾🐾🐾",
     "image": "episodes/amsterdam.webp",
-    "location": { "lat": 52.3676, "lng": 4.9041 },
+    "location": {
+      "lat": 52.3676,
+      "lng": 4.9041
+    },
     "visible": true,
     "city": "amsterdam",
     "story": {
@@ -219,7 +242,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 7,
@@ -227,7 +251,10 @@
     "quote": "Power spoke. She didn’t need to.",
     "caption": "She walked. History saluted. 🐾🐾🐾",
     "image": "episodes/berlin.webp",
-    "location": { "lat": 52.52, "lng": 13.405 },
+    "location": {
+      "lat": 52.52,
+      "lng": 13.405
+    },
     "visible": true,
     "city": "berlin",
     "story": {
@@ -256,7 +283,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 8,
@@ -264,7 +292,10 @@
     "quote": "She didn’t knock. The doors knew.",
     "caption": "In stillness, she reigned. In stone, she bloomed 🐾🐾🐾",
     "image": "episodes/vienna.webp",
-    "location": { "lat": 48.2082, "lng": 16.3738 },
+    "location": {
+      "lat": 48.2082,
+      "lng": 16.3738
+    },
     "visible": true,
     "city": "vienna",
     "story": {
@@ -293,7 +324,8 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
   {
     "id": 9,
@@ -301,7 +333,10 @@
     "quote": "She wandered slow. The shadows bent",
     "caption": "Where myths curled, she glowed. 🐾🐾🐾",
     "image": "episodes/prague.webp",
-    "location": { "lat": 50.0755, "lng": 14.4378 },
+    "location": {
+      "lat": 50.0755,
+      "lng": 14.4378
+    },
     "visible": true,
     "city": "prague",
     "story": {
@@ -330,15 +365,19 @@
         },
         "answer": true
       }
-    ]
+    ],
+    "region": "europe"
   },
-   {
+  {
     "id": 10,
     "title": "SOLadventure #10 – Swiss, air, alpine stare 🏔 ️🇨🇭",
     "quote": "Height never humbled her.",
     "caption": "The Alps called. She brought silence. 🐾🐾🐾",
     "image": "episodes/swiss.webp",
-    "location": { "lat": 46.8182, "lng": 8.2275 },
+    "location": {
+      "lat": 46.8182,
+      "lng": 8.2275
+    },
     "visible": true,
     "city": "swiss",
     "story": {
@@ -367,15 +406,19 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
-   {
+  {
     "id": 11,
     "title": "SOLadventure #11 – Ljubljana, softly crowned 🏰 🇸🇮",
     "quote": "Crowned by calm.",
     "caption": "Pastel walls. Quiet rule. 🐾🐾🐾",
     "image": "episodes/ljubljana.webp",
-    "location": { "lat": 46.0569, "lng": 14.5058 },
+    "location": {
+      "lat": 46.0569,
+      "lng": 14.5058
+    },
     "visible": true,
     "city": "ljubljana",
     "story": {
@@ -404,15 +447,19 @@
         },
         "answer": false
       }
-    ]
+    ],
+    "region": "europe"
   },
-   {
+  {
     "id": 12,
     "title": "SOLadventure #12 – Budapest, throne by the river 🌉 🇭🇺",
     "quote": "She cast no shadow. Just authority.",
     "caption": "She sat. The Parliament bowed. 🐾🐾🐾",
     "image": "episodes/budapest.webp",
-    "location": { "lat": 47.4979, "lng": 19.0402 },
+    "location": {
+      "lat": 47.4979,
+      "lng": 19.0402
+    },
     "visible": true,
     "city": "budapest",
     "story": {
@@ -441,1502 +488,1582 @@
         },
         "answer": true
       }
-    ]
+    ],
+    "region": "europe"
   },
-{
-  "id": 13,
-  "title": "SOLadventure #13 – Kraków, echoes in stone 🏰🇵🇱",
-  "quote": "She walked soft. The city whispered back.",
-  "caption": "Past and pawprints never fade. 🐾🐾🐾",
-  "image": "episodes/Kraków.webp",
-  "location": {
-    "lat": 50.0647,
-    "lng": 19.945
+  {
+    "id": 13,
+    "title": "SOLadventure #13 – Kraków, echoes in stone 🏰🇵🇱",
+    "quote": "She walked soft. The city whispered back.",
+    "caption": "Past and pawprints never fade. 🐾🐾🐾",
+    "image": "episodes/Kraków.webp",
+    "location": {
+      "lat": 50.0647,
+      "lng": 19.945
+    },
+    "visible": true,
+    "city": "krakow",
+    "story": {
+      "en": "Kraków doesn’t narrate; it reveals. It doesn’t display its history, it lets it seep quietly, like a secret passed from one generation to the next. Sol walked through alleys where kings once whispered their doubts and courtyards that still echoed revolutions written in ink, until, behind shuttered windows, she heard the faint sound of a violin. She paused, letting the melody flow through her, then moved again as if following a memory that wasn’t hers—yet she knew it. In the narrow streets of Kazimierz, an old inscription cracked, not from time but from the force of remembrance; where people had erased, Sol recalled. She changed nothing; she simply existed, and in that moment, the city ceased to be a place and became a face—aged and calm—looking at her with quiet grace and smiling.",
+      "el": "Η Κρακοβία δεν αφηγείται· αποκαλύπτει, δεν εκθέτει την ιστορία της, αλλά τη διαρρέει αθόρυβα, σαν μυστικό που περνά από γενιά σε γενιά. Η Sol περπάτησε σε σοκάκια όπου άλλοτε οι βασιλιάδες ψιθύριζαν τις αμφιβολίες τους και σε αυλές που ακόμη αντηχούσαν επαναστάσεις γραμμένες με μελάνι, ώσπου, πίσω από κλειστά παραθυρόφυλλα, άκουσε ένα βιολί να παίζει. Στάθηκε για λίγο, άφησε τη μελωδία να τη διαπεράσει και προχώρησε ξανά, σαν να ακολουθούσε μια μνήμη που δεν ήταν δική της και όμως την αναγνώριζε. Στα στενά του Καζιμιέρζ, μια παλιά επιγραφή ράγισε, όχι από τον χρόνο αλλά από την ίδια τη δύναμη της ανάμνησης· εκεί όπου οι άνθρωποι είχαν σβήσει, η Sol ανακάλεσε. Δεν άλλαξε τίποτα· αρκέστηκε να υπάρχει, κι εκείνη τη στιγμή η πόλη έπαψε να είναι τόπος και μεταμορφώθηκε σε πρόσωπο, γερασμένο και ήρεμο, που την κοιτούσε με γαλήνη και χαμογελούσε."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol hear a violin behind shuttered windows?",
+          "el": "Άκουσε η Sol ένα βιολί πίσω από κλειστά παραθυρόφυλλα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol erase a memory in Kazimierz?",
+          "el": "Διέγραψε η Sol μια μνήμη στο Καζιμιέρζ;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did Kraków smile at Sol like an old face?",
+          "el": "Χαμογέλασε η Κρακοβία στη Sol σαν γέρικο πρόσωπο;"
+        },
+        "answer": true
+      }
+    ],
+    "region": "europe"
   },
-  "visible": true,
-  "city": "krakow",
-  "story": {
-    "en": "Kraków doesn’t narrate; it reveals. It doesn’t display its history, it lets it seep quietly, like a secret passed from one generation to the next. Sol walked through alleys where kings once whispered their doubts and courtyards that still echoed revolutions written in ink, until, behind shuttered windows, she heard the faint sound of a violin. She paused, letting the melody flow through her, then moved again as if following a memory that wasn’t hers—yet she knew it. In the narrow streets of Kazimierz, an old inscription cracked, not from time but from the force of remembrance; where people had erased, Sol recalled. She changed nothing; she simply existed, and in that moment, the city ceased to be a place and became a face—aged and calm—looking at her with quiet grace and smiling.",
-    "el": "Η Κρακοβία δεν αφηγείται· αποκαλύπτει, δεν εκθέτει την ιστορία της, αλλά τη διαρρέει αθόρυβα, σαν μυστικό που περνά από γενιά σε γενιά. Η Sol περπάτησε σε σοκάκια όπου άλλοτε οι βασιλιάδες ψιθύριζαν τις αμφιβολίες τους και σε αυλές που ακόμη αντηχούσαν επαναστάσεις γραμμένες με μελάνι, ώσπου, πίσω από κλειστά παραθυρόφυλλα, άκουσε ένα βιολί να παίζει. Στάθηκε για λίγο, άφησε τη μελωδία να τη διαπεράσει και προχώρησε ξανά, σαν να ακολουθούσε μια μνήμη που δεν ήταν δική της και όμως την αναγνώριζε. Στα στενά του Καζιμιέρζ, μια παλιά επιγραφή ράγισε, όχι από τον χρόνο αλλά από την ίδια τη δύναμη της ανάμνησης· εκεί όπου οι άνθρωποι είχαν σβήσει, η Sol ανακάλεσε. Δεν άλλαξε τίποτα· αρκέστηκε να υπάρχει, κι εκείνη τη στιγμή η πόλη έπαψε να είναι τόπος και μεταμορφώθηκε σε πρόσωπο, γερασμένο και ήρεμο, που την κοιτούσε με γαλήνη και χαμογελούσε."
+  {
+    "id": 14,
+    "title": "SOLadventure #14 – Tallinn, soft reign 🌫️ 🇪🇪",
+    "quote": "Even the dusk waited",
+    "caption": "When cobblestones hush, she rules. 🐾🐾🐾",
+    "image": "episodes/Tallinn.webp",
+    "location": {
+      "lat": 59.437,
+      "lng": 24.7536
+    },
+    "visible": true,
+    "city": "tallinn",
+    "story": {
+      "en": "Tallinn did not greet her with trumpets but with the rhythm of dusk. Between turrets and winding alleys, Sol did not walk to be noticed; the city shifted discreetly to embrace her. The old lanterns flickered, rooftops bent gently, and the breeze carried a scent of wood and sea. In the square, the colors of the sky slid across the stones as if painting the past with a fresh stroke. She stood beneath the belfries and blinked slowly; shadows stretched their cloak, and the cobblestones seemed to remember ancient wanderers. It was not a parade; it was a nod from History. And she reigned without rising, with dusk as her crown and the city bowing silently.",
+      "el": "Το Ταλίν δεν την υποδέχτηκε με σάλπιγγες αλλά με τον ρυθμό του δειλινού. Ανάμεσα σε πυργίσκους και στριφογυριστά σοκάκια, η Sol δεν περπάτησε για να την προσέξουν· η πόλη μετακινήθηκε διακριτικά για να την αγκαλιάσει. Τα παλιά φανάρια τρεμόπαιξαν, οι στέγες έγειραν απαλά, και το αεράκι γέμισε άρωμα από ξύλο και θάλασσα. Στην πλατεία, τα χρώματα του ουρανού γλίστρησαν πάνω στις πέτρες σαν να έβαφαν το παρελθόν με μια νέα πινελιά. Στάθηκε κάτω από τα καμπαναριά και ανοιγόκλεισε τα μάτια αργά· οι σκιές άπλωσαν τον μανδύα τους, και το λιθόστρωτο έμοιαζε να θυμάται παλιούς περιπατητές. Δεν ήταν παρέλαση· ήταν ένα νεύμα από την Ιστορία. Και εκείνη βασίλεψε χωρίς να υψωθεί, με το δειλινό να γίνεται στέμμα και την πόλη να γονατίζει αθόρυβα."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did the rooftops lean closer to Sol?",
+          "el": "Έγειραν οι στέγες προς τη Sol;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol demand attention in Tallinn?",
+          "el": "Απαίτησε προσοχή η Sol στο Ταλίν;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did the city adjust to see her?",
+          "el": "Προσαρμόστηκε η πόλη για να τη δει;"
+        },
+        "answer": true
+      }
+    ],
+    "region": "europe"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol hear a violin behind shuttered windows?",
-        "el": "Άκουσε η Sol ένα βιολί πίσω από κλειστά παραθυρόφυλλα;"
-      },
-      "answer": true
+  {
+    "id": 15,
+    "title": "SOLadventure #15 – Helsinki, white whispers ❄️🇫🇮",
+    "quote": "She didn’t wear white — she defined it.",
+    "caption": "No chill. No hush. Just quiet grace. 🐾🐾🐾",
+    "image": "episodes/helsinki.webp",
+    "location": {
+      "lat": 60.1695,
+      "lng": 24.9354
     },
-    {
-      "question": {
-        "en": "Did Sol erase a memory in Kazimierz?",
-        "el": "Διέγραψε η Sol μια μνήμη στο Καζιμιέρζ;"
-      },
-      "answer": false
+    "visible": true,
+    "city": "helsinki",
+    "story": {
+      "en": "Helsinki doesn’t wear the cold they speak of; it keeps it, like a rare jewel meant only for those who know how to see. Sol walked across Senate Square, through shades that weren’t simply white but a thousand reflections of light. The columns didn’t feel like stone; they felt like frost sculpted by winter air. In the streets leading to the harbor, salt mingled with thawing snow and the untold tales of sailors long gone. She paused at the Cathedral, not to admire it, but as if weighing the passage of time between its steps. And then, the north grew soft — like a whisper that had no need to bend the air, only to show her the way.",
+      "el": "Το Ελσίνκι δεν φοράει την ψυχρότητα που του αποδίδουν· τη φυλά σαν σπάνιο στολίδι για όσους ξέρουν να κοιτάζουν. Η Sol περπάτησε στην Πλατεία της Γερουσίας, ανάμεσα σε χρώματα που δεν ήταν απλώς λευκά αλλά χίλιες αποχρώσεις του φωτός. Οι κολώνες δεν έμοιαζαν με μάρμαρο· έμοιαζαν με πάχνη που είχε στερεοποιηθεί από τον χειμωνιάτικο αέρα. Στους δρόμους που οδηγούσαν στη θάλασσα, το αλάτι ανακατευόταν με χιονόνερο και ιστορίες παλιών ναυτικών που ποτέ δεν ακούστηκαν. Η Sol στάθηκε μπροστά στον Καθεδρικό, όχι για να τον θαυμάσει, αλλά σαν να ζύγιζε το πέρασμα του χρόνου ανάμεσα στις σκάλες του. Και τότε, ο βορράς έγινε απαλός — σαν ψίθυρος που δεν ήθελε να λυγίσει τον αέρα, αλλά να της δείξει τον δρόμο."
     },
-    {
-      "question": {
-        "en": "Did Kraków smile at Sol like an old face?",
-        "el": "Χαμογέλασε η Κρακοβία στη Sol σαν γέρικο πρόσωπο;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL walk on Senate Square in Helsinki?",
+          "el": "Περπάτησε η SOL στην Πλατεία της Γερουσίας στο Ελσίνκι;"
+        },
+        "answer": true
       },
-      "answer": true
-    }
-  ]
-},
-{
-  "id": 14,
-  "title": "SOLadventure #14 – Tallinn, soft reign 🌫️ 🇪🇪",
-  "quote": "Even the dusk waited",
-  "caption": "When cobblestones hush, she rules. 🐾🐾🐾",
-  "image": "episodes/Tallinn.webp",
-  "location": {
-    "lat": 59.437,
-    "lng": 24.7536
+      {
+        "question": {
+          "en": "Was the snow noisy under her paws?",
+          "el": "Ήταν το χιόνι θορυβώδες κάτω από τις πατούσες της;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did the story describe Helsinki as composed, not cold?",
+          "el": "Περιέγραψε η ιστορία την Ελσίνκι ως ακριβή και όχι ψυχρή;"
+        },
+        "answer": true
+      }
+    ],
+    "region": "europe"
   },
-  "visible": true,
-  "city": "tallinn",
-  "story": {
-    "en": "Tallinn did not greet her with trumpets but with the rhythm of dusk. Between turrets and winding alleys, Sol did not walk to be noticed; the city shifted discreetly to embrace her. The old lanterns flickered, rooftops bent gently, and the breeze carried a scent of wood and sea. In the square, the colors of the sky slid across the stones as if painting the past with a fresh stroke. She stood beneath the belfries and blinked slowly; shadows stretched their cloak, and the cobblestones seemed to remember ancient wanderers. It was not a parade; it was a nod from History. And she reigned without rising, with dusk as her crown and the city bowing silently.",
-    "el": "Το Ταλίν δεν την υποδέχτηκε με σάλπιγγες αλλά με τον ρυθμό του δειλινού. Ανάμεσα σε πυργίσκους και στριφογυριστά σοκάκια, η Sol δεν περπάτησε για να την προσέξουν· η πόλη μετακινήθηκε διακριτικά για να την αγκαλιάσει. Τα παλιά φανάρια τρεμόπαιξαν, οι στέγες έγειραν απαλά, και το αεράκι γέμισε άρωμα από ξύλο και θάλασσα. Στην πλατεία, τα χρώματα του ουρανού γλίστρησαν πάνω στις πέτρες σαν να έβαφαν το παρελθόν με μια νέα πινελιά. Στάθηκε κάτω από τα καμπαναριά και ανοιγόκλεισε τα μάτια αργά· οι σκιές άπλωσαν τον μανδύα τους, και το λιθόστρωτο έμοιαζε να θυμάται παλιούς περιπατητές. Δεν ήταν παρέλαση· ήταν ένα νεύμα από την Ιστορία. Και εκείνη βασίλεψε χωρίς να υψωθεί, με το δειλινό να γίνεται στέμμα και την πόλη να γονατίζει αθόρυβα."
+  {
+    "id": 16,
+    "title": "SOLadventure #16 – Stockholm, light on water 🌊🇸🇪",
+    "quote": "Light speaks in stillness.",
+    "caption": "No ripples. No echoes. Just still light. 🐾🐾🐾",
+    "image": "episodes/stockholm.webp",
+    "location": {
+      "lat": 59.3293,
+      "lng": 18.0686
+    },
+    "visible": true,
+    "city": "stockholm",
+    "story": {
+      "en": "She stepped onto the bridge, where the islands had woven centuries of serenity and the waters spoke in colors. In Stockholm, light wasn’t brilliance — it was a whisper, soft and true. It danced across the water like a translucent veil, drifting between pastel façades and glassy surfaces like a well-kept secret the city never wished to reveal. Sol didn’t chase it; she let it embrace her. She walked through the alleys of Gamla Stan, letting her pawprints merge with the echoes of centuries, and paused near the royal palace, like a queen who knows her power needs no display. The water, still yet alive, carried her reflection as something that belonged to it, and she felt that in Stockholm, light was her true companion.",
+      "el": "Πάτησε πάνω στη γέφυρα, εκεί όπου τα νησιά έραβαν αιώνες γαλήνης και τα νερά μιλούσαν με χρώματα. Στη Στοκχόλμη, το φως δεν ήταν λάμψη — ήταν ψίθυρος, απαλός και αληθινός. Χόρευε πάνω στο νερό σαν διάφανο πέπλο, αιωρούνταν ανάμεσα σε παστέλ προσόψεις και γυάλινες επιφάνειες σαν καλά κρυμμένο μυστικό που η πόλη δεν ήθελε να αποκαλύψει. Η SOL δεν το κυνήγησε· το άφησε να την αγκαλιάσει. Προχώρησε στα σοκάκια της Gamla Stan, αφήνοντας τις πατημασιές της να ενωθούν με τον απόηχο αιώνων, και στάθηκε κοντά στο βασιλικό παλάτι, σαν βασίλισσα που γνωρίζει ότι η δύναμή της δεν χρειάζεται επίδειξη. Το νερό, ακίνητο αλλά ζωντανό, κουβαλούσε την αντανάκλασή της σαν κάτι που του ανήκει, κι εκείνη ένιωθε πως, στη Στοκχόλμη, το φως ήταν ο πραγματικός συνοδοιπόρος της"
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Is Stockholm built across 14 islands?",
+          "el": "Είναι η Στοκχόλμη χτισμένη πάνω σε 14 νησιά;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL sit on a royal throne in Stockholm?",
+          "el": "Κάθισε η SOL σε βασιλικό θρόνο στη Στοκχόλμη;"
+        },
+        "answer": false
+      },
+      {
+        "question": {
+          "en": "Did the story say the water carried her reflection?",
+          "el": "Ανέφερε η ιστορία ότι το νερό μετέφερε την αντανάκλασή της;"
+        },
+        "answer": true
+      }
+    ],
+    "region": "europe"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did the rooftops lean closer to Sol?",
-        "el": "Έγειραν οι στέγες προς τη Sol;"
-      },
-      "answer": true
+  {
+    "id": 17,
+    "title": "SOLadventure #17 – Copenhagen, Nyhavn & cycle vibes 🚲 🇩🇰",
+    "quote": "In her wake, color blooms.",
+    "caption": "No traffic. No pause. Just pedal art. 🐾🐾🐾",
+    "image": "episodes/copenhagen.webp",
+    "location": {
+      "lat": 55.6761,
+      "lng": 12.5683
     },
-    {
-      "question": {
-        "en": "Did Sol demand attention in Tallinn?",
-        "el": "Απαίτησε προσοχή η Sol στο Ταλίν;"
-      },
-      "answer": false
+    "visible": true,
+    "city": "copenhagen",
+    "story": {
+      "en": "She arrived where water met wheels and colors soared. In Copenhagen, every canal was a gallery, every street a runway. SOL didn’t just ride — she harmonized with spokes and sunlit facades. The Nyhavn houses leaned in her direction, as if waiting to be bridged. Bicycles hummed a welcome, tires tracing arcs in cobblestone. She paused only to let the world catch up, then pedaled on. No flags, no fanfare — just motion in technicolor.",
+      "el": "Έφτασε εκεί όπου το νερό συναντά τους τροχούς και τα χρώματα πετούν. Στην Κοπεγχάγη, κάθε κανάλι ήταν γκαλερί, κάθε δρόμος πασαρέλα. Η SOL δεν οδηγούσε απλώς — εναρμονιζόταν με τις ακτίνες και τις ηλιόλουστες όψεις. Τα σπίτια του Nyhavn έγειραν προς αυτήν, σαν να περίμεναν να τις ενώσει. Τα ποδήλατα καλωσόρισαν με βουητό, οι ρόδες χάραζαν τόξα στο λιθόστρωτο. Στάθηκε μόνο για να προλάβει ο κόσμος να την ακολουθήσει, και μετά ξανάρχισε. Χωρίς σημαίες, χωρίς πανηγύρι — μόνο κίνηση σε τεχνοχρωμία."
     },
-    {
-      "question": {
-        "en": "Did the city adjust to see her?",
-        "el": "Προσαρμόστηκε η πόλη για να τη δει;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL harmonize with bicycle spokes in Copenhagen?",
+          "el": "Εναρμονίστηκε η SOL με τις ακτίνες ποδηλάτων στην Κοπεγχάγη;"
+        },
+        "answer": true
       },
-      "answer": true
-    }
-  ]
-},
-{
-  "id": 15,
-  "title": "SOLadventure #15 – Helsinki, white whispers ❄️🇫🇮",
-  "quote": "She didn’t wear white — she defined it.",
-  "caption": "No chill. No hush. Just quiet grace. 🐾🐾🐾",
-  "image": "episodes/helsinki.webp",
-  "location": {
-    "lat": 60.1695,
-    "lng": 24.9354
+      {
+        "question": {
+          "en": "Were the Nyhavn houses described as leaning in her direction?",
+          "el": "Περιγράφηκαν τα σπίτια του Nyhavn να γέρνουν προς τη SOL;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention flags or fanfare in Copenhagen?",
+          "el": "Αναφέρθηκαν σημαίες ή πανηγύρι στην ιστορία της Κοπεγχάγης;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "europe"
   },
-  "visible": true,
-  "city": "helsinki",
-  "story": {
-    "en": "Helsinki doesn’t wear the cold they speak of; it keeps it, like a rare jewel meant only for those who know how to see. Sol walked across Senate Square, through shades that weren’t simply white but a thousand reflections of light. The columns didn’t feel like stone; they felt like frost sculpted by winter air. In the streets leading to the harbor, salt mingled with thawing snow and the untold tales of sailors long gone. She paused at the Cathedral, not to admire it, but as if weighing the passage of time between its steps. And then, the north grew soft — like a whisper that had no need to bend the air, only to show her the way.",
-    "el": "Το Ελσίνκι δεν φοράει την ψυχρότητα που του αποδίδουν· τη φυλά σαν σπάνιο στολίδι για όσους ξέρουν να κοιτάζουν. Η Sol περπάτησε στην Πλατεία της Γερουσίας, ανάμεσα σε χρώματα που δεν ήταν απλώς λευκά αλλά χίλιες αποχρώσεις του φωτός. Οι κολώνες δεν έμοιαζαν με μάρμαρο· έμοιαζαν με πάχνη που είχε στερεοποιηθεί από τον χειμωνιάτικο αέρα. Στους δρόμους που οδηγούσαν στη θάλασσα, το αλάτι ανακατευόταν με χιονόνερο και ιστορίες παλιών ναυτικών που ποτέ δεν ακούστηκαν. Η Sol στάθηκε μπροστά στον Καθεδρικό, όχι για να τον θαυμάσει, αλλά σαν να ζύγιζε το πέρασμα του χρόνου ανάμεσα στις σκάλες του. Και τότε, ο βορράς έγινε απαλός — σαν ψίθυρος που δεν ήθελε να λυγίσει τον αέρα, αλλά να της δείξει τον δρόμο."
+  {
+    "id": 18,
+    "title": "SOLadventure #18 – Bergen, mist and melody 🎶🇳🇴",
+    "quote": "Fjords cradle her melody.",
+    "caption": "No storm. No sorrow. Just whispered tunes. 🐾🐾🐾",
+    "image": "episodes/bergen.webp",
+    "location": {
+      "lat": 60.3913,
+      "lng": 5.3221
+    },
+    "visible": true,
+    "city": "bergen",
+    "story": {
+      "en": "In Bergen, where the mountains embrace the sea and the mist wove songs between the wooden houses, the city felt like a stage where every stone nurtured stories and every drop carried a sound. SOL did not simply walk the cobblestones—she listened, letting the wind compose melodies around her that blended with the salt of the harbor and the timber of the old boats. Lanterns flickered like greetings, rooftops dripped in rhythm, and the port breathed with the pulse of a vibrating string. Even the mountains seemed to answer with an echo, giving depth to the silence. And so there, without climax, without finale, stretched the endless melody of quiet—a song only she could hear.",
+      "el": "Στο Μπέργκεν, εκεί που τα βουνά αγκαλιάζουν τη θάλασσα και η ομίχλη ύφαινε τραγούδια ανάμεσα στα ξύλινα σπίτια, η πόλη έμοιαζε σαν σκηνή όπου κάθε πέτρα έτρεφε ιστορίες και κάθε σταγόνα μετέφερε έναν ήχο. Η SOL δεν περπάτησε απλώς στα λιθόστρωτα—άκουγε, αφήνοντας τον αέρα να συνθέσει γύρω της μελωδίες που μπλέκονταν με το αλάτι του λιμανιού και το ξύλο των παλιών καϊκιών. Τα φανάρια τρεμόπαιζαν σαν χαιρετισμός, οι στέγες έσταζαν σε ρυθμό, και το λιμάνι ανέπνεε με παλμό που θύμιζε χορδή μουσικού οργάνου. Ακόμη και τα βουνά έμοιαζαν να απαντούν με αντίλαλο, δίνοντας βάθος στη σιωπή. Κι έτσι, εκεί, χωρίς κορύφωση, χωρίς φινάλε, απλώθηκε η ατελείωτη μελωδία της σιγής — ένα τραγούδι που μόνο η ίδια μπορούσε να ακούσει."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Is Bergen surrounded by fjords and mountains?",
+          "el": "Περιβάλλεται το Μπέργκεν από φιόρδ και βουνά;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL listen to the fog sing?",
+          "el": "Άκουγε η SOL την ομίχλη να τραγουδά;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was the harbor in Bergen described as loud?",
+          "el": "Περιγράφηκε το λιμάνι στο Μπέργκεν ως θορυβώδες;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "europe"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL walk on Senate Square in Helsinki?",
-        "el": "Περπάτησε η SOL στην Πλατεία της Γερουσίας στο Ελσίνκι;"
-      },
-      "answer": true
+  {
+    "id": 19,
+    "title": "SOLadventure #19 – Edinburgh, where legends linger 🌫 ️🇬🇧",
+    "quote": "Legends bowed to her stride.",
+    "caption": "Storied steps, no turning back. 🐾🐾🐾",
+    "image": "episodes/edinburgh.webp",
+    "location": {
+      "lat": 55.9533,
+      "lng": -3.1883
     },
-    {
-      "question": {
-        "en": "Was the snow noisy under her paws?",
-        "el": "Ήταν το χιόνι θορυβώδες κάτω από τις πατούσες της;"
-      },
-      "answer": false
+    "visible": true,
+    "city": "edinburgh",
+    "story": {
+      "en": "Mist slipped across Edinburgh’s cobblestones as SOL moved between stone walls and the whispers of old tales. The shadows of castles stretched over rooftops, and gothic towers watched in silence. Each step echoed like a verse from a legend not yet written. The city breathed history, and the wind carried the murmurs of poets and kings. SOL paused along the Royal Mile, her gaze lost between stone and fog. There was no fear, no haste—only the quiet certainty of a queen walking where legends bow.",
+      "el": "Ομίχλη γλίστρησε πάνω στα καλντερίμια του Εδιμβούργου καθώς η SOL περνούσε ανάμεσα σε πέτρινους τοίχους και ψιθύρους παλιών ιστοριών. Οι σκιές των κάστρων απλώνονταν στις στέγες και οι γοτθικοί πύργοι παρακολουθούσαν σιωπηλά. Κάθε βήμα αντηχούσε σαν στίχος από θρύλο που δεν έχει γραφτεί ακόμη. Η πόλη ανέπνεε παρελθόν, και ο άνεμος μετέφερε ψίθυρους ποιητών και βασιλιάδων. Η SOL στάθηκε στο Royal Mile, το βλέμμα της χαμένο ανάμεσα σε πέτρα και ομίχλη. Δεν υπήρχε φόβος, ούτε βιασύνη, μόνο η ήρεμη σιγουριά μιας βασίλισσας που περπατά εκεί όπου οι θρύλοι υποκλίνονται."
     },
-    {
-      "question": {
-        "en": "Did the story describe Helsinki as composed, not cold?",
-        "el": "Περιέγραψε η ιστορία την Ελσίνκι ως ακριβή και όχι ψυχρή;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL walk the Royal Mile at dawn?",
+          "el": "Περπάτησε η SOL στη Βασιλική Οδό τα ξημερώματα;"
+        },
+        "answer": true
       },
-      "answer": true
-    }
-  ]
-},
-{
-  "id": 16,
-  "title": "SOLadventure #16 – Stockholm, light on water 🌊🇸🇪",
-  "quote": "Light speaks in stillness.",
-  "caption": "No ripples. No echoes. Just still light. 🐾🐾🐾",
-  "image": "episodes/stockholm.webp",
-  "location": {
-    "lat": 59.3293,
-    "lng": 18.0686
+      {
+        "question": {
+          "en": "Did the story say cliffs bowed in reverence?",
+          "el": "Ανέφερε η ιστορία ότι οι πλαγιές υποκλίθηκαν σε σεβασμό;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention any crowds in the closes?",
+          "el": "Αναφέρθηκαν πλήθη στα στενά σοκάκια;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "europe"
   },
-  "visible": true,
-  "city": "stockholm",
-  "story": {
-    "en": "She stepped onto the bridge, where the islands had woven centuries of serenity and the waters spoke in colors. In Stockholm, light wasn’t brilliance — it was a whisper, soft and true. It danced across the water like a translucent veil, drifting between pastel façades and glassy surfaces like a well-kept secret the city never wished to reveal. Sol didn’t chase it; she let it embrace her. She walked through the alleys of Gamla Stan, letting her pawprints merge with the echoes of centuries, and paused near the royal palace, like a queen who knows her power needs no display. The water, still yet alive, carried her reflection as something that belonged to it, and she felt that in Stockholm, light was her true companion.",
-    "el": "Πάτησε πάνω στη γέφυρα, εκεί όπου τα νησιά έραβαν αιώνες γαλήνης και τα νερά μιλούσαν με χρώματα. Στη Στοκχόλμη, το φως δεν ήταν λάμψη — ήταν ψίθυρος, απαλός και αληθινός. Χόρευε πάνω στο νερό σαν διάφανο πέπλο, αιωρούνταν ανάμεσα σε παστέλ προσόψεις και γυάλινες επιφάνειες σαν καλά κρυμμένο μυστικό που η πόλη δεν ήθελε να αποκαλύψει. Η SOL δεν το κυνήγησε· το άφησε να την αγκαλιάσει. Προχώρησε στα σοκάκια της Gamla Stan, αφήνοντας τις πατημασιές της να ενωθούν με τον απόηχο αιώνων, και στάθηκε κοντά στο βασιλικό παλάτι, σαν βασίλισσα που γνωρίζει ότι η δύναμή της δεν χρειάζεται επίδειξη. Το νερό, ακίνητο αλλά ζωντανό, κουβαλούσε την αντανάκλασή της σαν κάτι που του ανήκει, κι εκείνη ένιωθε πως, στη Στοκχόλμη, το φως ήταν ο πραγματικός συνοδοιπόρος της"
+  {
+    "id": 20,
+    "title": "SOLadventure #20 – Dublin, literary pubs & Georgian squares 🍻📚🇮🇪",
+    "quote": "She wrote her story in every raised glass.",
+    "caption": "No pause. No encore. Just pages and pints. 🐾🐾🐾",
+    "image": "episodes/dublin.webp",
+    "location": {
+      "lat": 53.3498,
+      "lng": -6.2603
+    },
+    "visible": true,
+    "city": "dublin",
+    "story": {
+      "en": "The scent of whiskey mingled with the whispers of the squares as SOL walked through Dublin. Every pub was a library of laughter and nostalgia, and every Georgian row a stage of history. She did not simply wander the cobblestones; she wrote her story in every raised glass. The doors of Temple Bar opened wide in greeting, candlelight danced upon wooden beams, and verses echoed through the walls. Beneath the Ha’penny Bridge she listened to stories flowing freely like foam. No prologue, no epilogue, only living chapters.",
+      "el": "Η μυρωδιά του ουίσκι μπλέχτηκε με τους ψίθυρους των πλατειών καθώς η SOL βάδισε στο Δουβλίνο. Κάθε παμπ ήταν βιβλιοθήκη γέλιου και νοσταλγίας, και κάθε γεωργιανή σειρά σπιτιών μια σκηνή της ιστορίας. Δεν περιπλανήθηκε απλώς στα λιθόστρωτα, έγραψε την ιστορία της σε κάθε υψωμένο ποτήρι. Η πόρτα του Temple Bar άνοιξε πλατιά σε χαιρετισμό, το φως από τα κεριά χόρευε πάνω στις ξύλινες δοκούς, και στίχοι αντηχούσαν μέσα στους τοίχους. Στάθηκε κάτω από τη Ha’penny Bridge, ακούγοντας ιστορίες να κυλούν ελεύθερα σαν αφρό. Χωρίς πρόλογο, χωρίς επίλογο, μόνο κεφάλαια ζωντανά."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL write her story in every raised glass?",
+          "el": "Έγραψε η SOL την ιστορία της σε κάθε υψωμένο ποτήρι;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Were Georgian facades lining the squares mentioned?",
+          "el": "Αναφέρθηκαν γεωργιανές προσόψεις να περιβάλλουν τις πλατείες;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL cross the River Liffey by boat?",
+          "el": "Διέσχισε η SOL τον ποταμό Liffey με βάρκα;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "europe"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Is Stockholm built across 14 islands?",
-        "el": "Είναι η Στοκχόλμη χτισμένη πάνω σε 14 νησιά;"
-      },
-      "answer": true
+  {
+    "id": 21,
+    "title": "SOLadventure #21 – Reykjavík, fire & ice ❄️🔥🇮🇸",
+    "quote": "She wrote warmth on ice.",
+    "caption": "No freeze. No thaw. Just fiery grace. 🐾🐾🐾",
+    "image": "episodes/reykjavik.webp",
+    "location": {
+      "lat": 64.1466,
+      "lng": -21.9426
     },
-    {
-      "question": {
-        "en": "Did SOL sit on a royal throne in Stockholm?",
-        "el": "Κάθισε η SOL σε βασιλικό θρόνο στη Στοκχόλμη;"
-      },
-      "answer": false
+    "visible": true,
+    "city": "reykjavik",
+    "story": {
+      "en": "Frost touched the earth, and beneath its crystal surface fire slept. There, SOL felt Reykjavík’s pulse. Veins of lava throbbed under the ice, and geysers danced in the cold. She did not merely cross the tundra; she wove warmth into frozen breath. Basalt columns rose like silent witnesses, and hot springs shimmered beneath her gaze. The sky glowed orange at midnight, and every breath of wind carried liquid light. Here she was both spark and frost, the balance of extremes.",
+      "el": "Η παγωνιά άγγιζε τη γη και κάτω από την κρυστάλλινη επιφάνεια κοιμόταν φωτιά. Εκεί, η SOL ένιωσε τον παλμό του Ρέικιαβικ. Φλέβες λάβας παλλόντουσαν κάτω από τον πάγο και οι γκέιζερ χόρευαν στο ψύχος. Δεν διέσχισε απλώς την τούνδρα, ύφανε ζεστασιά στην παγωμένη ανάσα. Βασάλτικες κολόνες υψώνονταν σαν σιωπηλοί μάρτυρες και οι θερμές πηγές τρεμόπαιζαν κάτω από το βλέμμα της. Ο ουρανός έλαμπε πορτοκαλί στα μεσάνυχτα και κάθε πνοή ανέμου κουβαλούσε ρευστή λάμψη. Εδώ ήταν και σπινθήρας και παγωνιά, η ισορροπία των ακραίων."
     },
-    {
-      "question": {
-        "en": "Did the story say the water carried her reflection?",
-        "el": "Ανέφερε η ιστορία ότι το νερό μετέφερε την αντανάκλασή της;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did the story say geysers danced in the cold?",
+          "el": "Αναφέρει η ιστορία ότι οι γεϊζερ χόρευαν στο ψύχος;"
+        },
+        "answer": true
       },
-      "answer": true
-    }
-  ]
-},
-{
-  "id": 17,
-  "title": "SOLadventure #17 – Copenhagen, Nyhavn & cycle vibes 🚲 🇩🇰",
-  "quote": "In her wake, color blooms.",
-  "caption": "No traffic. No pause. Just pedal art. 🐾🐾🐾",
-  "image": "episodes/copenhagen.webp",
-  "location": {
-    "lat": 55.6761,
-    "lng": 12.5683
+      {
+        "question": {
+          "en": "Are basalt columns described as silent witnesses?",
+          "el": "Περιγράφονται οι βασάλτικες κολόνες ως σιωπηλοί μάρτυρες;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Is Reykjavík described as a silent desert?",
+          "el": "Περιγράφεται το Ρέικιαβικ ως σιωπηλή έρημος;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "europe"
   },
-  "visible": true,
-  "city": "copenhagen",
-  "story": {
-    "en": "She arrived where water met wheels and colors soared. In Copenhagen, every canal was a gallery, every street a runway. SOL didn’t just ride — she harmonized with spokes and sunlit facades. The Nyhavn houses leaned in her direction, as if waiting to be bridged. Bicycles hummed a welcome, tires tracing arcs in cobblestone. She paused only to let the world catch up, then pedaled on. No flags, no fanfare — just motion in technicolor.",
-    "el": "Έφτασε εκεί όπου το νερό συναντά τους τροχούς και τα χρώματα πετούν. Στην Κοπεγχάγη, κάθε κανάλι ήταν γκαλερί, κάθε δρόμος πασαρέλα. Η SOL δεν οδηγούσε απλώς — εναρμονιζόταν με τις ακτίνες και τις ηλιόλουστες όψεις. Τα σπίτια του Nyhavn έγειραν προς αυτήν, σαν να περίμεναν να τις ενώσει. Τα ποδήλατα καλωσόρισαν με βουητό, οι ρόδες χάραζαν τόξα στο λιθόστρωτο. Στάθηκε μόνο για να προλάβει ο κόσμος να την ακολουθήσει, και μετά ξανάρχισε. Χωρίς σημαίες, χωρίς πανηγύρι — μόνο κίνηση σε τεχνοχρωμία."
+  {
+    "id": 22,
+    "title": "SOLadventure #22 – Toronto, cityscapes & Niagara tale 🌊🇨🇦",
+    "quote": "She bridged roar and reflection.",
+    "caption": "No boundaries. No divides. Just currents and towers. 🐾🐾🐾",
+    "image": "episodes/toronto.webp",
+    "location": {
+      "lat": 43.6511,
+      "lng": -79.3836
+    },
+    "visible": true,
+    "city": "toronto",
+    "story": {
+      "en": "Niagara’s mist wrapped around SOL as she approached the glass heights of Toronto. The currents whispered against concrete, and the air smelled of rain and light. Water and skyscrapers merged in quiet harmony. She stood above the Horseshoe Falls as the spray wove rainbows into the dusk. The CN Tower rose like a steadfast guardian, its lights dancing to the river’s roar. No boundaries, no barriers, only the unity of what flows and what stands.",
+      "el": "Η ομίχλη των Νιαγάρα τύλιξε τη SOL καθώς πλησίαζε τα γυάλινα ύψη του Τορόντο. Τα ρεύματα ψιθύριζαν στον οπλισμένο σκυρόδεμα και ο αέρας μύριζε βροχή και φως. Νερό και ουρανοξύστες ενώνονταν σε μια διακριτική αρμονία. Στάθηκε πάνω από τους Καταρράκτες του Horseshoe, ενώ το ψεκασμένο νερό ύφανε ουράνια τόξα στο σούρουπο. Ο Πύργος CN δεσπόζε σαν ακλόνητος φρουρός, τα φώτα του να χορεύουν στο βρυχηθμό του ποταμού. Χωρίς σύνορα, χωρίς φράγματα, μόνο η ενότητα του ρέοντος και του δομημένου."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL perch above the Horseshoe Falls?",
+          "el": "Στάθηκε η SOL πάνω από τους Καταρράκτες του Χόρσσοε;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Is the CN Tower described as a steadfast sentinel?",
+          "el": "Περιγράφεται ο Πύργος CN ως ακλόνητος φρουρός;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention any borders or barriers?",
+          "el": "Αναφέρει η ιστορία σύνορα ή φράγματα;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL harmonize with bicycle spokes in Copenhagen?",
-        "el": "Εναρμονίστηκε η SOL με τις ακτίνες ποδηλάτων στην Κοπεγχάγη;"
-      },
-      "answer": true
+  {
+    "id": 23,
+    "title": "SOLadventure #23 – New York City, skyline queen 🏙️🇺🇸",
+    "quote": "Bridges bow to her gaze.",
+    "caption": "No pause. No skyline unseen. Just her and the city lights. 🐾🐾🐾",
+    "image": "episodes/newyork.webp",
+    "location": {
+      "lat": 40.7128,
+      "lng": -74.006
     },
-    {
-      "question": {
-        "en": "Were the Nyhavn houses described as leaning in her direction?",
-        "el": "Περιγράφηκαν τα σπίτια του Nyhavn να γέρνουν προς τη SOL;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "newyork",
+    "story": {
+      "en": "In the city where steel touches moonlight and bridges stretch over the river like ribbons of light, SOL felt the pulse of New York. The skyscrapers defied the clouds, and the neon lights shimmered through every street like a silent orchestra of dreams and noise. She climbed to a rooftop with her natural grace, watching her kingdom unfold from Brooklyn to Manhattan. The Brooklyn Bridge bowed subtly to her gaze as the wind played through her fur. Below, the East River mirrored her calm, and the skyline glowed at her command. No forest, no reef, only concrete domes and restless networks of light.",
+      "el": "Στην πόλη όπου ο χάλυβας αγγίζει το φεγγαρόφως και οι γέφυρες απλώνονται πάνω από τον ποταμό σαν κορδέλες φωτός, η SOL ένιωσε τη δύναμη της Νέας Υόρκης. Οι ουρανοξύστες αψηφούσαν τα σύννεφα, και τα νέον φώτα έλαμπαν σε κάθε δρόμο σαν σιωπηλή ορχήστρα από όνειρα και θόρυβο. Ανέβηκε στη στέγη με τη φυσική της χάρη, παρατηρώντας το βασίλειό της να εκτείνεται από το Μπρούκλιν ως το Μανχάταν. Η Γέφυρα του Μπρούκλιν υποκλίθηκε διακριτικά στο βλέμμα της, καθώς ο άνεμος χάιδευε τη γούνα της. Κάτω, ο ποταμός East καθρέφτιζε την ηρεμία της, και ο ορίζοντας έλαμπε με τη δική της εντολή. Όχι δάσος, όχι ύφαλος, μόνο μπετονένια θόλα και νευρικά δίκτυα φωτός."
     },
-    {
-      "question": {
-        "en": "Did the story mention flags or fanfare in Copenhagen?",
-        "el": "Αναφέρθηκαν σημαίες ή πανηγύρι στην ιστορία της Κοπεγχάγης;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL claim the rooftop beside the Brooklyn Bridge?",
+          "el": "Κατέλαβε η SOL τη στέγη δίπλα στη Γέφυρα του Μπρούκλιν;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 18,
-  "title": "SOLadventure #18 – Bergen, mist and melody 🎶🇳🇴",
-  "quote": "Fjords cradle her melody.",
-  "caption": "No storm. No sorrow. Just whispered tunes. 🐾🐾🐾",
-  "image": "episodes/bergen.webp",
-  "location": {
-    "lat": 60.3913,
-    "lng": 5.3221
+      {
+        "question": {
+          "en": "Did the story mention neon pulsing through every street?",
+          "el": "Αναφέρει η ιστορία νέον να αντηχεί σε κάθε δρόμο;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story reference a coral reef?",
+          "el": "Αναφέρει η ιστορία ύφαλο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "visible": true,
-  "city": "bergen",
-  "story": {
-    "en": "In Bergen, where the mountains embrace the sea and the mist wove songs between the wooden houses, the city felt like a stage where every stone nurtured stories and every drop carried a sound. SOL did not simply walk the cobblestones—she listened, letting the wind compose melodies around her that blended with the salt of the harbor and the timber of the old boats. Lanterns flickered like greetings, rooftops dripped in rhythm, and the port breathed with the pulse of a vibrating string. Even the mountains seemed to answer with an echo, giving depth to the silence. And so there, without climax, without finale, stretched the endless melody of quiet—a song only she could hear.",
-    "el": "Στο Μπέργκεν, εκεί που τα βουνά αγκαλιάζουν τη θάλασσα και η ομίχλη ύφαινε τραγούδια ανάμεσα στα ξύλινα σπίτια, η πόλη έμοιαζε σαν σκηνή όπου κάθε πέτρα έτρεφε ιστορίες και κάθε σταγόνα μετέφερε έναν ήχο. Η SOL δεν περπάτησε απλώς στα λιθόστρωτα—άκουγε, αφήνοντας τον αέρα να συνθέσει γύρω της μελωδίες που μπλέκονταν με το αλάτι του λιμανιού και το ξύλο των παλιών καϊκιών. Τα φανάρια τρεμόπαιζαν σαν χαιρετισμός, οι στέγες έσταζαν σε ρυθμό, και το λιμάνι ανέπνεε με παλμό που θύμιζε χορδή μουσικού οργάνου. Ακόμη και τα βουνά έμοιαζαν να απαντούν με αντίλαλο, δίνοντας βάθος στη σιωπή. Κι έτσι, εκεί, χωρίς κορύφωση, χωρίς φινάλε, απλώθηκε η ατελείωτη μελωδία της σιγής — ένα τραγούδι που μόνο η ίδια μπορούσε να ακούσει."
+  {
+    "id": 24,
+    "title": "SOLadventure #24 – Miami, sunlit streets 🌞🇺🇸",
+    "quote": "She owns the golden hour.",
+    "caption": "No traffic. No hurry. Just sunlit steps. 🐾🐾🐾",
+    "image": "episodes/miami.webp",
+    "location": {
+      "lat": 25.7617,
+      "lng": -80.1918
+    },
+    "visible": true,
+    "city": "miami",
+    "story": {
+      "en": "Between palm trees and pastel façades, SOL walked through Miami’s glow. The sunlight touched the buildings like a golden filter, and the coral pavements shimmered beneath her gentle steps. Every breeze carried warmth and color, scents of sea salt and music drifting from old hotels. She walked along Ocean Drive at the golden hour, her silhouette framed by Art Deco towers and turquoise waves. Reflections played upon her fur like light on glass. No crowds, no noise, only radiant elegance and a city that seemed to breathe in her rhythm.",
+      "el": "Ανάμεσα σε φοίνικες και παστέλ προσόψεις, η SOL περπάτησε μέσα στη λάμψη του Μαϊάμι. Ο ήλιος άγγιζε τις προσόψεις σαν χρυσό φίλτρο, και τα κοραλλί πλακόστρωτα έλαμπαν κάτω από τα απαλά της βήματα. Κάθε αεράκι έφερνε ζεστασιά και χρώμα, μυρωδιές θαλασσινού αλατιού και μουσικές από τα παλιά ξενοδοχεία. Η SOL περπάτησε στην Ocean Drive τη χρυσή ώρα, η σιλουέτα της πλαισιωμένη από Art Deco πύργους και τυρκουάζ κύματα. Οι αντανακλάσεις έπαιζαν πάνω στο τρίχωμά της σαν φως από καθρέφτη. Χωρίς πλήθη, χωρίς θόρυβο, μόνο λαμπερή κομψότητα και μια πόλη που έμοιαζε να αναπνέει στον ρυθμό της."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL stroll Ocean Drive at golden hour?",
+          "el": "Περπάτησε η SOL στην Ocean Drive τη χρυσή ώρα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Were pastel facades mentioned?",
+          "el": "Αναφέρθηκαν παστέλ προσόψεις;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention any crowds?",
+          "el": "Αναφέρθηκαν πλήθη στην ιστορία;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Is Bergen surrounded by fjords and mountains?",
-        "el": "Περιβάλλεται το Μπέργκεν από φιόρδ και βουνά;"
-      },
-      "answer": true
+  {
+    "id": 25,
+    "title": "SOLadventure #25 – San Francisco, bridge tales 🌉🇺🇸",
+    "quote": "She draped the bridge in gold.",
+    "caption": "No crosswalks. No commutes. Just arches and dreams. 🐾🐾🐾",
+    "image": "episodes/sanfrancisco.webp",
+    "location": {
+      "lat": 37.7749,
+      "lng": -122.4194
     },
-    {
-      "question": {
-        "en": "Did SOL listen to the fog sing?",
-        "el": "Άκουγε η SOL την ομίχλη να τραγουδά;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "sanfrancisco",
+    "story": {
+      "en": "The bay fog parted for SOL as the red steel arches carved the sky. Upon the Golden Gate Bridge, she stretched along the railing as dawn painted her fur in amber tones. The scent of salt filled the air, and the waves brushed softly against the pillars below. The city’s hills awoke through beams of light, while she remained still — both guardian and queen. No horns, no rush, only the wind’s hum and her gaze embracing the bridge.",
+      "el": "Η ομίχλη του κόλπου άνοιξε δρόμο για τη SOL καθώς οι κόκκινες αψίδες του χάλυβα χάραζαν τον ουρανό. Πάνω στη Γέφυρα του Golden Gate, απλώθηκε στο κιγκλίδωμα την ώρα που η αυγή έβαφε το τρίχωμά της σε κεχριμπαρένιες αποχρώσεις. Το αλάτι του ωκεανού γέμιζε τον αέρα και τα κύματα χτυπούσαν απαλά στα θεμέλια. Οι λόφοι της πόλης ξυπνούσαν μέσα σε δέσμες φωτός, κι εκείνη παρέμενε ακίνητη, φρουρός και βασίλισσα μαζί. Χωρίς κορναρίσματα, χωρίς βιασύνη, μόνο ο ήχος του ανέμου και το βλέμμα της να αγκαλιάζει τη γέφυρα."
     },
-    {
-      "question": {
-        "en": "Was the harbor in Bergen described as loud?",
-        "el": "Περιγράφηκε το λιμάνι στο Μπέργκεν ως θορυβώδες;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL stretch across the railing on the Golden Gate?",
+          "el": "Απλώθηκε η SOL στο κιγκλίδωμα της Γέφυρας του Golden Gate;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 19,
-  "title": "SOLadventure #19 – Edinburgh, where legends linger 🌫 ️🇬🇧",
-  "quote": "Legends bowed to her stride.",
-  "caption": "Storied steps, no turning back. 🐾🐾🐾",
-  "image": "episodes/edinburgh.webp",
-  "location": {
-    "lat": 55.9533,
-    "lng": -3.1883
+      {
+        "question": {
+          "en": "Was fog described as rolling across the water?",
+          "el": "Αναφέρθηκε ομίχλη να κυλάει πάνω από το νερό;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention any car horns?",
+          "el": "Αναφέρθηκαν κορναρίσματα αυτοκινήτων;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "visible": true,
-  "city": "edinburgh",
-  "story": {
-    "en": "Mist slipped across Edinburgh’s cobblestones as SOL moved between stone walls and the whispers of old tales. The shadows of castles stretched over rooftops, and gothic towers watched in silence. Each step echoed like a verse from a legend not yet written. The city breathed history, and the wind carried the murmurs of poets and kings. SOL paused along the Royal Mile, her gaze lost between stone and fog. There was no fear, no haste—only the quiet certainty of a queen walking where legends bow.",
-    "el": "Ομίχλη γλίστρησε πάνω στα καλντερίμια του Εδιμβούργου καθώς η SOL περνούσε ανάμεσα σε πέτρινους τοίχους και ψιθύρους παλιών ιστοριών. Οι σκιές των κάστρων απλώνονταν στις στέγες και οι γοτθικοί πύργοι παρακολουθούσαν σιωπηλά. Κάθε βήμα αντηχούσε σαν στίχος από θρύλο που δεν έχει γραφτεί ακόμη. Η πόλη ανέπνεε παρελθόν, και ο άνεμος μετέφερε ψίθυρους ποιητών και βασιλιάδων. Η SOL στάθηκε στο Royal Mile, το βλέμμα της χαμένο ανάμεσα σε πέτρα και ομίχλη. Δεν υπήρχε φόβος, ούτε βιασύνη, μόνο η ήρεμη σιγουριά μιας βασίλισσας που περπατά εκεί όπου οι θρύλοι υποκλίνονται."
+  {
+    "id": 26,
+    "title": "SOLadventure #26 – Honolulu, island hush 🌺🇺🇸",
+    "quote": "She found sunrise in palms.",
+    "caption": "No bustle. No borders. Only island calm. 🐾🐾🐾",
+    "image": "episodes/honolulu.webp",
+    "location": {
+      "lat": 21.3069,
+      "lng": -157.8583
+    },
+    "visible": true,
+    "city": "honolulu",
+    "story": {
+      "en": "The ocean breeze carried the scent of plumeria as the palms bowed to the light of dawn. On a wooden railing above Waikiki, Sol rested within the rosy glow of sunrise, her fur brushed by salt and warmth. The waves hummed ancient chants and seabirds traced slow circles across the sky. Beyond, Diamond Head dreamed in silence, its slopes bathed in gold and its shadows drifting over the palms. Sol stretched her paws as if touching the island’s pulse and for a moment everything, air, sea, and light, seemed to breathe with her. No bustle, no borders, only the rhythm of the island in soft tides and whispers of leaves.",
+      "el": "Η θαλασσινή αύρα έφερνε αρώματα πλουμέριας καθώς οι φοίνικες υποκλίνονταν στο φως της ανατολής. Σε ένα ξύλινο κάγκελο πάνω από τη Waikiki, η Sol αναπαυόταν μέσα στη ροζ λάμψη της αυγής, με το τρίχωμά της να χαϊδεύεται από αλάτι και ζεστασιά. Τα κύματα τραγουδούσαν ρυθμούς αρχαίων ψαλμών και τα γλαροπούλια σχεδίαζαν αργές τροχιές στον ουρανό. Πέρα, το Diamond Head ονειρευόταν σιωπηλά με τις πλαγιές του να λούζονται στο χρυσό και τις σκιές του να γλιστρούν πάνω στα φύλλα των φοινίκων. Η Sol τέντωσε τα πόδια της σαν να αγγίζει τον παλμό του νησιού και εκείνη τη στιγμή όλα, ο αέρας, η θάλασσα και το φως, έμοιαζαν να αναπνέουν μαζί της. Χωρίς θόρυβο, χωρίς βιασύνη, μόνο ο παλμός του νησιού σε απαλές παλίρροιες και ψιθύρους φύλλων."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL lie on a wooden railing above Waikiki?",
+          "el": "Ξάπλωσε η SOL σε ξύλινο κάγκελο πάνω από τη Waikiki;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Is Diamond Head mentioned as dreaming beyond the waves?",
+          "el": "Αναφέρεται το Diamond Head να ονειρεύεται πέρα από τα κύματα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention any bustle or hurry?",
+          "el": "Αναφέρθηκε θόρυβος ή βιασύνη;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL walk the Royal Mile at dawn?",
-        "el": "Περπάτησε η SOL στη Βασιλική Οδό τα ξημερώματα;"
-      },
-      "answer": true
+  {
+    "id": 27,
+    "title": "SOLadventure #27 – Los Angeles, Hollywood & beach vibes 🎬🌴🇺🇸",
+    "quote": "Dreams moved slower under the sun.",
+    "caption": "Fame fades. Waves don’t. 🐾🐾🐾",
+    "image": "episodes/LosAngeles.webp",
+    "location": {
+      "lat": 34.0522,
+      "lng": -118.2437
     },
-    {
-      "question": {
-        "en": "Did the story say cliffs bowed in reverence?",
-        "el": "Ανέφερε η ιστορία ότι οι πλαγιές υποκλίθηκαν σε σεβασμό;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "losangeles",
+    "story": {
+      "en": "The city shimmered in sun and fame, Los Angeles where glitter met surf. On the wide sands of Santa Monica, Sol lay half in light, half in dream. Behind her, the Hollywood sign floated above the haze like a forgotten crown. Waves broke in applause, cameras clicked from nowhere, and palm shadows swayed in rhythm. A seagull passed, jealous of her stillness. She didn’t chase scenes or scripts; she was the scene—poised, radiant, untamed. When the tide reached her paws, she looked toward the hills, and for a moment, even the city of stars paused to watch the sun set through her eyes.",
+      "el": "Η πόλη λαμποκοπούσε από φως και δόξα, το Λος Άντζελες, εκεί όπου η λάμψη συναντούσε το κύμα. Στις απέραντες αμμουδιές της Santa Monica, η Sol ξάπλωνε μισή στο φως, μισή στο όνειρο. Πίσω της, το σήμα του Hollywood αιωρούταν πάνω από την αχλή σαν ξεχασμένο στέμμα. Τα κύματα χειροκροτούσαν, οι κάμερες κλίκαραν από το πουθενά, κι οι σκιές των φοινίκων χόρευαν στον ρυθμό της. Ένας γλάρος πέρασε, ζηλεύοντας τη γαλήνη της. Δεν κυνηγούσε σκηνές ούτε σενάρια· ήταν η σκηνή, αγέρωχη, φωτεινή, αδάμαστη. Κι όταν το νερό άγγιξε τις πατούσες της, κοίταξε προς τους λόφους, και για μια στιγμή, ακόμη κι η πόλη των αστέρων σταμάτησε να κοιτά το ηλιοβασίλεμα μέσα από τα μάτια της."
     },
-    {
-      "question": {
-        "en": "Did the story mention any crowds in the closes?",
-        "el": "Αναφέρθηκαν πλήθη στα στενά σοκάκια;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Was SOL resting on the golden sand of Santa Monica?",
+          "el": "Ξάπλωνε η SOL στη χρυσή άμμο της Santa Monica;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 20,
-  "title": "SOLadventure #20 – Dublin, literary pubs & Georgian squares 🍻📚🇮🇪",
-  "quote": "She wrote her story in every raised glass.",
-  "caption": "No pause. No encore. Just pages and pints. 🐾🐾🐾",
-  "image": "episodes/dublin.webp",
-  "location": {
-    "lat": 53.3498,
-    "lng": -6.2603
+      {
+        "question": {
+          "en": "Did the story mention the Hollywood sign behind her?",
+          "el": "Αναφέρθηκε το σήμα του Hollywood πίσω της;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL chase the light across the beach?",
+          "el": "Κυνηγούσε η SOL το φως πάνω στην παραλία;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "visible": true,
-  "city": "dublin",
-  "story": {
-    "en": "The scent of whiskey mingled with the whispers of the squares as SOL walked through Dublin. Every pub was a library of laughter and nostalgia, and every Georgian row a stage of history. She did not simply wander the cobblestones; she wrote her story in every raised glass. The doors of Temple Bar opened wide in greeting, candlelight danced upon wooden beams, and verses echoed through the walls. Beneath the Ha’penny Bridge she listened to stories flowing freely like foam. No prologue, no epilogue, only living chapters.",
-    "el": "Η μυρωδιά του ουίσκι μπλέχτηκε με τους ψίθυρους των πλατειών καθώς η SOL βάδισε στο Δουβλίνο. Κάθε παμπ ήταν βιβλιοθήκη γέλιου και νοσταλγίας, και κάθε γεωργιανή σειρά σπιτιών μια σκηνή της ιστορίας. Δεν περιπλανήθηκε απλώς στα λιθόστρωτα, έγραψε την ιστορία της σε κάθε υψωμένο ποτήρι. Η πόρτα του Temple Bar άνοιξε πλατιά σε χαιρετισμό, το φως από τα κεριά χόρευε πάνω στις ξύλινες δοκούς, και στίχοι αντηχούσαν μέσα στους τοίχους. Στάθηκε κάτω από τη Ha’penny Bridge, ακούγοντας ιστορίες να κυλούν ελεύθερα σαν αφρό. Χωρίς πρόλογο, χωρίς επίλογο, μόνο κεφάλαια ζωντανά."
+  {
+    "id": 28,
+    "title": "SOLadventure #28 – Chichén Itzá, steps of time & silent kings 🗿🇲🇽",
+    "quote": "Time watched quietly as she passed.",
+    "caption": "Stone, sun and quiet footsteps of history. 🐾🐾🐾",
+    "image": "episodes/chichenitza.webp",
+    "location": {
+      "lat": 20.6843,
+      "lng": -88.5678
+    },
+    "visible": true,
+    "city": "chichenitza",
+    "story": {
+      "en": "In the stillness of a Yucatán dawn, Sol sat before the great pyramid of Chichén Itzá, the morning breeze brushing the ancient stone as the steps rose like memories carved into the earth. Light and shadow shifted softly, carrying a quiet whisper through the air, as if the place shared stories too old for words. Sol gazed upward, calm and certain, feeling time pause just long enough to acknowledge her presence, close enough for her to almost touch it.",
+      "el": "Στην ησυχία μιας αυγής στη Γιουκατάν, η Sol κάθισε μπροστά στη μεγάλη πυραμίδα του Chichén Itzá, με το πρωινό αεράκι να αγγίζει την αρχαία πέτρα και τα σκαλοπάτια να υψώνονται σαν μνήμες χαραγμένες στη γη. Το φως και η σκιά άλλαζαν απαλά, μεταφέροντας έναν ήσυχο ψίθυρο στον αέρα, σαν να μοιραζόταν ο τόπος ιστορίες πολύ παλιές για να ειπωθούν. Η Sol κοίταξε προς τα πάνω, γαλήνια και βέβαιη, νιώθοντας τον χρόνο να σταματά όσο χρειάζεται για να αναγνωρίσει την παρουσία της, αρκετά κοντά ώστε να μπορεί σχεδόν να τον αγγίξει."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Was SOL sitting in front of the great pyramid of Chichén Itzá?",
+          "el": "Καθόταν η SOL μπροστά στη μεγάλη πυραμίδα του Chichén Itzá;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention the steps rising like a memory?",
+          "el": "Αναφέρθηκε ότι τα σκαλοπάτια υψώνονταν σαν μνήμη;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did SOL hear crowds or loud voices in the scene?",
+          "el": "Άκουσε η SOL πλήθη ή δυνατές φωνές στη σκηνή;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL write her story in every raised glass?",
-        "el": "Έγραψε η SOL την ιστορία της σε κάθε υψωμένο ποτήρι;"
-      },
-      "answer": true
+  {
+    "id": 29,
+    "title": "SOLadventure #29 – Havana, vintage soul 🚗🇨🇺",
+    "quote": "The air itself remembered the music.",
+    "caption": "No hurry. No horns. Just rhythm in the air. 🐾🐾🐾",
+    "image": "episodes/havana.webp",
+    "location": {
+      "lat": 23.1136,
+      "lng": -82.3666
     },
-    {
-      "question": {
-        "en": "Were Georgian facades lining the squares mentioned?",
-        "el": "Αναφέρθηκαν γεωργιανές προσόψεις να περιβάλλουν τις πλατείες;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "havana",
+    "story": {
+      "en": "The streets of Havana glowed in pastel and sun. SOL wandered between vintage cars and open balconies where music drifted like perfume. The cobblestones echoed each step, blending feline grace with the rhythm of an old bolero. She paused by a pink convertible, her reflection framed in chrome. Around her, life moved in slow motion, a dance of color, warmth, and time.",
+      "el": "Οι δρόμοι της Αβάνας έλαμπαν μέσα σε παστέλ και φως. Η SOL περπατούσε ανάμεσα σε ρετρό αυτοκίνητα και ανοιχτά μπαλκόνια, απ’ όπου ξεγλιστρούσε μουσική σαν άρωμα. Τα λιθόστρωτα αντηχούσαν κάθε της βήμα, καθώς η χάρη της συντονιζόταν με τον ρυθμό ενός παλιού μπολέρο. Στάθηκε δίπλα σε ένα ροζ κάμπριο, το είδωλό της να καθρεφτίζεται στο χρώμιο. Γύρω της, η ζωή κυλούσε αργά, ένας χορός από χρώμα, ζεστασιά και χρόνο."
     },
-    {
-      "question": {
-        "en": "Did SOL cross the River Liffey by boat?",
-        "el": "Διέσχισε η SOL τον ποταμό Liffey με βάρκα;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL walk along cobblestone streets in Havana?",
+          "el": "Περπάτησε η SOL στα λιθόστρωτα της Αβάνας;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-
-{
-  "id": 21,
-  "title": "SOLadventure #21 – Reykjavík, fire & ice ❄️🔥🇮🇸",
-  "quote": "She wrote warmth on ice.",
-  "caption": "No freeze. No thaw. Just fiery grace. 🐾🐾🐾",
-  "image": "episodes/reykjavik.webp",
-  "location": {
-    "lat": 64.1466,
-    "lng": -21.9426
+      {
+        "question": {
+          "en": "Was there mention of a pink convertible car?",
+          "el": "Αναφέρθηκε ροζ κάμπριο αυτοκίνητο;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention noise or hurry?",
+          "el": "Αναφέρθηκαν θόρυβος ή βιασύνη;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "visible": true,
-  "city": "reykjavik",
-  "story": {
-    "en": "Frost touched the earth, and beneath its crystal surface fire slept. There, SOL felt Reykjavík’s pulse. Veins of lava throbbed under the ice, and geysers danced in the cold. She did not merely cross the tundra; she wove warmth into frozen breath. Basalt columns rose like silent witnesses, and hot springs shimmered beneath her gaze. The sky glowed orange at midnight, and every breath of wind carried liquid light. Here she was both spark and frost, the balance of extremes.",
-    "el": "Η παγωνιά άγγιζε τη γη και κάτω από την κρυστάλλινη επιφάνεια κοιμόταν φωτιά. Εκεί, η SOL ένιωσε τον παλμό του Ρέικιαβικ. Φλέβες λάβας παλλόντουσαν κάτω από τον πάγο και οι γκέιζερ χόρευαν στο ψύχος. Δεν διέσχισε απλώς την τούνδρα, ύφανε ζεστασιά στην παγωμένη ανάσα. Βασάλτικες κολόνες υψώνονταν σαν σιωπηλοί μάρτυρες και οι θερμές πηγές τρεμόπαιζαν κάτω από το βλέμμα της. Ο ουρανός έλαμπε πορτοκαλί στα μεσάνυχτα και κάθε πνοή ανέμου κουβαλούσε ρευστή λάμψη. Εδώ ήταν και σπινθήρας και παγωνιά, η ισορροπία των ακραίων."
+  {
+    "id": 30,
+    "title": "SOLadventure #30 – La Fortuna, where the wild breathes 🌋🇨🇷",
+    "quote": "The earth has music for those who will listen.",
+    "caption": "Mist, calm and wild echoes all around her. 🐾🐾🐾",
+    "image": "episodes/lafortuna.webp",
+    "location": {
+      "lat": 10.47,
+      "lng": -84.7034
+    },
+    "visible": true,
+    "city": "lafortuna",
+    "story": {
+      "en": "At La Fortuna Waterfall, SOL stood before a curtain of white water crashing into a basin carved by time. The rainforest wrapped around her like a living emerald wall, warm with mist and the soft roar of falling water. She paused on a smooth river stone, watching droplets dance in the air as sunlight broke through the canopy. No engines, no distant noise, only the steady breath of the wild, rising and falling like a quiet promise.",
+      "el": "Στον καταρράκτη La Fortuna, η SOL στάθηκε μπροστά σε μια λευκή κουρτίνα νερού που έπεφτε σε μια λεκάνη σμιλεμένη από τον χρόνο. Το τροπικό δάσος την τύλιγε σαν ένας ζωντανός σμαραγδένιος τοίχος, γεμάτος ζεστή υγρασία και τον απαλό βρυχηθμό του νερού που έπεφτε. Στάθηκε σε μια λεία ποταμίσια πέτρα, παρακολουθώντας σταγονίδια να χορεύουν στον αέρα καθώς το φως περνούσε μέσα από την κόμη. Χωρίς μηχανές, χωρίς μακρινούς θορύβους, μόνο η σταθερή ανάσα της άγριας φύσης, που ανέβαινε και κατέβαινε σαν μια ήσυχη υπόσχεση."
+    },
+    "photoQuote": "She listened to the mountains breathe.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL stand on a smooth river stone near the waterfall?",
+          "el": "Στάθηκε η SOL σε λεία ποταμίσια πέτρα κοντά στον καταρράκτη;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was the rainforest described as wrapping around her like an emerald wall?",
+          "el": "Περιγράφηκε το τροπικό δάσος σαν σμαραγδένιος τοίχος γύρω της;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was the waterfall described as a white curtain of water?",
+          "el": "Περιγράφηκε ο καταρράκτης σαν λευκή κουρτίνα νερού;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did the story say geysers danced in the cold?",
-        "el": "Αναφέρει η ιστορία ότι οι γεϊζερ χόρευαν στο ψύχος;"
-      },
-      "answer": true
+  {
+    "id": 31,
+    "title": "SOLadventure #31 – Panama City, canal’s embrace 🚢🇵🇦",
+    "quote": "Stillness steers the tide.",
+    "caption": "No hurry. No noise. Just motion made calm. 🐾🐾🐾",
+    "image": "episodes/panama.webp",
+    "location": {
+      "lat": 8.9824,
+      "lng": -79.5199
     },
-    {
-      "question": {
-        "en": "Are basalt columns described as silent witnesses?",
-        "el": "Περιγράφονται οι βασάλτικες κολόνες ως σιωπηλοί μάρτυρες;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "panama",
+    "story": {
+      "en": "The dawn unfolded over the canal as ships glided like thoughts through calm waters. SOL stood above it all, her gaze tracing each slow passage between oceans. The golden light turned steel to silk, and the breeze carried the hum of distant engines softened by distance and peace. The city stretched behind her — modern, awake, yet gentle. In that meeting of worlds, she remained still, timeless, a quiet witness to motion finding grace.",
+      "el": "Η αυγή ξεδιπλώθηκε πάνω από το κανάλι καθώς τα πλοία γλιστρούσαν σαν σκέψεις μέσα σε γαλήνια νερά. Η SOL στεκόταν ψηλά, το βλέμμα της ακολουθούσε κάθε αργό πέρασμα ανάμεσα στους ωκεανούς. Το χρυσό φως έκανε το ατσάλι να μοιάζει με μετάξι και το αεράκι έφερνε τον απαλό βόμβο από μακρινούς κινητήρες, βουτηγμένο στη γαλήνη. Η πόλη απλωνόταν πίσω της — σύγχρονη, ξύπνια, μα ήρεμη. Εκεί, στη συνάντηση των κόσμων, έμεινε ακίνητη — αιώνια μάρτυρας της κίνησης που βρίσκει χάρη."
     },
-    {
-      "question": {
-        "en": "Is Reykjavík described as a silent desert?",
-        "el": "Περιγράφεται το Ρέικιαβικ ως σιωπηλή έρημος;"
+    "photoQuote": "She watched the world glide by",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL stand above the Panama Canal at sunrise?",
+          "el": "Στεκόταν η SOL πάνω από το Κανάλι του Παναμά την ώρα της ανατολής;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 22,
-  "title": "SOLadventure #22 – Toronto, cityscapes & Niagara tale 🌊🇨🇦",
-  "quote": "She bridged roar and reflection.",
-  "caption": "No boundaries. No divides. Just currents and towers. 🐾🐾🐾",
-  "image": "episodes/toronto.webp",
-  "location": {
-    "lat": 43.6511,
-    "lng": -79.3836
+      {
+        "question": {
+          "en": "Were ships described as gliding through calm waters?",
+          "el": "Περιγράφηκαν τα πλοία να γλιστρούν μέσα σε γαλήνια νερά;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention loud or chaotic sounds?",
+          "el": "Αναφέρθηκαν δυνατοί ή χαοτικοί ήχοι;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "north-america"
   },
-  "visible": true,
-  "city": "toronto",
-  "story": {
-    "en": "Niagara’s mist wrapped around SOL as she approached the glass heights of Toronto. The currents whispered against concrete, and the air smelled of rain and light. Water and skyscrapers merged in quiet harmony. She stood above the Horseshoe Falls as the spray wove rainbows into the dusk. The CN Tower rose like a steadfast guardian, its lights dancing to the river’s roar. No boundaries, no barriers, only the unity of what flows and what stands.",
-    "el": "Η ομίχλη των Νιαγάρα τύλιξε τη SOL καθώς πλησίαζε τα γυάλινα ύψη του Τορόντο. Τα ρεύματα ψιθύριζαν στον οπλισμένο σκυρόδεμα και ο αέρας μύριζε βροχή και φως. Νερό και ουρανοξύστες ενώνονταν σε μια διακριτική αρμονία. Στάθηκε πάνω από τους Καταρράκτες του Horseshoe, ενώ το ψεκασμένο νερό ύφανε ουράνια τόξα στο σούρουπο. Ο Πύργος CN δεσπόζε σαν ακλόνητος φρουρός, τα φώτα του να χορεύουν στο βρυχηθμό του ποταμού. Χωρίς σύνορα, χωρίς φράγματα, μόνο η ενότητα του ρέοντος και του δομημένου."
+  {
+    "id": 32,
+    "title": "SOLadventure #32 – Cartagena, walled colors 🎨🇨🇴",
+    "quote": "She reigned in still hues.",
+    "caption": "No drums. No rush. Just colors breathing history. 🐾🐾🐾",
+    "image": "episodes/cartagena.webp",
+    "location": {
+      "lat": 10.391,
+      "lng": -75.4794
+    },
+    "visible": true,
+    "city": "cartagena",
+    "story": {
+      "en": "Between walls that once guarded the city, SOL found a kingdom of colors. The streets of Cartagena glowed with warm shades—turquoise, coral, and sunlit gold whispering tales of sailors and sunsets. She paused on cobblestones smoothed by time, as bougainvillea bowed in the quiet breeze. No drums echoed, no rush stirred, only history breathing through her calm gaze.",
+      "el": "Ανάμεσα σε τείχη που κάποτε φύλαγαν την πόλη, η SOL ανακάλυψε ένα βασίλειο χρωμάτων. Οι δρόμοι της Καρθαγένης έλαμπαν με ζεστές αποχρώσεις τιρκουάζ, κοραλλί και χρυσαφένιο φως, ψιθυρίζοντας ιστορίες ναυτικών και δειλινών. Στάθηκε πάνω στα λιθόστρωτα που είχε λειάνει ο χρόνος, ενώ οι βουκαμβίλιες υποκλίνονταν στο απαλό αεράκι. Χωρίς τύμπανα, χωρίς βιασύνη, μόνο η ιστορία να ανασαίνει μέσα από το ήρεμο βλέμμα της."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL find a kingdom of colors in Cartagena?",
+          "el": "Ανακάλυψε η SOL ένα βασίλειο χρωμάτων στην Καρθαγένη;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Were the streets described as glowing with warm shades?",
+          "el": "Περιγράφηκαν οι δρόμοι να λάμπουν με ζεστές αποχρώσεις;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention the sound of drums?",
+          "el": "Αναφέρθηκε ήχος από τύμπανα;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL perch above the Horseshoe Falls?",
-        "el": "Στάθηκε η SOL πάνω από τους Καταρράκτες του Χόρσσοε;"
-      },
-      "answer": true
+  {
+    "id": 33,
+    "title": "SOLadventure #33 – Quito, equatorial heights 🌍🇪🇨",
+    "quote": "Where the roofs meet the sky",
+    "caption": "Old tiles, thin air, timeless view. 🐾🐾🐾",
+    "image": "episodes/quito.webp",
+    "location": {
+      "lat": -0.1807,
+      "lng": -78.4678
     },
-    {
-      "question": {
-        "en": "Is the CN Tower described as a steadfast sentinel?",
-        "el": "Περιγράφεται ο Πύργος CN ως ακλόνητος φρουρός;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "quito",
+    "story": {
+      "en": "She climbed where air turned to gold. Between mountains and clouds, Quito unfolded below her like an ancient tapestry. The red roofs glowed under the Andean sun, and bells echoed through narrow streets. SOL rested on a stone ledge, her eyes reflecting the distant peaks. Every breath carried altitude, history, and quiet wonder.",
+      "el": "Ανέβηκε εκεί όπου ο αέρας γινόταν χρυσός. Ανάμεσα σε βουνά και σύννεφα, το Κίτο απλωνόταν κάτω της σαν αρχαίο υφαντό. Οι κόκκινες στέγες έλαμπαν κάτω από τον ήλιο των Άνδεων και καμπάνες αντηχούσαν στα στενά σοκάκια. Η SOL ξεκουράστηκε σε μια πέτρινη άκρη, τα μάτια της να καθρεφτίζουν τις μακρινές κορυφές. Κάθε ανάσα κουβαλούσε υψόμετρο, ιστορία και ήρεμο θαυμασμό."
     },
-    {
-      "question": {
-        "en": "Did the story mention any borders or barriers?",
-        "el": "Αναφέρει η ιστορία σύνορα ή φράγματα;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did SOL rest on a stone ledge above the city?",
+          "el": "Ξεκουράστηκε η SOL σε μια πέτρινη άκρη πάνω από την πόλη;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 23,
-  "title": "SOLadventure #23 – New York City, skyline queen 🏙️🇺🇸",
-  "quote": "Bridges bow to her gaze.",
-  "caption": "No pause. No skyline unseen. Just her and the city lights. 🐾🐾🐾",
-  "image": "episodes/newyork.webp",
-  "location": {
-    "lat": 40.7128,
-    "lng": -74.0060
+      {
+        "question": {
+          "en": "Were the roofs described as glowing red under the sun?",
+          "el": "Περιγράφηκαν οι στέγες να λάμπουν κόκκινες κάτω από τον ήλιο;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was Quito described as lying between mountains and clouds?",
+          "el": "Αναφέρθηκε το Κίτο ως πόλη ανάμεσα σε βουνά και σύννεφα;"
+        },
+        "answer": true
+      }
+    ],
+    "region": "south-america"
   },
-  "visible": true,
-  "city": "newyork",
-  "story": {
-    "en": "In the city where steel touches moonlight and bridges stretch over the river like ribbons of light, SOL felt the pulse of New York. The skyscrapers defied the clouds, and the neon lights shimmered through every street like a silent orchestra of dreams and noise. She climbed to a rooftop with her natural grace, watching her kingdom unfold from Brooklyn to Manhattan. The Brooklyn Bridge bowed subtly to her gaze as the wind played through her fur. Below, the East River mirrored her calm, and the skyline glowed at her command. No forest, no reef, only concrete domes and restless networks of light.",
-    "el": "Στην πόλη όπου ο χάλυβας αγγίζει το φεγγαρόφως και οι γέφυρες απλώνονται πάνω από τον ποταμό σαν κορδέλες φωτός, η SOL ένιωσε τη δύναμη της Νέας Υόρκης. Οι ουρανοξύστες αψηφούσαν τα σύννεφα, και τα νέον φώτα έλαμπαν σε κάθε δρόμο σαν σιωπηλή ορχήστρα από όνειρα και θόρυβο. Ανέβηκε στη στέγη με τη φυσική της χάρη, παρατηρώντας το βασίλειό της να εκτείνεται από το Μπρούκλιν ως το Μανχάταν. Η Γέφυρα του Μπρούκλιν υποκλίθηκε διακριτικά στο βλέμμα της, καθώς ο άνεμος χάιδευε τη γούνα της. Κάτω, ο ποταμός East καθρέφτιζε την ηρεμία της, και ο ορίζοντας έλαμπε με τη δική της εντολή. Όχι δάσος, όχι ύφαλος, μόνο μπετονένια θόλα και νευρικά δίκτυα φωτός."
+  {
+    "id": 34,
+    "title": "SOLadventure #34 – Machu Picchu, Inca’s crown 🏯🇵🇪",
+    "quote": "The mountain kept her secret.",
+    "caption": "No words. No throne. Just stone and silence. 🐾🐾🐾",
+    "image": "episodes/machupicchu.webp",
+    "location": {
+      "lat": -13.1631,
+      "lng": -72.545
+    },
+    "visible": true,
+    "city": "machupicchu",
+    "story": {
+      "en": "Morning light brushed the terraces as SOL gazed upon the Inca citadel. The mountains rose like guardians around her, cloaked in mist and memory. She sat on the grass, still and regal, as the world beneath whispered through stone. Time itself seemed to pause, paying silent homage to her calm reign.",
+      "el": "Το πρωινό φως χάιδευε τις πεζούλες καθώς η SOL αγνάντευε την ινκική ακρόπολη. Τα βουνά ορθώνονταν γύρω της σαν φρουροί, ντυμένα με ομίχλη και μνήμη. Κάθισε στο χορτάρι, ακίνητη και αγέρωχη, καθώς ο κόσμος από κάτω ψιθύριζε μέσα από την πέτρα. Ο ίδιος ο χρόνος έμοιαζε να σταματά, αποδίδοντας σιωπηλό φόρο τιμής στη γαλήνια της παρουσία."
+    },
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Was SOL sitting on the grass overlooking the ruins?",
+          "el": "Καθόταν η SOL στο χορτάρι με θέα τα ερείπια;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention mountains as guardians?",
+          "el": "Αναφέρθηκαν τα βουνά ως φρουροί;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was the scene described at sunset?",
+          "el": "Περιγράφηκε η σκηνή κατά το ηλιοβασίλεμα;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL claim the rooftop beside the Brooklyn Bridge?",
-        "el": "Κατέλαβε η SOL τη στέγη δίπλα στη Γέφυρα του Μπρούκλιν;"
-      },
-      "answer": true
+  {
+    "id": 35,
+    "title": "SOLadventure #35 – La Paz, sky-high wonders 🌌🇧🇴",
+    "quote": "She rode where the air whispered freedom.",
+    "caption": "No roads. No rails. Just sky trails. 🐾🐾🐾",
+    "image": "episodes/lapaz.webp",
+    "location": {
+      "lat": -16.4897,
+      "lng": -68.1193
     },
-    {
-      "question": {
-        "en": "Did the story mention neon pulsing through every street?",
-        "el": "Αναφέρει η ιστορία νέον να αντηχεί σε κάθε δρόμο;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "lapaz",
+    "story": {
+      "en": "From the ledges of La Paz, SOL watched the red cable cars of Mi Teleférico drift between the hills. The city moved like a living mosaic below her, sunlight flashing on rooftops and wires. The Andes stood far behind, clear and vast, shaping the horizon. Every cabin that passed carried voices and colors, a pulse of altitude and motion that made the sky itself feel alive.",
+      "el": "Από τα ύψη της Λα Παζ, η SOL παρακολουθούσε τα κόκκινα τελεφερίκ του Mi Teleférico να κινούνται ανάμεσα στους λόφους. Η πόλη έμοιαζε να ανασαίνει από κάτω της, με το φως να λαμπυρίζει στις στέγες και στα καλώδια. Οι Άνδεις στο βάθος όριζαν τον ορίζοντα, καθαροί και απέραντοι. Κάθε καμπίνα που περνούσε μετέφερε φωνές και χρώματα, έναν παλμό υψομέτρου και κίνησης που έκανε τον ουρανό να μοιάζει ζωντανός."
     },
-    {
-      "question": {
-        "en": "Did the story reference a coral reef?",
-        "el": "Αναφέρει η ιστορία ύφαλο;"
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Were red Mi Teleférico cable cars mentioned in the story?",
+          "el": "Αναφέρθηκαν τα κόκκινα τελεφερίκ Mi Teleférico στην ιστορία;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 24,
-  "title": "SOLadventure #24 – Miami, sunlit streets 🌞🇺🇸",
-  "quote": "She owns the golden hour.",
-  "caption": "No traffic. No hurry. Just sunlit steps. 🐾🐾🐾",
-  "image": "episodes/miami.webp",
-  "location": {
-    "lat": 25.7617,
-    "lng": -80.1918
+      {
+        "question": {
+          "en": "Were the Andes mountains visible in the distance?",
+          "el": "Ήταν ορατές οι Άνδεις στο βάθος;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story describe heavy traffic or city noise?",
+          "el": "Περιέγραψε η ιστορία κυκλοφοριακή φασαρία ή θόρυβο πόλης;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "visible": true,
-  "city": "miami",
-  "story": {
-    "en": "Between palm trees and pastel façades, SOL walked through Miami’s glow. The sunlight touched the buildings like a golden filter, and the coral pavements shimmered beneath her gentle steps. Every breeze carried warmth and color, scents of sea salt and music drifting from old hotels. She walked along Ocean Drive at the golden hour, her silhouette framed by Art Deco towers and turquoise waves. Reflections played upon her fur like light on glass. No crowds, no noise, only radiant elegance and a city that seemed to breathe in her rhythm.",
-    "el": "Ανάμεσα σε φοίνικες και παστέλ προσόψεις, η SOL περπάτησε μέσα στη λάμψη του Μαϊάμι. Ο ήλιος άγγιζε τις προσόψεις σαν χρυσό φίλτρο, και τα κοραλλί πλακόστρωτα έλαμπαν κάτω από τα απαλά της βήματα. Κάθε αεράκι έφερνε ζεστασιά και χρώμα, μυρωδιές θαλασσινού αλατιού και μουσικές από τα παλιά ξενοδοχεία. Η SOL περπάτησε στην Ocean Drive τη χρυσή ώρα, η σιλουέτα της πλαισιωμένη από Art Deco πύργους και τυρκουάζ κύματα. Οι αντανακλάσεις έπαιζαν πάνω στο τρίχωμά της σαν φως από καθρέφτη. Χωρίς πλήθη, χωρίς θόρυβο, μόνο λαμπερή κομψότητα και μια πόλη που έμοιαζε να αναπνέει στον ρυθμό της."
+  {
+    "id": 36,
+    "title": "SOLadventure #36 – Santiago, Andean skyline 🏔️🇨🇱",
+    "quote": "The city shimmered, the peaks stayed bold.",
+    "caption": "Santiago below, Andes above, Sol in control. 🐾🐾🐾",
+    "image": "episodes/santiago.webp",
+    "location": {
+      "lat": -33.4489,
+      "lng": -70.6693
+    },
+    "visible": true,
+    "city": "santiago",
+    "story": {
+      "en": "From a sunlit viewpoint above Santiago, SOL watched the city spread out in tidy blocks while the Andes filled the horizon with snow and scale. Far away, Gran Torre Santiago stood small but unmistakable among the skyline, a crisp marker against the bright afternoon. She drifted through Plaza de Armas, traced the Mapocho, paused by La Moneda, and ended in Bellavista where the streets felt alive with music and color, with the mountains holding the backdrop like a promise.",
+      "el": "Από ένα φωτεινό σημείο πάνω από το Σαντιάγκο, η SOL έβλεπε την πόλη να απλώνεται σε καθαρές γραμμές, ενώ οι Άνδεις γέμιζαν τον ορίζοντα με χιόνι και όγκο. Μακριά, η Gran Torre Santiago φαινόταν μικρή αλλά ξεκάθαρη μέσα στο skyline, σαν λεπτός δείκτης στο καθαρό απόγευμα. Πέρασε από την Plaza de Armas, ακολούθησε τον Mapocho, στάθηκε στη La Moneda και έκλεισε στη Bellavista όπου οι δρόμοι είχαν μουσική και χρώμα, με τα βουνά να κρατούν σταθερό το φόντο σαν υπόσχεση."
+    },
+    "photoQuote": "Watch the peaks. Own the view.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Were the Andes described as filling the horizon behind Santiago?",
+          "el": "Περιγράφηκαν οι Άνδεις να γεμίζουν τον ορίζοντα πίσω από το Σαντιάγκο;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was Gran Torre Santiago mentioned as a distant but recognizable skyline marker?",
+          "el": "Αναφέρθηκε η Gran Torre Santiago ως μακρινό αλλά αναγνωρίσιμο σημείο στο skyline;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story say SOL took a boat ride on the ocean in Santiago?",
+          "el": "Είπε η ιστορία ότι η SOL έκανε βόλτα με βάρκα στον ωκεανό στο Σαντιάγκο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL stroll Ocean Drive at golden hour?",
-        "el": "Περπάτησε η SOL στην Ocean Drive τη χρυσή ώρα;"
-      },
-      "answer": true
+  {
+    "id": 37,
+    "title": "SOLadventure #37 – Buenos Aires, tango twilight 💃 🇦🇷",
+    "quote": "She didn’t follow the rhythm. She set it.",
+    "caption": "Cobblestones, bandoneón, and a queen in slow motion. 🐾🐾🐾",
+    "image": "episodes/buenosaires.webp",
+    "location": {
+      "lat": -34.6037,
+      "lng": -58.3816
     },
-    {
-      "question": {
-        "en": "Were pastel facades mentioned?",
-        "el": "Αναφέρθηκαν παστέλ προσόψεις;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "buenosaires",
+    "story": {
+      "en": "Buenos Aires arrived like perfume at dusk, soft, warm, and impossible to ignore. Sol drifted into San Telmo where cobblestones held old footsteps and street lamps stitched gold into the evening. A bandoneón breathed its first notes, and a tango couple turned slowly in the midground, as if the city itself was learning how to move again. Sol did not watch like a tourist. She watched like a ruler checking her territory, calm and certain. She crossed Plaza de Mayo, let the Obelisco flash past in the distance, and ended by the river where the air tasted of salt and stories. Twilight did not fall here. It danced.",
+      "el": "Το Μπουένος Άιρες ήρθε σαν άρωμα στο δειλινό, απαλό, ζεστό και αδύνατο να το αγνοήσεις. Η Sol γλίστρησε στο San Telmo, εκεί όπου τα καλντερίμια κρατούν παλιά βήματα και τα φανάρια ράβουν χρυσό μέσα στη νύχτα. Ένα μπαντονεόν πήρε ανάσα στις πρώτες νότες, και ένα ζευγάρι τάνγκο γύρισε αργά στο βάθος, σαν να ξαναμάθαινε η πόλη να κινείται. Η Sol δεν κοιτούσε σαν τουρίστρια. Κοιτούσε σαν βασίλισσα που επιθεωρεί τον χώρο της, ήρεμη και βέβαιη. Πέρασε από την Plaza de Mayo, άφησε τον Obelisco να λάμψει μακριά, και έκλεισε κοντά στο ποτάμι όπου ο αέρας είχε αλάτι και ιστορίες. Εδώ το δειλινό δεν πέφτει. Χορεύει."
     },
-    {
-      "question": {
-        "en": "Did the story mention any crowds?",
-        "el": "Αναφέρθηκαν πλήθη στην ιστορία;"
+    "photoQuote": "Twilight. Tango. Whispers.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol drift into San Telmo at dusk?",
+          "el": "Γλίστρησε η Sol στο San Telmo στο δειλινό;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 25,
-  "title": "SOLadventure #25 – San Francisco, bridge tales 🌉🇺🇸",
-  "quote": "She draped the bridge in gold.",
-  "caption": "No crosswalks. No commutes. Just arches and dreams. 🐾🐾🐾",
-  "image": "episodes/sanfrancisco.webp",
-  "location": {
-    "lat": 37.7749,
-    "lng": -122.4194
+      {
+        "question": {
+          "en": "Was a bandoneón mentioned as starting the tango mood?",
+          "el": "Αναφέρθηκε μπαντονεόν που έδωσε το τάνγκο vibe;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol take a loud boat ride through the city?",
+          "el": "Έκανε η Sol θορυβώδη βόλτα με βάρκα μέσα στην πόλη;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "visible": true,
-  "city": "sanfrancisco",
-  "story": {
-    "en": "The bay fog parted for SOL as the red steel arches carved the sky. Upon the Golden Gate Bridge, she stretched along the railing as dawn painted her fur in amber tones. The scent of salt filled the air, and the waves brushed softly against the pillars below. The city’s hills awoke through beams of light, while she remained still — both guardian and queen. No horns, no rush, only the wind’s hum and her gaze embracing the bridge.",
-    "el": "Η ομίχλη του κόλπου άνοιξε δρόμο για τη SOL καθώς οι κόκκινες αψίδες του χάλυβα χάραζαν τον ουρανό. Πάνω στη Γέφυρα του Golden Gate, απλώθηκε στο κιγκλίδωμα την ώρα που η αυγή έβαφε το τρίχωμά της σε κεχριμπαρένιες αποχρώσεις. Το αλάτι του ωκεανού γέμιζε τον αέρα και τα κύματα χτυπούσαν απαλά στα θεμέλια. Οι λόφοι της πόλης ξυπνούσαν μέσα σε δέσμες φωτός, κι εκείνη παρέμενε ακίνητη, φρουρός και βασίλισσα μαζί. Χωρίς κορναρίσματα, χωρίς βιασύνη, μόνο ο ήχος του ανέμου και το βλέμμα της να αγκαλιάζει τη γέφυρα."
+  {
+    "id": 38,
+    "title": "SOLadventure #38 – Montevideo, riverside rhythms 🌊 🇺🇾",
+    "quote": "The river kept time. She owned the beat.",
+    "caption": "Lamplight, waterfront air, and a queen who moves like music. 🐾🐾🐾",
+    "image": "episodes/montevideo.webp",
+    "location": {
+      "lat": -34.9011,
+      "lng": -56.1645
+    },
+    "visible": true,
+    "city": "montevideo",
+    "story": {
+      "en": "Montevideo unfolded in slow light, where the river meets the city and everything feels unhurried. Sol perched on the seawall of the Rambla, watching the Río de la Plata shimmer like brushed silver under the first evening lamps. People wandered past with quiet smiles, and the water carried a soft hush that made even footsteps sound gentle. Somewhere in the distance, a candombe rhythm floated in, steady and warm, like the city’s heartbeat. Sol did not chase it. She let it come to her. She blinked once, lifted her chin, and claimed the promenade with calm certainty. Here, the river does not rush. It simply keeps the rhythm, and the queen decides the tempo.",
+      "el": "Το Μοντεβιδέο άνοιξε σε αργό φως, εκεί όπου το ποτάμι συναντά την πόλη και όλα μοιάζουν ήρεμα. Η Sol κάθισε στο χαμηλό τοιχίο της Rambla, κοιτώντας το Río de la Plata να λαμπυρίζει σαν ασημένιο πέπλο κάτω από τα πρώτα φανάρια του δειλινού. Ο κόσμος περνούσε με ήσυχα χαμόγελα και το νερό κουβαλούσε μια γαλήνη που έκανε ακόμη και τα βήματα να ακούγονται απαλά. Κάπου μακριά, ένας ρυθμός candombe έφτασε μέχρι εδώ, σταθερός και ζεστός, σαν καρδιά της πόλης. Η Sol δεν τον κυνήγησε. Τον άφησε να έρθει σε εκείνη. Ανοιγόκλεισε τα μάτια μία φορά, σήκωσε το πηγούνι και πήρε την προκυμαία με ήρεμη βεβαιότητα. Εδώ το ποτάμι δεν βιάζεται. Απλώς κρατά τον ρυθμό, και η βασίλισσα αποφασίζει το τέμπο."
+    },
+    "photoQuote": "Riverside rhythms, royal footsteps.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol sit on the seawall along the Rambla by the Río de la Plata?",
+          "el": "Κάθισε η Sol στο τοιχίο της Rambla δίπλα στο Río de la Plata;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was a distant candombe rhythm mentioned in the story?",
+          "el": "Αναφέρεται στην ιστορία ένας μακρινός ρυθμός candombe;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did it snow on the promenade during Sol’s walk?",
+          "el": "Χιόνιζε στην προκυμαία κατά τη βόλτα της Sol;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL stretch across the railing on the Golden Gate?",
-        "el": "Απλώθηκε η SOL στο κιγκλίδωμα της Γέφυρας του Golden Gate;"
-      },
-      "answer": true
+  {
+    "id": 39,
+    "title": "SOLadventure #39 – Rio de Janeiro, carnival pulse & beach haze 🎉🏖️ 🇧🇷",
+    "quote": "She didn’t need the parade. The rhythm found her anyway.",
+    "caption": "Golden haze, shoreline lights. 🐾🐾🐾",
+    "image": "episodes/riodejaneiro.webp",
+    "location": {
+      "lat": -22.9068,
+      "lng": -43.1729
     },
-    {
-      "question": {
-        "en": "Was fog described as rolling across the water?",
-        "el": "Αναφέρθηκε ομίχλη να κυλάει πάνω από το νερό;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "riodejaneiro",
+    "story": {
+      "en": "Rio de Janeiro arrived in a warm blur of sun and sea, as if the whole coastline was exhaling. Sol stepped onto the sand and let the beach haze soften everything into gold. The water rolled in with quiet confidence, and the skyline flickered far away like tiny festival candles. Sugarloaf rose in the distance, dark and steady against the pastel sky, while the city kept its secrets behind a gentle shimmer. Somewhere beyond the shore, a carnival pulse could be felt more than heard, a rhythm tucked inside the evening air. Sol did not need a parade to recognize it. She sat like she owned the horizon, eyes half closed, whiskers catching the breeze. In Rio, the party is not always loud. Sometimes it glows, and the queen simply listens.",
+      "el": "Το Ρίο ντε Ζανέιρο ήρθε σαν ζεστό θόλωμα από ήλιο και θάλασσα, λες και η ακτογραμμή ανέπνεε. Η Sol πάτησε στην άμμο και άφησε το beach haze να μαλακώσει τα πάντα σε χρυσό. Το νερό ερχόταν με ήρεμη αυτοπεποίθηση και ο ορίζοντας άναβε μακριά σαν μικρά κεράκια γιορτής. Το Sugarloaf στεκόταν στο βάθος, σκοτεινό και σταθερό κάτω από τον παστέλ ουρανό, ενώ η πόλη κρατούσε τα μυστικά της πίσω από ένα απαλό τρεμόπαιγμα. Κάπου πέρα από την ακτή, ο παλμός του καρναβαλιού ένιωθε περισσότερο απ’ όσο ακουγόταν, ένας ρυθμός κρυμμένος μέσα στον βραδινό αέρα. Η Sol δεν χρειαζόταν παρέλαση για να τον αναγνωρίσει. Κάθισε σαν να της ανήκει ο ορίζοντας, με βλέμμα μισόκλειστο και μουστάκια που έπιαναν το αεράκι. Στο Ρίο, η γιορτή δεν είναι πάντα δυνατή. Μερικές φορές απλώς λάμπει, και η βασίλισσα ακούει."
     },
-    {
-      "question": {
-        "en": "Did the story mention any car horns?",
-        "el": "Αναφέρθηκαν κορναρίσματα αυτοκινήτων;"
+    "photoQuote": "Salt air. Samba soul.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol sit on the sand while the beach haze turned everything golden?",
+          "el": "Κάθισε η Sol στην άμμο ενώ το beach haze έκανε τα πάντα χρυσά;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 26,
-  "title": "SOLadventure #26 – Honolulu, island hush 🌺🇺🇸",
-  "quote": "She found sunrise in palms.",
-  "caption": "No bustle. No borders. Only island calm. 🐾🐾🐾",
-  "image": "episodes/honolulu.webp",
-  "location": {
-    "lat": 21.3069,
-    "lng": -157.8583
+      {
+        "question": {
+          "en": "Was Sugarloaf described as rising in the distance against the pastel sky?",
+          "el": "Περιγράφεται το Sugarloaf να υψώνεται στο βάθος κάτω από παστέλ ουρανό;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol watch fireworks exploding directly above her head on the beach?",
+          "el": "Έβλεπε η Sol πυροτεχνήματα να σκάνε ακριβώς πάνω από το κεφάλι της στην παραλία;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "south-america"
   },
-  "visible": true,
-  "city": "honolulu",
-  "story": {
-    "en": "The ocean breeze carried the scent of plumeria as the palms bowed to the light of dawn. On a wooden railing above Waikiki, Sol rested within the rosy glow of sunrise, her fur brushed by salt and warmth. The waves hummed ancient chants and seabirds traced slow circles across the sky. Beyond, Diamond Head dreamed in silence, its slopes bathed in gold and its shadows drifting over the palms. Sol stretched her paws as if touching the island’s pulse and for a moment everything, air, sea, and light, seemed to breathe with her. No bustle, no borders, only the rhythm of the island in soft tides and whispers of leaves.",
-    "el": "Η θαλασσινή αύρα έφερνε αρώματα πλουμέριας καθώς οι φοίνικες υποκλίνονταν στο φως της ανατολής. Σε ένα ξύλινο κάγκελο πάνω από τη Waikiki, η Sol αναπαυόταν μέσα στη ροζ λάμψη της αυγής, με το τρίχωμά της να χαϊδεύεται από αλάτι και ζεστασιά. Τα κύματα τραγουδούσαν ρυθμούς αρχαίων ψαλμών και τα γλαροπούλια σχεδίαζαν αργές τροχιές στον ουρανό. Πέρα, το Diamond Head ονειρευόταν σιωπηλά με τις πλαγιές του να λούζονται στο χρυσό και τις σκιές του να γλιστρούν πάνω στα φύλλα των φοινίκων. Η Sol τέντωσε τα πόδια της σαν να αγγίζει τον παλμό του νησιού και εκείνη τη στιγμή όλα, ο αέρας, η θάλασσα και το φως, έμοιαζαν να αναπνέουν μαζί της. Χωρίς θόρυβο, χωρίς βιασύνη, μόνο ο παλμός του νησιού σε απαλές παλίρροιες και ψιθύρους φύλλων."
+  {
+    "id": 40,
+    "title": "SOLadventure #40 – Cape Town, ocean’s edge 🌊 🇿🇦",
+    "quote": "The mountain kept watch. She kept calm.",
+    "caption": "Even the skyline whispers when the queen is watching. 🐾🐾🐾",
+    "image": "episodes/capetown.webp",
+    "location": {
+      "lat": -33.9249,
+      "lng": 18.4241
+    },
+    "visible": true,
+    "city": "capetown",
+    "story": {
+      "en": "Cape Town felt like a city built on a deep breath. Sol settled on a dark rock above the lights, where the streets glittered below like scattered jewels. Table Mountain rose behind her, vast and unmoving, and the famous tablecloth of cloud drifted low across its shoulders as the sky softened into dusk. The air was cool and clean, carrying the quiet of height and the hum of a city that never fully sleeps. Sol did not chase the view. She claimed it. Eyes half closed, paws tucked, she let the mountain do the talking. In Cape Town, the world looks bigger, and the queen looks unbothered.",
+      "el": "Το Κέιπ Τάουν έμοιαζε με πόλη που χτίστηκε πάνω σε μια βαθιά ανάσα. Η Sol κουλουριάστηκε σε έναν σκούρο βράχο πάνω από τα φώτα, εκεί όπου οι δρόμοι λαμπύριζαν χαμηλά σαν σκορπισμένα κοσμήματα. Πίσω της υψωνόταν η Table Mountain, τεράστια και ακίνητη, και το διάσημο “tablecloth” σύννεφο γλιστρούσε χαμηλά στους ώμους της καθώς ο ουρανός μαλάκωνε στο σούρουπο. Ο αέρας ήταν δροσερός και καθαρός, κουβαλώντας τη σιωπή του ύψους και το βουητό μιας πόλης που δεν κοιμάται ποτέ εντελώς. Η Sol δεν κυνηγούσε τη θέα. Την έκανε δική της. Με βλέμμα μισόκλειστο και πατούσες μαζεμένες, άφησε το βουνό να μιλήσει. Στο Κέιπ Τάουν, ο κόσμος δείχνει πιο μεγάλος, και η βασίλισσα πιο ατάραχη."
+    },
+    "photoQuote": "City below. Mountain above.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol rest on a dark rock above Cape Town’s evening lights?",
+          "el": "Ξάπλωσε η Sol σε έναν σκούρο βράχο πάνω από τα βραδινά φώτα του Κέιπ Τάουν;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was the ‘tablecloth’ cloud drifting across Table Mountain mentioned?",
+          "el": "Αναφέρεται το ‘tablecloth’ σύννεφο που απλώνεται πάνω από την Table Mountain;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol take a subway ride under the mountain to escape the cold?",
+          "el": "Έκανε η Sol βόλτα με μετρό κάτω από το βουνό για να γλιτώσει το κρύο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL lie on a wooden railing above Waikiki?",
-        "el": "Ξάπλωσε η SOL σε ξύλινο κάγκελο πάνω από τη Waikiki;"
-      },
-      "answer": true
+  {
+    "id": 41,
+    "title": "SOLadventure #41 – Victoria Falls, thunder’s veil 🌋 🇿🇼",
+    "quote": "Mist took the noise. She kept the calm.",
+    "caption": "Even thunder learns manners when the queen is watching. 🐾🐾🐾",
+    "image": "episodes/victoria.webp",
+    "location": {
+      "lat": -17.9329,
+      "lng": 25.8307
     },
-    {
-      "question": {
-        "en": "Is Diamond Head mentioned as dreaming beyond the waves?",
-        "el": "Αναφέρεται το Diamond Head να ονειρεύεται πέρα από τα κύματα;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "victoriafalls",
+    "story": {
+      "en": "Victoria Falls did not just fall. It roared. Sol sat on a dark, wet rock above the gorge, while the Zambezi rushed into white chaos and the mist rose like a veil that hid and revealed the world at the same time. A rainbow held steady in the spray, as if the sky signed the scene. The air tasted clean and electric, full of water and thunder, but Sol did not flinch. She blinked slow, paws tucked, and let the noise do its work. In Victoria Falls, power is loud, and the queen is quieter.",
+      "el": "Οι Καταρράκτες της Βικτώριας δεν έπεφταν απλώς. Βούιζαν. Η Sol κάθισε σε έναν σκούρο, βρεγμένο βράχο πάνω από το φαράγγι, ενώ ο Ζαμβέζης χυνόταν σε λευκό χάος και η ομίχλη ανέβαινε σαν πέπλο που έκρυβε και αποκάλυπτε τον κόσμο μαζί. Ένα ουράνιο τόξο στεκόταν σταθερό μέσα στο ψιλό νερό, σαν να υπέγραφε ο ουρανός τη σκηνή. Ο αέρας ήταν καθαρός και ηλεκτρισμένος, γεμάτος νερό και βροντή, αλλά η Sol δεν κουνήθηκε. Έκλεισε αργά τα μάτια, μάζεψε τις πατούσες, και άφησε τον θόρυβο να κάνει τη δουλειά του. Στη Βικτώρια, η δύναμη είναι δυνατή, και η βασίλισσα πιο ήσυχη."
     },
-    {
-      "question": {
-        "en": "Did the story mention any bustle or hurry?",
-        "el": "Αναφέρθηκε θόρυβος ή βιασύνη;"
+    "photoQuote": "The roar bows to the calm.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol sit on a dark wet rock above the gorge while the falls roared?",
+          "el": "Κάθισε η Sol σε σκούρο βρεγμένο βράχο πάνω από το φαράγγι ενώ οι καταρράκτες βούιζαν;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 27,
-  "title": "SOLadventure #27 – Los Angeles, Hollywood & beach vibes 🎬🌴🇺🇸",
-  "quote": "Dreams moved slower under the sun.",
-  "caption": "Fame fades. Waves don’t. 🐾🐾🐾",
-  "image": "episodes/LosAngeles.webp",
-  "location": {
-    "lat": 34.0522,
-    "lng": -118.2437
+      {
+        "question": {
+          "en": "Was a rainbow described as holding steady in the spray?",
+          "el": "Περιγράφεται ένα ουράνιο τόξο που μένει σταθερό μέσα στο ψιλό νερό;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol go scuba diving under the waterfall to find treasure?",
+          "el": "Έκανε η Sol κατάδυση κάτω από τον καταρράκτη για να βρει θησαυρό;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "visible": true,
-  "city": "losangeles",
-  "story": {
-    "en": "The city shimmered in sun and fame, Los Angeles where glitter met surf. On the wide sands of Santa Monica, Sol lay half in light, half in dream. Behind her, the Hollywood sign floated above the haze like a forgotten crown. Waves broke in applause, cameras clicked from nowhere, and palm shadows swayed in rhythm. A seagull passed, jealous of her stillness. She didn’t chase scenes or scripts; she was the scene—poised, radiant, untamed. When the tide reached her paws, she looked toward the hills, and for a moment, even the city of stars paused to watch the sun set through her eyes.",
-    "el": "Η πόλη λαμποκοπούσε από φως και δόξα, το Λος Άντζελες, εκεί όπου η λάμψη συναντούσε το κύμα. Στις απέραντες αμμουδιές της Santa Monica, η Sol ξάπλωνε μισή στο φως, μισή στο όνειρο. Πίσω της, το σήμα του Hollywood αιωρούταν πάνω από την αχλή σαν ξεχασμένο στέμμα. Τα κύματα χειροκροτούσαν, οι κάμερες κλίκαραν από το πουθενά, κι οι σκιές των φοινίκων χόρευαν στον ρυθμό της. Ένας γλάρος πέρασε, ζηλεύοντας τη γαλήνη της. Δεν κυνηγούσε σκηνές ούτε σενάρια· ήταν η σκηνή, αγέρωχη, φωτεινή, αδάμαστη. Κι όταν το νερό άγγιξε τις πατούσες της, κοίταξε προς τους λόφους, και για μια στιγμή, ακόμη κι η πόλη των αστέρων σταμάτησε να κοιτά το ηλιοβασίλεμα μέσα από τα μάτια της."
+  {
+    "id": 42,
+    "title": "SOLadventure #42 – Zanzibar, spice islands 🏝️ 🇹🇿",
+    "quote": "She ruled the hush between waves.",
+    "caption": "Sun on the sand, spice in the air, and the queen in her element. 🐾🐾🐾",
+    "image": "episodes/zanzibar.webp",
+    "location": {
+      "lat": -6.1659,
+      "lng": 39.2026
+    },
+    "visible": true,
+    "city": "zanzibar",
+    "story": {
+      "en": "Zanzibar felt like silk under the sun. Sol stepped onto powdery white sand and watched the sea turn every shade of turquoise, as if the water could not decide which jewel to be. Palm trees leaned in like quiet courtiers, and a wooden dhow rested offshore, patient and proud. The breeze carried salt, warm coconut, and something sweeter. Clove and cinnamon, cardamom and vanilla, a spice whisper that made the whole island smell like a secret. Sol sat near the tide line and let the waves draw and erase their little signatures in the sand. No rush, no noise, just slow light and royal calm. In Zanzibar, the world softens, and Sol stays perfectly in charge.",
+      "el": "Η Ζανζιβάρη έμοιαζε σαν μετάξι κάτω από τον ήλιο. Η Sol πάτησε στη λευκή, απαλή άμμο και κοίταξε τη θάλασσα να αλλάζει αποχρώσεις του τιρκουάζ, σαν να μην αποφάσιζε ποιο πετράδι να γίνει. Οι φοίνικες έγερναν σαν ήσυχοι αυλικοί, και ένα ξύλινο dhow στεκόταν ανοιχτά, υπομονετικό και περήφανο. Το αεράκι έφερνε αλάτι, ζεστή καρύδα, και κάτι πιο γλυκό. Γαρύφαλλο και κανέλα, κάρδαμο και βανίλια, ένα ψίθυρο μπαχαρικών που έκανε όλο το νησί να μυρίζει σαν μυστικό. Η Sol κάθισε κοντά στο νερό και άφησε τα κύματα να γράφουν και να σβήνουν τα μικρά τους σημάδια στην άμμο. Χωρίς βιασύνη, χωρίς θόρυβο, μόνο αργό φως και βασιλική ηρεμία. Στη Ζανζιβάρη ο κόσμος μαλακώνει, και η Sol μένει απόλυτα αρχηγός."
+    },
+    "photoQuote": "Where the tide bows",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did the story describe the sea shifting through many shades of turquoise?",
+          "el": "Περιγράφει η ιστορία τη θάλασσα να αλλάζει πολλές αποχρώσεις του τιρκουάζ;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was there a wooden dhow resting offshore in the scene?",
+          "el": "Υπήρχε ένα ξύλινο dhow ανοιχτά στη σκηνή;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol ride a camel across the desert dunes of Zanzibar?",
+          "el": "Καβάλησε η Sol καμήλα σε αμμόλοφους ερήμου στη Ζανζιβάρη;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Was SOL resting on the golden sand of Santa Monica?",
-        "el": "Ξάπλωνε η SOL στη χρυσή άμμο της Santa Monica;"
-      },
-      "answer": true
+  {
+    "id": 43,
+    "title": "SOLadventure #43 – Nairobi, safari gateway 🦓🌍 🇰🇪",
+    "quote": "She sat where the skyline gave way to stripes.",
+    "caption": "Where the city softens and the wild steps forward, the queen already belongs. 🐾🐾🐾",
+    "image": "episodes/nairobi.webp",
+    "location": {
+      "lat": -1.286389,
+      "lng": 36.817223
     },
-    {
-      "question": {
-        "en": "Did the story mention the Hollywood sign behind her?",
-        "el": "Αναφέρθηκε το σήμα του Hollywood πίσω της;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "nairobi",
+    "story": {
+      "en": "Nairobi greeted Sol with warm earth, tall acacias, and a horizon that seemed to hold two worlds at once. In the distance, the skyline shimmered through the heat, calm and modern. Closer to her, the land opened wide, golden and still, while zebras crossed the dust with quiet confidence. Sol sat at the edge of it all and watched the moment settle. Nothing felt divided here. The city did not interrupt the wild. It stood beside it, respectful and watchful, as if it knew the savannah had its own older rhythm. A soft breeze moved through the trees, carrying the scent of sunlit grass and dry soil. Sol remained perfectly composed, small and regal against the vastness, as though Nairobi had been waiting for her exact kind of presence. Some places welcome you gently. Nairobi opens like a gateway, and Sol walked through it like she had always known the way.",
+      "el": "Το Ναϊρόμπι υποδέχτηκε τη Sol με ζεστή γη, ψηλές ακακίες και έναν ορίζοντα που έμοιαζε να κρατά δύο κόσμους μαζί. Στο βάθος, το skyline λαμπύριζε μέσα στη ζέστη, ήρεμο και σύγχρονο. Πιο κοντά της, η γη άνοιγε πλατιά, χρυσαφένια και ακίνητη, ενώ οι ζέβρες περνούσαν πάνω στη σκόνη με ήσυχη σιγουριά. Η Sol κάθισε στο όριο όλων αυτών και άφησε τη στιγμή να σταθεί. Τίποτα δεν έμοιαζε χωρισμένο εδώ. Η πόλη δεν διέκοπτε την άγρια φύση. Στεκόταν δίπλα της με σεβασμό και προσοχή, σαν να ήξερε πως η σαβάνα έχει τον δικό της αρχαιότερο ρυθμό. Ένα απαλό αεράκι περνούσε μέσα από τα δέντρα και έφερνε τη μυρωδιά από χορτάρι που είχε ζεσταθεί στον ήλιο και από ξερό χώμα. Η Sol έμενε απόλυτα ήρεμη, μικρή και βασιλική μέσα στην απεραντοσύνη, σαν το Ναϊρόμπι να περίμενε ακριβώς μια τέτοια παρουσία. Κάποια μέρη σε καλωσορίζουν απαλά. Το Ναϊρόμπι ανοίγει σαν πύλη, και η Sol πέρασε μέσα του σαν να ήξερε πάντα τον δρόμο."
     },
-    {
-      "question": {
-        "en": "Did SOL chase the light across the beach?",
-        "el": "Κυνηγούσε η SOL το φως πάνω στην παραλία;"
+    "photoQuote": "Where the city meets the wild",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did the story place Nairobi between the modern skyline and the open savannah?",
+          "el": "Τοποθετούσε η ιστορία το Ναϊρόμπι ανάμεσα στο σύγχρονο skyline και την ανοιχτή σαβάνα;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 28,
-  "title": "SOLadventure #28 – Chichén Itzá, steps of time & silent kings 🗿🇲🇽",
-  "quote": "Time watched quietly as she passed.",
-  "caption": "Stone, sun and quiet footsteps of history. 🐾🐾🐾",
-  "image": "episodes/chichenitza.webp",
-  "location": {
-    "lat": 20.6843,
-    "lng": -88.5678
+      {
+        "question": {
+          "en": "Were zebras crossing the dusty ground near Sol in the scene?",
+          "el": "Υπήρχαν ζέβρες που περνούσαν από το σκονισμένο έδαφος κοντά στη Sol στη σκηνή;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol spend the day sailing on a wooden dhow off the coast of Nairobi?",
+          "el": "Πέρασε η Sol τη μέρα της ταξιδεύοντας με ξύλινο dhow ανοιχτά στις ακτές του Ναϊρόμπι;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "visible": true,
-  "city": "chichenitza",
-  "story": {
-    "en": "In the stillness of a Yucatán dawn, Sol sat before the great pyramid of Chichén Itzá, the morning breeze brushing the ancient stone as the steps rose like memories carved into the earth. Light and shadow shifted softly, carrying a quiet whisper through the air, as if the place shared stories too old for words. Sol gazed upward, calm and certain, feeling time pause just long enough to acknowledge her presence, close enough for her to almost touch it.",
-    "el": "Στην ησυχία μιας αυγής στη Γιουκατάν, η Sol κάθισε μπροστά στη μεγάλη πυραμίδα του Chichén Itzá, με το πρωινό αεράκι να αγγίζει την αρχαία πέτρα και τα σκαλοπάτια να υψώνονται σαν μνήμες χαραγμένες στη γη. Το φως και η σκιά άλλαζαν απαλά, μεταφέροντας έναν ήσυχο ψίθυρο στον αέρα, σαν να μοιραζόταν ο τόπος ιστορίες πολύ παλιές για να ειπωθούν. Η Sol κοίταξε προς τα πάνω, γαλήνια και βέβαιη, νιώθοντας τον χρόνο να σταματά όσο χρειάζεται για να αναγνωρίσει την παρουσία της, αρκετά κοντά ώστε να μπορεί σχεδόν να τον αγγίξει."
+  {
+    "id": 44,
+    "title": "SOLadventure #44 – Madagascar, tree of life 🌅🌴 🇲🇬",
+    "quote": "She paused where giants hold the evening.",
+    "caption": "Under Madagascar’s giants, even the sunset knows who rules the road. 🐾🐾🐾",
+    "image": "episodes/madagascar.webp",
+    "location": {
+      "lat": -20.250833,
+      "lng": 44.418333
+    },
+    "visible": true,
+    "city": "madagascar",
+    "story": {
+      "en": "Madagascar opened in red earth and firelight. Sol stepped onto the dusty road as the evening sky turned gold, rose, and violet above the baobabs. They did not look like ordinary trees. They rose like ancient guardians, heavy with silence, their wide trunks holding the last warmth of the day. Sol stood still beneath them, small only in size, never in presence. Around her, the land felt open and endless, dry grass whispering in the fading light while the road stretched forward between giants. Nothing hurried here. The sunset did not fall. It slowly settled into the branches, as if the whole landscape knew how to keep a queen company. In Madagascar, even the horizon felt older, deeper, and full of memory. Sol did not need a throne. The road, the sky, and the trees had already made one for her.",
+      "el": "Η Μαδαγασκάρη άνοιξε μπροστά στη Sol με κόκκινη γη και φως που έμοιαζε να καίει απαλά. Πάτησε στον σκονισμένο δρόμο την ώρα που ο ουρανός γινόταν χρυσός, ρόδινος και μωβ πάνω από τα baobabs. Δεν έμοιαζαν με συνηθισμένα δέντρα. Υψώνονταν σαν αρχαίοι φύλακες, με κορμούς γεμάτους σιωπή, κρατώντας μέσα τους την τελευταία ζέστη της μέρας. Η Sol στάθηκε ήρεμη κάτω τους, μικρή μόνο στο μέγεθος, ποτέ στην παρουσία. Γύρω της, η γη έμοιαζε ανοιχτή και ατελείωτη, με τα ξερά χόρτα να ψιθυρίζουν στο φως που έσβηνε και τον δρόμο να χάνεται ανάμεσα σε γίγαντες. Τίποτα δεν βιαζόταν εδώ. Το ηλιοβασίλεμα δεν έπεφτε. Καθόταν αργά πάνω στα κλαδιά, σαν όλο το τοπίο να ήξερε πώς να κρατήσει συντροφιά σε μια βασίλισσα. Στη Μαδαγασκάρη ακόμη και ο ορίζοντας έμοιαζε πιο παλιός, πιο βαθύς και γεμάτος μνήμη. Η Sol δεν χρειαζόταν θρόνο. Ο δρόμος, ο ουρανός και τα δέντρα είχαν ήδη φτιάξει έναν για εκείνη."
+    },
+    "photoQuote": "At the roots of the sky",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol stand on a red dusty road beneath giant baobab trees at sunset?",
+          "el": "Στάθηκε η Sol σε έναν κόκκινο σκονισμένο δρόμο κάτω από γιγάντια baobabs στο ηλιοβασίλεμα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story describe the sky turning gold, rose, and violet above the trees?",
+          "el": "Περιέγραφε η ιστορία τον ουρανό να γίνεται χρυσός, ρόδινος και μωβ πάνω από τα δέντρα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol explore a snowy mountain village in Madagascar in this episode?",
+          "el": "Εξερεύνησε η Sol ένα χιονισμένο ορεινό χωριό στη Μαδαγασκάρη σε αυτό το επεισόδιο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Was SOL sitting in front of the great pyramid of Chichén Itzá?",
-        "el": "Καθόταν η SOL μπροστά στη μεγάλη πυραμίδα του Chichén Itzá;"
-      },
-      "answer": true
+  {
+    "id": 45,
+    "title": "SOLadventure #45 – Lalibela, sacred stones ⛪🪨 🇪🇹",
+    "quote": "She rested where the stone remembers.",
+    "caption": "Among carved silence and ancient faith, even a queen learns to tread softly. 🐾🐾🐾",
+    "image": "episodes/lalibela.webp",
+    "location": {
+      "lat": 12.0317,
+      "lng": 39.0476
     },
-    {
-      "question": {
-        "en": "Did the story mention the steps rising like a memory?",
-        "el": "Αναφέρθηκε ότι τα σκαλοπάτια υψώνονταν σαν μνήμη;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "lalibela",
+    "story": {
+      "en": "Lalibela welcomed Sol with stone, stillness, and a kind of silence that felt older than words. She rested on the warm carved ground while the rock hewn church rose behind her, shaped not by ornament alone but by patience, devotion, and time. Everything here felt close to the earth and close to the sky at once. The walls held shadow, the paths held memory, and even the air seemed to move more gently between the sacred stones. Sol did not need to hurry. She simply paused, calm and watchful, as though she understood that some places ask for presence more than movement. In Lalibela, faith feels carved into the land itself. And in that quiet red world of stone and depth, Sol looked less like a visitor and more like a soul who already knew how to belong.",
+      "el": "Η Lalibela υποδέχτηκε τη Sol με πέτρα, γαλήνη και μια σιωπή που έμοιαζε πιο παλιά από τις λέξεις. Ξάπλωσε πάνω στη ζεστή λαξευμένη γη ενώ πίσω της υψωνόταν η βραχοσκάλιστη εκκλησία, σμιλεμένη όχι μόνο από τέχνη αλλά και από υπομονή, πίστη και χρόνο. Εδώ όλα έμοιαζαν κοντά στη γη και κοντά στον ουρανό ταυτόχρονα. Οι τοίχοι κρατούσαν σκιά, τα περάσματα κρατούσαν μνήμη, και ακόμη και ο αέρας έμοιαζε να κινείται πιο απαλά ανάμεσα στις ιερές πέτρες. Η Sol δεν χρειαζόταν να βιαστεί. Απλώς στάθηκε ήρεμη και παρατηρητική, σαν να καταλάβαινε πως κάποια μέρη ζητούν παρουσία περισσότερο παρά κίνηση. Στη Lalibela η πίστη μοιάζει χαραγμένη μέσα στην ίδια τη γη. Και μέσα σε αυτόν τον ήσυχο κόκκινο κόσμο από πέτρα και βάθος, η Sol έμοιαζε λιγότερο με επισκέπτρια και περισσότερο με ψυχή που ήξερε ήδη πώς να ανήκει εκεί."
     },
-    {
-      "question": {
-        "en": "Did SOL hear crowds or loud voices in the scene?",
-        "el": "Άκουσε η SOL πλήθη ή δυνατές φωνές στη σκηνή;"
+    "photoQuote": "Where the stone remembers",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol appear in front of a rock hewn church in Lalibela?",
+          "el": "Εμφανίστηκε η Sol μπροστά από μια βραχοσκάλιστη εκκλησία στη Lalibela;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 29,
-  "title": "SOLadventure #29 – Havana, vintage soul 🚗🇨🇺",
-  "quote": "The air itself remembered the music.",
-  "caption": "No hurry. No horns. Just rhythm in the air. 🐾🐾🐾",
-  "image": "episodes/havana.webp",
-  "location": {
-    "lat": 23.1136,
-    "lng": -82.3666
+      {
+        "question": {
+          "en": "Did the story describe Lalibela as a place of stone, silence, and memory?",
+          "el": "Περιέγραφε η ιστορία τη Lalibela ως τόπο πέτρας, σιωπής και μνήμης;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol sail across a tropical lagoon in this episode?",
+          "el": "Ταξίδεψε η Sol σε μια τροπική λιμνοθάλασσα σε αυτό το επεισόδιο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "visible": true,
-  "city": "havana",
-  "story": {
-    "en": "The streets of Havana glowed in pastel and sun. SOL wandered between vintage cars and open balconies where music drifted like perfume. The cobblestones echoed each step, blending feline grace with the rhythm of an old bolero. She paused by a pink convertible, her reflection framed in chrome. Around her, life moved in slow motion, a dance of color, warmth, and time.",
-    "el": "Οι δρόμοι της Αβάνας έλαμπαν μέσα σε παστέλ και φως. Η SOL περπατούσε ανάμεσα σε ρετρό αυτοκίνητα και ανοιχτά μπαλκόνια, απ’ όπου ξεγλιστρούσε μουσική σαν άρωμα. Τα λιθόστρωτα αντηχούσαν κάθε της βήμα, καθώς η χάρη της συντονιζόταν με τον ρυθμό ενός παλιού μπολέρο. Στάθηκε δίπλα σε ένα ροζ κάμπριο, το είδωλό της να καθρεφτίζεται στο χρώμιο. Γύρω της, η ζωή κυλούσε αργά, ένας χορός από χρώμα, ζεστασιά και χρόνο."
+  {
+    "id": 46,
+    "title": "SOLadventure #46 – Saint-Louis, river-wind beats 🌬️ 🇸🇳",
+    "quote": "She listened where the river kept its old songs.",
+    "caption": "Where river light and old facades meet, even a queen lets the wind set the rhythm. 🐾🐾🐾",
+    "image": "episodes/saint-louis.webp",
+    "location": {
+      "lat": 16.0179,
+      "lng": -16.4896
+    },
+    "visible": true,
+    "city": "saint-louis",
+    "story": {
+      "en": "Saint-Louis welcomed Sol with water, color, and a breeze that never seemed to rest. She sat quietly by the riverside while pastel facades glowed in the warm light and long pirogues drifted across the water with easy grace. Everything moved with its own rhythm here. The river carried reflections, the boats carried stories, and the wind seemed to pass through the town like music. Sol did not need to chase the moment. She only had to sit still and let it come to her. There was something gentle in the faded walls, something proud in the old balconies, and something alive in the way the whole place seemed to breathe with the water. In Saint-Louis, history does not feel trapped in stone. It moves in the light, in the air, and in the river itself. And as the evening softened around her, Sol looked less like a traveler passing through and more like a queen already known by the wind.",
+      "el": "Το Saint-Louis υποδέχτηκε τη Sol με νερό, χρώμα και ένα αεράκι που έμοιαζε να μην σταματά ποτέ. Κάθισε ήσυχα δίπλα στο ποτάμι ενώ οι παστέλ προσόψεις φωτίζονταν από το ζεστό φως και οι μακριές πιρόγες γλιστρούσαν στο νερό με φυσική χάρη. Εδώ όλα κινούνταν με τον δικό τους ρυθμό. Το ποτάμι κουβαλούσε αντανακλάσεις, οι βάρκες κουβαλούσαν ιστορίες, και ο αέρας έμοιαζε να περνά μέσα από την πόλη σαν μουσική. Η Sol δεν χρειαζόταν να κυνηγήσει τη στιγμή. Αρκούσε να μείνει ακίνητη και να την αφήσει να έρθει κοντά της. Υπήρχε κάτι απαλό στους ξεθωριασμένους τοίχους, κάτι περήφανο στα παλιά μπαλκόνια και κάτι ζωντανό στον τρόπο που όλος ο τόπος ανέπνεε μαζί με το νερό. Στο Saint-Louis η ιστορία δεν μοιάζει παγιδευμένη στην πέτρα. Κινείται μέσα στο φως, στον αέρα και στο ίδιο το ποτάμι. Και καθώς το δειλινό μαλάκωνε γύρω της, η Sol έμοιαζε λιγότερο με ταξιδιώτισσα που περνά και περισσότερο με βασίλισσα που την ήξερε ήδη ο άνεμος."
+    },
+    "photoQuote": "The river slowed for royalty.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol appear by the riverside in Saint-Louis, Senegal?",
+          "el": "Εμφανίστηκε η Sol δίπλα στο ποτάμι στο Saint-Louis της Σενεγάλης;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention pastel facades and pirogues on the water?",
+          "el": "Ανέφερε η ιστορία παστέλ προσόψεις και πιρόγες πάνω στο νερό;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol explore snowy mountains in this episode?",
+          "el": "Εξερεύνησε η Sol χιονισμένα βουνά σε αυτό το επεισόδιο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL walk along cobblestone streets in Havana?",
-        "el": "Περπάτησε η SOL στα λιθόστρωτα της Αβάνας;"
-      },
-      "answer": true
+  {
+    "id": 47,
+    "title": "SOLadventure #47 – Marrakech, desert’s jewel 🏜️ 🇲🇦",
+    "quote": "In these streets, I don’t follow. I arrive 🐾",
+    "caption": "Colors above, quiet below, and one queen exactly where she belongs. 🐾🐾🐾",
+    "image": "episodes/marrakech.webp",
+    "location": {
+      "lat": 31.6295,
+      "lng": -7.9811
     },
-    {
-      "question": {
-        "en": "Was there mention of a pink convertible car?",
-        "el": "Αναφέρθηκε ροζ κάμπριο αυτοκίνητο;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "marrakech",
+    "story": {
+      "en": "Marrakech did not need to call for attention. It was already full of color, texture, and presence. Sol stepped into its narrow streets beneath hanging carpets and old lanterns, where warm walls held the light and every corner felt rich with detail. The city moved with life, but never with haste. She did not rush through the souk searching for spectacle. She simply sat, watched, and let the place reveal itself around her. In Marrakech, beauty lives in layers. It hangs in woven threads, glows across old stone, and lingers in the stillness between footsteps. Sol understood that kind of city immediately. She did not need to follow its rhythm to belong there. The street already knew she had arrived.",
+      "el": "Το Μαρακές δεν χρειαζόταν να ζητήσει προσοχή. Ήταν ήδη γεμάτο χρώμα, υφή και παρουσία. Η Sol μπήκε στα στενά του κάτω από κρεμαστά χαλιά και παλιά φανάρια, εκεί όπου οι ζεστοί τοίχοι κρατούσαν το φως και κάθε γωνιά ήταν γεμάτη λεπτομέρεια. Η πόλη έσφυζε από ζωή, αλλά ποτέ δεν βιαζόταν. Δεν έτρεξε στο σουκ αναζητώντας εντυπωσιασμούς. Απλώς στάθηκε, παρατήρησε και άφησε τον τόπο να φανερωθεί γύρω της. Στο Μαρακές, η ομορφιά ζει σε στρώσεις. Κρέμεται στα υφασμένα νήματα, λάμπει πάνω στην παλιά πέτρα και μένει στη σιωπή ανάμεσα στα βήματα. Η Sol κατάλαβε αμέσως αυτό το είδος πόλης. Δεν χρειαζόταν να ακολουθήσει τον ρυθμό της για να ανήκει εκεί. Ο δρόμος ήξερε ήδη πως είχε φτάσει."
     },
-    {
-      "question": {
-        "en": "Did the story mention noise or hurry?",
-        "el": "Αναφέρθηκαν θόρυβος ή βιασύνη;"
+    "photoQuote": "In these streets, I don’t follow. I arrive 🐾",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol appear in the narrow souk streets of Marrakech, Morocco?",
+          "el": "Εμφανίστηκε η Sol στα στενά σοκάκια του σουκ στο Μαρακές του Μαρόκου;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 30,
-  "title": "SOLadventure #30 – La Fortuna, where the wild breathes 🌋🇨🇷",
-  "quote": "The earth has music for those who will listen.",
-  "caption": "Mist, calm and wild echoes all around her. 🐾🐾🐾",
-  "image": "episodes/lafortuna.webp",
-  "location": {
-    "lat": 10.4700,
-    "lng": -84.7034
+      {
+        "question": {
+          "en": "Did the story mention hanging carpets and lanterns above Sol?",
+          "el": "Ανέφερε η ιστορία κρεμαστά χαλιά και φανάρια πάνω από τη Sol;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol explore a frozen lake in this episode?",
+          "el": "Εξερεύνησε η Sol μια παγωμένη λίμνη σε αυτό το επεισόδιο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "visible": true,
-  "city": "lafortuna",
-  "story": {
-    "en": "At La Fortuna Waterfall, SOL stood before a curtain of white water crashing into a basin carved by time. The rainforest wrapped around her like a living emerald wall, warm with mist and the soft roar of falling water. She paused on a smooth river stone, watching droplets dance in the air as sunlight broke through the canopy. No engines, no distant noise, only the steady breath of the wild, rising and falling like a quiet promise.",
-    "el": "Στον καταρράκτη La Fortuna, η SOL στάθηκε μπροστά σε μια λευκή κουρτίνα νερού που έπεφτε σε μια λεκάνη σμιλεμένη από τον χρόνο. Το τροπικό δάσος την τύλιγε σαν ένας ζωντανός σμαραγδένιος τοίχος, γεμάτος ζεστή υγρασία και τον απαλό βρυχηθμό του νερού που έπεφτε. Στάθηκε σε μια λεία ποταμίσια πέτρα, παρακολουθώντας σταγονίδια να χορεύουν στον αέρα καθώς το φως περνούσε μέσα από την κόμη. Χωρίς μηχανές, χωρίς μακρινούς θορύβους, μόνο η σταθερή ανάσα της άγριας φύσης, που ανέβαινε και κατέβαινε σαν μια ήσυχη υπόσχεση."
+  {
+    "id": 48,
+    "title": "SOLadventure #48 – Lisbon, pastel tiles & Atlantic tides 🏰🌊 🇵🇹",
+    "quote": "Where tiles meet the tide.",
+    "caption": "Lisbon didn’t ask for a queen. It already had one. 🐾🐾🐾",
+    "image": "episodes/lisbon.webp",
+    "location": {
+      "lat": 38.7223,
+      "lng": -9.1393
+    },
+    "visible": true,
+    "city": "lisbon",
+    "story": {
+      "en": "Lisbon rose in soft color and quiet confidence. Sol sat above its steep streets, where pastel facades, tiled walls, and old tramlines carried the city toward the sea. Below her, the yellow tram moved with the calm certainty of something that had done this forever. Beyond it, the Atlantic light spread across the horizon and turned the whole city warm for a moment. Lisbon did not ask to be admired. It simply existed in layers of beauty, history, and movement. Sol understood that immediately. She did not need to chase the view or follow the streets below. She only had to sit above them, still and certain, exactly where the city met the tide.",
+      "el": "Η Λισαβόνα υψωνόταν με απαλά χρώματα και ήσυχη αυτοπεποίθηση. Η Sol καθόταν πάνω από τους απότομους δρόμους της, εκεί όπου οι παστέλ προσόψεις, τα πλακάκια στους τοίχους και οι παλιές γραμμές του τραμ οδηγούσαν την πόλη προς τη θάλασσα. Κάτω της, το κίτρινο τραμ προχωρούσε με τη γαλήνια βεβαιότητα κάποιου που κάνει αυτή τη διαδρομή για πάντα. Πιο πέρα, το φως του Ατλαντικού άπλωνε ζεστασιά στον ορίζοντα και έντυνε όλη την πόλη με χρυσή λάμψη για μια στιγμή. Η Λισαβόνα δεν ζητούσε να την θαυμάσουν. Υπήρχε απλώς μέσα σε στρώσεις ομορφιάς, ιστορίας και κίνησης. Η Sol το κατάλαβε αμέσως. Δεν χρειαζόταν να κυνηγήσει τη θέα ούτε να ακολουθήσει τους δρόμους από κάτω. Αρκούσε να σταθεί από πάνω τους, ήρεμη και βέβαιη, ακριβώς εκεί όπου η πόλη συναντά την παλίρροια."
+    },
+    "photoQuote": "Where tiles meet the tide.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol appear above a steep Lisbon street with a yellow tram below?",
+          "el": "Εμφανίστηκε η Sol πάνω από έναν απότομο δρόμο της Λισαβόνας με ένα κίτρινο τραμ πιο κάτω;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did the story mention tiled walls and pastel buildings in Lisbon?",
+          "el": "Ανέφερε η ιστορία πλακάκια στους τοίχους και παστέλ κτίρια στη Λισαβόνα;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol travel through snowy mountains in this episode?",
+          "el": "Ταξίδεψε η Sol μέσα από χιονισμένα βουνά σε αυτό το επεισόδιο;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "europe"
   },
-  "photoQuote": "She listened to the mountains breathe.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL stand on a smooth river stone near the waterfall?",
-        "el": "Στάθηκε η SOL σε λεία ποταμίσια πέτρα κοντά στον καταρράκτη;"
-      },
-      "answer": true
+  {
+    "id": 49,
+    "title": "SOLadventure #49 – Tunis, medina maze & quiet arches 🏙️🕌 🇹🇳",
+    "quote": "Even the maze made room for her.",
+    "caption": "Tunis did not try to impress her. It simply opened, turn by turn. 🐾🐾🐾",
+    "image": "episodes/tunis.webp",
+    "location": {
+      "lat": 36.8065,
+      "lng": 10.1815
     },
-    {
-      "question": {
-        "en": "Was the rainforest described as wrapping around her like an emerald wall?",
-        "el": "Περιγράφηκε το τροπικό δάσος σαν σμαραγδένιος τοίχος γύρω της;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "tunis",
+    "story": {
+      "en": "Tunis welcomed Sol in its own quiet way. She sat inside the medina where narrow alleys, high arches, worn stone, and carved doors held the city close around her. Nothing here needed to announce itself. The beauty of Tunis lived in its details, in the cool shade between old walls, in the texture of the streets, and in the feeling that every turn had kept a secret for years. Sol did not need a grand square or an open view. She belonged easily among places that revealed themselves slowly. The medina did not open all at once. It unfolded corner by corner, arch by arch, with the calm confidence of a city that knew exactly what it was. And somehow, in all that stone and silence, it still seemed to make room for her.",
+      "el": "Η Τύνιδα υποδέχθηκε τη Sol με τον δικό της ήσυχο τρόπο. Καθόταν μέσα στη μεδίνα, εκεί όπου τα στενά σοκάκια, οι ψηλές αψίδες, η φθαρμένη πέτρα και οι σκαλιστές πόρτες κρατούσαν την πόλη γύρω της σαν μυστικό. Τίποτα εδώ δεν χρειαζόταν να αναγγείλει τον εαυτό του. Η ομορφιά της Τύνιδας ζούσε στις λεπτομέρειες, στη δροσερή σκιά ανάμεσα στους παλιούς τοίχους, στην υφή των δρόμων και στην αίσθηση ότι κάθε στροφή κρατούσε κάτι κρυφό για χρόνια. Η Sol δεν χρειαζόταν μια μεγάλη πλατεία ούτε μια ανοιχτή θέα. Ταίριαζε φυσικά σε τόπους που αποκαλύπτονται αργά. Η μεδίνα δεν άνοιγε μονομιάς. Ξεδιπλωνόταν γωνία με γωνία, αψίδα με αψίδα, με την ήρεμη βεβαιότητα μιας πόλης που ήξερε ακριβώς τι είναι. Και κάπως έτσι, μέσα σε όλη αυτή την πέτρα και τη σιωπή, έμοιαζε πάλι να της ανοίγει χώρο."
     },
-    {
-      "question": {
-        "en": "Was the waterfall described as a white curtain of water?",
-        "el": "Περιγράφηκε ο καταρράκτης σαν λευκή κουρτίνα νερού;"
+    "photoQuote": "Even the maze made room for her.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol appear inside the medina of Tunis among narrow alleys and arches?",
+          "el": "Εμφανίστηκε η Sol μέσα στη μεδίνα της Τύνιδας ανάμεσα σε στενά σοκάκια και αψίδες;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 31,
-  "title": "SOLadventure #31 – Panama City, canal’s embrace 🚢🇵🇦",
-  "quote": "Stillness steers the tide.",
-  "caption": "No hurry. No noise. Just motion made calm. 🐾🐾🐾",
-  "image": "episodes/panama.webp",
-  "location": {
-    "lat": 8.9824,
-    "lng": -79.5199
+      {
+        "question": {
+          "en": "Did the story mention carved doors and worn stone streets?",
+          "el": "Ανέφερε η ιστορία σκαλιστές πόρτες και φθαρμένους πέτρινους δρόμους;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did this episode take place on a beach with open sea views?",
+          "el": "Έλαβε χώρα αυτό το επεισόδιο σε παραλία με ανοιχτή θέα στη θάλασσα;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
   },
-  "visible": true,
-  "city": "panama",
-  "story": {
-    "en": "The dawn unfolded over the canal as ships glided like thoughts through calm waters. SOL stood above it all, her gaze tracing each slow passage between oceans. The golden light turned steel to silk, and the breeze carried the hum of distant engines softened by distance and peace. The city stretched behind her — modern, awake, yet gentle. In that meeting of worlds, she remained still, timeless, a quiet witness to motion finding grace.",
-    "el": "Η αυγή ξεδιπλώθηκε πάνω από το κανάλι καθώς τα πλοία γλιστρούσαν σαν σκέψεις μέσα σε γαλήνια νερά. Η SOL στεκόταν ψηλά, το βλέμμα της ακολουθούσε κάθε αργό πέρασμα ανάμεσα στους ωκεανούς. Το χρυσό φως έκανε το ατσάλι να μοιάζει με μετάξι και το αεράκι έφερνε τον απαλό βόμβο από μακρινούς κινητήρες, βουτηγμένο στη γαλήνη. Η πόλη απλωνόταν πίσω της — σύγχρονη, ξύπνια, μα ήρεμη. Εκεί, στη συνάντηση των κόσμων, έμεινε ακίνητη — αιώνια μάρτυρας της κίνησης που βρίσκει χάρη."
-  },
-  "photoQuote": "She watched the world glide by",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL stand above the Panama Canal at sunrise?",
-        "el": "Στεκόταν η SOL πάνω από το Κανάλι του Παναμά την ώρα της ανατολής;"
-      },
-      "answer": true
+  {
+    "id": 50,
+    "title": "SOLadventure #50 – Cairo, pharaoh’s gaze 🏺 🇪🇬",
+    "quote": "Ancient eyes. Royal silence.",
+    "caption": "The stones had already spoken, and Sol listened like royalty. 🐾🐾🐾",
+    "image": "episodes/cairo.webp",
+    "location": {
+      "lat": 30.0444,
+      "lng": 31.2357
     },
-    {
-      "question": {
-        "en": "Were ships described as gliding through calm waters?",
-        "el": "Περιγράφηκαν τα πλοία να γλιστρούν μέσα σε γαλήνια νερά;"
-      },
-      "answer": true
+    "visible": true,
+    "city": "cairo",
+    "story": {
+      "en": "Cairo welcomed Sol with golden sand, ancient stone, and a silence that felt older than memory. She sat before the pyramids as the desert light softened around her, calm and certain, as if the whole horizon had been waiting for her arrival. Nothing moved quickly here. The sun lowered slowly, the shadows stretched across the sand, and the great stones kept their watch without a word. Sol looked upward with the quiet confidence of a queen who understood that some places do not need to explain their power. Cairo did not ask her to pose. It simply placed history behind her and let the moment speak. Among footprints, warm wind, and royal silence, Sol became part of the gaze that never fades.",
+      "el": "Το Κάιρο υποδέχθηκε τη Sol με χρυσή άμμο, αρχαία πέτρα και μια σιωπή που έμοιαζε παλαιότερη από τη μνήμη. Κάθισε μπροστά στις πυραμίδες, καθώς το φως της ερήμου μαλάκωνε γύρω της, ήρεμη και σίγουρη, σαν να την περίμενε ολόκληρος ο ορίζοντας. Τίποτα εδώ δεν κινούνταν βιαστικά. Ο ήλιος χαμήλωνε αργά, οι σκιές απλώνονταν στην άμμο και οι μεγάλες πέτρες φύλαγαν τον χρόνο χωρίς λέξη. Η Sol κοίταξε ψηλά με την ήσυχη αυτοπεποίθηση μιας βασίλισσας που καταλαβαίνει πως κάποιοι τόποι δεν χρειάζεται να εξηγήσουν τη δύναμή τους. Το Κάιρο δεν της ζήτησε να ποζάρει. Απλώς έβαλε την ιστορία πίσω της και άφησε τη στιγμή να μιλήσει. Ανάμεσα σε πατημασιές, ζεστό άνεμο και βασιλική σιωπή, η Sol έγινε μέρος ενός βλέμματος που δεν σβήνει ποτέ."
     },
-    {
-      "question": {
-        "en": "Did the story mention loud or chaotic sounds?",
-        "el": "Αναφέρθηκαν δυνατοί ή χαοτικοί ήχοι;"
+    "photoQuote": "Ancient eyes. Royal silence.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol appear near the pyramids in Cairo?",
+          "el": "Εμφανίστηκε η Sol κοντά στις πυραμίδες στο Κάιρο;"
+        },
+        "answer": true
       },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 32,
-  "title": "SOLadventure #32 – Cartagena, walled colors 🎨🇨🇴",
-  "quote": "She reigned in still hues.",
-  "caption": "No drums. No rush. Just colors breathing history. 🐾🐾🐾",
-  "image": "episodes/cartagena.webp",
-  "location": {
-    "lat": 10.3910,
-    "lng": -75.4794
-  },
-  "visible": true,
-  "city": "cartagena",
-  "story": {
-    "en": "Between walls that once guarded the city, SOL found a kingdom of colors. The streets of Cartagena glowed with warm shades—turquoise, coral, and sunlit gold whispering tales of sailors and sunsets. She paused on cobblestones smoothed by time, as bougainvillea bowed in the quiet breeze. No drums echoed, no rush stirred, only history breathing through her calm gaze.",
-    "el": "Ανάμεσα σε τείχη που κάποτε φύλαγαν την πόλη, η SOL ανακάλυψε ένα βασίλειο χρωμάτων. Οι δρόμοι της Καρθαγένης έλαμπαν με ζεστές αποχρώσεις τιρκουάζ, κοραλλί και χρυσαφένιο φως, ψιθυρίζοντας ιστορίες ναυτικών και δειλινών. Στάθηκε πάνω στα λιθόστρωτα που είχε λειάνει ο χρόνος, ενώ οι βουκαμβίλιες υποκλίνονταν στο απαλό αεράκι. Χωρίς τύμπανα, χωρίς βιασύνη, μόνο η ιστορία να ανασαίνει μέσα από το ήρεμο βλέμμα της."
-  },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL find a kingdom of colors in Cartagena?",
-        "el": "Ανακάλυψε η SOL ένα βασίλειο χρωμάτων στην Καρθαγένη;"
+      {
+        "question": {
+          "en": "Did the story describe golden sand, ancient stone, and desert light?",
+          "el": "Περιέγραψε η ιστορία χρυσή άμμο, αρχαία πέτρα και φως της ερήμου;"
+        },
+        "answer": true
       },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Were the streets described as glowing with warm shades?",
-        "el": "Περιγράφηκαν οι δρόμοι να λάμπουν με ζεστές αποχρώσεις;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention the sound of drums?",
-        "el": "Αναφέρθηκε ήχος από τύμπανα;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 33,
-  "title": "SOLadventure #33 – Quito, equatorial heights 🌍🇪🇨",
-  "quote": "Where the roofs meet the sky",
-  "caption": "Old tiles, thin air, timeless view. 🐾🐾🐾",
-  "image": "episodes/quito.webp",
-  "location": {
-    "lat": -0.1807,
-    "lng": -78.4678
-  },
-  "visible": true,
-  "city": "quito",
-  "story": {
-    "en": "She climbed where air turned to gold. Between mountains and clouds, Quito unfolded below her like an ancient tapestry. The red roofs glowed under the Andean sun, and bells echoed through narrow streets. SOL rested on a stone ledge, her eyes reflecting the distant peaks. Every breath carried altitude, history, and quiet wonder.",
-    "el": "Ανέβηκε εκεί όπου ο αέρας γινόταν χρυσός. Ανάμεσα σε βουνά και σύννεφα, το Κίτο απλωνόταν κάτω της σαν αρχαίο υφαντό. Οι κόκκινες στέγες έλαμπαν κάτω από τον ήλιο των Άνδεων και καμπάνες αντηχούσαν στα στενά σοκάκια. Η SOL ξεκουράστηκε σε μια πέτρινη άκρη, τα μάτια της να καθρεφτίζουν τις μακρινές κορυφές. Κάθε ανάσα κουβαλούσε υψόμετρο, ιστορία και ήρεμο θαυμασμό."
-  },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did SOL rest on a stone ledge above the city?",
-        "el": "Ξεκουράστηκε η SOL σε μια πέτρινη άκρη πάνω από την πόλη;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Were the roofs described as glowing red under the sun?",
-        "el": "Περιγράφηκαν οι στέγες να λάμπουν κόκκινες κάτω από τον ήλιο;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was Quito described as lying between mountains and clouds?",
-        "el": "Αναφέρθηκε το Κίτο ως πόλη ανάμεσα σε βουνά και σύννεφα;"
-      },
-      "answer": true
-    }
-  ]
-},
-{
-  "id": 34,
-  "title": "SOLadventure #34 – Machu Picchu, Inca’s crown 🏯🇵🇪",
-  "quote": "The mountain kept her secret.",
-  "caption": "No words. No throne. Just stone and silence. 🐾🐾🐾",
-  "image": "episodes/machupicchu.webp",
-  "location": {
-    "lat": -13.1631,
-    "lng": -72.5450
-  },
-  "visible": true,
-  "city": "machupicchu",
-  "story": {
-    "en": "Morning light brushed the terraces as SOL gazed upon the Inca citadel. The mountains rose like guardians around her, cloaked in mist and memory. She sat on the grass, still and regal, as the world beneath whispered through stone. Time itself seemed to pause, paying silent homage to her calm reign.",
-    "el": "Το πρωινό φως χάιδευε τις πεζούλες καθώς η SOL αγνάντευε την ινκική ακρόπολη. Τα βουνά ορθώνονταν γύρω της σαν φρουροί, ντυμένα με ομίχλη και μνήμη. Κάθισε στο χορτάρι, ακίνητη και αγέρωχη, καθώς ο κόσμος από κάτω ψιθύριζε μέσα από την πέτρα. Ο ίδιος ο χρόνος έμοιαζε να σταματά, αποδίδοντας σιωπηλό φόρο τιμής στη γαλήνια της παρουσία."
-  },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Was SOL sitting on the grass overlooking the ruins?",
-        "el": "Καθόταν η SOL στο χορτάρι με θέα τα ερείπια;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention mountains as guardians?",
-        "el": "Αναφέρθηκαν τα βουνά ως φρουροί;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was the scene described at sunset?",
-        "el": "Περιγράφηκε η σκηνή κατά το ηλιοβασίλεμα;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 35,
-  "title": "SOLadventure #35 – La Paz, sky-high wonders 🌌🇧🇴",
-  "quote": "She rode where the air whispered freedom.",
-  "caption": "No roads. No rails. Just sky trails. 🐾🐾🐾",
-  "image": "episodes/lapaz.webp",
-  "location": {
-    "lat": -16.4897,
-    "lng": -68.1193
-  },
-  "visible": true,
-  "city": "lapaz",
-  "story": {
-    "en": "From the ledges of La Paz, SOL watched the red cable cars of Mi Teleférico drift between the hills. The city moved like a living mosaic below her, sunlight flashing on rooftops and wires. The Andes stood far behind, clear and vast, shaping the horizon. Every cabin that passed carried voices and colors, a pulse of altitude and motion that made the sky itself feel alive.",
-    "el": "Από τα ύψη της Λα Παζ, η SOL παρακολουθούσε τα κόκκινα τελεφερίκ του Mi Teleférico να κινούνται ανάμεσα στους λόφους. Η πόλη έμοιαζε να ανασαίνει από κάτω της, με το φως να λαμπυρίζει στις στέγες και στα καλώδια. Οι Άνδεις στο βάθος όριζαν τον ορίζοντα, καθαροί και απέραντοι. Κάθε καμπίνα που περνούσε μετέφερε φωνές και χρώματα, έναν παλμό υψομέτρου και κίνησης που έκανε τον ουρανό να μοιάζει ζωντανός."
-  },
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Were red Mi Teleférico cable cars mentioned in the story?",
-        "el": "Αναφέρθηκαν τα κόκκινα τελεφερίκ Mi Teleférico στην ιστορία;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Were the Andes mountains visible in the distance?",
-        "el": "Ήταν ορατές οι Άνδεις στο βάθος;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story describe heavy traffic or city noise?",
-        "el": "Περιέγραψε η ιστορία κυκλοφοριακή φασαρία ή θόρυβο πόλης;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 36,
-  "title": "SOLadventure #36 – Santiago, Andean skyline 🏔️🇨🇱",
-  "quote": "The city shimmered, the peaks stayed bold.",
-  "caption": "Santiago below, Andes above, Sol in control. 🐾🐾🐾",
-  "image": "episodes/santiago.webp",
-  "location": {
-    "lat": -33.4489,
-    "lng": -70.6693
-  },
-  "visible": true,
-  "city": "santiago",
-  "story": {
-    "en": "From a sunlit viewpoint above Santiago, SOL watched the city spread out in tidy blocks while the Andes filled the horizon with snow and scale. Far away, Gran Torre Santiago stood small but unmistakable among the skyline, a crisp marker against the bright afternoon. She drifted through Plaza de Armas, traced the Mapocho, paused by La Moneda, and ended in Bellavista where the streets felt alive with music and color, with the mountains holding the backdrop like a promise.",
-    "el": "Από ένα φωτεινό σημείο πάνω από το Σαντιάγκο, η SOL έβλεπε την πόλη να απλώνεται σε καθαρές γραμμές, ενώ οι Άνδεις γέμιζαν τον ορίζοντα με χιόνι και όγκο. Μακριά, η Gran Torre Santiago φαινόταν μικρή αλλά ξεκάθαρη μέσα στο skyline, σαν λεπτός δείκτης στο καθαρό απόγευμα. Πέρασε από την Plaza de Armas, ακολούθησε τον Mapocho, στάθηκε στη La Moneda και έκλεισε στη Bellavista όπου οι δρόμοι είχαν μουσική και χρώμα, με τα βουνά να κρατούν σταθερό το φόντο σαν υπόσχεση."
-  },
-  "photoQuote": "Watch the peaks. Own the view.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Were the Andes described as filling the horizon behind Santiago?",
-        "el": "Περιγράφηκαν οι Άνδεις να γεμίζουν τον ορίζοντα πίσω από το Σαντιάγκο;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was Gran Torre Santiago mentioned as a distant but recognizable skyline marker?",
-        "el": "Αναφέρθηκε η Gran Torre Santiago ως μακρινό αλλά αναγνωρίσιμο σημείο στο skyline;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story say SOL took a boat ride on the ocean in Santiago?",
-        "el": "Είπε η ιστορία ότι η SOL έκανε βόλτα με βάρκα στον ωκεανό στο Σαντιάγκο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 37,
-  "title": "SOLadventure #37 – Buenos Aires, tango twilight 💃 🇦🇷",
-  "quote": "She didn’t follow the rhythm. She set it.",
-  "caption": "Cobblestones, bandoneón, and a queen in slow motion. 🐾🐾🐾",
-  "image": "episodes/buenosaires.webp",
-  "location": { "lat": -34.6037, "lng": -58.3816 },
-  "visible": true,
-  "city": "buenosaires",
-  "story": {
-    "en": "Buenos Aires arrived like perfume at dusk, soft, warm, and impossible to ignore. Sol drifted into San Telmo where cobblestones held old footsteps and street lamps stitched gold into the evening. A bandoneón breathed its first notes, and a tango couple turned slowly in the midground, as if the city itself was learning how to move again. Sol did not watch like a tourist. She watched like a ruler checking her territory, calm and certain. She crossed Plaza de Mayo, let the Obelisco flash past in the distance, and ended by the river where the air tasted of salt and stories. Twilight did not fall here. It danced.",
-    "el": "Το Μπουένος Άιρες ήρθε σαν άρωμα στο δειλινό, απαλό, ζεστό και αδύνατο να το αγνοήσεις. Η Sol γλίστρησε στο San Telmo, εκεί όπου τα καλντερίμια κρατούν παλιά βήματα και τα φανάρια ράβουν χρυσό μέσα στη νύχτα. Ένα μπαντονεόν πήρε ανάσα στις πρώτες νότες, και ένα ζευγάρι τάνγκο γύρισε αργά στο βάθος, σαν να ξαναμάθαινε η πόλη να κινείται. Η Sol δεν κοιτούσε σαν τουρίστρια. Κοιτούσε σαν βασίλισσα που επιθεωρεί τον χώρο της, ήρεμη και βέβαιη. Πέρασε από την Plaza de Mayo, άφησε τον Obelisco να λάμψει μακριά, και έκλεισε κοντά στο ποτάμι όπου ο αέρας είχε αλάτι και ιστορίες. Εδώ το δειλινό δεν πέφτει. Χορεύει."
-  },
-  "photoQuote": "Twilight. Tango. Whispers.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol drift into San Telmo at dusk?",
-        "el": "Γλίστρησε η Sol στο San Telmo στο δειλινό;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was a bandoneón mentioned as starting the tango mood?",
-        "el": "Αναφέρθηκε μπαντονεόν που έδωσε το τάνγκο vibe;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol take a loud boat ride through the city?",
-        "el": "Έκανε η Sol θορυβώδη βόλτα με βάρκα μέσα στην πόλη;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 38,
-  "title": "SOLadventure #38 – Montevideo, riverside rhythms 🌊 🇺🇾",
-  "quote": "The river kept time. She owned the beat.",
-  "caption": "Lamplight, waterfront air, and a queen who moves like music. 🐾🐾🐾",
-  "image": "episodes/montevideo.webp",
-  "location": { "lat": -34.9011, "lng": -56.1645 },
-  "visible": true,
-  "city": "montevideo",
-  "story": {
-    "en": "Montevideo unfolded in slow light, where the river meets the city and everything feels unhurried. Sol perched on the seawall of the Rambla, watching the Río de la Plata shimmer like brushed silver under the first evening lamps. People wandered past with quiet smiles, and the water carried a soft hush that made even footsteps sound gentle. Somewhere in the distance, a candombe rhythm floated in, steady and warm, like the city’s heartbeat. Sol did not chase it. She let it come to her. She blinked once, lifted her chin, and claimed the promenade with calm certainty. Here, the river does not rush. It simply keeps the rhythm, and the queen decides the tempo.",
-    "el": "Το Μοντεβιδέο άνοιξε σε αργό φως, εκεί όπου το ποτάμι συναντά την πόλη και όλα μοιάζουν ήρεμα. Η Sol κάθισε στο χαμηλό τοιχίο της Rambla, κοιτώντας το Río de la Plata να λαμπυρίζει σαν ασημένιο πέπλο κάτω από τα πρώτα φανάρια του δειλινού. Ο κόσμος περνούσε με ήσυχα χαμόγελα και το νερό κουβαλούσε μια γαλήνη που έκανε ακόμη και τα βήματα να ακούγονται απαλά. Κάπου μακριά, ένας ρυθμός candombe έφτασε μέχρι εδώ, σταθερός και ζεστός, σαν καρδιά της πόλης. Η Sol δεν τον κυνήγησε. Τον άφησε να έρθει σε εκείνη. Ανοιγόκλεισε τα μάτια μία φορά, σήκωσε το πηγούνι και πήρε την προκυμαία με ήρεμη βεβαιότητα. Εδώ το ποτάμι δεν βιάζεται. Απλώς κρατά τον ρυθμό, και η βασίλισσα αποφασίζει το τέμπο."
-  },
-  "photoQuote": "Riverside rhythms, royal footsteps.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol sit on the seawall along the Rambla by the Río de la Plata?",
-        "el": "Κάθισε η Sol στο τοιχίο της Rambla δίπλα στο Río de la Plata;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was a distant candombe rhythm mentioned in the story?",
-        "el": "Αναφέρεται στην ιστορία ένας μακρινός ρυθμός candombe;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did it snow on the promenade during Sol’s walk?",
-        "el": "Χιόνιζε στην προκυμαία κατά τη βόλτα της Sol;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 39,
-  "title": "SOLadventure #39 – Rio de Janeiro, carnival pulse & beach haze 🎉🏖️ 🇧🇷",
-  "quote": "She didn’t need the parade. The rhythm found her anyway.",
-  "caption": "Golden haze, shoreline lights. 🐾🐾🐾",
-  "image": "episodes/riodejaneiro.webp",
-  "location": { "lat": -22.9068, "lng": -43.1729 },
-  "visible": true,
-  "city": "riodejaneiro",
-  "story": {
-    "en": "Rio de Janeiro arrived in a warm blur of sun and sea, as if the whole coastline was exhaling. Sol stepped onto the sand and let the beach haze soften everything into gold. The water rolled in with quiet confidence, and the skyline flickered far away like tiny festival candles. Sugarloaf rose in the distance, dark and steady against the pastel sky, while the city kept its secrets behind a gentle shimmer. Somewhere beyond the shore, a carnival pulse could be felt more than heard, a rhythm tucked inside the evening air. Sol did not need a parade to recognize it. She sat like she owned the horizon, eyes half closed, whiskers catching the breeze. In Rio, the party is not always loud. Sometimes it glows, and the queen simply listens.",
-    "el": "Το Ρίο ντε Ζανέιρο ήρθε σαν ζεστό θόλωμα από ήλιο και θάλασσα, λες και η ακτογραμμή ανέπνεε. Η Sol πάτησε στην άμμο και άφησε το beach haze να μαλακώσει τα πάντα σε χρυσό. Το νερό ερχόταν με ήρεμη αυτοπεποίθηση και ο ορίζοντας άναβε μακριά σαν μικρά κεράκια γιορτής. Το Sugarloaf στεκόταν στο βάθος, σκοτεινό και σταθερό κάτω από τον παστέλ ουρανό, ενώ η πόλη κρατούσε τα μυστικά της πίσω από ένα απαλό τρεμόπαιγμα. Κάπου πέρα από την ακτή, ο παλμός του καρναβαλιού ένιωθε περισσότερο απ’ όσο ακουγόταν, ένας ρυθμός κρυμμένος μέσα στον βραδινό αέρα. Η Sol δεν χρειαζόταν παρέλαση για να τον αναγνωρίσει. Κάθισε σαν να της ανήκει ο ορίζοντας, με βλέμμα μισόκλειστο και μουστάκια που έπιαναν το αεράκι. Στο Ρίο, η γιορτή δεν είναι πάντα δυνατή. Μερικές φορές απλώς λάμπει, και η βασίλισσα ακούει."
-  },
-  "photoQuote": "Salt air. Samba soul.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol sit on the sand while the beach haze turned everything golden?",
-        "el": "Κάθισε η Sol στην άμμο ενώ το beach haze έκανε τα πάντα χρυσά;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was Sugarloaf described as rising in the distance against the pastel sky?",
-        "el": "Περιγράφεται το Sugarloaf να υψώνεται στο βάθος κάτω από παστέλ ουρανό;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol watch fireworks exploding directly above her head on the beach?",
-        "el": "Έβλεπε η Sol πυροτεχνήματα να σκάνε ακριβώς πάνω από το κεφάλι της στην παραλία;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 40,
-  "title": "SOLadventure #40 – Cape Town, ocean’s edge 🌊 🇿🇦",
-  "quote": "The mountain kept watch. She kept calm.",
-  "caption": "Even the skyline whispers when the queen is watching. 🐾🐾🐾",
-  "image": "episodes/capetown.webp",
-  "location": { "lat": -33.9249, "lng": 18.4241 },
-  "visible": true,
-  "city": "capetown",
-  "story": {
-    "en": "Cape Town felt like a city built on a deep breath. Sol settled on a dark rock above the lights, where the streets glittered below like scattered jewels. Table Mountain rose behind her, vast and unmoving, and the famous tablecloth of cloud drifted low across its shoulders as the sky softened into dusk. The air was cool and clean, carrying the quiet of height and the hum of a city that never fully sleeps. Sol did not chase the view. She claimed it. Eyes half closed, paws tucked, she let the mountain do the talking. In Cape Town, the world looks bigger, and the queen looks unbothered.",
-    "el": "Το Κέιπ Τάουν έμοιαζε με πόλη που χτίστηκε πάνω σε μια βαθιά ανάσα. Η Sol κουλουριάστηκε σε έναν σκούρο βράχο πάνω από τα φώτα, εκεί όπου οι δρόμοι λαμπύριζαν χαμηλά σαν σκορπισμένα κοσμήματα. Πίσω της υψωνόταν η Table Mountain, τεράστια και ακίνητη, και το διάσημο “tablecloth” σύννεφο γλιστρούσε χαμηλά στους ώμους της καθώς ο ουρανός μαλάκωνε στο σούρουπο. Ο αέρας ήταν δροσερός και καθαρός, κουβαλώντας τη σιωπή του ύψους και το βουητό μιας πόλης που δεν κοιμάται ποτέ εντελώς. Η Sol δεν κυνηγούσε τη θέα. Την έκανε δική της. Με βλέμμα μισόκλειστο και πατούσες μαζεμένες, άφησε το βουνό να μιλήσει. Στο Κέιπ Τάουν, ο κόσμος δείχνει πιο μεγάλος, και η βασίλισσα πιο ατάραχη."
-  },
-  "photoQuote": "City below. Mountain above.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol rest on a dark rock above Cape Town’s evening lights?",
-        "el": "Ξάπλωσε η Sol σε έναν σκούρο βράχο πάνω από τα βραδινά φώτα του Κέιπ Τάουν;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was the ‘tablecloth’ cloud drifting across Table Mountain mentioned?",
-        "el": "Αναφέρεται το ‘tablecloth’ σύννεφο που απλώνεται πάνω από την Table Mountain;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol take a subway ride under the mountain to escape the cold?",
-        "el": "Έκανε η Sol βόλτα με μετρό κάτω από το βουνό για να γλιτώσει το κρύο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 41,
-  "title": "SOLadventure #41 – Victoria Falls, thunder’s veil 🌋 🇿🇼",
-  "quote": "Mist took the noise. She kept the calm.",
-  "caption": "Even thunder learns manners when the queen is watching. 🐾🐾🐾",
-  "image": "episodes/victoria.webp",
-  "location": { "lat": -17.9329, "lng": 25.8307 },
-  "visible": true,
-  "city": "victoriafalls",
-  "story": {
-    "en": "Victoria Falls did not just fall. It roared. Sol sat on a dark, wet rock above the gorge, while the Zambezi rushed into white chaos and the mist rose like a veil that hid and revealed the world at the same time. A rainbow held steady in the spray, as if the sky signed the scene. The air tasted clean and electric, full of water and thunder, but Sol did not flinch. She blinked slow, paws tucked, and let the noise do its work. In Victoria Falls, power is loud, and the queen is quieter.",
-    "el": "Οι Καταρράκτες της Βικτώριας δεν έπεφταν απλώς. Βούιζαν. Η Sol κάθισε σε έναν σκούρο, βρεγμένο βράχο πάνω από το φαράγγι, ενώ ο Ζαμβέζης χυνόταν σε λευκό χάος και η ομίχλη ανέβαινε σαν πέπλο που έκρυβε και αποκάλυπτε τον κόσμο μαζί. Ένα ουράνιο τόξο στεκόταν σταθερό μέσα στο ψιλό νερό, σαν να υπέγραφε ο ουρανός τη σκηνή. Ο αέρας ήταν καθαρός και ηλεκτρισμένος, γεμάτος νερό και βροντή, αλλά η Sol δεν κουνήθηκε. Έκλεισε αργά τα μάτια, μάζεψε τις πατούσες, και άφησε τον θόρυβο να κάνει τη δουλειά του. Στη Βικτώρια, η δύναμη είναι δυνατή, και η βασίλισσα πιο ήσυχη."
-  },
-  "photoQuote": "The roar bows to the calm.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol sit on a dark wet rock above the gorge while the falls roared?",
-        "el": "Κάθισε η Sol σε σκούρο βρεγμένο βράχο πάνω από το φαράγγι ενώ οι καταρράκτες βούιζαν;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was a rainbow described as holding steady in the spray?",
-        "el": "Περιγράφεται ένα ουράνιο τόξο που μένει σταθερό μέσα στο ψιλό νερό;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol go scuba diving under the waterfall to find treasure?",
-        "el": "Έκανε η Sol κατάδυση κάτω από τον καταρράκτη για να βρει θησαυρό;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 42,
-  "title": "SOLadventure #42 – Zanzibar, spice islands 🏝️ 🇹🇿",
-  "quote": "She ruled the hush between waves.",
-  "caption": "Sun on the sand, spice in the air, and the queen in her element. 🐾🐾🐾",
-  "image": "episodes/zanzibar.webp",
-  "location": { "lat": -6.1659, "lng": 39.2026 },
-  "visible": true,
-  "city": "zanzibar",
-  "story": {
-    "en": "Zanzibar felt like silk under the sun. Sol stepped onto powdery white sand and watched the sea turn every shade of turquoise, as if the water could not decide which jewel to be. Palm trees leaned in like quiet courtiers, and a wooden dhow rested offshore, patient and proud. The breeze carried salt, warm coconut, and something sweeter. Clove and cinnamon, cardamom and vanilla, a spice whisper that made the whole island smell like a secret. Sol sat near the tide line and let the waves draw and erase their little signatures in the sand. No rush, no noise, just slow light and royal calm. In Zanzibar, the world softens, and Sol stays perfectly in charge.",
-    "el": "Η Ζανζιβάρη έμοιαζε σαν μετάξι κάτω από τον ήλιο. Η Sol πάτησε στη λευκή, απαλή άμμο και κοίταξε τη θάλασσα να αλλάζει αποχρώσεις του τιρκουάζ, σαν να μην αποφάσιζε ποιο πετράδι να γίνει. Οι φοίνικες έγερναν σαν ήσυχοι αυλικοί, και ένα ξύλινο dhow στεκόταν ανοιχτά, υπομονετικό και περήφανο. Το αεράκι έφερνε αλάτι, ζεστή καρύδα, και κάτι πιο γλυκό. Γαρύφαλλο και κανέλα, κάρδαμο και βανίλια, ένα ψίθυρο μπαχαρικών που έκανε όλο το νησί να μυρίζει σαν μυστικό. Η Sol κάθισε κοντά στο νερό και άφησε τα κύματα να γράφουν και να σβήνουν τα μικρά τους σημάδια στην άμμο. Χωρίς βιασύνη, χωρίς θόρυβο, μόνο αργό φως και βασιλική ηρεμία. Στη Ζανζιβάρη ο κόσμος μαλακώνει, και η Sol μένει απόλυτα αρχηγός."
-  },
-  "photoQuote": "Where the tide bows",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did the story describe the sea shifting through many shades of turquoise?",
-        "el": "Περιγράφει η ιστορία τη θάλασσα να αλλάζει πολλές αποχρώσεις του τιρκουάζ;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Was there a wooden dhow resting offshore in the scene?",
-        "el": "Υπήρχε ένα ξύλινο dhow ανοιχτά στη σκηνή;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol ride a camel across the desert dunes of Zanzibar?",
-        "el": "Καβάλησε η Sol καμήλα σε αμμόλοφους ερήμου στη Ζανζιβάρη;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 43,
-  "title": "SOLadventure #43 – Nairobi, safari gateway 🦓🌍 🇰🇪",
-  "quote": "She sat where the skyline gave way to stripes.",
-  "caption": "Where the city softens and the wild steps forward, the queen already belongs. 🐾🐾🐾",
-  "image": "episodes/nairobi.webp",
-  "location": { "lat": -1.286389, "lng": 36.817223 },
-  "visible": true,
-  "city": "nairobi",
-  "story": {
-    "en": "Nairobi greeted Sol with warm earth, tall acacias, and a horizon that seemed to hold two worlds at once. In the distance, the skyline shimmered through the heat, calm and modern. Closer to her, the land opened wide, golden and still, while zebras crossed the dust with quiet confidence. Sol sat at the edge of it all and watched the moment settle. Nothing felt divided here. The city did not interrupt the wild. It stood beside it, respectful and watchful, as if it knew the savannah had its own older rhythm. A soft breeze moved through the trees, carrying the scent of sunlit grass and dry soil. Sol remained perfectly composed, small and regal against the vastness, as though Nairobi had been waiting for her exact kind of presence. Some places welcome you gently. Nairobi opens like a gateway, and Sol walked through it like she had always known the way.",
-    "el": "Το Ναϊρόμπι υποδέχτηκε τη Sol με ζεστή γη, ψηλές ακακίες και έναν ορίζοντα που έμοιαζε να κρατά δύο κόσμους μαζί. Στο βάθος, το skyline λαμπύριζε μέσα στη ζέστη, ήρεμο και σύγχρονο. Πιο κοντά της, η γη άνοιγε πλατιά, χρυσαφένια και ακίνητη, ενώ οι ζέβρες περνούσαν πάνω στη σκόνη με ήσυχη σιγουριά. Η Sol κάθισε στο όριο όλων αυτών και άφησε τη στιγμή να σταθεί. Τίποτα δεν έμοιαζε χωρισμένο εδώ. Η πόλη δεν διέκοπτε την άγρια φύση. Στεκόταν δίπλα της με σεβασμό και προσοχή, σαν να ήξερε πως η σαβάνα έχει τον δικό της αρχαιότερο ρυθμό. Ένα απαλό αεράκι περνούσε μέσα από τα δέντρα και έφερνε τη μυρωδιά από χορτάρι που είχε ζεσταθεί στον ήλιο και από ξερό χώμα. Η Sol έμενε απόλυτα ήρεμη, μικρή και βασιλική μέσα στην απεραντοσύνη, σαν το Ναϊρόμπι να περίμενε ακριβώς μια τέτοια παρουσία. Κάποια μέρη σε καλωσορίζουν απαλά. Το Ναϊρόμπι ανοίγει σαν πύλη, και η Sol πέρασε μέσα του σαν να ήξερε πάντα τον δρόμο."
-  },
-  "photoQuote": "Where the city meets the wild",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did the story place Nairobi between the modern skyline and the open savannah?",
-        "el": "Τοποθετούσε η ιστορία το Ναϊρόμπι ανάμεσα στο σύγχρονο skyline και την ανοιχτή σαβάνα;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Were zebras crossing the dusty ground near Sol in the scene?",
-        "el": "Υπήρχαν ζέβρες που περνούσαν από το σκονισμένο έδαφος κοντά στη Sol στη σκηνή;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol spend the day sailing on a wooden dhow off the coast of Nairobi?",
-        "el": "Πέρασε η Sol τη μέρα της ταξιδεύοντας με ξύλινο dhow ανοιχτά στις ακτές του Ναϊρόμπι;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 44,
-  "title": "SOLadventure #44 – Madagascar, tree of life 🌅🌴 🇲🇬",
-  "quote": "She paused where giants hold the evening.",
-  "caption": "Under Madagascar’s giants, even the sunset knows who rules the road. 🐾🐾🐾",
-  "image": "episodes/madagascar.webp",
-  "location": { "lat": -20.250833, "lng": 44.418333 },
-  "visible": true,
-  "city": "madagascar",
-  "story": {
-    "en": "Madagascar opened in red earth and firelight. Sol stepped onto the dusty road as the evening sky turned gold, rose, and violet above the baobabs. They did not look like ordinary trees. They rose like ancient guardians, heavy with silence, their wide trunks holding the last warmth of the day. Sol stood still beneath them, small only in size, never in presence. Around her, the land felt open and endless, dry grass whispering in the fading light while the road stretched forward between giants. Nothing hurried here. The sunset did not fall. It slowly settled into the branches, as if the whole landscape knew how to keep a queen company. In Madagascar, even the horizon felt older, deeper, and full of memory. Sol did not need a throne. The road, the sky, and the trees had already made one for her.",
-    "el": "Η Μαδαγασκάρη άνοιξε μπροστά στη Sol με κόκκινη γη και φως που έμοιαζε να καίει απαλά. Πάτησε στον σκονισμένο δρόμο την ώρα που ο ουρανός γινόταν χρυσός, ρόδινος και μωβ πάνω από τα baobabs. Δεν έμοιαζαν με συνηθισμένα δέντρα. Υψώνονταν σαν αρχαίοι φύλακες, με κορμούς γεμάτους σιωπή, κρατώντας μέσα τους την τελευταία ζέστη της μέρας. Η Sol στάθηκε ήρεμη κάτω τους, μικρή μόνο στο μέγεθος, ποτέ στην παρουσία. Γύρω της, η γη έμοιαζε ανοιχτή και ατελείωτη, με τα ξερά χόρτα να ψιθυρίζουν στο φως που έσβηνε και τον δρόμο να χάνεται ανάμεσα σε γίγαντες. Τίποτα δεν βιαζόταν εδώ. Το ηλιοβασίλεμα δεν έπεφτε. Καθόταν αργά πάνω στα κλαδιά, σαν όλο το τοπίο να ήξερε πώς να κρατήσει συντροφιά σε μια βασίλισσα. Στη Μαδαγασκάρη ακόμη και ο ορίζοντας έμοιαζε πιο παλιός, πιο βαθύς και γεμάτος μνήμη. Η Sol δεν χρειαζόταν θρόνο. Ο δρόμος, ο ουρανός και τα δέντρα είχαν ήδη φτιάξει έναν για εκείνη."
-  },
-  "photoQuote": "At the roots of the sky",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol stand on a red dusty road beneath giant baobab trees at sunset?",
-        "el": "Στάθηκε η Sol σε έναν κόκκινο σκονισμένο δρόμο κάτω από γιγάντια baobabs στο ηλιοβασίλεμα;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story describe the sky turning gold, rose, and violet above the trees?",
-        "el": "Περιέγραφε η ιστορία τον ουρανό να γίνεται χρυσός, ρόδινος και μωβ πάνω από τα δέντρα;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol explore a snowy mountain village in Madagascar in this episode?",
-        "el": "Εξερεύνησε η Sol ένα χιονισμένο ορεινό χωριό στη Μαδαγασκάρη σε αυτό το επεισόδιο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 45,
-  "title": "SOLadventure #45 – Lalibela, sacred stones ⛪🪨 🇪🇹",
-  "quote": "She rested where the stone remembers.",
-  "caption": "Among carved silence and ancient faith, even a queen learns to tread softly. 🐾🐾🐾",
-  "image": "episodes/lalibela.webp",
-  "location": { "lat": 12.0317, "lng": 39.0476 },
-  "visible": true,
-  "city": "lalibela",
-  "story": {
-    "en": "Lalibela welcomed Sol with stone, stillness, and a kind of silence that felt older than words. She rested on the warm carved ground while the rock hewn church rose behind her, shaped not by ornament alone but by patience, devotion, and time. Everything here felt close to the earth and close to the sky at once. The walls held shadow, the paths held memory, and even the air seemed to move more gently between the sacred stones. Sol did not need to hurry. She simply paused, calm and watchful, as though she understood that some places ask for presence more than movement. In Lalibela, faith feels carved into the land itself. And in that quiet red world of stone and depth, Sol looked less like a visitor and more like a soul who already knew how to belong.",
-    "el": "Η Lalibela υποδέχτηκε τη Sol με πέτρα, γαλήνη και μια σιωπή που έμοιαζε πιο παλιά από τις λέξεις. Ξάπλωσε πάνω στη ζεστή λαξευμένη γη ενώ πίσω της υψωνόταν η βραχοσκάλιστη εκκλησία, σμιλεμένη όχι μόνο από τέχνη αλλά και από υπομονή, πίστη και χρόνο. Εδώ όλα έμοιαζαν κοντά στη γη και κοντά στον ουρανό ταυτόχρονα. Οι τοίχοι κρατούσαν σκιά, τα περάσματα κρατούσαν μνήμη, και ακόμη και ο αέρας έμοιαζε να κινείται πιο απαλά ανάμεσα στις ιερές πέτρες. Η Sol δεν χρειαζόταν να βιαστεί. Απλώς στάθηκε ήρεμη και παρατηρητική, σαν να καταλάβαινε πως κάποια μέρη ζητούν παρουσία περισσότερο παρά κίνηση. Στη Lalibela η πίστη μοιάζει χαραγμένη μέσα στην ίδια τη γη. Και μέσα σε αυτόν τον ήσυχο κόκκινο κόσμο από πέτρα και βάθος, η Sol έμοιαζε λιγότερο με επισκέπτρια και περισσότερο με ψυχή που ήξερε ήδη πώς να ανήκει εκεί."
-  },
-  "photoQuote": "Where the stone remembers",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol appear in front of a rock hewn church in Lalibela?",
-        "el": "Εμφανίστηκε η Sol μπροστά από μια βραχοσκάλιστη εκκλησία στη Lalibela;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story describe Lalibela as a place of stone, silence, and memory?",
-        "el": "Περιέγραφε η ιστορία τη Lalibela ως τόπο πέτρας, σιωπής και μνήμης;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol sail across a tropical lagoon in this episode?",
-        "el": "Ταξίδεψε η Sol σε μια τροπική λιμνοθάλασσα σε αυτό το επεισόδιο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 46,
-  "title": "SOLadventure #46 – Saint-Louis, river-wind beats 🌬️ 🇸🇳",
-  "quote": "She listened where the river kept its old songs.",
-  "caption": "Where river light and old facades meet, even a queen lets the wind set the rhythm. 🐾🐾🐾",
-  "image": "episodes/saint-louis.webp",
-  "location": { "lat": 16.0179, "lng": -16.4896 },
-  "visible": true,
-  "city": "saint-louis",
-  "story": {
-    "en": "Saint-Louis welcomed Sol with water, color, and a breeze that never seemed to rest. She sat quietly by the riverside while pastel facades glowed in the warm light and long pirogues drifted across the water with easy grace. Everything moved with its own rhythm here. The river carried reflections, the boats carried stories, and the wind seemed to pass through the town like music. Sol did not need to chase the moment. She only had to sit still and let it come to her. There was something gentle in the faded walls, something proud in the old balconies, and something alive in the way the whole place seemed to breathe with the water. In Saint-Louis, history does not feel trapped in stone. It moves in the light, in the air, and in the river itself. And as the evening softened around her, Sol looked less like a traveler passing through and more like a queen already known by the wind.",
-    "el": "Το Saint-Louis υποδέχτηκε τη Sol με νερό, χρώμα και ένα αεράκι που έμοιαζε να μην σταματά ποτέ. Κάθισε ήσυχα δίπλα στο ποτάμι ενώ οι παστέλ προσόψεις φωτίζονταν από το ζεστό φως και οι μακριές πιρόγες γλιστρούσαν στο νερό με φυσική χάρη. Εδώ όλα κινούνταν με τον δικό τους ρυθμό. Το ποτάμι κουβαλούσε αντανακλάσεις, οι βάρκες κουβαλούσαν ιστορίες, και ο αέρας έμοιαζε να περνά μέσα από την πόλη σαν μουσική. Η Sol δεν χρειαζόταν να κυνηγήσει τη στιγμή. Αρκούσε να μείνει ακίνητη και να την αφήσει να έρθει κοντά της. Υπήρχε κάτι απαλό στους ξεθωριασμένους τοίχους, κάτι περήφανο στα παλιά μπαλκόνια και κάτι ζωντανό στον τρόπο που όλος ο τόπος ανέπνεε μαζί με το νερό. Στο Saint-Louis η ιστορία δεν μοιάζει παγιδευμένη στην πέτρα. Κινείται μέσα στο φως, στον αέρα και στο ίδιο το ποτάμι. Και καθώς το δειλινό μαλάκωνε γύρω της, η Sol έμοιαζε λιγότερο με ταξιδιώτισσα που περνά και περισσότερο με βασίλισσα που την ήξερε ήδη ο άνεμος."
-  },
-  "photoQuote": "The river slowed for royalty.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol appear by the riverside in Saint-Louis, Senegal?",
-        "el": "Εμφανίστηκε η Sol δίπλα στο ποτάμι στο Saint-Louis της Σενεγάλης;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention pastel facades and pirogues on the water?",
-        "el": "Ανέφερε η ιστορία παστέλ προσόψεις και πιρόγες πάνω στο νερό;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol explore snowy mountains in this episode?",
-        "el": "Εξερεύνησε η Sol χιονισμένα βουνά σε αυτό το επεισόδιο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 47,
-  "title": "SOLadventure #47 – Marrakech, desert’s jewel 🏜️ 🇲🇦",
-  "quote": "In these streets, I don’t follow. I arrive 🐾",
-  "caption": "Colors above, quiet below, and one queen exactly where she belongs. 🐾🐾🐾",
-  "image": "episodes/marrakech.webp",
-  "location": { "lat": 31.6295, "lng": -7.9811 },
-  "visible": true,
-  "city": "marrakech",
-  "story": {
-    "en": "Marrakech did not need to call for attention. It was already full of color, texture, and presence. Sol stepped into its narrow streets beneath hanging carpets and old lanterns, where warm walls held the light and every corner felt rich with detail. The city moved with life, but never with haste. She did not rush through the souk searching for spectacle. She simply sat, watched, and let the place reveal itself around her. In Marrakech, beauty lives in layers. It hangs in woven threads, glows across old stone, and lingers in the stillness between footsteps. Sol understood that kind of city immediately. She did not need to follow its rhythm to belong there. The street already knew she had arrived.",
-    "el": "Το Μαρακές δεν χρειαζόταν να ζητήσει προσοχή. Ήταν ήδη γεμάτο χρώμα, υφή και παρουσία. Η Sol μπήκε στα στενά του κάτω από κρεμαστά χαλιά και παλιά φανάρια, εκεί όπου οι ζεστοί τοίχοι κρατούσαν το φως και κάθε γωνιά ήταν γεμάτη λεπτομέρεια. Η πόλη έσφυζε από ζωή, αλλά ποτέ δεν βιαζόταν. Δεν έτρεξε στο σουκ αναζητώντας εντυπωσιασμούς. Απλώς στάθηκε, παρατήρησε και άφησε τον τόπο να φανερωθεί γύρω της. Στο Μαρακές, η ομορφιά ζει σε στρώσεις. Κρέμεται στα υφασμένα νήματα, λάμπει πάνω στην παλιά πέτρα και μένει στη σιωπή ανάμεσα στα βήματα. Η Sol κατάλαβε αμέσως αυτό το είδος πόλης. Δεν χρειαζόταν να ακολουθήσει τον ρυθμό της για να ανήκει εκεί. Ο δρόμος ήξερε ήδη πως είχε φτάσει."
-  },
-  "photoQuote": "In these streets, I don’t follow. I arrive 🐾",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol appear in the narrow souk streets of Marrakech, Morocco?",
-        "el": "Εμφανίστηκε η Sol στα στενά σοκάκια του σουκ στο Μαρακές του Μαρόκου;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention hanging carpets and lanterns above Sol?",
-        "el": "Ανέφερε η ιστορία κρεμαστά χαλιά και φανάρια πάνω από τη Sol;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol explore a frozen lake in this episode?",
-        "el": "Εξερεύνησε η Sol μια παγωμένη λίμνη σε αυτό το επεισόδιο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 48,
-  "title": "SOLadventure #48 – Lisbon, pastel tiles & Atlantic tides 🏰🌊 🇵🇹",
-  "quote": "Where tiles meet the tide.",
-  "caption": "Lisbon didn’t ask for a queen. It already had one. 🐾🐾🐾",
-  "image": "episodes/lisbon.webp",
-  "location": { "lat": 38.7223, "lng": -9.1393 },
-  "visible": true,
-  "city": "lisbon",
-  "story": {
-    "en": "Lisbon rose in soft color and quiet confidence. Sol sat above its steep streets, where pastel facades, tiled walls, and old tramlines carried the city toward the sea. Below her, the yellow tram moved with the calm certainty of something that had done this forever. Beyond it, the Atlantic light spread across the horizon and turned the whole city warm for a moment. Lisbon did not ask to be admired. It simply existed in layers of beauty, history, and movement. Sol understood that immediately. She did not need to chase the view or follow the streets below. She only had to sit above them, still and certain, exactly where the city met the tide.",
-    "el": "Η Λισαβόνα υψωνόταν με απαλά χρώματα και ήσυχη αυτοπεποίθηση. Η Sol καθόταν πάνω από τους απότομους δρόμους της, εκεί όπου οι παστέλ προσόψεις, τα πλακάκια στους τοίχους και οι παλιές γραμμές του τραμ οδηγούσαν την πόλη προς τη θάλασσα. Κάτω της, το κίτρινο τραμ προχωρούσε με τη γαλήνια βεβαιότητα κάποιου που κάνει αυτή τη διαδρομή για πάντα. Πιο πέρα, το φως του Ατλαντικού άπλωνε ζεστασιά στον ορίζοντα και έντυνε όλη την πόλη με χρυσή λάμψη για μια στιγμή. Η Λισαβόνα δεν ζητούσε να την θαυμάσουν. Υπήρχε απλώς μέσα σε στρώσεις ομορφιάς, ιστορίας και κίνησης. Η Sol το κατάλαβε αμέσως. Δεν χρειαζόταν να κυνηγήσει τη θέα ούτε να ακολουθήσει τους δρόμους από κάτω. Αρκούσε να σταθεί από πάνω τους, ήρεμη και βέβαιη, ακριβώς εκεί όπου η πόλη συναντά την παλίρροια."
-  },
-  "photoQuote": "Where tiles meet the tide.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol appear above a steep Lisbon street with a yellow tram below?",
-        "el": "Εμφανίστηκε η Sol πάνω από έναν απότομο δρόμο της Λισαβόνας με ένα κίτρινο τραμ πιο κάτω;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention tiled walls and pastel buildings in Lisbon?",
-        "el": "Ανέφερε η ιστορία πλακάκια στους τοίχους και παστέλ κτίρια στη Λισαβόνα;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did Sol travel through snowy mountains in this episode?",
-        "el": "Ταξίδεψε η Sol μέσα από χιονισμένα βουνά σε αυτό το επεισόδιο;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 49,
-  "title": "SOLadventure #49 – Tunis, medina maze & quiet arches 🏙️🕌 🇹🇳",
-  "quote": "Even the maze made room for her.",
-  "caption": "Tunis did not try to impress her. It simply opened, turn by turn. 🐾🐾🐾",
-  "image": "episodes/tunis.webp",
-  "location": { "lat": 36.8065, "lng": 10.1815 },
-  "visible": true,
-  "city": "tunis",
-  "story": {
-    "en": "Tunis welcomed Sol in its own quiet way. She sat inside the medina where narrow alleys, high arches, worn stone, and carved doors held the city close around her. Nothing here needed to announce itself. The beauty of Tunis lived in its details, in the cool shade between old walls, in the texture of the streets, and in the feeling that every turn had kept a secret for years. Sol did not need a grand square or an open view. She belonged easily among places that revealed themselves slowly. The medina did not open all at once. It unfolded corner by corner, arch by arch, with the calm confidence of a city that knew exactly what it was. And somehow, in all that stone and silence, it still seemed to make room for her.",
-    "el": "Η Τύνιδα υποδέχθηκε τη Sol με τον δικό της ήσυχο τρόπο. Καθόταν μέσα στη μεδίνα, εκεί όπου τα στενά σοκάκια, οι ψηλές αψίδες, η φθαρμένη πέτρα και οι σκαλιστές πόρτες κρατούσαν την πόλη γύρω της σαν μυστικό. Τίποτα εδώ δεν χρειαζόταν να αναγγείλει τον εαυτό του. Η ομορφιά της Τύνιδας ζούσε στις λεπτομέρειες, στη δροσερή σκιά ανάμεσα στους παλιούς τοίχους, στην υφή των δρόμων και στην αίσθηση ότι κάθε στροφή κρατούσε κάτι κρυφό για χρόνια. Η Sol δεν χρειαζόταν μια μεγάλη πλατεία ούτε μια ανοιχτή θέα. Ταίριαζε φυσικά σε τόπους που αποκαλύπτονται αργά. Η μεδίνα δεν άνοιγε μονομιάς. Ξεδιπλωνόταν γωνία με γωνία, αψίδα με αψίδα, με την ήρεμη βεβαιότητα μιας πόλης που ήξερε ακριβώς τι είναι. Και κάπως έτσι, μέσα σε όλη αυτή την πέτρα και τη σιωπή, έμοιαζε πάλι να της ανοίγει χώρο."
-  },
-  "photoQuote": "Even the maze made room for her.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol appear inside the medina of Tunis among narrow alleys and arches?",
-        "el": "Εμφανίστηκε η Sol μέσα στη μεδίνα της Τύνιδας ανάμεσα σε στενά σοκάκια και αψίδες;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story mention carved doors and worn stone streets?",
-        "el": "Ανέφερε η ιστορία σκαλιστές πόρτες και φθαρμένους πέτρινους δρόμους;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did this episode take place on a beach with open sea views?",
-        "el": "Έλαβε χώρα αυτό το επεισόδιο σε παραλία με ανοιχτή θέα στη θάλασσα;"
-      },
-      "answer": false
-    }
-  ]
-},
-{
-  "id": 50,
-  "title": "SOLadventure #50 – Cairo, pharaoh’s gaze 🏺 🇪🇬",
-  "quote": "Ancient eyes. Royal silence.",
-  "caption": "The stones had already spoken, and Sol listened like royalty. 🐾🐾🐾",
-  "image": "episodes/cairo.webp",
-  "location": { "lat": 30.0444, "lng": 31.2357 },
-  "visible": true,
-  "city": "cairo",
-  "story": {
-    "en": "Cairo welcomed Sol with golden sand, ancient stone, and a silence that felt older than memory. She sat before the pyramids as the desert light softened around her, calm and certain, as if the whole horizon had been waiting for her arrival. Nothing moved quickly here. The sun lowered slowly, the shadows stretched across the sand, and the great stones kept their watch without a word. Sol looked upward with the quiet confidence of a queen who understood that some places do not need to explain their power. Cairo did not ask her to pose. It simply placed history behind her and let the moment speak. Among footprints, warm wind, and royal silence, Sol became part of the gaze that never fades.",
-    "el": "Το Κάιρο υποδέχθηκε τη Sol με χρυσή άμμο, αρχαία πέτρα και μια σιωπή που έμοιαζε παλαιότερη από τη μνήμη. Κάθισε μπροστά στις πυραμίδες, καθώς το φως της ερήμου μαλάκωνε γύρω της, ήρεμη και σίγουρη, σαν να την περίμενε ολόκληρος ο ορίζοντας. Τίποτα εδώ δεν κινούνταν βιαστικά. Ο ήλιος χαμήλωνε αργά, οι σκιές απλώνονταν στην άμμο και οι μεγάλες πέτρες φύλαγαν τον χρόνο χωρίς λέξη. Η Sol κοίταξε ψηλά με την ήσυχη αυτοπεποίθηση μιας βασίλισσας που καταλαβαίνει πως κάποιοι τόποι δεν χρειάζεται να εξηγήσουν τη δύναμή τους. Το Κάιρο δεν της ζήτησε να ποζάρει. Απλώς έβαλε την ιστορία πίσω της και άφησε τη στιγμή να μιλήσει. Ανάμεσα σε πατημασιές, ζεστό άνεμο και βασιλική σιωπή, η Sol έγινε μέρος ενός βλέμματος που δεν σβήνει ποτέ."
-  },
-  "photoQuote": "Ancient eyes. Royal silence.",
-  "snapQuestions": [
-    {
-      "question": {
-        "en": "Did Sol appear near the pyramids in Cairo?",
-        "el": "Εμφανίστηκε η Sol κοντά στις πυραμίδες στο Κάιρο;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did the story describe golden sand, ancient stone, and desert light?",
-        "el": "Περιέγραψε η ιστορία χρυσή άμμο, αρχαία πέτρα και φως της ερήμου;"
-      },
-      "answer": true
-    },
-    {
-      "question": {
-        "en": "Did this episode take place in a snowy mountain village?",
-        "el": "Έλαβε χώρα αυτό το επεισόδιο σε ένα χιονισμένο ορεινό χωριό;"
-      },
-      "answer": false
-    }
-  ]
-}
- ]
+      {
+        "question": {
+          "en": "Did this episode take place in a snowy mountain village?",
+          "el": "Έλαβε χώρα αυτό το επεισόδιο σε ένα χιονισμένο ορεινό χωριό;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "africa"
+  }
+]
