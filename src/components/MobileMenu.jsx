@@ -3,6 +3,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { X } from "lucide-react";
+// motion is referenced as <motion.img> below — eslint without
+// eslint-plugin-react cannot track JSX-only identifiers as "used".
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 export default function MobileMenu({ isOpen, onClose }) {

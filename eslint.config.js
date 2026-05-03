@@ -30,4 +30,11 @@ export default [
       ],
     },
   },
+  {
+    // Node-only build / utility scripts (run via `node scripts/xyz.js`).
+    files: ['scripts/**/*.js'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
 ]

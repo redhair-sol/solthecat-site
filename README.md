@@ -11,10 +11,11 @@ A stylish and responsive React website for @solthecat01 — the traveling queen 
 - React 18 + Vite 6
 - React Router DOM 7
 - Tailwind CSS 3 + styled-components 6
-- Leaflet (interactive map)
+- Leaflet (interactive map with cinematic flyTo per city)
 - Framer Motion (animations)
 - HLS.js (live SolCam stream)
 - react-helmet-async (per-page SEO)
+- @fontsource/* (self-hosted Google Fonts — privacy + tighter CSP)
 - Hosted on Cloudflare Pages
 - Custom domain: `solthecat.com`
 
@@ -35,35 +36,59 @@ The `main` branch is connected to **Cloudflare Pages** for auto-deploy:
 1. `git push origin main` → Cloudflare builds and deploys to https://solthecat.com
 2. Pushing any other branch creates a **preview deployment** at `<branch>.<project>.pages.dev`
 
-The legacy `npm run deploy` script (gh-pages) is kept for fallback only — production deploy is via Cloudflare Pages, not GitHub Pages.
-
 ## 📁 Project Structure
 
 ```
+/functions
+  solcam-check.js  Cloudflare Pages Function — server-side proxy for the
+                   solcam HLS stream check (avoids cross-origin CORS).
 /public
-  /episodes        episode images (per-city PNGs)
-  /icons           favicons, paw markers, instagram icon
-  /images          hero, watermarks, product shots
+  /episodes        episode images (WebP, 800×800)
+  /icons           favicons, paw markers, instagram icon (WebP)
+  /images          hero, watermarks, product shots (WebP)
   /data            quiz/product/quote JSON
-  episodes.json    episode metadata
+  episodes.json    episode metadata (50 visible cities)
   sitemap.xml, robots.txt, _headers, _redirects
+/scripts
+  optimize-images.js  Batch PNG/JPG → WebP via sharp. `--delete-png` removes
+                      originals after verification.
 /src
-  /components      Topbar, Sidebar, SolButton, etc.
-  /pages           19 route components (Home, Episodes, Map, Gallery, Games, ...)
-  /context         LanguageContext (EN/EL toggle)
+  /components      Topbar, Sidebar, MobileMenu, PageContainer, SolButton, ...
+  /pages           Home, Episodes, Map, Gallery, WhoIsSol, SolCam, Contact,
+                   Shop, Games hub + 6 mini-games (Pawprints, PuzzleMap,
+                   RoyalPuzzle, QuizPlayer, SolSnap, SolsTreasureHunt),
+                   NotFound (404)
+  /context         LanguageContext (EN/EL toggle from Home / Contact)
   /hooks           useLiveStatus, useStreakBadges
   /data            quiz data, city JSON files
+  /utils           streamUtils (solcam URL + checkStream), celebrate (confetti)
   /styles          GlobalStyle.js
+  config.js        Central app constants (form URLs, re-exports stream URL)
+  theme.js         Color palette + gradients + shadows
   App.jsx, main.jsx, index.css
 ```
+
+## ✨ Features
+
+- Bilingual EN/EL via global `LanguageContext` (toggle on Home and Contact)
+- **Episodes search** — filter 50 city cards by title / caption / city name
+- **Animated journey** on `/map` — cinematic flyTo per city with Show Journey button
+- **6 mini-games** with shared confetti celebration + Play Again pattern
+- **SolCam live stream** via HLS.js with offline fallback
+- Per-day mood / fortune quote on Home (cached in localStorage)
+- Loyalty badge with daily-visit streak
 
 ## 🔒 Security
 
 `public/_headers` ships with HSTS, X-Frame-Options, X-Content-Type-Options,
-Referrer-Policy, Permissions-Policy, and a `Content-Security-Policy-Report-Only`
-directive. CSP runs in **report-only** mode — violations are logged in browser
-DevTools but nothing is blocked. Promote to enforced CSP only after verifying
-that no legitimate resource triggers a violation.
+Referrer-Policy, Permissions-Policy and an **enforced** Content-Security-Policy.
+The CSP pins the three inline `<script type="application/ld+json">` blocks in
+`index.html` by SHA256 hash. **If you edit any JSON-LD content (even
+whitespace), recompute the hashes** — see the comment block in `index.html`
+for the one-liner. Otherwise the structured data scripts will be silently
+blocked and crawlers lose Schema.org metadata.
+
+Site holds an **A+** grade on [securityheaders.com](https://securityheaders.com).
 
 ## 📸 Instagram
 

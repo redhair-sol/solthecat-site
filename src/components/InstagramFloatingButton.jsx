@@ -1,5 +1,8 @@
 import React from "react";
 import { Instagram } from "lucide-react";
+// motion is referenced as <motion.a> in JSX below — eslint without
+// eslint-plugin-react cannot track JSX-only identifiers as "used".
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 function InstagramFloatingButton() {

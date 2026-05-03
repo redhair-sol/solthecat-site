@@ -13,7 +13,7 @@ export async function checkStream(url) {
     const noCacheUrl = `${url}?t=${Date.now()}`;
     const res = await fetch(noCacheUrl, { method: "GET" });
     return res.status === 200;
-  } catch (err) {
+  } catch {
     return false;
   }
 }
