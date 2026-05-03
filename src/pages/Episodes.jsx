@@ -7,9 +7,9 @@ import { Helmet } from "react-helmet-async";
 import { Search, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { detectRegion } from "../utils/region.js";
 
-// Region keys must match values written by scripts/optimize-images.js... no,
-// match values produced by the lat/lng classifier into episodes.json.
+// Region keys produced by the lat/lng classifier in src/utils/region.js.
 const REGION_KEYS = [
   "all",
   "europe",
@@ -274,7 +274,15 @@ export default function Episodes() {
         return res.json();
       })
       .then((data) => {
-        const visibleEpisodes = data.filter((ep) => ep.visible);
+        const visibleEpisodes = data
+          .filter((ep) => ep.visible)
+          // Backfill region for any entry that ships without one (new episodes
+          // can omit the field — we derive it from location.lat/lng).
+          .map((ep) =>
+            ep.region
+              ? ep
+              : { ...ep, region: detectRegion(ep.location?.lat, ep.location?.lng) }
+          );
         const nextNumber = visibleEpisodes.length + 1;
 
         const teaser = {

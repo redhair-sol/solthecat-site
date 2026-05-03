@@ -1,10 +1,23 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
+import { Search, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { detectRegion } from "../utils/region.js";
+
+const REGION_KEYS = [
+  "all",
+  "europe",
+  "north-america",
+  "south-america",
+  "africa",
+  "asia",
+  "oceania",
+];
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -18,6 +31,113 @@ const Subheading = styled.p`
   margin-bottom: 2rem;
 `;
 
+const ChipsRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 1rem;
+`;
+
+const Chip = styled.button`
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  border: 1.5px solid #c187d8;
+  background: ${({ $active }) => ($active ? "#c187d8" : "#ffffffee")};
+  color: ${({ $active }) => ($active ? "#fff" : "#5b2b7b")};
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: ${({ $active }) => ($active ? "#aa4dc8" : "#fce4ec")};
+    border-color: #aa4dc8;
+  }
+`;
+
+const SearchWrapper = styled.div`
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 1rem;
+`;
+
+const SearchInput = styled.input`
+  width: 100%;
+  padding: 0.7rem 2.5rem 0.7rem 2.7rem;
+  font-size: 1rem;
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  background: #ffffffee;
+  color: #5b2b7b;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #aa4dc8;
+    box-shadow: 0 0 0 3px rgba(170, 77, 200, 0.15);
+  }
+
+  &::placeholder {
+    color: #c187d8;
+    opacity: 0.85;
+  }
+`;
+
+const SearchIconWrapper = styled.span`
+  position: absolute;
+  left: 0.95rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aa4dc8;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+`;
+
+const ClearButton = styled.button`
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #aa4dc8;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgba(170, 77, 200, 0.1);
+  }
+`;
+
+const ResultCount = styled.p`
+  font-size: 0.85rem;
+  color: #5b2b7b;
+  font-style: italic;
+  margin: 0 auto 1rem;
+  text-align: center;
+`;
+
+const NoResults = styled.p`
+  font-size: 1rem;
+  color: #5b2b7b;
+  font-style: italic;
+  text-align: center;
+  max-width: 600px;
+  margin: 1.5rem auto;
+`;
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -27,7 +147,7 @@ const Grid = styled.div`
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 2rem;
-  
+
   @media (max-width: 480px) {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
@@ -125,7 +245,61 @@ export default function GalleryPage() {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const [loadError, setLoadError] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
   const { language } = useLanguage();
+
+  const urlRegion = searchParams.get("region");
+  const selectedRegion = REGION_KEYS.includes(urlRegion) ? urlRegion : "all";
+
+  const handleRegionChange = (region) => {
+    const next = new URLSearchParams(searchParams);
+    if (region === "all") {
+      next.delete("region");
+    } else {
+      next.set("region", region);
+    }
+    setSearchParams(next, { replace: true });
+  };
+
+  const t = {
+    en: {
+      title: "Sol’s Gallery 🖼️",
+      subheading: "A glimpse from every royal stop",
+      placeholder: "Search by city or keyword...",
+      noResults: (q) => `No photos found for "${q}". Try another keyword.`,
+      matches: (n) => `${n} ${n === 1 ? "match" : "matches"}`,
+      clearLabel: "Clear search",
+      loadFail: "Couldn't load the gallery. Please try refreshing the page.",
+      regions: {
+        all: "All",
+        europe: "Europe",
+        "north-america": "N. America",
+        "south-america": "S. America",
+        africa: "Africa",
+        asia: "Asia",
+        oceania: "Oceania",
+      },
+    },
+    el: {
+      title: "Φωτογραφίες της Sol 🖼️",
+      subheading: "Μια ματιά από κάθε της στάση",
+      placeholder: "Αναζήτηση με πόλη ή λέξη-κλειδί...",
+      noResults: (q) => `Δεν βρέθηκαν φωτογραφίες για "${q}". Δοκίμασε άλλη λέξη.`,
+      matches: (n) => `${n} ${n === 1 ? "αποτέλεσμα" : "αποτελέσματα"}`,
+      clearLabel: "Καθαρισμός αναζήτησης",
+      loadFail: "Δεν φόρτωσε η συλλογή. Παρακαλώ δοκίμασε refresh.",
+      regions: {
+        all: "Όλα",
+        europe: "Ευρώπη",
+        "north-america": "Β. Αμερική",
+        "south-america": "Ν. Αμερική",
+        africa: "Αφρική",
+        asia: "Ασία",
+        oceania: "Ωκεανία",
+      },
+    },
+  }[language];
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -134,7 +308,13 @@ export default function GalleryPage() {
         return res.json();
       })
       .then((data) => {
-        const visibleEpisodes = data.filter((ep) => ep.visible);
+        const visibleEpisodes = data
+          .filter((ep) => ep.visible)
+          .map((ep) =>
+            ep.region
+              ? ep
+              : { ...ep, region: detectRegion(ep.location?.lat, ep.location?.lng) }
+          );
         setEpisodes(visibleEpisodes);
         setLoadError(false);
       })
@@ -144,6 +324,39 @@ export default function GalleryPage() {
       });
   }, []);
 
+  const trimmedQuery = searchQuery.trim();
+  const isSearching = trimmedQuery.length > 0;
+  const isFilteringRegion = selectedRegion !== "all";
+  const isFiltered = isSearching || isFilteringRegion;
+
+  const availableRegions = useMemo(() => {
+    const present = new Set(episodes.map((ep) => ep.region).filter(Boolean));
+    return REGION_KEYS.filter((k) => k === "all" || present.has(k));
+  }, [episodes]);
+
+  const filteredEpisodes = useMemo(() => {
+    if (!isFiltered) return episodes;
+    const q = trimmedQuery.toLowerCase();
+    return episodes.filter((ep) => {
+      if (isFilteringRegion && ep.region !== selectedRegion) return false;
+      if (isSearching) {
+        const title =
+          (typeof ep.title === "object" ? ep.title[language] : ep.title) || "";
+        const caption =
+          (typeof ep.caption === "object" ? ep.caption[language] : ep.caption) ||
+          "";
+        const city = ep.city || "";
+        return (
+          title.toLowerCase().includes(q) ||
+          caption.toLowerCase().includes(q) ||
+          city.toLowerCase().includes(q)
+        );
+      }
+      return true;
+    });
+  }, [episodes, isFiltered, isSearching, isFilteringRegion, selectedRegion, trimmedQuery, language]);
+
+  // Re-run intersection observer when filtered list changes (new tiles need fade-in).
   useEffect(() => {
     const tiles = document.querySelectorAll('.gallery-tile');
     const observer = new IntersectionObserver((entries, obs) => {
@@ -157,9 +370,11 @@ export default function GalleryPage() {
 
     tiles.forEach((tile) => observer.observe(tile));
     return () => observer.disconnect();
-  }, [episodes]);
+  }, [filteredEpisodes]);
 
-  const slides = episodes.map((ep) => ({ src: `/${ep.image}` }));
+  // Slides for the lightbox must mirror the rendered grid order so that the
+  // clicked tile's index points to the correct slide.
+  const slides = filteredEpisodes.map((ep) => ({ src: `/${ep.image}` }));
   const cleanCaption = (caption) => caption.replace(/🐾/g, "").trim();
 
   return (
@@ -177,23 +392,63 @@ export default function GalleryPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Title>{language === "el" ? "Φωτογραφίες της Sol 🖼️" : "Sol’s Gallery 🖼️"}</Title>
-        <Subheading>
-          {language === "el"
-            ? "Μια ματιά από κάθε της στάση"
-            : "A glimpse from every royal stop"}
-        </Subheading>
+        <Title>{t.title}</Title>
+        <Subheading>{t.subheading}</Subheading>
+
+        <ChipsRow role="group" aria-label={t.regions.all}>
+          {availableRegions.map((r) => (
+            <Chip
+              key={r}
+              type="button"
+              $active={selectedRegion === r}
+              onClick={() => handleRegionChange(r)}
+              aria-pressed={selectedRegion === r}
+            >
+              {t.regions[r]}
+            </Chip>
+          ))}
+        </ChipsRow>
+
+        <SearchWrapper>
+          <SearchIconWrapper>
+            <Search size={18} />
+          </SearchIconWrapper>
+          <SearchInput
+            type="search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder={t.placeholder}
+            aria-label={t.placeholder}
+          />
+          {isSearching && (
+            <ClearButton
+              type="button"
+              onClick={() => setSearchQuery("")}
+              aria-label={t.clearLabel}
+            >
+              <X size={16} />
+            </ClearButton>
+          )}
+        </SearchWrapper>
+
+        {isFiltered && filteredEpisodes.length > 0 && (
+          <ResultCount>{t.matches(filteredEpisodes.length)}</ResultCount>
+        )}
 
         {loadError && (
-          <ErrorBox role="alert">
-            {language === "el"
-              ? "Δεν φόρτωσε η συλλογή. Παρακαλώ δοκίμασε refresh."
-              : "Couldn't load the gallery. Please try refreshing the page."}
-          </ErrorBox>
+          <ErrorBox role="alert">{t.loadFail}</ErrorBox>
+        )}
+
+        {!loadError && isFiltered && filteredEpisodes.length === 0 && (
+          <NoResults>
+            {isSearching
+              ? t.noResults(trimmedQuery)
+              : t.noResults(t.regions[selectedRegion])}
+          </NoResults>
         )}
 
         <Grid>
-          {episodes.map((ep, i) => {
+          {filteredEpisodes.map((ep, i) => {
             const titleText = typeof ep.title === "object" ? ep.title[language] : ep.title;
             const captionText = typeof ep.caption === "object"
               ? ep.caption[language]
@@ -210,8 +465,8 @@ export default function GalleryPage() {
                 <img
                   src={`/${ep.image}`}
                   alt={titleText}
-                  width="1080"
-                  height="1080"
+                  width="800"
+                  height="800"
                   loading={i === 0 ? "eager" : "lazy"}
                   fetchpriority={i === 0 ? "high" : "auto"}
                   decoding="async"
