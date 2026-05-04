@@ -66,8 +66,7 @@ const Message = styled.div`
 `;
 
 const StartButton = styled.button`
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
   background-color: #c187d8;
   border: none;
   border-radius: 16px;
@@ -77,6 +76,7 @@ const StartButton = styled.button`
   margin-bottom: 2rem;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
   transition: transform 0.2s ease-in-out;
 
   &:hover {

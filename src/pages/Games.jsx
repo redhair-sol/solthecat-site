@@ -159,6 +159,20 @@ export default function Games() {
           description: "Let Sol pick your next stop together",
           route: "/games/sol-picks"
         },
+        {
+          id: 8,
+          emoji: "🔍",
+          name: "Spot the City",
+          description: "Guess the city from a zoomed-in detail.",
+          route: "/games/spotcity"
+        },
+        {
+          id: 9,
+          emoji: "🌍",
+          name: "Where in the World?",
+          description: "Pin Sol on the world map from a photo.",
+          route: "/games/mapquiz"
+        },
       ],
     },
     el: {
@@ -215,6 +229,20 @@ export default function Games() {
           name: "Ταξίδι με τη Sol",
           description: "Άσε τη Sol να διαλέξει τον επόμενο σας σταθμό",
           route: "/games/sol-picks"
+        },
+        {
+          id: 8,
+          emoji: "🔍",
+          name: "Βρες την Πόλη",
+          description: "Μάντεψε την πόλη από ένα μεγεθυσμένο κομμάτι.",
+          route: "/games/spotcity"
+        },
+        {
+          id: 9,
+          emoji: "🌍",
+          name: "Πού στον Κόσμο;",
+          description: "Σημείωσε τη Sol στον παγκόσμιο χάρτη από μια φωτογραφία.",
+          route: "/games/mapquiz"
         },
       ],
     },

@@ -29,26 +29,20 @@ const Subtitle = styled.p`
 `;
 
 const BigButton = styled.button`
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  background-color: #c187d8;
+  padding: 0.8rem 1.5rem;
+  background-color: ${({ disabled }) => (disabled ? "#ccc" : "#c187d8")};
   color: white;
   border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  box-shadow: 0 4px 14px rgba(170, 77, 200, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 16px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
+  transition: transform 0.2s ease-in-out;
   margin-top: 1rem;
 
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(170, 77, 200, 0.45);
-  }
-
-  &:active {
-    transform: scale(0.98);
+    transform: ${({ disabled }) => (disabled ? "none" : "scale(1.05)")};
   }
 `;
 
@@ -140,16 +134,16 @@ const ButtonRow = styled.div`
 
 const PrimaryAction = styled(Link)`
   display: inline-block;
-  padding: 0.7rem 1.4rem;
+  padding: 0.8rem 1.5rem;
   background-color: #c187d8;
   color: white;
   text-decoration: none;
-  border-radius: 999px;
+  border: none;
+  border-radius: 16px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
-  box-shadow: 0 3px 10px rgba(170, 77, 200, 0.3);
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.3);
+  transition: transform 0.2s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
@@ -157,16 +151,16 @@ const PrimaryAction = styled(Link)`
 `;
 
 const SecondaryAction = styled.button`
-  padding: 0.7rem 1.4rem;
-  background-color: #ffffffee;
+  padding: 0.8rem 1.5rem;
+  background-color: #ffffff;
   color: #6a1b9a;
   border: 2px solid #c187d8;
-  border-radius: 999px;
+  border-radius: 16px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(170, 77, 200, 0.15);
+  transition: transform 0.2s ease-in-out, background 0.2s ease;
 
   &:hover {
     background-color: #fce4ec;
