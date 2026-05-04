@@ -152,6 +152,13 @@ export default function Games() {
           description: "Find 3 hidden treasures in each city!",
           route: "/games/treasurehunt"
         },
+        {
+          id: 7,
+          emoji: "🎲",
+          name: "Travel with Sol",
+          description: "Let Sol pick your next stop together",
+          route: "/games/sol-picks"
+        },
       ],
     },
     el: {
@@ -201,6 +208,13 @@ export default function Games() {
           name: "Κυνήγι Θησαυρού της Sol",
           description: "Βρες 3 κρυμμένους θησαυρούς σε κάθε πόλη!",
           route: "/games/treasurehunt"
+        },
+        {
+          id: 7,
+          emoji: "🎲",
+          name: "Ταξίδι με τη Sol",
+          description: "Άσε τη Sol να διαλέξει τον επόμενο σας σταθμό",
+          route: "/games/sol-picks"
         },
       ],
     },

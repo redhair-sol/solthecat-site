@@ -92,6 +92,12 @@
   </url>
 
   <url>
+    <loc>https://solthecat.com/games/sol-picks</loc>
+    <lastmod>2026-05-04</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
     <loc>https://solthecat.com/shop</loc>
     <lastmod>2026-05-04</lastmod>
     <priority>0.6</priority>
