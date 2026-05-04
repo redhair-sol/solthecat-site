@@ -183,7 +183,7 @@ const GamesText = styled.p`
 const GamesCTA = styled(Link)`
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background-color: #aa4dc8;
+  background-color: #c187d8;
   color: white;
   text-decoration: none;
   border-radius: 1rem;
