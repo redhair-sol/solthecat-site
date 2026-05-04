@@ -149,7 +149,7 @@ export default function QuizPlayer() {
   const content = {
     en: {
       title: "Sol’s Quiz 🧠",
-      subtitle: `Quiz: SOLadventure #${current + 1}`,
+      subtitle: selectedId ? `Quiz: SOLadventure #${selectedId}` : "",
       loading: "Loading...",
       start: "Start Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",
@@ -162,7 +162,7 @@ export default function QuizPlayer() {
     },
     el: {
       title: "Quiz της Sol 🧠",
-      subtitle: `Quiz: SOLadventure #${current + 1}`,
+      subtitle: selectedId ? `Quiz: SOLadventure #${selectedId}` : "",
       loading: "Φόρτωση...",
       start: "Εκκίνηση Quiz",
       quizUrl: "https://solthecat.com/games/cityquiz",

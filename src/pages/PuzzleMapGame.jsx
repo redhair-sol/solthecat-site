@@ -76,6 +76,17 @@ const Message = styled.p`
   font-weight: bold;
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 const StyledButton = styled.button`
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
@@ -109,6 +120,7 @@ export default function PuzzleMapGame() {
   const [tiles, setTiles] = useState(initialArr);
   const [isSolved, setIsSolved] = useState(false);
   const [slices, setSlices] = useState([]);
+  const [loadError, setLoadError] = useState(false);
   const { language } = useLanguage();
 
   const content = {
@@ -119,6 +131,7 @@ export default function PuzzleMapGame() {
       playAgain: "🔁 Play Again",
       solvedMessage: "🎉 Puzzle Solved!",
       back: "← Back to games",
+      loadFail: "Couldn't load episodes. Please try refreshing the page.",
     },
     el: {
       pageTitle: "Παζλ της Sol – SolTheCat",
@@ -127,17 +140,26 @@ export default function PuzzleMapGame() {
       playAgain: "🔁 Παίξε Ξανά",
       solvedMessage: "🎉 Λύθηκε το Παζλ!",
       back: "← Επιστροφή στα παιχνίδια",
+      loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
     },
   };
   const t = content[language];
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((r) => r.json())
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
       .then((data) => {
         const vis = data.filter((ep) => ep.visible);
         setEpisodes(vis);
         if (vis.length) setSelectedId(vis[0].id.toString());
+        setLoadError(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load episodes:", err);
+        setLoadError(true);
       });
   }, []);
 
@@ -225,6 +247,8 @@ export default function PuzzleMapGame() {
       >
         <Title>{t.title}</Title>
         {selectedId && <Subtitle>{t.subtitle}</Subtitle>}
+
+        {loadError && <ErrorBox role="alert">{t.loadFail}</ErrorBox>}
 
         <DropdownWrapper>
           <Dropdown

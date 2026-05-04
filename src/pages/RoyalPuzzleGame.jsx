@@ -13,6 +13,10 @@ const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -77,6 +81,17 @@ const BackLink = styled(Link)`
   font-weight: bold;
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 export default function RoyalPuzzleGame() {
   const { language } = useLanguage();
   const [episodes, setEpisodes] = useState([]);
@@ -86,6 +101,7 @@ export default function RoyalPuzzleGame() {
   const [solved, setSolved] = useState(false);
   const [startTime, setStartTime] = useState(null);
   const [elapsed, setElapsed] = useState(0);
+  const [loadError, setLoadError] = useState(false);
   const areaRef = useRef();
 
   const gridMap = { easy: [2, 5], medium: [4, 5], hard: [5, 6] };
@@ -102,6 +118,7 @@ export default function RoyalPuzzleGame() {
       solvedMessage: "🎉 Royal Puzzle Solved!",
       playAgain: "🔁 Play Again",
       levels: { easy: "Easy", medium: "Medium", hard: "Hard" },
+      loadFail: "Couldn't load episodes. Please try refreshing the page.",
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
@@ -114,16 +131,25 @@ export default function RoyalPuzzleGame() {
       solvedMessage: "🎉 Λύθηκε το Βασιλικό Παζλ!",
       playAgain: "🔁 Παίξε Ξανά",
       levels: { easy: "Εύκολο", medium: "Μέσο", hard: "Δύσκολο" },
+      loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
     },
   }[language];
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((r) => r.json())
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
       .then((data) => {
         const vis = data.filter((ep) => ep.visible);
         setEpisodes(vis);
         if (vis.length) setSelectedId(vis[0].id.toString());
+        setLoadError(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load episodes:", err);
+        setLoadError(true);
       });
   }, []);
 
@@ -243,10 +269,17 @@ export default function RoyalPuzzleGame() {
         <link rel="canonical" href="https://solthecat.com/games/royalpuzzle" />
       </Helmet>
 
-      <PageContainer alignTop>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Title>{t.title}</Title>
         {selectedId && <Subtitle>{t.subtitle} {selectedId}</Subtitle>}
         <Description>{t.description}</Description>
+
+        {loadError && <ErrorBox role="alert">{t.loadFail}</ErrorBox>}
 
         <Dropdown value={selectedId} onChange={(e) => setSelectedId(e.target.value)}>
           {episodes.map((ep) => (

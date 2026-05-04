@@ -11,6 +11,10 @@ const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -69,12 +73,24 @@ const BackLink = styled(Link)`
   font-weight: bold;
 `;
 
+const ErrorBox = styled.div`
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  font-size: 0.95rem;
+  text-align: center;
+`;
+
 export default function SolsTreasureHunt() {
   const { language } = useLanguage();
   const [episodes, setEpisodes] = useState([]);
   const [selectedEpisode, setSelectedEpisode] = useState(null);
   const [items, setItems] = useState([]);
   const [found, setFound] = useState(0);
+  const [loadError, setLoadError] = useState(false);
   const areaRef = useRef();
 
   const t = {
@@ -86,6 +102,8 @@ export default function SolsTreasureHunt() {
       back: "← Back to games",
       done: "🎉 Well done! You found all the treasures!",
       playAgain: "🔁 Play Again",
+      treasureAlt: (n) => `Hidden treasure ${n}`,
+      loadFail: "Couldn't load episodes. Please try refreshing the page.",
     },
     el: {
       pageTitle: "Κυνήγι Θησαυρού της Sol – SolTheCat",
@@ -95,13 +113,18 @@ export default function SolsTreasureHunt() {
       back: "← Επιστροφή στα παιχνίδια",
       done: "🎉 Μπράβο! Βρήκες όλους τους θησαυρούς!",
       playAgain: "🔁 Παίξε Ξανά",
+      treasureAlt: (n) => `Κρυμμένος θησαυρός ${n}`,
+      loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
     },
   }[language];
 
   // ✅ Load episodes.json dynamically
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
-      .then((r) => r.json())
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        return r.json();
+      })
       .then((data) => {
         const vis = data.filter((ep) => ep.visible);
         setEpisodes(vis);
@@ -109,6 +132,11 @@ export default function SolsTreasureHunt() {
           const random = vis[Math.floor(Math.random() * vis.length)];
           setSelectedEpisode(random);
         }
+        setLoadError(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load episodes:", err);
+        setLoadError(true);
       });
   }, []);
 
@@ -157,17 +185,24 @@ export default function SolsTreasureHunt() {
         <link rel="canonical" href="https://solthecat.com/games/treasurehunt" />
       </Helmet>
 
-      <PageContainer alignTop>
+      <PageContainer
+        alignTop
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <Title>{t.title}</Title>
         <Subtitle>{t.subtitle}</Subtitle>
         <Description>{t.description}</Description>
+
+        {loadError && <ErrorBox role="alert">{t.loadFail}</ErrorBox>}
 
         <TreasureArea ref={areaRef} style={{ backgroundImage: bg }}>
           {items.map((item) => (
             <Item
               key={item.id}
               src={item.img}
-              alt="treasure"
+              alt={t.treasureAlt(item.id + 1)}
               style={{
                 left: `${item.x}px`,
                 top: `${item.y}px`,

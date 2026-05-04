@@ -13,6 +13,10 @@ const Title = styled.h1`
   font-size: 2rem;
   color: #6a1b9a;
   margin-bottom: 0.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -334,7 +338,7 @@ export default function SolPicks() {
                 alt={epTitle}
                 width="800"
                 height="800"
-                loading="eager"
+                loading="lazy"
                 decoding="async"
               />
               <RevealTitle>{epTitle}</RevealTitle>

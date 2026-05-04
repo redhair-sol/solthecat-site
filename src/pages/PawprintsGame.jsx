@@ -240,7 +240,7 @@ export default function PawprintsGame() {
         <Grid>
           {cards.map((card, index) => (
             <Card
-              key={index}
+              key={card.id}
               $revealed={flipped.includes(index) || matched.includes(index)}
               onClick={() => handleFlip(index)}
             >

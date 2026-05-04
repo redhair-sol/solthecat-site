@@ -135,6 +135,8 @@ export default function SolSnap() {
       summaryScore: (sc) => `You got ${sc}/3 correct.`,
       nextEp: "Next Episode",
       gameOver: (s, t) => `Game Over! You scored ${s} out of ${t}.`,
+      yes: "Yes",
+      no: "No",
     },
     el: {
       pageTitle: "SolSnap – SolTheCat",
@@ -153,6 +155,8 @@ export default function SolSnap() {
       summaryScore: (sc) => `Έκανες ${sc}/3 σωστές.`,
       nextEp: "Επόμενο Επεισόδιο",
       gameOver: (s, t) => `Τέλος παιχνιδιού! Σκορ: ${s} από ${t}`,
+      yes: "Ναι",
+      no: "Όχι",
     },
   }[language];
 
@@ -242,7 +246,14 @@ export default function SolSnap() {
     }
   };
 
-  const shuffle = (arr) => [...arr].sort(() => 0.5 - Math.random());
+  const shuffle = (arr) => {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  };
 
   return (
     <>
@@ -283,8 +294,8 @@ export default function SolSnap() {
             <Timer>{t.timeLeft(timer)}</Timer>
             <QuestionText>{questions[qIndex].question[language]}</QuestionText>
             <AnswerButtons>
-              <AnswerButton onClick={() => answer(true)}>✔️</AnswerButton>
-              <AnswerButton onClick={() => answer(false)}>❌</AnswerButton>
+              <AnswerButton aria-label={t.yes} onClick={() => answer(true)}>✔️</AnswerButton>
+              <AnswerButton aria-label={t.no} onClick={() => answer(false)}>❌</AnswerButton>
             </AnswerButtons>
             {feedback && <Result correct={feedback === "correct"}>{t[feedback]}</Result>}
           </QuestionBox>
