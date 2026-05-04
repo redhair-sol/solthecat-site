@@ -51,7 +51,7 @@ const ProductCard = styled.div`
 const ImageFrame = styled.div`
   position: relative;
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4 / 5;
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -232,8 +232,8 @@ export default function Shop() {
                   <ProductImage
                     src={product.image}
                     alt={name}
-                    width="1024"
-                    height="1536"
+                    width="1122"
+                    height="1402"
                     loading="lazy"
                     decoding="async"
                     $dim={isComingSoon}

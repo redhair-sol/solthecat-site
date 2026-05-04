@@ -52,6 +52,7 @@ export default function Topbar() {
             <NavLink to="/games" className={linkClasses}>Games</NavLink>
             <NavLink to="/solcam" className={linkClasses}>SolCam</NavLink>
             <NavLink to="/whoissol" className={linkClasses}>About</NavLink>
+            <NavLink to="/shop" className={linkClasses}>Shop</NavLink>
             <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
           </div>
         </div>

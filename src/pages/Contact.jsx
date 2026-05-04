@@ -1,16 +1,14 @@
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
-import SolBrand from "../components/SolBrand";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { CONTACT_FORM_URL } from "../config.js";
 
-const Title = styled.h1`
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #aa4dc8;
-  margin-bottom: 1.5rem;
-  text-align: center;
+const Heading = styled.h1`
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const Subtitle = styled.p`
@@ -77,9 +75,9 @@ export default function Contact() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <Title>
-        <SolBrand size="2.5rem" centered />
-      </Title>
+      <Heading>
+        {language === "el" ? "Επικοινώνησε με τη Sol 📬" : "Contact Sol the Cat 📬"}
+      </Heading>
 
       <LanguageToggle>
         <ToggleButton onClick={() => setLanguage("en")} $active={language === "en"}>
