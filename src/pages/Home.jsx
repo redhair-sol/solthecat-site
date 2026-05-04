@@ -183,7 +183,7 @@ const GamesText = styled.p`
 const GamesCTA = styled(Link)`
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background-color: #c187d8;
+  background-color: #aa4dc8;
   color: white;
   text-decoration: none;
   border-radius: 1rem;
@@ -193,9 +193,10 @@ const GamesCTA = styled(Link)`
 const InstagramLink = styled.a`
   display: inline-flex;
   align-items: center;
-  color: #c187d8;
+  color: #6a1b9a;
   margin-top: 1.6rem;
   text-decoration: none;
+  font-weight: 500;
 `;
 
 const InstagramIcon = styled.img`
