@@ -105,6 +105,9 @@ const MapWrapper = styled.div`
   border: 2px solid #c187d8;
   box-shadow: 0 4px 16px rgba(170, 77, 200, 0.18);
   cursor: ${({ $clickable }) => ($clickable ? "crosshair" : "default")};
+  /* Confine Leaflet's internal z-indices within this stacking context. */
+  position: relative;
+  z-index: 0;
 
   .leaflet-container {
     width: 100%;

@@ -57,6 +57,11 @@ const MapWrapper = styled.div`
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(170, 77, 200, 0.15);
+  /* Confine Leaflet's internal z-indices (controls up to 1000) within this
+     stacking context so they cannot stack above fixed UI like the bottom
+     tab bar or Instagram button. */
+  position: relative;
+  z-index: 0;
 `;
 
 const pawIcon = new L.Icon({

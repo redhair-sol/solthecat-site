@@ -46,7 +46,7 @@ export default function BottomTabBar() {
   return (
     <>
       <nav
-        className="md:hidden fixed bottom-0 left-0 right-0 z-40
+        className="md:hidden fixed bottom-0 left-0 right-0 z-[1100]
                    bg-[#fff3f8]/95 backdrop-blur-md
                    border-t border-[#f8bbd0]
                    shadow-[0_-2px_10px_rgba(170,77,200,0.12)]"
