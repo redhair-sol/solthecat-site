@@ -1,6 +1,6 @@
 // src/pages/SpotTheCity.jsx
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
@@ -219,6 +219,11 @@ export default function SpotTheCity() {
   const [currentRound, setCurrentRound] = useState(null);
   const [selected, setSelected] = useState(null);
 
+  // Refs for auto-scrolling so mobile users always see the relevant section.
+  const gameTopRef = useRef(null);  // top of round area (after Next round)
+  const feedbackRef = useRef(null); // feedback + Next button (after answer)
+  const finalRef = useRef(null);    // final score card
+
   const t = {
     en: {
       pageTitle: "Spot the City – SolTheCat",
@@ -259,6 +264,27 @@ export default function SpotTheCity() {
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
     },
   }[language];
+
+  // Auto-scroll on phase / round / answer change so the relevant section
+  // (feedback, new round image, or final card) is always in view on mobile.
+  useEffect(() => {
+    let target = null;
+    let block = "center";
+    if (phase === "final") {
+      target = finalRef.current;
+    } else if (phase === "playing") {
+      if (selected !== null) target = feedbackRef.current;
+      else if (round > 0) {
+        target = gameTopRef.current;
+        block = "start";
+      }
+    }
+    if (target) {
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: "smooth", block });
+      });
+    }
+  }, [phase, round, selected]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -353,7 +379,7 @@ export default function SpotTheCity() {
 
         {phase === "playing" && currentRound && (
           <>
-            <Subtitle>{t.progress(round)}</Subtitle>
+            <Subtitle ref={gameTopRef}>{t.progress(round)}</Subtitle>
             <ScoreLine>{t.scoreLine(score)}</ScoreLine>
 
             {!isAnswered ? (
@@ -404,18 +430,19 @@ export default function SpotTheCity() {
             </OptionGrid>
 
             {isAnswered && (
-              <>
+              <div ref={feedbackRef}>
                 <FeedbackText $correct={isCorrect}>
                   {isCorrect ? t.correct : t.wrong(getCityLabel(currentRound.correct))}
                 </FeedbackText>
                 <BigButton onClick={handleNext}>{t.next}</BigButton>
-              </>
+              </div>
             )}
           </>
         )}
 
         {phase === "final" && (
           <FinalCard
+            ref={finalRef}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

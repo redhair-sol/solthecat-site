@@ -265,7 +265,7 @@ export default function MapQuiz() {
   // Refs for auto-scroll on phase change. On mobile the page is tall (photo +
   // map + result stack), so when the user clicks the map the ResultCard
   // appears below the fold and they don't realize the round has resolved.
-  const photoRef = useRef(null);
+  const roundTopRef = useRef(null); // points at round subtitle (above photo)
   const resultRef = useRef(null);
   const finalRef = useRef(null);
 
@@ -329,15 +329,15 @@ export default function MapQuiz() {
   // Auto-scroll the relevant section into view when the phase changes:
   //   - reveal → center the ResultCard so the user sees the score immediately
   //   - final  → center the FinalCard
-  //   - playing (incl. round transitions) → top-align the photo so the user
-  //     sees the new image and the map below it
+  //   - playing (incl. round transitions) → top-align the round subtitle so
+  //     the user sees the round number, score AND the new photo + map below
   useEffect(() => {
     let target = null;
     let block = "center";
     if (phase === "reveal") target = resultRef.current;
     else if (phase === "final") target = finalRef.current;
     else if (phase === "playing") {
-      target = photoRef.current;
+      target = roundTopRef.current;
       block = "start";
     }
     if (target) {
@@ -458,10 +458,10 @@ export default function MapQuiz() {
 
         {(phase === "playing" || phase === "reveal") && currentEpisode && (
           <>
-            <Subtitle>{t.progress(round)}</Subtitle>
+            <Subtitle ref={roundTopRef}>{t.progress(round)}</Subtitle>
             <ScoreLine>{t.scoreLine(score)}</ScoreLine>
 
-            <PhotoWrapper ref={photoRef}>
+            <PhotoWrapper>
               <PhotoCard>
                 <Photo
                   src={`${import.meta.env.BASE_URL}${currentEpisode.image}`}

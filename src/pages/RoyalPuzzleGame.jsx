@@ -104,6 +104,17 @@ export default function RoyalPuzzleGame() {
   const [loadError, setLoadError] = useState(false);
   const areaRef = useRef();
 
+  // Auto-scroll the solved message + Download/Play Again buttons into view —
+  // they appear below a tall puzzle area which on mobile pushes them off-screen.
+  const solvedRef = useRef(null);
+  useEffect(() => {
+    if (solved && solvedRef.current) {
+      requestAnimationFrame(() => {
+        solvedRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    }
+  }, [solved]);
+
   const gridMap = { easy: [2, 5], medium: [4, 5], hard: [5, 6] };
 
   const t = {
@@ -318,7 +329,7 @@ export default function RoyalPuzzleGame() {
         {level && <Info>⏱️ {elapsed}s {best && ` — ${t.best} ${best}s`}</Info>}
 
         {solved && (
-          <>
+          <div ref={solvedRef}>
             <Info>{t.solvedMessage}</Info>
             <SolButton as="button" onClick={downloadImage}>{t.download}</SolButton>
             <SolButton
@@ -333,7 +344,7 @@ export default function RoyalPuzzleGame() {
             >
               {t.playAgain}
             </SolButton>
-          </>
+          </div>
         )}
 
         <BackLink to="/games">{t.back}</BackLink>

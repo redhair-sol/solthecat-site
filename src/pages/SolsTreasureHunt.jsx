@@ -93,6 +93,10 @@ export default function SolsTreasureHunt() {
   const [loadError, setLoadError] = useState(false);
   const areaRef = useRef();
 
+  // Auto-scroll to the success message + Play Again button when all treasures
+  // are found — they sit below a tall treasure area on mobile.
+  const doneRef = useRef(null);
+
   const t = {
     en: {
       pageTitle: "Sol’s Treasure Hunt – SolTheCat",
@@ -163,7 +167,12 @@ export default function SolsTreasureHunt() {
   // Win effect — runs once whenever `found` lands on 3.
   // (Side effects inside state updaters fire twice in React 18 dev/strict mode.)
   useEffect(() => {
-    if (found === 3) celebrate();
+    if (found === 3) {
+      celebrate();
+      requestAnimationFrame(() => {
+        doneRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    }
   }, [found]);
 
   const playAgain = () => {
@@ -212,7 +221,7 @@ export default function SolsTreasureHunt() {
           ))}
         </TreasureArea>
 
-        <Info>{found === 3 ? t.done : `${found} / 3`}</Info>
+        <Info ref={doneRef}>{found === 3 ? t.done : `${found} / 3`}</Info>
 
         {found === 3 && (
           <SolButton as="button" onClick={playAgain}>

@@ -1,6 +1,6 @@
 // src/pages/SolPicks.jsx
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
@@ -207,6 +207,17 @@ export default function SolPicks() {
   const [phase, setPhase] = useState("intro"); // "intro" | "loading" | "reveal"
   const [currentPick, setCurrentPick] = useState(null);
 
+  // Auto-scroll the reveal card into view when Sol picks an episode — the
+  // card is large and lands below the fold on mobile after the loading delay.
+  const revealRef = useRef(null);
+  useEffect(() => {
+    if (phase === "reveal" && revealRef.current) {
+      requestAnimationFrame(() => {
+        revealRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    }
+  }, [phase, currentPick]);
+
   const t = {
     en: {
       pageTitle: "Travel with Sol – SolTheCat",
@@ -320,6 +331,7 @@ export default function SolPicks() {
 
         {phase === "reveal" && currentPick && (
           <RevealWrapper
+            ref={revealRef}
             key={currentPick.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
