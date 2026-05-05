@@ -3,7 +3,6 @@ import {
   MapContainer,
   TileLayer,
   Marker,
-  Popup,
   Polyline,
   Tooltip,
   useMap
@@ -62,6 +61,15 @@ const MapWrapper = styled.div`
      tab bar or Instagram button. */
   position: relative;
   z-index: 0;
+
+  /* On real mobile (vs F12 device emulation) the browser address bar
+     dynamically appears/hides on scroll, so plain vh is unreliable.
+     dvh (dynamic viewport height) recalculates as chrome shows/hides,
+     keeping the map's visible center stable when flyTo zooms to a city. */
+  @media (max-width: 768px) {
+    height: 55dvh;
+    min-height: 350px;
+  }
 `;
 
 const pawIcon = new L.Icon({
@@ -85,7 +93,7 @@ function InitialFocus({ route }) {
   return null;
 }
 
-function AnimatedMarker({ route, titles, delay = 3000, onUpdateIndex, onComplete }) {
+function AnimatedMarker({ route, delay = 3000, onUpdateIndex, onComplete }) {
   const [traveled, setTraveled] = useState([route[0]]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const map = useMap();
@@ -143,13 +151,13 @@ function AnimatedMarker({ route, titles, delay = 3000, onUpdateIndex, onComplete
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, delay]);
 
+  // Note: we deliberately don't render a `<Marker>` per traveled city here.
+  // Each city already has a permanent `pawIcon` marker (rendered outside this
+  // component, with tooltips), so traveled markers would be visually redundant
+  // AND — without an `icon` prop — fall back to Leaflet's default blue pin,
+  // which would overlap the paw icons and look broken.
   return (
     <>
-      {traveled.map((pos, idx) => (
-        <Marker key={`marker-${idx}`} position={pos}>
-          <Popup>{titles[idx]}</Popup>
-        </Marker>
-      ))}
       <Marker position={route[Math.min(currentIndex, route.length - 1)]} icon={pawIcon} />
       {traveled.length > 1 && (
         <Polyline positions={traveled} color="#aa4dc8" weight={4} />
@@ -287,24 +295,12 @@ export default function SOLsJourneyAnimated() {
               <Polyline positions={route} color="#aa4dc8" weight={4} />
             )}
 
-            {!start && route.length > 0 && (
-              <>
-                <InitialFocus route={route} />
-                <Marker position={center}>
-                  <Popup>
-                    {lastTitle}
-                    <br />
-                    {language === "el" ? "Εδώ είναι 🐾" : "Here she is 🐾"}
-                  </Popup>
-                </Marker>
-              </>
-            )}
+            {!start && route.length > 0 && <InitialFocus route={route} />}
 
             {start && (
               <AnimatedMarker
                 key={`journey-${journeyId}`}
                 route={route}
-                titles={titles}
                 delay={3000}
                 onUpdateIndex={setCurrentIndex}
                 onComplete={handleComplete}

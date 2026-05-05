@@ -109,6 +109,12 @@ const MapWrapper = styled.div`
   position: relative;
   z-index: 0;
 
+  /* dvh on mobile so the map height stays correct as the address bar shows/hides. */
+  @media (max-width: 768px) {
+    height: 50dvh;
+    min-height: 320px;
+  }
+
   .leaflet-container {
     width: 100%;
     height: 100%;
