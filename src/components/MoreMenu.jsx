@@ -42,7 +42,7 @@ export default function MoreMenu({ isOpen, onClose }) {
       contact: "Contact",
     },
     el: {
-      header: "Περισσότερα",
+      header: "Επιπλέον",
       tagline: "Βασιλικές στάσεις",
       gallery: "Γκαλερί",
       solcam: "SolCam",
