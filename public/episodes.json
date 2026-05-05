@@ -2027,7 +2027,7 @@
   {
     "id": 50,
     "title": "SOLadventure #50 – Cairo, pharaoh’s gaze 🏺 🇪🇬",
-    "quote": "Ancient eyes. Royal silence.",
+    "quote": "She sat where empires sleep.",
     "caption": "The stones had already spoken, and Sol listened like royalty. 🐾🐾🐾",
     "image": "episodes/cairo.webp",
     "location": {
@@ -2065,5 +2065,47 @@
       }
     ],
     "region": "africa"
-  }
+  },
+  {
+  "id": 51,
+  "title": "SOLadventure #51 – Paphos, ancient mosaics & royal tombs 🏺🌊 🇨🇾",
+  "quote": "Sun-warmed stone, royal calm.",
+  "caption": "Among ancient echoes and sea light, Sol moved with timeless grace. 🐾🐾🐾",
+  "image": "episodes/paphos.webp",
+  "location": {
+    "lat": 34.7754,
+    "lng": 32.4218
+  },
+  "visible": true,
+  "city": "paphos",
+  "story": {
+    "en": "Paphos welcomed Sol with sunlit stone, sea air, and the quiet beauty of a place where history still rests in the open. She stood before the ancient remains with calm confidence, while preserved mosaics and warm limestone stretched around her in soft Mediterranean light. Nothing here needed to impress her loudly. The patterns beneath the sky, the old walls, and the distant blue horizon already carried their own dignity. Sol moved through the scene like she belonged to it, graceful and self-assured, as if the old stones had been expecting royal company. In Paphos, the past did not feel distant. It felt alive in every surface, every silence, and every sunlit corner. Between ancient echoes and timeless grace, Sol turned the archaeological calm of the city into her own quiet kingdom.",
+    "el": "Η Πάφος υποδέχθηκε τη Sol με ηλιόλουστη πέτρα, θαλασσινό αέρα και την ήσυχη ομορφιά ενός τόπου όπου η ιστορία παραμένει ακόμη ανοιχτή μπροστά σου. Στάθηκε μπροστά στα αρχαία με ήρεμη αυτοπεποίθηση, ενώ διατηρημένα μωσαϊκά και ζεστός ασβεστόλιθος απλώνονταν γύρω της μέσα στο απαλό μεσογειακό φως. Τίποτα εδώ δεν χρειαζόταν να την εντυπωσιάσει φανερά. Τα σχέδια κάτω από τον ουρανό, οι παλιοί τοίχοι και ο μακρινός γαλάζιος ορίζοντας είχαν ήδη τη δική τους αξιοπρέπεια. Η Sol κινήθηκε μέσα στο τοπίο σαν να της ανήκε, κομψή και βέβαιη, σαν να περίμεναν τα παλιά πετρώματα βασιλική παρουσία. Στην Πάφο, το παρελθόν δεν έμοιαζε μακρινό. Έμοιαζε ζωντανό σε κάθε επιφάνεια, κάθε σιωπή και κάθε ηλιόλουστη γωνιά. Ανάμεσα σε αρχαίους απόηχους και διαχρονική χάρη, η Sol έκανε την αρχαιολογική γαλήνη της πόλης δικό της ήσυχο βασίλειο."
+  },
+  "photoQuote": "Ancient echoes. Timeless grace.",
+  "snapQuestions": [
+    {
+      "question": {
+        "en": "Did Sol appear in Paphos surrounded by ancient mosaics and ruins?",
+        "el": "Εμφανίστηκε η Sol στην Πάφο ανάμεσα σε αρχαία μωσαϊκά και ερείπια;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did the story mention sea air, warm stone, and Mediterranean light?",
+        "el": "Ανάφερε η ιστορία θαλασσινό αέρα, ζεστή πέτρα και μεσογειακό φως;"
+      },
+      "answer": true
+    },
+    {
+      "question": {
+        "en": "Did this episode take place in a modern city full of skyscrapers?",
+        "el": "Έλαβε χώρα αυτό το επεισόδιο σε μια σύγχρονη πόλη γεμάτη ουρανοξύστες;"
+      },
+      "answer": false
+    }
+  ],
+  "region": "europe"
+}
 ]

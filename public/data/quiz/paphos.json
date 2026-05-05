@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "In which country is Paphos located?",
+      "el": "Σε ποια χώρα βρίσκεται η Πάφος;"
+    },
+    "answers": [
+      { "text": { "en": "Greece", "el": "Ελλάδα" }, "correct": false },
+      { "text": { "en": "Cyprus", "el": "Κύπρος" }, "correct": true },
+      { "text": { "en": "Malta", "el": "Μάλτα" }, "correct": false },
+      { "text": { "en": "Italy", "el": "Ιταλία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "What is Paphos especially known for in this episode?",
+      "el": "Για τι είναι ιδιαίτερα γνωστή η Πάφος σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "Ancient mosaics", "el": "Αρχαία μωσαϊκά" }, "correct": true },
+      { "text": { "en": "Snowy castles", "el": "Χιονισμένα κάστρα" }, "correct": false },
+      { "text": { "en": "Modern skyscrapers", "el": "Σύγχρονους ουρανοξύστες" }, "correct": false },
+      { "text": { "en": "Volcanic craters", "el": "Ηφαιστειακούς κρατήρες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What does the photo quote say?",
+      "el": "Τι λέει το photo quote;"
+    },
+    "answers": [
+      { "text": { "en": "Ancient eyes. Royal silence.", "el": "Αρχαία μάτια. Βασιλική σιωπή." }, "correct": false },
+      { "text": { "en": "The sea watched. The stones remembered.", "el": "Η θάλασσα κοίταζε. Οι πέτρες θυμούνταν." }, "correct": false },
+      { "text": { "en": "Ancient echoes. Timeless grace.", "el": "Αρχαίοι απόηχοι. Διαχρονική χάρη." }, "correct": true },
+      { "text": { "en": "Golden sand, golden queen.", "el": "Χρυσή άμμος, χρυσή βασίλισσα." }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "What sea is connected with Paphos?",
+      "el": "Με ποια θάλασσα συνδέεται η Πάφος;"
+    },
+    "answers": [
+      { "text": { "en": "Baltic Sea", "el": "Βαλτική Θάλασσα" }, "correct": false },
+      { "text": { "en": "North Sea", "el": "Βόρεια Θάλασσα" }, "correct": false },
+      { "text": { "en": "Mediterranean Sea", "el": "Μεσόγειος Θάλασσα" }, "correct": true },
+      { "text": { "en": "Black Sea", "el": "Μαύρη Θάλασσα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Which archaeological area is strongly connected with Paphos?",
+      "el": "Ποιος αρχαιολογικός χώρος συνδέεται έντονα με την Πάφο;"
+    },
+    "answers": [
+      { "text": { "en": "Paphos Archaeological Park", "el": "Αρχαιολογικό Πάρκο Πάφου" }, "correct": true },
+      { "text": { "en": "Plitvice Lakes", "el": "Λίμνες Πλίτβιτσε" }, "correct": false },
+      { "text": { "en": "Valletta Grand Harbour", "el": "Μεγάλο Λιμάνι της Βαλέτας" }, "correct": false },
+      { "text": { "en": "Acropolis Museum", "el": "Μουσείο Ακρόπολης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "How is Sol described in the Paphos episode?",
+      "el": "Πώς περιγράφεται η Sol στο επεισόδιο της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Rushed and nervous", "el": "Βιαστική και νευρική" }, "correct": false },
+      { "text": { "en": "Calm and confident", "el": "Ήρεμη και γεμάτη αυτοπεποίθηση" }, "correct": true },
+      { "text": { "en": "Lost and afraid", "el": "Χαμένη και φοβισμένη" }, "correct": false },
+      { "text": { "en": "Hidden and sleepy", "el": "Κρυμμένη και νυσταγμένη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Which famous tomb complex is associated with Paphos?",
+      "el": "Ποιο γνωστό ταφικό συγκρότημα συνδέεται με την Πάφο;"
+    },
+    "answers": [
+      { "text": { "en": "Valley of the Kings", "el": "Κοιλάδα των Βασιλέων" }, "correct": false },
+      { "text": { "en": "Catacombs of Rome", "el": "Κατακόμβες της Ρώμης" }, "correct": false },
+      { "text": { "en": "Tombs of the Kings", "el": "Τάφοι των Βασιλέων" }, "correct": true },
+      { "text": { "en": "Royal Mausoleum of Halicarnassus", "el": "Βασιλικό Μαυσωλείο της Αλικαρνασσού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "What material is strongly present in the Paphos story?",
+      "el": "Ποιο υλικό είναι έντονα παρόν στην ιστορία της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Warm limestone", "el": "Ζεστός ασβεστόλιθος" }, "correct": true },
+      { "text": { "en": "Dark granite", "el": "Σκούρος γρανίτης" }, "correct": false },
+      { "text": { "en": "Marble ice", "el": "Μαρμάρινος πάγος" }, "correct": false },
+      { "text": { "en": "Red brick", "el": "Κόκκινο τούβλο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "What kind of place is Paphos in the episode?",
+      "el": "Τι είδους τόπος είναι η Πάφος στο επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "A snowy mountain village", "el": "Ένα χιονισμένο ορεινό χωριό" }, "correct": false },
+      { "text": { "en": "A coastal historical city", "el": "Μια παραθαλάσσια ιστορική πόλη" }, "correct": true },
+      { "text": { "en": "A futuristic glass city", "el": "Μια φουτουριστική γυάλινη πόλη" }, "correct": false },
+      { "text": { "en": "A tropical jungle settlement", "el": "Ένας τροπικός οικισμός στη ζούγκλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What feeling does the story give about the past in Paphos?",
+      "el": "Τι αίσθηση δίνει η ιστορία για το παρελθόν στην Πάφο;"
+    },
+    "answers": [
+      { "text": { "en": "It feels alive and present", "el": "Μοιάζει ζωντανό και παρόν" }, "correct": true },
+      { "text": { "en": "It feels forgotten and buried", "el": "Μοιάζει ξεχασμένο και θαμμένο" }, "correct": false },
+      { "text": { "en": "It feels noisy and modern", "el": "Μοιάζει θορυβώδες και σύγχρονο" }, "correct": false },
+      { "text": { "en": "It feels cold and distant", "el": "Μοιάζει ψυχρό και μακρινό" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Which goddess is traditionally linked with Cyprus and the Paphos area?",
+      "el": "Ποια θεά συνδέεται παραδοσιακά με την Κύπρο και την περιοχή της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Athena", "el": "Αθηνά" }, "correct": false },
+      { "text": { "en": "Artemis", "el": "Άρτεμις" }, "correct": false },
+      { "text": { "en": "Aphrodite", "el": "Αφροδίτη" }, "correct": true },
+      { "text": { "en": "Hera", "el": "Ήρα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "What kind of light appears in the Paphos story?",
+      "el": "Τι είδους φως εμφανίζεται στην ιστορία της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Neon city light", "el": "Φως νέον της πόλης" }, "correct": false },
+      { "text": { "en": "Arctic twilight", "el": "Αρκτικό λυκόφως" }, "correct": false },
+      { "text": { "en": "Storm lightning", "el": "Αστραπές καταιγίδας" }, "correct": false },
+      { "text": { "en": "Soft Mediterranean light", "el": "Απαλό μεσογειακό φως" }, "correct": true }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "What mood best fits the Paphos episode?",
+      "el": "Ποιο mood ταιριάζει καλύτερα στο επεισόδιο της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Elegant and reflective", "el": "Κομψό και στοχαστικό" }, "correct": true },
+      { "text": { "en": "Dark and frightening", "el": "Σκοτεινό και τρομακτικό" }, "correct": false },
+      { "text": { "en": "Chaotic and crowded", "el": "Χαοτικό και πολυσύχναστο" }, "correct": false },
+      { "text": { "en": "Comic and silly", "el": "Κωμικό και αστείο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "What does the caption say Sol moved with?",
+      "el": "Με τι λέει το caption ότι κινήθηκε η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Timeless grace", "el": "Διαχρονική χάρη" }, "correct": true },
+      { "text": { "en": "Loud excitement", "el": "Δυνατό ενθουσιασμό" }, "correct": false },
+      { "text": { "en": "Winter silence", "el": "Χειμωνιάτικη σιωπή" }, "correct": false },
+      { "text": { "en": "Neon energy", "el": "Ενέργεια νέον" }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "What does Sol seem to turn Paphos into by the end of the story?",
+      "el": "Σε τι μοιάζει να μετατρέπει η Sol την Πάφο στο τέλος της ιστορίας;"
+    },
+    "answers": [
+      { "text": { "en": "A loud marketplace", "el": "Μια θορυβώδη αγορά" }, "correct": false },
+      { "text": { "en": "A hidden cave", "el": "Μια κρυφή σπηλιά" }, "correct": false },
+      { "text": { "en": "A race track", "el": "Μια πίστα αγώνων" }, "correct": false },
+      { "text": { "en": "Her quiet kingdom", "el": "Το ήσυχο βασίλειό της" }, "correct": true }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "Which phrase best matches the Paphos caption?",
+      "el": "Ποια φράση ταιριάζει καλύτερα με το caption της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Among ancient echoes and sea light, Sol moved with timeless grace.", "el": "Ανάμεσα σε αρχαίους απόηχους και θαλασσινό φως, η Sol κινήθηκε με διαχρονική χάρη." }, "correct": true },
+      { "text": { "en": "The desert wind carried her name across the dunes.", "el": "Ο άνεμος της ερήμου μετέφερε το όνομά της πάνω από τους αμμόλοφους." }, "correct": false },
+      { "text": { "en": "Snowfall framed her royal silence.", "el": "Η χιονόπτωση πλαισίωσε τη βασιλική της σιωπή." }, "correct": false },
+      { "text": { "en": "Neon reflections followed every pawstep.", "el": "Οι αντανακλάσεις του νέον ακολουθούσαν κάθε πατημασιά." }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "Where is Paphos generally located on the island of Cyprus?",
+      "el": "Πού βρίσκεται γενικά η Πάφος στο νησί της Κύπρου;"
+    },
+    "answers": [
+      { "text": { "en": "South-west Cyprus", "el": "Νοτιοδυτική Κύπρος" }, "correct": true },
+      { "text": { "en": "North-east Cyprus", "el": "Βορειοανατολική Κύπρος" }, "correct": false },
+      { "text": { "en": "Central mountain Cyprus", "el": "Κεντρική ορεινή Κύπρος" }, "correct": false },
+      { "text": { "en": "Far east peninsula", "el": "Ανατολική χερσόνησος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "What do the mosaics in Paphos mainly represent?",
+      "el": "Τι αντιπροσωπεύουν κυρίως τα μωσαϊκά της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Modern advertising signs", "el": "Σύγχρονες διαφημιστικές πινακίδες" }, "correct": false },
+      { "text": { "en": "Ancient artistic craftsmanship", "el": "Αρχαία καλλιτεχνική δεξιοτεχνία" }, "correct": true },
+      { "text": { "en": "Industrial engineering plans", "el": "Βιομηχανικά τεχνικά σχέδια" }, "correct": false },
+      { "text": { "en": "Military training maps", "el": "Στρατιωτικούς χάρτες εκπαίδευσης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "Which statement is false for the Paphos episode?",
+      "el": "Ποια δήλωση είναι λανθασμένη για το επεισόδιο της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "It includes sea light.", "el": "Περιλαμβάνει θαλασσινό φως." }, "correct": false },
+      { "text": { "en": "It places Sol in a historical setting.", "el": "Τοποθετεί τη Sol σε ιστορικό σκηνικό." }, "correct": false },
+      { "text": { "en": "It happens in a futuristic glass city.", "el": "Διαδραματίζεται σε μια φουτουριστική γυάλινη πόλη." }, "correct": true },
+      { "text": { "en": "It emphasizes quiet beauty.", "el": "Τονίζει την ήσυχη ομορφιά." }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What atmosphere do the Tombs of the Kings add to Paphos?",
+      "el": "Τι ατμόσφαιρα προσθέτουν οι Τάφοι των Βασιλέων στην Πάφο;"
+    },
+    "answers": [
+      { "text": { "en": "Industrial and noisy", "el": "Βιομηχανική και θορυβώδη" }, "correct": false },
+      { "text": { "en": "Royal and ancient", "el": "Βασιλική και αρχαία" }, "correct": true },
+      { "text": { "en": "Wintery and alpine", "el": "Χειμερινή και αλπική" }, "correct": false },
+      { "text": { "en": "Tropical and jungle-like", "el": "Τροπική και ζουγκλώδη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What does the story suggest about the old walls and surfaces of Paphos?",
+      "el": "Τι υποδηλώνει η ιστορία για τους παλιούς τοίχους και τις επιφάνειες της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "They carry dignity and memory", "el": "Κουβαλούν αξιοπρέπεια και μνήμη" }, "correct": true },
+      { "text": { "en": "They are hidden under snow", "el": "Είναι κρυμμένοι κάτω από το χιόνι" }, "correct": false },
+      { "text": { "en": "They are covered with mirrors", "el": "Είναι καλυμμένοι με καθρέφτες" }, "correct": false },
+      { "text": { "en": "They are painted in neon colors", "el": "Είναι βαμμένοι με χρώματα νέον" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "Which phrase best describes Sol’s presence in Paphos?",
+      "el": "Ποια φράση περιγράφει καλύτερα την παρουσία της Sol στην Πάφο;"
+    },
+    "answers": [
+      { "text": { "en": "Shy and invisible", "el": "Ντροπαλή και αόρατη" }, "correct": false },
+      { "text": { "en": "Graceful and self-assured", "el": "Κομψή και βέβαιη" }, "correct": true },
+      { "text": { "en": "Wild and aggressive", "el": "Άγρια και επιθετική" }, "correct": false },
+      { "text": { "en": "Confused and hurried", "el": "Μπερδεμένη και βιαστική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "Why is Paphos a fitting SOLadventures stop?",
+      "el": "Γιατί η Πάφος είναι κατάλληλος σταθμός για τα SOLadventures;"
+    },
+    "answers": [
+      { "text": { "en": "Because it combines history, sea, and atmosphere", "el": "Επειδή συνδυάζει ιστορία, θάλασσα και ατμόσφαιρα" }, "correct": true },
+      { "text": { "en": "Because it has giant ski slopes", "el": "Επειδή έχει τεράστιες πίστες σκι" }, "correct": false },
+      { "text": { "en": "Because it is famous for volcano climbing", "el": "Επειδή είναι διάσημη για αναρρίχηση σε ηφαίστεια" }, "correct": false },
+      { "text": { "en": "Because it is a city of canals", "el": "Επειδή είναι πόλη με κανάλια" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "Which element is not central to the Paphos episode?",
+      "el": "Ποιο στοιχείο δεν είναι κεντρικό στο επεισόδιο της Πάφου;"
+    },
+    "answers": [
+      { "text": { "en": "Ancient echoes", "el": "Αρχαίοι απόηχοι" }, "correct": false },
+      { "text": { "en": "Sea light", "el": "Θαλασσινό φως" }, "correct": false },
+      { "text": { "en": "Crowded subway tunnels", "el": "Πολυσύχναστα τούνελ μετρό" }, "correct": true },
+      { "text": { "en": "Timeless grace", "el": "Διαχρονική χάρη" }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "What overall image does Paphos leave in this episode?",
+      "el": "Ποια συνολική εικόνα αφήνει η Πάφος σε αυτό το επεισόδιο;"
+    },
+    "answers": [
+      { "text": { "en": "A futuristic capital full of screens", "el": "Μια φουτουριστική πρωτεύουσα γεμάτη οθόνες" }, "correct": false },
+      { "text": { "en": "A dense jungle settlement", "el": "Έναν πυκνό οικισμό μέσα στη ζούγκλα" }, "correct": false },
+      { "text": { "en": "A cold industrial port", "el": "Ένα ψυχρό βιομηχανικό λιμάνι" }, "correct": false },
+      { "text": { "en": "An ancient coastal place with quiet royal atmosphere", "el": "Έναν αρχαίο παραθαλάσσιο τόπο με ήσυχη βασιλική ατμόσφαιρα" }, "correct": true }
+    ]
+  }
+]
