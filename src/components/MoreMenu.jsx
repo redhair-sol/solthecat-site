@@ -1,0 +1,158 @@
+// src/components/MoreMenu.jsx
+//
+// Bottom-sheet drawer used by BottomTabBar's "More" tab.
+// Slides up from the bottom (native mobile pattern), shows secondary
+// routes (Gallery, SolCam, About, Shop, Contact) — primary routes
+// already live in the bottom tab bar itself.
+//
+// REVERT (back to side-drawer style):
+//   git diff this file from previous commit, or restore the earlier
+//   side-drawer version. Public API (isOpen, onClose) is unchanged,
+//   so callers don't need updates.
+
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { X, Image as ImageIcon, Video, User, ShoppingBag, Mail } from "lucide-react";
+// motion is referenced as <motion.img> in JSX below — eslint without
+// eslint-plugin-react cannot track JSX-only identifiers as "used".
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { fonts } from "../theme.js";
+import { useLanguage } from "../context/LanguageContext.jsx";
+
+const items = [
+  { to: "/gallery", key: "gallery", icon: ImageIcon },
+  { to: "/solcam", key: "solcam", icon: Video },
+  { to: "/whoissol", key: "about", icon: User },
+  { to: "/shop", key: "shop", icon: ShoppingBag },
+  { to: "/contact", key: "contact", icon: Mail },
+];
+
+export default function MoreMenu({ isOpen, onClose }) {
+  const { language } = useLanguage();
+
+  const labels = {
+    en: {
+      header: "More",
+      tagline: "Royal stops",
+      gallery: "Gallery",
+      solcam: "SolCam",
+      about: "About",
+      shop: "Shop",
+      contact: "Contact",
+    },
+    el: {
+      header: "Περισσότερα",
+      tagline: "Βασιλικές στάσεις",
+      gallery: "Γκαλερί",
+      solcam: "SolCam",
+      about: "Σχετικά",
+      shop: "Κατάστημα",
+      contact: "Επικοινωνία",
+    },
+  };
+  const t = labels[language];
+  const navStyle = fonts.navStyleFor(language);
+  const navSizeClass = fonts.navSizeClassFor(language, "text-2xl");
+
+  return (
+    <>
+      {/* Backdrop — covers whole viewport including Topbar */}
+      <div
+        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[10000] transition-opacity duration-300 ${
+          isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={onClose}
+        aria-hidden="true"
+      />
+
+      {/* Bottom Sheet */}
+      <div
+        className={`fixed bottom-0 left-0 right-0 z-[10001] transform transition-transform duration-300 ease-out ${
+          isOpen ? "translate-y-0" : "translate-y-full"
+        }`}
+        role="dialog"
+        aria-modal="true"
+        aria-hidden={!isOpen}
+        aria-label="More navigation"
+      >
+        <div
+          className="bg-gradient-to-b from-[#fff3f8] to-[#fce4ec] rounded-t-3xl shadow-[0_-8px_30px_rgba(170,77,200,0.25)] max-h-[85vh] overflow-y-auto"
+          style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+        >
+          {/* Drag handle (visual only) */}
+          <div className="flex justify-center pt-3 pb-2">
+            <div className="w-12 h-1.5 bg-[#c187d8]/50 rounded-full" />
+          </div>
+
+          {/* Header — label + close button (cat lives at the bottom right, draggable) */}
+          <div className="flex items-center justify-between px-6 pb-4">
+            <div>
+              <p className="text-[0.65rem] uppercase tracking-wider text-[#5b2b7b] font-semibold">
+                {t.header}
+              </p>
+              <p
+                className={`${navSizeClass} text-[#6a1b9a] leading-none`}
+                style={navStyle}
+              >
+                {t.tagline}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={onClose}
+              className="p-2 rounded-full bg-white/80 shadow-md hover:scale-110 transition-transform"
+              aria-label="Close menu"
+            >
+              <X className="w-5 h-5 text-[#5b2b7b]" />
+            </button>
+          </div>
+
+          {/* Navigation items */}
+          <nav className="px-3 pb-2 flex flex-col gap-1">
+            {items.map((item) => {
+              const Icon = item.icon;
+              return (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  onClick={onClose}
+                  className={({ isActive }) =>
+                    `flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
+                      isActive
+                        ? "bg-[#f8bbd0] text-[#6a1b9a] font-bold"
+                        : "text-[#5b2b7b] hover:bg-white/60 active:bg-white/80"
+                    }`
+                  }
+                >
+                  <Icon className="w-5 h-5" aria-hidden="true" />
+                  <span
+                    className={navSizeClass}
+                    style={navStyle}
+                  >
+                    {t[item.key]}
+                  </span>
+                </NavLink>
+              );
+            })}
+          </nav>
+
+          {/* Draggable Sol — brand element, can be moved around */}
+          <div className="flex justify-end px-6 pb-4">
+            <motion.img
+              src="/images/SOL.webp"
+              alt="Sol the Cat"
+              className="w-24 h-24 object-contain rounded-xl cursor-grab active:cursor-grabbing select-none"
+              drag
+              dragConstraints={{ top: -120, bottom: 30, left: -220, right: 20 }}
+              dragElastic={0.2}
+              animate={{ x: 0, y: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              draggable="false"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

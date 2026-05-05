@@ -12,6 +12,12 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/marcellus";
+// EB Garamond Italic — used for Greek nav labels (Dancing Script has no Greek glyphs).
+// Bilingual font swap is handled in src/theme.js (fonts.navStyleFor).
+// Using 600 weight to match the perceived visual density of Dancing Script Bold —
+// 400 italic looked too wispy/thin compared to the EN bold cursive.
+import "@fontsource/eb-garamond/600-italic.css";
+import "@fontsource/eb-garamond/greek-600-italic.css";
 
 import { LanguageProvider } from "./context/LanguageContext.jsx";
 import App from "./App.jsx";

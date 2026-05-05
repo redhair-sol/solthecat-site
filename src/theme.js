@@ -39,3 +39,47 @@ export const shadows = {
   cardElevated: "0 4px 12px rgba(0, 0, 0, 0.08)",
   tile: "0 4px 16px rgba(170, 77, 200, 0.15)",
 };
+
+// Navigation font (top nav, bottom tab labels, drawer items).
+//
+// `nav` is the legacy single-font value (English-only). Components that
+// support bilingual rendering should use `navStyleFor(language)` instead —
+// it returns a full style object since the EL font is italic (font-style
+// must be set, not just font-family).
+//
+// Why dual-font: Dancing Script has zero Greek glyphs in its source. With
+// language=EL the browser would fall back to system serif. EB Garamond
+// Italic is loaded explicitly with a Greek subset (see main.jsx) so EL
+// users get a properly designed italic serif for the menu.
+//
+// To revert to single-font Dancing Script everywhere (and lose Greek menu
+// support): components stop calling navStyleFor() and use fonts.nav directly.
+//
+// To try a different EL font: change the EL branch below. Already-loaded
+// alternatives without Greek subsets exist (Marcellus, Playfair) but will
+// fall back to system fonts for Greek glyphs.
+export const fonts = {
+  nav: '"Dancing Script", cursive',
+  navStyleFor: (language) =>
+    language === "el"
+      ? {
+          fontFamily: '"EB Garamond", serif',
+          fontStyle: "italic",
+          // 600 weight matches the perceived ink density of Dancing Script Bold;
+          // 400 italic looked too thin/light next to the EN cursive.
+          fontWeight: 600,
+        }
+      : { fontFamily: '"Dancing Script", cursive' },
+  // EB Garamond Italic has heavier visual weight than Dancing Script Bold,
+  // so EL needs a slightly smaller size class to feel balanced. Per-component
+  // because Topbar/MoreMenu use text-2xl (1.5rem) while BottomTabBar uses
+  // text-[0.95rem] — applying via fontSize:em on inline style is unreliable
+  // (it overrides the Tailwind class and ends up relative to grandparent).
+  navSizeClassFor: (language, baseClass) => {
+    if (language !== "el") return baseClass;
+    // Map EN sizes → EL sizes (~93% scale).
+    if (baseClass === "text-2xl") return "text-[1.35rem]";
+    if (baseClass === "text-[0.95rem]") return "text-[0.85rem]";
+    return baseClass;
+  },
+};

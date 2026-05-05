@@ -1,0 +1,96 @@
+// src/components/BottomTabBar.jsx
+//
+// Mobile-only fixed bottom navigation bar with 4 primary tabs + "More".
+// "More" opens the existing MobileMenu drawer (same component used by the
+// top hamburger), so secondary routes (Gallery, SolCam, About, Shop, Contact)
+// stay reachable without duplicating the menu structure.
+//
+// REVERT INSTRUCTIONS (if you want to remove this feature):
+//   1. Delete this file (BottomTabBar.jsx)
+//   2. In src/App.jsx: remove the BottomTabBar import + <BottomTabBar /> usage
+//   3. In src/App.jsx: change `pb-20 md:pb-0` back to no padding-bottom class
+//   4. In src/components/InstagramFloatingButton.jsx: change `bottom-24` back to `bottom-4`
+// The rest of the app (Topbar, Sidebar, MobileMenu) stays untouched.
+
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { Home, BookOpen, Map, Gamepad2, Menu } from "lucide-react";
+import MoreMenu from "./MoreMenu.jsx";
+import { fonts } from "../theme.js";
+import { useLanguage } from "../context/LanguageContext.jsx";
+
+const tabs = [
+  { to: "/", key: "home", icon: Home, end: true },
+  { to: "/episodes", key: "episodes", icon: BookOpen },
+  { to: "/map", key: "map", icon: Map },
+  { to: "/games", key: "games", icon: Gamepad2 },
+];
+
+export default function BottomTabBar() {
+  const [moreOpen, setMoreOpen] = useState(false);
+  const { language } = useLanguage();
+
+  const labels = {
+    en: { home: "Home", episodes: "Episodes", map: "Map", games: "Games", more: "More" },
+    el: { home: "Αρχική", episodes: "Επεισόδια", map: "Χάρτης", games: "Παιχνίδια", more: "Περισσότερα" },
+  };
+  const t = labels[language];
+
+  const baseTab =
+    "flex flex-col items-center justify-center gap-1 flex-1 py-2 transition-colors duration-150";
+  const inactiveTab = "text-[#5b2b7b] hover:text-[#aa4dc8]";
+  const activeTab = "text-[#6a1b9a]";
+  const labelStyle = fonts.navStyleFor(language);
+  const labelSizeClass = fonts.navSizeClassFor(language, "text-[0.95rem]");
+
+  return (
+    <>
+      <nav
+        className="md:hidden fixed bottom-0 left-0 right-0 z-40
+                   bg-[#fff3f8]/95 backdrop-blur-md
+                   border-t border-[#f8bbd0]
+                   shadow-[0_-2px_10px_rgba(170,77,200,0.12)]"
+        style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
+        aria-label="Primary mobile navigation"
+      >
+        <div className="flex items-stretch justify-around max-w-screen-sm mx-auto">
+          {tabs.map((tab) => {
+            // Capitalized so JSX renders it as a component.
+            const Icon = tab.icon;
+            return (
+              <NavLink
+                key={tab.to}
+                to={tab.to}
+                end={tab.end}
+                className={({ isActive }) =>
+                  `${baseTab} ${isActive ? activeTab : inactiveTab}`
+                }
+              >
+                <Icon className="w-6 h-6" aria-hidden="true" />
+                <span className={`${labelSizeClass} leading-none`} style={labelStyle}>
+                  {t[tab.key]}
+                </span>
+              </NavLink>
+            );
+          })}
+
+          <button
+            type="button"
+            onClick={() => setMoreOpen(true)}
+            className={`${baseTab} ${inactiveTab}`}
+            aria-label="Open more navigation"
+          >
+            <Menu className="w-6 h-6" aria-hidden="true" />
+            <span className={`${labelSizeClass} leading-none`} style={labelStyle}>
+              {t.more}
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      {moreOpen && (
+        <MoreMenu isOpen={moreOpen} onClose={() => setMoreOpen(false)} />
+      )}
+    </>
+  );
+}
