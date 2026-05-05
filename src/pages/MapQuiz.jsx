@@ -1,6 +1,6 @@
 // src/pages/MapQuiz.jsx
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   MapContainer,
@@ -262,6 +262,13 @@ export default function MapQuiz() {
   const [userPick, setUserPick] = useState(null);
   const [roundResult, setRoundResult] = useState(null);
 
+  // Refs for auto-scroll on phase change. On mobile the page is tall (photo +
+  // map + result stack), so when the user clicks the map the ResultCard
+  // appears below the fold and they don't realize the round has resolved.
+  const photoRef = useRef(null);
+  const resultRef = useRef(null);
+  const finalRef = useRef(null);
+
   const t = {
     en: {
       pageTitle: "Where in the World? – SolTheCat",
@@ -318,6 +325,28 @@ export default function MapQuiz() {
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
     },
   }[language];
+
+  // Auto-scroll the relevant section into view when the phase changes:
+  //   - reveal → center the ResultCard so the user sees the score immediately
+  //   - final  → center the FinalCard
+  //   - playing (incl. round transitions) → top-align the photo so the user
+  //     sees the new image and the map below it
+  useEffect(() => {
+    let target = null;
+    let block = "center";
+    if (phase === "reveal") target = resultRef.current;
+    else if (phase === "final") target = finalRef.current;
+    else if (phase === "playing") {
+      target = photoRef.current;
+      block = "start";
+    }
+    if (target) {
+      // rAF lets the new DOM/animation settle before measuring scroll.
+      requestAnimationFrame(() => {
+        target.scrollIntoView({ behavior: "smooth", block });
+      });
+    }
+  }, [phase, round]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}episodes.json`)
@@ -432,7 +461,7 @@ export default function MapQuiz() {
             <Subtitle>{t.progress(round)}</Subtitle>
             <ScoreLine>{t.scoreLine(score)}</ScoreLine>
 
-            <PhotoWrapper>
+            <PhotoWrapper ref={photoRef}>
               <PhotoCard>
                 <Photo
                   src={`${import.meta.env.BASE_URL}${currentEpisode.image}`}
@@ -488,6 +517,7 @@ export default function MapQuiz() {
 
             {phase === "reveal" && roundResult && (
               <ResultCard
+                ref={resultRef}
                 key={`result-${round}`}
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -508,6 +538,7 @@ export default function MapQuiz() {
 
         {phase === "final" && (
           <FinalCard
+            ref={finalRef}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
