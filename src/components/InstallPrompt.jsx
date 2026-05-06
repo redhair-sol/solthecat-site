@@ -22,13 +22,13 @@ export default function InstallPrompt() {
 
   const t = {
     en: {
-      title: "Install solthecat",
+      title: "Install SOLadventures",
       subtitle: "Add to home screen for quick paw access 🐾",
       install: "Install",
       dismiss: "Dismiss",
     },
     el: {
-      title: "Εγκατέστησε το solthecat",
+      title: "Εγκατέστησε το SOLadventures",
       subtitle: "Πρόσθεσέ το στην αρχική για γρήγορη πρόσβαση 🐾",
       install: "Εγκατάσταση",
       dismiss: "Κλείσιμο",
