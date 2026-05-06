@@ -97,3 +97,23 @@ if ("serviceWorker" in navigator) {
     });
   });
 }
+
+// PWA install tracking — increment a global counter the first time the app
+// launches in standalone mode (i.e. opened from home-screen icon, post-install).
+// Works for Chromium PWAs AND iOS Safari "Add to Home Screen" (where the
+// `appinstalled` event is never fired). Per-device dedupe via localStorage —
+// refreshes inside the installed app don't count again, but a fresh
+// uninstall+reinstall does (PWA storage is reset on uninstall).
+// Endpoint: functions/install-tracker.js → Cloudflare KV.
+if (typeof window !== "undefined") {
+  const isStandalone =
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone === true;
+  if (isStandalone && !localStorage.getItem("solInstallTracked")) {
+    fetch("/install-tracker", { method: "POST" })
+      .then(() => localStorage.setItem("solInstallTracked", "true"))
+      .catch(() => {
+        // Offline or endpoint not yet deployed — retry on next launch.
+      });
+  }
+}
