@@ -75,10 +75,20 @@ export default function useStreakBadges() {
     setCurrentBadge(current);
     setNextBadge(next);
 
-    // 4️⃣ Check if unlocked new today
-    const unlockedKey = `solPawBadgeUnlocked-${getToday()}`;
-    if (current && !localStorage.getItem(unlockedKey)) {
-      localStorage.setItem(unlockedKey, "true");
+    // 4️⃣ Check if a NEW badge was unlocked.
+    // Previous logic used a per-day key (`solPawBadgeUnlocked-{today}`) which
+    // fired on every first-visit-of-the-day even when no actual badge upgrade
+    // happened (e.g. day 6 → still "Faithful Guardian" from day 5).
+    // Now we track the highest badge.day ever shown; the message only fires
+    // when a higher-tier badge becomes current.
+    if (!current) {
+      setUnlockedToday(false);
+      return;
+    }
+    const highestKey = "solPawHighestBadgeDay";
+    const stored = parseInt(localStorage.getItem(highestKey) || "0", 10);
+    if (current.day > stored) {
+      localStorage.setItem(highestKey, String(current.day));
       setUnlockedToday(true);
     } else {
       setUnlockedToday(false);

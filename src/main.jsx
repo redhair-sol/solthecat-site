@@ -86,3 +86,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </HelmetProvider>
   </React.StrictMode>
 );
+
+// PWA service worker registration. Registered after the main bundle loads
+// so it never blocks first paint. Failure is non-fatal (e.g., older browsers
+// without SW support — the site still works as a regular web app).
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch((err) => {
+      console.warn("Service worker registration failed:", err);
+    });
+  });
+}

@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Topbar from "./components/Topbar";
 import InstagramFloatingButton from "./components/InstagramFloatingButton"; // ✅ ΝΕΟ
 import BottomTabBar from "./components/BottomTabBar"; // mobile-only bottom nav (revertable — see component header)
+import InstallPrompt from "./components/InstallPrompt"; // PWA install banner (Chromium-based browsers only)
 import { Outlet } from "react-router-dom";
 import "./index.css";
 
@@ -30,6 +31,9 @@ function App() {
 
       {/* Bottom tab bar — mobile only */}
       <BottomTabBar />
+
+      {/* PWA install banner — appears when browser fires beforeinstallprompt */}
+      <InstallPrompt />
     </>
   );
 }

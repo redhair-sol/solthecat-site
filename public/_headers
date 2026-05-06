@@ -13,3 +13,13 @@
 
 /robots.txt
   Content-Type: text/plain
+
+/manifest.json
+  Content-Type: application/manifest+json
+
+# PWA service worker: never cache the SW file itself, otherwise users get
+# stuck on an old SW and the site stops updating. Browsers also enforce
+# this for SW updates to propagate within 24h max.
+/sw.js
+  Content-Type: application/javascript
+  Cache-Control: no-cache, no-store, must-revalidate

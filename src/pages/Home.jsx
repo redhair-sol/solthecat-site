@@ -154,6 +154,13 @@ const StreakText = styled.p`
   margin-top: 0.5rem;
 `;
 
+const NextBadgeText = styled.p`
+  color: #6a1b9a;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  font-style: italic;
+`;
+
 const UnlockedText = styled.p`
   color: #4a005f;
   margin-top: 0.5rem;
@@ -241,7 +248,7 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  const { streak, currentBadge, unlockedToday } = useStreakBadges();
+  const { streak, currentBadge, nextBadge, unlockedToday } = useStreakBadges();
 
   function getDailyMessage(mode, language, options) {
     if (!options || options.length === 0) return null;
@@ -264,7 +271,8 @@ export default function Home() {
 
   useEffect(() => {
     const today = new Date();
-    const isoDate = today.toISOString().slice(0, 10);
+    const isoDate = today.toISOString().slice(0, 10); // 2026-05-06
+    const monthDay = isoDate.slice(5);                // 05-06 — recurring annual key
     const dayOfWeek = today
       .toLocaleDateString("en-US", { weekday: "long" })
       .toLowerCase();
@@ -286,10 +294,14 @@ export default function Home() {
         return res.json();
       })
       .then((data) => {
+        // Lookup priority: full-ISO one-time override → MM-DD recurring →
+        // weekday → season → default. MM-DD lets entries like "12-25" trigger
+        // every Christmas without needing yearly updates.
         const options =
           mode === "fortune"
             ? data.fortunes.map((f) => f[language]).filter(Boolean)
             : data[isoDate]?.[language] ||
+              data[monthDay]?.[language] ||
               data[dayOfWeek]?.[language] ||
               data[season]?.[language] ||
               data["default"]?.[language] ||
@@ -332,6 +344,8 @@ export default function Home() {
       live: "LIVE",
       visitStreak: (n) => `Visit Streak: ${n} day${n > 1 ? "s" : ""}`,
       newBadge: "🎉 New Badge Unlocked Today!",
+      nextBadge: (name, days) =>
+        `Next badge: ${name} in ${days} day${days > 1 ? "s" : ""}`,
     },
     el: {
       title: "το ταξίδι μιας Βασίλισσας",
@@ -351,6 +365,8 @@ export default function Home() {
       live: "ΖΩΝΤΑΝΑ",
       visitStreak: (n) => `Σερί επισκέψεων: ${n} ${n === 1 ? "ημέρα" : "ημέρες"}`,
       newBadge: "🎉 Ξεκλείδωσες νέο Badge σήμερα!",
+      nextBadge: (name, days) =>
+        `Επόμενο badge: ${name} σε ${days} ${days === 1 ? "ημέρα" : "ημέρες"}`,
     },
   };
 
@@ -439,6 +455,12 @@ export default function Home() {
             <BadgeDesc>{currentBadge.description[language]}</BadgeDesc>
 
             <StreakText>{t.visitStreak(streak)}</StreakText>
+
+            {nextBadge && (
+              <NextBadgeText>
+                {t.nextBadge(nextBadge.name[language], nextBadge.day - streak)}
+              </NextBadgeText>
+            )}
 
             {unlockedToday && <UnlockedText>{t.newBadge}</UnlockedText>}
           </BadgeBox>
