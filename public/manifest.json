@@ -1,7 +1,7 @@
 {
   "name": "SOLadventures",
-  "short_name": "Sol",
-  "description": "Sol the Cat — feline royalty traveling the world.",
+  "short_name": "solthecat",
+  "description": "solthecat — feline royalty traveling the world.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
