@@ -1,4 +1,4 @@
-// functions/install-tracker.js
+// functions/install-tracker.js — v1
 //
 // Cloudflare Pages Function — global PWA install counter, stored in Cloudflare
 // KV. Called by the client when the app first launches in standalone mode
