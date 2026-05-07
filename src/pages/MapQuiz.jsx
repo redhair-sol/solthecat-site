@@ -109,8 +109,9 @@ const MapWrapper = styled.div`
   position: relative;
   z-index: 0;
 
-  /* dvh on mobile so the map height stays correct as the address bar shows/hides. */
-  @media (max-width: 768px) {
+  /* dvh below the lg: breakpoint (tablet portrait + phones) so map fits
+     between Topbar and BottomTabBar without clipping the active marker. */
+  @media (max-width: 1023px) {
     height: 50dvh;
     min-height: 320px;
   }

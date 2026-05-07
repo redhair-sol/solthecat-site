@@ -65,8 +65,10 @@ const MapWrapper = styled.div`
   /* On real mobile (vs F12 device emulation) the browser address bar
      dynamically appears/hides on scroll, so plain vh is unreliable.
      dvh (dynamic viewport height) recalculates as chrome shows/hides,
-     keeping the map's visible center stable when flyTo zooms to a city. */
-  @media (max-width: 768px) {
+     keeping the map's visible center stable when flyTo zooms to a city.
+     Breakpoint at 1023px aligns with the lg: Tailwind boundary so tablet
+     portrait (which uses mobile UI mode) gets the smaller map height too. */
+  @media (max-width: 1023px) {
     height: 55dvh;
     min-height: 350px;
   }

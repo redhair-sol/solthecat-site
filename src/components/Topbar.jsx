@@ -53,14 +53,14 @@ export default function Topbar() {
               alt="SOLadventures"
               width="240"
               height="64"
-              className="!h-16 md:!h-12 object-contain"
+              className="!h-16 lg:!h-12 object-contain"
             />
           </Link>
         </div>
       </div>
 
-      {/* Desktop navigation */}
-      <nav className="hidden md:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-0.1">
+      {/* Desktop navigation (≥1024px — tablets in portrait use bottom tab bar) */}
+      <nav className="hidden lg:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-0.1">
         <div className="max-w-screen-xl mx-auto px-4">
           <div
             className={`flex justify-center space-x-8 ${navSizeClass} font-medium`}

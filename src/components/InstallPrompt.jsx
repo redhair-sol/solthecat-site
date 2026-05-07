@@ -1,60 +1,89 @@
 // src/components/InstallPrompt.jsx
 //
-// Captures the `beforeinstallprompt` event (Chrome/Edge/Samsung Internet on
-// Android) and shows a discreet banner inviting the user to install Sol's
-// app to their home screen. iOS Safari does not fire this event — those
-// users install via Share → "Add to Home Screen" manually (the manifest
-// + apple-touch-icon meta tags still apply).
+// Renders the install banner. Two modes:
 //
-// Dismissal is sticky for 30 days via localStorage so we don't nag users.
+// 1) "chromium" — Android Chrome, desktop Edge, Samsung Internet, etc. fire
+//    `beforeinstallprompt` when the site is installable. We capture the event,
+//    show a banner with an Install button, and trigger the native prompt on
+//    click. Successful install fires `appinstalled` → banner hides.
+//
+// 2) "ios"      — iOS Safari (and any iOS browser, since they all use WebKit)
+//    DOES NOT fire `beforeinstallprompt` — Apple deliberately disabled it.
+//    Instead we show a banner explaining the manual install path:
+//      Share button → "Add to Home Screen"
+//
+// In both modes a dismiss × button stores a timestamp; the banner stays
+// hidden for 30 days afterwards. Already-installed users (running in
+// standalone mode) never see the banner.
 
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { X, Share } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 
 const DISMISS_KEY = "solInstallDismissedAt";
 const DISMISS_DAYS = 30;
+const IOS_BANNER_DELAY_MS = 2000;
 
 export default function InstallPrompt() {
   const { language } = useLanguage();
   const [deferredPrompt, setDeferredPrompt] = useState(null);
-  const [show, setShow] = useState(false);
+  const [mode, setMode] = useState(null); // "chromium" | "ios" | null
 
   const t = {
     en: {
       title: "Install SOLadventures",
-      subtitle: "Add to home screen for quick paw access 🐾",
+      subtitleChromium: "Add to home screen for quick paw access 🐾",
+      iosTap: "Tap",
+      iosThen: "then",
+      iosAdd: "“Add to Home Screen”",
       install: "Install",
       dismiss: "Dismiss",
     },
     el: {
       title: "Εγκατέστησε το SOLadventures",
-      subtitle: "Πρόσθεσέ το στην αρχική για γρήγορη πρόσβαση 🐾",
+      subtitleChromium: "Πρόσθεσέ το στην αρχική για γρήγορη πρόσβαση 🐾",
+      iosTap: "Πάτα",
+      iosThen: "μετά",
+      iosAdd: "«Προσθήκη στην αρχική»",
       install: "Εγκατάσταση",
       dismiss: "Κλείσιμο",
     },
   }[language];
 
   useEffect(() => {
+    // Skip if recently dismissed.
     const dismissedAt = parseInt(localStorage.getItem(DISMISS_KEY) || "0", 10);
     const cutoff = Date.now() - DISMISS_DAYS * 24 * 60 * 60 * 1000;
-    const recentlyDismissed = dismissedAt > cutoff;
+    if (dismissedAt > cutoff) return;
 
+    // Skip if already running as installed PWA (no need to suggest install).
+    const isStandalone =
+      window.matchMedia("(display-mode: standalone)").matches ||
+      window.navigator.standalone === true;
+    if (isStandalone) return;
+
+    // iOS: no install event exists. Show manual instructions banner after a
+    // short delay so it doesn't compete with first paint.
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isIOS) {
+      const timer = setTimeout(() => setMode("ios"), IOS_BANNER_DELAY_MS);
+      return () => clearTimeout(timer);
+    }
+
+    // Chromium browsers fire beforeinstallprompt when site is installable.
     const handler = (event) => {
-      // Stop the browser's default install mini-infobar.
       event.preventDefault();
       setDeferredPrompt(event);
-      if (!recentlyDismissed) setShow(true);
+      setMode("chromium");
     };
-
     window.addEventListener("beforeinstallprompt", handler);
     return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
 
-  // Listen for successful install — hide banner immediately.
+  // Successful install (Chromium only — iOS doesn't fire this).
   useEffect(() => {
     const onInstalled = () => {
-      setShow(false);
+      setMode(null);
       setDeferredPrompt(null);
     };
     window.addEventListener("appinstalled", onInstalled);
@@ -66,19 +95,19 @@ export default function InstallPrompt() {
     deferredPrompt.prompt();
     await deferredPrompt.userChoice;
     setDeferredPrompt(null);
-    setShow(false);
+    setMode(null);
   };
 
   const handleDismiss = () => {
-    setShow(false);
+    setMode(null);
     localStorage.setItem(DISMISS_KEY, String(Date.now()));
   };
 
-  if (!show) return null;
+  if (!mode) return null;
 
   return (
     <div
-      className="fixed bottom-28 md:bottom-20 left-4 right-4 md:left-auto md:right-6 md:max-w-sm
+      className="fixed bottom-28 lg:bottom-20 left-4 right-4 lg:left-auto lg:right-6 lg:max-w-sm
                  z-[1100] bg-white rounded-2xl shadow-[0_8px_24px_rgba(170,77,200,0.25)]
                  border border-[#f8bbd0] p-4 flex items-start gap-3"
       role="dialog"
@@ -93,16 +122,32 @@ export default function InstallPrompt() {
       />
       <div className="flex-1 min-w-0">
         <p className="font-semibold text-[#6a1b9a] text-sm">{t.title}</p>
-        <p className="text-[#5b2b7b] text-xs mt-0.5">{t.subtitle}</p>
-        <div className="flex gap-2 mt-2">
-          <button
-            onClick={handleInstall}
-            className="px-3 py-1.5 bg-[#c187d8] text-white text-xs font-bold rounded-full
-                       hover:scale-105 transition-transform shadow"
-          >
-            {t.install}
-          </button>
-        </div>
+
+        {mode === "chromium" && (
+          <>
+            <p className="text-[#5b2b7b] text-xs mt-0.5">{t.subtitleChromium}</p>
+            <div className="flex gap-2 mt-2">
+              <button
+                onClick={handleInstall}
+                className="px-3 py-1.5 bg-[#c187d8] text-white text-xs font-bold rounded-full
+                           hover:scale-105 transition-transform shadow"
+              >
+                {t.install}
+              </button>
+            </div>
+          </>
+        )}
+
+        {mode === "ios" && (
+          <p className="text-[#5b2b7b] text-xs mt-0.5 leading-relaxed">
+            {t.iosTap}{" "}
+            <Share
+              className="inline-block w-4 h-4 align-text-bottom text-[#aa4dc8]"
+              aria-label="Share"
+            />{" "}
+            {t.iosThen} {t.iosAdd}
+          </p>
+        )}
       </div>
       <button
         onClick={handleDismiss}
