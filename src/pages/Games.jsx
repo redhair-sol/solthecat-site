@@ -41,6 +41,10 @@ const Subheading = styled.p`
 const GamesGrid = styled.div`
   display: grid;
   gap: 1.5rem;
+  /* width:100% required because PageContainer is flex+align-items:center;
+     without it, the grid sizes to intrinsic content width and ends up
+     visually shifted within the centered container. */
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   grid-template-columns: 1fr;
