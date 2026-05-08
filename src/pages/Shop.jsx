@@ -28,7 +28,9 @@ const ProductGrid = styled.div`
   grid-template-columns: 1fr;
 
   @media (min-width: 640px) {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* 340px threshold ensures 2 columns on tablet portrait (~960px) instead
+       of cramped 3-column layout. 3 columns kick in on desktop (≥1024px). */
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   }
 `;
 

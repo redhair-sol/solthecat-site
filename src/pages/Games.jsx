@@ -47,7 +47,10 @@ const GamesGrid = styled.div`
   margin-bottom: 2rem;
 
   @media (min-width: 640px) {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* 340px threshold ensures 2 columns on tablet portrait (~960px) instead
+       of cramped 3-column layout. 3 columns kick in naturally on desktop
+       (≥1024px viewport with PageContainer inner width >= ~1040px). */
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   }
 `;
 
