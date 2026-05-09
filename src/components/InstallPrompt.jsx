@@ -51,22 +51,32 @@ export default function InstallPrompt() {
   }[language];
 
   useEffect(() => {
-    // Skip if recently dismissed.
-    const dismissedAt = parseInt(localStorage.getItem(DISMISS_KEY) || "0", 10);
-    const cutoff = Date.now() - DISMISS_DAYS * 24 * 60 * 60 * 1000;
-    if (dismissedAt > cutoff) return;
-
-    // Skip if already running as installed PWA (no need to suggest install).
-    const isStandalone =
+    // Helpers re-check the latest state at fire time. Chromium sometimes
+    // re-fires `beforeinstallprompt` on SPA route changes; without this
+    // re-check, the banner reappears after dismiss on every navigation.
+    const isRecentlyDismissed = () => {
+      const dismissedAt = parseInt(
+        localStorage.getItem(DISMISS_KEY) || "0",
+        10
+      );
+      const cutoff = Date.now() - DISMISS_DAYS * 24 * 60 * 60 * 1000;
+      return dismissedAt > cutoff;
+    };
+    const isStandaloneNow = () =>
       window.matchMedia("(display-mode: standalone)").matches ||
       window.navigator.standalone === true;
-    if (isStandalone) return;
+
+    if (isRecentlyDismissed() || isStandaloneNow()) return;
 
     // iOS: no install event exists. Show manual instructions banner after a
     // short delay so it doesn't compete with first paint.
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if (isIOS) {
-      const timer = setTimeout(() => setMode("ios"), IOS_BANNER_DELAY_MS);
+      const timer = setTimeout(() => {
+        // Re-check at fire time in case state changed during the delay.
+        if (isRecentlyDismissed() || isStandaloneNow()) return;
+        setMode("ios");
+      }, IOS_BANNER_DELAY_MS);
       return () => clearTimeout(timer);
     }
 
@@ -74,6 +84,10 @@ export default function InstallPrompt() {
     const handler = (event) => {
       event.preventDefault();
       setDeferredPrompt(event);
+      // Re-check dismiss state on every fire — Chromium re-fires this event
+      // on SPA route changes / installability re-evaluation, which would
+      // resurrect the banner after the user dismissed it.
+      if (isRecentlyDismissed() || isStandaloneNow()) return;
       setMode("chromium");
     };
     window.addEventListener("beforeinstallprompt", handler);
