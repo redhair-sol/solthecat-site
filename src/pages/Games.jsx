@@ -180,6 +180,20 @@ export default function Games() {
           description: "Pin Sol on the world map from a photo.",
           route: "/games/mapquiz"
         },
+        {
+          id: 10,
+          emoji: "⚡",
+          name: "Quick Paws",
+          description: "Tap the cats before they vanish — speed reaction game.",
+          route: "/games/quick-paws"
+        },
+        {
+          id: 11,
+          emoji: "🏠",
+          name: "Cat Sort",
+          description: "Sort cats into the nest. Pairs auto-rescue.",
+          route: "/games/cat-sort"
+        },
       ],
     },
     el: {
@@ -250,6 +264,20 @@ export default function Games() {
           name: "Πού στον Κόσμο;",
           description: "Σημείωσε τη Sol στον παγκόσμιο χάρτη από μια φωτογραφία.",
           route: "/games/mapquiz"
+        },
+        {
+          id: 10,
+          emoji: "⚡",
+          name: "Γρήγορες Πατούσες",
+          description: "Πάτα τις γάτες πριν εξαφανιστούν — παιχνίδι αντανακλαστικών.",
+          route: "/games/quick-paws"
+        },
+        {
+          id: 11,
+          emoji: "🏠",
+          name: "Ταξινόμηση Γατών",
+          description: "Στείλε τις γάτες στη φωλιά. Τα ζευγάρια εξαφανίζονται αυτόματα.",
+          route: "/games/cat-sort"
         },
       ],
     },

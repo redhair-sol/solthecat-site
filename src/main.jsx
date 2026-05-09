@@ -43,6 +43,8 @@ const SolsTreasureHunt = lazy(() => import("./pages/SolsTreasureHunt.jsx"));
 const SolPicks = lazy(() => import("./pages/SolPicks.jsx"));
 const SpotTheCity = lazy(() => import("./pages/SpotTheCity.jsx"));
 const MapQuiz = lazy(() => import("./pages/MapQuiz.jsx"));
+const SolTap = lazy(() => import("./pages/SolTap.jsx"));
+const CatSort = lazy(() => import("./pages/CatSort.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -75,6 +77,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="games/sol-picks" element={<SolPicks />} />
                 <Route path="games/spotcity" element={<SpotTheCity />} />
                 <Route path="games/mapquiz" element={<MapQuiz />} />
+                <Route path="games/quick-paws" element={<SolTap />} />
+                <Route path="games/cat-sort" element={<CatSort />} />
 				
                 {/* Custom 404 */}
                 <Route path="*" element={<NotFound />} />
