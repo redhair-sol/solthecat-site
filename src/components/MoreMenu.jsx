@@ -57,11 +57,13 @@ export default function MoreMenu({ isOpen, onClose }) {
 
   return (
     <>
-      {/* Backdrop — covers whole viewport including Topbar */}
+      {/* Backdrop — covers whole viewport including Topbar. Inline rgba fallback
+          ensures dimming even in browsers that ignore backdrop-blur (MI Browser). */}
       <div
-        className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[10000] transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[10000] transition-opacity duration-300 ${
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         onClick={onClose}
         aria-hidden="true"
       />

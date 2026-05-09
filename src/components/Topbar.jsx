@@ -35,7 +35,9 @@ export default function Topbar() {
   const navSizeClass = fonts.navSizeClassFor(language, "text-2xl");
 
   const linkClasses = ({ isActive }) =>
-    `px-4 py-2 no-underline transition-colors ${
+    // Tighter horizontal padding at lg: (1024-1279px) so all 9 nav items fit
+    // without clipping Home/Contact at the edges. Restored at xl: (1280px+).
+    `px-2 xl:px-4 py-2 no-underline transition-colors ${
       isActive
         ? "text-[#6a1b9a]"
         : "text-[#5b2b7b] hover:text-[#aa4dc8]"
@@ -59,11 +61,18 @@ export default function Topbar() {
         </div>
       </div>
 
-      {/* Desktop navigation (≥1024px — tablets in portrait use bottom tab bar) */}
-      <nav className="hidden lg:block w-full bg-[#f8bbd0]/90 backdrop-blur-md shadow-md py-0.1">
+      {/* Desktop navigation (≥1024px — tablets in portrait use bottom tab bar).
+          Solid bg + inline backgroundColor fallback for older browsers (e.g. MI
+          Browser) where `backdrop-blur` + opacity chain can render invisible.
+          space-x-3 at lg (1024-1279px) prevents 9 nav items from clipping
+          edges; restored to space-x-8 at xl: (1280px+). */}
+      <nav
+        className="hidden lg:block w-full bg-[#f8bbd0] shadow-md py-0.1"
+        style={{ backgroundColor: "#f8bbd0" }}
+      >
         <div className="max-w-screen-xl mx-auto px-4">
           <div
-            className={`flex justify-center space-x-8 ${navSizeClass} font-medium`}
+            className={`flex justify-center space-x-3 xl:space-x-8 ${navSizeClass} font-medium`}
             style={navStyle}
           >
             <NavLink to="/" className={linkClasses} end>{t.home}</NavLink>
