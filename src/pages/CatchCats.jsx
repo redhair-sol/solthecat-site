@@ -366,8 +366,9 @@ export default function CatchCats() {
   const [topEntries, setTopEntries] = useState([]); // top 3 for current level
   const [personalBest, setPersonalBest] = useState(0); // localStorage best
   const [submitName, setSubmitName] = useState(""); // input value
-  const [submitState, setSubmitState] = useState("idle"); // idle | submitting | submitted | skipped
+  const [submitState, setSubmitState] = useState("idle"); // idle | submitting | submitted | skipped | error
   const [submittedRank, setSubmittedRank] = useState(null);
+  const [submitError, setSubmitError] = useState(null);
 
   const playAreaRef = useRef(null);
   const basketRef = useRef(null);
@@ -518,14 +519,19 @@ export default function CatchCats() {
           name,
         }),
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        // Surface the server's own error message when available so we can
+        // diagnose KV binding / validation issues without dev tools.
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
       setSubmittedRank(data.rank || null);
       setTopEntries(data.top || []);
       setSubmitState("submitted");
     } catch (err) {
       console.error("Leaderboard submit failed:", err);
-      setSubmitState("idle");
+      setSubmitError(err.message || "Submit failed");
+      setSubmitState("error");
     }
   };
 
@@ -949,6 +955,19 @@ export default function CatchCats() {
               <PersonalBestText style={{ fontSize: "1rem" }}>
                 {t.submittedRank(submittedRank)}
               </PersonalBestText>
+            )}
+
+            {submitState === "error" && (
+              <>
+                <PersonalBestText
+                  style={{ color: "#c62828", fontSize: "0.9rem" }}
+                >
+                  ⚠️ {submitError || "Submit failed"}
+                </PersonalBestText>
+                <SmallButton onClick={() => setSubmitState("idle")}>
+                  Try again
+                </SmallButton>
+              </>
             )}
 
             <StartButton onClick={() => startGame(levelIdx)}>{t.retry}</StartButton>

@@ -1,4 +1,4 @@
-// functions/leaderboard.js
+// functions/leaderboard.js — v1
 //
 // Generic top-10 leaderboard backed by Cloudflare KV. Designed to support
 // every score-based game on the site — keys are namespaced by `{game}_{level}`
