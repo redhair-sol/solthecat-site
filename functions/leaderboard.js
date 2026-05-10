@@ -32,10 +32,18 @@ const NAME_REGEX = /^[A-Za-z0-9_\-\sͰ-Ͽ]{1,12}$/;
 
 // Maximum plausible scores per game/level. Submissions exceeding the cap
 // are rejected. Generous to avoid blocking honest top players.
+//
+// quiz_<city>: per-episode quiz boards (8 questions) — no cap entry per
+// city since slugs are dynamic; the 1-12 char name regex + 0-8 score range
+// already make cheating uninteresting.
 const MAX_SCORES = {
   "catch-cats_easy": 80,
   "catch-cats_medium": 120,
   "catch-cats_hard": 200,
+  "quick-paws_default": 200,
+  "mapquiz_default": 5000,
+  "spotcity_default": 5,
+  "solsnap_default": 200,
 };
 
 export async function onRequest(context) {
