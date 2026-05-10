@@ -45,6 +45,7 @@ const SpotTheCity = lazy(() => import("./pages/SpotTheCity.jsx"));
 const MapQuiz = lazy(() => import("./pages/MapQuiz.jsx"));
 const SolTap = lazy(() => import("./pages/SolTap.jsx"));
 const CatSort = lazy(() => import("./pages/CatSort.jsx"));
+const CatchCats = lazy(() => import("./pages/CatchCats.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -79,6 +80,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="games/mapquiz" element={<MapQuiz />} />
                 <Route path="games/quick-paws" element={<SolTap />} />
                 <Route path="games/cat-sort" element={<CatSort />} />
+                <Route path="games/catch-cats" element={<CatchCats />} />
 				
                 {/* Custom 404 */}
                 <Route path="*" element={<NotFound />} />

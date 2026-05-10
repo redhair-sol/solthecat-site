@@ -194,6 +194,13 @@ export default function Games() {
           description: "Sort cats into the nest. Pairs auto-rescue.",
           route: "/games/cat-sort"
         },
+        {
+          id: 12,
+          emoji: "🧺",
+          name: "Catch the Cats",
+          description: "Catch falling cats with your basket. 3 difficulty levels.",
+          route: "/games/catch-cats"
+        },
       ],
     },
     el: {
@@ -278,6 +285,13 @@ export default function Games() {
           name: "Ταξινόμηση Γατών",
           description: "Στείλε τις γάτες στη φωλιά. Τα ζευγάρια εξαφανίζονται αυτόματα.",
           route: "/games/cat-sort"
+        },
+        {
+          id: 12,
+          emoji: "🧺",
+          name: "Πιάσε τις Γάτες",
+          description: "Πιάσε τις γάτες που πέφτουν με το καλάθι. 3 επίπεδα δυσκολίας.",
+          route: "/games/catch-cats"
         },
       ],
     },
