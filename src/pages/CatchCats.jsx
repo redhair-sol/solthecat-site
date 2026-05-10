@@ -4,6 +4,16 @@
 // play area; player drags a basket left/right to catch them. Each missed
 // cat costs a life. 30-second round, 3 difficulty levels.
 //
+// Performance notes:
+// - Basket position is held in a ref + applied via direct DOM mutation, NOT
+//   React state. setState on every pointermove (~60fps) was triggering full
+//   re-renders that included every falling cat → noticeable lag on mobile.
+// - Collision is decided by a setTimeout fired at 88% of the fall duration
+//   (just before basket level). On hit the cat is removed from state →
+//   AnimatePresence plays an exit (looks like it lands in the basket). On
+//   miss the cat keeps animating down to 110% (off-screen) and we deduct a
+//   life when it reaches 100%.
+//
 // Controls:
 //   - Touch / pointer drag (mobile + desktop): move basket horizontally.
 //   - Arrow Left/Right (desktop): step the basket.
@@ -22,10 +32,10 @@ import { celebrate } from "../utils/celebrate.js";
 const ROUND_SECONDS = 30;
 const BASKET_HALF_WIDTH_PCT = 9; // collision tolerance — fairly forgiving
 const KEY_STEP_PCT = 6;
+const HIT_CHECK_FRACTION = 0.88; // % of fall time at which we test the catch
 
-// Cat emoji pool. 👑 reserved for bonus drops (worth 5 points).
 const CAT_EMOJIS = ["🐱", "🐈", "😺", "😸", "😻", "😼", "🙀"];
-const CROWN_CHANCE = 0.1; // 10% of drops are bonus crowns
+const CROWN_CHANCE = 0.1; // 10% bonus drops
 
 // Per-level tuning. fallSec lower = harder. spawnMs lower = more cats.
 const LEVELS = [
@@ -76,9 +86,12 @@ const PlayArea = styled.div`
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: 60vh;
+  /* dvh (dynamic viewport height) accounts for the mobile browser address
+     bar showing/hiding. 50dvh leaves room above for Topbar + Title + HUD
+     and below for the bottom tab bar without forcing the user to scroll. */
+  height: 50dvh;
   max-height: 480px;
-  min-height: 320px;
+  min-height: 260px;
   margin: 0 auto 1rem;
   background: linear-gradient(to bottom, #fff1f9 0%, #fce4ec 100%);
   border: 2px solid #c187d8;
@@ -103,8 +116,9 @@ const BasketWrap = styled.div`
   font-size: 3rem;
   transform: translateX(-50%);
   pointer-events: none;
-  transition: left 0.08s ease-out;
   filter: drop-shadow(0 -1px 3px rgba(0, 0, 0, 0.15));
+  /* No CSS transition — direct DOM updates from pointer events should be
+     instant. Any easing here adds perceptible latency on touch devices. */
 `;
 
 const StartButton = styled.button`
@@ -192,10 +206,10 @@ export default function CatchCats() {
   const [lives, setLives] = useState(LEVELS[0].lives);
   const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
   const [cats, setCats] = useState([]);
-  const [basketX, setBasketX] = useState(50);
 
   const playAreaRef = useRef(null);
-  const basketXRef = useRef(50); // synced with state, read in landed callback
+  const basketRef = useRef(null);
+  const basketXRef = useRef(50); // single source of truth for basket position
   const livesRef = useRef(0);
   const phaseRef = useRef("intro");
   const resultRef = useRef(null);
@@ -247,8 +261,7 @@ export default function CatchCats() {
     },
   }[language];
 
-  // Keep refs in sync with state so async timeouts/callbacks read fresh values.
-  useEffect(() => { basketXRef.current = basketX; }, [basketX]);
+  // Keep refs in sync with state so async timeouts read fresh values.
   useEffect(() => { livesRef.current = lives; }, [lives]);
   useEffect(() => { phaseRef.current = phase; }, [phase]);
 
@@ -261,14 +274,27 @@ export default function CatchCats() {
     }
   }, [phase]);
 
+  // Set basket position both in ref and on the DOM node directly.
+  // Avoids a React re-render cycle on every pointer move.
+  const setBasket = (xPct) => {
+    const clamped = Math.max(
+      BASKET_HALF_WIDTH_PCT,
+      Math.min(100 - BASKET_HALF_WIDTH_PCT, xPct)
+    );
+    basketXRef.current = clamped;
+    if (basketRef.current) {
+      basketRef.current.style.left = `${clamped}%`;
+    }
+  };
+
   const startGame = (idx = levelIdx) => {
     setLevelIdx(idx);
     setScore(0);
     setLives(LEVELS[idx].lives);
+    livesRef.current = LEVELS[idx].lives;
     setTimeLeft(ROUND_SECONDS);
     setCats([]);
-    setBasketX(50);
-    basketXRef.current = 50;
+    setBasket(50);
     setPhase("playing");
   };
 
@@ -288,41 +314,77 @@ export default function CatchCats() {
     return () => clearInterval(id);
   }, [phase]);
 
-  // Cat spawner.
+  // Cat spawner. Each spawn schedules its own collision + miss timeouts.
   useEffect(() => {
     if (phase !== "playing") return;
     const cfg = LEVELS[levelIdx];
-    const id = setInterval(() => {
+    const fallMs = cfg.fallSec * 1000;
+
+    const spawn = () => {
+      if (phaseRef.current !== "playing") return;
       const isCrown = Math.random() < CROWN_CHANCE;
       const emoji = isCrown
         ? "👑"
         : CAT_EMOJIS[Math.floor(Math.random() * CAT_EMOJIS.length)];
-      setCats((prev) => [
-        ...prev,
-        {
-          id: `${Date.now()}-${Math.random()}`,
-          emoji,
-          // Spawn x clamped to [10, 90] so cats land where the basket can reach.
-          x: 10 + Math.random() * 80,
-          isCrown,
-          points: isCrown ? 5 : 1,
-        },
-      ]);
-    }, cfg.spawnMs);
-    return () => clearInterval(id);
+      const cat = {
+        id: `${Date.now()}-${Math.random()}`,
+        emoji,
+        // Spawn x clamped to [10, 90] so cats land where the basket can reach.
+        x: 10 + Math.random() * 80,
+        isCrown,
+        points: isCrown ? 5 : 1,
+      };
+      setCats((prev) => [...prev, cat]);
+
+      // Collision check: fired just before the cat reaches the basket level.
+      // If the basket overlaps the cat's x → caught (cat disappears).
+      const hitTimer = setTimeout(() => {
+        if (phaseRef.current !== "playing") return;
+        const dist = Math.abs(cat.x - basketXRef.current);
+        if (dist <= BASKET_HALF_WIDTH_PCT) {
+          setScore((s) => s + cat.points);
+          setCats((prev) => prev.filter((c) => c.id !== cat.id));
+        }
+        // If miss, do nothing — cat keeps animating to 110% and the miss
+        // timeout below handles life deduction.
+      }, fallMs * HIT_CHECK_FRACTION);
+
+      // Miss check: fires when the cat would have reached the bottom.
+      // If the cat is still in state, it wasn't caught → -1 life.
+      const missTimer = setTimeout(() => {
+        if (phaseRef.current !== "playing") return;
+        setCats((prev) => {
+          const stillThere = prev.find((c) => c.id === cat.id);
+          if (!stillThere) return prev; // already caught and removed
+
+          const newLives = livesRef.current - 1;
+          livesRef.current = newLives;
+          setLives(newLives);
+          if (newLives <= 0) {
+            setPhase("lost");
+            return [];
+          }
+          return prev.filter((c) => c.id !== cat.id);
+        });
+      }, fallMs);
+
+      // Track timers for cleanup if the round ends mid-fall.
+      cat._timers = [hitTimer, missTimer];
+    };
+
+    const spawnInterval = setInterval(spawn, cfg.spawnMs);
+    return () => {
+      clearInterval(spawnInterval);
+      // Best-effort: pending hit/miss timers will no-op via phase guard.
+    };
   }, [phase, levelIdx]);
 
-  // Pointer / touch drag tracking on the play area.
+  // Pointer / touch tracking on the play area.
   const handlePointerMove = (e) => {
     if (phaseRef.current !== "playing") return;
     const rect = playAreaRef.current.getBoundingClientRect();
     const xPct = ((e.clientX - rect.left) / rect.width) * 100;
-    const clamped = Math.max(
-      BASKET_HALF_WIDTH_PCT,
-      Math.min(100 - BASKET_HALF_WIDTH_PCT, xPct)
-    );
-    basketXRef.current = clamped;
-    setBasketX(clamped);
+    setBasket(xPct);
   };
 
   // Keyboard arrow steps for desktop accessibility.
@@ -330,41 +392,19 @@ export default function CatchCats() {
     if (phase !== "playing") return;
     const onKey = (e) => {
       if (e.key === "ArrowLeft") {
-        setBasketX((x) =>
-          Math.max(BASKET_HALF_WIDTH_PCT, x - KEY_STEP_PCT)
-        );
+        setBasket(basketXRef.current - KEY_STEP_PCT);
       } else if (e.key === "ArrowRight") {
-        setBasketX((x) =>
-          Math.min(100 - BASKET_HALF_WIDTH_PCT, x + KEY_STEP_PCT)
-        );
+        setBasket(basketXRef.current + KEY_STEP_PCT);
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [phase]);
 
-  // Called when a cat's fall animation completes (it has reached the bottom).
-  const handleCatLanded = (cat) => {
-    if (phaseRef.current !== "playing") {
-      setCats((prev) => prev.filter((c) => c.id !== cat.id));
-      return;
-    }
-    const dist = Math.abs(cat.x - basketXRef.current);
-    if (dist <= BASKET_HALF_WIDTH_PCT) {
-      setScore((s) => s + cat.points);
-    } else {
-      const newLives = livesRef.current - 1;
-      livesRef.current = newLives;
-      setLives(newLives);
-      if (newLives <= 0) {
-        // Out of lives → end immediately. Clear pending cats.
-        setPhase("lost");
-        setCats([]);
-        return;
-      }
-    }
-    setCats((prev) => prev.filter((c) => c.id !== cat.id));
-  };
+  // Confetti on a respectable survive score.
+  useEffect(() => {
+    if (phase === "won" && score >= 15) celebrate();
+  }, [phase, score]);
 
   return (
     <>
@@ -420,18 +460,18 @@ export default function CatchCats() {
                     key={cat.id}
                     style={{ left: `${cat.x}%` }}
                     initial={{ top: "-12%" }}
-                    animate={{ top: "92%" }}
+                    animate={{ top: "110%" }}
+                    exit={{ scale: 0.4, opacity: 0 }}
                     transition={{
                       duration: LEVELS[levelIdx].fallSec,
                       ease: "linear",
                     }}
-                    onAnimationComplete={() => handleCatLanded(cat)}
                   >
                     {cat.emoji}
                   </FallingCat>
                 ))}
               </AnimatePresence>
-              <BasketWrap style={{ left: `${basketX}%` }}>🧺</BasketWrap>
+              <BasketWrap ref={basketRef} style={{ left: "50%" }}>🧺</BasketWrap>
             </PlayArea>
           </>
         )}
@@ -442,9 +482,6 @@ export default function CatchCats() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            onAnimationComplete={() => {
-              if (score >= 15) celebrate();
-            }}
           >
             <ResultTitle>{t.wonTitle}</ResultTitle>
             <ResultMessage>{t.wonMessage(score)}</ResultMessage>
