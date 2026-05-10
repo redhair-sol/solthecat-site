@@ -97,7 +97,15 @@ const PlayArea = styled.div`
   max-height: 480px;
   min-height: 260px;
   margin: 0 auto 1rem;
-  background: linear-gradient(to bottom, #fff1f9 0%, #fce4ec 100%);
+  /* If a per-round episode image is set, layer a translucent pink overlay
+     on top so falling cats stay readable; otherwise fall back to the
+     plain pink gradient. */
+  background-image: ${({ $bg }) =>
+    $bg
+      ? `linear-gradient(rgba(255, 243, 248, 0.55), rgba(252, 228, 236, 0.55)), url("${$bg}")`
+      : `linear-gradient(to bottom, #fff1f9 0%, #fce4ec 100%)`};
+  background-size: cover;
+  background-position: center;
   border: 2px solid #c187d8;
   border-radius: 1rem;
   overflow: hidden;
@@ -145,6 +153,35 @@ const ScorePopup = styled(motion.div)`
   font-size: 1.6rem;
   text-shadow: 0 1px 3px white, 0 0 8px white;
   transform: translateX(-50%);
+`;
+
+const SoundToggle = styled.button`
+  background: #ffffffcc;
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+  line-height: 1;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+const TitleRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 `;
 
 const StartButton = styled.button`
@@ -233,6 +270,12 @@ export default function CatchCats() {
   const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
   const [cats, setCats] = useState([]);
   const [popups, setPopups] = useState([]); // floating "+N" effects
+  const [episodes, setEpisodes] = useState([]); // for random bg image
+  const [bgImage, setBgImage] = useState(null); // current round's bg
+  const [soundOn, setSoundOn] = useState(() => {
+    // Persist across visits. Default ON (=== anything but "off").
+    return localStorage.getItem("solCatchSound") !== "off";
+  });
 
   const playAreaRef = useRef(null);
   const basketRef = useRef(null);
@@ -242,6 +285,7 @@ export default function CatchCats() {
   const resultRef = useRef(null);
   const caughtIdsRef = useRef(new Set()); // dedupe across multiple hit checks
   const audioCtxRef = useRef(null); // lazy WebAudio context
+  const soundOnRef = useRef(soundOn); // mirrored for fresh reads in async callbacks
 
   const t = {
     en: {
@@ -293,6 +337,27 @@ export default function CatchCats() {
   // Keep refs in sync with state so async timeouts read fresh values.
   useEffect(() => { livesRef.current = lives; }, [lives]);
   useEffect(() => { phaseRef.current = phase; }, [phase]);
+  useEffect(() => { soundOnRef.current = soundOn; }, [soundOn]);
+
+  // Load episode list (used for picking a random bg image per round).
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}episodes.json`)
+      .then((r) => r.json())
+      .then((data) => {
+        setEpisodes(data.filter((ep) => ep.visible));
+      })
+      .catch(() => {
+        // Non-fatal — game still works, just falls back to gradient bg.
+      });
+  }, []);
+
+  const toggleSound = () => {
+    setSoundOn((s) => {
+      const next = !s;
+      localStorage.setItem("solCatchSound", next ? "on" : "off");
+      return next;
+    });
+  };
 
   // Auto-scroll to result card on round end.
   useEffect(() => {
@@ -327,6 +392,7 @@ export default function CatchCats() {
     return audioCtxRef.current;
   };
   const playTone = (freq, durationMs, type = "sine", volume = 0.15) => {
+    if (!soundOnRef.current) return; // muted via toggle
     const ctx = getAudioCtx();
     if (!ctx) return;
     const osc = ctx.createOscillator();
@@ -382,6 +448,15 @@ export default function CatchCats() {
     setPopups([]);
     caughtIdsRef.current = new Set();
     setBasket(50);
+    // Pick a random episode photo for this round's background. Falls back
+    // to the gradient if episodes haven't loaded yet (shouldn't happen on
+    // a normal connection but safer).
+    if (episodes.length > 0) {
+      const random = episodes[Math.floor(Math.random() * episodes.length)];
+      setBgImage(`${import.meta.env.BASE_URL}${random.image}`);
+    } else {
+      setBgImage(null);
+    }
     setPhase("playing");
   };
 
@@ -521,7 +596,16 @@ export default function CatchCats() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Title>{t.title}</Title>
+        <TitleRow>
+          <Title style={{ marginBottom: 0 }}>{t.title}</Title>
+          <SoundToggle
+            onClick={toggleSound}
+            aria-label={soundOn ? "Mute sound" : "Unmute sound"}
+            title={soundOn ? "Mute sound" : "Unmute sound"}
+          >
+            {soundOn ? "🔊" : "🔇"}
+          </SoundToggle>
+        </TitleRow>
 
         {phase === "intro" && (
           <>
@@ -553,6 +637,7 @@ export default function CatchCats() {
             </HUDRow>
             <PlayArea
               ref={playAreaRef}
+              $bg={bgImage}
               onPointerMove={handlePointerMove}
               onPointerDown={handlePointerMove}
             >
