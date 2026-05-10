@@ -30,9 +30,13 @@ import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
 
 const ROUND_SECONDS = 30;
-const BASKET_HALF_WIDTH_PCT = 9; // collision tolerance — fairly forgiving
+const BASKET_HALF_WIDTH_PCT = 11; // collision tolerance — slightly forgiving
 const KEY_STEP_PCT = 6;
-const HIT_CHECK_FRACTION = 0.88; // % of fall time at which we test the catch
+// Three collision check moments during the basket-overlap window.
+// At fallSec * 0.80 the cat visually reaches the basket top; by 0.88 it
+// is at the middle. Any hit in this window counts — gives the player a
+// proper window to catch instead of one strict snapshot.
+const HIT_CHECK_FRACTIONS = [0.80, 0.84, 0.88];
 
 const CAT_EMOJIS = ["🐱", "🐈", "😺", "😸", "😻", "😼", "🙀"];
 const CROWN_CHANCE = 0.1; // 10% bonus drops
@@ -117,8 +121,30 @@ const BasketWrap = styled.div`
   transform: translateX(-50%);
   pointer-events: none;
   filter: drop-shadow(0 -1px 3px rgba(0, 0, 0, 0.15));
-  /* No CSS transition — direct DOM updates from pointer events should be
-     instant. Any easing here adds perceptible latency on touch devices. */
+  transform-origin: 50% 100%;
+  /* No CSS transition on left — direct DOM updates from pointer events
+     should be instant. Any easing here adds perceptible latency on touch. */
+
+  &.bounce {
+    animation: basket-bounce 0.32s ease-out;
+  }
+
+  @keyframes basket-bounce {
+    0%   { transform: translateX(-50%) scale(1); }
+    35%  { transform: translateX(-50%) scale(1.28); }
+    70%  { transform: translateX(-50%) scale(0.94); }
+    100% { transform: translateX(-50%) scale(1); }
+  }
+`;
+
+const ScorePopup = styled(motion.div)`
+  position: absolute;
+  pointer-events: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-shadow: 0 1px 3px white, 0 0 8px white;
+  transform: translateX(-50%);
 `;
 
 const StartButton = styled.button`
@@ -206,6 +232,7 @@ export default function CatchCats() {
   const [lives, setLives] = useState(LEVELS[0].lives);
   const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
   const [cats, setCats] = useState([]);
+  const [popups, setPopups] = useState([]); // floating "+N" effects
 
   const playAreaRef = useRef(null);
   const basketRef = useRef(null);
@@ -213,6 +240,8 @@ export default function CatchCats() {
   const livesRef = useRef(0);
   const phaseRef = useRef("intro");
   const resultRef = useRef(null);
+  const caughtIdsRef = useRef(new Set()); // dedupe across multiple hit checks
+  const audioCtxRef = useRef(null); // lazy WebAudio context
 
   const t = {
     en: {
@@ -287,6 +316,62 @@ export default function CatchCats() {
     }
   };
 
+  // Lightweight beep/boop SFX via Web Audio API. Created lazily on first
+  // interaction (mobile browsers block AudioContext until a user gesture).
+  // Zero asset cost — synthesised tones, no audio files.
+  const getAudioCtx = () => {
+    if (audioCtxRef.current) return audioCtxRef.current;
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return null;
+    audioCtxRef.current = new Ctx();
+    return audioCtxRef.current;
+  };
+  const playTone = (freq, durationMs, type = "sine", volume = 0.15) => {
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = type;
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(volume, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + durationMs / 1000);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + durationMs / 1000);
+  };
+  const sfxCatch = (isCrown) => {
+    if (isCrown) {
+      // Crown catch: rising arpeggio-ish double note
+      playTone(660, 90, "triangle", 0.18);
+      setTimeout(() => playTone(990, 140, "triangle", 0.18), 80);
+    } else {
+      playTone(720, 110, "sine", 0.14);
+    }
+  };
+  const sfxMiss = () => playTone(200, 180, "sawtooth", 0.10);
+  const sfxGameOver = () => {
+    playTone(330, 180, "sine", 0.16);
+    setTimeout(() => playTone(247, 240, "sine", 0.16), 160);
+    setTimeout(() => playTone(196, 320, "sine", 0.16), 380);
+  };
+
+  const triggerBasketBounce = () => {
+    if (!basketRef.current) return;
+    basketRef.current.classList.remove("bounce");
+    // Force reflow so the animation can be re-triggered on rapid catches.
+    void basketRef.current.offsetWidth;
+    basketRef.current.classList.add("bounce");
+  };
+
+  const pushPopup = (x, points, isCrown) => {
+    const id = `popup-${Date.now()}-${Math.random()}`;
+    setPopups((prev) => [...prev, { id, x, points, isCrown }]);
+    setTimeout(() => {
+      setPopups((prev) => prev.filter((p) => p.id !== id));
+    }, 700);
+  };
+
   const startGame = (idx = levelIdx) => {
     setLevelIdx(idx);
     setScore(0);
@@ -294,6 +379,8 @@ export default function CatchCats() {
     livesRef.current = LEVELS[idx].lives;
     setTimeLeft(ROUND_SECONDS);
     setCats([]);
+    setPopups([]);
+    caughtIdsRef.current = new Set();
     setBasket(50);
     setPhase("playing");
   };
@@ -336,40 +423,44 @@ export default function CatchCats() {
       };
       setCats((prev) => [...prev, cat]);
 
-      // Collision check: fired just before the cat reaches the basket level.
-      // If the basket overlaps the cat's x → caught (cat disappears).
-      const hitTimer = setTimeout(() => {
-        if (phaseRef.current !== "playing") return;
-        const dist = Math.abs(cat.x - basketXRef.current);
-        if (dist <= BASKET_HALF_WIDTH_PCT) {
-          setScore((s) => s + cat.points);
-          setCats((prev) => prev.filter((c) => c.id !== cat.id));
-        }
-        // If miss, do nothing — cat keeps animating to 110% and the miss
-        // timeout below handles life deduction.
-      }, fallMs * HIT_CHECK_FRACTION);
+      // Three collision checks during the basket-overlap window. Any hit
+      // counts and dedupes via caughtIdsRef so the cat only scores once.
+      HIT_CHECK_FRACTIONS.forEach((frac) => {
+        setTimeout(() => {
+          if (phaseRef.current !== "playing") return;
+          if (caughtIdsRef.current.has(cat.id)) return; // already caught
+          const dist = Math.abs(cat.x - basketXRef.current);
+          if (dist <= BASKET_HALF_WIDTH_PCT) {
+            caughtIdsRef.current.add(cat.id);
+            setScore((s) => s + cat.points);
+            pushPopup(cat.x, cat.points, cat.isCrown);
+            triggerBasketBounce();
+            sfxCatch(cat.isCrown);
+            setCats((prev) => prev.filter((c) => c.id !== cat.id));
+          }
+        }, fallMs * frac);
+      });
 
       // Miss check: fires when the cat would have reached the bottom.
-      // If the cat is still in state, it wasn't caught → -1 life.
-      const missTimer = setTimeout(() => {
+      // Skip if already caught.
+      setTimeout(() => {
         if (phaseRef.current !== "playing") return;
+        if (caughtIdsRef.current.has(cat.id)) return;
         setCats((prev) => {
           const stillThere = prev.find((c) => c.id === cat.id);
           if (!stillThere) return prev; // already caught and removed
-
           const newLives = livesRef.current - 1;
           livesRef.current = newLives;
           setLives(newLives);
           if (newLives <= 0) {
+            sfxGameOver();
             setPhase("lost");
             return [];
           }
+          sfxMiss();
           return prev.filter((c) => c.id !== cat.id);
         });
       }, fallMs);
-
-      // Track timers for cleanup if the round ends mid-fall.
-      cat._timers = [hitTimer, missTimer];
     };
 
     const spawnInterval = setInterval(spawn, cfg.spawnMs);
@@ -472,6 +563,22 @@ export default function CatchCats() {
                 ))}
               </AnimatePresence>
               <BasketWrap ref={basketRef} style={{ left: "50%" }}>🧺</BasketWrap>
+              <AnimatePresence>
+                {popups.map((p) => (
+                  <ScorePopup
+                    key={p.id}
+                    style={{
+                      left: `${p.x}%`,
+                      color: p.isCrown ? "#ff9800" : "#6a1b9a",
+                    }}
+                    initial={{ opacity: 1, top: "78%", scale: 0.7 }}
+                    animate={{ opacity: 0, top: "55%", scale: 1.2 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                  >
+                    +{p.points}
+                  </ScorePopup>
+                ))}
+              </AnimatePresence>
             </PlayArea>
           </>
         )}
