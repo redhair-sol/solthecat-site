@@ -436,7 +436,18 @@ export default function CatchCats() {
             pushPopup(cat.x, cat.points, cat.isCrown);
             triggerBasketBounce();
             sfxCatch(cat.isCrown);
-            setCats((prev) => prev.filter((c) => c.id !== cat.id));
+            // Mark the cat as caught instead of removing it. The render
+            // switches its animate target (snap to basket level, scale
+            // down, fade) with a fast transition — prevents the cat from
+            // continuing the long fall animation during AnimatePresence
+            // exit (which had inherited the multi-second fall transition).
+            setCats((prev) =>
+              prev.map((c) => (c.id === cat.id ? { ...c, caught: true } : c))
+            );
+            // Remove after the catch animation finishes.
+            setTimeout(() => {
+              setCats((prev) => prev.filter((c) => c.id !== cat.id));
+            }, 240);
           }
         }, fallMs * frac);
       });
@@ -545,23 +556,25 @@ export default function CatchCats() {
               onPointerMove={handlePointerMove}
               onPointerDown={handlePointerMove}
             >
-              <AnimatePresence>
-                {cats.map((cat) => (
-                  <FallingCat
-                    key={cat.id}
-                    style={{ left: `${cat.x}%` }}
-                    initial={{ top: "-12%" }}
-                    animate={{ top: "110%" }}
-                    exit={{ scale: 0.4, opacity: 0 }}
-                    transition={{
-                      duration: LEVELS[levelIdx].fallSec,
-                      ease: "linear",
-                    }}
-                  >
-                    {cat.emoji}
-                  </FallingCat>
-                ))}
-              </AnimatePresence>
+              {cats.map((cat) => (
+                <FallingCat
+                  key={cat.id}
+                  style={{ left: `${cat.x}%` }}
+                  initial={{ top: "-12%" }}
+                  animate={
+                    cat.caught
+                      ? { top: "84%", scale: 0.15, opacity: 0 }
+                      : { top: "110%" }
+                  }
+                  transition={
+                    cat.caught
+                      ? { duration: 0.24, ease: "easeOut" }
+                      : { duration: LEVELS[levelIdx].fallSec, ease: "linear" }
+                  }
+                >
+                  {cat.emoji}
+                </FallingCat>
+              ))}
               <BasketWrap ref={basketRef} style={{ left: "50%" }}>🧺</BasketWrap>
               <AnimatePresence>
                 {popups.map((p) => (
