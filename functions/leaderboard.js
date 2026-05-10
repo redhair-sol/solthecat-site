@@ -44,6 +44,8 @@ const MAX_SCORES = {
   "mapquiz_default": 5000,
   "spotcity_default": 5,
   "solsnap_default": 200,
+  // Pawprints score = seconds left when matched all pairs (60s round).
+  "pawprints_default": 60,
 };
 
 export async function onRequest(context) {
