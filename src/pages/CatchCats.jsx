@@ -184,6 +184,92 @@ const TitleRow = styled.div`
   margin-bottom: 0.5rem;
 `;
 
+const Top3Box = styled.div`
+  background: #ffffffcc;
+  border: 2px solid #f8bbd0;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem auto;
+  max-width: 320px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+`;
+
+const Top3Title = styled.p`
+  font-weight: 700;
+  color: #6a1b9a;
+  margin: 0 0 0.4rem;
+  text-align: center;
+  font-size: 0.95rem;
+`;
+
+const Top3Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  padding: 0.15rem 0;
+`;
+
+const Top3Empty = styled.p`
+  color: #5b2b7b;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+`;
+
+const PersonalBestText = styled.p`
+  color: #aa4dc8;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0.4rem 0;
+`;
+
+const NameInputRow = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+`;
+
+const NameInput = styled.input`
+  padding: 0.6rem 1rem;
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  outline: none;
+  width: 12ch;
+
+  &:focus {
+    border-color: #aa4dc8;
+    box-shadow: 0 0 0 3px rgba(170, 77, 200, 0.15);
+  }
+`;
+
+const SmallButton = styled.button`
+  padding: 0.6rem 1.2rem;
+  background-color: ${({ $secondary }) => ($secondary ? "#ffffff" : "#c187d8")};
+  color: ${({ $secondary }) => ($secondary ? "#6a1b9a" : "white")};
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+`;
+
 const StartButton = styled.button`
   padding: 0.8rem 1.5rem;
   background-color: #c187d8;
@@ -273,9 +359,15 @@ export default function CatchCats() {
   const [episodes, setEpisodes] = useState([]); // for random bg image
   const [bgImage, setBgImage] = useState(null); // current round's bg
   const [soundOn, setSoundOn] = useState(() => {
-    // Persist across visits. Default ON (=== anything but "off").
     return localStorage.getItem("solCatchSound") !== "off";
   });
+
+  // Leaderboard state
+  const [topEntries, setTopEntries] = useState([]); // top 3 for current level
+  const [personalBest, setPersonalBest] = useState(0); // localStorage best
+  const [submitName, setSubmitName] = useState(""); // input value
+  const [submitState, setSubmitState] = useState("idle"); // idle | submitting | submitted | skipped
+  const [submittedRank, setSubmittedRank] = useState(null);
 
   const playAreaRef = useRef(null);
   const basketRef = useRef(null);
@@ -309,6 +401,16 @@ export default function CatchCats() {
       retry: "🔁 Play again",
       changeLevel: "Choose level",
       back: "← Back to games",
+      personalBest: (s) => `🏆 Your best: ${s}`,
+      noBest: "🏆 No personal record yet",
+      top3Title: "🏆 Top 3",
+      top3Empty: "No scores yet — be the first!",
+      newRecord: "🎉 NEW PERSONAL BEST!",
+      qualifies: "🌟 You made the leaderboard!",
+      enterName: "Enter your name:",
+      submit: "Submit",
+      skip: "Skip",
+      submittedRank: (r) => `You're #${r} on the board!`,
     },
     el: {
       pageTitle: "Πιάσε τις Γάτες – SolTheCat",
@@ -331,6 +433,16 @@ export default function CatchCats() {
       retry: "🔁 Παίξε ξανά",
       changeLevel: "Επιλογή επιπέδου",
       back: "← Επιστροφή στα παιχνίδια",
+      personalBest: (s) => `🏆 Καλύτερο σου: ${s}`,
+      noBest: "🏆 Κανένα ρεκόρ ακόμη",
+      top3Title: "🏆 Top 3",
+      top3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
+      newRecord: "🎉 ΝΕΟ ΠΡΟΣΩΠΙΚΟ ΡΕΚΟΡ!",
+      qualifies: "🌟 Μπήκες στη βαθμολογία!",
+      enterName: "Όνομα:",
+      submit: "Καταχώρηση",
+      skip: "Παράλειψη",
+      submittedRank: (r) => `Είσαι #${r} στη βαθμολογία!`,
     },
   }[language];
 
@@ -350,6 +462,74 @@ export default function CatchCats() {
         // Non-fatal — game still works, just falls back to gradient bg.
       });
   }, []);
+
+  // Fetch top 3 + load personal best whenever the user picks a level.
+  useEffect(() => {
+    const levelId = LEVELS[levelIdx].id;
+    setPersonalBest(
+      parseInt(localStorage.getItem(`catchCats_best_${levelId}`) || "0", 10)
+    );
+    setTopEntries([]);
+    fetch(`/leaderboard?game=catch-cats&level=${levelId}`)
+      .then((r) => (r.ok ? r.json() : { entries: [] }))
+      .then((data) => setTopEntries(data.entries || []))
+      .catch(() => setTopEntries([])); // backend unavailable → silent fallback
+  }, [levelIdx]);
+
+  // After every "won" or "lost" phase, update personal best and decide
+  // whether the user qualifies for the global leaderboard.
+  useEffect(() => {
+    if (phase !== "won" && phase !== "lost") return;
+    const levelId = LEVELS[levelIdx].id;
+    const prevBest = parseInt(
+      localStorage.getItem(`catchCats_best_${levelId}`) || "0",
+      10
+    );
+    if (score > prevBest) {
+      localStorage.setItem(`catchCats_best_${levelId}`, String(score));
+      setPersonalBest(score);
+    }
+    setSubmitName("");
+    setSubmitState("idle");
+    setSubmittedRank(null);
+  }, [phase, levelIdx, score]);
+
+  // True if the just-finished score qualifies for the visible top 3.
+  // If the board has < 3 entries, any score > 0 qualifies. Otherwise score
+  // must beat the current 3rd place.
+  const qualifiesForLeaderboard = () => {
+    if (score <= 0) return false;
+    if (topEntries.length < 3) return true;
+    return score > topEntries[2].score;
+  };
+
+  const submitToLeaderboard = async () => {
+    const name = submitName.trim();
+    if (!name) return;
+    setSubmitState("submitting");
+    try {
+      const res = await fetch("/leaderboard", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          game: "catch-cats",
+          level: LEVELS[levelIdx].id,
+          score,
+          name,
+        }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      setSubmittedRank(data.rank || null);
+      setTopEntries(data.top || []);
+      setSubmitState("submitted");
+    } catch (err) {
+      console.error("Leaderboard submit failed:", err);
+      setSubmitState("idle");
+    }
+  };
+
+  const skipSubmit = () => setSubmitState("skipped");
 
   const toggleSound = () => {
     setSoundOn((s) => {
@@ -624,6 +804,26 @@ export default function CatchCats() {
                 </LevelButton>
               ))}
             </LevelGrid>
+
+            <Top3Box>
+              <Top3Title>{t.top3Title}</Top3Title>
+              {topEntries.length === 0 ? (
+                <Top3Empty>{t.top3Empty}</Top3Empty>
+              ) : (
+                topEntries.map((e, i) => (
+                  <Top3Row key={`${e.name}-${e.score}-${i}`}>
+                    <span>
+                      {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                    </span>
+                    <span><strong>{e.score}</strong></span>
+                  </Top3Row>
+                ))
+              )}
+              <PersonalBestText>
+                {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
+              </PersonalBestText>
+            </Top3Box>
+
             <StartButton onClick={() => startGame(levelIdx)}>{t.start}</StartButton>
           </>
         )}
@@ -681,31 +881,76 @@ export default function CatchCats() {
           </>
         )}
 
-        {phase === "won" && (
+        {(phase === "won" || phase === "lost") && (
           <ResultCard
             ref={resultRef}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <ResultTitle>{t.wonTitle}</ResultTitle>
-            <ResultMessage>{t.wonMessage(score)}</ResultMessage>
-            <StartButton onClick={() => startGame(levelIdx)}>{t.retry}</StartButton>
-            <StartButton onClick={() => setPhase("intro")}>
-              {t.changeLevel}
-            </StartButton>
-          </ResultCard>
-        )}
+            <ResultTitle>
+              {phase === "won" ? t.wonTitle : t.lostTitle}
+            </ResultTitle>
+            <ResultMessage>
+              {phase === "won" ? t.wonMessage(score) : t.lostMessage(score)}
+            </ResultMessage>
 
-        {phase === "lost" && (
-          <ResultCard
-            ref={resultRef}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <ResultTitle>{t.lostTitle}</ResultTitle>
-            <ResultMessage>{t.lostMessage(score)}</ResultMessage>
+            {/* New record banner if personal best was just beaten. */}
+            {score > 0 && score >= personalBest && (
+              <PersonalBestText style={{ fontSize: "1rem" }}>
+                {t.newRecord}
+              </PersonalBestText>
+            )}
+
+            {/* Leaderboard submission UI — only if score qualifies and user
+                hasn't already submitted/skipped. */}
+            {qualifiesForLeaderboard() && submitState === "idle" && (
+              <>
+                <PersonalBestText>{t.qualifies}</PersonalBestText>
+                <p
+                  style={{
+                    color: "#5b2b7b",
+                    fontSize: "0.85rem",
+                    margin: "0.3rem 0",
+                  }}
+                >
+                  {t.enterName}
+                </p>
+                <NameInputRow>
+                  <NameInput
+                    type="text"
+                    maxLength={12}
+                    value={submitName}
+                    onChange={(e) => setSubmitName(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && submitName.trim()) submitToLeaderboard();
+                    }}
+                    placeholder="Sol"
+                    autoFocus
+                  />
+                  <SmallButton
+                    onClick={submitToLeaderboard}
+                    disabled={!submitName.trim()}
+                  >
+                    {t.submit}
+                  </SmallButton>
+                  <SmallButton $secondary onClick={skipSubmit}>
+                    {t.skip}
+                  </SmallButton>
+                </NameInputRow>
+              </>
+            )}
+
+            {submitState === "submitting" && (
+              <PersonalBestText>...</PersonalBestText>
+            )}
+
+            {submitState === "submitted" && submittedRank && (
+              <PersonalBestText style={{ fontSize: "1rem" }}>
+                {t.submittedRank(submittedRank)}
+              </PersonalBestText>
+            )}
+
             <StartButton onClick={() => startGame(levelIdx)}>{t.retry}</StartButton>
             <StartButton onClick={() => setPhase("intro")}>
               {t.changeLevel}
