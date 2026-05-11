@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const ROUNDS = 5;
 const MAX_PER_ROUND = 1000;
@@ -503,6 +504,7 @@ export default function MapQuiz() {
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
+    markDailyDoneIfMatches("mapquiz", "default");
   }, [phase, score]);
 
   const qualifiesForLeaderboard = () => {

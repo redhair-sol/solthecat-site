@@ -14,6 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const NEST_SIZE = 4;
 
@@ -431,6 +432,7 @@ export default function CatSort() {
       localStorage.setItem("catSort_best", String(score));
       setPersonalBest(score);
     }
+    markDailyDoneIfMatches("cat-sort", "default");
   }, [phase, startTime]);
 
   const qualifiesForLeaderboard = () => {

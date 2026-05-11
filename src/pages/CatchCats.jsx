@@ -28,6 +28,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const ROUND_SECONDS = 30;
 const BASKET_HALF_WIDTH_PCT = 11; // collision tolerance — slightly forgiving
@@ -493,6 +494,7 @@ export default function CatchCats() {
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
+    markDailyDoneIfMatches("catch-cats", levelId);
   }, [phase, levelIdx, score]);
 
   // True if the just-finished score qualifies for the visible top 3.

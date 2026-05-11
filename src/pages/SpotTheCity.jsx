@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const ROUNDS = 5;
 
@@ -438,6 +439,7 @@ export default function SpotTheCity() {
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
+    markDailyDoneIfMatches("spotcity", "default");
   }, [phase, score]);
 
   const qualifiesForLeaderboard = () => {

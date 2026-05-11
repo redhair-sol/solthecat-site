@@ -14,6 +14,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const ROUND_SECONDS = 30;
 const GRID_ROWS = 4;
@@ -356,6 +357,7 @@ export default function SolTap() {
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
+    markDailyDoneIfMatches("quick-paws", "default");
   }, [phase, score]);
 
   const qualifiesForLeaderboard = () => {

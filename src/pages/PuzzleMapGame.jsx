@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -416,6 +417,7 @@ export default function PuzzleMapGame() {
           localStorage.setItem("puzzleMap_best", String(score));
           setPersonalBest(score);
         }
+        markDailyDoneIfMatches("puzzlemap", "default");
         celebrate();
       }
     }

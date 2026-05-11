@@ -7,6 +7,7 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import SolButton from "../components/SolButton.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 // ✅ Styled Components
 const Title = styled.h1`
@@ -416,6 +417,7 @@ export default function RoyalPuzzleGame() {
           localStorage.setItem("royalPuzzle_best", String(score));
           setPersonalBest(score);
         }
+        markDailyDoneIfMatches("royalpuzzle", "default");
       }
     }
   };

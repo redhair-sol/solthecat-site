@@ -7,6 +7,12 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import SolButton from "../components/SolButton.jsx";
 import useStreakBadges from "../hooks/useStreakBadges";
+import {
+  getTodayChallenge,
+  getPersonalBest,
+  isDailyDoneToday,
+  getDailyStreak,
+} from "../utils/dailyChallenge.js";
 
 // ----- LIVE BADGE -----
 const LiveBadge = styled.div`
@@ -277,6 +283,31 @@ const ChallengeCTA = styled(Link)`
   font-weight: bold;
 `;
 
+const ChallengeStatusRow = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 1rem;
+`;
+
+const ChallengePill = styled.span`
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: ${({ $variant }) =>
+    $variant === "done" ? "#a5d6a7" :
+    $variant === "streak" ? "#ffe0b2" :
+    "#f3e5f5"};
+  color: ${({ $variant }) =>
+    $variant === "done" ? "#1b5e20" :
+    $variant === "streak" ? "#bf360c" :
+    "#6a1b9a"};
+`;
+
 const InstagramLink = styled.a`
   display: inline-flex;
   align-items: center;
@@ -296,33 +327,8 @@ const RelativePageContainer = styled(PageContainer)`
   position: relative;
 `;
 
-// Daily Challenge rotation pool. One entry per day, picked deterministically
-// from the date so every visitor on the same day sees the same challenge.
-// `game` + `level` match the leaderboard endpoint's `{game}_{level}` key
-// (functions/leaderboard.js).
-const DAILY_CHALLENGES = [
-  { game: "catch-cats", level: "easy",    route: "/games/catch-cats",  emoji: "🧺", titleEn: "Catch the Cats — Easy",    titleEl: "Πιάσε τις Γάτες — Εύκολο" },
-  { game: "catch-cats", level: "medium",  route: "/games/catch-cats",  emoji: "🧺", titleEn: "Catch the Cats — Medium",  titleEl: "Πιάσε τις Γάτες — Μέτριο" },
-  { game: "catch-cats", level: "hard",    route: "/games/catch-cats",  emoji: "🧺", titleEn: "Catch the Cats — Hard",    titleEl: "Πιάσε τις Γάτες — Δύσκολο" },
-  { game: "quick-paws", level: "default", route: "/games/quick-paws",  emoji: "⚡", titleEn: "Quick Paws",               titleEl: "Γρήγορες Πατούσες" },
-  { game: "mapquiz",    level: "default", route: "/games/mapquiz",     emoji: "🌍", titleEn: "Where in the World?",      titleEl: "Πού στον Κόσμο;" },
-  { game: "spotcity",   level: "default", route: "/games/spotcity",    emoji: "🔍", titleEn: "Spot the City",            titleEl: "Βρες την Πόλη" },
-  { game: "pawprints",  level: "default", route: "/games/pawprints",   emoji: "🐾", titleEn: "Pawprints Memory",         titleEl: "Μνήμη με Πατουσάκια" },
-  { game: "puzzlemap",  level: "default", route: "/games/puzzlemap",   emoji: "🧩", titleEn: "SOL's Puzzle Map",         titleEl: "Παζλ Χάρτης της Sol" },
-  { game: "royalpuzzle",level: "default", route: "/games/royalpuzzle", emoji: "🧩", titleEn: "Royal Puzzle",             titleEl: "Βασιλικό Παζλ" },
-  { game: "cat-sort",   level: "default", route: "/games/cat-sort",    emoji: "🏠", titleEn: "Cat Sort",                 titleEl: "Ταξινόμηση Γατών" },
-  { game: "solsnap",    level: "default", route: "/games/solsnap",     emoji: "📸", titleEn: "SolSnap",                  titleEl: "SolSnap" },
-];
-
-// Pick the daily challenge index from yyyy-mm-dd, hashed so consecutive days
-// don't trivially produce neighbouring entries (avoids visible patterns).
-function pickDailyChallenge(isoDate) {
-  let h = 0;
-  for (let i = 0; i < isoDate.length; i++) {
-    h = (h * 31 + isoDate.charCodeAt(i)) >>> 0;
-  }
-  return DAILY_CHALLENGES[h % DAILY_CHALLENGES.length];
-}
+// Daily Challenge state (rotation pool, picker, streak helpers) lives in
+// utils/dailyChallenge.js — shared with the games that mark completion.
 
 export default function Home() {
   const { language, setLanguage } = useLanguage();
@@ -335,9 +341,11 @@ export default function Home() {
   const [isLive, setIsLive] = useState(false);
 
   // Daily challenge — picked from today's date, then top 3 fetched live.
-  const todayIso = new Date().toISOString().slice(0, 10);
-  const dailyChallenge = pickDailyChallenge(todayIso);
+  const dailyChallenge = getTodayChallenge();
   const [challengeTop3, setChallengeTop3] = useState([]);
+  const [challengePB, setChallengePB] = useState(0);
+  const [challengeDone, setChallengeDone] = useState(false);
+  const [challengeStreak, setChallengeStreak] = useState(0);
 
   useEffect(() => {
     const { game, level } = dailyChallenge;
@@ -345,6 +353,9 @@ export default function Home() {
       .then((r) => (r.ok ? r.json() : { entries: [] }))
       .then((data) => setChallengeTop3(data.entries || []))
       .catch(() => setChallengeTop3([]));
+    setChallengePB(getPersonalBest(game, level));
+    setChallengeDone(isDailyDoneToday());
+    setChallengeStreak(getDailyStreak());
   }, [dailyChallenge.game, dailyChallenge.level]);
 
   // Same-origin endpoint backed by functions/solcam-check.js (prod) and a
@@ -466,8 +477,12 @@ export default function Home() {
       challengeKicker: "Daily Challenge",
       challengeSubtitle: "Today's pick — beat the board!",
       challengeCTA: "Play today's challenge",
+      challengeCTADone: "Play again today",
       challengeTop3: "🏆 Today's leaderboard",
       challengeTop3Empty: "No scores yet — be the first!",
+      challengePB: (s) => `🎯 Your best on this: ${s}`,
+      challengeDone: "✅ Played today's challenge!",
+      challengeStreak: (n) => `🔥 ${n}-day streak`,
       visitStreak: (n) => `Visit Streak: ${n} day${n > 1 ? "s" : ""}`,
       newBadge: "🎉 New Badge Unlocked Today!",
       nextBadge: (name, days) =>
@@ -492,8 +507,12 @@ export default function Home() {
       challengeKicker: "Πρόκληση Ημέρας",
       challengeSubtitle: "Η σημερινή επιλογή — νίκα τον πίνακα!",
       challengeCTA: "Παίξε τη σημερινή πρόκληση",
+      challengeCTADone: "Παίξε ξανά σήμερα",
       challengeTop3: "🏆 Σημερινή βαθμολογία",
       challengeTop3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
+      challengePB: (s) => `🎯 Το καλύτερο σου εδώ: ${s}`,
+      challengeDone: "✅ Έπαιξες τη σημερινή πρόκληση!",
+      challengeStreak: (n) => `🔥 Σερί ${n} ημερών`,
       visitStreak: (n) => `Σερί επισκέψεων: ${n} ${n === 1 ? "ημέρα" : "ημέρες"}`,
       newBadge: "🎉 Ξεκλείδωσες νέο Badge σήμερα!",
       nextBadge: (name, days) =>
@@ -611,6 +630,22 @@ export default function Home() {
           </ChallengeTitle>
           <ChallengeSubtitle>{t.challengeSubtitle}</ChallengeSubtitle>
 
+          {(challengeDone || challengeStreak > 0 || challengePB > 0) && (
+            <ChallengeStatusRow>
+              {challengeDone && (
+                <ChallengePill $variant="done">{t.challengeDone}</ChallengePill>
+              )}
+              {challengeStreak > 0 && (
+                <ChallengePill $variant="streak">
+                  {t.challengeStreak(challengeStreak)}
+                </ChallengePill>
+              )}
+              {challengePB > 0 && (
+                <ChallengePill>{t.challengePB(challengePB)}</ChallengePill>
+              )}
+            </ChallengeStatusRow>
+          )}
+
           <ChallengeTop3>
             <ChallengeTop3Title>{t.challengeTop3}</ChallengeTop3Title>
             {challengeTop3.length === 0 ? (
@@ -627,7 +662,9 @@ export default function Home() {
             )}
           </ChallengeTop3>
 
-          <ChallengeCTA to={dailyChallenge.route}>{t.challengeCTA}</ChallengeCTA>
+          <ChallengeCTA to={dailyChallenge.route}>
+            {challengeDone ? t.challengeCTADone : t.challengeCTA}
+          </ChallengeCTA>
         </ChallengeCard>
 
         {/* GAMES */}

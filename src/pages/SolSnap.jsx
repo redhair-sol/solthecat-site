@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -307,6 +308,7 @@ export default function SolSnap() {
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
+    markDailyDoneIfMatches("solsnap", "default");
   }, [showResult, score]);
 
   const qualifiesForLeaderboard = () => {
