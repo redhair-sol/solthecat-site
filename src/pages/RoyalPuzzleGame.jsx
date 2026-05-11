@@ -92,6 +92,95 @@ const ErrorBox = styled.div`
   text-align: center;
 `;
 
+// --- Leaderboard styled bits (mirrored from CatchCats for visual parity) ---
+const Top3Box = styled.div`
+  background: #ffffffcc;
+  border: 2px solid #f8bbd0;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem auto 1rem;
+  max-width: 320px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+`;
+
+const Top3Title = styled.p`
+  font-weight: 700;
+  color: #6a1b9a;
+  margin: 0 0 0.4rem;
+  text-align: center;
+  font-size: 0.95rem;
+`;
+
+const Top3Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  padding: 0.15rem 0;
+`;
+
+const Top3Empty = styled.p`
+  color: #5b2b7b;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+`;
+
+const PersonalBestText = styled.p`
+  color: #aa4dc8;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0.4rem 0;
+`;
+
+const NameInputRow = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+`;
+
+const NameInput = styled.input`
+  padding: 0.6rem 1rem;
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  outline: none;
+  width: 12ch;
+
+  &:focus {
+    border-color: #aa4dc8;
+    box-shadow: 0 0 0 3px rgba(170, 77, 200, 0.15);
+  }
+`;
+
+const SmallButton = styled.button`
+  padding: 0.6rem 1.2rem;
+  background-color: ${({ $secondary }) => ($secondary ? "#ffffff" : "#c187d8")};
+  color: ${({ $secondary }) => ($secondary ? "#6a1b9a" : "white")};
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+`;
+
+const PUZZLE_SCORE_CAP = 9999;
+
 export default function RoyalPuzzleGame() {
   const { language } = useLanguage();
   const [episodes, setEpisodes] = useState([]);
@@ -103,6 +192,17 @@ export default function RoyalPuzzleGame() {
   const [elapsed, setElapsed] = useState(0);
   const [loadError, setLoadError] = useState(false);
   const areaRef = useRef();
+
+  // Leaderboard state — single board across all difficulties (per user
+  // decision). Score formula = max(0, CAP - elapsed) so faster solves rank
+  // higher on the board's "highest score wins" sort.
+  const [winScore, setWinScore] = useState(0);
+  const [topEntries, setTopEntries] = useState([]);
+  const [personalBest, setPersonalBest] = useState(0);
+  const [submitName, setSubmitName] = useState("");
+  const [submitState, setSubmitState] = useState("idle");
+  const [submittedRank, setSubmittedRank] = useState(null);
+  const [submitError, setSubmitError] = useState(null);
 
   // Auto-scroll the solved message + Download/Play Again buttons into view —
   // they appear below a tall puzzle area which on mobile pushes them off-screen.
@@ -130,6 +230,17 @@ export default function RoyalPuzzleGame() {
       playAgain: "🔁 Play Again",
       levels: { easy: "Easy", medium: "Medium", hard: "Hard" },
       loadFail: "Couldn't load episodes. Please try refreshing the page.",
+      finalScore: (s) => `⏱️ Solved in ${s}s!`,
+      personalBest: (s) => `🏆 Your best: ${s} pts`,
+      noBest: "🏆 No personal record yet",
+      top3Title: "🏆 Top 3",
+      top3Empty: "No scores yet — be the first!",
+      newRecord: "🎉 NEW PERSONAL BEST!",
+      qualifies: "🌟 You made the leaderboard!",
+      enterName: "Enter your name:",
+      submit: "Submit",
+      skip: "Skip",
+      submittedRank: (r) => `You're #${r} on the board!`,
     },
     el: {
       pageTitle: "Βασιλικό Παζλ – SolTheCat",
@@ -143,6 +254,17 @@ export default function RoyalPuzzleGame() {
       playAgain: "🔁 Παίξε Ξανά",
       levels: { easy: "Εύκολο", medium: "Μέσο", hard: "Δύσκολο" },
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
+      finalScore: (s) => `⏱️ Το έλυσες σε ${s}δ.!`,
+      personalBest: (s) => `🏆 Καλύτερο σου: ${s} πόντοι`,
+      noBest: "🏆 Κανένα ρεκόρ ακόμη",
+      top3Title: "🏆 Top 3",
+      top3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
+      newRecord: "🎉 ΝΕΟ ΠΡΟΣΩΠΙΚΟ ΡΕΚΟΡ!",
+      qualifies: "🌟 Μπήκες στη βαθμολογία!",
+      enterName: "Όνομα:",
+      submit: "Καταχώρηση",
+      skip: "Παράλειψη",
+      submittedRank: (r) => `Είσαι #${r} στη βαθμολογία!`,
     },
   }[language];
 
@@ -170,7 +292,20 @@ export default function RoyalPuzzleGame() {
     setSolved(false);
     setStartTime(null);
     setElapsed(0);
+    setWinScore(0);
+    setSubmitName("");
+    setSubmitState("idle");
+    setSubmittedRank(null);
   }, [selectedId]);
+
+  // Fetch top 3 + load personal best on mount.
+  useEffect(() => {
+    setPersonalBest(parseInt(localStorage.getItem("royalPuzzle_best") || "0", 10));
+    fetch("/leaderboard?game=royalpuzzle&level=default")
+      .then((r) => (r.ok ? r.json() : { entries: [] }))
+      .then((data) => setTopEntries(data.entries || []))
+      .catch(() => setTopEntries([]));
+  }, []);
 
   const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
   const imagePath = selectedEpisode && `${import.meta.env.BASE_URL}${selectedEpisode.puzzleImage || selectedEpisode.image}`;
@@ -246,9 +381,54 @@ export default function RoyalPuzzleGame() {
         if (!best || elapsed < parseInt(best)) {
           localStorage.setItem(key, elapsed);
         }
+        // Leaderboard: compute global "higher = faster" score and update PB.
+        const score = Math.max(0, PUZZLE_SCORE_CAP - elapsed);
+        setWinScore(score);
+        const prevGlobalBest = parseInt(localStorage.getItem("royalPuzzle_best") || "0", 10);
+        if (score > prevGlobalBest) {
+          localStorage.setItem("royalPuzzle_best", String(score));
+          setPersonalBest(score);
+        }
       }
     }
   };
+
+  const qualifiesForLeaderboard = () => {
+    if (winScore <= 0) return false;
+    if (topEntries.length < 3) return true;
+    return winScore > topEntries[2].score;
+  };
+
+  const submitToLeaderboard = async () => {
+    const name = submitName.trim();
+    if (!name) return;
+    setSubmitState("submitting");
+    try {
+      const res = await fetch("/leaderboard", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          game: "royalpuzzle",
+          level: "default",
+          score: winScore,
+          name,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
+      setSubmittedRank(data.rank || null);
+      setTopEntries(data.top || []);
+      setSubmitState("submitted");
+    } catch (err) {
+      console.error("Leaderboard submit failed:", err);
+      setSubmitError(err.message || "Submit failed");
+      setSubmitState("error");
+    }
+  };
+
+  const skipSubmit = () => setSubmitState("skipped");
 
   const handlePointerDown = (e, idx) => {
     e.target.setPointerCapture(e.pointerId);
@@ -300,6 +480,27 @@ export default function RoyalPuzzleGame() {
           ))}
         </Dropdown>
 
+        {!level && (
+          <Top3Box>
+            <Top3Title>{t.top3Title}</Top3Title>
+            {topEntries.length === 0 ? (
+              <Top3Empty>{t.top3Empty}</Top3Empty>
+            ) : (
+              topEntries.map((e, i) => (
+                <Top3Row key={`${e.name}-${e.score}-${i}`}>
+                  <span>
+                    {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                  </span>
+                  <span><strong>{e.score}</strong></span>
+                </Top3Row>
+              ))
+            )}
+            <PersonalBestText>
+              {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
+            </PersonalBestText>
+          </Top3Box>
+        )}
+
         {!level && ["easy", "medium", "hard"].map(l => (
           <LevelButton key={l} onClick={() => setLevel(l)}>
             {t.levels[l]}
@@ -331,6 +532,66 @@ export default function RoyalPuzzleGame() {
         {solved && (
           <div ref={solvedRef}>
             <Info>{t.solvedMessage}</Info>
+            <Info style={{ fontWeight: 600 }}>{t.finalScore(elapsed)}</Info>
+
+            {winScore > 0 && winScore >= personalBest && (
+              <PersonalBestText style={{ fontSize: "1rem" }}>
+                {t.newRecord}
+              </PersonalBestText>
+            )}
+
+            {qualifiesForLeaderboard() && submitState === "idle" && (
+              <>
+                <PersonalBestText>{t.qualifies}</PersonalBestText>
+                <p style={{ color: "#5b2b7b", fontSize: "0.85rem", margin: "0.3rem 0", textAlign: "center" }}>
+                  {t.enterName}
+                </p>
+                <NameInputRow>
+                  <NameInput
+                    type="text"
+                    maxLength={12}
+                    value={submitName}
+                    onChange={(e) => setSubmitName(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && submitName.trim()) submitToLeaderboard();
+                    }}
+                    placeholder="Sol"
+                    autoFocus
+                  />
+                  <SmallButton
+                    onClick={submitToLeaderboard}
+                    disabled={!submitName.trim()}
+                  >
+                    {t.submit}
+                  </SmallButton>
+                  <SmallButton $secondary onClick={skipSubmit}>
+                    {t.skip}
+                  </SmallButton>
+                </NameInputRow>
+              </>
+            )}
+
+            {submitState === "submitting" && (
+              <PersonalBestText>...</PersonalBestText>
+            )}
+
+            {submitState === "submitted" && submittedRank && (
+              <PersonalBestText style={{ fontSize: "1rem" }}>
+                {t.submittedRank(submittedRank)}
+              </PersonalBestText>
+            )}
+
+            {submitState === "error" && (
+              <>
+                <PersonalBestText style={{ color: "#c62828", fontSize: "0.9rem" }}>
+                  ⚠️ {submitError || "Submit failed"}
+                </PersonalBestText>
+                <SmallButton onClick={() => setSubmitState("idle")}>
+                  Try again
+                </SmallButton>
+              </>
+            )}
+
             <SolButton as="button" onClick={downloadImage}>{t.download}</SolButton>
             <SolButton
               as="button"
@@ -340,6 +601,10 @@ export default function RoyalPuzzleGame() {
                 setSolved(false);
                 setStartTime(null);
                 setElapsed(0);
+                setWinScore(0);
+                setSubmitName("");
+                setSubmitState("idle");
+                setSubmittedRank(null);
               }}
             >
               {t.playAgain}

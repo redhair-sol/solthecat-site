@@ -46,6 +46,12 @@ const MAX_SCORES = {
   "solsnap_default": 200,
   // Pawprints score = seconds left when matched all pairs (60s round).
   "pawprints_default": 60,
+  // Puzzles: score = 9999 - elapsed seconds (no time limit). Cap matches
+  // the formula's max, so any honest solve falls within the cap.
+  "puzzlemap_default": 9999,
+  "royalpuzzle_default": 9999,
+  // Cat Sort: score = 9999 - total run seconds (across all 5 levels).
+  "cat-sort_default": 9999,
 };
 
 export async function onRequest(context) {

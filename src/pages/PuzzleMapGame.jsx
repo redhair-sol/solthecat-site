@@ -112,6 +112,104 @@ const BackLink = styled(Link)`
   &:hover { text-decoration: underline; }
 `;
 
+const TimerLine = styled.p`
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #6a1b9a;
+  font-weight: 600;
+`;
+
+// --- Leaderboard styled bits (mirrored from CatchCats for visual parity) ---
+const Top3Box = styled.div`
+  background: #ffffffcc;
+  border: 2px solid #f8bbd0;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem auto 1rem;
+  max-width: 320px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+`;
+
+const Top3Title = styled.p`
+  font-weight: 700;
+  color: #6a1b9a;
+  margin: 0 0 0.4rem;
+  text-align: center;
+  font-size: 0.95rem;
+`;
+
+const Top3Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  padding: 0.15rem 0;
+`;
+
+const Top3Empty = styled.p`
+  color: #5b2b7b;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+`;
+
+const PersonalBestText = styled.p`
+  color: #aa4dc8;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0.4rem 0;
+`;
+
+const NameInputRow = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+`;
+
+const NameInput = styled.input`
+  padding: 0.6rem 1rem;
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  outline: none;
+  width: 12ch;
+
+  &:focus {
+    border-color: #aa4dc8;
+    box-shadow: 0 0 0 3px rgba(170, 77, 200, 0.15);
+  }
+`;
+
+const SmallButton = styled.button`
+  padding: 0.6rem 1.2rem;
+  background-color: ${({ $secondary }) => ($secondary ? "#ffffff" : "#c187d8")};
+  color: ${({ $secondary }) => ($secondary ? "#6a1b9a" : "white")};
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+`;
+
+// Score cap matches functions/leaderboard.js MAX_SCORES["puzzlemap_default"].
+// Anyone who solves faster than 9999 seconds (~2.7h) lands on the board.
+const PUZZLE_SCORE_CAP = 9999;
+
 const initialArr = [...Array(9).keys()];
 
 export default function PuzzleMapGame() {
@@ -123,6 +221,18 @@ export default function PuzzleMapGame() {
   const [loadError, setLoadError] = useState(false);
   const { language } = useLanguage();
 
+  // Timer + leaderboard state. Score = max(0, CAP - elapsed) so faster
+  // = higher score, matching the leaderboard's "higher is better" sort.
+  const [startTime, setStartTime] = useState(null);
+  const [elapsed, setElapsed] = useState(0);
+  const [winScore, setWinScore] = useState(0);
+  const [topEntries, setTopEntries] = useState([]);
+  const [personalBest, setPersonalBest] = useState(0);
+  const [submitName, setSubmitName] = useState("");
+  const [submitState, setSubmitState] = useState("idle");
+  const [submittedRank, setSubmittedRank] = useState(null);
+  const [submitError, setSubmitError] = useState(null);
+
   const content = {
     en: {
       pageTitle: "Sol’s Puzzle Game – SolTheCat",
@@ -132,6 +242,18 @@ export default function PuzzleMapGame() {
       solvedMessage: "🎉 Puzzle Solved!",
       back: "← Back to games",
       loadFail: "Couldn't load episodes. Please try refreshing the page.",
+      timeLabel: (s) => `⏱️ ${s}s`,
+      finalScore: (s) => `⏱️ Solved in ${s}s!`,
+      personalBest: (s) => `🏆 Your best: ${s} pts`,
+      noBest: "🏆 No personal record yet",
+      top3Title: "🏆 Top 3",
+      top3Empty: "No scores yet — be the first!",
+      newRecord: "🎉 NEW PERSONAL BEST!",
+      qualifies: "🌟 You made the leaderboard!",
+      enterName: "Enter your name:",
+      submit: "Submit",
+      skip: "Skip",
+      submittedRank: (r) => `You're #${r} on the board!`,
     },
     el: {
       pageTitle: "Παζλ της Sol – SolTheCat",
@@ -141,6 +263,18 @@ export default function PuzzleMapGame() {
       solvedMessage: "🎉 Λύθηκε το Παζλ!",
       back: "← Επιστροφή στα παιχνίδια",
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
+      timeLabel: (s) => `⏱️ ${s}δ.`,
+      finalScore: (s) => `⏱️ Το έλυσες σε ${s}δ.!`,
+      personalBest: (s) => `🏆 Καλύτερο σου: ${s} πόντοι`,
+      noBest: "🏆 Κανένα ρεκόρ ακόμη",
+      top3Title: "🏆 Top 3",
+      top3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
+      newRecord: "🎉 ΝΕΟ ΠΡΟΣΩΠΙΚΟ ΡΕΚΟΡ!",
+      qualifies: "🌟 Μπήκες στη βαθμολογία!",
+      enterName: "Όνομα:",
+      submit: "Καταχώρηση",
+      skip: "Παράλειψη",
+      submittedRank: (r) => `Είσαι #${r} στη βαθμολογία!`,
     },
   };
   const t = content[language];
@@ -210,8 +344,33 @@ export default function PuzzleMapGame() {
       }
       setTiles(arr);
       setIsSolved(false);
+      // Start (or restart) the timer the moment the puzzle becomes playable.
+      setStartTime(Date.now());
+      setElapsed(0);
+      setWinScore(0);
+      setSubmitName("");
+      setSubmitState("idle");
+      setSubmittedRank(null);
     }
   }, [slices]);
+
+  // Count-up timer. Pauses on solve via the dependency on isSolved.
+  useEffect(() => {
+    if (!startTime || isSolved) return;
+    const id = setInterval(() => {
+      setElapsed(Math.floor((Date.now() - startTime) / 1000));
+    }, 1000);
+    return () => clearInterval(id);
+  }, [startTime, isSolved]);
+
+  // Fetch top 3 + load personal best on mount.
+  useEffect(() => {
+    setPersonalBest(parseInt(localStorage.getItem("puzzleMap_best") || "0", 10));
+    fetch("/leaderboard?game=puzzlemap&level=default")
+      .then((r) => (r.ok ? r.json() : { entries: [] }))
+      .then((data) => setTopEntries(data.entries || []))
+      .catch(() => setTopEntries([]));
+  }, []);
 
   const handleClick = (idx) => {
     if (isSolved) return;
@@ -227,10 +386,59 @@ export default function PuzzleMapGame() {
       sol.splice(e, 1);
       if (chk.every((v, i) => v === sol[i])) {
         setIsSolved(true);
+        // Freeze the final elapsed value at solve time. The timer effect
+        // also stops here via isSolved dependency, so elapsed won't tick
+        // further.
+        const finalElapsed = Math.floor((Date.now() - startTime) / 1000);
+        setElapsed(finalElapsed);
+        const score = Math.max(0, PUZZLE_SCORE_CAP - finalElapsed);
+        setWinScore(score);
+        const prevBest = parseInt(localStorage.getItem("puzzleMap_best") || "0", 10);
+        if (score > prevBest) {
+          localStorage.setItem("puzzleMap_best", String(score));
+          setPersonalBest(score);
+        }
         celebrate();
       }
     }
   };
+
+  const qualifiesForLeaderboard = () => {
+    if (winScore <= 0) return false;
+    if (topEntries.length < 3) return true;
+    return winScore > topEntries[2].score;
+  };
+
+  const submitToLeaderboard = async () => {
+    const name = submitName.trim();
+    if (!name) return;
+    setSubmitState("submitting");
+    try {
+      const res = await fetch("/leaderboard", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          game: "puzzlemap",
+          level: "default",
+          score: winScore,
+          name,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
+      setSubmittedRank(data.rank || null);
+      setTopEntries(data.top || []);
+      setSubmitState("submitted");
+    } catch (err) {
+      console.error("Leaderboard submit failed:", err);
+      setSubmitError(err.message || "Submit failed");
+      setSubmitState("error");
+    }
+  };
+
+  const skipSubmit = () => setSubmitState("skipped");
 
   return (
     <>
@@ -269,6 +477,29 @@ export default function PuzzleMapGame() {
           </Dropdown>
         </DropdownWrapper>
 
+        <Top3Box>
+          <Top3Title>{t.top3Title}</Top3Title>
+          {topEntries.length === 0 ? (
+            <Top3Empty>{t.top3Empty}</Top3Empty>
+          ) : (
+            topEntries.map((e, i) => (
+              <Top3Row key={`${e.name}-${e.score}-${i}`}>
+                <span>
+                  {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                </span>
+                <span><strong>{e.score}</strong></span>
+              </Top3Row>
+            ))
+          )}
+          <PersonalBestText>
+            {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
+          </PersonalBestText>
+        </Top3Box>
+
+        {slices.length === 9 && !isSolved && (
+          <TimerLine>{t.timeLabel(elapsed)}</TimerLine>
+        )}
+
         <PuzzleWrapper>
           <Grid>
             {tiles.map((tile, i) =>
@@ -290,6 +521,66 @@ export default function PuzzleMapGame() {
         {isSolved && (
           <>
             <Message>{t.solvedMessage}</Message>
+            <Message style={{ fontSize: "1rem" }}>{t.finalScore(elapsed)}</Message>
+
+            {winScore > 0 && winScore >= personalBest && (
+              <PersonalBestText style={{ fontSize: "1rem" }}>
+                {t.newRecord}
+              </PersonalBestText>
+            )}
+
+            {qualifiesForLeaderboard() && submitState === "idle" && (
+              <>
+                <PersonalBestText>{t.qualifies}</PersonalBestText>
+                <p style={{ color: "#5b2b7b", fontSize: "0.85rem", margin: "0.3rem 0" }}>
+                  {t.enterName}
+                </p>
+                <NameInputRow>
+                  <NameInput
+                    type="text"
+                    maxLength={12}
+                    value={submitName}
+                    onChange={(e) => setSubmitName(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && submitName.trim()) submitToLeaderboard();
+                    }}
+                    placeholder="Sol"
+                    autoFocus
+                  />
+                  <SmallButton
+                    onClick={submitToLeaderboard}
+                    disabled={!submitName.trim()}
+                  >
+                    {t.submit}
+                  </SmallButton>
+                  <SmallButton $secondary onClick={skipSubmit}>
+                    {t.skip}
+                  </SmallButton>
+                </NameInputRow>
+              </>
+            )}
+
+            {submitState === "submitting" && (
+              <PersonalBestText>...</PersonalBestText>
+            )}
+
+            {submitState === "submitted" && submittedRank && (
+              <PersonalBestText style={{ fontSize: "1rem" }}>
+                {t.submittedRank(submittedRank)}
+              </PersonalBestText>
+            )}
+
+            {submitState === "error" && (
+              <>
+                <PersonalBestText style={{ color: "#c62828", fontSize: "0.9rem" }}>
+                  ⚠️ {submitError || "Submit failed"}
+                </PersonalBestText>
+                <SmallButton onClick={() => setSubmitState("idle")}>
+                  Try again
+                </SmallButton>
+              </>
+            )}
+
             <StyledButton onClick={() => setSlices([])}>
               {t.playAgain}
             </StyledButton>
