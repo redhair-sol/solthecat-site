@@ -193,6 +193,12 @@ export default function RoyalPuzzleGame() {
   const [loadError, setLoadError] = useState(false);
   const areaRef = useRef();
 
+  // Explicit start gate — pieces are previewed (scattered) the moment a
+  // level is picked, but the timer waits until the user presses Start.
+  // Same intent as PuzzleMap: don't penalise the user for the time spent
+  // picking which episode they actually want to play.
+  const [hasStarted, setHasStarted] = useState(false);
+
   // Leaderboard state — single board across all difficulties (per user
   // decision). Score formula = max(0, CAP - elapsed) so faster solves rank
   // higher on the board's "highest score wins" sort.
@@ -228,6 +234,8 @@ export default function RoyalPuzzleGame() {
       best: "🏆 Best Time: ",
       solvedMessage: "🎉 Royal Puzzle Solved!",
       playAgain: "🔁 Play Again",
+      startPuzzle: "🐾 Start puzzle",
+      readyHint: "Ready when you are — press Start to begin the timer.",
       levels: { easy: "Easy", medium: "Medium", hard: "Hard" },
       loadFail: "Couldn't load episodes. Please try refreshing the page.",
       finalScore: (s) => `⏱️ Solved in ${s}s!`,
@@ -252,6 +260,8 @@ export default function RoyalPuzzleGame() {
       best: "🏆 Καλύτερος Χρόνος: ",
       solvedMessage: "🎉 Λύθηκε το Βασιλικό Παζλ!",
       playAgain: "🔁 Παίξε Ξανά",
+      startPuzzle: "🐾 Ξεκίνα το παζλ",
+      readyHint: "Έτοιμος; Πάτα Start για να ξεκινήσει ο χρόνος.",
       levels: { easy: "Εύκολο", medium: "Μέσο", hard: "Δύσκολο" },
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
       finalScore: (s) => `⏱️ Το έλυσες σε ${s}δ.!`,
@@ -292,6 +302,7 @@ export default function RoyalPuzzleGame() {
     setSolved(false);
     setStartTime(null);
     setElapsed(0);
+    setHasStarted(false);
     setWinScore(0);
     setSubmitName("");
     setSubmitState("idle");
@@ -345,10 +356,26 @@ export default function RoyalPuzzleGame() {
 
       setPieces(tmp);
       setSolved(false);
-      setStartTime(Date.now());
+      // Pieces are scattered (preview); timer does NOT start here. The
+      // user presses Start (or Play Again later) to engage the timer.
+      setStartTime(null);
       setElapsed(0);
+      setHasStarted(false);
     };
   }, [imagePath, level]);
+
+  // Engages the timer. Used by both initial Start and Play Again — pieces
+  // are already scattered, this just flips the gate and records start time.
+  const startPuzzle = () => {
+    if (pieces.length === 0) return;
+    setStartTime(Date.now());
+    setElapsed(0);
+    setHasStarted(true);
+    setWinScore(0);
+    setSubmitName("");
+    setSubmitState("idle");
+    setSubmittedRank(null);
+  };
 
   useEffect(() => {
     if (!startTime || solved) return;
@@ -431,6 +458,10 @@ export default function RoyalPuzzleGame() {
   const skipSubmit = () => setSubmitState("skipped");
 
   const handlePointerDown = (e, idx) => {
+    // Pre-start preview: pieces are visible but inert until the user
+    // presses Start. Prevents accidentally solving (or pre-burning time
+    // off) while still browsing episodes.
+    if (!hasStarted) return;
     e.target.setPointerCapture(e.pointerId);
     const move = (ev) => handleDrag(idx, ev);
     const up = () => {
@@ -507,6 +538,17 @@ export default function RoyalPuzzleGame() {
           </LevelButton>
         ))}
 
+        {/* Pre-start gate: pieces are previewed but the timer doesn't tick.
+            Lets the user verify the episode selection before committing. */}
+        {level && !hasStarted && !solved && pieces.length > 0 && (
+          <>
+            <Info style={{ fontWeight: 400 }}>{t.readyHint}</Info>
+            <SolButton as="button" onClick={startPuzzle}>
+              {t.startPuzzle}
+            </SolButton>
+          </>
+        )}
+
         {level && (
           <PuzzleArea ref={areaRef}>
             {pieces.map((p, i) => (
@@ -518,7 +560,9 @@ export default function RoyalPuzzleGame() {
                   top: `${p.y}px`,
                   width: `${100 / cols}%`,
                   height: `${100 / rows}%`,
-                  zIndex: p.x === p.correctX && p.y === p.correctY ? 1 : 2
+                  zIndex: p.x === p.correctX && p.y === p.correctY ? 1 : 2,
+                  cursor: hasStarted ? "grab" : "default",
+                  opacity: hasStarted ? 1 : 0.85,
                 }}
                 draggable="false"
                 onPointerDown={(e) => handlePointerDown(e, i)}
@@ -527,7 +571,7 @@ export default function RoyalPuzzleGame() {
           </PuzzleArea>
         )}
 
-        {level && <Info>⏱️ {elapsed}s {best && ` — ${t.best} ${best}s`}</Info>}
+        {level && hasStarted && <Info>⏱️ {elapsed}s {best && ` — ${t.best} ${best}s`}</Info>}
 
         {solved && (
           <div ref={solvedRef}>
@@ -601,6 +645,7 @@ export default function RoyalPuzzleGame() {
                 setSolved(false);
                 setStartTime(null);
                 setElapsed(0);
+                setHasStarted(false);
                 setWinScore(0);
                 setSubmitName("");
                 setSubmitState("idle");

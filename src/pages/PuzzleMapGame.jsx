@@ -225,6 +225,7 @@ export default function PuzzleMapGame() {
   // = higher score, matching the leaderboard's "higher is better" sort.
   const [startTime, setStartTime] = useState(null);
   const [elapsed, setElapsed] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
   const [winScore, setWinScore] = useState(0);
   const [topEntries, setTopEntries] = useState([]);
   const [personalBest, setPersonalBest] = useState(0);
@@ -239,6 +240,8 @@ export default function PuzzleMapGame() {
       title: "Sol’s Puzzle Game 🧩",
       subtitle: selectedId ? `Puzzle: SOLadventure #${selectedId}` : "",
       playAgain: "🔁 Play Again",
+      startPuzzle: "🐾 Start puzzle",
+      pickEpisodeHint: "Pick an episode and press Start when you're ready.",
       solvedMessage: "🎉 Puzzle Solved!",
       back: "← Back to games",
       loadFail: "Couldn't load episodes. Please try refreshing the page.",
@@ -260,6 +263,8 @@ export default function PuzzleMapGame() {
       title: "Παζλ της Sol 🧩",
       subtitle: selectedId ? `Παζλ: SOLadventure #${selectedId}` : "",
       playAgain: "🔁 Παίξε Ξανά",
+      startPuzzle: "🐾 Ξεκίνα το παζλ",
+      pickEpisodeHint: "Διάλεξε επεισόδιο και πάτα Start όταν είσαι έτοιμος.",
       solvedMessage: "🎉 Λύθηκε το Παζλ!",
       back: "← Επιστροφή στα παιχνίδια",
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
@@ -300,6 +305,10 @@ export default function PuzzleMapGame() {
   const selectedEpisode = episodes.find((ep) => ep.id.toString() === selectedId);
   const imagePath = selectedEpisode && `${import.meta.env.BASE_URL}${selectedEpisode.image}`;
 
+  // Slice the selected episode image into 9 canvas tiles. This runs whenever
+  // the user picks a different episode. The puzzle stays in "not started"
+  // state until the user explicitly presses the Start button — that way the
+  // timer doesn't run while the user is still deciding which episode to play.
   useEffect(() => {
     if (!imagePath) return;
     const img = new Image();
@@ -320,39 +329,48 @@ export default function PuzzleMapGame() {
         }
       }
       setSlices(tmp);
+      // Switching episodes resets play state — user must press Start again
+      // before the timer can resume. Also covers the page-load case where
+      // the first episode auto-selects.
+      setHasStarted(false);
+      setIsSolved(false);
+      setStartTime(null);
+      setElapsed(0);
+      setWinScore(0);
     };
   }, [imagePath]);
 
-  useEffect(() => {
-    if (slices.length === 9) {
-      let arr = [...initialArr];
-      let emptyIdx = 8;
-      const swap = (a, b) => {
-        const c = [...arr];
-        [c[a], c[b]] = [c[b], c[a]];
-        return c;
-      };
-      for (let i = 0; i < 100; i++) {
-        const moves = [];
-        if (emptyIdx % 3 !== 0) moves.push(emptyIdx - 1);
-        if (emptyIdx % 3 !== 2) moves.push(emptyIdx + 1);
-        if (emptyIdx >= 3) moves.push(emptyIdx - 3);
-        if (emptyIdx < 6) moves.push(emptyIdx + 3);
-        const to = moves[Math.floor(Math.random() * moves.length)];
-        arr = swap(emptyIdx, to);
-        emptyIdx = to;
-      }
-      setTiles(arr);
-      setIsSolved(false);
-      // Start (or restart) the timer the moment the puzzle becomes playable.
-      setStartTime(Date.now());
-      setElapsed(0);
-      setWinScore(0);
-      setSubmitName("");
-      setSubmitState("idle");
-      setSubmittedRank(null);
+  // Shuffle the tiles and kick off the timer. Used by both the initial Start
+  // button and Play Again — same flow, no image reload required.
+  const startPuzzle = () => {
+    if (slices.length !== 9) return;
+    let arr = [...initialArr];
+    let emptyIdx = 8;
+    const swap = (a, b) => {
+      const c = [...arr];
+      [c[a], c[b]] = [c[b], c[a]];
+      return c;
+    };
+    for (let i = 0; i < 100; i++) {
+      const moves = [];
+      if (emptyIdx % 3 !== 0) moves.push(emptyIdx - 1);
+      if (emptyIdx % 3 !== 2) moves.push(emptyIdx + 1);
+      if (emptyIdx >= 3) moves.push(emptyIdx - 3);
+      if (emptyIdx < 6) moves.push(emptyIdx + 3);
+      const to = moves[Math.floor(Math.random() * moves.length)];
+      arr = swap(emptyIdx, to);
+      emptyIdx = to;
     }
-  }, [slices]);
+    setTiles(arr);
+    setIsSolved(false);
+    setStartTime(Date.now());
+    setElapsed(0);
+    setWinScore(0);
+    setSubmitName("");
+    setSubmitState("idle");
+    setSubmittedRank(null);
+    setHasStarted(true);
+  };
 
   // Count-up timer. Pauses on solve via the dependency on isSolved.
   useEffect(() => {
@@ -496,27 +514,43 @@ export default function PuzzleMapGame() {
           </PersonalBestText>
         </Top3Box>
 
-        {slices.length === 9 && !isSolved && (
+        {/* Pre-start: dropdown is settled, image is loading or loaded, but
+            the user hasn't pressed Start yet. Show the Start button + hint
+            and keep the puzzle grid hidden so the timer can't tick. */}
+        {!hasStarted && !isSolved && (
+          <>
+            <Subtitle style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}>
+              {t.pickEpisodeHint}
+            </Subtitle>
+            <StyledButton onClick={startPuzzle} disabled={slices.length !== 9}>
+              {t.startPuzzle}
+            </StyledButton>
+          </>
+        )}
+
+        {hasStarted && !isSolved && (
           <TimerLine>{t.timeLabel(elapsed)}</TimerLine>
         )}
 
-        <PuzzleWrapper>
-          <Grid>
-            {tiles.map((tile, i) =>
-              tile === 8 ? (
-                <EmptyTile key={i} />
-              ) : (
-                <Tile key={i} onClick={() => handleClick(i)}>
-                  <img
-                    src={slices[tile]}
-                    alt=""
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  />
-                </Tile>
-              )
-            )}
-          </Grid>
-        </PuzzleWrapper>
+        {(hasStarted || isSolved) && (
+          <PuzzleWrapper>
+            <Grid>
+              {tiles.map((tile, i) =>
+                tile === 8 ? (
+                  <EmptyTile key={i} />
+                ) : (
+                  <Tile key={i} onClick={() => handleClick(i)}>
+                    <img
+                      src={slices[tile]}
+                      alt=""
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  </Tile>
+                )
+              )}
+            </Grid>
+          </PuzzleWrapper>
+        )}
 
         {isSolved && (
           <>
@@ -581,7 +615,7 @@ export default function PuzzleMapGame() {
               </>
             )}
 
-            <StyledButton onClick={() => setSlices([])}>
+            <StyledButton onClick={startPuzzle}>
               {t.playAgain}
             </StyledButton>
           </>
