@@ -197,6 +197,86 @@ const GamesCTA = styled(Link)`
   font-weight: bold;
 `;
 
+// --- Daily Challenge card ---
+// Deeper-pink accent so it visually distinguishes from the soft pink Games
+// card right below it (the "hot now" vs "browse all" relationship).
+const ChallengeCard = styled(motion.div)`
+  background-color: #fff3f8;
+  border: 2px solid #c187d8;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  margin-top: 1.6rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+`;
+
+const ChallengeKicker = styled.p`
+  color: #aa4dc8;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+`;
+
+const ChallengeTitle = styled.h3`
+  color: #6a1b9a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+`;
+
+const ChallengeSubtitle = styled.p`
+  color: #5b2b7b;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+`;
+
+const ChallengeTop3 = styled.div`
+  background: #ffffffcc;
+  border-radius: 0.8rem;
+  padding: 0.6rem 0.9rem;
+  margin: 0.5rem auto 1rem;
+  max-width: 280px;
+  font-family: 'Poppins', sans-serif;
+`;
+
+const ChallengeTop3Title = styled.p`
+  font-weight: 700;
+  color: #6a1b9a;
+  margin: 0 0 0.3rem;
+  text-align: center;
+  font-size: 0.85rem;
+`;
+
+const ChallengeTop3Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #5b2b7b;
+  padding: 0.1rem 0;
+`;
+
+const ChallengeTop3Empty = styled.p`
+  color: #5b2b7b;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+`;
+
+const ChallengeCTA = styled(Link)`
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #c187d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-weight: bold;
+`;
+
 const InstagramLink = styled.a`
   display: inline-flex;
   align-items: center;
@@ -216,6 +296,34 @@ const RelativePageContainer = styled(PageContainer)`
   position: relative;
 `;
 
+// Daily Challenge rotation pool. One entry per day, picked deterministically
+// from the date so every visitor on the same day sees the same challenge.
+// `game` + `level` match the leaderboard endpoint's `{game}_{level}` key
+// (functions/leaderboard.js).
+const DAILY_CHALLENGES = [
+  { game: "catch-cats", level: "easy",    route: "/games/catch-cats",  emoji: "🧺", titleEn: "Catch the Cats — Easy",    titleEl: "Πιάσε τις Γάτες — Εύκολο" },
+  { game: "catch-cats", level: "medium",  route: "/games/catch-cats",  emoji: "🧺", titleEn: "Catch the Cats — Medium",  titleEl: "Πιάσε τις Γάτες — Μέτριο" },
+  { game: "catch-cats", level: "hard",    route: "/games/catch-cats",  emoji: "🧺", titleEn: "Catch the Cats — Hard",    titleEl: "Πιάσε τις Γάτες — Δύσκολο" },
+  { game: "quick-paws", level: "default", route: "/games/quick-paws",  emoji: "⚡", titleEn: "Quick Paws",               titleEl: "Γρήγορες Πατούσες" },
+  { game: "mapquiz",    level: "default", route: "/games/mapquiz",     emoji: "🌍", titleEn: "Where in the World?",      titleEl: "Πού στον Κόσμο;" },
+  { game: "spotcity",   level: "default", route: "/games/spotcity",    emoji: "🔍", titleEn: "Spot the City",            titleEl: "Βρες την Πόλη" },
+  { game: "pawprints",  level: "default", route: "/games/pawprints",   emoji: "🐾", titleEn: "Pawprints Memory",         titleEl: "Μνήμη με Πατουσάκια" },
+  { game: "puzzlemap",  level: "default", route: "/games/puzzlemap",   emoji: "🧩", titleEn: "SOL's Puzzle Map",         titleEl: "Παζλ Χάρτης της Sol" },
+  { game: "royalpuzzle",level: "default", route: "/games/royalpuzzle", emoji: "🧩", titleEn: "Royal Puzzle",             titleEl: "Βασιλικό Παζλ" },
+  { game: "cat-sort",   level: "default", route: "/games/cat-sort",    emoji: "🏠", titleEn: "Cat Sort",                 titleEl: "Ταξινόμηση Γατών" },
+  { game: "solsnap",    level: "default", route: "/games/solsnap",     emoji: "📸", titleEn: "SolSnap",                  titleEl: "SolSnap" },
+];
+
+// Pick the daily challenge index from yyyy-mm-dd, hashed so consecutive days
+// don't trivially produce neighbouring entries (avoids visible patterns).
+function pickDailyChallenge(isoDate) {
+  let h = 0;
+  for (let i = 0; i < isoDate.length; i++) {
+    h = (h * 31 + isoDate.charCodeAt(i)) >>> 0;
+  }
+  return DAILY_CHALLENGES[h % DAILY_CHALLENGES.length];
+}
+
 export default function Home() {
   const { language, setLanguage } = useLanguage();
   const location = useLocation();
@@ -225,6 +333,19 @@ export default function Home() {
   const [quote, setQuote] = useState("");
   const [mode, setMode] = useState("mood");
   const [isLive, setIsLive] = useState(false);
+
+  // Daily challenge — picked from today's date, then top 3 fetched live.
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const dailyChallenge = pickDailyChallenge(todayIso);
+  const [challengeTop3, setChallengeTop3] = useState([]);
+
+  useEffect(() => {
+    const { game, level } = dailyChallenge;
+    fetch(`/leaderboard?game=${encodeURIComponent(game)}&level=${encodeURIComponent(level)}`)
+      .then((r) => (r.ok ? r.json() : { entries: [] }))
+      .then((data) => setChallengeTop3(data.entries || []))
+      .catch(() => setChallengeTop3([]));
+  }, [dailyChallenge.game, dailyChallenge.level]);
 
   // Same-origin endpoint backed by functions/solcam-check.js (prod) and a
   // matching Vite middleware (dev). Always returns { live: boolean }, status 200.
@@ -342,6 +463,11 @@ export default function Home() {
       gamesText: "Explore mini-games inspired by her travels!",
       gamesCTA: "Play the Games",
       live: "LIVE",
+      challengeKicker: "Daily Challenge",
+      challengeSubtitle: "Today's pick — beat the board!",
+      challengeCTA: "Play today's challenge",
+      challengeTop3: "🏆 Today's leaderboard",
+      challengeTop3Empty: "No scores yet — be the first!",
       visitStreak: (n) => `Visit Streak: ${n} day${n > 1 ? "s" : ""}`,
       newBadge: "🎉 New Badge Unlocked Today!",
       nextBadge: (name, days) =>
@@ -363,6 +489,11 @@ export default function Home() {
       gamesText: "Ανακάλυψε mini-games...",
       gamesCTA: "Παίξε Παιχνίδια",
       live: "ΖΩΝΤΑΝΑ",
+      challengeKicker: "Πρόκληση Ημέρας",
+      challengeSubtitle: "Η σημερινή επιλογή — νίκα τον πίνακα!",
+      challengeCTA: "Παίξε τη σημερινή πρόκληση",
+      challengeTop3: "🏆 Σημερινή βαθμολογία",
+      challengeTop3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
       visitStreak: (n) => `Σερί επισκέψεων: ${n} ${n === 1 ? "ημέρα" : "ημέρες"}`,
       newBadge: "🎉 Ξεκλείδωσες νέο Badge σήμερα!",
       nextBadge: (name, days) =>
@@ -465,6 +596,39 @@ export default function Home() {
             {unlockedToday && <UnlockedText>{t.newBadge}</UnlockedText>}
           </BadgeBox>
         )}
+
+        {/* DAILY CHALLENGE — sits right above the general Games card so the
+            two "play" surfaces cluster together (hot-now vs browse-all). */}
+        <ChallengeCard
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.75 }}
+        >
+          <ChallengeKicker>{t.challengeKicker}</ChallengeKicker>
+          <ChallengeTitle>
+            {dailyChallenge.emoji}{" "}
+            {language === "el" ? dailyChallenge.titleEl : dailyChallenge.titleEn}
+          </ChallengeTitle>
+          <ChallengeSubtitle>{t.challengeSubtitle}</ChallengeSubtitle>
+
+          <ChallengeTop3>
+            <ChallengeTop3Title>{t.challengeTop3}</ChallengeTop3Title>
+            {challengeTop3.length === 0 ? (
+              <ChallengeTop3Empty>{t.challengeTop3Empty}</ChallengeTop3Empty>
+            ) : (
+              challengeTop3.map((e, i) => (
+                <ChallengeTop3Row key={`${e.name}-${e.score}-${i}`}>
+                  <span>
+                    {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                  </span>
+                  <span><strong>{e.score}</strong></span>
+                </ChallengeTop3Row>
+              ))
+            )}
+          </ChallengeTop3>
+
+          <ChallengeCTA to={dailyChallenge.route}>{t.challengeCTA}</ChallengeCTA>
+        </ChallengeCard>
 
         {/* GAMES */}
         <GamesCard
