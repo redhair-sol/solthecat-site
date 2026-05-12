@@ -112,6 +112,23 @@ const Bio = styled.p`
   line-height: 1.6;
 `;
 
+// Sits between the bio paragraph and the "View the Journey" button. Reads
+// the episode count from public/episodes.json at runtime so the line updates
+// itself whenever a new episode is added — no manual copy edit needed.
+const CityCount = styled.p`
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #aa4dc8;
+  font-size: 1rem;
+  margin: 0.8rem 0 0.4rem;
+`;
+
+const CityCountNum = styled.span`
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6a1b9a;
+`;
+
 const QuoteBox = styled(motion.div)`
   background-color: #fff3f8;
   padding: 1.2rem;
@@ -340,6 +357,16 @@ export default function Home() {
   const [quote, setQuote] = useState("");
   const [mode, setMode] = useState("mood");
   const [isLive, setIsLive] = useState(false);
+  const [episodeCount, setEpisodeCount] = useState(null);
+
+  // Pull the live count of published episodes so the hero line auto-updates
+  // when a new episode is added (no manual copy edit each release).
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}episodes.json`)
+      .then((r) => r.json())
+      .then((data) => setEpisodeCount(data.filter((ep) => ep.visible).length))
+      .catch(() => { /* leave null → bio shows the "50+" fallback */ });
+  }, []);
 
   // Daily challenge — picked from today's date, then top 3 fetched live.
   const dailyChallenge = getTodayChallenge();
@@ -463,6 +490,8 @@ export default function Home() {
       title: "the journey of a Queen",
       flair: "Fluffy. Fierce. Fabulous. 🐾🐾🐾",
       bio: "Welcome to the official home of solthecat, the feline queen behind the SOLadventures series. From Athens to Paris and beyond, Sol brings elegance, attitude, and a touch of royal paw-power to every destination. Follow her travels, her tales, and her timeless stare.",
+      cityCountBefore: "Solthecat has roamed ",
+      cityCountAfter: " cities and counting...",
       viewJourney: "View the Journey",
       quoteTitle:
         mode === "fortune"
@@ -493,6 +522,8 @@ export default function Home() {
       title: "το ταξίδι μιας Βασίλισσας",
       flair: "Χνουδωτή. Δυναμική. Ακαταμάχητη. 🐾🐾🐾",
       bio: "Καλωσήρθες στο επίσημο σπίτι της solthecat, της πρωταγωνίστριας της σειράς SOLadventures. Από την Αθήνα ως το Παρίσι και πέρα, η Sol φέρνει κομψότητα, ύφος και βασιλική γοητεία σε κάθε της στάση. Ακολούθησε τα ταξίδια της, τις ιστορίες της και το διαχρονικό της βλέμμα.",
+      cityCountBefore: "Η solthecat έχει επισκεφθεί ",
+      cityCountAfter: " πόλεις και συνεχίζει...",
       viewJourney: "Δες το Ταξίδι",
       quoteTitle:
         mode === "fortune"
@@ -558,6 +589,12 @@ export default function Home() {
         <HeroTagline>{t.title}</HeroTagline>
         <Flair>{t.flair}</Flair>
         <Bio>{t.bio}</Bio>
+
+        <CityCount>
+          {t.cityCountBefore}
+          <CityCountNum>{episodeCount ?? "50+"}</CityCountNum>
+          {t.cityCountAfter}
+        </CityCount>
 
         {/* JOURNEY BUTTON */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
