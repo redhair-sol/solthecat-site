@@ -401,8 +401,44 @@ export default function QuizPlayer() {
         return res.json();
       })
       .then((data) => {
-        const shuffled = shuffleArray(data);
-        const eightQuestions = shuffled.slice(0, 8);
+        // Anti-repeat: keep the IDs of the last 2 rounds (16 questions) so
+        // the next round draws from the remaining pool first. Falls back to
+        // the full pool when too few unseen questions remain (e.g., a file
+        // with fewer than 24 questions on its second consecutive replay).
+        // Identifier prefers q.id; falls back to file index for quizzes
+        // that don't carry ids (e.g. tallinn.json).
+        const withIds = data.map((q, idx) => ({
+          ...q,
+          _qid: q.id != null ? `id-${q.id}` : `idx-${idx}`,
+        }));
+
+        const recentKey = `quizRecent_${city}`;
+        let recent = [];
+        try {
+          recent = JSON.parse(localStorage.getItem(recentKey) || "[]");
+        } catch { /* corrupt — ignore */ }
+
+        let pool = withIds.filter((q) => !recent.includes(q._qid));
+        if (pool.length < 8) pool = withIds; // not enough fresh — reset
+
+        const shuffled = shuffleArray(pool);
+        // Also shuffle the answer order inside each question so a repeated
+        // question doesn't have "the correct answer is always the 3rd one".
+        // The `correct: true` flag stays attached to its answer object, so
+        // handleAnswer() keeps working unchanged.
+        const eightQuestions = shuffled.slice(0, 8).map((q) => ({
+          ...q,
+          answers: shuffleArray(q.answers),
+        }));
+
+        const newRecent = [
+          ...eightQuestions.map((q) => q._qid),
+          ...recent,
+        ].slice(0, 16);
+        try {
+          localStorage.setItem(recentKey, JSON.stringify(newRecent));
+        } catch { /* quota / private-mode — non-fatal */ }
+
         setQuestions(eightQuestions);
         setCurrent(0);
         setScore(0);
