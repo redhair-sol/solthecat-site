@@ -12,6 +12,7 @@ import {
   getPersonalBest,
   isDailyDoneToday,
   getDailyStreak,
+  formatScore,
 } from "../utils/dailyChallenge.js";
 
 // ----- LIVE BADGE -----
@@ -641,7 +642,9 @@ export default function Home() {
                 </ChallengePill>
               )}
               {challengePB > 0 && (
-                <ChallengePill>{t.challengePB(challengePB)}</ChallengePill>
+                <ChallengePill>
+                  {t.challengePB(formatScore(dailyChallenge.game, challengePB))}
+                </ChallengePill>
               )}
             </ChallengeStatusRow>
           )}
@@ -656,7 +659,7 @@ export default function Home() {
                   <span>
                     {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
                   </span>
-                  <span><strong>{e.score}</strong></span>
+                  <span><strong>{formatScore(dailyChallenge.game, e.score)}</strong></span>
                 </ChallengeTop3Row>
               ))
             )}

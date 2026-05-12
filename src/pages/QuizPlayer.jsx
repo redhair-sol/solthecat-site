@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
+import { formatScore } from "../utils/dailyChallenge.js";
 
 const Title = styled.h1`
   font-size: 2rem;
@@ -241,6 +242,13 @@ export default function QuizPlayer() {
   const [submittedRank, setSubmittedRank] = useState(null);
   const [submitError, setSubmitError] = useState(null);
 
+  // Timer + composite score. 8/8 is reachable enough that ties dominate
+  // without a tiebreaker — score = correct * 10000 - totalSeconds, decoded
+  // for display by formatScore("quiz", ...).
+  const [startTime, setStartTime] = useState(null);
+  const [totalSeconds, setTotalSeconds] = useState(0);
+  const [winScore, setWinScore] = useState(0);
+
   const content = {
     en: {
       title: "Sol’s Quiz 🧠",
@@ -250,6 +258,7 @@ export default function QuizPlayer() {
       quizUrl: "https://solthecat.com/games/cityquiz",
       back: "← Back to games",
       scoreText: (s, total) => `🎉 You got ${s} out of ${total} correct!`,
+      timeText: (s) => `⏱️ Time: ${s}s`,
       playAgain: "🔁 Play Again",
       errLoadEpisodes: "Failed to load episodes.",
       errLoadQuiz: "Quiz file not found or invalid.",
@@ -273,6 +282,7 @@ export default function QuizPlayer() {
       quizUrl: "https://solthecat.com/games/cityquiz",
       back: "← Επιστροφή στα παιχνίδια",
       scoreText: (s, total) => `🎉 Είχες ${s} σωστές από ${total}!`,
+      timeText: (s) => `⏱️ Χρόνος: ${s}δ.`,
       playAgain: "🔁 Παίξε Ξανά",
       errLoadEpisodes: "Αποτυχία φόρτωσης επεισοδίων.",
       errLoadQuiz: "Το αρχείο quiz δεν βρέθηκε ή δεν είναι έγκυρο.",
@@ -317,24 +327,30 @@ export default function QuizPlayer() {
       .catch(() => setTopEntries([]));
   }, [city]);
 
-  // After every result reveal, update personal best.
+  // After every result reveal, freeze the timer, compute the composite
+  // score, and update personal best.
   useEffect(() => {
-    if (!showResults || !city) return;
+    if (!showResults || !city || !startTime) return;
+    const elapsed = Math.max(0, Math.floor((Date.now() - startTime) / 1000));
+    setTotalSeconds(elapsed);
+    const composite = Math.max(0, score * 10000 - elapsed);
+    setWinScore(composite);
+
     const lvl = String(city).toLowerCase();
     const prevBest = parseInt(localStorage.getItem(`quiz_best_${lvl}`) || "0", 10);
-    if (score > prevBest) {
-      localStorage.setItem(`quiz_best_${lvl}`, String(score));
-      setPersonalBest(score);
+    if (composite > prevBest) {
+      localStorage.setItem(`quiz_best_${lvl}`, String(composite));
+      setPersonalBest(composite);
     }
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
-  }, [showResults, city, score]);
+  }, [showResults, city, score, startTime]);
 
   const qualifiesForLeaderboard = () => {
-    if (score <= 0) return false;
+    if (winScore <= 0) return false;
     if (topEntries.length < 3) return true;
-    return score > topEntries[2].score;
+    return winScore > topEntries[2].score;
   };
 
   const submitToLeaderboard = async () => {
@@ -348,7 +364,7 @@ export default function QuizPlayer() {
         body: JSON.stringify({
           game: "quiz",
           level: String(city).toLowerCase(),
-          score,
+          score: winScore,
           name,
         }),
       });
@@ -393,6 +409,9 @@ export default function QuizPlayer() {
         setShowResults(false);
         setError("");
         setSelectedAnswer(null);
+        setStartTime(Date.now());
+        setTotalSeconds(0);
+        setWinScore(0);
       })
       .catch(() => {
         setQuestions([]);
@@ -470,12 +489,14 @@ export default function QuizPlayer() {
                   <span>
                     {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
                   </span>
-                  <span><strong>{e.score}</strong></span>
+                  <span><strong>{formatScore("quiz", e.score)}</strong></span>
                 </Top3Row>
               ))
             )}
             <PersonalBestText>
-              {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
+              {personalBest > 0
+                ? t.personalBest(formatScore("quiz", personalBest))
+                : t.noBest}
             </PersonalBestText>
           </Top3Box>
         )}
@@ -505,8 +526,11 @@ export default function QuizPlayer() {
         {showResults && (
           <>
             <ScoreText>{t.scoreText(score, questions.length)}</ScoreText>
+            <ScoreText style={{ fontSize: "1rem", marginTop: "0.4rem" }}>
+              {t.timeText(totalSeconds)}
+            </ScoreText>
 
-            {score > 0 && score >= personalBest && (
+            {winScore > 0 && winScore >= personalBest && (
               <PersonalBestText style={{ fontSize: "1rem" }}>
                 {t.newRecord}
               </PersonalBestText>

@@ -62,6 +62,28 @@ export function getPersonalBest(game, level) {
   return parseInt(localStorage.getItem(key) || "0", 10);
 }
 
+// Pretty-print a leaderboard score. Most games store the raw display value
+// (points), but a couple use a composite "correct * 10000 - totalSeconds"
+// encoding so that ties on max-correct are broken by speed. Decode those
+// back to "X/Y · Ns" for human-readable Top 3 rows.
+//
+// Backwards compat: entries written before the composite migration are
+// raw 0-5 / 0-8 and stay below 10000 — display them as plain numbers so
+// nothing breaks in the existing board.
+export function formatScore(game, score) {
+  if (game === "spotcity" && score >= 10000) {
+    const correct = Math.floor(score / 10000);
+    const seconds = correct * 10000 - score;
+    return `${correct}/5 · ${seconds}s`;
+  }
+  if (game === "quiz" && score >= 10000) {
+    const correct = Math.floor(score / 10000);
+    const seconds = correct * 10000 - score;
+    return `${correct}/8 · ${seconds}s`;
+  }
+  return String(score);
+}
+
 function isoOf(date) {
   return date.toISOString().slice(0, 10);
 }

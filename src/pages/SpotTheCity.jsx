@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
-import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
+import { markDailyDoneIfMatches, formatScore } from "../utils/dailyChallenge.js";
 
 const ROUNDS = 5;
 
@@ -307,6 +307,13 @@ export default function SpotTheCity() {
   const [currentRound, setCurrentRound] = useState(null);
   const [selected, setSelected] = useState(null);
 
+  // Timer + composite score. Max-correct (5/5) is achievable enough that ties
+  // dominate without a tiebreaker — so the leaderboard score is encoded as
+  // `correct * 10000 - totalSeconds`, decoded for display by formatScore().
+  const [startTime, setStartTime] = useState(null);
+  const [totalSeconds, setTotalSeconds] = useState(0);
+  const [winScore, setWinScore] = useState(0);
+
   // Leaderboard state — single board, level="default".
   const [topEntries, setTopEntries] = useState([]);
   const [personalBest, setPersonalBest] = useState(0);
@@ -333,6 +340,7 @@ export default function SpotTheCity() {
       next: "Next round →",
       finishedTitle: "🎒 Adventure complete!",
       finishedScore: (s) => `You got ${s} out of ${ROUNDS} right.`,
+      finishedTime: (s) => `⏱️ Total time: ${s}s`,
       finishedPerfect: "Pawfect score! 🏆",
       finishedGood: "Sol's proud of you. 🐾",
       finishedSoso: "Keep exploring with Sol!",
@@ -362,6 +370,7 @@ export default function SpotTheCity() {
       next: "Επόμενος γύρος →",
       finishedTitle: "🎒 Τέλος περιπέτειας!",
       finishedScore: (s) => `Έκανες ${s} σωστές στις ${ROUNDS}.`,
+      finishedTime: (s) => `⏱️ Συνολικός χρόνος: ${s}δ.`,
       finishedPerfect: "Τέλειο σκορ! 🏆",
       finishedGood: "Η Sol είναι περήφανη! 🐾",
       finishedSoso: "Συνέχισε να εξερευνείς με τη Sol!",
@@ -428,24 +437,29 @@ export default function SpotTheCity() {
       .catch(() => setTopEntries([]));
   }, []);
 
-  // Update personal best whenever the final phase begins.
+  // Update personal best whenever the final phase begins. Personal best is
+  // stored as the composite score so it sorts/compares with leaderboard data.
   useEffect(() => {
-    if (phase !== "final") return;
+    if (phase !== "final" || !startTime) return;
+    const elapsed = Math.max(0, Math.floor((Date.now() - startTime) / 1000));
+    setTotalSeconds(elapsed);
+    const composite = Math.max(0, score * 10000 - elapsed);
+    setWinScore(composite);
     const prevBest = parseInt(localStorage.getItem("spotCity_best") || "0", 10);
-    if (score > prevBest) {
-      localStorage.setItem("spotCity_best", String(score));
-      setPersonalBest(score);
+    if (composite > prevBest) {
+      localStorage.setItem("spotCity_best", String(composite));
+      setPersonalBest(composite);
     }
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
     markDailyDoneIfMatches("spotcity", "default");
-  }, [phase, score]);
+  }, [phase, score, startTime]);
 
   const qualifiesForLeaderboard = () => {
-    if (score <= 0) return false;
+    if (winScore <= 0) return false;
     if (topEntries.length < 3) return true;
-    return score > topEntries[2].score;
+    return winScore > topEntries[2].score;
   };
 
   const submitToLeaderboard = async () => {
@@ -459,7 +473,7 @@ export default function SpotTheCity() {
         body: JSON.stringify({
           game: "spotcity",
           level: "default",
-          score,
+          score: winScore,
           name,
         }),
       });
@@ -487,6 +501,9 @@ export default function SpotTheCity() {
     setRound(1);
     setScore(0);
     setSelected(null);
+    setStartTime(Date.now());
+    setTotalSeconds(0);
+    setWinScore(0);
     setPhase("playing");
   };
 
@@ -558,12 +575,14 @@ export default function SpotTheCity() {
                     <span>
                       {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
                     </span>
-                    <span><strong>{e.score}</strong></span>
+                    <span><strong>{formatScore("spotcity", e.score)}</strong></span>
                   </Top3Row>
                 ))
               )}
               <PersonalBestText>
-                {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
+                {personalBest > 0
+                  ? t.personalBest(formatScore("spotcity", personalBest))
+                  : t.noBest}
               </PersonalBestText>
             </Top3Box>
 
@@ -645,9 +664,10 @@ export default function SpotTheCity() {
           >
             <FinalScore>{t.finishedTitle}</FinalScore>
             <FinalMessage>{t.finishedScore(score)}</FinalMessage>
+            <FinalMessage>{t.finishedTime(totalSeconds)}</FinalMessage>
             <FinalMessage>{finalMessage}</FinalMessage>
 
-            {score > 0 && score >= personalBest && (
+            {winScore > 0 && winScore >= personalBest && (
               <PersonalBestText style={{ fontSize: "1rem" }}>
                 {t.newRecord}
               </PersonalBestText>

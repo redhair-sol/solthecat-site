@@ -42,7 +42,9 @@ const MAX_SCORES = {
   "catch-cats_hard": 200,
   "quick-paws_default": 200,
   "mapquiz_default": 5000,
-  "spotcity_default": 5,
+  // spotcity score = correct*10000 - totalSeconds (composite). Max plausible:
+  // 5 correct in 1s = 49999, so cap at 50000 leaves headroom.
+  "spotcity_default": 50000,
   "solsnap_default": 200,
   // Pawprints score = seconds left when matched all pairs (60s round).
   "pawprints_default": 60,
