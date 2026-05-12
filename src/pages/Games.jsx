@@ -113,6 +113,8 @@ export default function Games() {
   const content = {
     en: {
       pageTitle: "Sol’s Game Room – SolTheCat",
+      metaDescription:
+        "12 free Sol the Cat mini-games — quizzes, memory, puzzles, reaction challenges. Climb the leaderboard and beat today's daily challenge.",
       heading: "Sol’s Games 🎮",
       subtitle: "Pick your royal challenge",
       playText: "Play",
@@ -205,6 +207,8 @@ export default function Games() {
     },
     el: {
       pageTitle: "Αίθουσα Παιχνιδιών της Sol – SolTheCat",
+      metaDescription:
+        "12 δωρεάν mini-games της Sol the Cat — quizzes, μνήμη, παζλ, αντανακλαστικά. Σκαρφάλωσε στη βαθμολογία και νίκα τη σημερινή πρόκληση.",
       heading: "Παιχνίδια της Sol 🎮",
       subtitle: "Διάλεξε τη βασιλική σου πρόκληση",
       playText: "Παίξε",
@@ -303,6 +307,7 @@ export default function Games() {
     <>
       <Helmet>
         <title>{t.pageTitle}</title>
+        <meta name="description" content={t.metaDescription} />
         <link rel="canonical" href="https://solthecat.com/games" />
       </Helmet>
 

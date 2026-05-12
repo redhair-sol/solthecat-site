@@ -67,17 +67,23 @@ export function getPersonalBest(game, level) {
 // encoding so that ties on max-correct are broken by speed. Decode those
 // back to "X/Y · Ns" for human-readable Top 3 rows.
 //
+// Why ceil and not floor: a perfect 5/5 in 12s encodes as 49988
+// (= 5 * 10000 - 12). floor(49988/10000) = 4, which is wrong. ceil = 5,
+// which lets `correct * 10000 - score` yield the original seconds value.
+// floor was the bug that displayed "4/5 · -9974s" for what was actually
+// "5/5 · 26s".
+//
 // Backwards compat: entries written before the composite migration are
 // raw 0-5 / 0-8 and stay below 10000 — display them as plain numbers so
 // nothing breaks in the existing board.
 export function formatScore(game, score) {
   if (game === "spotcity" && score >= 10000) {
-    const correct = Math.floor(score / 10000);
+    const correct = Math.ceil(score / 10000);
     const seconds = correct * 10000 - score;
     return `${correct}/5 · ${seconds}s`;
   }
   if (game === "quiz" && score >= 10000) {
-    const correct = Math.floor(score / 10000);
+    const correct = Math.ceil(score / 10000);
     const seconds = correct * 10000 - score;
     return `${correct}/8 · ${seconds}s`;
   }

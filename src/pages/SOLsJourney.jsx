@@ -189,12 +189,16 @@ export default function SOLsJourneyAnimated() {
   const t = {
     en: {
       pageTitle: "Sol's Journey – SolTheCat",
+      metaDescription:
+        "Interactive world map of Sol the Cat's travels — 50+ city pins from Athens to Petra. Click any pin to explore that SOLadventure.",
       heading: "Sol's Journey 🗺️",
       currentLocation: "📍 Current Location: ",
       showJourney: "▶️ Show Journey",
     },
     el: {
       pageTitle: "Το Ταξίδι της Sol – SolTheCat",
+      metaDescription:
+        "Διαδραστικός παγκόσμιος χάρτης των ταξιδιών της Sol the Cat — 50+ πόλεις από την Αθήνα μέχρι την Πέτρα. Κλικ σε κάθε pin για το αντίστοιχο SOLadventure.",
       heading: "Το Ταξίδι της Sol 🗺️",
       currentLocation: "📍 Τρέχουσα Τοποθεσία: ",
       showJourney: "▶️ Δες το Ταξίδι",
@@ -226,6 +230,7 @@ export default function SOLsJourneyAnimated() {
     <>
       <Helmet>
         <title>{t.pageTitle}</title>
+        <meta name="description" content={t.metaDescription} />
         <link rel="canonical" href="https://solthecat.com/map" />
       </Helmet>
 

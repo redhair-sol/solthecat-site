@@ -383,6 +383,14 @@ export default function GalleryPage() {
         <title>
           {language === "el" ? "Συλλογή" : "Gallery"} – SolTheCat
         </title>
+        <meta
+          name="description"
+          content={
+            language === "el"
+              ? "Φωτογραφική συλλογή της Sol the Cat — οι καλύτερες στιγμές από κάθε ταξίδι, από την Αθήνα μέχρι την Πέτρα."
+              : "Sol the Cat's photo gallery — best moments from every journey, from Athens to Petra."
+          }
+        />
         <link rel="canonical" href="https://solthecat.com/gallery" />
       </Helmet>
 

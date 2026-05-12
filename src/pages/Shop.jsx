@@ -162,6 +162,8 @@ export default function Shop() {
   const t = {
     en: {
       pageTitle: "SOLicious Delights – SolTheCat",
+      metaDescription:
+        "Sol the Cat's shop — SOLicious treats and royal goodies inspired by her travels. Coming soon.",
       heading: "Sol’s Shop 🛍️",
       subtitle: "Every feline deserves treats",
       ribbon: "Soon",
@@ -174,6 +176,8 @@ export default function Shop() {
     },
     el: {
       pageTitle: "Επιλογές SOL – SolTheCat",
+      metaDescription:
+        "Το κατάστημα της Sol the Cat — SOLicious λιχουδιές και βασιλικά treats εμπνευσμένα από τα ταξίδια της. Έρχεται σύντομα.",
       heading: "Το Κατάστημα της Sol 🛍️",
       subtitle: "Κάθε γάτα αξίζει λιχουδιές",
       ribbon: "Σύντομα",
@@ -206,6 +210,7 @@ export default function Shop() {
     <>
       <Helmet>
         <title>{t.pageTitle}</title>
+        <meta name="description" content={t.metaDescription} />
         <link rel="canonical" href="https://solthecat.com/shop" />
       </Helmet>
 

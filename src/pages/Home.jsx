@@ -492,6 +492,8 @@ export default function Home() {
       bio: "Welcome to the official home of solthecat, the feline queen behind the SOLadventures series. From Athens to Paris and beyond, Sol brings elegance, attitude, and a touch of royal paw-power to every destination. Follow her travels, her tales, and her timeless stare.",
       cityCountBefore: "Solthecat has roamed ",
       cityCountAfter: " cities and counting...",
+      metaDescription:
+        "Follow Sol the Cat across 50+ cities — from Athens to Petra. Read travel stories, play 12 free mini-games, and beat the daily challenge.",
       viewJourney: "View the Journey",
       quoteTitle:
         mode === "fortune"
@@ -524,6 +526,8 @@ export default function Home() {
       bio: "Καλωσήρθες στο επίσημο σπίτι της solthecat, της πρωταγωνίστριας της σειράς SOLadventures. Από την Αθήνα ως το Παρίσι και πέρα, η Sol φέρνει κομψότητα, ύφος και βασιλική γοητεία σε κάθε της στάση. Ακολούθησε τα ταξίδια της, τις ιστορίες της και το διαχρονικό της βλέμμα.",
       cityCountBefore: "Η solthecat έχει επισκεφθεί ",
       cityCountAfter: " πόλεις και συνεχίζει...",
+      metaDescription:
+        "Ακολούθα τη Sol the Cat σε 50+ πόλεις — από την Αθήνα μέχρι την Πέτρα. Διάβασε ταξιδιωτικές ιστορίες, παίξε 12 δωρεάν mini-games και νίκα την καθημερινή πρόκληση.",
       viewJourney: "Δες το Ταξίδι",
       quoteTitle:
         mode === "fortune"
@@ -558,6 +562,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Sol’s Adventures – Home</title>
+        <meta name="description" content={t.metaDescription} />
         <link rel="canonical" href="https://solthecat.com/" />
         {hasSearchParam && <meta name="robots" content="noindex, follow" />}
       </Helmet>

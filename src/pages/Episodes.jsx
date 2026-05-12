@@ -1,13 +1,35 @@
 // src/pages/Episodes.jsx
 
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { Search, X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { detectRegion } from "../utils/region.js";
+
+// Pulls the human-friendly city name out of the episode title so the
+// per-card quiz CTA reads "Play the Athens quiz", "Play the Saint-Louis quiz"
+// etc. Titles follow the pattern "SOLadventure #N – CityName, rest…" — we
+// grab whatever sits between " – " and the first comma. Falls back to a
+// title-cased slug for safety (e.g. "lapaz" → "Lapaz").
+function extractCityName(ep, lang) {
+  const title =
+    (typeof ep.title === "object" ? ep.title[lang] : ep.title) || "";
+  const afterDash = title.split(" – ")[1];
+  if (afterDash) {
+    const beforeComma = afterDash.split(",")[0].trim();
+    if (beforeComma) return beforeComma;
+  }
+  if (ep.city) {
+    return ep.city
+      .split("-")
+      .map((p) => p.charAt(0).toUpperCase() + p.slice(1))
+      .join("-");
+  }
+  return "";
+}
 
 // Region keys produced by the lat/lng classifier in src/utils/region.js.
 const REGION_KEYS = [
@@ -194,6 +216,36 @@ const StoryTitle = styled.h3`
   color: #6a1b9a;
 `;
 
+// Per-card CTA row that pushes the user from "read story" to "play the quiz
+// for this city". Sits at the end of each card. Funnel fix — analytics
+// showed visitors browse /episodes but rarely reach /games on their own.
+const CTARow = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+`;
+
+const QuizCTA = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  background: #c187d8;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(170, 77, 200, 0.25);
+  transition: background 0.15s ease, transform 0.15s ease;
+
+  &:hover {
+    background: #aa4dc8;
+    transform: scale(1.03);
+  }
+`;
+
 const ErrorBox = styled.div`
   background: #ffebee;
   color: #c62828;
@@ -236,6 +288,9 @@ export default function Episodes() {
       clearLabel: "Clear search",
       storyTitle: "SOL’s Tale",
       loadFail: "Couldn't load episodes. Please try refreshing the page.",
+      quizCTA: (city) => `🧠 Play the ${city} quiz →`,
+      metaDescription:
+        "All 52 SOLadventures — short travel stories from Athens, Rome, Paris, Marrakech, Petra and beyond. Each city, a queen's-eye view.",
       regions: {
         all: "All",
         europe: "Europe",
@@ -255,6 +310,9 @@ export default function Episodes() {
       clearLabel: "Καθαρισμός αναζήτησης",
       storyTitle: "Το Παραμύθι της SOL",
       loadFail: "Δεν φόρτωσαν τα επεισόδια. Παρακαλώ δοκίμασε refresh.",
+      quizCTA: (city) => `🧠 Παίξε το quiz της ${city} →`,
+      metaDescription:
+        "Όλα τα 52 SOLadventures — μικρές ταξιδιωτικές ιστορίες από Αθήνα, Ρώμη, Παρίσι, Μαρακές, Πέτρα και ακόμη πιο πέρα. Κάθε πόλη, μια βασιλική ματιά.",
       regions: {
         all: "Όλα",
         europe: "Ευρώπη",
@@ -355,6 +413,7 @@ export default function Episodes() {
         <title>
           {language === "el" ? "Επεισόδια" : "Episodes"} – SolTheCat
         </title>
+        <meta name="description" content={t.metaDescription} />
         <link rel="canonical" href="https://solthecat.com/episodes" />
       </Helmet>
 
@@ -444,6 +503,14 @@ export default function Episodes() {
                 <StoryTitle>{t.storyTitle}</StoryTitle>
                 <p>{ep.story[language]}</p>
               </StoryContainer>
+            )}
+
+            {ep.visible !== false && ep.city && (
+              <CTARow>
+                <QuizCTA to="/games/cityquiz">
+                  {t.quizCTA(extractCityName(ep, language))}
+                </QuizCTA>
+              </CTARow>
             )}
           </EpisodeCard>
         ))}

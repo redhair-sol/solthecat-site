@@ -66,6 +66,14 @@ export default function Contact() {
         <title>
           {language === "el" ? "Επικοινωνία" : "Contact"} – SolTheCat
         </title>
+        <meta
+          name="description"
+          content={
+            language === "el"
+              ? "Επικοινώνησε με τη Sol the Cat — προτάσεις, συνεργασίες, ή απλά για να πεις γεια στη βασίλισσα."
+              : "Get in touch with Sol the Cat — suggestions, collaborations, or just say hi to the queen."
+          }
+        />
         <link rel="canonical" href="https://solthecat.com/contact" />
       </Helmet>
 
