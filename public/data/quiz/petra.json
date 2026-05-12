@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "question": {
+      "en": "Which country is Petra located in?",
+      "el": "Σε ποια χώρα βρίσκεται η Πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "Jordan", "el": "Ιορδανία" }, "correct": true },
+      { "text": { "en": "Egypt", "el": "Αίγυπτος" }, "correct": false },
+      { "text": { "en": "Lebanon", "el": "Λίβανος" }, "correct": false },
+      { "text": { "en": "Syria", "el": "Συρία" }, "correct": false }
+    ]
+  },
+  {
+    "id": 2,
+    "question": {
+      "en": "By which ancient people was Petra built?",
+      "el": "Από ποιον αρχαίο λαό χτίστηκε η Πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "The Nabataeans", "el": "Τους Ναβαταίους" }, "correct": true },
+      { "text": { "en": "The Romans", "el": "Τους Ρωμαίους" }, "correct": false },
+      { "text": { "en": "The Egyptians", "el": "Τους Αιγυπτίους" }, "correct": false },
+      { "text": { "en": "The Phoenicians", "el": "Τους Φοίνικες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 3,
+    "question": {
+      "en": "What is the famous carved facade at the end of the Siq called?",
+      "el": "Πώς λέγεται η διάσημη σκαλισμένη πρόσοψη στο τέλος του Σικ;"
+    },
+    "answers": [
+      { "text": { "en": "The Treasury (Al-Khazneh)", "el": "Ο Θησαυρός (Al-Khazneh)" }, "correct": true },
+      { "text": { "en": "The Monastery", "el": "Το Μοναστήρι" }, "correct": false },
+      { "text": { "en": "The Royal Tombs", "el": "Οι Βασιλικοί Τάφοι" }, "correct": false },
+      { "text": { "en": "The Forum", "el": "Η Αγορά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 4,
+    "question": {
+      "en": "By what nickname is Petra popularly known?",
+      "el": "Με ποιο παρατσούκλι είναι γνωστή η Πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "The Rose City", "el": "Η Ροζ Πόλη" }, "correct": true },
+      { "text": { "en": "The Hidden City", "el": "Η Κρυφή Πόλη" }, "correct": false },
+      { "text": { "en": "The Gold City", "el": "Η Χρυσή Πόλη" }, "correct": false },
+      { "text": { "en": "The Desert Capital", "el": "Η Πρωτεύουσα της Ερήμου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 5,
+    "question": {
+      "en": "Through what narrow gorge does the main path to Petra run?",
+      "el": "Μέσα από ποιο στενό φαράγγι περνά η κύρια διαδρομή προς την Πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "The Siq", "el": "Το Σικ" }, "correct": true },
+      { "text": { "en": "The Wadi", "el": "Το Γουάντι" }, "correct": false },
+      { "text": { "en": "The Naqb", "el": "Το Νακμπ" }, "correct": false },
+      { "text": { "en": "The Canyon Pass", "el": "Το Πέρασμα του Φαραγγιού" }, "correct": false }
+    ]
+  },
+  {
+    "id": 6,
+    "question": {
+      "en": "Out of which type of rock is Petra carved?",
+      "el": "Από ποιο είδος πέτρας είναι σκαλισμένη η Πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "Sandstone", "el": "Ψαμμίτης" }, "correct": true },
+      { "text": { "en": "Granite", "el": "Γρανίτης" }, "correct": false },
+      { "text": { "en": "Limestone", "el": "Ασβεστόλιθος" }, "correct": false },
+      { "text": { "en": "Basalt", "el": "Βασάλτης" }, "correct": false }
+    ]
+  },
+  {
+    "id": 7,
+    "question": {
+      "en": "Petra is recognized by UNESCO as a...",
+      "el": "Η Πέτρα είναι αναγνωρισμένη από την UNESCO ως..."
+    },
+    "answers": [
+      { "text": { "en": "World Heritage Site", "el": "Μνημείο Παγκόσμιας Κληρονομιάς" }, "correct": true },
+      { "text": { "en": "Biosphere Reserve only", "el": "Μόνο Απόθεμα Βιόσφαιρας" }, "correct": false },
+      { "text": { "en": "Cultural Capital", "el": "Πολιτιστική Πρωτεύουσα" }, "correct": false },
+      { "text": { "en": "Modern Wonder Reserve", "el": "Απόθεμα Σύγχρονου Θαύματος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 8,
+    "question": {
+      "en": "Petra is one of...",
+      "el": "Η Πέτρα είναι ένα από..."
+    },
+    "answers": [
+      { "text": { "en": "The New 7 Wonders of the World", "el": "Τα Νέα 7 Θαύματα του Κόσμου" }, "correct": true },
+      { "text": { "en": "The Ancient 7 Wonders", "el": "Τα Αρχαία 7 Θαύματα" }, "correct": false },
+      { "text": { "en": "The Olympian Sites", "el": "Τους Ολυμπιακούς Τόπους" }, "correct": false },
+      { "text": { "en": "The Mediterranean Pearls", "el": "Τα Μαργαριτάρια της Μεσογείου" }, "correct": false }
+    ]
+  },
+  {
+    "id": 9,
+    "question": {
+      "en": "Which Indiana Jones film famously features the Treasury?",
+      "el": "Σε ποια ταινία Indiana Jones εμφανίζεται διάσημα ο Θησαυρός;"
+    },
+    "answers": [
+      { "text": { "en": "The Last Crusade", "el": "The Last Crusade" }, "correct": true },
+      { "text": { "en": "Raiders of the Lost Ark", "el": "Raiders of the Lost Ark" }, "correct": false },
+      { "text": { "en": "The Temple of Doom", "el": "The Temple of Doom" }, "correct": false },
+      { "text": { "en": "Kingdom of the Crystal Skull", "el": "Kingdom of the Crystal Skull" }, "correct": false }
+    ]
+  },
+  {
+    "id": 10,
+    "question": {
+      "en": "What is Petra's huge rock-cut monument, even larger than the Treasury, called?",
+      "el": "Πώς λέγεται το τεράστιο σκαλιστό μνημείο της Πέτρας, ακόμη μεγαλύτερο από τον Θησαυρό;"
+    },
+    "answers": [
+      { "text": { "en": "Ad-Deir (The Monastery)", "el": "Ad-Deir (Το Μοναστήρι)" }, "correct": true },
+      { "text": { "en": "The High Place of Sacrifice", "el": "Ο Υψηλός Τόπος Θυσίας" }, "correct": false },
+      { "text": { "en": "The Royal Tomb", "el": "Ο Βασιλικός Τάφος" }, "correct": false },
+      { "text": { "en": "The Obelisk", "el": "Ο Οβελίσκος" }, "correct": false }
+    ]
+  },
+  {
+    "id": 11,
+    "question": {
+      "en": "Petra was the capital of which ancient kingdom?",
+      "el": "Η Πέτρα ήταν η πρωτεύουσα ποιου αρχαίου βασιλείου;"
+    },
+    "answers": [
+      { "text": { "en": "The Nabataean Kingdom", "el": "Του Ναβαταϊκού Βασιλείου" }, "correct": true },
+      { "text": { "en": "The Persian Empire", "el": "Της Περσικής Αυτοκρατορίας" }, "correct": false },
+      { "text": { "en": "The Byzantine Empire", "el": "Της Βυζαντινής Αυτοκρατορίας" }, "correct": false },
+      { "text": { "en": "The Phoenician League", "el": "Της Φοινικικής Συμμαχίας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 12,
+    "question": {
+      "en": "Which modern Jordanian town sits next to Petra?",
+      "el": "Ποια σύγχρονη ιορδανική πόλη βρίσκεται δίπλα στην Πέτρα;"
+    },
+    "answers": [
+      { "text": { "en": "Wadi Musa", "el": "Wadi Musa" }, "correct": true },
+      { "text": { "en": "Aqaba", "el": "Άκαμπα" }, "correct": false },
+      { "text": { "en": "Amman", "el": "Αμμάν" }, "correct": false },
+      { "text": { "en": "Madaba", "el": "Μαντάμπα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 13,
+    "question": {
+      "en": "On which continent is Jordan located?",
+      "el": "Σε ποια ήπειρο βρίσκεται η Ιορδανία;"
+    },
+    "answers": [
+      { "text": { "en": "Asia", "el": "Ασία" }, "correct": true },
+      { "text": { "en": "Africa", "el": "Αφρική" }, "correct": false },
+      { "text": { "en": "Europe", "el": "Ευρώπη" }, "correct": false },
+      { "text": { "en": "South America", "el": "Νότια Αμερική" }, "correct": false }
+    ]
+  },
+  {
+    "id": 14,
+    "question": {
+      "en": "Around which centuries did Petra reach its peak?",
+      "el": "Σε ποιους αιώνες έφτασε η Πέτρα στο απόγειό της;"
+    },
+    "answers": [
+      { "text": { "en": "1st century BC – 2nd century AD", "el": "1ος αιώνας π.Χ. – 2ος αιώνας μ.Χ." }, "correct": true },
+      { "text": { "en": "5th–7th centuries AD", "el": "5ος–7ος αιώνας μ.Χ." }, "correct": false },
+      { "text": { "en": "10th–12th centuries AD", "el": "10ος–12ος αιώνας μ.Χ." }, "correct": false },
+      { "text": { "en": "4th century BC only", "el": "Μόνο 4ος αιώνας π.Χ." }, "correct": false }
+    ]
+  },
+  {
+    "id": 15,
+    "question": {
+      "en": "The Siq is essentially a...",
+      "el": "Το Σικ είναι ουσιαστικά..."
+    },
+    "answers": [
+      { "text": { "en": "Narrow gorge / canyon", "el": "Στενό φαράγγι" }, "correct": true },
+      { "text": { "en": "Coral reef", "el": "Κοραλλιογενής ύφαλος" }, "correct": false },
+      { "text": { "en": "Cave system", "el": "Σύστημα σπηλαίων" }, "correct": false },
+      { "text": { "en": "Wide plain", "el": "Ευρεία πεδιάδα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 16,
+    "question": {
+      "en": "What color dominates Petra's stone?",
+      "el": "Ποιο χρώμα κυριαρχεί στην πέτρα της Πέτρας;"
+    },
+    "answers": [
+      { "text": { "en": "Rose pink", "el": "Ροζ" }, "correct": true },
+      { "text": { "en": "Pure white", "el": "Καθαρό λευκό" }, "correct": false },
+      { "text": { "en": "Black", "el": "Μαύρο" }, "correct": false },
+      { "text": { "en": "Forest green", "el": "Σκούρο πράσινο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 17,
+    "question": {
+      "en": "What was Petra's main economic role in antiquity?",
+      "el": "Ποιος ήταν ο κύριος οικονομικός ρόλος της Πέτρας στην αρχαιότητα;"
+    },
+    "answers": [
+      { "text": { "en": "Caravan trade hub", "el": "Κόμβος εμπορικών καραβανιών" }, "correct": true },
+      { "text": { "en": "Naval port", "el": "Ναυτικό λιμάνι" }, "correct": false },
+      { "text": { "en": "Mining colony", "el": "Μεταλλευτική αποικία" }, "correct": false },
+      { "text": { "en": "Pilgrimage destination only", "el": "Μόνο προσκυνηματικός προορισμός" }, "correct": false }
+    ]
+  },
+  {
+    "id": 18,
+    "question": {
+      "en": "Which goods passed through Petra along ancient trade routes?",
+      "el": "Ποια αγαθά περνούσαν από την Πέτρα μέσω αρχαίων εμπορικών δρόμων;"
+    },
+    "answers": [
+      { "text": { "en": "Incense, spices and silk", "el": "Λιβάνι, μπαχαρικά και μετάξι" }, "correct": true },
+      { "text": { "en": "Iron ore only", "el": "Μόνο σιδηρομετάλλευμα" }, "correct": false },
+      { "text": { "en": "Salt only", "el": "Μόνο αλάτι" }, "correct": false },
+      { "text": { "en": "Furs only", "el": "Μόνο γούνες" }, "correct": false }
+    ]
+  },
+  {
+    "id": 19,
+    "question": {
+      "en": "In Sol's story, what greets her as she emerges from the Siq?",
+      "el": "Στην ιστορία της Sol, τι την υποδέχεται καθώς βγαίνει από το Σικ;"
+    },
+    "answers": [
+      { "text": { "en": "The Treasury, rising like a carved face", "el": "Ο Θησαυρός, υψώνεται σαν σκαλισμένο πρόσωπο" }, "correct": true },
+      { "text": { "en": "The Monastery", "el": "Το Μοναστήρι" }, "correct": false },
+      { "text": { "en": "A busy market", "el": "Μια πολύβουη αγορά" }, "correct": false },
+      { "text": { "en": "A long staircase", "el": "Μια μακριά σκάλα" }, "correct": false }
+    ]
+  },
+  {
+    "id": 20,
+    "question": {
+      "en": "What do Sol's paws print on as she steps out?",
+      "el": "Πάνω σε τι αφήνουν αποτυπώματα οι πατούσες της Sol;"
+    },
+    "answers": [
+      { "text": { "en": "Warm sand and rust-colored dust", "el": "Ζεστή άμμο και σκουριασμένη σκόνη" }, "correct": true },
+      { "text": { "en": "Wet cobblestones", "el": "Βρεγμένα κυβόλιθα" }, "correct": false },
+      { "text": { "en": "Fresh snow", "el": "Φρέσκο χιόνι" }, "correct": false },
+      { "text": { "en": "Polished marble", "el": "Γυαλισμένο μάρμαρο" }, "correct": false }
+    ]
+  },
+  {
+    "id": 21,
+    "question": {
+      "en": "What scent does the air hold in the story?",
+      "el": "Τι μυρωδιά κρατά ο αέρας στην ιστορία;"
+    },
+    "answers": [
+      { "text": { "en": "Sun on rock, ancient and dry", "el": "Ήλιο πάνω στην πέτρα, αρχαία και ξηρή" }, "correct": true },
+      { "text": { "en": "Salt water", "el": "Αλμυρό νερό" }, "correct": false },
+      { "text": { "en": "Pine forest", "el": "Δάσος πεύκων" }, "correct": false },
+      { "text": { "en": "Spices and incense", "el": "Μπαχαρικά και λιβάνι" }, "correct": false }
+    ]
+  },
+  {
+    "id": 22,
+    "question": {
+      "en": "According to the story, what did Sol not need?",
+      "el": "Σύμφωνα με την ιστορία, τι δεν χρειαζόταν η Sol;"
+    },
+    "answers": [
+      { "text": { "en": "The temples' old names", "el": "Τα παλιά ονόματα των ναών" }, "correct": true },
+      { "text": { "en": "Sunlight", "el": "Φως" }, "correct": false },
+      { "text": { "en": "Water", "el": "Νερό" }, "correct": false },
+      { "text": { "en": "Company", "el": "Συντροφιά" }, "correct": false }
+    ]
+  },
+  {
+    "id": 23,
+    "question": {
+      "en": "How does the story describe Sol's pace at the facade?",
+      "el": "Πώς περιγράφει η ιστορία τον ρυθμό της Sol μπροστά στην πρόσοψη;"
+    },
+    "answers": [
+      { "text": { "en": "Slowly, with respect", "el": "Αργά, με σεβασμό" }, "correct": true },
+      { "text": { "en": "Quick and curious", "el": "Γρήγορα και με περιέργεια" }, "correct": false },
+      { "text": { "en": "Running and shouting", "el": "Τρέχοντας και φωνάζοντας" }, "correct": false },
+      { "text": { "en": "Hopping along", "el": "Πηδώντας" }, "correct": false }
+    ]
+  },
+  {
+    "id": 24,
+    "question": {
+      "en": "What is the photo quote of the Petra episode?",
+      "el": "Ποιο είναι το photo quote του επεισοδίου της Πέτρας;"
+    },
+    "answers": [
+      { "text": { "en": "Carved for a Queen.", "el": "Carved for a Queen." }, "correct": true },
+      { "text": { "en": "Royalty has arrived.", "el": "Royalty has arrived." }, "correct": false },
+      { "text": { "en": "Past and pawprints never fade.", "el": "Past and pawprints never fade." }, "correct": false },
+      { "text": { "en": "The roar bows to the calm.", "el": "The roar bows to the calm." }, "correct": false }
+    ]
+  },
+  {
+    "id": 25,
+    "question": {
+      "en": "In the closing line, who does the city remember walks back through it?",
+      "el": "Στην τελευταία γραμμή, ποιο πρόσωπο θυμάται η πόλη να περπατά ξανά μέσα της;"
+    },
+    "answers": [
+      { "text": { "en": "The queen (Sol)", "el": "Τη βασίλισσα (τη Sol)" }, "correct": true },
+      { "text": { "en": "A passing merchant", "el": "Έναν περαστικό έμπορο" }, "correct": false },
+      { "text": { "en": "A royal messenger", "el": "Έναν βασιλικό αγγελιοφόρο" }, "correct": false },
+      { "text": { "en": "A lost traveler", "el": "Έναν χαμένο ταξιδιώτη" }, "correct": false }
+    ]
+  }
+]

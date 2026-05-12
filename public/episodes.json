@@ -2107,5 +2107,47 @@
       }
     ],
     "region": "europe"
+  },
+  {
+    "id": 52,
+    "title": "SOLadventure #52 – Petra, rose‑red city of secrets 🌹 🇯🇴",
+    "quote": "She walked where the stone remembered queens.",
+    "caption": "Even rose stone bowed to royal paws. 🐾🐾🐾",
+    "image": "episodes/petra.webp",
+    "location": {
+      "lat": 30.3285,
+      "lng": 35.4444
+    },
+    "visible": true,
+    "city": "petra",
+    "story": {
+      "en": "Petra didn't whisper. It opened. The Siq spilled her out into a stretch of pink stone, and the Treasury rose like a face carved by patience itself. Sol stepped onto the warm sand, paws printing the rust-colored dust, and stopped only when the silence asked her to. The canyon walls glowed. The air held the scent of sun on rock, ancient and dry. No one called the temples by their old names anymore, but Sol didn't need names. She read the lines of the facade like a queen reading a letter from another queen, slowly and with respect. By the time her shadow crossed the threshold, the city had remembered who walked back through it.",
+      "el": "Η Πέτρα δεν ψιθύρισε. Άνοιξε. Το Σικ την ξέβρασε σε μια έκταση ροζ πέτρας, και ο Θησαυρός υψώθηκε σαν πρόσωπο σκαλισμένο από την ίδια την υπομονή. Η Sol πάτησε στη ζεστή άμμο, με τις πατούσες της να αφήνουν αποτυπώματα στη σκουριασμένη σκόνη, και σταμάτησε μόνο όταν η σιωπή το ζήτησε. Τα τείχη του φαραγγιού έλαμπαν. Ο αέρας κρατούσε τη μυρωδιά του ήλιου πάνω στην πέτρα, αρχαία και ξηρή. Κανείς δεν αποκαλούσε πια τους ναούς με τα παλιά τους ονόματα, αλλά η Sol δεν χρειαζόταν ονόματα. Διάβαζε τις γραμμές της πρόσοψης σαν βασίλισσα που διαβάζει γράμμα από μια άλλη βασίλισσα, αργά και με σεβασμό. Μέχρι να περάσει η σκιά της το κατώφλι, η πόλη είχε θυμηθεί ποια διέσχιζε ξανά τους δρόμους της."
+    },
+    "photoQuote": "Carved for a Queen.",
+    "snapQuestions": [
+      {
+        "question": {
+          "en": "Did Sol arrive in Petra through the narrow Siq gorge?",
+          "el": "Έφτασε η Sol στην Πέτρα μέσα από το στενό φαράγγι Σικ;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Was the Treasury (Al-Khazneh) carved directly into rose-colored sandstone?",
+          "el": "Ήταν ο Θησαυρός (Al-Khazneh) σκαλισμένος μέσα σε ροζ ψαμμίτη;"
+        },
+        "answer": true
+      },
+      {
+        "question": {
+          "en": "Did Sol find Petra noisy and crowded with people calling its old names?",
+          "el": "Βρήκε η Sol την Πέτρα θορυβώδη και γεμάτη ανθρώπους να φωνάζουν τα παλιά της ονόματα;"
+        },
+        "answer": false
+      }
+    ],
+    "region": "asia"
   }
 ]
