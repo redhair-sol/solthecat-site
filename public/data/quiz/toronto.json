@@ -321,7 +321,7 @@
     "answers": [
       { "text": { "en": "It was in shadow", "el": "Ήταν στη σκιά" }, "correct": false },
       { "text": { "en": "It was wet", "el": "Ήταν βρεγμένο" }, "correct": false },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": false },
+      { "text": { "en": "It glowed only under the streetlights", "el": "Έλαμπε μόνο κάτω από τα φώτα του δρόμου" }, "correct": false },
       { "text": { "en": "Yes, it caught the warm light", "el": "Ναι, άγγιξε το φως" }, "correct": true }
     ]
   },

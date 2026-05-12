@@ -227,8 +227,8 @@
   {
     "id": 10,
     "question": {
-      "en": "Which dessert made with melted cheese is popular in Switzerland?",
-      "el": "Ποιο επιδόρπιο με λιωμένο τυρί είναι δημοφιλές στην Ελβετία;"
+      "en": "Which classic Swiss dish is made by dipping bread into a pot of melted cheese?",
+      "el": "Ποιο κλασικό ελβετικό πιάτο φτιάχνεται βουτώντας ψωμί σε ένα δοχείο με λιωμένο τυρί;"
     },
     "answers": [
       {
@@ -240,11 +240,11 @@
         "correct": true
       },
       {
-        "text": { "en": "Strudel", "el": "Στρούντελ" },
+        "text": { "en": "Rösti", "el": "Ρέστι" },
         "correct": false
       },
       {
-        "text": { "en": "Mousse", "el": "Μους" },
+        "text": { "en": "Älplermagronen", "el": "Άλπερμακρόνεν" },
         "correct": false
       }
     ]
@@ -492,16 +492,16 @@
   {
     "id": 20,
     "question": {
-      "en": "Which Swiss company is globally known for chocolate?",
-      "el": "Ποια ελβετική εταιρεία είναι παγκοσμίως γνωστή για τη σοκολάτα;"
+      "en": "Which Swiss chocolate is famous for its triangular shape inspired by the Matterhorn?",
+      "el": "Ποια ελβετική σοκολάτα φημίζεται για το τριγωνικό σχήμα της εμπνευσμένο από το Ματερχόρν;"
     },
     "answers": [
       {
-        "text": { "en": "Nestlé", "el": "Νεστλέ" },
+        "text": { "en": "Hershey's", "el": "Χέρσεϊς" },
         "correct": false
       },
       {
-        "text": { "en": "Lindt", "el": "Λιντ" },
+        "text": { "en": "Cadbury", "el": "Κάντμπερι" },
         "correct": false
       },
       {
@@ -509,7 +509,7 @@
         "correct": true
       },
       {
-        "text": { "en": "Cailler", "el": "Καϊγιέ" },
+        "text": { "en": "Ferrero Rocher", "el": "Φερέρο Ροσέ" },
         "correct": false
       }
     ]

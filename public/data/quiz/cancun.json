@@ -119,14 +119,14 @@
   {
     "id": 10,
     "question": {
-      "en": "Which landmark appears in the distance?",
-      "el": "Ποιο ορόσημο εμφανίζεται στο βάθος;"
+      "en": "Which island sits just offshore from Cancún and is visible from its coastline?",
+      "el": "Ποιο νησί βρίσκεται ακριβώς ανοιχτά του Cancún και φαίνεται από την ακτή του;"
     },
     "answers": [
-      { "text": { "en": "Diamond Head", "el": "Το Diamond Head" }, "correct": true },
-      { "text": { "en": "Chichen Itza", "el": "Το Chichen Itza" }, "correct": false },
-      { "text": { "en": "Temple of the Sun", "el": "Ο Ναός του Ήλιου" }, "correct": false },
-      { "text": { "en": "Pyramid of the Moon", "el": "Η Πυραμίδα του Φεγγαριού" }, "correct": false }
+      { "text": { "en": "Isla Mujeres", "el": "Isla Mujeres" }, "correct": true },
+      { "text": { "en": "Cozumel", "el": "Cozumel" }, "correct": false },
+      { "text": { "en": "Hispaniola", "el": "Ισπανιόλα" }, "correct": false },
+      { "text": { "en": "Galápagos", "el": "Γκαλάπαγκος" }, "correct": false }
     ]
   },
   {
@@ -194,7 +194,6 @@
       { "text": { "en": "Sadness", "el": "Λύπη" }, "correct": false }
     ]
   },
-  [
   {
     "id": 16,
     "question": {
@@ -325,5 +324,4 @@
       { "text": { "en": "In central Mexico", "el": "Στο κεντρικό Μεξικό" }, "correct": false }
     ]
   }
-]
 ]

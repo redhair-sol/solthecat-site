@@ -280,7 +280,7 @@
     },
     "answers": [
       { "text": { "en": "Fish and chips", "el": "Fish and chips" }, "correct": false },
-      { "text": { "en": "Empanadas", "el": "Εμπανάδας" }, "correct": true },
+      { "text": { "en": "Empanadas", "el": "Εμπανάδες" }, "correct": true },
       { "text": { "en": "Pierogi", "el": "Πιερόγκι" }, "correct": false },
       { "text": { "en": "Ramen", "el": "Ράμεν" }, "correct": false }
     ]

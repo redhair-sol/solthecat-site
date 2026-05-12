@@ -15,6 +15,7 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { celebrate } from "../utils/celebrate.js";
 import { markDailyDoneIfMatches } from "../utils/dailyChallenge.js";
+import { upperLocal } from "../utils/greekUpper.js";
 
 const NEST_SIZE = 4;
 
@@ -71,7 +72,6 @@ const HUDChip = styled.div`
 
 const RowLabel = styled.p`
   font-size: 0.85rem;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #5b2b7b;
   font-family: 'Poppins', sans-serif;
@@ -622,7 +622,7 @@ export default function CatSort() {
               </HUDChip>
             </HUDRow>
 
-            <RowLabel>{t.cats}</RowLabel>
+            <RowLabel>{upperLocal(t.cats)}</RowLabel>
             <TopRow>
               {topRow.map((cat, idx) => (
                 <Cell
@@ -646,7 +646,7 @@ export default function CatSort() {
               ))}
             </TopRow>
 
-            <RowLabel>{t.nest}</RowLabel>
+            <RowLabel>{upperLocal(t.nest)}</RowLabel>
             <Nest>
               {nest.map((cat, idx) => (
                 <Cell key={`nest-${idx}`} $empty={!cat} $nest>

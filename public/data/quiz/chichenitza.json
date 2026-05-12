@@ -106,12 +106,12 @@
   {
     "id": 9,
     "question": {
-      "en": "Which deity is linked to the pyramid?",
-      "el": "Ποια θεότητα συνδέεται με την πυραμίδα;"
+      "en": "Which Maya feathered-serpent deity is the pyramid of Chichén Itzá dedicated to?",
+      "el": "Σε ποια Μάγια θεότητα — φτερωτό φίδι — είναι αφιερωμένη η πυραμίδα του Chichén Itzá;"
     },
     "answers": [
       { "text": { "en": "Kukulkan", "el": "Κουκουλκάν" }, "correct": true },
-      { "text": { "en": "Quetzalcoatl", "el": "Κετσαλκοάτλ" }, "correct": false },
+      { "text": { "en": "Chaac", "el": "Τσακ" }, "correct": false },
       { "text": { "en": "Huitzilopochtli", "el": "Ουιτζιλοπότστλι" }, "correct": false },
       { "text": { "en": "Tlaloc", "el": "Τλαλόκ" }, "correct": false }
     ]
@@ -210,14 +210,14 @@
   {
     "id": 17,
     "question": {
-      "en": "Did Chichén Itzá reach its peak influence around the 8th–9th centuries?",
-      "el": "Έφτασε το Chichén Itzá στο απόγειό του τον 8ο–9ο αιώνα;"
+      "en": "Around which centuries did Chichén Itzá reach its peak influence?",
+      "el": "Σε ποιους αιώνες έφτασε το Chichén Itzá στο απόγειό του;"
     },
     "answers": [
-      { "text": { "en": "In the 5th century", "el": "Τον 5ο αιώνα" }, "correct": false },
-      { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
-      { "text": { "en": "In the 15th century", "el": "Τον 15ο αιώνα" }, "correct": false },
-      { "text": { "en": "No", "el": "Όχι" }, "correct": false }
+      { "text": { "en": "9th–12th centuries", "el": "9ος–12ος αιώνας" }, "correct": true },
+      { "text": { "en": "5th–6th centuries", "el": "5ος–6ος αιώνας" }, "correct": false },
+      { "text": { "en": "15th–16th centuries", "el": "15ος–16ος αιώνας" }, "correct": false },
+      { "text": { "en": "1st century BCE", "el": "1ος αιώνας π.Χ." }, "correct": false }
     ]
   },
   {

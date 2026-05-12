@@ -277,16 +277,16 @@
   {
     "id": 12,
     "question": {
-      "en": "What dish is Barcelona known for?",
-      "el": "Για ποιο πιάτο είναι γνωστή η Βαρκελώνη;"
+      "en": "Which Catalan staple — rustic bread rubbed with tomato, garlic and olive oil — is iconic in Barcelona?",
+      "el": "Ποιο καταλανικό κλασικό — ρουστίκ ψωμί με ντομάτα, σκόρδο και ελαιόλαδο — είναι σύμβολο της Βαρκελώνης;"
     },
     "answers": [
       {
-        "text": { "en": "Paella", "el": "Παέγια" },
+        "text": { "en": "Pa amb tomàquet", "el": "Πα αμπ τομάκετ" },
         "correct": true
       },
       {
-        "text": { "en": "Tortilla", "el": "Τορτίγια" },
+        "text": { "en": "Gazpacho", "el": "Γκασπάτσο" },
         "correct": false
       },
       {

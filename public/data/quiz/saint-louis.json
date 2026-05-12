@@ -228,9 +228,9 @@
     },
     "answers": [
       { "text": { "en": "Harsh noon light", "el": "Σκληρό μεσημεριανό φως" }, "correct": false },
-      { "text": { "en": "Blue moonlight", "el": "Μπλε σεληνόφως" }, "correct": true },
+      { "text": { "en": "Blue moonlight", "el": "Μπλε σεληνόφως" }, "correct": false },
       { "text": { "en": "Neon nightclub glow", "el": "Λάμψη νυχτερινού κλαμπ" }, "correct": false },
-      { "text": { "en": "Warm golden hour light", "el": "Ζεστό φως χρυσής ώρας" }, "correct": false }
+      { "text": { "en": "Warm golden hour light", "el": "Ζεστό φως χρυσής ώρας" }, "correct": true }
     ]
   },
   {
@@ -319,7 +319,7 @@
     },
     "answers": [
       { "text": { "en": "Like a lost tourist", "el": "Σαν χαμένη τουρίστρια" }, "correct": false },
-      { "text": { "en": "Like a queen already known by the wind", "el": "Σαν βασίλισσα που την ήξερε ήδη ο άνεμος" }, "correct": false },
+      { "text": { "en": "Like a stranger still introducing herself", "el": "Σαν ξένη που μόλις συστήνεται" }, "correct": false },
       { "text": { "en": "Like a queen already known by the wind", "el": "Σαν βασίλισσα που την ήξερε ήδη ο άνεμος" }, "correct": true },
       { "text": { "en": "Like a sailor searching for a harbor", "el": "Σαν ναυτικός που ψάχνει λιμάνι" }, "correct": false }
     ]

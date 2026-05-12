@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
+import { upperLocal } from "../utils/greekUpper.js";
 
 const Heading = styled.h1`
   font-size: 2rem;
@@ -85,7 +86,6 @@ const RibbonCorner = styled.span`
   border-radius: 999px;
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 2px 6px rgba(170, 77, 200, 0.3);
-  text-transform: uppercase;
 `;
 
 const FlavorPill = styled.span`
@@ -244,7 +244,7 @@ export default function Shop() {
                     decoding="async"
                     $dim={isComingSoon}
                   />
-                  {isComingSoon && <RibbonCorner>{t.ribbon}</RibbonCorner>}
+                  {isComingSoon && <RibbonCorner>{upperLocal(t.ribbon)}</RibbonCorner>}
                 </ImageFrame>
                 <FlavorPill>
                   <span aria-hidden="true">{emoji}</span> {flavor}

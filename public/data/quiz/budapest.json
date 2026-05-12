@@ -427,25 +427,25 @@
   {
     "id": 18,
     "question": {
-      "en": "Which city does Budapest share twin capital status with in EU institutions?",
-      "el": "Με ποια πόλη μοιράζεται η Βουδαπέστη τον ρόλο της δίδυμης πρωτεύουσας σε θεσμούς της ΕΕ;"
+      "en": "What is the name of the iconic 19th-century bridge connecting Buda and Pest across the Danube?",
+      "el": "Πώς λέγεται η εμβληματική γέφυρα του 19ου αιώνα που ενώνει τη Βούδα με την Πέστη πάνω από τον Δούναβη;"
     },
     "answers": [
       {
-        "text": { "en": "Brussels", "el": "Βρυξέλλες" },
-        "correct": false
-      },
-      {
-        "text": { "en": "Vienna", "el": "Βιέννη" },
-        "correct": false
-      },
-      {
-        "text": { "en": "Strasbourg", "el": "Στρασβούργο" },
-        "correct": false
-      },
-      {
-        "text": { "en": "Luxembourg", "el": "Λουξεμβούργο" },
+        "text": { "en": "Chain Bridge (Lánchíd)", "el": "Γέφυρα των Αλυσίδων (Lánchíd)" },
         "correct": true
+      },
+      {
+        "text": { "en": "Elizabeth Bridge", "el": "Γέφυρα Ελισάβετ" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Margaret Bridge", "el": "Γέφυρα Μαργαρίτας" },
+        "correct": false
+      },
+      {
+        "text": { "en": "Tower Bridge", "el": "Tower Bridge" },
+        "correct": false
       }
     ]
   },

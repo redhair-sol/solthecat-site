@@ -2,13 +2,13 @@
   {
     "id": 1,
     "question": {
-      "en": "Which ancient site does Sol overlook in this episode?",
-      "el": "Ποιο αρχαίο μνημείο δεσπόζει πίσω από τη Sol σε αυτό το επεισόδιο;"
+      "en": "Which ancient hilltop citadel does Sol overlook in this episode?",
+      "el": "Ποια αρχαία ακρόπολη δεσπόζει πίσω από τη Sol σε αυτό το επεισόδιο;"
     },
     "answers": [
       { "text": { "en": "Acropolis", "el": "Ακρόπολη" }, "correct": true },
       { "text": { "en": "Colosseum", "el": "Κολοσσαίο" }, "correct": false },
-      { "text": { "en": "Parthenon", "el": "Παρθενώνας" }, "correct": false },
+      { "text": { "en": "Temple of Olympian Zeus", "el": "Ναός Ολυμπίου Διός" }, "correct": false },
       { "text": { "en": "Pantheon", "el": "Πάνθεον" }, "correct": false }
     ]
   },
@@ -67,11 +67,11 @@
   {
     "id": 6,
     "question": {
-      "en": "Which philosopher taught in Athens?",
-      "el": "Ποιος φιλόσοφος δίδαξε στην Αθήνα;"
+      "en": "Which philosopher is famous for questioning Athenians in the agora and being sentenced to drink hemlock?",
+      "el": "Ποιος φιλόσοφος έγινε διάσημος ρωτώντας τους Αθηναίους στην αγορά και καταδικάστηκε να πιει κώνειο;"
     },
     "answers": [
-      { "text": { "en": "Plato", "el": "Πλάτωνας" }, "correct": false },
+      { "text": { "en": "Pythagoras", "el": "Πυθαγόρας" }, "correct": false },
       { "text": { "en": "Caesar", "el": "Καίσαρας" }, "correct": false },
       { "text": { "en": "Socrates", "el": "Σωκράτης" }, "correct": true },
       { "text": { "en": "Descartes", "el": "Ντεκάρτ" }, "correct": false }
@@ -80,12 +80,12 @@
   {
     "id": 7,
     "question": {
-      "en": "What hill provides a perfect view of the Acropolis?",
-      "el": "Από ποιο λόφο έχεις τέλεια θέα στην Ακρόπολη;"
+      "en": "Which low hill — directly opposite the Acropolis — is known for the iconic close-up postcard view, crowned by a Roman monument?",
+      "el": "Ποιος χαμηλός λόφος — ακριβώς απέναντι από την Ακρόπολη — είναι γνωστός για την κλασική φωτογραφική θέα, με ρωμαϊκό μνημείο στην κορυφή;"
     },
     "answers": [
       { "text": { "en": "Philopappos", "el": "Φιλοπάππου" }, "correct": true },
-      { "text": { "en": "Lycabettus", "el": "Λυκαβηττός" }, "correct": false },
+      { "text": { "en": "Palatine Hill", "el": "Παλατινός Λόφος" }, "correct": false },
       { "text": { "en": "Pnyx", "el": "Πνύκα" }, "correct": false },
       { "text": { "en": "Montmartre", "el": "Μονμάρτη" }, "correct": false }
     ]
@@ -158,8 +158,8 @@
   {
     "id": 13,
     "question": {
-      "en": "What color dominates Greek island houses, including in Athens?",
-      "el": "Ποιο χρώμα κυριαρχεί στα ελληνικά νησιώτικα σπίτια, ακόμη και στην Αθήνα;"
+      "en": "What color — matching the Greek flag — is most often seen on shutters, doors and church domes across Athens?",
+      "el": "Ποιο χρώμα — ίδιο με της ελληνικής σημαίας — βλέπεις πιο συχνά σε παντζούρια, πόρτες και τρούλους εκκλησιών στην Αθήνα;"
     },
     "answers": [
       { "text": { "en": "Red", "el": "Κόκκινο" }, "correct": false },
@@ -262,8 +262,8 @@
   {
     "id": 21,
     "question": {
-      "en": "What metro station has ancient ruins inside?",
-      "el": "Ποιος σταθμός μετρό έχει μέσα αρχαία ερείπια;"
+      "en": "Which Athens metro station is named directly after the ancient citadel sitting above it?",
+      "el": "Ποιος σταθμός μετρό της Αθήνας έχει πάρει το όνομά του απευθείας από την αρχαία ακρόπολη που στέκει από πάνω;"
     },
     "answers": [
       { "text": { "en": "Syntagma", "el": "Σύνταγμα" }, "correct": false },

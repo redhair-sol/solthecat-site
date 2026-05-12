@@ -77,8 +77,8 @@
   {
     "id": 4,
     "question": {
-      "en": "Which architectural style is dominant in Prague’s Old Town?",
-      "el": "Ποιο αρχιτεκτονικό στυλ κυριαρχεί στην Παλιά Πόλη της Πράγας;"
+      "en": "In which architectural style were Prague's iconic Old Town landmarks — like the Týn Church and the Old Town Hall tower — originally built?",
+      "el": "Σε ποιο αρχιτεκτονικό στυλ χτίστηκαν αρχικά τα εμβληματικά μνημεία της Παλιάς Πόλης της Πράγας — όπως ο ναός του Týn και ο πύργος του Παλαιού Δημαρχείου;"
     },
     "answers": [
       {
@@ -86,11 +86,11 @@
         "correct": true
       },
       {
-        "text": { "en": "Baroque", "el": "Μπαρόκ" },
+        "text": { "en": "Brutalist", "el": "Μπρουταλιστικό" },
         "correct": false
       },
       {
-        "text": { "en": "Modernist", "el": "Μοντερνιστικό" },
+        "text": { "en": "Art Deco", "el": "Αρ Ντεκό" },
         "correct": false
       },
       {

@@ -275,14 +275,14 @@
   {
     "id": 22,
     "question": {
-      "en": "Which side is commonly known for ‘Knife-Edge Bridge’ viewpoints of the spray?",
-      "el": "Ποια πλευρά είναι γνωστή για θέα από το ‘Knife-Edge Bridge’ μέσα στα σταγονίδια;"
+      "en": "Which historic bridge — opened in 1905 — spans the gorge just below Victoria Falls?",
+      "el": "Ποια ιστορική γέφυρα — που εγκαινιάστηκε το 1905 — διασχίζει το φαράγγι ακριβώς κάτω από τους Καταρράκτες Βικτώριας;"
     },
     "answers": [
-      { "text": { "en": "Zimbabwe side", "el": "Πλευρά Ζιμπάμπουε" }, "correct": true },
-      { "text": { "en": "Namibia side", "el": "Πλευρά Ναμίμπια" }, "correct": false },
-      { "text": { "en": "Kenya side", "el": "Πλευρά Κένυα" }, "correct": false },
-      { "text": { "en": "Egypt side", "el": "Πλευρά Αιγύπτου" }, "correct": false }
+      { "text": { "en": "Victoria Falls Bridge", "el": "Γέφυρα των Καταρρακτών Βικτώριας" }, "correct": true },
+      { "text": { "en": "Knife-Edge Bridge", "el": "Knife-Edge Bridge" }, "correct": false },
+      { "text": { "en": "Tower Bridge", "el": "Tower Bridge" }, "correct": false },
+      { "text": { "en": "Brooklyn Bridge", "el": "Γέφυρα του Μπρούκλιν" }, "correct": false }
     ]
   },
   {

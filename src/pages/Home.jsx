@@ -14,6 +14,7 @@ import {
   getDailyStreak,
   formatScore,
 } from "../utils/dailyChallenge.js";
+import { upperLocal } from "../utils/greekUpper.js";
 
 // ----- LIVE BADGE -----
 const LiveBadge = styled.div`
@@ -224,7 +225,6 @@ const ChallengeKicker = styled.p`
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   margin: 0 0 0.4rem;
 `;
 
@@ -624,7 +624,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.75 }}
         >
-          <ChallengeKicker>{t.challengeKicker}</ChallengeKicker>
+          <ChallengeKicker>{upperLocal(t.challengeKicker)}</ChallengeKicker>
           <ChallengeTitle>
             {dailyChallenge.emoji}{" "}
             {language === "el" ? dailyChallenge.titleEl : dailyChallenge.titleEn}

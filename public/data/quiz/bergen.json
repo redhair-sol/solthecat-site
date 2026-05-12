@@ -61,7 +61,7 @@
       { "text": { "en": "Yes", "el": "Ναι" }, "correct": true },
       { "text": { "en": "No", "el": "Όχι" }, "correct": false },
       { "text": { "en": "It roared", "el": "Βρυχήθηκε" }, "correct": false },
-      { "text": { "en": "It whispered", "el": "Σψίθυρο" }, "correct": false }
+      { "text": { "en": "It whispered", "el": "Ψιθύριζε" }, "correct": false }
     ]
   },
   {

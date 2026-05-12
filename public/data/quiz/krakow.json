@@ -265,14 +265,14 @@
   },
   {
     "question": {
-      "en": "What vibrant festival is held every February in Kraków?",
-      "el": "Ποιο ζωηρό φεστιβάλ πραγματοποιείται κάθε Φεβρουάριο στην Κρακοβία;"
+      "en": "Which legendary creature is said to have lived in a cave beneath Wawel Hill?",
+      "el": "Ποιο μυθικό πλάσμα λέγεται ότι έζησε σε σπηλιά κάτω από τον λόφο Βάβελ;"
     },
     "answers": [
-      { "text": { "en": "Courtyard of Poetry", "el": "Αυλή Ποίησης" }, "correct": true },
-      { "text": { "en": "Water Festival", "el": "Φεστιβάλ Νερού" }, "correct": false },
-      { "text": { "en": "Movie Week", "el": "Εβδομάδα Κινηματογράφου" }, "correct": false },
-      { "text": { "en": "Wine Fair", "el": "Διήμερο Κρασιού" }, "correct": false }
+      { "text": { "en": "The Wawel Dragon (Smok Wawelski)", "el": "Ο Δράκος του Βάβελ (Smok Wawelski)" }, "correct": true },
+      { "text": { "en": "A giant werewolf", "el": "Ένας τεράστιος λυκάνθρωπος" }, "correct": false },
+      { "text": { "en": "The Krakus phoenix", "el": "Ο Φοίνικας του Κράκους" }, "correct": false },
+      { "text": { "en": "An ancient golem", "el": "Ένα αρχαίο γκόλεμ" }, "correct": false }
     ]
   }
 ]

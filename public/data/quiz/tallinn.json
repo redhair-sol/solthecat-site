@@ -174,9 +174,9 @@
     },
     "answers": [
       { "text": { "en": "Gulf of Finland", "el": "Κόλπος της Φινλανδίας" }, "correct": true },
-      { "text": { "en": "Gulf of Riga", "el": "Κόλπος του Ριγα" }, "correct": false },
-      { "text": { "en": "Bay of Bothnia", "el": "Κόλπος του Μπόθνια" }, "correct": false },
-      { "text": { "en": "Gulf of Riga", "el": "Κόλπος του Ριγα" }, "correct": false }
+      { "text": { "en": "Gulf of Riga", "el": "Κόλπος της Ρίγας" }, "correct": false },
+      { "text": { "en": "Gulf of Bothnia", "el": "Κόλπος της Βοθνίας" }, "correct": false },
+      { "text": { "en": "Bay of Gdańsk", "el": "Κόλπος του Γκντανσκ" }, "correct": false }
     ]
   },
   {
@@ -295,7 +295,7 @@
     "answers": [
       { "text": { "en": "City of a Hundred Spires", "el": "Πόλη των Εκατό Πύργων" }, "correct": true },
       { "text": { "en": "Venice of the North", "el": "Βενετία του Βορρά" }, "correct": false },
-      { "text": { "en": "Pearl of the Baltics", "el": " Μαργαριτάρι των Βαλτικών" }, "correct": false },
+      { "text": { "en": "Pearl of the Baltics", "el": "Μαργαριτάρι των Βαλτικών" }, "correct": false },
       { "text": { "en": "Northern Jewel", "el": "Βόρειο Κόσμημα" }, "correct": false }
     ]
   }

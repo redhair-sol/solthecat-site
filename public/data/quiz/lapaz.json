@@ -80,14 +80,14 @@
   {
     "id": 7,
     "question": {
-      "en": "What color were the Mi Teleférico cable cars?",
-      "el": "Τι χρώμα ήταν τα τελεφερίκ Mi Teleférico;"
+      "en": "Mi Teleférico in La Paz is the world's longest urban transit system of which kind?",
+      "el": "Το Mi Teleférico στη Λα Παζ είναι το μεγαλύτερο αστικό σύστημα μεταφοράς στον κόσμο από ποιο είδος;"
     },
     "answers": [
-      { "text": { "en": "Red", "el": "Κόκκινα" }, "correct": true },
-      { "text": { "en": "Blue", "el": "Μπλε" }, "correct": false },
-      { "text": { "en": "Yellow", "el": "Κίτρινα" }, "correct": false },
-      { "text": { "en": "Green", "el": "Πράσινα" }, "correct": false }
+      { "text": { "en": "Aerial cable cars", "el": "Εναέρια τελεφερίκ" }, "correct": true },
+      { "text": { "en": "Underground metro", "el": "Υπόγειο μετρό" }, "correct": false },
+      { "text": { "en": "Trams", "el": "Τραμ" }, "correct": false },
+      { "text": { "en": "Monorails", "el": "Μονοτρόχιες" }, "correct": false }
     ]
   },
   {
