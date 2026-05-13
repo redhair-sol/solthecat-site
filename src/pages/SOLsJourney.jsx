@@ -9,11 +9,50 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import PageContainer from "../components/PageContainer.jsx";
 import { colors, shadows } from "../theme.js";
+
+// Pulsing purple rings behind the current-location paw so the user's eye
+// instantly lands on it when the map opens. Two staggered rings keep the
+// motion continuous instead of bursty. Active only while we render the
+// `currentPawIcon` (idle phase only) so it doesn't distract during the
+// journey animation.
+const CurrentPawStyle = createGlobalStyle`
+  @keyframes solCurrentPulse {
+    0%   { transform: scale(0.6); opacity: 0.8; }
+    100% { transform: scale(2.6); opacity: 0;   }
+  }
+  .leaflet-div-icon.sol-current-paw-wrap {
+    background: transparent;
+    border: 0;
+  }
+  .sol-current-paw {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  .sol-current-paw-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(170, 77, 200, 0.45);
+    animation: solCurrentPulse 2s ease-out infinite;
+    pointer-events: none;
+  }
+  .sol-current-paw-ring-2 {
+    animation-delay: 1s;
+  }
+  .sol-current-paw img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+`;
 
 const Heading = styled.h1`
   font-size: 2rem;
@@ -78,6 +117,22 @@ const pawIcon = new L.Icon({
   iconUrl: "/icons/toe.webp",
   iconSize: [40, 40],
   iconAnchor: [20, 20]
+});
+
+// Idle-only paw with pulsing rings around it (see CurrentPawStyle). Drawn
+// slightly larger than the regular paw so the current city is unmistakable
+// even at world-view zoom levels.
+const currentPawIcon = L.divIcon({
+  className: "sol-current-paw-wrap",
+  html: `
+    <div class="sol-current-paw">
+      <div class="sol-current-paw-ring"></div>
+      <div class="sol-current-paw-ring sol-current-paw-ring-2"></div>
+      <img src="/icons/toe.webp" alt="" />
+    </div>
+  `,
+  iconSize: [48, 48],
+  iconAnchor: [24, 24],
 });
 
 // MapContainer's `center`/`zoom` only apply at initial mount; once the
@@ -171,7 +226,15 @@ function AnimatedMarker({ route, delay = 3000, onUpdateIndex, onComplete }) {
 export default function SOLsJourneyAnimated() {
   const { language } = useLanguage();
   const [episodes, setEpisodes] = useState([]);
-  const [start, setStart] = useState(false);
+  // 3-phase state machine for the reveal UX:
+  //   idle     → fresh map, only the current (last visited) city paw is shown.
+  //              No route line, no other pins. Maximum dramatic reveal.
+  //   playing  → animation is running. Visited pins appear progressively as
+  //              the AnimatedMarker traverses, and the polyline draws behind
+  //              the moving paw.
+  //   complete → animation finished. All pins shown, full polyline visible.
+  //              Button flips to "Replay" so the user can restart the show.
+  const [phase, setPhase] = useState("idle"); // idle | playing | complete
   const [currentIndex, setCurrentIndex] = useState(0);
   const [journeyId, setJourneyId] = useState(0);
 
@@ -194,6 +257,7 @@ export default function SOLsJourneyAnimated() {
       heading: "Sol's Journey 🗺️",
       currentLocation: "📍 Current Location: ",
       showJourney: "▶️ Show Journey",
+      replayJourney: "🔁 Replay Journey",
     },
     el: {
       pageTitle: "Το Ταξίδι της Sol – SolTheCat",
@@ -202,6 +266,7 @@ export default function SOLsJourneyAnimated() {
       heading: "Το Ταξίδι της Sol 🗺️",
       currentLocation: "📍 Τρέχουσα Τοποθεσία: ",
       showJourney: "▶️ Δες το Ταξίδι",
+      replayJourney: "🔁 Δες το Ξανά",
     },
   }[language];
 
@@ -213,21 +278,23 @@ export default function SOLsJourneyAnimated() {
   const center = route.length > 0 ? route[route.length - 1] : [45, 10];
   const lastTitle = episodes.length > 0 ? epTitle(episodes[episodes.length - 1]) : "";
 
-  const subheadingText = start && titles[currentIndex]
+  const subheadingText = phase === "playing" && titles[currentIndex]
     ? titles[currentIndex]
     : `${t.currentLocation}${lastTitle}`;
 
   const handleStart = () => {
-    setStart(true);
+    setPhase("playing");
+    setCurrentIndex(0);
     setJourneyId((prev) => prev + 1);
   };
 
   const handleComplete = () => {
-    setStart(false);
+    setPhase("complete");
   };
 
   return (
     <>
+      <CurrentPawStyle />
       <Helmet>
         <title>{t.pageTitle}</title>
         <meta name="description" content={t.metaDescription} />
@@ -244,8 +311,8 @@ export default function SOLsJourneyAnimated() {
         <Subheading>{subheadingText}</Subheading>
 
         {route.length > 1 && (
-          <JourneyButton onClick={handleStart} disabled={start}>
-            {t.showJourney}
+          <JourneyButton onClick={handleStart} disabled={phase === "playing"}>
+            {phase === "complete" ? t.replayJourney : t.showJourney}
           </JourneyButton>
         )}
 
@@ -261,50 +328,71 @@ export default function SOLsJourneyAnimated() {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            {episodes.map((ep, idx) => (
-              <Marker
-                key={`paw-${idx}`}
-                position={[ep.location.lat, ep.location.lng]}
-                icon={pawIcon}
-              >
-                <Tooltip direction="top" offset={[0, -20]} opacity={1} permanent={false}>
-                  <div
-                    style={{
-                      textAlign: "center",
-                      maxWidth: "160px",
-                      whiteSpace: "normal",
-                      wordWrap: "break-word",
-                      fontSize: "0.85rem",
-                      lineHeight: "1.2rem",
-                      padding: "2px"
-                    }}
-                  >
-                    <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
-                      {epTitle(ep)}
-                    </div>
-                    <img
-                      src={`${import.meta.env.BASE_URL}${ep.image}`}
-                      alt={epTitle(ep)}
+            {episodes.map((ep, idx) => {
+              // Phase-aware paw visibility:
+              //   idle     → only the last (current) city paw — dramatic reveal.
+              //   playing  → progressively, only paws Sol has reached so far.
+              //              The AnimatedMarker handles the in-flight moving
+              //              paw, so we render permanents only for idx STRICTLY
+              //              before currentIndex to avoid double-stacking at
+              //              the moving position.
+              //   complete → all paws shown (full route now permanent).
+              const lastIdx = episodes.length - 1;
+              let visible;
+              if (phase === "idle") visible = idx === lastIdx;
+              else if (phase === "playing") visible = idx < currentIndex;
+              else visible = true;
+              if (!visible) return null;
+              // Idle: the lone visible paw (the current city) gets the
+              // pulsing variant so the user's eye lands on it instantly.
+              const useCurrent = phase === "idle" && idx === lastIdx;
+              return (
+                <Marker
+                  key={`paw-${idx}`}
+                  position={[ep.location.lat, ep.location.lng]}
+                  icon={useCurrent ? currentPawIcon : pawIcon}
+                >
+                  <Tooltip direction="top" offset={[0, -20]} opacity={1} permanent={false}>
+                    <div
                       style={{
-                        width: "100%",
-                        borderRadius: "8px",
-                        boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)"
+                        textAlign: "center",
+                        maxWidth: "160px",
+                        whiteSpace: "normal",
+                        wordWrap: "break-word",
+                        fontSize: "0.85rem",
+                        lineHeight: "1.2rem",
+                        padding: "2px"
                       }}
-                    />
-                  </div>
-                </Tooltip>
-              </Marker>
-            ))}
+                    >
+                      <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
+                        {epTitle(ep)}
+                      </div>
+                      <img
+                        src={`${import.meta.env.BASE_URL}${ep.image}`}
+                        alt={epTitle(ep)}
+                        style={{
+                          width: "100%",
+                          borderRadius: "8px",
+                          boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)"
+                        }}
+                      />
+                    </div>
+                  </Tooltip>
+                </Marker>
+              );
+            })}
 
-            {/* Default static polyline shown when not animating. The animation
-                draws its own progressive polyline as it goes. */}
-            {!start && route.length > 1 && (
+            {/* Full static polyline only after the user has watched the
+                journey play out. During idle we hide it for the reveal. */}
+            {phase === "complete" && route.length > 1 && (
               <Polyline positions={route} color="#aa4dc8" weight={4} />
             )}
 
-            {!start && route.length > 0 && <InitialFocus route={route} />}
+            {/* Focus the map on the current (last) city while idle so the
+                user lands on Sol's "now" instead of a default world view. */}
+            {phase === "idle" && route.length > 0 && <InitialFocus route={route} />}
 
-            {start && (
+            {phase === "playing" && (
               <AnimatedMarker
                 key={`journey-${journeyId}`}
                 route={route}
