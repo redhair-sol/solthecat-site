@@ -636,7 +636,7 @@ export default function MapQuiz() {
                 topEntries.map((e, i) => (
                   <Top3Row key={`${e.name}-${e.score}-${i}`}>
                     <span>
-                      {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                      <span style={{display:"inline-block",width:"1.5em"}}>{["🥇", "🥈", "🥉"][i] || ""}</span>{e.name}
                     </span>
                     <span><strong>{e.score}</strong></span>
                   </Top3Row>
