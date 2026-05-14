@@ -85,6 +85,38 @@ const StartButton = styled.button`
   }
 `;
 
+// Same level-picker pattern used by CatchCats so the two games feel related.
+const LevelLabel = styled.p`
+  font-size: 0.95rem;
+  color: #5b2b7b;
+  margin: 0.5rem 0 0.4rem;
+  font-family: 'Poppins', sans-serif;
+`;
+
+const LevelGrid = styled.div`
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.6rem 0 1rem;
+`;
+
+const LevelButton = styled.button`
+  padding: 0.7rem 1.3rem;
+  background: ${({ $active }) => ($active ? "#c187d8" : "#ffffff")};
+  color: ${({ $active }) => ($active ? "white" : "#6a1b9a")};
+  border: 2px solid #c187d8;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+
+  &:hover {
+    transform: scale(1.04);
+  }
+`;
+
 const BackLink = styled(Link)`
   margin-top: 2rem;
   color: #d35ca3;
@@ -184,35 +216,49 @@ const SmallButton = styled.button`
   }
 `;
 
-const initialCards = [
-  { id: 1, emoji: "🐾" },
-  { id: 2, emoji: "🍗" },
-  { id: 3, emoji: "🏛️" },
-  { id: 4, emoji: "🐟" },
-  { id: 5, emoji: "🧀" },
-  { id: 6, emoji: "🎒" },
-  { id: 7, emoji: "🚌" },
-  { id: 8, emoji: "🍕" },
-  { id: 9, emoji: "📸" },
-  { id: 10, emoji: "🐾" },
-  { id: 11, emoji: "🍗" },
-  { id: 12, emoji: "🏛️" },
-  { id: 13, emoji: "🐟" },
-  { id: 14, emoji: "🧀" },
-  { id: 15, emoji: "🎒" },
-  { id: 16, emoji: "🚌" },
-  { id: 17, emoji: "🍕" },
-  { id: 18, emoji: "📸" },
+// Emoji pool sized so the first N entries are used per level. First 9 are
+// the original Pawprints set; last 3 are travel-themed additions used only
+// for Hard mode (12 unique pairs).
+const EMOJI_POOL = [
+  "🐾", "🍗", "🏛️", "🐟", "🧀", "🎒", "🚌", "🍕", "📸",
+  "🌍", "🗺️", "✈️",
 ];
+
+// Per-level config. uniquePairs controls how many emojis (and therefore how
+// many total cards = uniquePairs * 2). peekMs is the initial face-up reveal
+// where the player can memorise positions. timerSec is the play clock that
+// starts the moment the peek ends.
+const LEVELS = [
+  { id: "easy",   uniquePairs: 6,  peekMs: 3000, timerSec: 60 },
+  { id: "medium", uniquePairs: 9,  peekMs: 3000, timerSec: 60 },
+  { id: "hard",   uniquePairs: 12, peekMs: 4000, timerSec: 90 },
+];
+
+// Build a freshly-shuffled deck for the chosen level. Each pair gets unique
+// numeric ids so React keys stay stable across renders of the same game.
+function buildDeck(levelIdx) {
+  const { uniquePairs } = LEVELS[levelIdx];
+  const emojis = EMOJI_POOL.slice(0, uniquePairs);
+  const deck = [];
+  emojis.forEach((emoji, i) => {
+    deck.push({ id: i * 2 + 1, emoji });
+    deck.push({ id: i * 2 + 2, emoji });
+  });
+  return deck.sort(() => Math.random() - 0.5);
+}
 
 export default function PawprintsGame() {
   const [cards, setCards] = useState([]);
   const [flipped, setFlipped] = useState([]);
   const [matched, setMatched] = useState([]);
   const [won, setWon] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(LEVELS[1].timerSec);
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
+  const [isPeeking, setIsPeeking] = useState(false);
+  // Default to Medium (idx=1) — same layout as the original single-level
+  // game, so returning players land on familiar ground.
+  const [levelIdx, setLevelIdx] = useState(1);
   const { language } = useLanguage();
 
   // Leaderboard score = timeLeft when the user wins (higher = faster).
@@ -235,9 +281,10 @@ export default function PawprintsGame() {
       success: "Well done, explorer! 🐾🐾🐾",
       failure: "Time’s up! Try again 🐾",
       back: "← Back to games",
+      peek: "👀 Memorize the cards!",
       personalBest: (s) => `🏆 Your best: ${s}s left`,
       noBest: "🏆 No personal record yet",
-      top3Title: "🏆 Top 3 (seconds left)",
+      top3Title: "🏆 Top 5 (seconds left)",
       top3Empty: "No scores yet — be the first!",
       newRecord: "🎉 NEW PERSONAL BEST!",
       qualifies: "🌟 You made the leaderboard!",
@@ -246,6 +293,11 @@ export default function PawprintsGame() {
       skip: "Skip",
       submittedRank: (r) => `You're #${r} on the board!`,
       finalScore: (s) => `⏱️ Finished with ${s}s left!`,
+      pickLevel: "Pick a difficulty",
+      easy: "🌸 Easy",
+      medium: "⚡ Medium",
+      hard: "🔥 Hard",
+      changeLevel: "Choose level",
     },
     el: {
       pageTitle: "Βρες τα Πατουσάκια – SolTheCat",
@@ -257,9 +309,10 @@ export default function PawprintsGame() {
       success: "Μπράβο, εξερευνητή! 🐾🐾🐾",
       failure: "Τελείωσε ο χρόνος! Δοκίμασε ξανά 🐾",
       back: "← Επιστροφή στα παιχνίδια",
+      peek: "👀 Απομνημόνευσε τις κάρτες!",
       personalBest: (s) => `🏆 Καλύτερό σου: ${s}δ που έμειναν`,
       noBest: "🏆 Κανένα ρεκόρ ακόμη",
-      top3Title: "🏆 Top 3 (δευτερόλεπτα που έμειναν)",
+      top3Title: "🏆 Top 5 (δευτερόλεπτα που έμειναν)",
       top3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
       newRecord: "🎉 ΝΕΟ ΠΡΟΣΩΠΙΚΟ ΡΕΚΟΡ!",
       qualifies: "🌟 Μπήκες στη βαθμολογία!",
@@ -268,23 +321,39 @@ export default function PawprintsGame() {
       skip: "Παράλειψη",
       submittedRank: (r) => `Είσαι #${r} στη βαθμολογία!`,
       finalScore: (s) => `⏱️ Τελείωσες με ${s}δ. να μένουν!`,
+      pickLevel: "Διάλεξε δυσκολία",
+      easy: "🌸 Εύκολο",
+      medium: "⚡ Μέτριο",
+      hard: "🔥 Δύσκολο",
+      changeLevel: "Επιλογή επιπέδου",
     },
   };
 
   const t = content[language];
 
   const startGame = () => {
-    setCards([...initialCards].sort(() => Math.random() - 0.5));
-    setFlipped([]);
+    const cfg = LEVELS[levelIdx];
+    const deck = buildDeck(levelIdx);
+    setCards(deck);
+    // Peek phase: flip ALL indices face-up so the player can memorise
+    // positions, then auto-hide after the level's peek window and start
+    // the real timer.
+    setFlipped(deck.map((_, i) => i));
     setMatched([]);
     setWon(false);
     setGameOver(false);
-    setTimeLeft(60);
+    setTimeLeft(cfg.timerSec);
     setGameStarted(true);
+    setIsPeeking(true);
+    setTimeout(() => {
+      setFlipped([]);
+      setIsPeeking(false);
+    }, cfg.peekMs);
   };
 
   useEffect(() => {
-    if (!gameStarted || won || gameOver) return;
+    // Don't tick during the peek — the visible cards aren't playable yet.
+    if (!gameStarted || won || gameOver || isPeeking) return;
 
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
@@ -298,7 +367,7 @@ export default function PawprintsGame() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [gameStarted, won, gameOver]);
+  }, [gameStarted, won, gameOver, isPeeking]);
 
   useEffect(() => {
     if (matched.length === cards.length && cards.length > 0) {
@@ -310,33 +379,43 @@ export default function PawprintsGame() {
     }
   }, [matched, cards, timeLeft]);
 
-  // Fetch top 3 + load personal best on mount.
+  // Fetch top 5 + load personal best whenever the user switches level.
   useEffect(() => {
-    setPersonalBest(parseInt(localStorage.getItem("pawprints_best") || "0", 10));
-    fetch("/leaderboard?game=pawprints&level=default")
+    const levelId = LEVELS[levelIdx].id;
+    setPersonalBest(
+      parseInt(localStorage.getItem(`pawprints_best_${levelId}`) || "0", 10)
+    );
+    setTopEntries([]);
+    fetch(`/leaderboard?game=pawprints&level=${levelId}`)
       .then((r) => (r.ok ? r.json() : { entries: [] }))
       .then((data) => setTopEntries(data.entries || []))
       .catch(() => setTopEntries([]));
-  }, []);
+  }, [levelIdx]);
 
-  // Update personal best whenever the user wins.
+  // Update personal best whenever the user wins (per-level key).
   useEffect(() => {
     if (!won) return;
-    const prevBest = parseInt(localStorage.getItem("pawprints_best") || "0", 10);
+    const levelId = LEVELS[levelIdx].id;
+    const prevBest = parseInt(
+      localStorage.getItem(`pawprints_best_${levelId}`) || "0",
+      10
+    );
     if (winScore > prevBest) {
-      localStorage.setItem("pawprints_best", String(winScore));
+      localStorage.setItem(`pawprints_best_${levelId}`, String(winScore));
       setPersonalBest(winScore);
     }
     setSubmitName("");
     setSubmitState("idle");
     setSubmittedRank(null);
-    markDailyDoneIfMatches("pawprints", "default");
-  }, [won, winScore]);
+    markDailyDoneIfMatches("pawprints", levelId);
+  }, [won, winScore, levelIdx]);
 
+  // Qualify against 5th place now that we return top 5. If fewer than 5
+  // entries exist, any positive score qualifies.
   const qualifiesForLeaderboard = () => {
     if (winScore <= 0) return false;
-    if (topEntries.length < 3) return true;
-    return winScore > topEntries[2].score;
+    if (topEntries.length < 5) return true;
+    return winScore > topEntries[4].score;
   };
 
   const submitToLeaderboard = async () => {
@@ -349,7 +428,7 @@ export default function PawprintsGame() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           game: "pawprints",
-          level: "default",
+          level: LEVELS[levelIdx].id,
           score: winScore,
           name,
         }),
@@ -373,6 +452,7 @@ export default function PawprintsGame() {
   const handleFlip = (index) => {
     if (
       !gameStarted ||
+      isPeeking ||
       flipped.length === 2 ||
       flipped.includes(index) ||
       matched.includes(index) ||
@@ -411,31 +491,51 @@ export default function PawprintsGame() {
         <Title>{t.heading}</Title>
         <Subtitle>{t.subtitle}</Subtitle>
 
+        {/* Intro / between-rounds: show the level picker so the user can
+            switch difficulty before each replay. The Top 5 + PB below
+            reflect the currently-selected level via the levelIdx effect. */}
         {(!gameStarted || won || gameOver) && (
-          <Top3Box>
-            <Top3Title>{t.top3Title}</Top3Title>
-            {topEntries.length === 0 ? (
-              <Top3Empty>{t.top3Empty}</Top3Empty>
-            ) : (
-              topEntries.map((e, i) => (
-                <Top3Row key={`${e.name}-${e.score}-${i}`}>
-                  <span>
-                    {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
-                  </span>
-                  <span><strong>{e.score}s</strong></span>
-                </Top3Row>
-              ))
-            )}
-            <PersonalBestText>
-              {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
-            </PersonalBestText>
-          </Top3Box>
+          <>
+            <LevelLabel>{t.pickLevel}</LevelLabel>
+            <LevelGrid>
+              {LEVELS.map((lvl, idx) => (
+                <LevelButton
+                  key={lvl.id}
+                  $active={levelIdx === idx}
+                  onClick={() => setLevelIdx(idx)}
+                >
+                  {idx === 0 ? t.easy : idx === 1 ? t.medium : t.hard}
+                </LevelButton>
+              ))}
+            </LevelGrid>
+
+            <Top3Box>
+              <Top3Title>{t.top3Title}</Top3Title>
+              {topEntries.length === 0 ? (
+                <Top3Empty>{t.top3Empty}</Top3Empty>
+              ) : (
+                topEntries.map((e, i) => (
+                  <Top3Row key={`${e.name}-${e.score}-${i}`}>
+                    <span>
+                      {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
+                    </span>
+                    <span><strong>{e.score}s</strong></span>
+                  </Top3Row>
+                ))
+              )}
+              <PersonalBestText>
+                {personalBest > 0 ? t.personalBest(personalBest) : t.noBest}
+              </PersonalBestText>
+            </Top3Box>
+          </>
         )}
 
         {!gameStarted || won || gameOver ? (
           <StartButton onClick={startGame}>
             {gameStarted ? t.playAgain : t.start}
           </StartButton>
+        ) : isPeeking ? (
+          <Timer>{t.peek}</Timer>
         ) : (
           <Timer>{t.timer(timeLeft)}</Timer>
         )}

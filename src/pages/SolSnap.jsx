@@ -235,7 +235,7 @@ export default function SolSnap() {
       no: "No",
       personalBest: (s) => `🏆 Your best: ${s}`,
       noBest: "🏆 No personal record yet",
-      top3Title: "🏆 Top 3",
+      top3Title: "🏆 Top 5",
       top3Empty: "No scores yet — be the first!",
       newRecord: "🎉 NEW PERSONAL BEST!",
       qualifies: "🌟 You made the leaderboard!",
@@ -265,7 +265,7 @@ export default function SolSnap() {
       no: "Όχι",
       personalBest: (s) => `🏆 Καλύτερο σου: ${s}`,
       noBest: "🏆 Κανένα ρεκόρ ακόμη",
-      top3Title: "🏆 Top 3",
+      top3Title: "🏆 Top 5",
       top3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
       newRecord: "🎉 ΝΕΟ ΠΡΟΣΩΠΙΚΟ ΡΕΚΟΡ!",
       qualifies: "🌟 Μπήκες στη βαθμολογία!",
@@ -464,7 +464,7 @@ export default function SolSnap() {
                 topEntries.map((e, i) => (
                   <Top3Row key={`${e.name}-${e.score}-${i}`}>
                     <span>
-                      {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                      {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
                     </span>
                     <span><strong>{e.score}</strong></span>
                   </Top3Row>

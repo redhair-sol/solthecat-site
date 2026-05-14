@@ -699,7 +699,7 @@ export default function Home() {
               challengeTop3.map((e, i) => (
                 <ChallengeTop3Row key={`${e.name}-${e.score}-${i}`}>
                   <span>
-                    {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                    {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
                   </span>
                   <span><strong>{formatScore(dailyChallenge.game, e.score)}</strong></span>
                 </ChallengeTop3Row>

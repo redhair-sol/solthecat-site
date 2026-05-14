@@ -3,7 +3,7 @@
 // Daily Challenge: one game/level rotation per day, picked deterministically
 // from the ISO date so every visitor sees the same challenge that day.
 //
-// Shared between the Home page (which shows the card + Top 3 + Personal Best)
+// Shared between the Home page (which shows the card + Top 5 + Personal Best)
 // and the games themselves (which call markDailyDoneIfMatches() on round end
 // to track completion and bump the streak counter).
 
@@ -14,7 +14,9 @@ export const DAILY_CHALLENGES = [
   { game: "quick-paws", level: "default", route: "/games/quick-paws",  emoji: "⚡", titleEn: "Quick Paws",               titleEl: "Γρήγορες Πατούσες" },
   { game: "mapquiz",    level: "default", route: "/games/mapquiz",     emoji: "🌍", titleEn: "Where in the World?",      titleEl: "Πού στον Κόσμο;" },
   { game: "spotcity",   level: "default", route: "/games/spotcity",    emoji: "🔍", titleEn: "Spot the City",            titleEl: "Βρες την Πόλη" },
-  { game: "pawprints",  level: "default", route: "/games/pawprints",   emoji: "🐾", titleEn: "Pawprints Memory",         titleEl: "Μνήμη με Πατουσάκια" },
+  { game: "pawprints",  level: "easy",    route: "/games/pawprints",   emoji: "🐾", titleEn: "Pawprints Memory — Easy",   titleEl: "Μνήμη με Πατουσάκια — Εύκολο" },
+  { game: "pawprints",  level: "medium",  route: "/games/pawprints",   emoji: "🐾", titleEn: "Pawprints Memory — Medium", titleEl: "Μνήμη με Πατουσάκια — Μέτριο" },
+  { game: "pawprints",  level: "hard",    route: "/games/pawprints",   emoji: "🐾", titleEn: "Pawprints Memory — Hard",   titleEl: "Μνήμη με Πατουσάκια — Δύσκολο" },
   { game: "puzzlemap",  level: "default", route: "/games/puzzlemap",   emoji: "🧩", titleEn: "SOL's Puzzle Map",         titleEl: "Παζλ Χάρτης της Sol" },
   { game: "royalpuzzle",level: "default", route: "/games/royalpuzzle", emoji: "🧩", titleEn: "Royal Puzzle",             titleEl: "Βασιλικό Παζλ" },
   { game: "cat-sort",   level: "default", route: "/games/cat-sort",    emoji: "🏠", titleEn: "Cat Sort",                 titleEl: "Ταξινόμηση Γατών" },
@@ -65,7 +67,7 @@ export function getPersonalBest(game, level) {
 // Pretty-print a leaderboard score. Most games store the raw display value
 // (points), but a couple use a composite "correct * 10000 - totalSeconds"
 // encoding so that ties on max-correct are broken by speed. Decode those
-// back to "X/Y · Ns" for human-readable Top 3 rows.
+// back to "X/Y · Ns" for human-readable Top 5 rows.
 //
 // Why ceil and not floor: a perfect 5/5 in 12s encodes as 49988
 // (= 5 * 10000 - 12). floor(49988/10000) = 4, which is wrong. ceil = 5,

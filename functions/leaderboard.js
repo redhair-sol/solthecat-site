@@ -25,7 +25,7 @@
 // the Cloudflare KV dashboard.
 
 const TOP_N_STORED = 10;
-const TOP_N_RETURNED = 3;
+const TOP_N_RETURNED = 5;
 const MAX_NAME_LEN = 12;
 // Allow Latin letters, Greek letters, digits, dash, underscore, space.
 const NAME_REGEX = /^[A-Za-z0-9_\-\sͰ-Ͽ]{1,12}$/;
@@ -46,8 +46,13 @@ const MAX_SCORES = {
   // 5 correct in 1s = 49999, so cap at 50000 leaves headroom.
   "spotcity_default": 50000,
   "solsnap_default": 200,
-  // Pawprints score = seconds left when matched all pairs (60s round).
+  // Pawprints — score = seconds left when all pairs matched. Cap per level
+  // matches the level's round timer (easy/medium = 60s, hard = 90s).
+  // pawprints_default kept for legacy entries written before levels existed.
   "pawprints_default": 60,
+  "pawprints_easy": 60,
+  "pawprints_medium": 60,
+  "pawprints_hard": 90,
   // Puzzles: score = 9999 - elapsed seconds (no time limit). Cap matches
   // the formula's max, so any honest solve falls within the cap.
   "puzzlemap_default": 9999,

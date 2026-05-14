@@ -265,7 +265,7 @@ export default function QuizPlayer() {
       dropdownLabel: (title) => title,
       personalBest: (s) => `🏆 Your best: ${s}`,
       noBest: "🏆 No personal record yet",
-      top3Title: "🏆 Top 3 (this quiz)",
+      top3Title: "🏆 Top 5 (this quiz)",
       top3Empty: "No scores yet — be the first!",
       newRecord: "🎉 NEW PERSONAL BEST!",
       qualifies: "🌟 You made the leaderboard!",
@@ -289,7 +289,7 @@ export default function QuizPlayer() {
       dropdownLabel: (title) => title,
       personalBest: (s) => `🏆 Καλύτερο σου: ${s}`,
       noBest: "🏆 Κανένα ρεκόρ ακόμη",
-      top3Title: "🏆 Top 3 (αυτό το quiz)",
+      top3Title: "🏆 Top 5 (αυτό το quiz)",
       top3Empty: "Κανένα σκορ ακόμη — γίνε ο πρώτος!",
       newRecord: "🎉 ΝΕΟ ΠΡΟΣΩΠΙΚΟ ΡΕΚΟΡ!",
       qualifies: "🌟 Μπήκες στη βαθμολογία!",
@@ -523,7 +523,7 @@ export default function QuizPlayer() {
               topEntries.map((e, i) => (
                 <Top3Row key={`${e.name}-${e.score}-${i}`}>
                   <span>
-                    {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
+                    {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
                   </span>
                   <span><strong>{formatScore("quiz", e.score)}</strong></span>
                 </Top3Row>
@@ -545,8 +545,13 @@ export default function QuizPlayer() {
           <QuestionCard>
             <QuestionText>{questions[current].question[language]}</QuestionText>
             {questions[current].answers.map((ansObj, i) => (
+              // key includes `current` so React unmounts old buttons and
+              // mounts fresh ones at each question change. Prevents the
+              // "previously correct answer stays green on the next question"
+              // visual bug where the same DOM node hung onto its styled-
+              // components state across questions.
               <AnswerButton
-                key={i}
+                key={`${current}-${i}`}
                 onClick={() => handleAnswer(i)}
                 disabled={selectedAnswer !== null}
                 selected={selectedAnswer === i}
