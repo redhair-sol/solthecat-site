@@ -517,7 +517,7 @@ export default function PawprintsGame() {
                 topEntries.map((e, i) => (
                   <Top3Row key={`${e.name}-${e.score}-${i}`}>
                     <span>
-                      {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
+                      {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
                     </span>
                     <span><strong>{e.score}s</strong></span>
                   </Top3Row>

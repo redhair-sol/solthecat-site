@@ -464,7 +464,7 @@ export default function SolSnap() {
                 topEntries.map((e, i) => (
                   <Top3Row key={`${e.name}-${e.score}-${i}`}>
                     <span>
-                      {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
+                      {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
                     </span>
                     <span><strong>{e.score}</strong></span>
                   </Top3Row>

@@ -573,7 +573,7 @@ export default function SpotTheCity() {
                 topEntries.map((e, i) => (
                   <Top3Row key={`${e.name}-${e.score}-${i}`}>
                     <span>
-                      {["🥇", "🥈", "🥉", "🏅", "🏅"][i] || "·"} {e.name}
+                      {["🥇", "🥈", "🥉"][i] || "·"} {e.name}
                     </span>
                     <span><strong>{formatScore("spotcity", e.score)}</strong></span>
                   </Top3Row>
