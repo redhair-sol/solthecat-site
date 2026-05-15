@@ -404,7 +404,10 @@ export default function Home() {
 
   useEffect(() => { checkStream(); }, []);
   useEffect(() => {
-    const interval = setInterval(checkStream, 5000);
+    // 30s polling. Live stream status doesn't change second-by-second, so 5s
+    // was overkill (720 req/h/visitor on /solcam-check). 30s = 120 req/h —
+    // the LIVE badge can appear up to half a minute late, acceptable trade.
+    const interval = setInterval(checkStream, 30000);
     return () => clearInterval(interval);
   }, []);
 
